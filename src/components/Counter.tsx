@@ -3,20 +3,22 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Button } from './Button';
 import { theme } from '../theme/tokens';
 
-export function Counter({ name, value, onDecrease, onIncrease, large = false, inline = false, icon }: {
-  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; inline?: boolean; icon?: ReactNode;
+export function Counter({ name, value, onDecrease, onIncrease, large = false, compact = false, icon }: {
+  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; compact?: boolean; icon?: ReactNode;
 }) {
   const decrease = <Button quiet label={`Decrease ${name}`} disabled={value === 0} onPress={onDecrease} style={styles.button}><Text style={styles.symbol}>−</Text></Button>;
   const increase = <Button quiet label={`Increase ${name}`} onPress={onIncrease} style={styles.button}><Text style={styles.symbol}>+</Text></Button>;
-  if (inline) return <View style={styles.inlineCounter}>
-    <View style={styles.inlineRow}>
-      {icon && <View style={styles.inlineIcon}>{icon}</View>}
-      <Text style={[styles.name, styles.inlineName]}>{name}</Text>
+  if (compact) return <View style={styles.compactCounter}>
+    <View style={styles.compactHeading}>
+      {icon && <View style={styles.compactIcon}>{icon}</View>}
+      <Text style={styles.name}>{name}</Text>
+    </View>
+    <View style={styles.compactControls}>
       {decrease}
-      <Text accessibilityLabel={`${name}: ${value}`} accessibilityLiveRegion="polite" style={styles.inlineValue}>{value}</Text>
+      <Text accessibilityLabel={`${name}: ${value}`} accessibilityLiveRegion="polite" style={styles.compactValue}>{value}</Text>
       {increase}
     </View>
-    {large && value > 9 && <Text style={[styles.manual, styles.inlineManual]}>Manual value</Text>}
+    {large && value > 9 && <Text style={[styles.manual, styles.compactManual]}>Manual value</Text>}
   </View>;
   return <View style={[styles.counter, large && styles.large]}>
     <Text style={styles.name}>{name}</Text>
@@ -36,9 +38,10 @@ const styles = StyleSheet.create({
   largeValue: { fontSize: 40, lineHeight: 50 }, controls: { flexDirection: 'row', gap: 4 },
   button: { paddingHorizontal: 0, paddingVertical: 0, borderWidth: 0, width: 44 },
   symbol: { color: theme.ink, fontSize: 22 }, manual: { color: theme.danger, fontSize: 10, marginTop: 4 },
-  inlineCounter: { flexGrow: 1, flexShrink: 1, flexBasis: 220, minWidth: 220 },
-  inlineRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 4, minHeight: 44 },
-  inlineIcon: { width: 22, alignItems: 'center', opacity: 0.65 }, inlineName: { flexShrink: 1 },
-  inlineValue: { color: theme.ink, fontFamily: theme.serif, fontSize: 28, lineHeight: 36, minWidth: 32, textAlign: 'center' },
-  inlineManual: { alignSelf: 'center', marginTop: 0 },
+  compactCounter: { flexGrow: 1, flexShrink: 1, flexBasis: 138, minWidth: 138, borderWidth: 1, borderColor: theme.line, borderRadius: 6, padding: 4 },
+  compactHeading: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6, minHeight: 22 },
+  compactControls: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 4, minHeight: 44 },
+  compactIcon: { width: 22, alignItems: 'center', opacity: 0.65 },
+  compactValue: { color: theme.ink, fontFamily: theme.serif, fontSize: 28, lineHeight: 36, minWidth: 32, textAlign: 'center' },
+  compactManual: { alignSelf: 'center', marginTop: 0 },
 });

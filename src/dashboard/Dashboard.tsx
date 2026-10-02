@@ -52,7 +52,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
   const triskelion = (
     <View testID="triskelion-section"><SectionHeading title="Triskelion" note="Current values" />
       <View style={styles.triskelion}><View style={styles.counters}>{(['rage', 'fate', 'danger'] as const).map(counter =>
-        <Counter key={counter} large inline icon={<GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} />}
+        <Counter key={counter} large compact icon={<GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} />}
           name={counter[0].toUpperCase() + counter.slice(1)} value={argonaut.counters[counter]}
           onDecrease={() => counterChange(counter, -1)} onIncrease={() => counterChange(counter, 1)} />
       )}</View>
