@@ -13,6 +13,7 @@ import type { Argonaut } from '../domain/party';
 import { adjacentArgonautId } from '../state/party-reducer';
 import type { CounterName } from '../state/party-reducer';
 import { useParty } from '../state/PartyProvider';
+import { SaveNotice } from '../storage/SaveNotice';
 import { textOnColour, theme } from '../theme/tokens';
 import { ColourPicker } from './ColourPicker';
 import { DashboardMenu } from './DashboardMenu';
@@ -80,6 +81,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
 
         <View style={[styles.content, small && styles.mobilePadding]}>
           <View style={styles.chapter}><Text style={styles.eyebrow}>YOUR EXPEDITION</Text><Text style={styles.chapterMeta}>Four Argonauts. One odyssey.</Text></View>
+          <SaveNotice showStatus={false} />
           <View style={styles.navigation}>
             <View style={styles.tabs}>{party.order.map((id, tabIndex) => {
               const member = party.argonauts.find(entry => entry.id === id)!;
@@ -140,7 +142,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
     </SwipeSurface>
     <DashboardMenu visible={menuOpen} compact={small} onClose={() => setMenuOpen(false)} onBrowseGear={() => {
       setMenuOpen(false); router.push('/gear');
-    }} />
+    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} />
     {colourOpen && <ColourPicker colour={argonaut.colour} onClose={() => setColourOpen(false)} onSelect={colour => {
       dispatch({ type: 'colour', argonautId: argonaut.id, colour }); setColourOpen(false);
     }} />}

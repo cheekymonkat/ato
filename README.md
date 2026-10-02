@@ -5,6 +5,10 @@ web, iOS and Android. It contains a bundled catalogue and independent player
 state for four Argonauts. Open the top-right menu and select **Browse Gear** to
 search cards, inspect abilities and flip reversible Gear. Select a dashboard
 card or empty slot to construct or edit a loadout. Secret cards start hidden.
+Parties now autosave locally. Use **Party profiles & backups** in the menu to
+create or switch named parties and export/import complete JSON backups.
+[Stage 5 save notes](docs/STAGE_5_SAVES.md) describe recovery, compatibility and
+the remaining browser/native restart checks.
 [Stage 4 status and verification](docs/STAGE_4_LOADOUT.md) records equipment
 editing, full dashboard cards, bonus capacity, direct attachment placement and pending runtime review.
 [Gear rendering notes](docs/STAGE_3_GEAR.md) describe the card design. The earlier

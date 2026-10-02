@@ -65,7 +65,7 @@ The existing save schema remains version 1 with backward-compatible optional fie
 | `src/components/cards/EquipmentActions.tsx` | Immediate exhaustion, face and optional/conditional capacity controls below each card |
 | `src/dashboard/model.ts` | Dashboard capacity delegates to the shared loadout derivation |
 
-Player state still lives in memory. Stage 5 will add autosave and portable backups. JSON round-trip tests validate the state model; they do not establish persistence across app restarts.
+At the Stage 4 checkpoint (`75446b2`), player state lived in memory. [Stage 5](STAGE_5_SAVES.md) now adds autosave, named profiles and portable backups; its notes distinguish storage tests from the remaining browser/native restart checks.
 
 ## Verification and remaining review
 

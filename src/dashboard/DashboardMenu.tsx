@@ -4,8 +4,8 @@ import { Button } from '../components/Button';
 import { Chevron } from '../components/Icon';
 import { theme } from '../theme/tokens';
 
-export function DashboardMenu({ visible, compact, onClose, onBrowseGear }: {
-  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void;
+export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfiles }: {
+  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void; onProfiles: () => void;
 }) {
   return <Modal transparent visible={visible} onRequestClose={onClose} animationType="fade">
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.overlay, compact && styles.compact]}>
@@ -16,6 +16,9 @@ export function DashboardMenu({ visible, compact, onClose, onBrowseGear }: {
         </View>
         <Button quiet label="Browse Gear" onPress={onBrowseGear} style={styles.item}>
           <Text style={styles.itemLabel}>Browse Gear</Text><Chevron />
+        </Button>
+        <Button quiet label="Party profiles & backups" onPress={onProfiles} style={styles.item}>
+          <Text style={styles.itemLabel}>Party profiles & backups</Text><Chevron />
         </Button>
       </View>
     </SafeAreaView>
