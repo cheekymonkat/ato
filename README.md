@@ -2,8 +2,11 @@
 
 An Aeon Trespass: Odyssey Argonaut dashboard built with Expo and TypeScript for
 web, iOS and Android. It contains a bundled catalogue and independent player
-state for four Argonauts. [Stage 2 status and verification](docs/STAGE_2_DASHBOARD.md)
-records the completed checks and remaining runtime review.
+state for four Argonauts. Select **Browse Gear** on the dashboard to search cards,
+inspect abilities and flip reversible Gear. Secret cards start hidden.
+[Stage 3 status and verification](docs/STAGE_3_GEAR.md) records the rendering
+rules, completed checks and remaining native runtime review. The earlier
+[dashboard notes](docs/STAGE_2_DASHBOARD.md) cover Argonaut controls and layout.
 
 ## Start
 

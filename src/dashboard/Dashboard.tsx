@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, useWindowDimensions, View } from 'react-native';
 import type { LayoutChangeEvent } from 'react-native';
@@ -106,7 +107,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
             <View style={styles.titanChoice}><Text style={styles.eyebrow}>TITAN</Text><Button quiet label="Choose Titan" onPress={() => setTitanOpen(true)} style={styles.titanButton}>
               <GameIcon name="Titan" size={20} /><Text style={styles.titanName}>{titan?.name || 'Choose a Titan'}</Text><Chevron direction="down" />
             </Button>{titan && <Text style={styles.titanMeta}>{titan.cycle}{titan.kind === 'titan' ? ` · Speed ${titan.data.speed}` : ''}</Text>}</View>
-            <Text style={styles.swipeHint}>Swipe left or right to change Argonaut</Text>
+            <View style={styles.titanChoice}><Button quiet label="Browse Gear" onPress={() => router.push('/gear')} /><Text style={styles.swipeHint}>Swipe left or right to change Argonaut</Text></View>
           </View>
         </View>
 

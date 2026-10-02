@@ -1,0 +1,345 @@
+{
+  "sources": [
+    {
+      "name": "AT",
+      "file": "card-design/assets/AT.svg",
+      "sha256": "9e4ddca57a55a5960adc84a54b2ed5c11d5be5546e2d8b735fdeca28d9beb738"
+    },
+    {
+      "name": "Adversary",
+      "file": "images/Adversary.svg",
+      "sha256": "ff8071a1a2acaa7600c4ec96223d1af89d72f672d42d67b29c0b2c8f03699883"
+    },
+    {
+      "name": "Aether",
+      "file": "images/Aether.svg",
+      "sha256": "5fa7fdf50ed397f9cdd73448c0afd9e0e5c061e5bfcff310e21813b38c5bfd6e"
+    },
+    {
+      "name": "Ambrosia",
+      "file": "images/Ambrosia.svg",
+      "sha256": "e34eec9369ebbad1bff35231aa531147b5912eb083b9157a311d02b165839b31"
+    },
+    {
+      "name": "Armor",
+      "file": "images/Armor.svg",
+      "sha256": "f3b5cabfe5838da01357aa344a45eaad46e86ea62b3c795cb269a9e7126a2e5c"
+    },
+    {
+      "name": "Attachment",
+      "file": "images/Attachment.svg",
+      "sha256": "9dd53890c3c3841e9db077cee88752a61a990a78fe0265dc2a16a4a689e5eb69"
+    },
+    {
+      "name": "BabelianDebt",
+      "file": "images/BabelianDebt.svg",
+      "sha256": "eb44a2e68e8107f0ddf11e871603b0a090ecaf5b795f00896ee28f5ecf5276e5"
+    },
+    {
+      "name": "BlackArmorDie",
+      "file": "images/BlackArmorDie.svg",
+      "sha256": "8af49bbbf57ef8888d05f29a8fa639785d1184f90ce3aec56e54867ad63e803b"
+    },
+    {
+      "name": "BlackPowerDie",
+      "file": "card-design/assets/BlackPowerDie.svg",
+      "sha256": "de0c7938fe830ab41c02bedfe71a3307e181df420b5eea065276a465fc730e33"
+    },
+    {
+      "name": "Bleeding",
+      "file": "images/Bleeding.svg",
+      "sha256": "7fd2ff241413a433575c55ce58c9045e614e0e930833c5710a1c9d630f5f43bf"
+    },
+    {
+      "name": "CombatAction",
+      "file": "images/CombatAction.svg",
+      "sha256": "e87dc9dae99034b14dc7d3fb64a64631a92948569d65279d0116749d416d86f8"
+    },
+    {
+      "name": "ComplicatedAction",
+      "file": "images/ComplicatedAction.svg",
+      "sha256": "c8718d342c7e028c4109b4619c43aab0b2527aaf3588aa2c15addf2334734223"
+    },
+    {
+      "name": "Condition",
+      "file": "card-design/assets/Condition.svg",
+      "sha256": "d3f70e1b5c48fc21722434751a2a24fb55393c5190995c383212cc77ef5a4263"
+    },
+    {
+      "name": "Danger",
+      "file": "card-design/assets/Danger.svg",
+      "sha256": "d397788012fc6a6ae1ee99c55f7fcf3fe855421b0e5a453c3c352f35fcdac50e"
+    },
+    {
+      "name": "Despair",
+      "file": "images/Despair.svg",
+      "sha256": "2e8bc727a6c079c1169f615a40fa1be9297098dc30c4dd1e1e2a9e1fdc75ded2"
+    },
+    {
+      "name": "Discard",
+      "file": "card-design/assets/Discard.svg",
+      "sha256": "ca711ce06dafbcd7de6d5557047324c95dd9e7cd6f481924f77af2cc4f8970aa"
+    },
+    {
+      "name": "Energy",
+      "file": "images/Energy.svg",
+      "sha256": "633739d72aa1daa4a9cc2b1c21cda24d528e047d2c369c0bd9ff7a5ed146221b"
+    },
+    {
+      "name": "Evasion",
+      "file": "images/Evasion.svg",
+      "sha256": "a99703087ef837d0021eb4da27eb64f56bf268e4921a30715d8b41bfa789b40d"
+    },
+    {
+      "name": "EvasionReroll",
+      "file": "images/EvasionReroll.svg",
+      "sha256": "f9a670abeb09504c5ad91652fe3033d8ff4d3c58783c2d23f7fd2fce29a2803f"
+    },
+    {
+      "name": "Exhaust",
+      "file": "images/Exhaust.svg",
+      "sha256": "6336448d03c673ea636a15e36dad8c17a1acec566f1e94244794f47c5b34843e"
+    },
+    {
+      "name": "Fate",
+      "file": "card-design/assets/Fate.svg",
+      "sha256": "c9288f5446e31580ee332804751a7a3d9fe593f1f4f1ae5a62c9b0757e1e5332"
+    },
+    {
+      "name": "Fire",
+      "file": "images/Fire.svg",
+      "sha256": "3bdd6571de7f560d1c0a4e56eda86e7675934e20683fa7d4dbd5ed74e8e41bc1"
+    },
+    {
+      "name": "GT",
+      "file": "images/GT.svg",
+      "sha256": "f9207d453852783abef0d31119a474baa38e0fc017575ba963c4a925f10b5aac"
+    },
+    {
+      "name": "Gear",
+      "file": "card-design/assets/Gear.svg",
+      "sha256": "ce28050965081bc6e32cb8d3a0c01a895355bdc0d5d43b701a619e6065af0234"
+    },
+    {
+      "name": "InvertedDoom",
+      "file": "images/InvertedDoom.svg",
+      "sha256": "ddd88d4c81756eb744aa077c008859a6c5ac385550ddcb7a54ff3ef4fbf9e077"
+    },
+    {
+      "name": "InvertedProgress",
+      "file": "images/InvertedProgress.svg",
+      "sha256": "7dd4eac784379283c462936bb5b74a6c1c26ceea5a852c55706cba04a5a42192"
+    },
+    {
+      "name": "Labyrinthians",
+      "file": "images/Labyrinthians.svg",
+      "sha256": "6ab005f5795f6949b549789cb6b7b81f401b68f8a1cb17b5d1d490bf2d76fbbb"
+    },
+    {
+      "name": "LaserResistance",
+      "file": "images/LaserResistance.svg",
+      "sha256": "006f0e7eb2f26b38a22e26388de7417c6c46b88f89f2ac25a61df7419253d2ff"
+    },
+    {
+      "name": "MicrowaveResistance",
+      "file": "images/MicrowaveResistance.svg",
+      "sha256": "8c44ff85ed1791c32fea0e1c8a130cb562f6d830da3908467c218fe31ec0d966"
+    },
+    {
+      "name": "Midas",
+      "file": "images/Midas.svg",
+      "sha256": "c08775fc868ea9d35311aa32b6b0a301ed5b44489bff243801b7b8ce5261e9a5"
+    },
+    {
+      "name": "MortalArmorDie",
+      "file": "images/MortalArmorDie.svg",
+      "sha256": "e78767bf1b677c9b4f03ec29a4d34059620ac5dd72321a69a9814f58062d87aa"
+    },
+    {
+      "name": "MortalPowerDie",
+      "file": "images/MortalPowerDie.svg",
+      "sha256": "ef8e4db6f14d6d80e4e286912c16380cc6dd75c24a2cacc5a73dc838a388ba29"
+    },
+    {
+      "name": "MovementAction",
+      "file": "images/MovementAction.svg",
+      "sha256": "3cbf50d0906180abf2f26ad3c75b395cb0144986897e012e7e06581e6f0d73bc"
+    },
+    {
+      "name": "OneHanded",
+      "file": "card-design/assets/OneHanded.svg",
+      "sha256": "65ebeab47b353e18d90cebd24bd374702029b488e2307e2c6562fecbb6d6ed9d"
+    },
+    {
+      "name": "Oxygen",
+      "file": "images/Oxygen.svg",
+      "sha256": "48edfecd07764a6fccc9c8104713f28620631d1323e5023443bf93b511a5f232"
+    },
+    {
+      "name": "Pain",
+      "file": "images/Pain.svg",
+      "sha256": "364cb7a961ae645b8fabf34c9f218d753b04b8702133441ab679196829b2ea08"
+    },
+    {
+      "name": "Paradox",
+      "file": "images/Paradox.svg",
+      "sha256": "200964c69482a550b6b207dc4485e447ecca907883a2bcb3c4857bd71a7ca81d"
+    },
+    {
+      "name": "Potential",
+      "file": "images/Potential.svg",
+      "sha256": "5c066a9e79d8f133c2184cbf38640c87469d9207374aeb8b809f60fecb91a80d"
+    },
+    {
+      "name": "Power",
+      "file": "card-design/assets/Power.svg",
+      "sha256": "87b85d5281b40a4fbd00e4579f25a6da63628ac3c44ffb583c34265ff117a894"
+    },
+    {
+      "name": "PowerReroll",
+      "file": "images/PowerReroll.svg",
+      "sha256": "fb10b31d2615307a3f2982c104172e01900e1390d6eaaa969c3c08023b4bedea"
+    },
+    {
+      "name": "PriorityTarget",
+      "file": "images/PriorityTarget.svg",
+      "sha256": "09ae568213d9b3c1754871cb1e1e3ee86530284093d585d71c7dc9cf95949482"
+    },
+    {
+      "name": "Progress",
+      "file": "images/Progress.svg",
+      "sha256": "352b4315f33aa04194cfd260a4deb45c3a0612cd28f96820675ade07ce1c278d"
+    },
+    {
+      "name": "Rage",
+      "file": "card-design/assets/Rage.svg",
+      "sha256": "f02a47716ff9f5201cf0cc67b9fe737bcb0d68e1cd1e2d097b73550a06448af7"
+    },
+    {
+      "name": "Reaction",
+      "file": "card-design/assets/Reaction.svg",
+      "sha256": "87882af9f98f6419644e300eefb5d1e107b107c0abc42fe158e751990e1fdd87"
+    },
+    {
+      "name": "RedArmorDie",
+      "file": "images/RedArmorDie.svg",
+      "sha256": "4f493a96f18cd60c5fb6fd4f492f3441f6bf17f2dce24cdfd83f630774d13dfa"
+    },
+    {
+      "name": "RedPowerDie",
+      "file": "card-design/assets/RedPowerDie.svg",
+      "sha256": "452568bde468b73dc3a58ee73eb5ae4a5d9905041010b6fec3d6b71051d1545b"
+    },
+    {
+      "name": "Refugees",
+      "file": "images/Refugees.svg",
+      "sha256": "8c059eefdf7ed0c184a25c0557b43c2f1aedb46dd44909b72aa2604efd8e3004"
+    },
+    {
+      "name": "ReversedBlackArmorDie",
+      "file": "images/ReversedBlackArmorDie.svg",
+      "sha256": "eff792d1298a3649f4dfc105ddb85097f996d8c6050fcaee273626dbfee88a5e"
+    },
+    {
+      "name": "ReversedBlackPowerDie",
+      "file": "card-design/assets/ReversedBlackPowerDie.svg",
+      "sha256": "f90072d72df5dd3add7f18c3fa9516c34ed67cfa5002cc26ed7ab835bcafe002"
+    },
+    {
+      "name": "ReversedMortalArmorDie",
+      "file": "images/ReversedMortalArmorDie.svg",
+      "sha256": "a11ab5f56939f495437338c8c96eab37e41317a1571af79c69a20bfdbbb62c96"
+    },
+    {
+      "name": "ReversedMortalPowerDie",
+      "file": "images/ReversedMortalPowerDie.svg",
+      "sha256": "12114f1c4925a5b08076fb3ef65d2bd78453cd4bbccb32a2a08f418ccb070047"
+    },
+    {
+      "name": "ReversedRedArmorDie",
+      "file": "images/ReversedRedArmorDie.svg",
+      "sha256": "05461695b99ace654c3050f7102867f86474b50d4a164930140b499618f6a31f"
+    },
+    {
+      "name": "ReversedRedPowerDie",
+      "file": "card-design/assets/ReversedRedPowerDie.svg",
+      "sha256": "b03fc601b140a6f5bf5000d1fecdb22bdb673437c8f3ad98ba5d5b2d04e44e2c"
+    },
+    {
+      "name": "ReversedWhiteArmorDie",
+      "file": "images/ReversedWhiteArmorDie.svg",
+      "sha256": "c5cceeddefab286248f86f8599182cd792039ff364e0e84c0b5bed000f1544f2"
+    },
+    {
+      "name": "ReversedWhitePowerDie",
+      "file": "card-design/assets/ReversedWhitePowerDie.svg",
+      "sha256": "9a576c3c7b5d2683b766ccd142cf83e89e7a4ab465be8658ce34e73b807f8385"
+    },
+    {
+      "name": "Speed",
+      "file": "images/Speed.svg",
+      "sha256": "4b400c4fb33f950274b0d11794ac7ff3fa159385420247101a077cc99eea1e2e"
+    },
+    {
+      "name": "Strangers",
+      "file": "images/Strangers.svg",
+      "sha256": "2aba76f1af7c8bb22a5fdf3077d1f727a1f7fec95b8876e80e5817b81cd94199"
+    },
+    {
+      "name": "Support",
+      "file": "images/Support.svg",
+      "sha256": "8034ed64a2ec84b6efd19f6cf02d1067538d6afaf8e0da6080a48d5bf7c80a3e"
+    },
+    {
+      "name": "ThreeHanded",
+      "file": "card-design/assets/ThreeHanded.svg",
+      "sha256": "120e28794efba2df12060dd9d3d192bc395912617756204cc04fdbb254d445b6"
+    },
+    {
+      "name": "ThreeOneHanded",
+      "file": "images/ThreeOneHanded.svg",
+      "sha256": "c4b13423dcdb5a806c58cf0b83d694c222a680e9ca94ab127e3af0e390f6b904"
+    },
+    {
+      "name": "TwoHanded",
+      "file": "card-design/assets/TwoHanded.svg",
+      "sha256": "d416990266923094d47392f48b82aeb0a72a1989823613768ceef6d841dcc94b"
+    },
+    {
+      "name": "TwoOneHanded",
+      "file": "images/TwoOneHanded.svg",
+      "sha256": "18a754bfddce185ad469a2b3c61eb5fb6e1b2ef6aef0206552d40d571798b7a2"
+    },
+    {
+      "name": "WhiteArmorDie",
+      "file": "images/WhiteArmorDie.svg",
+      "sha256": "dc58496aa6e368e6ed29e1987454baa6fdb992a908a1415f092b79a3320e3c6c"
+    },
+    {
+      "name": "WhitePowerDie",
+      "file": "card-design/assets/WhitePowerDie.svg",
+      "sha256": "aecb15bfc6b8f36cf9ff6c59acf8aacaac4adf2bd53c0cbc1d68bb4bec238ea9"
+    },
+    {
+      "name": "WoO",
+      "file": "images/WoO.svg",
+      "sha256": "c64596ddc23f511716e74fdcd13b5118a482d8f1c98f5a15637e2452c9c20d5b"
+    },
+    {
+      "name": "d10",
+      "file": "card-design/assets/d10.svg",
+      "sha256": "3215d4ca873c8b4f2aaa94d3477993911f1bd37a1edde0c3222a08431c89caa7"
+    }
+  ],
+  "missing": [
+    "Advserary",
+    "Dot",
+    "GoldWoO",
+    "Laser",
+    "Microwave",
+    "PriortyTarget",
+    "Red",
+    "Reroll",
+    "Sun"
+  ]
+}

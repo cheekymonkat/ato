@@ -1,5 +1,7 @@
+import { router } from 'expo-router';
 import { StyleSheet, Text, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
+import { GearSummary } from '../components/cards/GearSummary';
 import { GameIcon } from '../components/Icon';
 import type { GameIconName } from '../components/Icon';
 import type { Argonaut } from '../domain/party';
@@ -7,6 +9,7 @@ import type { CapacityPosition } from '../domain/slots';
 import { findAssignmentsNeedingReassignment } from '../domain/slots';
 import type { SlotKind } from '../domain/cards';
 import { theme } from '../theme/tokens';
+import { useSpoilers } from '../state/SpoilerProvider';
 
 const labels: Record<SlotKind, string> = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'FatedMnemos' };
@@ -22,20 +25,24 @@ function SlotCard({ position, index, argonaut, compact }: { position: CapacityPo
   const memoryId = position.kind === 'mnemos' ? argonaut.mnemosIds[index] : position.kind === 'fated-mnemos' ? argonaut.fatedMnemosIds[index] : undefined;
   const instance = argonaut.instances.find(item => item.id === (assignment?.instanceId || memoryId));
   const face = instance && catalogue.getFace(instance.definitionId, instance.faceId);
-  const source = position.source && catalogue.get(position.source.definitionId)?.faces.find(face => face.id === position.source?.faceId);
+  const definition = instance && catalogue.get(instance.definitionId);
+  const spoilers = useSpoilers(), hidden = definition && spoilers.hidden(definition);
+  const sourceDefinition = position.source && catalogue.get(position.source.definitionId);
+  const source = sourceDefinition?.faces.find(face => face.id === position.source?.faceId);
+  const sourceName = source && (sourceDefinition && spoilers.hidden(sourceDefinition) ? 'unrevealed Gear' : source.name);
   const label = `${labels[position.kind]}${position.kind === 'armor' ? '' : ` ${index + 1}`}`;
   const horizontal = compact && (position.kind === 'mnemos' || position.kind === 'fated-mnemos');
-  return <View testID={`slot-${position.kind}-${index + 1}`} accessibilityLabel={`${label}, ${face?.name || 'empty'}${source ? `, granted by ${source.name}` : ''}`}
-    style={[styles.card, compact && styles.compact, position.source && styles.granted, face && styles.equipped]}>
+  return <View testID={`slot-${position.kind}-${index + 1}`} accessibilityLabel={`${label}, ${hidden ? 'unrevealed card' : face?.name || 'empty'}${sourceName ? `, granted by ${sourceName}` : ''}`}
+    style={[styles.card, compact && styles.compact, position.source && styles.granted, face && styles.equipped, face?.kind === 'gear' && styles.gearSlot]}>
     <Text style={styles.slotLabel}>{label}</Text>
-    <View style={[styles.cardBody, horizontal && styles.compactBody]}>
+    {face?.kind === 'gear' && definition ? <GearSummary card={definition} face={face} onInspect={() => router.push({ pathname: '/cards/[id]', params: { id: definition.id, face: face.id } })} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>
       <View style={styles.symbol}><GameIcon name={icons[position.kind]} size={compact ? 28 : 38} /></View>
       <View style={horizontal ? { flex: 1 } : { alignItems: 'center' }}>
-        <Text style={[styles.empty, face && styles.cardName]}>{face?.name || (compact ? 'Unassigned' : 'Unequipped')}</Text>
+        <Text style={[styles.empty, face && styles.cardName]}>{hidden ? 'Unrevealed card' : face?.name || (compact ? 'Unassigned' : 'Unequipped')}</Text>
         {source && <Text style={styles.grantText}>{position.eligibility ? `${position.eligibility.requiredTraits.join(', ')} Gear only` : 'Additional slot'}</Text>}
       </View>
-    </View>
-    {source && <Text style={styles.source}>Granted by {source.name}</Text>}
+    </View>}
+    {sourceName && <Text style={styles.source}>Granted by {sourceName}</Text>}
   </View>;
 }
 
@@ -49,6 +56,7 @@ export function SlotRow({ kinds, positions, argonaut, compact = false, startInde
 
 export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosition[]; argonaut: Argonaut }) {
   const needsReassignment = findAssignmentsNeedingReassignment(argonaut.equipment, positions);
+  const spoilers = useSpoilers();
   return <View style={styles.area}>
     <View><SectionHeading title="Equipment" note="Your Titan’s loadout" /><SlotRow kinds={['hand', 'armor']} positions={positions} argonaut={argonaut} /></View>
     <View><SectionHeading title="Support" note={`${positions.filter(position => position.kind === 'support').length} available slots`} /><SlotRow kinds={['support']} positions={positions} argonaut={argonaut} /></View>
@@ -56,7 +64,9 @@ export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosi
     {needsReassignment.length > 0 && <View style={styles.reassignment}><Text style={styles.reassignmentTitle}>Needs reassignment</Text>
       {needsReassignment.map(entry => {
         const item = argonaut.instances.find(instance => instance.id === entry.instanceId);
-        return <Text key={entry.instanceId} style={styles.reassignmentText}>{item && getCatalogue().getFace(item.definitionId, item.faceId)?.name || entry.instanceId}</Text>;
+        const definition = item && getCatalogue().get(item.definitionId);
+        const name = definition && spoilers.hidden(definition) ? 'Unrevealed card' : item && getCatalogue().getFace(item.definitionId, item.faceId)?.name || entry.instanceId;
+        return <Text key={entry.instanceId} style={styles.reassignmentText}>{name}</Text>;
       })}</View>}
   </View>;
 }
@@ -66,6 +76,7 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', flexWrap: 'wrap', gap: 12 },
   card: { flex: 1, minWidth: 88, minHeight: 186, backgroundColor: '#EAE7DF', borderWidth: 1, borderStyle: 'dashed', borderColor: '#BEB9AE', borderRadius: 6, padding: 14 },
   compact: { minHeight: 112 }, granted: { backgroundColor: '#E8E4D7', borderColor: theme.gold, borderStyle: 'solid' }, equipped: { backgroundColor: theme.paper, borderStyle: 'solid' },
+  gearSlot: { minWidth: 140 },
   slotLabel: { fontSize: 11, fontWeight: '600', color: theme.muted }, cardBody: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 13, paddingVertical: 16 },
   compactBody: { flexDirection: 'row', gap: 12, paddingVertical: 12 }, symbol: { opacity: 0.26 }, empty: { color: theme.muted, fontSize: 11 },
   cardName: { color: theme.ink, fontFamily: theme.serif, fontSize: 18, textAlign: 'center' }, grantText: { color: theme.muted, fontSize: 11, textAlign: 'center', marginTop: 6, lineHeight: 16 },

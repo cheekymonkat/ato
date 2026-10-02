@@ -1,0 +1,20 @@
+{
+  "revision": "62eaeb673da4438c69f6902c1932d0832cc636a3",
+  "files": [
+    {
+      "file": "keywords.json",
+      "url": "https://raw.githubusercontent.com/AedanThornton/ATCC/62eaeb673da4438c69f6902c1932d0832cc636a3/src/data/JSON/keywords.json",
+      "sha256": "feb354502cfa3635acdb667ea59bfb4cf787c56696a2419b40e0428b5f6bec21"
+    },
+    {
+      "file": "primordialAbilityData.json",
+      "url": "https://raw.githubusercontent.com/AedanThornton/ATCC/62eaeb673da4438c69f6902c1932d0832cc636a3/src/data/JSON/primordialAbilityData.json",
+      "sha256": "1a189e2f6911bc716df58c960681a328a90a72e28d5b9c9a282a9a34252d2bcb"
+    },
+    {
+      "file": "titanAbilityData.json",
+      "url": "https://raw.githubusercontent.com/AedanThornton/ATCC/62eaeb673da4438c69f6902c1932d0832cc636a3/src/data/JSON/titanAbilityData.json",
+      "sha256": "20faff19d158353d1d068e2a877a55d83c34c4dd276423cdb86b701df4dbcdf6"
+    }
+  ]
+}
