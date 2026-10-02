@@ -1,0 +1,88 @@
+# Catalogue and party data
+
+Stage 1 provides shared TypeScript domain modules and bundled JSON for web, iOS and Android. It adds no database, network dependency or native package. Dashboard screens, colour selection, swiping and storage adapters belong to later stages.
+
+## Files and commands
+
+- `data/source/`: seven unchanged ATCC exports. Preserve these as acquisition evidence.
+- `data/identity-registry.json`: persistent definition identities; commit this with generated data.
+- `data/generated/catalogue.json`: app data, faces, structured effects, indexes and provenance.
+- `data/generated/quality-report.json`: reference resolutions and import diagnostics.
+- `data/generated/source-map.json`: each definition's exact original file and JSON pointer.
+- `src/catalogue/index.ts`: lazy singleton access to the bundled catalogue.
+- `src/domain/party.ts`: party, Argonaut and card-instance models and runtime validation.
+- `src/domain/slots.ts`: baseline and effect-derived capacity, restrictions and reassignment detection.
+
+With Node 22.18 or newer:
+
+```sh
+npm run catalogue:import
+npm run catalogue:check
+npm run test:domain
+npm run typecheck
+npm run lint
+```
+
+`catalogue:check` reads all inputs and compares the generated files without writing. The importer validates every record and the complete paging set before writing. It uses deterministic JSON, omits generation timestamps and records source SHA-256 digests. Bump the importer version in both importer and validator when changing the normalization contract; catalogue versions incorporate that version, source digests and identity registry.
+
+## Querying definitions
+
+```ts
+import { getCatalogue } from '../catalogue/index';
+
+const catalogue = getCatalogue();
+const matches = catalogue.search({ query: 'hammer', family: 'Gear' });
+const armour = catalogue.byPrintedId('AJ0266');
+const reference = catalogue.resolveReference('AR0483');
+// reference.status is 'resolved', 'ambiguous' or 'missing'.
+```
+
+Search matches all face names and current printed aliases, case-insensitively. Family, cycle and slot filters must match the same face. Exact `byName` also finds reverse titles, including Hidden Xiphos. A reference can return several cards: do not choose the first silently. Definitions are frozen at repository creation; mutable exhaustion, face choices and counters live on independent instances.
+
+## Identity and preservation
+
+The initial internal ID is derived from game, render family and the full printed-alias set, then pinned in the registry. Later imports match overlapping aliases in the same game/family and retain the ID when wording, page order or aliases change. Historical registry aliases are retained for identity matching; the runtime lookup uses current export aliases. Never rebuild or discard the registry during ordinary updates.
+
+The one record without a printed ID, Hyperborean Ruins in the Terrain family, uses a pinned unprinted key consisting of game/family/cycle. A second unprinted card in that group or indistinguishable records with shared aliases must fail import rather than merge. Those cases need an explicit identity design before adding them. If all printed aliases change with no overlap, migrate the registry entry explicitly before importing; the importer cannot infer that identity from prose.
+
+All 3,014 records and all 28 render families are retained. Gear, Titan, Mnemos and Fated Mnemos have typed payloads; other families keep their render-family label and complete JSON payload under the `other` discriminant. Unexpected new families are retained and reported.
+
+Only a nonblank `name2` denotes a reverse face. Numbered fields on single-face cards, such as Exploration's `effects2`, stay in the front payload. Reversible source fields move into front/back payloads with suffixes removed on the back. Some exports omit shared back metadata; the six allowed common metadata fields are inherited explicitly in `inheritedFields`. The test suite reconstructs every original source record exactly from these payloads. Original files and all rich tokens, gates, dice and family-specific fields remain available. Game expressions such as `+0` and `8+` remain strings.
+
+## Slot capacity
+
+The importer recognizes narrow text-and-icon patterns in actual Gear abilities and gated abilities. It does not interpret flavour text or FAQ entries as active rules. The seven current sources produce six Support effects and one optional hand effect. Horseskull Pauldron carries its Paradox eligibility restriction. Nosoi Backpack requires a saved choice; its Ambrosia consequence stays as text for later manual or explicitly supported resolution.
+
+Each effect retains definition, face, exact original source pointer and original tokens. Effect identity reflects the mechanic rather than its ability-array index, so inserting unrelated text does not break saved optional choices or bonus position IDs. Unrecognized wording, absent required icons and action-cost patterns produce diagnostics without granting unrestricted capacity. Duplicate indistinguishable effects fail validation and need explicit mapping.
+
+Pass equipped active sources to `deriveCapacity`; it recomputes from a configurable baseline every time. The dashboard baseline is two hands, one Armor, two Supports, three Attachments, two Mnemos and two Fated Mnemos, matching the layout reference. Attachment-host relationships and multi-hand equipment validation remain Stage 4 work; these position counts do not assert universal gameplay rules. The capacity function allows multiple effect sources without a fixed third-Support limit. Actual legal equipment combinations remain the loadout layer's responsibility.
+
+Optional capacity is active only when the instance's `enabledEffectIds` contains the grant ID. Gated grants require an explicit `gateSatisfied` result; unknown gates do not apply automatically. Exhaustion alone does not disable passive rules. Never save an incremented slot count. Recompute after equip/remove/replace, face or condition changes and save restoration.
+
+Bonus positions use the granting instance and effect ID. `findAssignmentsNeedingReassignment` returns equipment assigned to positions that have disappeared. It preserves those assignments for a visible Needs reassignment area; it does not delete items. `meetsSlotRestriction` checks added eligibility restrictions only, leaving slot kind, hand span and attachment-host validation to Stage 4.
+
+## Party state
+
+```ts
+import { createParty, parseParty } from '../domain/party';
+
+const party = createParty('party-id', ['arg-1', 'arg-2', 'arg-3', 'arg-4'], getCatalogue().version);
+const restored = parseParty(JSON.parse(savedJson));
+```
+
+The calling state/storage layer supplies stable party and instance IDs; the domain has no platform API. Each of four Argonauts owns a name, validated `#RRGGBB` colour, six skills, Titan instance, loadout, memories, counters, conditions and tokens. Party order, active Argonaut ID and shared resources are separate. Creation allocates independent objects and arrays for every Argonaut. Catalogue and save-schema versions are distinct.
+
+Save validation rejects malformed colours, repeated IDs/order, overlapping assignments and dangling instance references. It does not clamp counters or perform death/campaign automation. Resolving missing catalogue definitions and migrations is a later storage/recovery concern. Stage 2 binds colours to a proposed 4 px separator and adds bounded left/right navigation with accessible alternatives.
+
+## Initial review findings
+
+- 3,014 definitions and 3,217 faces; no record deduplication.
+- Five printed aliases have multiple legitimate definitions; one record repeats an alias within itself.
+- One Terrain record has no printed ID.
+- 86 backs explicitly inherit common metadata.
+- Four nonblank references do not resolve: AQ0629, CX1697, CJ2360 and DZ2584.
+- Two occurrences of CX1679 resolve ambiguously.
+- 23 reference fields are blank or malformed.
+- Seven slot effects are recognized; no current capacity candidate remains unmapped.
+
+Do not repair the original exports by guessing missing references. The report gives file and JSON pointer for review. Fifteen domain/import tests cover preservation, IDs, aliases, faces, supported/unsupported effects, runtime validation, independent Argonauts, dynamic capacity and occupied-slot recovery.
