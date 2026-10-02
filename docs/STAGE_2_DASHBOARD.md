@@ -4,7 +4,7 @@ Stage 2 adds the Expo Router application shell and dashboard components. The sou
 
 ## Status
 
-Implementation and dependencies are in place. Typecheck, uncached lint, 23 domain tests, the deterministic catalogue check and the production web export pass. Desktop Chrome renders the dashboard and the isolated Pattern-table preview. The full interaction, narrow-screen and native checklist below remains pending. The earlier dependency-installation blocker is resolved.
+Implementation and dependencies are in place. Typecheck, uncached lint, 23 domain tests, the deterministic catalogue check and the production web export pass. Desktop Chrome renders the dashboard and the isolated Pattern-table preview. Safari responsive previews at 320, 390 and 800 px show Triskelion above Equipment without overlap; at 1000 px they remain side by side. The full interaction and native checklist below remains pending. The earlier dependency-installation blocker is resolved.
 
 The dependencies were selected through `expo install` using this app's SDK 57 dependency map. For a fresh checkout:
 
@@ -34,7 +34,7 @@ The app entry point is now `expo-router/entry`. Routes live under `src/app`; oth
 - Both reference tables now use the extracted ATCC Pattern styling, preserving ranges, symbols and Kratos alternatives/combined effects. [Design and verification](PATTERN_TABLES.md)
 - The layout includes two Weapon positions, Armor, two base Supports, three Attachments, two Mnemos and two Fated Mnemos areas, plus Tokens and Conditions reference areas.
 - Support and other capacities are derived from active equipment effects. Grants cannot activate themselves from their own bonus position. Occupied positions that disappear remain visible under Needs reassignment.
-- Desktop/tablet show equipment beside Triskelion and memories; phones stack those same functions. Small screens reflow skill controls and counters rather than shrink touch targets.
+- At an available dashboard width of 900 px or more, Equipment sits beside Triskelion and Memories. Below 900 px, the order is Triskelion, Equipment (including Support and Attachments), then Memories, Tokens and Conditions. Breakpoints use the measured dashboard width as well as the window width, so a constrained app area can stack within a wide browser. Vertical sections and stacked skills retain their content height. Small screens reflow skill controls and counters rather than shrink touch targets.
 
 State is in memory in this stage. Colour is stored on the Argonaut's player-data record, but it does not survive app restarts until Stage 5 implements storage. General equipment selection, attachment-host rules and hand-span validation belong to Stage 4; the empty slot areas are noninteractive placeholders. Full Gear-card rendering belongs to Stage 3. Tokens and Conditions show current data without an editing flow.
 
@@ -65,7 +65,7 @@ Fixtures are ignored in production. They are not exposed as production controls.
 
 Remaining runtime review:
 
-1. Inspect desktop, tablet, 390 px and 320 px layouts and ensure no clipping or horizontal overflow.
+1. Extend the recorded 320, 390, 800 and 1000 px browser layout review to populated equipment, text scaling and native devices. The empty-loadout preview confirms Triskelion ordering and section spacing; the smallest view wraps battle counters and equipment cards.
 2. Edit each Argonaut, move through all four, return and confirm each edit remains isolated.
 3. Check name edits, palette/custom colours and full-width separator changes.
 4. Select Titans and inspect both reference tables.

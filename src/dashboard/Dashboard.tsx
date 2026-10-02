@@ -1,5 +1,6 @@
 import { useCallback, useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, TextInput, useWindowDimensions, View } from 'react-native';
+import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { Button } from '../components/Button';
@@ -20,7 +21,13 @@ import { ReferenceDialog } from './ReferenceDialog';
 import { TitanPicker } from './TitanPicker';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
-  const { party, dispatch } = useParty(), { width } = useWindowDimensions();
+  const { party, dispatch } = useParty(), { width: windowWidth } = useWindowDimensions();
+  const [containerWidth, setContainerWidth] = useState<number | null>(null);
+  const width = Math.min(windowWidth, containerWidth ?? windowWidth);
+  const measureContainer = useCallback((event: LayoutChangeEvent) => {
+    const nextWidth = event.nativeEvent.layout.width;
+    if (nextWidth > 0) setContainerWidth(nextWidth);
+  }, []);
   const narrow = width < 900, small = width < 600;
   const identityStacked = width < 1040, verySmall = width < 360;
   const [colourOpen, setColourOpen] = useState(false), [titanOpen, setTitanOpen] = useState(false);
@@ -38,7 +45,23 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
     else dispatch({ type: 'counter', argonautId: argonaut.id, counter, value });
   };
 
-  return <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']}>
+  const triskelion = (
+    <View testID="triskelion-section"><SectionHeading title="Triskelion" note="Current values" />
+      <View style={styles.triskelion}><View style={styles.counters}>{(['rage', 'fate', 'danger'] as const).map(counter => <View key={counter} style={styles.battleCounter}>
+        <View style={styles.counterIcon}><GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} /></View>
+        <Counter large name={counter[0].toUpperCase() + counter.slice(1)} value={argonaut.counters[counter]}
+          onDecrease={() => counterChange(counter, -1)} onIncrease={() => counterChange(counter, 1)} />
+      </View>)}</View>
+      <View style={styles.referenceLinks}>{(['Trauma', 'Kratos'] as const).map(kind => <View key={kind} style={{ flex: 1 }}>
+        <Button quiet label={`${kind} table`} disabled={!titan} onPress={() => setReference(kind)} style={styles.referenceButton}>
+          <Text style={styles.referenceLabel}>{kind} table</Text><Chevron />
+        </Button>
+      </View>)}</View>{!titan && <Text style={styles.referenceHint}>Choose a Titan to view its reference tables.</Text>}
+      </View>
+    </View>
+  );
+
+  return <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']} onLayout={measureContainer}>
     <SwipeSurface onNavigate={navigate}>
       <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.scroll}>
         <View style={styles.masthead}><View style={[styles.mastheadContent, small && styles.mobilePadding]}>
@@ -74,7 +97,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
                 <View style={[styles.colourDot, { backgroundColor: argonaut.colour }]} /><Text style={styles.colourLabel}>Identity colour</Text><Chevron direction="down" />
               </Button></View>
             </View>
-            <View style={[styles.skills, small && styles.skillsSmall]}>{SKILL_NAMES.map(skill => <View key={skill} style={[styles.skillCell, small && styles.skillCellSmall, verySmall && styles.skillCellTiny]}>
+            <View style={[styles.skills, identityStacked && styles.skillsStacked, small && styles.skillsSmall]}>{SKILL_NAMES.map(skill => <View key={skill} style={[styles.skillCell, small && styles.skillCellSmall, verySmall && styles.skillCellTiny]}>
               <Counter name={skill} value={argonaut.skills[skill]} onDecrease={() => dispatch({ type: 'skill', argonautId: argonaut.id, skill, delta: -1 })}
                 onIncrease={() => dispatch({ type: 'skill', argonautId: argonaut.id, skill, delta: 1 })} />
             </View>)}</View>
@@ -89,22 +112,11 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
 
         <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
 
-        <View style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
+        <View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
+          {narrow && triskelion}
           <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}><EquipmentArea positions={positions} argonaut={argonaut} /></View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
-            <View><SectionHeading title="Triskelion" note="Current values" />
-              <View style={styles.triskelion}><View style={styles.counters}>{(['rage', 'fate', 'danger'] as const).map(counter => <View key={counter} style={styles.battleCounter}>
-                <View style={styles.counterIcon}><GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} /></View>
-                <Counter large name={counter[0].toUpperCase() + counter.slice(1)} value={argonaut.counters[counter]}
-                  onDecrease={() => counterChange(counter, -1)} onIncrease={() => counterChange(counter, 1)} />
-              </View>)}</View>
-              <View style={styles.referenceLinks}>{(['Trauma', 'Kratos'] as const).map(kind => <View key={kind} style={{ flex: 1 }}>
-                <Button quiet label={`${kind} table`} disabled={!titan} onPress={() => setReference(kind)} style={styles.referenceButton}>
-                  <Text style={styles.referenceLabel}>{kind} table</Text><Chevron />
-                </Button>
-              </View>)}</View>{!titan && <Text style={styles.referenceHint}>Choose a Titan to view its reference tables.</Text>}
-              </View>
-            </View>
+            {!narrow && triskelion}
             <View><SectionHeading title="Memories" /><View style={styles.memoryRows}>
               {positions.filter(position => position.kind === 'mnemos').map((position, memoryIndex) => <SlotRow key={position.id} kinds={['mnemos']} positions={[position]} argonaut={argonaut} compact startIndex={memoryIndex} />)}
               <SlotRow kinds={['fated-mnemos']} positions={positions} argonaut={argonaut} compact />
@@ -132,7 +144,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: theme.canvas }, scroll: { paddingBottom: 20 },
+  safe: { flex: 1, minWidth: 0, backgroundColor: theme.canvas }, scroll: { paddingBottom: 20 },
   masthead: { backgroundColor: theme.charcoal }, mastheadContent: { width: '100%', maxWidth: theme.maxWidth, marginHorizontal: 'auto', paddingHorizontal: 32, minHeight: 86, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   brand: { flexDirection: 'row', alignItems: 'center', gap: 14 }, brandTitle: { color: '#F1EBDE', fontFamily: theme.serif, fontSize: 17, letterSpacing: 2.4 }, brandSub: { color: theme.gold, fontSize: 9, marginTop: 5 }, mastheadLabel: { color: '#B8B3A8', fontSize: 9, letterSpacing: 1.6 },
   content: { width: '100%', maxWidth: theme.maxWidth, marginHorizontal: 'auto', paddingHorizontal: 32 },
@@ -147,13 +159,15 @@ const styles = StyleSheet.create({
   identity: { flexDirection: 'row', gap: 32, alignItems: 'center' }, identityNarrow: { flexDirection: 'column', alignItems: 'stretch', gap: 24 },
   identityName: { width: 255 }, identityNameNarrow: { width: '100%' }, nameInput: { fontFamily: theme.serif, color: theme.ink, fontSize: 32, minHeight: 52, paddingVertical: 4, marginTop: 8, borderBottomWidth: 1, borderBottomColor: theme.line },
   identityActions: { alignItems: 'flex-start', marginTop: 12 }, colourButton: { flexDirection: 'row', gap: 9, borderWidth: 0, paddingHorizontal: 0, minHeight: 44 }, colourDot: { width: 14, height: 14, borderRadius: 7 }, colourLabel: { color: theme.muted, fontSize: 12 },
-  skills: { flex: 1, flexDirection: 'row', gap: 8 }, skillsSmall: { flex: 0, flexWrap: 'wrap' }, skillCell: { flex: 1 }, skillCellSmall: { flex: 0, flexGrow: 1, flexBasis: '30%' },
+  skills: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, flexDirection: 'row', gap: 8 },
+  skillsStacked: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' }, skillsSmall: { flexWrap: 'wrap' }, skillCell: { flex: 1 }, skillCellSmall: { flex: 0, flexGrow: 1, flexBasis: '30%' },
   skillCellTiny: { flexBasis: '45%' },
   titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexDirection: 'column', alignItems: 'flex-start' },
   titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14 }, titanName: { color: theme.ink, fontSize: 13 }, titanMeta: { color: theme.muted, fontSize: 11 }, swipeHint: { color: theme.muted, fontSize: 11 },
   separator: { height: 4, width: '100%' },
   board: { width: '100%', maxWidth: theme.maxWidth, marginHorizontal: 'auto', paddingHorizontal: 32, paddingTop: 26, flexDirection: 'row', gap: 32 }, boardNarrow: { flexDirection: 'column', gap: 32 },
-  equipmentColumn: { flex: 1.6 }, referenceColumn: { flex: 1, gap: 24 }, fullColumn: { flex: 0, width: '100%' },
+  equipmentColumn: { flexGrow: 1.6, flexShrink: 1, flexBasis: 0, minWidth: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },
+  fullColumn: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' },
   triskelion: { backgroundColor: theme.paper, borderRadius: 6, borderWidth: 1, borderColor: theme.line, padding: 16 }, counters: { flexDirection: 'row', flexWrap: 'wrap', gap: 4 }, battleCounter: { flex: 1, minWidth: 96 }, counterIcon: { alignItems: 'center', opacity: 0.65 },
   referenceLinks: { flexDirection: 'row', gap: 8, marginTop: 14 }, referenceButton: { backgroundColor: theme.panel, borderWidth: 0, flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 12, gap: 6 }, referenceLabel: { fontSize: 12, color: theme.ink }, referenceHint: { fontSize: 10, color: theme.muted, textAlign: 'center', marginTop: 12, lineHeight: 16 },
   memoryRows: { gap: 12 }, trackers: { flexDirection: 'row', gap: 12 }, tracker: { flex: 1, borderWidth: 1, borderColor: theme.line, borderRadius: 6, padding: 16, minHeight: 94, backgroundColor: theme.paper }, trackerTitle: { color: theme.ink, fontFamily: theme.serif, fontSize: 18 }, trackerBody: { color: theme.muted, fontSize: 12, lineHeight: 18, marginTop: 12 },
