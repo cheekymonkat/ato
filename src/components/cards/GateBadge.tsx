@@ -6,6 +6,7 @@ import type { DisplayGate } from '../../domain/card-presentation';
 import { gateColour } from '../../theme/gear-tokens';
 import { gearIcons } from '../../theme/gear-icons';
 import { CardIcon, iconKey } from './CardIcon';
+import { useCardColours } from './CardColours';
 
 function GateIcon({ name, size }: { name: string; size: number }) {
   return gearIcons[iconKey(name, undefined, true)] ? <CardIcon name={name} size={size} invert />
@@ -13,10 +14,11 @@ function GateIcon({ name, size }: { name: string; size: number }) {
 }
 
 export function GateBackground({ gate }: { gate: DisplayGate }) {
+  const paint = useCardColours();
   const id = `gate-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
   return <View accessible={false} pointerEvents="none" style={StyleSheet.absoluteFill}>
     <Svg width="100%" height="100%"><Defs><LinearGradient id={id} x1="0%" y1="0%" x2="100%" y2="0%">
-      <Stop offset="30%" stopColor={gateColour(gate.type)} /><Stop offset="70%" stopColor={gateColour(gate.type2 || gate.type)} />
+      <Stop offset="30%" stopColor={paint.colour(gateColour(gate.type))} /><Stop offset="70%" stopColor={paint.colour(gateColour(gate.type2 || gate.type))} />
     </LinearGradient></Defs><Rect width="100%" height="100%" fill={`url(#${id})`} /></Svg>
   </View>;
 }

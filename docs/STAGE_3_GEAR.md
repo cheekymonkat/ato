@@ -4,13 +4,13 @@ Stage 3 adds a searchable Gear catalogue, shared card-face components and full-c
 
 ## Try it
 
-1. Start `npm run web`, open an Argonaut and select **Browse Gear**.
-2. Search `hammer`. Inspect Rebound Hammer, Cyclopean Forge Hammer, Relief Hammer and Hammer-Sword. Reveal the secret result to inspect Hammer Origin.
+1. Start `npm run web`, open an Argonaut, open the top-right menu and select **Browse Gear**.
+2. Search `hammer`. Inspect Rebound Hammer, Cyclopean Forge Hammer, Relief Hammer and Hammer-Sword. Select the secret result, then reveal it in the full view to read Hammer Origin.
 3. On Hammer-Sword, select **Flip to back** to see Hidden Xiphos. Select a keyword inline or from the separate Keywords buttons to read its definition.
 4. In Relief Hammer, select **Column** inline or under Referenced cards. Back returns through inspection to the same catalogue search, cycle and page.
-5. Search `Trireme Breastplate` for Armor dice, or reveal `Umbral Virus` to inspect the compound Fate/Ambrosia OR gate. **Hide this card** conceals a revealed secret again.
+5. Search and select `Trireme Breastplate` for Armor dice, or reveal `Umbral Virus` to inspect the compound Fate/Ambrosia OR gate. **Hide this card** conceals a revealed secret again.
 
-In development, `/argonaut/arg-1?fixture=trireme` loads the existing disposable fixture: a compact Trireme Breastplate card, its inspection action and three derived Support positions. The fixture replaces that Argonaut's preview loadout and is ignored in production. Empty equipment positions remain placeholders until Stage 4.
+In development, `/argonaut/arg-1?fixture=trireme` loads the existing disposable fixture: a Trireme Breastplate card (now rendered in full on the dashboard), its editing tap target and three derived Support positions. The fixture replaces that Argonaut's preview loadout and is ignored in production. Stage 4 adds selection and editing to equipment positions.
 
 ## Presentation rules
 
@@ -23,7 +23,7 @@ The source specification is `../../ato_docs/card-design/README.md`, with machine
 - Gates use arrow polygons, split compartments, type colours and gradients. OR gates preserve both thresholds; AND gates preserve both symbols. The source's single-group token heuristic chooses row or column orientation.
 - Native SVG uses an explicit padded viewBox in place of browser `getBBox()`. Condition badge width uses a character-based approximation in place of canvas text measurement. Font metrics, condition badge widths and inline wrapping are therefore not pixel-identical across platforms.
 
-Inspection intentionally uses intrinsic height, a maximum width of 450 px and minimum title/ability/footer sizes of 16/14/11 px. Long content stays reachable by page scrolling. It does not apply the source's narrow-screen 0.85 transform or desktop focus transform. Word wrapping uses View/Text/SVG groups that work without SVG children inside native Text. Compact equipment uses a short summary with an Inspect action instead of scaling an entire card into a slot. Explicit buttons replace the hover menu and provide larger alternatives to inline links.
+Inspection intentionally uses intrinsic height, a maximum width of 450 px and minimum title/ability/footer sizes of 16/14/11 px. Long content stays reachable by page scrolling. It does not apply the source's narrow-screen 0.85 transform or desktop focus transform. Word wrapping uses View/Text/SVG groups that work without SVG children inside native Text. Following Stage 4 feedback, dashboard equipment now shares this full renderer with intrinsic height and responsive wrapping; dashboard cards now open editing by selection, and Browse Gear cards open the full reference and keyword view by selection. Dashboard face width is capped at 240 px; full inspection retains the 450 px maximum. Exhaust/Ready/Flip sit below dashboard cards; inspection retains explicit keyword/reference buttons as alternatives to inline links.
 
 ## Navigation, references and spoilers
 
@@ -55,7 +55,7 @@ The generated icons and dictionaries are bundled app inputs; a normal checkout d
 | --- | --- |
 | `src/cards/GearLibrary.tsx` | Search, cycle filter, 12-card pages and inspection entry |
 | `src/cards/CardInspection.tsx` | Face display, flip, references and keyword sheets |
-| `src/components/cards/` | Full Gear, compact summary, rich paragraphs, dice, gates and spoiler presentation |
+| `src/components/cards/` | Full Gear, equipped grayscale, shared search grid, rich paragraphs, dice, gates and spoiler presentation |
 | `src/domain/card-presentation.ts` | Pure formatting, gate/dice rules, links, secret detection and face selection |
 | `src/domain/keywords.ts`, `src/catalogue/keywords.ts` | Pure resolver and bundled dictionary access |
 | `src/state/SpoilerProvider.tsx` | Session visibility shared across screens |

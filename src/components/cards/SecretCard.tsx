@@ -3,10 +3,10 @@ import { Button } from '../Button';
 import type { CardDefinition } from '../../domain/cards';
 import { secretLabel } from '../../domain/card-presentation';
 
-export function SecretCard({ card, onReveal, compact = false }: { card: CardDefinition; onReveal: () => void; compact?: boolean }) {
+export function SecretCard({ card, onReveal, compact = false }: { card: CardDefinition; onReveal?: () => void; compact?: boolean }) {
   return <View style={[styles.card, compact && styles.compact]}>
     <Text style={styles.title}>Spoiler warning</Text><Text style={styles.label}>{secretLabel(card)}</Text>
-    <Button quiet label="Reveal this card" onPress={onReveal} style={styles.button}><Text style={styles.label}>Reveal this card</Text></Button>
+    {onReveal && <Button quiet label="Reveal this card" onPress={onReveal} style={styles.button}><Text style={styles.label}>Reveal this card</Text></Button>}
   </View>;
 }
 const styles = StyleSheet.create({

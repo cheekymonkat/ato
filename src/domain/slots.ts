@@ -3,7 +3,7 @@ import type { CardInstance, EquipmentAssignment } from './party.ts';
 import { assert } from './json.ts';
 
 export type SlotBaseline = Record<SlotKind, number>;
-/** Starting UI baseline; attachment-host and hand-span rules are added in Stage 4. */
+/** Starting dashboard baseline; loadout.ts validates placement and derives active capacity. */
 export const DEFAULT_BASELINE: Readonly<SlotBaseline> = Object.freeze({ hand: 2, armor: 1, support: 2, attachment: 3, mnemos: 2, 'fated-mnemos': 2 });
 export interface CapacityPosition {
   id: string; kind: SlotKind; eligibility: SlotEligibility | null;

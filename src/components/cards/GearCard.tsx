@@ -3,6 +3,7 @@ import type { CardFace } from '../../domain/cards';
 import { diceLayers, displayGate, displayValue, gearTitleSize, objects, overheadGate, strings } from '../../domain/card-presentation';
 import { cycleColour, gearTheme as g } from '../../theme/gear-tokens';
 import { CardIcon } from './CardIcon';
+import { CardColours, useCardColours } from './CardColours';
 import { GateBackground, GateBadge, StatGate } from './GateBadge';
 import { RichParagraph } from './RichParagraph';
 import type { TextActions } from './RichParagraph';
@@ -19,17 +20,23 @@ export function DiceStack({ dice, type = 'Power', scale = 1 }: { dice: string[];
 }
 
 function Medallion({ name, colour, scale }: { name: string; colour: string; scale: number }) {
-  return <View style={{ margin: 5 * scale, width: 42 * scale, height: 42 * scale, padding: 3 * scale, borderWidth: 3 * scale, borderColor: g.papyrus, borderRadius: 99, alignItems: 'center', justifyContent: 'center', backgroundColor: colour, boxShadow: `0 0 ${4 * scale}px ${3 * scale}px ${g.papyrusDark}` }}>
+  const paint = useCardColours();
+  return <View style={{ margin: 5 * scale, width: 42 * scale, height: 42 * scale, padding: 3 * scale, borderWidth: 3 * scale, borderColor: paint.colour(g.papyrus), borderRadius: 99, alignItems: 'center', justifyContent: 'center', backgroundColor: paint.colour(colour), boxShadow: `0 0 ${4 * scale}px ${3 * scale}px ${paint.colour(g.papyrusDark)}` }}>
     <View style={{ paddingTop: name === '1 Hand' ? 7.5 * scale : name === 'Armor' ? 1.5 * scale : 0 }}><CardIcon name={name} size={(name === 'Gear' ? 24 : 25.2) * scale} invert /></View>
   </View>;
 }
 
-/** Source-sized previews; inspection uses intrinsic height so no ability or footer is clipped. */
-export function GearCard({ face, width = g.width, preview = false, onKeyword, onReference }: TextActions & { face: Extract<CardFace, { kind: 'gear' }>; width?: number; preview?: boolean }) {
-  const scale = width / g.width, data = face.data, colour = cycleColour(face.cycle);
+/** Source-sized previews; inspection and equipped cards grow to show every ability and footer. */
+type GearCardProps = TextActions & { face: Extract<CardFace, { kind: 'gear' }>; width?: number; preview?: boolean; exhausted?: boolean };
+export function GearCard({ exhausted = false, ...props }: GearCardProps) {
+  return <CardColours exhausted={exhausted}><GearCardFace {...props} /></CardColours>;
+}
+function GearCardFace({ face, width = g.width, preview = false, onKeyword, onReference }: GearCardProps) {
+  const paint = useCardColours();
+  const scale = width / g.width, data = face.data, colour = paint.colour(cycleColour(face.cycle));
   const abilitySize = preview ? 13 * scale : Math.max(14, 13 * scale);
   const statSize = 15 * scale, pad = width * (25 / 130) * 0.03;
-  const statCell = { minHeight: 25 * scale + pad * 2, paddingVertical: pad, backgroundColor: g.stat, alignItems: 'center' as const, justifyContent: 'center' as const };
+  const statCell = { minHeight: 25 * scale + pad * 2, paddingVertical: pad, backgroundColor: paint.colour(g.stat), alignItems: 'center' as const, justifyContent: 'center' as const };
   const offensive = data.offensiveStatistics, power = objects(offensive.power), defensive = objects(data.defensiveStatistics), groups = objects(data.gatedAbilities);
   const content = <View style={{ minHeight: g.height * scale, justifyContent: 'space-between', flexGrow: 1 }}>
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 * scale }}>
@@ -52,7 +59,7 @@ export function GearCard({ face, width = g.width, preview = false, onKeyword, on
       <View style={{ flex: 80 }} />
       <View style={{ flex: 25, gap: 8 * scale, overflow: 'hidden' }}>{defensive.map((entry, index) => {
         const type = displayValue(entry.type), resistance = ['Midas', 'Laser', 'Microwave', 'Sun', 'Despair', 'Pain'].includes(type), gate = displayGate(entry.gate);
-        return <View key={index} style={{ backgroundColor: resistance ? '#000000' : g.stat, paddingBottom: pad }}>
+        return <View key={index} style={{ backgroundColor: resistance ? '#000000' : paint.colour(g.stat), paddingBottom: pad }}>
           {gate && <StatGate gate={gate} scale={scale} />}
           <View style={[styles.statRow, { minHeight: 25 * scale }]}>{type === 'Armor' ? <DiceStack dice={strings(entry.armorDice)} type="Armor" scale={scale} /> : <>
             <Text style={{ color: resistance ? '#FFFFFF' : '#000000', fontSize: statSize }}>{displayValue(entry.amount)} </Text><CardIcon name={type} type="Armor" size={statSize * 1.5} invert={resistance} colour={resistance ? '#FFFFFF' : '#000000'} />
@@ -78,7 +85,7 @@ export function GearCard({ face, width = g.width, preview = false, onKeyword, on
       </View>
     </View>
   </View>;
-  return <View testID={`gear-card-${face.id}`} style={{ width, maxWidth: '100%', backgroundColor: g.papyrus, borderRadius: 10 * scale, overflow: 'hidden' }}>
+  return <View testID={`gear-card-${face.id}`} style={{ width, maxWidth: '100%', backgroundColor: paint.colour(g.papyrus), borderRadius: 10 * scale, overflow: 'hidden' }}>
     {preview ? <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={false} style={{ height: g.height * scale }} contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps="handled">{content}</ScrollView> : content}
   </View>;
 }

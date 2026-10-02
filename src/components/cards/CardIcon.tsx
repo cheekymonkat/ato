@@ -2,6 +2,7 @@ import { useId } from 'react';
 import { Text } from 'react-native';
 import { SvgXml } from 'react-native-svg';
 import { gearIcons } from '../../theme/gear-icons';
+import { useCardColours } from './CardColours';
 
 const nonInvertible = new Set(['Progress', 'Reveal', 'RedPowerDie', 'RedArmorDie', 'BlackPowerDie', 'BlackArmorDie', 'WhitePowerDie', 'WhiteArmorDie', 'MortalPowerDie', 'MortalArmorDie', 'Doom', 'WoO', 'PriorityTarget', 'ToHit', 'InvertedDoom', 'InvertedProgress']);
 export function iconKey(name: string, type?: 'Power' | 'Armor', invert = false): string {
@@ -27,10 +28,11 @@ function invertSvg(key: string, xml: string) {
 }
 
 export function CardIcon({ name, size = 13, type, invert = false, colour = '#000000' }: { name: string; size?: number; type?: 'Power' | 'Armor'; invert?: boolean; colour?: string }) {
+  const paint = useCardColours();
   const id = useId().replace(/[^a-zA-Z0-9_-]/g, ''), key = iconKey(name, type, invert);
   const source = gearIcons[key];
-  if (!source) return <Text accessibilityLabel={`Missing symbol: ${name}`} style={{ color: colour, fontSize: size, flexShrink: 1 }}>{name}</Text>;
-  let xml = invert && !nonInvertible.has(key) ? invertSvg(key, source) : source;
+  if (!source) return <Text accessibilityLabel={`Missing symbol: ${name}`} style={{ color: paint.colour(colour), fontSize: size, flexShrink: 1 }}>{name}</Text>;
+  let xml = paint.svg(invert && !nonInvertible.has(key) ? invertSvg(key, source) : source);
   // Isolate SVG IDs on web when the same symbol occurs several times in a card.
   const ids = [...xml.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   for (const svgId of ids) { xml = xml.replaceAll(`id="${svgId}"`, `id="${svgId}-${id}"`).replaceAll(`url(#${svgId})`, `url(#${svgId}-${id})`).replaceAll(`href="#${svgId}"`, `href="#${svgId}-${id}"`); }

@@ -8,8 +8,15 @@ export type SkillName = typeof SKILL_NAMES[number];
 export interface CardInstance {
   id: string; definitionId: DefinitionId; faceId: FaceId; exhausted: boolean;
   enabledEffectIds: string[]; counters: Record<string, number>;
+  /** Explicit player confirmation, never inferred from a condition's prose. */
+  satisfiedEffectIds?: string[];
 }
-export interface EquipmentAssignment { instanceId: string; positionIds: string[]; attachmentHostId: string | null }
+export interface EquipmentAssignment {
+  instanceId: string; positionIds: string[];
+  /** Legacy metadata; new attachments are placed directly with a null host. */
+  attachmentHostId: string | null;
+  override?: { reason: string; codes: string[] };
+}
 export interface Argonaut {
   id: string; name: string; colour: string; argonautDefinitionId: DefinitionId | null;
   skills: Record<SkillName, number>; titan: CardInstance | null;
@@ -48,6 +55,7 @@ function checkInstance(value: unknown, path: string): asserts value is CardInsta
   assert(isRecord(value) && typeof value.id === 'string' && value.id.trim() && typeof value.definitionId === 'string' && value.definitionId.trim(), `${path}: invalid instance identity`);
   assert(value.faceId === 'front' || value.faceId === 'back', `${path}: invalid face`);
   assert(typeof value.exhausted === 'boolean' && strings(value.enabledEffectIds) && dictionary(value.counters), `${path}: invalid instance state`);
+  assert(value.satisfiedEffectIds === undefined || strings(value.satisfiedEffectIds), `${path}: invalid confirmed effects`);
 }
 
 /** Catalogue resolution is separate so missing definitions can be recovered on restore. */
@@ -83,7 +91,9 @@ export function parseParty(value: unknown): Party {
       assert(!equipped.has(assignment.instanceId), `${path}: duplicate assignment`); equipped.add(assignment.instanceId);
       assert(strings(assignment.positionIds) && assignment.positionIds.length > 0, `${path}: missing positions`);
       for (const positionId of assignment.positionIds) { assert(!occupied.has(positionId), `${path}: position assigned twice`); occupied.add(positionId); }
-      assert(assignment.attachmentHostId === null || (typeof assignment.attachmentHostId === 'string' && ownIds.has(assignment.attachmentHostId) && assignment.attachmentHostId !== assignment.instanceId), `${path}: invalid attachment host`);
+      const titanId = isRecord(argonaut.titan) ? argonaut.titan.id : null;
+      assert(assignment.attachmentHostId === null || (typeof assignment.attachmentHostId === 'string' && (ownIds.has(assignment.attachmentHostId) || assignment.attachmentHostId === titanId || assignment.attachmentHostId === argonaut.id) && assignment.attachmentHostId !== assignment.instanceId), `${path}: invalid attachment host`);
+      assert(assignment.override === undefined || (isRecord(assignment.override) && typeof assignment.override.reason === 'string' && assignment.override.reason.trim() && strings(assignment.override.codes)), `${path}: invalid override`);
     }
     for (const instanceId of [...argonaut.mnemosIds, ...argonaut.fatedMnemosIds]) assert(ownIds.has(instanceId), `${path}: dangling memory instance`);
     const assigned = [...argonaut.equipment.map(a => (a as Record<string, unknown>).instanceId), ...argonaut.mnemosIds, ...argonaut.fatedMnemosIds];

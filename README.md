@@ -2,10 +2,12 @@
 
 An Aeon Trespass: Odyssey Argonaut dashboard built with Expo and TypeScript for
 web, iOS and Android. It contains a bundled catalogue and independent player
-state for four Argonauts. Select **Browse Gear** on the dashboard to search cards,
-inspect abilities and flip reversible Gear. Secret cards start hidden.
-[Stage 3 status and verification](docs/STAGE_3_GEAR.md) records the rendering
-rules, completed checks and remaining native runtime review. The earlier
+state for four Argonauts. Open the top-right menu and select **Browse Gear** to
+search cards, inspect abilities and flip reversible Gear. Select a dashboard
+card or empty slot to construct or edit a loadout. Secret cards start hidden.
+[Stage 4 status and verification](docs/STAGE_4_LOADOUT.md) records equipment
+editing, full dashboard cards, bonus capacity, direct attachment placement and pending runtime review.
+[Gear rendering notes](docs/STAGE_3_GEAR.md) describe the card design. The earlier
 [dashboard notes](docs/STAGE_2_DASHBOARD.md) cover Argonaut controls and layout.
 
 ## Start
