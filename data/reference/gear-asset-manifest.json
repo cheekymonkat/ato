@@ -201,6 +201,11 @@
       "sha256": "fb10b31d2615307a3f2982c104172e01900e1390d6eaaa969c3c08023b4bedea"
     },
     {
+      "name": "Precision",
+      "file": "images/Precision.svg",
+      "sha256": "5abf56411290f35c360f5415c45b88b02b47b9094e86596304d3de69ae2e1737"
+    },
+    {
       "name": "PriorityTarget",
       "file": "images/PriorityTarget.svg",
       "sha256": "09ae568213d9b3c1754871cb1e1e3ee86530284093d585d71c7dc9cf95949482"

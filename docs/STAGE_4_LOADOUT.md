@@ -47,10 +47,30 @@ state survives editor review, face changes, local restart and portable backups;
 it does not delete the card, its placement or its recorded choices.
 
 Active condition names also appear beside the Titan selector, after its cycle
-text, in yellow boxes with black borders and black text. The labels derive from
+text, in purple boxes with black borders and white text. The labels derive from
 the selected Argonaut’s conditions, including legacy labels, and update on
 addition, removal, card flip and Tides of Fate. They wrap when space is limited;
 the complete condition cards and controls remain in the Conditions section.
+The same row shows icon-and-count notifications for any recorded positive
+Ambrosia, Despair, Bleeding, Midas, Pain, Oxygen or Aether count. Token names
+remain in accessibility labels, without visible word labels. Zero counts hide
+their notification. Existing positive counts remain visible even if the campaign
+cycle is lowered; the token editing section retains its cycle-specific controls.
+
+Notes appears below the equipment and attachment area.
+Its multiline field starts at one line and grows with the content, including
+wrapped text and trailing blank lines. Free text is saved per Argonaut through
+the existing autosave and portable backups. Older saves start empty. Refresh
+Gear and Tides of Fate preserve notes; editing or clearing the text is manual.
+
+Afflictions appears beneath Conditions with the 14 afflictions and reference
+descriptions supplied by the user for Cycles I–V. Add affliction offers the
+current and earlier cycles, excluding existing selections. Each Argonaut can
+hold multiple afflictions, once each. Selected names join the purple status
+badges beside the Titan selector; full descriptions and confirmed removal are
+in the section below. Choices survive autosave and backups. Lowering the cycle,
+Refresh Gear and Tides of Fate preserve existing afflictions. Narrative and
+gameplay penalties are resolved manually.
 
 Refresh Gear replaces the previous/number/next controls beside Titan selection.
 It clears exhaustion on the selected Argonaut’s card instances, including both

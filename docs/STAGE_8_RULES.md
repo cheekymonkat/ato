@@ -77,6 +77,9 @@ counters based on the supplied AI conversation. Temporary token expiry and
 lasting token cleanup remain player controlled, with Tides of Fate clearing the
 recorded totals.
 
+The modifier controls show the Precision/Speed icons instead of visible words;
+their counter values and decrease/increase buttons retain named accessibility labels.
+
 Assigned cards derive their displayed values from printed data + modifier tokens
 + direct passive Gear effects. The printed catalogue is never overwritten.
 Changed values are red (grey while exhausted/discarded), and accessibility labels

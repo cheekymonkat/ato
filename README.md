@@ -25,7 +25,16 @@ retain their printed-cost eligibility; older exhaustion can always be cleared.
 **Refresh Gear** beside the Titan selector replaces the previous/next controls
 and unexhausts the selected Argonaut’s Gear, memories and Titan. Discards and
 progress stay intact; tabs and swiping still switch Argonauts. Active condition
-names appear after the cycle text in yellow boxes with black borders.
+names appear after the cycle text in purple boxes with white text and black
+borders. Token types with a positive count show their icon and count in matching
+boxes; zero counts are hidden.
+**Notes** beneath Attachments is a free-text field saved
+per Argonaut. It starts at one line and grows with new lines and wrapped text.
+Notes are included in campaign backups and kept by Refresh Gear and Tides of Fate.
+**Afflictions** beneath Conditions tracks the 14 supplied Cycle I–V afflictions.
+Choices follow the campaign cycle; selected names appear in the purple status
+bar, with descriptions below. Each can be added once per Argonaut, and removal
+requires confirmation. Effects remain manual; battle cleanup preserves them.
 When editing an Argonaut name, **Update name only** keeps their portrait bonus
 and all progress. **Replace Argonaut and reset** retains the existing confirmed
 replacement flow.
@@ -90,7 +99,8 @@ traits, while discarded or pending Gear does not. Cyclopean Might and Elder
 Might offer verified two-hand placement for three-handed Weapons. Unknown
 Might’s Support trade-off and other unresolved effects remain manual.
 The Titan selector row has signed **Precision** and **Speed** modifier counters,
-saved per Argonaut. Assigned Weapon Precision and Titan movement show adjusted
+shown as icons with − / value / + controls and saved per Argonaut.
+Assigned Weapon Precision and Titan movement show adjusted
 values in red, including direct passive Gear effects and met numerical gates
 (for example, Puzzle Axe at three Labyrinth cards). The rules sheet explains
 each contribution. Tides of Fate and confirmed Argonaut replacement clear the

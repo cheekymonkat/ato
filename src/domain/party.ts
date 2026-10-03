@@ -4,6 +4,8 @@ import type { JsonValue } from './json.ts';
 import { isCampaignCycle, TOKEN_TYPES } from './tokens.ts';
 import type { CampaignCycle } from './tokens.ts';
 import { validConditionRecords } from './conditions.ts';
+import { isAfflictionId } from './afflictions.ts';
+import type { AfflictionId } from './afflictions.ts';
 
 export const ARGONAUT_COLOURS = ['#B54A48', '#416EAA', '#547E59', '#B38A35'] as const;
 export const SKILL_NAMES = ['Courage', 'Cunning', 'Endurance', 'Fury', 'Will', 'Wisdom'] as const;
@@ -42,6 +44,10 @@ export interface Argonaut {
   combatModifiers?: { precision: number; speed: number };
   /** Optional structured records; legacy labels remain recoverable separately. */
   conditions?: ConditionRecord[];
+  /** Free-text notes; absent in older saves means empty. */
+  notes?: string;
+  /** Persistent selections from the affliction reference list; absent means none. */
+  afflictions?: AfflictionId[];
 }
 export interface Party {
   saveSchemaVersion: 2; id: string; catalogueVersion: string;
@@ -120,6 +126,8 @@ export function parseParty(value: unknown): Party {
   for (const [index, argonaut] of value.argonauts.entries()) {
     const path = `argonauts/${index}`;
     assert(isRecord(argonaut) && typeof argonaut.id === 'string' && argonaut.id.trim() && typeof argonaut.name === 'string', `${path}: invalid identity`);
+    assert(argonaut.notes === undefined || typeof argonaut.notes === 'string', `${path}: invalid notes`);
+    assert(argonaut.afflictions === undefined || Array.isArray(argonaut.afflictions) && argonaut.afflictions.every(isAfflictionId) && new Set(argonaut.afflictions).size === argonaut.afflictions.length, `${path}: invalid or duplicate afflictions`);
     assert(isColour(argonaut.colour), `${path}: colour must be #RRGGBB`);
     assert(argonaut.argonautDefinitionId === null || (typeof argonaut.argonautDefinitionId === 'string' && argonaut.argonautDefinitionId.trim()), `${path}: invalid Argonaut definition`);
     const skills = argonaut.skills, counters = argonaut.counters;

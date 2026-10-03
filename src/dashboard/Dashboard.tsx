@@ -5,6 +5,7 @@ import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { ReferenceCard } from '../components/cards/ReferenceCard';
+import { CardIcon } from '../components/cards/CardIcon';
 import { GateAssistance } from '../components/cards/GateAssistance';
 import { CombatStats } from '../components/cards/CombatStats';
 import { Button } from '../components/Button';
@@ -37,7 +38,11 @@ import { ConditionArea } from './ConditionArea';
 import { SharedResources } from './SharedResources';
 import { RulesAssistanceSheet } from './RulesAssistanceSheet';
 import { ModifierControls } from './ModifierControls';
+import { ArgonautNotes } from './ArgonautNotes';
+import { AfflictionArea } from './AfflictionArea';
+import { afflictionRecords } from '../domain/afflictions';
 import { conditionRecords } from '../domain/conditions';
+import { TOKEN_TYPES, tokenCount } from '../domain/tokens';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -61,6 +66,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const index = party.order.indexOf(argonaut.id);
   const positions = useMemo(() => dashboardPositions(argonaut, getCatalogue()), [argonaut]);
   const conditions = useMemo(() => conditionRecords(argonaut), [argonaut]);
+  const tokenNotifications = TOKEN_TYPES.map(({ name }) => ({ name, count: tokenCount(argonaut, name) })).filter(token => token.count > 0);
   const skills = useMemo(() => argonautSkills(argonaut, getCatalogue()), [argonaut]);
   const titan = argonaut.titan && getCatalogue().getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   const titanCard = argonaut.titan && getCatalogue().get(argonaut.titan.definitionId), spoilers = useSpoilers();
@@ -148,6 +154,14 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
               {conditions.map(condition => <View key={condition.id} testID={`condition-label-${condition.id}`} style={styles.conditionLabel}>
                 <Text accessibilityLabel={`Active condition: ${condition.name}`} style={styles.conditionText}>{condition.name}</Text>
               </View>)}
+              {afflictionRecords(argonaut).map(affliction => <View key={affliction.id} testID={`affliction-label-${affliction.id}`} style={styles.conditionLabel}>
+                <Text accessibilityLabel={`Active affliction: ${affliction.name}`} style={styles.conditionText}>{affliction.name}</Text>
+              </View>)}
+              {tokenNotifications.map(({ name, count }) => <View key={name} testID={`token-notification-${name}`} accessible
+                accessibilityLabel={`${name}: ${count} ${count === 1 ? 'token' : 'tokens'}`} accessibilityLiveRegion="polite" style={styles.conditionLabel}>
+                <CardIcon name={name} size={18} invert colour="#FFFFFF" />
+                <Text style={styles.conditionText}>{count}</Text>
+              </View>)}
             </View></View>
             {width >= 1040 && <View style={styles.modifiers}><ModifierControls argonaut={argonaut} /></View>}
             <Button quiet label="Refresh Gear" onPress={() => dispatch({ type: 'refresh-gear', argonautId: argonaut.id })} style={styles.refreshGear} />
@@ -158,7 +172,10 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
         <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
 
         <CombatStats argonaut={argonaut}><GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
-          <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}><EquipmentArea positions={positions} argonaut={argonaut} /></View>
+          <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}>
+            <EquipmentArea positions={positions} argonaut={argonaut} />
+            <ArgonautNotes key={`${party.id}:${argonaut.id}`} argonaut={argonaut} />
+          </View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
               {(!titan || hiddenTitan) && referenceLinks}
@@ -176,6 +193,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
             <MemoryArea argonaut={argonaut} />
             <TokenArea argonaut={argonaut} />
             <ConditionArea argonaut={argonaut} />
+            <AfflictionArea key={`${party.id}:${argonaut.id}`} argonaut={argonaut} />
             <SharedResources owner={argonaut.id} />
           </View>
         </View></GateAssistance></CombatStats>
@@ -229,11 +247,11 @@ const styles = StyleSheet.create({
   skills: { flex: 1, minWidth: 0, flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   skillsStacked: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' }, skillCell: { flexGrow: 1, flexShrink: 0, flexBasis: '30%', minWidth: 110 },
   titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexWrap: 'wrap' },
-  modifiers: { flex: 1, minWidth: 400 }, modifiersSmall: { flexGrow: 1, flexShrink: 0, flexBasis: '100%', minWidth: 0 },
+  modifiers: { flex: 1, minWidth: 320 }, modifiersSmall: { flexGrow: 1, flexShrink: 0, flexBasis: '100%', minWidth: 0 },
   titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16, flexShrink: 1 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14, flexShrink: 1 }, titanName: { color: theme.ink, fontSize: 13, flexShrink: 1 }, titanMeta: { color: theme.muted, fontSize: 11 },
   titanStatus: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 6, flexShrink: 1, maxWidth: '100%' },
-  conditionLabel: { borderWidth: 1, borderColor: '#000000', backgroundColor: '#F4D75E', borderRadius: 3, paddingHorizontal: 8, paddingVertical: 4, maxWidth: '100%' },
-  conditionText: { color: '#000000', fontSize: 12, lineHeight: 18, fontWeight: '600' },
+  conditionLabel: { flexDirection: 'row', alignItems: 'center', gap: 6, borderWidth: 1, borderColor: '#000000', backgroundColor: '#70429B', borderRadius: 3, paddingHorizontal: 8, paddingVertical: 4, maxWidth: '100%' },
+  conditionText: { color: '#FFFFFF', fontSize: 12, lineHeight: 18, fontWeight: '600', flexShrink: 1 },
   separator: { height: 4, width: '100%' },
   board: { width: '100%', paddingHorizontal: 32, paddingTop: 26, flexDirection: 'row', gap: 32 }, boardNarrow: { flexDirection: 'column', gap: 32 },
   equipmentColumn: { flexGrow: 1.6, flexShrink: 1, flexBasis: 0, minWidth: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },

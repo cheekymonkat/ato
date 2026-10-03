@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT.parent / 'ato_docs'
-NAMES = {'Gear', 'd10', 'Condition', 'Reaction', 'OneHanded', 'TwoHanded', 'ThreeHanded', 'TwoOneHanded', 'ThreeOneHanded', 'Support', 'Attachment', 'Armor', 'Power'}
+NAMES = {'Gear', 'd10', 'Condition', 'Reaction', 'OneHanded', 'TwoHanded', 'ThreeHanded', 'TwoOneHanded', 'ThreeOneHanded', 'Support', 'Attachment', 'Armor', 'Power', 'Precision', 'Speed'}
 ALIASES = {'1 Hand': 'OneHanded', '2 Hands': 'TwoHanded', '3 Hands': 'ThreeHanded', '2 1 Hands': 'TwoOneHanded', '3 1 Hands': 'ThreeOneHanded', 'Labyrinth': 'Labyrinthians', 'AdversaryActivation': 'Adversary'}
 for colour in ('Red', 'Black', 'White', 'Mortal'):
     for kind in ('Power', 'Armor'):

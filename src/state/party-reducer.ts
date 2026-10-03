@@ -15,6 +15,8 @@ import { changeToken, isCampaignCycle } from '../domain/tokens.ts';
 import type { CampaignCycle, TokenName } from '../domain/tokens.ts';
 import { conditionRecords, conditionReverse, removeCondition, setCondition, supportsCondition, validCondition } from '../domain/conditions.ts';
 import { clearAllArgonauts, refreshArgonautCards } from '../domain/battle-reset.ts';
+import { AFFLICTIONS } from '../domain/afflictions.ts';
+import type { AfflictionId } from '../domain/afflictions.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
@@ -36,6 +38,9 @@ export type PartyAction =
   | { type: 'argonaut-change'; argonautId: string; name: string; definitionId: string | null; confirmed: boolean; partyId: string; expectedName: string; expectedDefinitionId: string | null }
   | { type: 'argonaut-rename'; argonautId: string; name: string; partyId: string; expectedName: string; expectedDefinitionId: string | null }
   | { type: 'colour'; argonautId: string; colour: string }
+  | { type: 'notes'; argonautId: string; partyId: string; text: string }
+  | { type: 'add-affliction'; argonautId: string; partyId: string; id: AfflictionId }
+  | { type: 'remove-affliction'; argonautId: string; partyId: string; id: AfflictionId; confirmed: boolean }
   | { type: 'skill'; argonautId: string; skill: SkillName; delta: -1 | 1 }
   | { type: 'counter'; argonautId: string; counter: CounterName; value: number; confirmOverflow?: boolean }
   | { type: 'titan'; argonautId: string; titan: CardInstance | null }
@@ -78,6 +83,17 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
   const current = party.argonauts.find(argonaut => argonaut.id === action.argonautId)!;
   let updated = current;
   switch (action.type) {
+    case 'add-affliction': {
+      const definition = AFFLICTIONS.find(affliction => affliction.id === action.id);
+      if (action.partyId === party.id && definition && definition.cycle <= campaignCycle(party) && !current.afflictions?.includes(action.id)) updated = { ...current, afflictions: [...(current.afflictions ?? []), action.id] };
+      break;
+    }
+    case 'remove-affliction':
+      if (action.partyId === party.id && action.confirmed === true && current.afflictions?.includes(action.id)) updated = { ...current, afflictions: current.afflictions.filter(id => id !== action.id) };
+      break;
+    case 'notes':
+      if (action.partyId === party.id && typeof action.text === 'string' && action.text !== (current.notes ?? '')) updated = { ...current, notes: action.text };
+      break;
     case 'refresh-gear': updated = refreshArgonautCards(current); break;
     case 'combat-modifier': {
       if (!['precision', 'speed'].includes(action.modifier) || ![-1, 1].includes(action.delta)) break;
