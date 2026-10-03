@@ -11,6 +11,7 @@ import { GearCard } from '../components/cards/GearCard';
 import { SecretCard } from '../components/cards/SecretCard';
 import { GearResults } from '../components/cards/GearResults';
 import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign';
+import { titanHandRule } from '../domain/hand-rules';
 import type { CardDefinition } from '../domain/cards';
 import { loadoutState, planEquipment, slotOptions } from '../domain/loadout';
 import type { EquipRequest } from '../domain/loadout';
@@ -43,7 +44,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
   const face = selected?.faces.find(face => face.id === (params.face || instance?.faceId || 'front')) || selected?.faces[0];
   const otherFace = selected?.faces.find(side => side.id !== face?.id);
   const hidden = selected && spoilers.hidden(selected), reuse = Boolean(instance && selected?.id === instance.definitionId);
-  const options = face ? slotOptions(face).filter(option => !target || option.kind === target.kind) : [];
+  const options = face ? slotOptions(face, titanHandRule(argonaut, catalogue)).filter(option => !target || option.kind === target.kind) : [];
   const selectedUnits = units ?? (reuse && face?.id === instance?.faceId ? options.find(option => option.units === assignment?.positionIds.length)?.units : undefined) ?? options[0]?.units ?? 1;
   const request: EquipRequest | null = selected && face && target ? { definitionId: selected.id, faceId: face.id, positionId: target.id,
     instanceId: reuse ? instance!.id : newId, reuse, units: selectedUnits, overrideReason: override ? reason : undefined } : null;

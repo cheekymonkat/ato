@@ -6,6 +6,7 @@ export type { CampaignCycle } from './campaign.ts';
 export const TOKEN_TYPES = [
   { name: 'Ambrosia', firstCycle: 1 },
   { name: 'Despair', firstCycle: 1 },
+  { name: 'Bleeding', firstCycle: 3 },
   { name: 'Midas', firstCycle: 4 },
   { name: 'Pain', firstCycle: 4 },
   { name: 'Oxygen', firstCycle: 5 },

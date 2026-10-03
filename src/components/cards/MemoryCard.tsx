@@ -43,7 +43,7 @@ export function MemoryCard({ face, progress }: { face: MemoryFace; progress?: Me
     </View>
     {face.kind === 'mnemos' ? <View style={[styles.panels, { marginHorizontal: padding }]}>
       {memoryAbilityPanels(face, progress).map(({ group, index }) => <View key={index} style={[styles.ability, { backgroundColor: paint.colour(paint.inactive ? m.inactivePanel : m.ability) }]}>
-        {progress && <Text style={[styles.availability, { color: ink }]}>{`Ability ${index + 1} · Available`}</Text>}
+        {progress && <Text style={[styles.availability, { color: ink }]}>{`Ability ${index + 1} · Nodes unlocked`}</Text>}
         <RichParagraph paragraph={group} inlineGates size={14} colour={ink} />
       </View>)}
     </View> : side && <>

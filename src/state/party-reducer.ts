@@ -20,6 +20,7 @@ export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
   | { type: 'select'; argonautId: string }
   | { type: 'campaign-cycle'; argonautId: string; cycle: CampaignCycle }
+  | { type: 'rules-assistance'; argonautId: string; partyId: string; enabled: boolean }
   | { type: 'token'; argonautId: string; token: TokenName; delta: -1 | 1 }
   | { type: 'reset-tokens'; argonautId: string }
   | { type: 'condition'; argonautId: string; condition: ConditionRecord }
@@ -54,6 +55,8 @@ export type PartyAction =
 /** Every edit names its owner explicitly, including callbacks opened before navigation. */
 export function partyReducer(party: Party, action: PartyAction, catalogue?: CatalogueRepository): Party {
   if (!party.order.includes(action.argonautId)) return party;
+  if (action.type === 'rules-assistance') return action.partyId === party.id && typeof action.enabled === 'boolean' && Boolean(party.rulesAssistance) !== action.enabled
+    ? { ...party, rulesAssistance: action.enabled } : party;
   if (action.type === 'clear-all') return action.confirmed === true && action.partyId === party.id ? clearAllArgonauts(party) : party;
   if (action.type === 'select') return party.activeArgonautId === action.argonautId ? party : { ...party, activeArgonautId: action.argonautId };
   if (action.type === 'campaign-cycle') return isCampaignCycle(action.cycle) && party.campaignCycle !== action.cycle ? { ...party, campaignCycle: action.cycle } : party;

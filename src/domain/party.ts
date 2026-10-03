@@ -45,6 +45,8 @@ export interface Party {
   saveSchemaVersion: 2; id: string; catalogueVersion: string;
   /** Optional for compatibility with existing saves; missing means Cycle 1. */
   campaignCycle?: CampaignCycle;
+  /** Read-only assigned-card gate highlighting; absent in existing saves means off. */
+  rulesAssistance?: boolean;
   argonauts: Argonaut[]; order: string[]; activeArgonautId: string;
   resources: Record<string, number>;
 }
@@ -110,6 +112,7 @@ export function parseParty(value: unknown): Party {
   assert(isRecord(value) && isJsonValue(value) && value.saveSchemaVersion === 2, 'Unsupported party save schema or non-JSON state');
   assert(typeof value.id === 'string' && value.id.trim() && typeof value.catalogueVersion === 'string' && value.catalogueVersion.trim(), 'Invalid party identity/version');
   assert(value.campaignCycle === undefined || isCampaignCycle(value.campaignCycle), 'Invalid campaign cycle');
+  assert(value.rulesAssistance === undefined || typeof value.rulesAssistance === 'boolean', 'Invalid rules assistance setting');
   assert(Array.isArray(value.argonauts) && value.argonauts.length === 4, 'Party must contain four Argonauts');
   const allInstanceIds = new Set<string>();
   for (const [index, argonaut] of value.argonauts.entries()) {

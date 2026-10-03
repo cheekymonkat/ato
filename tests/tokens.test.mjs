@@ -13,9 +13,10 @@ const fresh = () => createParty('tokens', ['a', 'b', 'c', 'd'], catalogue.versio
 const change = (party, owner, token, delta) => partyReducer(party, { type: 'token', argonautId: owner, token, delta });
 
 test('cycle availability uses campaign cycle independently of Titans and retains hidden counts', () => {
-  for (const cycle of [1, 2, 3]) assert.deepEqual(tokenTypesForCycle(cycle).map(t => t.name), ['Ambrosia', 'Despair']);
-  assert.deepEqual(tokenTypesForCycle(4).map(t => t.name), ['Ambrosia', 'Despair', 'Midas', 'Pain']);
-  assert.deepEqual(tokenTypesForCycle(5).map(t => t.name), ['Ambrosia', 'Despair', 'Midas', 'Pain', 'Oxygen', 'Aether']);
+  for (const cycle of [1, 2]) assert.deepEqual(tokenTypesForCycle(cycle).map(t => t.name), ['Ambrosia', 'Despair']);
+  assert.deepEqual(tokenTypesForCycle(3).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding']);
+  assert.deepEqual(tokenTypesForCycle(4).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding', 'Midas', 'Pain']);
+  assert.deepEqual(tokenTypesForCycle(5).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding', 'Midas', 'Pain', 'Oxygen', 'Aether']);
   let party = change(fresh(), 'a', 'Oxygen', 1);
   party = partyReducer(party, { type: 'campaign-cycle', argonautId: 'a', cycle: 5 });
   assert.equal(campaignCycle(party), 5);
@@ -29,6 +30,7 @@ test('token edits use current amounts, remain isolated and apply no automatic ga
   for (const token of tokenTypesForCycle(5)) for (let n = 0; n < 6; n++) party = change(party, 'a', token.name, 1);
   assert.equal(tokenCount(party.argonauts[0], 'Ambrosia'), 6);
   assert.equal(tokenCount(party.argonauts[0], 'Despair'), 6);
+  assert.equal(tokenCount(party.argonauts[0], 'Bleeding'), 6);
   assert.deepEqual(party.argonauts[0].skills, start.argonauts[0].skills);
   assert.deepEqual(party.argonauts[0].equipment, start.argonauts[0].equipment);
   assert.equal(party.argonauts[0].titan, null);
@@ -48,8 +50,8 @@ test('token counts cannot underflow, overflow safe integers or accept malformed 
   party.argonauts[0].tokens.Aether = Number.MAX_SAFE_INTEGER;
   assert.equal(change(party, 'a', 'Aether', 1), party);
   assert.equal(tokenCount(change(party, 'a', 'Aether', -1).argonauts[0], 'Aether'), Number.MAX_SAFE_INTEGER - 1);
-  for (const amount of [-1, 0.5, Infinity]) {
-    const invalid = structuredClone(party); invalid.argonauts[0].tokens.Ambrosia = amount;
+  for (const token of ['Ambrosia', 'Bleeding']) for (const amount of [-1, 0.5, Infinity]) {
+    const invalid = structuredClone(party); invalid.argonauts[0].tokens[token] = amount;
     assert.throws(() => parseParty(invalid));
   }
   assert.throws(() => parseParty({ ...party, campaignCycle: 6 }), /campaign cycle/);

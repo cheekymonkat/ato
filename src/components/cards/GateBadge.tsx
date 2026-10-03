@@ -7,6 +7,8 @@ import { gateColour } from '../../theme/gear-tokens';
 import { gearIcons } from '../../theme/gear-icons';
 import { CardIcon, iconKey } from './CardIcon';
 import { useCardColours } from './CardColours';
+import { useGateCheck } from './GateAssistance';
+import { GATE_STATUS_LABELS } from '../../domain/rules-assistance';
 
 function GateIcon({ name, size }: { name: string; size: number }) {
   return gearIcons[iconKey(name, undefined, true)] ? <CardIcon name={name} size={size} invert />
@@ -26,6 +28,7 @@ export function GateBackground({ gate }: { gate: DisplayGate }) {
 /** ATCC's split arrow polygons; native SVG uses an explicit padded viewBox instead of DOM getBBox. */
 export function GateBadge({ gate, height = 15, stat = false, filled = false }: { gate: DisplayGate; height?: number; stat?: boolean; filled?: boolean }) {
   const paint = useCardColours();
+  const check = useGateCheck(gate);
   const firstFill = filled ? paint.colour(gateColour(gate.type)) : 'none';
   const secondFill = filled ? paint.colour(gateColour(gate.type2 || gate.type)) : 'none';
   const condition = gate.type === 'Condition', or = gate.combo === 'OR', and = gate.combo === '&' || gate.combo === 'AND';
@@ -36,7 +39,7 @@ export function GateBadge({ gate, height = 15, stat = false, filled = false }: {
   const iconX = width - split - 5 - 10 - size - (gate.type2 ? size + 8 : 0) - 5;
   const iconY = 16 - size / 2;
   const viewWidth = width + spacer + 4;
-  return <View accessible accessibilityLabel={gateLabel(gate)} style={{ height, width: height * viewWidth / 36, maxWidth: '100%' }}>
+  return <View accessible accessibilityLabel={`${gateLabel(gate)}${check ? `. ${GATE_STATUS_LABELS[check.status]}. ${check.explanation}` : ''}`} style={{ height, width: height * viewWidth / 36, maxWidth: '100%' }}>
     <Svg width="100%" height="100%" viewBox={`-2 -2 ${viewWidth} 36`}>
       {stat ? <Polygon points={`${width - split - 5},0 ${width - split - 15},32 ${width - split},0 ${width - split - 10},32`} stroke="#FFFFFF" strokeWidth={3} fill="none" /> : <>
         <Polygon points={`0,16 12,0 ${width - split - 5},0 ${width - split - 15},32 12,32`} stroke="#FFFFFF" strokeWidth={3} fill={firstFill} />
@@ -52,6 +55,9 @@ export function GateBadge({ gate, height = 15, stat = false, filled = false }: {
         <SvgText x={size * 1.75} y={22} fontSize={26} fontWeight="bold" fill="#FFFFFF" textAnchor="middle">{gate.value2}</SvgText>
       </G>}
     </Svg>
+    {check && <Text accessible={false} style={{ position: 'absolute', right: -3, top: -3, width: 12, height: 12,
+      borderRadius: 6, borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: paint.colour(check.status === 'met' ? '#276B49' : check.status === 'unmet' ? '#8A3835' : '#72571D'),
+      color: '#FFFFFF', fontSize: 9, lineHeight: 10, fontWeight: '700', textAlign: 'center' }}>{check.status === 'met' ? '✓' : check.status === 'unmet' ? '−' : '?'}</Text>}
   </View>;
 }
 

@@ -5,6 +5,7 @@ import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { ReferenceCard } from '../components/cards/ReferenceCard';
+import { GateAssistance } from '../components/cards/GateAssistance';
 import { Button } from '../components/Button';
 import { Counter } from '../components/Counter';
 import { Chevron, Emblem, GameIcon } from '../components/Icon';
@@ -33,6 +34,7 @@ import { TitanPicker } from './TitanPicker';
 import { TokenArea } from './TokenArea';
 import { ConditionArea } from './ConditionArea';
 import { SharedResources } from './SharedResources';
+import { RulesAssistanceSheet } from './RulesAssistanceSheet';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   const { party, profile, dispatch } = useParty(), { width: windowWidth } = useWindowDimensions();
@@ -47,6 +49,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
   const identityStacked = width < 1040, statsStacked = width < 780;
   const [colourOpen, setColourOpen] = useState(false), [titanOpen, setTitanOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [rulesOpen, setRulesOpen] = useState(false);
   const [clearing, setClearing] = useState<{ partyId: string; argonautId: string; campaignName: string } | null>(null);
   const [overflow, setOverflow] = useState<CounterName | null>(null), [reference, setReference] = useState<'Trauma' | 'Kratos' | null>(null);
   const index = party.order.indexOf(argonaut.id);
@@ -144,7 +147,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
 
         <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
 
-        <View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
+        <GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
           <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}><EquipmentArea positions={positions} argonaut={argonaut} /></View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
@@ -165,15 +168,16 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
             <ConditionArea argonaut={argonaut} />
             <SharedResources owner={argonaut.id} />
           </View>
-        </View>
+        </View></GateAssistance>
         <View style={[styles.footer, small && styles.mobilePadding]}><Text style={styles.footerText}>AEON TRESPASS · ODYSSEY</Text><Text numberOfLines={1} style={[styles.footerText, { flex: 1, textAlign: 'right' }]}>{argonaut.name || `Argonaut ${index + 1}`} · {index + 1} / 4</Text></View>
       </ScrollView>
     </SwipeSurface>
     <DashboardMenu visible={menuOpen} compact={small} onClose={() => setMenuOpen(false)} onBrowseGear={() => {
       setMenuOpen(false); router.push('/gear');
-    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} onClearAll={() => {
+    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} onRules={() => { setMenuOpen(false); setRulesOpen(true); }} onClearAll={() => {
       setMenuOpen(false); setClearing({ partyId: party.id, argonautId: argonaut.id, campaignName: profile.name });
     }} />
+    {rulesOpen && <RulesAssistanceSheet argonaut={argonaut} onClose={() => setRulesOpen(false)} />}
     {clearing && <TidesOfFateDialog campaignName={clearing.campaignName} onClose={() => setClearing(null)} onConfirm={() => {
       dispatch({ type: 'clear-all', argonautId: clearing.argonautId, partyId: clearing.partyId, confirmed: true }); setClearing(null);
     }} />}

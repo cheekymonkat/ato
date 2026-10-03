@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { Button } from '../components/Button';
 import { ReferenceCard } from '../components/cards/ReferenceCard';
+import { GateAssistance } from '../components/cards/GateAssistance';
 import { CardActionButton } from '../components/cards/CardActionButton';
 import { CardActionRow } from '../components/cards/CardActionRow';
 import { RemovalConfirmation } from '../components/RemovalConfirmation';
@@ -44,7 +45,7 @@ export function MemoryEditor({ argonaut, kind, index }: { argonaut: Argonaut; ki
     <Text style={styles.meta}>{argonaut.name}</Text>
     {index >= capacity && <Text style={styles.warning}>This memory is outside current capacity. Remove it or keep its recorded progress.</Text>}
     {item && unavailable(item) && <Text style={styles.warning}>{unavailable(item)}</Text>}
-    {card && face ? <ReferenceCard card={card} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} memoryProgress={progress} />
+    {card && face ? <GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><ReferenceCard card={card} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} memoryProgress={progress} /></GateAssistance>
       : <Text style={styles.meta}>{item ? 'The saved memory reference is unavailable. Its progress has been kept.' : 'Choose a memory for this position.'}</Text>}
     {item && <NodeTracker argonautId={argonaut.id} instance={item} label={`${memoryFamily(kind)} ${index + 1}`} kind={kind} />}
     {(item?.discarded || item?.exhausted) && <Text style={styles.meta}>{item.discarded ? 'Discarded' : 'Exhausted'}</Text>}

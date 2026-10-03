@@ -48,7 +48,7 @@ all four Argonauts. Gear browsing and all card pickers offer cards from the
 selected cycle and earlier (Cycle 3 includes Cycles 1–3). Non-numbered cards
 remain available. Lowering the cycle retains existing assignments and counts.
 The Tokens section has saved per-Argonaut counters with ATCC symbols. The
-campaign setting shows Ambrosia/Despair in all cycles, adds Midas/Pain
+campaign setting shows Ambrosia/Despair in all cycles, adds Bleeding from Cycle 3, Midas/Pain
 from Cycle 4 and Oxygen/Aether in Cycle 5. Token gameplay effects remain manual;
 [Stage 7 notes](docs/STAGE_7_TOKENS.md) record the rules for later automation.
 Conditions use white ATCC-style cards with ochre headings/footers, grey ability
@@ -72,6 +72,16 @@ the remaining browser/native restart checks.
 editing, full dashboard cards, bonus capacity, direct attachment placement and pending runtime review.
 [Gear rendering notes](docs/STAGE_3_GEAR.md) describe the card design. The earlier
 [dashboard notes](docs/STAGE_2_DASHBOARD.md) cover Argonaut controls and layout.
+
+Stage 8 adds **Rules assistance** to the dashboard menu. It explains skill
+contributions, slot capacity and gates on Gear, Titans and unlocked memory panels.
+Turn on **Highlight card gates** to check each Argonaut’s Triskelion, token counts
+and equipped Gear traits (such as Labyrinth); the preference is saved with the
+campaign. Each equipped Gear instance contributes once; exhausted Gear retains
+traits, while discarded or pending Gear does not. Cyclopean Might and Elder
+Might offer verified two-hand placement for three-handed Weapons. Unknown
+Might’s Support trade-off and other unresolved effects remain manual.
+[Stage 8 rule sources and review notes](docs/STAGE_8_RULES.md) define the supported subset.
 
 ## Start
 

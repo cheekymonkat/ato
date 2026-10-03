@@ -15,7 +15,7 @@ and all earlier cycles. Cycle 3 therefore offers Cycles I, II and III. Tutorial
 and Mnestis Theatre are non-numbered categories and remain available. A later
 cycle card cannot be newly selected via the Gear manual-exception option or a
 preselected equipment URL; existing assignments remain readable/removable.
-This limits available choices; it does not certify acquisition or combat legality. Cycles 1–3 show Ambrosia and Despair; Cycle 4 also shows
+This limits available choices; it does not certify acquisition or combat legality. Cycles 1–2 show Ambrosia and Despair; Cycle 3 adds Bleeding; Cycle 4 also shows
 Midas and Pain; Cycle 5 adds Oxygen and Aether. Lowering the cycle hides later
 types without removing their counts. The selector is shared by all four
 Argonauts within one profile; amounts belong to each Argonaut. Other historical
@@ -32,12 +32,14 @@ are rejected at the save-validation boundary.
 These are implementation guidance supplied in conversation, not independently
 verified rulebook claims. All gameplay automation below is deferred. Precision
 is a combat modifier, separate from the six Argonaut skills. No token count
-currently changes skills, Precision, card abilities, action access or Titan life.
+currently changes skills, Precision, action access or Titan life. Stage 8 uses
+recorded counts to check printed ability gates without applying their effects.
 
 | Token | Applicable cycles | Guidance for later implementation |
 | --- | --- | --- |
 | Despair | 1–5 | While holding Despair and not adjacent to another Titan: 1 token gives −1 Precision; 2 gives −3 Precision; 3 prevents combat actions; 4+ kills the Titan unless an effect changes its Despair limit. Dealing a wound to a Primordial discards 1 Despair token. |
 | Ambrosia | 1–5 | 1–4 have no inherent effect. Cards/attacks can check the amount to scale damage or trigger effects. The base limit is 4; exceeding it (5+) immediately kills the Titan. |
+| Bleeding | 3–5 | Added after the user’s gate clarification. The counter has the existing Bleeding symbol; printed Bleeding gates compare against this token count. Encounter effects and limits stay manual. |
 | Midas | 4–5 | 1–3 are placed on individual Gear cards, disabling each affected card's special rules as it turns to gold. At 4+ the Titan turns completely to gold and dies. |
 | Pain | 4–5 | Negative status track increments and encounter-specific injury triggers/thresholds; no universal flat stat penalty. |
 | Oxygen | 5 | Counter and cycle availability only; detailed rules have not yet been supplied. |
