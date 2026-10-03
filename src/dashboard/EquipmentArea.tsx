@@ -14,11 +14,11 @@ import { loadoutState } from '../domain/loadout';
 import type { SlotKind } from '../domain/cards';
 import { theme } from '../theme/tokens';
 import { useSpoilers } from '../state/SpoilerProvider';
+import { equipmentGroupWidths, equipmentSlotSize, GROUP_GAP, SLOT_GAP, SLOT_WIDTH } from './equipment-layout';
 
 const labels: Record<SlotKind, string> = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'FatedMnemos' };
-const slotWidth = 262; // 240 px card plus padding and border.
-const minimumSlotWidth = 200, slotGap = 12;
+const slotWidth = SLOT_WIDTH, slotGap = SLOT_GAP;
 
 function EquipmentSelection({ label, onPress, children }: { label: string; onPress: () => void; children: ReactNode }) {
   return <SwipeGuard><Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityHint="Opens equipment selection and editing"
@@ -65,14 +65,11 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
   </View>;
 }
 
-export function SlotRow({ kinds, positions, argonaut, compact = false, startIndex = 0 }: { kinds: SlotKind[]; positions: CapacityPosition[]; argonaut: Argonaut; compact?: boolean; startIndex?: number }) {
-  const { width } = useWindowDimensions();
-  const [rowWidth, setRowWidth] = useState(width - 32);
+function SlotRow({ kinds, positions, argonaut, rowWidth, compact = false, startIndex = 0 }: { kinds: SlotKind[]; positions: CapacityPosition[]; argonaut: Argonaut; rowWidth: number; compact?: boolean; startIndex?: number }) {
   const slots = positions.filter(position => kinds.includes(position.kind));
-  const columns = Math.min(Math.max(1, slots.length), Math.max(1, Math.floor((rowWidth + slotGap) / (minimumSlotWidth + slotGap))));
-  const cellWidth = Math.min(slotWidth, Math.floor((rowWidth - slotGap * (columns - 1)) / columns));
+  const { width: cellWidth } = equipmentSlotSize(rowWidth, slots.length);
   const counters: Partial<Record<SlotKind, number>> = {};
-  return <View style={styles.row} onLayout={event => { if (event.nativeEvent.layout.width > 0) setRowWidth(event.nativeEvent.layout.width); }}>{slots.map(position => {
+  return <View style={styles.row}>{slots.map(position => {
     const index = counters[position.kind] ?? startIndex; counters[position.kind] = index + 1;
     return <SlotCard key={position.id} position={position} index={index} argonaut={argonaut} compact={compact} cellWidth={cellWidth} />;
   })}</View>;
@@ -88,15 +85,12 @@ export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosi
     { title: 'Support', kinds: ['support'], note: `${positions.filter(position => position.kind === 'support').length} available slots` },
     { title: 'Attachments', kinds: ['attachment'], compact: true },
   ];
+  const groupWidths = equipmentGroupWidths(areaWidth, groups.map(group => positions.filter(position => group.kinds.includes(position.kind)).length));
   return <View style={styles.area}>
-    <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>{groups.map(group => {
-      const count = Math.max(1, positions.filter(position => group.kinds.includes(position.kind)).length);
-      return <View key={group.title} style={[styles.group, {
-        flexBasis: Math.min(areaWidth, count * minimumSlotWidth + (count - 1) * slotGap),
-        flexGrow: count, maxWidth: Math.min(areaWidth, count * slotWidth + (count - 1) * slotGap),
-      }]}>
+    <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>{groups.map((group, index) => {
+      return <View key={group.title} style={[styles.group, { width: groupWidths[index] }]}>
         <SectionHeading title={group.title} note={group.note} />
-        <SlotRow kinds={group.kinds} positions={positions} argonaut={argonaut} compact={group.compact} />
+        <SlotRow kinds={group.kinds} positions={positions} argonaut={argonaut} rowWidth={groupWidths[index]} compact={group.compact} />
       </View>;
     })}</View>
     {needsReassignment.length > 0 && <View style={styles.reassignment}><Text style={styles.reassignmentTitle}>Needs reassignment</Text>
@@ -116,10 +110,10 @@ export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosi
   </View>;
 }
 const styles = StyleSheet.create({
-  area: { gap: 24, minWidth: 0 }, groups: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: 24 },
+  area: { gap: 24, minWidth: 0 }, groups: { width: '100%', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: GROUP_GAP },
   group: { flexShrink: 0, minWidth: 0 }, sectionHeading: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8, marginBottom: 12 },
   heading: { fontFamily: theme.serif, fontSize: 20, color: theme.ink }, note: { color: theme.muted, fontSize: 11 },
-  row: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: slotGap },
+  row: { width: '100%', flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: slotGap },
   card: { minWidth: 88, minHeight: 168, backgroundColor: '#EAE7DF', borderWidth: 1, borderStyle: 'dashed', borderColor: '#BEB9AE', borderRadius: 6 },
   compact: { minHeight: 112 }, granted: { backgroundColor: '#E8E4D7', borderColor: theme.gold, borderStyle: 'solid' }, equipped: { backgroundColor: theme.paper, borderStyle: 'solid' },
   gearSlot: { flexGrow: 0, flexShrink: 0, minWidth: 0, maxWidth: slotWidth }, memorySlot: { flex: 1 }, selection: { padding: 10 }, pressed: { opacity: 0.7 },

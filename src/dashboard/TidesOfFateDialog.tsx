@@ -7,7 +7,7 @@ import { theme } from '../theme/tokens';
 export function TidesOfFateDialog({ campaignName, onConfirm, onClose }: { campaignName: string; onConfirm: () => void; onClose: () => void }) {
   const [accepted, setAccepted] = useState(false);
   return <Sheet visible title="Tides of Fate" subtitle={`Campaign: ${campaignName}`} onClose={onClose}>
-    <Text style={styles.text}>For all four Argonauts, this will remove conditions and tokens, ready all exhausted or discarded Gear, memories and Titans, and set Rage, Fate and Danger to 0.</Text>
+    <Text style={styles.text}>For all four Argonauts, this will remove conditions and tokens (including Precision and Speed modifiers), ready all exhausted or discarded Gear, memories and Titans, and set Rage, Fate and Danger to 0.</Text>
     <Text style={styles.text}>Equipment assignments, memory nodes, stats, colours and shared resources are kept.</Text>
     <Button quiet label="I confirm applying Tides of Fate to all four Argonauts" role="checkbox" selected={accepted} onPress={() => setAccepted(value => !value)} style={styles.checkRow}>
       <View style={[styles.check, accepted && styles.accepted]}><Text style={styles.tick}>{accepted ? '✓' : ''}</Text></View>

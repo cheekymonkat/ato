@@ -9,10 +9,13 @@ import { useCardColours } from './CardColours';
 import { CardIcon } from './CardIcon';
 import { DiceStack } from './GearCard';
 import { RichParagraph } from './RichParagraph';
+import { adjustedStat, MODIFIED_STAT_COLOUR } from '../../domain/combat-modifiers';
+import { useCombatAdjustment } from './CombatStats';
 
 /** Intrinsic height keeps all ability explanations readable on touch screens without hover. */
 export function TitanCardBody({ face, ink, headerActions, onSelect }: { face: Extract<CardFace, { kind: 'titan' }>; ink: string; headerActions?: ReactNode; onSelect?: () => void }) {
   const paint = useCardColours();
+  const speed = adjustedStat(face.data.speed, useCombatAdjustment(face, 'speed'));
   return <>
     <View style={styles.header}>
       <View style={styles.identity}>
@@ -21,8 +24,8 @@ export function TitanCardBody({ face, ink, headerActions, onSelect }: { face: Ex
           <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{face.name}</Text>
           <View style={styles.stats}>
             <DiceStack dice={[face.data.titanPower]} />
-            <View accessible accessibilityLabel={`Speed ${face.data.speed}`} style={styles.speed}>
-              <CardIcon name="Speed" size={20} /><Text style={styles.statText}>{face.data.speed}</Text>
+            <View accessible accessibilityLabel={`Speed ${speed.label}`} style={styles.speed}>
+              <CardIcon name="Speed" size={20} /><Text style={[styles.statText, { color: paint.colour(speed.changed ? MODIFIED_STAT_COLOUR : '#000000') }]}>{speed.text}</Text>
             </View>
           </View>
           </TitanSelection>

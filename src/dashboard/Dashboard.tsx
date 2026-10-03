@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { ReferenceCard } from '../components/cards/ReferenceCard';
 import { GateAssistance } from '../components/cards/GateAssistance';
+import { CombatStats } from '../components/cards/CombatStats';
 import { Button } from '../components/Button';
 import { Counter } from '../components/Counter';
 import { Chevron, Emblem, GameIcon } from '../components/Icon';
@@ -19,7 +20,7 @@ import { adjacentArgonautId } from '../state/party-reducer';
 import type { CounterName } from '../state/party-reducer';
 import { useParty } from '../state/PartyProvider';
 import { SaveNotice } from '../storage/SaveNotice';
-import { useSpoilers } from '../state/SpoilerProvider';
+import { AssignedCardVisibility, useSpoilers } from '../state/SpoilerProvider';
 import { MemoryArea } from '../memories/MemoryArea';
 import { textOnColour, theme } from '../theme/tokens';
 import { ArgonautName } from './ArgonautName';
@@ -35,8 +36,12 @@ import { TokenArea } from './TokenArea';
 import { ConditionArea } from './ConditionArea';
 import { SharedResources } from './SharedResources';
 import { RulesAssistanceSheet } from './RulesAssistanceSheet';
+import { ModifierControls } from './ModifierControls';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
+  return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
+}
+function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   const { party, profile, dispatch } = useParty(), { width: windowWidth } = useWindowDimensions();
   const [containerWidth, setContainerWidth] = useState<number | null>(null);
   const width = Math.min(windowWidth, containerWidth ?? windowWidth);
@@ -133,21 +138,23 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
             {triskelion}
             </View>
           </View>
-          <View style={[styles.titanBar, small && styles.titanBarSmall]}>
+          <View style={[styles.titanBar, width < 1040 && styles.titanBarSmall]}>
             <View style={styles.titanChoice}><Text style={styles.eyebrow}>TITAN</Text><Button quiet label="Choose Titan" onPress={() => setTitanOpen(true)} style={styles.titanButton}>
               <GameIcon name="Titan" size={20} /><Text style={styles.titanName}>{hiddenTitan ? 'Unrevealed Titan' : titan?.name || (argonaut.titan ? 'Unavailable Titan' : 'Choose a Titan')}</Text><Chevron direction="down" />
             </Button>{titan && !hiddenTitan && <Text style={styles.titanMeta}>{titan.cycle}</Text>}</View>
+            {width >= 1040 && <View style={styles.modifiers}><ModifierControls argonaut={argonaut} /></View>}
             <View style={[styles.paging, small && styles.pagingSmall]}>
               <Button quiet label="Previous Argonaut" disabled={index === 0} onPress={() => navigate(-1)} style={styles.arrow}><Chevron direction="left" /></Button>
               <Text accessibilityLiveRegion="polite" accessibilityLabel={`${argonaut.name || 'Argonaut'}, ${index + 1} of 4`} style={styles.pageNumber}>{index + 1} of 4</Text>
               <Button quiet label="Next Argonaut" disabled={index === party.order.length - 1} onPress={() => navigate(1)} style={styles.arrow}><Chevron /></Button>
             </View>
+            {width < 1040 && <View style={styles.modifiersSmall}><ModifierControls argonaut={argonaut} /></View>}
           </View>
         </View>
 
         <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
 
-        <GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
+        <CombatStats argonaut={argonaut}><GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
           <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}><EquipmentArea positions={positions} argonaut={argonaut} /></View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
@@ -168,7 +175,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
             <ConditionArea argonaut={argonaut} />
             <SharedResources owner={argonaut.id} />
           </View>
-        </View></GateAssistance>
+        </View></GateAssistance></CombatStats>
         <View style={[styles.footer, small && styles.mobilePadding]}><Text style={styles.footerText}>AEON TRESPASS · ODYSSEY</Text><Text numberOfLines={1} style={[styles.footerText, { flex: 1, textAlign: 'right' }]}>{argonaut.name || `Argonaut ${index + 1}`} · {index + 1} / 4</Text></View>
       </ScrollView>
     </SwipeSurface>
@@ -218,8 +225,9 @@ const styles = StyleSheet.create({
   identityStatsFull: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' }, identityStatsStacked: { flexDirection: 'column', alignItems: 'stretch', gap: 16 },
   skills: { flex: 1, minWidth: 0, flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
   skillsStacked: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' }, skillCell: { flexGrow: 1, flexShrink: 0, flexBasis: '30%', minWidth: 110 },
-  titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexDirection: 'column', alignItems: 'flex-start' },
-  titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14 }, titanName: { color: theme.ink, fontSize: 13 }, titanMeta: { color: theme.muted, fontSize: 11 },
+  titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexWrap: 'wrap' },
+  modifiers: { flex: 1, minWidth: 400 }, modifiersSmall: { flexGrow: 1, flexShrink: 0, flexBasis: '100%', minWidth: 0 },
+  titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16, flexShrink: 1 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14, flexShrink: 1 }, titanName: { color: theme.ink, fontSize: 13, flexShrink: 1 }, titanMeta: { color: theme.muted, fontSize: 11 },
   separator: { height: 4, width: '100%' },
   board: { width: '100%', paddingHorizontal: 32, paddingTop: 26, flexDirection: 'row', gap: 32 }, boardNarrow: { flexDirection: 'column', gap: 32 },
   equipmentColumn: { flexGrow: 1.6, flexShrink: 1, flexBasis: 0, minWidth: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },

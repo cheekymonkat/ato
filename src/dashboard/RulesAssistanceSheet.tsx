@@ -9,6 +9,7 @@ import { campaignCycle, tokenTypesForCycle } from '../domain/tokens';
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
+import { adjustedStat, combatAdjustments } from '../domain/combat-modifiers';
 
 const slotNames = { hand: 'Hands', armor: 'Armor', support: 'Support', attachment: 'Attachments', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const signed = (value: number) => value > 0 ? `+${value}` : String(value);
@@ -24,6 +25,7 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
   const cards = assignedGateCards(argonaut, catalogue).filter(entry => !spoilers.hidden(entry.card));
   const titanCard = argonaut.titan && catalogue.get(argonaut.titan.definitionId);
   const showTitanRule = titanCard && !spoilers.hidden(titanCard);
+  const combat = combatAdjustments(argonaut, catalogue);
   return <Sheet visible title="Rules assistance" subtitle={argonaut.name || 'Argonaut'} wide onClose={onClose}>
     <SwipeGuard><View style={styles.toggleRow}>
       <View style={styles.toggleLabel}><Text style={styles.heading}>Highlight card gates</Text>
@@ -35,6 +37,23 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
     <Text style={styles.body}>✓ Threshold met · − Threshold unmet · ? Manual check</Text>
     <Text style={styles.body}>Checks explicit requirements such as 5+ against your Triskelion, token counts or equipped Gear traits. Ambrosia and Bleeding use tokens; Labyrinth uses Gear with that printed trait. Each Gear card counts once, including exhausted cards; discarded cards and cards needing reassignment do not contribute traits.</Text>
     <Text style={styles.body}>Costs, timing, readiness and effects that change printed traits still need your decision. Memory panels appear when their nodes unlock them; their printed combat gates are checked separately.</Text>
+
+    <View style={styles.section}><Text accessibilityRole="header" style={styles.heading}>Combat modifiers</Text>
+      <Text style={styles.body}>Precision tokens {signed(argonaut.combatModifiers?.precision ?? 0)} · Speed tokens {signed(argonaut.combatModifiers?.speed ?? 0)}</Text>
+      <Text style={styles.body}>Red values include your modifier tokens and direct passive Gear bonuses or penalties. Weapon Precision bonuses apply to that Weapon; non-weapon Precision bonuses apply to all Weapons. Gear Speed effects adjust the selected Titan. Gated bonuses update when their requirement is met, independently of gate highlighting.</Text>
+      {[...combat].flatMap(([face, modifiers]) => {
+        const name = face.kind === 'titan' ? 'Speed' : 'Precision';
+        const printed = face.kind === 'titan' ? face.data.speed : face.kind === 'gear' ? face.data.offensiveStatistics.precision : undefined;
+        const modifier = face.kind === 'titan' ? modifiers.speed : modifiers.precision;
+        if (!printed) return [];
+        const value = adjustedStat(printed, modifier);
+        return <View key={`${face.printedIds.join(',')}:${face.id}`} style={styles.notice}>
+          <Text style={styles.label}>{face.name} · {name} {value.text}</Text>
+          <Text style={styles.body}>Printed {printed}{modifier?.contributions.length ? ` · ${modifier.contributions.map(item => `${item.source} ${signed(item.amount)}`).join(' · ')}` : ' · No adjustments'}</Text>
+        </View>;
+      })}
+      <Text style={styles.body}>Resolve action costs, triggered effects, conditional prose and temporary token expiry manually. Symbolic values keep their printed form with the adjustment beside it.</Text>
+    </View>
 
     <View style={styles.section}><Text accessibilityRole="header" style={styles.heading}>Skill contributions</Text>
       <Text style={styles.body}>Manual value + Argonaut portrait + memories = current stat. Mnemos bonuses and unresolved Fated penalties are included.</Text>
@@ -63,7 +82,7 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
     <View style={styles.section}><Text accessibilityRole="header" style={styles.heading}>Card gate checks</Text>
       <Text style={styles.body}>Rage {argonaut.counters.rage} · Fate {argonaut.counters.fate} · Danger {argonaut.counters.danger}</Text>
       <Text style={styles.body}>{tokenTypesForCycle(campaignCycle(party)).map(({ name }) => `${name} ${values.tokens![name]}`).join(' · ')}</Text>
-      {!cards.length && <Text style={styles.body}>No revealed assigned cards have visible printed gate requirements.</Text>}
+      {!cards.length && <Text style={styles.body}>No assigned cards have visible printed gate requirements.</Text>}
       {cards.map(({ instance, face, name, gates }) => <View key={instance.id} style={styles.notice}>
         <Text style={styles.label}>{name} · {face.family}{instance.discarded ? ' · Discarded' : instance.exhausted ? ' · Exhausted' : ''}</Text>
         {gates.map((gate, index) => { const result = checkGate(gate, values); return <View key={index} style={styles.gateRow}>

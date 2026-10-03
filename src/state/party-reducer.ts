@@ -22,6 +22,7 @@ export type PartyAction =
   | { type: 'campaign-cycle'; argonautId: string; cycle: CampaignCycle }
   | { type: 'rules-assistance'; argonautId: string; partyId: string; enabled: boolean }
   | { type: 'token'; argonautId: string; token: TokenName; delta: -1 | 1 }
+  | { type: 'combat-modifier'; argonautId: string; modifier: 'precision' | 'speed'; delta: -1 | 1 }
   | { type: 'reset-tokens'; argonautId: string }
   | { type: 'condition'; argonautId: string; condition: ConditionRecord }
   | { type: 'condition-flip'; argonautId: string; id: string; reference: CardReference }
@@ -75,6 +76,13 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
   const current = party.argonauts.find(argonaut => argonaut.id === action.argonautId)!;
   let updated = current;
   switch (action.type) {
+    case 'combat-modifier': {
+      if (!['precision', 'speed'].includes(action.modifier) || ![-1, 1].includes(action.delta)) break;
+      const modifiers = current.combatModifiers ?? { precision: 0, speed: 0 };
+      const value = modifiers[action.modifier] + action.delta;
+      if (Number.isSafeInteger(value)) updated = { ...current, combatModifiers: { ...modifiers, [action.modifier]: value } };
+      break;
+    }
     case 'token': updated = changeToken(current, action.token, action.delta); break;
     case 'reset-tokens':
       if (Object.values(current.tokens).some(value => value !== 0)) updated = { ...current, tokens: Object.fromEntries(Object.keys(current.tokens).map(name => [name, 0])) };

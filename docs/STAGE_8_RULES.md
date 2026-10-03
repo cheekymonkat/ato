@@ -54,6 +54,66 @@ take precedence over uncertain examples in it.
 
 ## Boundaries and correction
 
+### Precision and Speed follow-up
+
+The main Argonaut page now displays assigned secret Gear, memories, conditions,
+Titans and Pattern overrides without concealment. This is scoped to the selected
+Argonaut’s owned definitions; it does not reveal unassigned cards in the catalogue
+or selection lists, or change the global spoiler preference.
+
+Precision and Speed modifier-token counters appear between Titan selection and
+Argonaut navigation when space permits. Narrow screens put the counters on the
+next row, with 44px touch targets. Each Argonaut saves optional
+`combatModifiers: { precision, speed }` in schema 2; missing fields in older saves
+mean zero. Both totals accept signed safe integers. These are independent of
+Argonaut skills and the Ambrosia/Despair/etc. token pool. Backup and restart retain
+them; Tides of Fate and confirmed Argonaut replacement reset them to zero.
+
+Core Rulebook 1.1, printed p. 58, confirms Precision and Speed tokens adjust their
+attributes by ±1. The same page also lists Evasion (Titans), AT (Primordials),
+Evasion die (Primordials), Danger (Primordials), and To Hit (Primordials). These
+other types are recorded here for later work, without adding incorrect Titan
+counters based on the supplied AI conversation. Temporary token expiry and
+lasting token cleanup remain player controlled, with Tides of Fate clearing the
+recorded totals.
+
+Assigned cards derive their displayed values from printed data + modifier tokens
++ direct passive Gear effects. The printed catalogue is never overwritten.
+Changed values are red (grey while exhausted/discarded), and accessibility labels
+and the rules sheet explain their sources. Integer values are calculated;
+symbolic/conditional values such as `+X` and `+2*` keep their exact printed form
+with a separate signed adjustment.
+
+The supported passive grammar is a complete, cost-free statement such as
+`+1 Precision`, `Precision +2`, or `Gain +1 Speed`, containing only plain text,
+whitespace and the relevant stat icon. Explicit supported `N+` gates must be met.
+Weapon Precision effects apply to their source Weapon; Precision effects on
+non-weapon Gear with no printed offensive Precision apply to each equipped Weapon.
+Speed effects from all valid equipped Gear adjust the selected Titan. Each instance
+counts once, including multi-hand Gear; exhausted Gear retains passives. Discarded,
+unassigned and pending-reassignment cards do not contribute. Calculations update
+after removal, flip, token/counter changes, discard and restoration, independently
+of optional gate highlighting.
+
+Verified examples in the bundled dataset:
+
+- Puzzle Axe: printed Precision +1; Labyrinth `3+` supplies another +1 to the Axe.
+- Muckbane / Muck Bludgeon: Ambrosia `1+` supplies +1 to the source Weapon.
+- Argocryptex Alpha: passive +1 Precision to equipped Weapons.
+- Spherical Armor: passive +1 Speed, with another +1 at Danger `6+`.
+- Subreme Harpoon: passive +1 Speed, counted once despite occupying two hands.
+
+Action costs, timing tokens, choices, conditional prose, grants of modifier tokens,
+and numerical effects in Titan/memory abilities remain manual. No claim about an
+unverified Bleeding/Midas gear set is implemented from the pasted AI response.
+Players record triggered modifier-token gains with the new counters. Broader typed
+effect rules can extend this bounded parser when their scope and timing are verified.
+
+Equipment and attachment groups allocate explicit widths from their measured
+container before sizing cards. This removes nested intrinsic-width feedback and
+leaves rounding space at browser/native breakpoints. Complete groups share a row
+when they fit; individual cards wrap only when their group genuinely lacks room.
+
 The assistance sheet derives its results from the current save and creates no
 gameplay transactions. Corrections use existing counters, card selectors,
 placement exceptions and memory node controls. Derived results cannot accumulate
@@ -69,7 +129,7 @@ controls continue to handle those states.
 
 ## Verification
 
-- Domain suite: 160 tests pass, including seventeen Stage 8 scenarios.
+- Domain suite: 171 tests pass, including eleven new combat-modifier and responsive-layout scenarios.
 - Boundary tests cover all three counters, decrease/relock, AND/OR uncertainty,
   malformed thresholds, nested gates and unsupported data.
 - Trait/token scenarios cover two-hand de-duplication, the source card’s own trait,
@@ -97,3 +157,13 @@ controls continue to handle those states.
   screenshot/coordinate operations returned `noWindowsAvailable`.
 - iOS/Android device interactions and restart checks remain pending; successful
   native bundle exports are not device acceptance.
+- Modifier scenarios cover signed owner-qualified edits, malformed-save rejection,
+  old-save compatibility, backup/local restart, Puzzle Axe gate relocking, personal
+  Ambrosia gates, attachment contributions, multi-hand Speed de-duplication,
+  discard/restore, exclusion of active/conditional statements, and cleanup resets.
+- Equipment allocation checks sweep fractional widths from 700–5000px with normal
+  and expanded slot counts, plus phone widths and group-sharing boundaries.
+- Follow-up browser verification could not proceed: both Safari and Chrome app
+  selection returned `cgWindowNotFound`, and browser inventory exposed no tabs.
+- Precision/Speed follow-up lint and typecheck pass, and web/iOS/Android exports
+  pass at `/private/tmp/ato-modifiers-export`.

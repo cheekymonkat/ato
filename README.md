@@ -81,6 +81,15 @@ campaign. Each equipped Gear instance contributes once; exhausted Gear retains
 traits, while discarded or pending Gear does not. Cyclopean Might and Elder
 Might offer verified two-hand placement for three-handed Weapons. Unknown
 Might’s Support trade-off and other unresolved effects remain manual.
+The Titan selector row has signed **Precision** and **Speed** modifier counters,
+saved per Argonaut. Assigned Weapon Precision and Titan movement show adjusted
+values in red, including direct passive Gear effects and met numerical gates
+(for example, Puzzle Axe at three Labyrinth cards). The rules sheet explains
+each contribution. Tides of Fate and confirmed Argonaut replacement clear the
+modifier-token totals. Triggered effects and token expiry remain manual.
+Assigned secret cards always show their details on the main Argonaut page;
+unassigned secret cards retain the catalogue’s spoiler protection. Equipment
+groups use measured widths so complete rows remain together as the page widens.
 [Stage 8 rule sources and review notes](docs/STAGE_8_RULES.md) define the supported subset.
 
 ## Start

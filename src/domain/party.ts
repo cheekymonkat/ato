@@ -38,6 +38,8 @@ export interface Argonaut {
   tableOverrides: { trauma: CardReference | null; kratos: CardReference | null };
   counters: { rage: number; fate: number; danger: number };
   localConditions: string[]; tokens: Record<string, number>;
+  /** Signed modifier-token totals; absent in older saves means zero. Derived Gear effects are not stored here. */
+  combatModifiers?: { precision: number; speed: number };
   /** Optional structured records; legacy labels remain recoverable separately. */
   conditions?: ConditionRecord[];
 }
@@ -123,6 +125,7 @@ export function parseParty(value: unknown): Party {
     const skills = argonaut.skills, counters = argonaut.counters;
     assert(dictionary(skills) && SKILL_NAMES.every(skill => Object.hasOwn(skills, skill)), `${path}: missing or invalid skill`);
     assert(dictionary(counters) && ['rage', 'fate', 'danger'].every(key => Object.hasOwn(counters, key)), `${path}: invalid counters`);
+    assert(argonaut.combatModifiers === undefined || dictionary(argonaut.combatModifiers) && ['precision', 'speed'].every(key => Object.hasOwn(argonaut.combatModifiers as object, key)), `${path}: invalid combat modifiers`);
     const tokens = argonaut.tokens;
     assert(dictionary(tokens) && strings(argonaut.localConditions) && memoryIds(argonaut.mnemosIds) && memoryIds(argonaut.fatedMnemosIds), `${path}: invalid conditions/memories/tokens`);
     assert(TOKEN_TYPES.every(token => tokens[token.name] === undefined || tokens[token.name] >= 0), `${path}: token counts cannot be negative`);

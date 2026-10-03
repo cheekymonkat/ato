@@ -7,6 +7,8 @@ import { CardColours, useCardColours } from './CardColours';
 import { GateBackground, GateBadge, StatGate } from './GateBadge';
 import { RichParagraph } from './RichParagraph';
 import type { TextActions } from './RichParagraph';
+import { adjustedStat, MODIFIED_STAT_COLOUR } from '../../domain/combat-modifiers';
+import { useCombatAdjustment } from './CombatStats';
 
 export function DiceStack({ dice, type = 'Power', scale = 1 }: { dice: string[]; type?: 'Power' | 'Armor'; scale?: number }) {
   if (dice.length === 0) return null;
@@ -33,6 +35,7 @@ export function GearCard({ exhausted = false, ...props }: GearCardProps) {
 }
 function GearCardFace({ face, width = g.width, preview = false, onKeyword, onReference }: GearCardProps) {
   const paint = useCardColours();
+  const precision = adjustedStat(face.data.offensiveStatistics.precision ?? '', useCombatAdjustment(face, 'precision'));
   const scale = width / g.width, data = face.data, colour = paint.colour(cycleColour(face.cycle));
   const abilitySize = preview ? 13 * scale : Math.max(14, 13 * scale);
   const statSize = 15 * scale, pad = width * (25 / 130) * 0.03;
@@ -47,7 +50,7 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
     <View style={{ flexDirection: 'row', marginVertical: 10 * scale, alignItems: 'center' }}>
       <View style={{ flex: 25, gap: 8 * scale, overflow: 'hidden' }}>
         {Boolean(offensive.attackDice) && <View accessibilityLabel={`Attack dice ${offensive.attackDice}`} style={[statCell, styles.statRow]}><Text style={{ fontSize: statSize }}>{offensive.attackDice}</Text><CardIcon name="d10" size={statSize * 1.5} /></View>}
-        {Boolean(offensive.precision) && <View style={statCell}><Text accessibilityLabel={`Precision ${offensive.precision}`} style={{ fontSize: statSize, lineHeight: statSize * 1.5 }}>{offensive.precision}</Text></View>}
+        {Boolean(offensive.precision) && <View style={statCell}><Text accessibilityLabel={`Precision ${precision.label}`} style={{ color: paint.colour(precision.changed ? MODIFIED_STAT_COLOUR : '#000000'), fontSize: statSize, lineHeight: statSize * 1.5 }}>{precision.text}</Text></View>}
         {power.map((entry, index) => {
           const gate = displayGate(entry.gate);
           return <View key={index} style={[statCell, gate && { paddingTop: 0 }, { alignItems: 'stretch' }]}>

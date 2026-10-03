@@ -47,6 +47,7 @@ export function changeArgonautIdentity(argonaut: Argonaut, change: ArgonautChang
   return { ...detached, name: next.name, argonautDefinitionId: next.definitionId,
     skills: Object.fromEntries(SKILL_NAMES.map(skill => [skill, 0])) as Record<SkillName, number>,
     tokens: {}, localConditions: [], conditions: [],
+    ...(argonaut.combatModifiers ? { combatModifiers: { precision: 0, speed: 0 } } : {}),
     instances: detached.instances.filter(instance => !memoryIds.has(instance.id)),
     equipment: detached.equipment.filter(assignment => !memoryIds.has(assignment.instanceId)),
     mnemosIds: argonaut.mnemosIds.map(() => null), fatedMnemosIds: argonaut.fatedMnemosIds.map(() => null) };
