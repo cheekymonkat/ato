@@ -77,6 +77,21 @@ At the Stage 4 checkpoint (`75446b2`), player state lived in memory. [Stage 5](S
 
 ## Verification and remaining review
 
+### Bonus-slot navigation fix
+
+Bonus position IDs contain escaped instance/effect components. Expo Router 57
+parses the URL query and then decodes local parameters again; the editor previously
+compared that decoded value directly with the saved position ID. As a result, the
+bonus slot was not recognised and the Equip button stayed disabled.
+
+Dashboard navigation and the editor’s destination buttons now protect the position
+ID with an extra encoding layer. The editor also resolves existing decoded bonus
+links against currently available positions. Saved assignments and capacity rules
+are unchanged; removed slots stay unavailable and trait restrictions remain enforced.
+Four regression scenarios cover actual Expo href generation, Trireme bonus-slot
+placement, selection/destination updates, old links, stale grants, restricted slots,
+and percent-encoded identifiers. The full domain suite has 175 passing tests.
+
 On 2 October 2026, these checks pass:
 
 ```sh

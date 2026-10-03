@@ -15,6 +15,7 @@ import type { SlotKind } from '../domain/cards';
 import { theme } from '../theme/tokens';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { equipmentGroupWidths, equipmentSlotSize, GROUP_GAP, SLOT_GAP, SLOT_WIDTH } from './equipment-layout';
+import { positionRouteParam } from '../loadout/position-params';
 
 const labels: Record<SlotKind, string> = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'FatedMnemos' };
@@ -45,7 +46,7 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
   const label = `${labels[position.kind]}${position.kind === 'armor' ? '' : ` ${index + 1}`}`;
   const horizontal = compact && (position.kind === 'mnemos' || position.kind === 'fated-mnemos');
   const editable = !['mnemos', 'fated-mnemos'].includes(position.kind);
-  const openEditor = () => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, position: position.id, ...(instance ? { instance: instance.id } : {}) } });
+  const openEditor = () => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, position: positionRouteParam(position.id), ...(instance ? { instance: instance.id } : {}) } });
   const content = <>
     <Text style={styles.slotLabel}>{label}</Text>
     {face?.kind === 'gear' && definition ? <EquippedGear card={definition} face={face} exhausted={Boolean(instance?.exhausted || instance?.discarded)} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>

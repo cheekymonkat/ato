@@ -21,6 +21,7 @@ import type { CapacityPosition } from '../domain/slots';
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
+import { positionFromRoute, positionRouteParam } from './position-params';
 
 interface Params { position?: string; instance?: string; definition?: string; face?: string; q?: string }
 const labels = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
@@ -39,7 +40,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
   const scroll = useRef<ScrollView>(null);
   const state = useMemo(() => loadoutState(argonaut, catalogue), [argonaut, catalogue]);
   const instance = argonaut.instances.find(item => item.id === params.instance), assignment = argonaut.equipment.find(entry => entry.instanceId === instance?.id);
-  const target = state.positions.find(position => position.id === params.position);
+  const target = positionFromRoute(state.positions, params.position);
   const selected = catalogue.get(params.definition || instance?.definitionId || '');
   const face = selected?.faces.find(face => face.id === (params.face || instance?.faceId || 'front')) || selected?.faces[0];
   const otherFace = selected?.faces.find(side => side.id !== face?.id);
@@ -84,7 +85,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     <Text style={styles.body}>{target ? positionLabel(target, state.positions) : 'Choose a destination to reassign this card.'}</Text>
     {target?.eligibility && <Text style={styles.warning}>{target.eligibility.requiredTraits.join(', ')} Gear only in this bonus position.</Text>}
     {!target && <View style={styles.panel}><Text style={styles.heading}>Destination</Text><View style={styles.row}>
-      {state.positions.filter(position => !['mnemos', 'fated-mnemos'].includes(position.kind)).map(position => <Button key={position.id} quiet label={positionLabel(position, state.positions)} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ position: position.id }); }} />)}
+      {state.positions.filter(position => !['mnemos', 'fated-mnemos'].includes(position.kind)).map(position => <Button key={position.id} quiet label={positionLabel(position, state.positions)} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ position: positionRouteParam(position.id) }); }} />)}
     </View></View>}
     {instance && assignment && <View style={styles.panel}>
       <Text style={styles.heading}>Current card: {ownHidden ? 'Unrevealed Gear' : ownedFace?.name || 'Unavailable Gear'}</Text>
