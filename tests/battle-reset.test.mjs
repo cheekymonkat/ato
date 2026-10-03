@@ -69,6 +69,25 @@ test('clear-all requires explicit confirmation and the captured campaign identit
   assert.deepEqual(parseParty(reset), reset);
 });
 
+test('Refresh Gear unexhausts only its owner’s Gear, memories and Titan while preserving discards and all other state', () => {
+  const start = populated(), original = structuredClone(start);
+  const next = partyReducer(start, { type: 'refresh-gear', argonautId: 'a' }, catalogue);
+  const expected = { ...start.argonauts[0],
+    instances: start.argonauts[0].instances.map(instance => ({ ...instance, exhausted: false })),
+    titan: { ...start.argonauts[0].titan, exhausted: false } };
+  assert.deepEqual(next.argonauts[0], expected);
+  for (const index of [1, 2, 3]) assert.equal(next.argonauts[index], start.argonauts[index]);
+  assert.equal(next.argonauts[0].instances[1].discarded, true);
+  assert.equal(next.argonauts[0].instances[3].discarded, true);
+  assert.deepEqual({ ...next, argonauts: [] }, { ...start, argonauts: [] });
+  assert.deepEqual(start, original); assert.deepEqual(parseParty(next), next);
+  assert.equal(partyReducer(next, { type: 'refresh-gear', argonautId: 'a' }, catalogue), next);
+  assert.equal(partyReducer(next, { type: 'refresh-gear', argonautId: 'missing' }, catalogue), next);
+  assert.equal(partyReducer(fresh(), { type: 'refresh-gear', argonautId: 'a' }, catalogue).argonauts[0].titan, null);
+  const profile = { id: next.id, name: 'Refreshed cards', party: next };
+  assert.deepEqual(readBackup(exportProfile(profile), catalogue).profile, profile);
+});
+
 test('the complete clear-all result persists atomically through local restart and portable backups without modifying other campaigns', async () => {
   const start = populated(), reset = partyReducer(start, action, catalogue), profile = { id: reset.id, name: 'Battle', party: reset };
   assert.deepEqual(readBackup(exportProfile(profile), catalogue).profile, profile);

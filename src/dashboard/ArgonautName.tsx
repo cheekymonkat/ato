@@ -29,7 +29,7 @@ export function ArgonautName({ argonaut, number }: { argonaut: Argonaut; number:
   }
   const cancel = () => { input.current?.blur(); setPending(null); setDraft(null); };
   return <View>
-    <SwipeGuard><TextInput ref={input} accessibilityLabel="Argonaut name" accessibilityHint="Type a name, then select a suggested Argonaut or use a custom name. Changing Argonauts requires confirmation, resets stats and clears memories, conditions and tokens."
+    <SwipeGuard><TextInput ref={input} accessibilityLabel="Argonaut name" accessibilityHint="Type a name, then select a suggested Argonaut or use a custom name. Update name only keeps your progress; replacing the Argonaut requires confirmation before resetting stats, memories, conditions and tokens."
       placeholder={`Argonaut ${number}`} maxLength={60} selectTextOnFocus autoCorrect={false}
       value={name} onChangeText={setDraft} onSubmitEditing={() => {
         if (name.trim() === argonaut.name) setDraft(null);
@@ -49,7 +49,10 @@ export function ArgonautName({ argonaut, number }: { argonaut: Argonaut; number:
     </View>}
     {skill && <Text style={styles.detail}>Portrait bonus: +1 {skill}</Text>}
     {pending && <ArgonautChangeConfirmation currentName={pending.expectedName} nextName={pending.name}
-      skill={pending.definitionId ? portraitSkill(catalogue.getFace(pending.definitionId, 'front')) : null} onCancel={cancel} onConfirm={() => {
+      skill={pending.definitionId ? portraitSkill(catalogue.getFace(pending.definitionId, 'front')) : null} onCancel={cancel} onRename={() => {
+        dispatch({ type: 'argonaut-rename', argonautId: argonaut.id, name: pending.name, partyId: pending.partyId, expectedName: pending.expectedName, expectedDefinitionId: pending.expectedDefinitionId });
+        setPending(null); setDraft(null);
+      }} onConfirm={() => {
         dispatch({ type: 'argonaut-change', argonautId: argonaut.id, ...pending, confirmed: true }); setPending(null); setDraft(null);
       }} />}
   </View>;

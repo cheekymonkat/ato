@@ -50,7 +50,7 @@ test('exhaust eligibility requires the explicit cost on the relevant ability or 
   assert.equal(canExhaustMemory(fated, { node: 3, growthUnlocked: false }), true);
 });
 
-test('Gear reducer blocks invalid or stale exhaustion while eligible cards can exhaust and historical cards can ready', () => {
+test('Gear reducer permits per-card exhaustion without printed costs, rejects stale instances and allows Ready', () => {
   let party = reduce(fresh(), { type: 'equip', request: { definitionId: named('Argocryptex Alpha').id, faceId: 'front', positionId: 'base:attachment:0', instanceId: 'g' } });
   party = reduce(party, { type: 'equipment-exhausted', instanceId: 'g', exhausted: true });
   assert.equal(party.argonauts[0].instances[0].exhausted, true);
@@ -58,12 +58,13 @@ test('Gear reducer blocks invalid or stale exhaustion while eligible cards can e
   assert.equal(party.argonauts[0].instances[0].exhausted, false);
   party = reduce(party, { type: 'equip', request: { definitionId: named('Atlantean Oscillator').id, faceId: 'front', positionId: 'base:attachment:0', instanceId: 'new' } });
   assert.equal(reduce(party, { type: 'equipment-exhausted', instanceId: 'g', exhausted: true }), party);
-  assert.equal(reduce(party, { type: 'equipment-exhausted', instanceId: 'new', exhausted: true }), party);
-  party.argonauts[0].instances[0].exhausted = true;
+  party = reduce(party, { type: 'equipment-exhausted', instanceId: 'new', exhausted: true });
+  assert.equal(party.argonauts[0].instances[0].exhausted, true);
   party = parseParty(structuredClone(party));
   party = reduce(party, { type: 'equipment-exhausted', instanceId: 'new', exhausted: false });
   assert.equal(party.argonauts[0].instances[0].exhausted, false);
-  assert.equal(reduce(party, { type: 'equipment-exhausted', instanceId: 'new', exhausted: true }), party);
+  party = reduce(party, { type: 'equipment-exhausted', instanceId: 'new', exhausted: true });
+  assert.equal(party.argonauts[0].instances[0].exhausted, true);
 });
 
 test('memory reducer enforces Exhaust costs including Growth thresholds and permits recovery of old exhaustion', () => {

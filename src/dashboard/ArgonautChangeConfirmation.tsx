@@ -5,12 +5,17 @@ import { Sheet } from '../components/Sheet';
 import type { SkillName } from '../domain/party';
 import { theme } from '../theme/tokens';
 
-export function ArgonautChangeConfirmation({ currentName, nextName, skill, onConfirm, onCancel }: {
-  currentName: string; nextName: string; skill: SkillName | null; onConfirm: () => void; onCancel: () => void;
+export function ArgonautChangeConfirmation({ currentName, nextName, skill, onConfirm, onRename, onCancel }: {
+  currentName: string; nextName: string; skill: SkillName | null; onConfirm: () => void; onRename: () => void; onCancel: () => void;
 }) {
   const [accepted, setAccepted] = useState(false);
-  return <Sheet visible title="Change Argonaut" subtitle={`${currentName} → ${nextName}`} onClose={onCancel}>
-    <Text style={styles.text}>This resets Courage, Cunning, Endurance, Fury, Will and Wisdom to 0 and removes all Mnemos and Fated Mnemos cards, including their recorded nodes.</Text>
+  return <Sheet visible title="Update Argonaut" subtitle={`${currentName} → ${nextName}`} onClose={onCancel}>
+    <View style={styles.renameSection}>
+      <Text style={styles.text}>Update the name while keeping the current portrait bonus, stats, cards, conditions, tokens and progress.</Text>
+      <Button label="Update name only" onPress={onRename} />
+    </View>
+    <Text accessibilityRole="header" style={styles.resetTitle}>Replace Argonaut and reset</Text>
+    <Text style={styles.text}>This option resets Courage, Cunning, Endurance, Fury, Will and Wisdom to 0 and removes all Mnemos and Fated Mnemos cards, including their recorded nodes.</Text>
     <Text style={styles.text}>All conditions and tokens for this Argonaut are cleared, including tokens from later cycles.</Text>
     <Text style={styles.text}>{skill ? `Then ${nextName} receives their +1 ${skill} portrait bonus.` : `${nextName} starts with all six stats at 0.`}</Text>
     <Text style={styles.text}>Equipment, Titan, colour and Triskelion values are kept.</Text>
@@ -20,12 +25,14 @@ export function ArgonautChangeConfirmation({ currentName, nextName, skill, onCon
       <Text style={styles.checkLabel}>I confirm resetting this Argonaut’s stats and removing all memories, conditions and tokens.</Text>
     </Button>
     <View style={styles.actions}><Button quiet label="Cancel" onPress={onCancel} />
-      <Button label="Confirm Argonaut change" disabled={!accepted} onPress={() => { if (accepted) onConfirm(); }} />
+      <Button label="Replace Argonaut and reset" disabled={!accepted} onPress={() => { if (accepted) onConfirm(); }} />
     </View>
   </Sheet>;
 }
 const styles = StyleSheet.create({
   text: { color: theme.ink, fontSize: 14, lineHeight: 22 },
+  renameSection: { gap: 12, paddingBottom: 16, borderBottomWidth: 1, borderColor: theme.line },
+  resetTitle: { color: theme.ink, fontSize: 16, fontWeight: '600' },
   checkRow: { flexDirection: 'row', justifyContent: 'flex-start', gap: 12 },
   check: { width: 24, height: 24, borderWidth: 1, borderColor: theme.muted, borderRadius: 3, alignItems: 'center', justifyContent: 'center' },
   accepted: { backgroundColor: theme.charcoal, borderColor: theme.charcoal }, tick: { color: theme.white, fontSize: 18 },

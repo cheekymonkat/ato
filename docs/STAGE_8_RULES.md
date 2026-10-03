@@ -62,7 +62,7 @@ Argonaut’s owned definitions; it does not reveal unassigned cards in the catal
 or selection lists, or change the global spoiler preference.
 
 Precision and Speed modifier-token counters appear between Titan selection and
-Argonaut navigation when space permits. Narrow screens put the counters on the
+Refresh Gear when space permits. Narrow screens put the counters on the
 next row, with 44px touch targets. Each Argonaut saves optional
 `combatModifiers: { precision, speed }` in schema 2; missing fields in older saves
 mean zero. Both totals accept signed safe integers. These are independent of

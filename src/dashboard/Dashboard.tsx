@@ -37,6 +37,7 @@ import { ConditionArea } from './ConditionArea';
 import { SharedResources } from './SharedResources';
 import { RulesAssistanceSheet } from './RulesAssistanceSheet';
 import { ModifierControls } from './ModifierControls';
+import { conditionRecords } from '../domain/conditions';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -59,6 +60,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const [overflow, setOverflow] = useState<CounterName | null>(null), [reference, setReference] = useState<'Trauma' | 'Kratos' | null>(null);
   const index = party.order.indexOf(argonaut.id);
   const positions = useMemo(() => dashboardPositions(argonaut, getCatalogue()), [argonaut]);
+  const conditions = useMemo(() => conditionRecords(argonaut), [argonaut]);
   const skills = useMemo(() => argonautSkills(argonaut, getCatalogue()), [argonaut]);
   const titan = argonaut.titan && getCatalogue().getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   const titanCard = argonaut.titan && getCatalogue().get(argonaut.titan.definitionId), spoilers = useSpoilers();
@@ -141,13 +143,14 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
           <View style={[styles.titanBar, width < 1040 && styles.titanBarSmall]}>
             <View style={styles.titanChoice}><Text style={styles.eyebrow}>TITAN</Text><Button quiet label="Choose Titan" onPress={() => setTitanOpen(true)} style={styles.titanButton}>
               <GameIcon name="Titan" size={20} /><Text style={styles.titanName}>{hiddenTitan ? 'Unrevealed Titan' : titan?.name || (argonaut.titan ? 'Unavailable Titan' : 'Choose a Titan')}</Text><Chevron direction="down" />
-            </Button>{titan && !hiddenTitan && <Text style={styles.titanMeta}>{titan.cycle}</Text>}</View>
+            </Button><View style={styles.titanStatus}>
+              {titan && !hiddenTitan && <Text style={styles.titanMeta}>{titan.cycle}</Text>}
+              {conditions.map(condition => <View key={condition.id} testID={`condition-label-${condition.id}`} style={styles.conditionLabel}>
+                <Text accessibilityLabel={`Active condition: ${condition.name}`} style={styles.conditionText}>{condition.name}</Text>
+              </View>)}
+            </View></View>
             {width >= 1040 && <View style={styles.modifiers}><ModifierControls argonaut={argonaut} /></View>}
-            <View style={[styles.paging, small && styles.pagingSmall]}>
-              <Button quiet label="Previous Argonaut" disabled={index === 0} onPress={() => navigate(-1)} style={styles.arrow}><Chevron direction="left" /></Button>
-              <Text accessibilityLiveRegion="polite" accessibilityLabel={`${argonaut.name || 'Argonaut'}, ${index + 1} of 4`} style={styles.pageNumber}>{index + 1} of 4</Text>
-              <Button quiet label="Next Argonaut" disabled={index === party.order.length - 1} onPress={() => navigate(1)} style={styles.arrow}><Chevron /></Button>
-            </View>
+            <Button quiet label="Refresh Gear" onPress={() => dispatch({ type: 'refresh-gear', argonautId: argonaut.id })} style={styles.refreshGear} />
             {width < 1040 && <View style={styles.modifiersSmall}><ModifierControls argonaut={argonaut} /></View>}
           </View>
         </View>
@@ -217,7 +220,7 @@ const styles = StyleSheet.create({
   tab: { minHeight: 60, paddingVertical: 12, paddingHorizontal: 12, flexDirection: 'row', alignItems: 'center', gap: 10, borderBottomWidth: 2, borderBottomColor: 'transparent' },
   selectedTab: { borderBottomColor: theme.ink }, tabBadge: { width: 26, height: 26, borderRadius: 13, alignItems: 'center', justifyContent: 'center' }, tabNumber: { color: theme.white, fontSize: 11, fontWeight: '600' }, tabLabel: { flex: 1, color: theme.muted, fontSize: 13 }, selectedLabel: { color: theme.ink, fontWeight: '600' },
   smallTab: { paddingHorizontal: 0, justifyContent: 'center' },
-  paging: { flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 10 }, pagingSmall: { alignSelf: 'flex-end' }, arrow: { paddingHorizontal: 0, backgroundColor: theme.paper }, pageNumber: { fontSize: 12, color: theme.muted, minWidth: 35, textAlign: 'center' },
+  refreshGear: { backgroundColor: theme.paper },
   identity: { flexDirection: 'row', gap: 32, alignItems: 'center' }, identityNarrow: { flexDirection: 'column', alignItems: 'stretch', gap: 24 },
   identityName: { width: 255 }, identityNameNarrow: { width: '100%' },
   identityActions: { alignItems: 'flex-start', marginTop: 12 }, colourButton: { flexDirection: 'row', gap: 9, borderWidth: 0, paddingHorizontal: 0, minHeight: 44 }, colourDot: { width: 14, height: 14, borderRadius: 7 }, colourLabel: { color: theme.muted, fontSize: 12 },
@@ -228,6 +231,9 @@ const styles = StyleSheet.create({
   titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexWrap: 'wrap' },
   modifiers: { flex: 1, minWidth: 400 }, modifiersSmall: { flexGrow: 1, flexShrink: 0, flexBasis: '100%', minWidth: 0 },
   titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16, flexShrink: 1 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14, flexShrink: 1 }, titanName: { color: theme.ink, fontSize: 13, flexShrink: 1 }, titanMeta: { color: theme.muted, fontSize: 11 },
+  titanStatus: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 6, flexShrink: 1, maxWidth: '100%' },
+  conditionLabel: { borderWidth: 1, borderColor: '#000000', backgroundColor: '#F4D75E', borderRadius: 3, paddingHorizontal: 8, paddingVertical: 4, maxWidth: '100%' },
+  conditionText: { color: '#000000', fontSize: 12, lineHeight: 18, fontWeight: '600' },
   separator: { height: 4, width: '100%' },
   board: { width: '100%', paddingHorizontal: 32, paddingTop: 26, flexDirection: 'row', gap: 32 }, boardNarrow: { flexDirection: 'column', gap: 32 },
   equipmentColumn: { flexGrow: 1.6, flexShrink: 1, flexBasis: 0, minWidth: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },

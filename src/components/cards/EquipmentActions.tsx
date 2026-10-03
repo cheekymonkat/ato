@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 import type { CardDefinition } from '../../domain/cards';
 import type { CardInstance } from '../../domain/party';
-import { canDiscardCard, canExhaustCard } from '../../domain/ability-costs';
 import { useParty } from '../../state/PartyProvider';
 import { useSpoilers } from '../../state/SpoilerProvider';
 import { theme } from '../../theme/tokens';
@@ -18,9 +17,9 @@ export function EquipmentActions({ argonautId, instance, definition }: { argonau
   const nextFace = definition?.faces.find(face => face.id !== instance.faceId);
   return <View style={styles.actions}>
     <CardActionRow>
-      {!instance.discarded && (instance.exhausted || !hidden && canExhaustCard(face)) && <CardActionButton action={instance.exhausted ? 'Ready' : 'Exhaust'} cardName={name}
+      {!instance.discarded && (instance.exhausted || !hidden && face?.kind === 'gear') && <CardActionButton action={instance.exhausted ? 'Ready' : 'Exhaust'} cardName={name}
         onPress={() => dispatch({ type: 'equipment-exhausted', argonautId, instanceId: instance.id, exhausted: !instance.exhausted })} />}
-      {(instance.discarded || !hidden && canDiscardCard(face)) && <CardActionButton action={instance.discarded ? 'Restore' : 'Discard'} cardName={name}
+      {(instance.discarded || !hidden && face?.kind === 'gear') && <CardActionButton action={instance.discarded ? 'Restore' : 'Discard'} cardName={name}
         onPress={() => dispatch({ type: 'equipment-discarded', argonautId, instanceId: instance.id, discarded: !instance.discarded })} />}
       {!hidden && nextFace && <CardActionButton action="Flip" cardName={name}
         onPress={() => dispatch({ type: 'equipment-face', argonautId, instanceId: instance.id, faceId: nextFace.id })} />}

@@ -19,10 +19,18 @@ type/cycle at the top right. Keyword explanations prefer the matching subname,
 falling back to the original keyword when no subname matches.
 Equipment, Support and Attachments share rows when space permits. Memories
 also fit four across, with the Fated pair wrapping below at narrower widths.
-Exhaust appears only on cards with an explicit Exhaust cost. Eligible Titans
-also have an Exhaust/Ready action. Older exhaustion can always be cleared.
+Every assigned Gear card has manual Exhaust/Ready and Discard/Restore controls,
+regardless of its printed costs. These affect only that copy. Memories and Titans
+retain their printed-cost eligibility; older exhaustion can always be cleared.
+**Refresh Gear** beside the Titan selector replaces the previous/next controls
+and unexhausts the selected Argonaut’s Gear, memories and Titan. Discards and
+progress stay intact; tabs and swiping still switch Argonauts. Active condition
+names appear after the cycle text in yellow boxes with black borders.
+When editing an Argonaut name, **Update name only** keeps their portrait bonus
+and all progress. **Replace Argonaut and reset** retains the existing confirmed
+replacement flow.
 Exhausted memories use a distinct grey palette; Ready restores their appearance.
-Discard appears for explicit Discard costs on the same action row. It clears
+Discard appears on the same action row for all Gear and for eligible memories/Titans. It clears
 exhaustion, greys out the card and replaces the action with Restore. This state
 is saved independently for each card instance.
 Gear, Mnemos and Condition card actions share compact outlined controls and

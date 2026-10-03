@@ -63,8 +63,32 @@ test('Gear discard clears exhaustion, preserves assignments and copies, blocks e
   assert.equal(party.argonauts[0].instances[0].exhausted, true);
   party = equip(party, named('Atlantean Oscillator'), 'replacement');
   assert.equal(reduce(party, { type: 'equipment-discarded', instanceId: 'g', discarded: true }), party);
-  assert.equal(reduce(party, { type: 'equipment-discarded', instanceId: 'replacement', discarded: true }), party);
+  assert.equal(canDiscardCard(named('Atlantean Oscillator').faces[0]), false);
+  party = reduce(party, { type: 'equipment-discarded', instanceId: 'replacement', discarded: true });
+  assert.equal(party.argonauts[0].instances.find(item => item.id === 'replacement').discarded, true);
   assert.equal(before.argonauts[0].instances[0].exhausted, true);
+});
+
+test('manual Gear states work without printed costs and affect only the selected card and Argonaut', () => {
+  const armor = named('Trireme Breastplate');
+  assert.equal(canDiscardCard(armor.faces[0]), false);
+  const start = equip(equip(fresh(), armor, 'armor', 'base:armor:0'), named('Atlantean Oscillator'), 'other');
+  // Keep another Gear card on this owner and a second Armor copy on another Argonaut.
+  const party = reduce(start, { type: 'equip', argonautId: 'b', request: { definitionId: armor.id, faceId: 'front', positionId: 'base:armor:0', instanceId: 'b-armor' } });
+  const exhausted = reduce(party, { type: 'equipment-exhausted', instanceId: 'armor', exhausted: true });
+  assert.equal(exhausted.argonauts[0].instances[0].exhausted, true);
+  assert.equal(exhausted.argonauts[1], party.argonauts[1]);
+  assert.equal(exhausted.argonauts[0].instances[1], party.argonauts[0].instances[1]);
+  const discarded = reduce(exhausted, { type: 'equipment-discarded', instanceId: 'armor', discarded: true });
+  assert.equal(discarded.argonauts[0].instances[0].discarded, true);
+  assert.equal(discarded.argonauts[0].instances[0].exhausted, false);
+  assert.equal(discarded.argonauts[1], party.argonauts[1]);
+  assert.equal(discarded.argonauts[0].instances[1], party.argonauts[0].instances[1]);
+  assert.deepEqual(discarded.argonauts[0].equipment, party.argonauts[0].equipment);
+  const restored = reduce(discarded, { type: 'equipment-discarded', instanceId: 'armor', discarded: false });
+  assert.equal(restored.argonauts[0].instances[0].discarded, false);
+  assert.equal(restored.argonauts[0].instances[0].exhausted, false);
+  assert.deepEqual(parseParty(restored), restored);
 });
 
 test('memory discard preserves nodes, obeys Fated side costs and can restore after the relevant cost disappears', () => {

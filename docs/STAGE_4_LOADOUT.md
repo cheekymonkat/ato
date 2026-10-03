@@ -37,11 +37,33 @@ The later flexible-group change passes lint, typecheck and web/iOS/Android expor
 
 Exhaust/Ready and Flip sit directly below each equipped card, as separate tap targets outside its selection surface. Flip appears only for revealed reversible cards and updates the saved instance through the existing reducer. Optional capacity controls, condition confirmations and consequence reminders also sit below their card. Remove remains in the editor. Review selection shows one **Flip to back/front** control only when another face exists; it changes the draft until saved. The selection surface uses the existing swipe guard so editing taps and drags do not change Argonauts.
 
-Cards with a Discard cost also offer Discard on that row. It clears exhaustion,
+All Gear cards offer manual Exhaust/Ready and Discard/Restore on that row,
+including Gear without those printed costs. These player-directed controls apply
+to the selected instance only; memories and Titans retain cost-based eligibility.
+Discard clears exhaustion,
 hides Exhaust/Ready and shows the retained card in grayscale with a Discarded
 status and Restore action. Restore returns it to Ready. Per-instance discard
 state survives editor review, face changes, local restart and portable backups;
 it does not delete the card, its placement or its recorded choices.
+
+Active condition names also appear beside the Titan selector, after its cycle
+text, in yellow boxes with black borders and black text. The labels derive from
+the selected Argonaut’s conditions, including legacy labels, and update on
+addition, removal, card flip and Tides of Fate. They wrap when space is limited;
+the complete condition cards and controls remain in the Conditions section.
+
+Refresh Gear replaces the previous/number/next controls beside Titan selection.
+It clears exhaustion on the selected Argonaut’s card instances, including both
+memory types and the Titan. Discards, assignments, nodes, tokens, conditions,
+skills and counters remain intact. The action is owner-qualified and saved through
+the existing persistence path; tabs and swipe navigation remain available.
+
+The Argonaut-name dialog offers Update name only, which changes just the display
+name while retaining the current portrait definition/bonus and every other field.
+Replace Argonaut and reset keeps the confirmed replacement flow. Both edits check
+the captured campaign and identity so a stale dialog cannot change another state.
+The combined follow-up passes 178 domain tests, lint and typecheck; the scenarios
+cover per-card isolation, reversible discard, Refresh Gear and name-only preservation.
 
 Exhausted equipped and Needs reassignment faces display in grayscale, including papyrus, cycle colours, shadows, stat cells, dice, symbols and gate gradients. The same appearance applies when reviewing that instance in the editor; new replacement candidates and Browse Gear definitions remain coloured. Ready restores the original presentation. Desaturation changes each colour using luminance weights rather than dimming or flattening the card to one gray, preserving relative brightness and alpha. SVG recolouring only touches paint attributes, preserving paths, IDs and gradient references. This uses the shared renderer's palette on all platforms, without relying on platform-specific filter support. State labels and Ready/Flip controls remain readable and usable.
 

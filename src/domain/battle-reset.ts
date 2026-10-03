@@ -1,5 +1,12 @@
 import type { Argonaut, CardInstance, Party } from './party.ts';
 
+/** Refresh the selected Argonaut's cards without undoing discards or changing progress. */
+export function refreshArgonautCards(member: Argonaut): Argonaut {
+  const unexhaust = (instance: CardInstance) => instance.exhausted ? { ...instance, exhausted: false } : instance;
+  if (!member.instances.some(instance => instance.exhausted) && !member.titan?.exhausted) return member;
+  return { ...member, instances: member.instances.map(unexhaust), titan: member.titan ? unexhaust(member.titan) : null };
+}
+
 function readyCard(instance: CardInstance): CardInstance {
   return instance.exhausted || instance.discarded ? { ...instance, exhausted: false, ...(instance.discarded ? { discarded: false } : {}) } : instance;
 }

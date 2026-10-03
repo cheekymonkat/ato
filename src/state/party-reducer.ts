@@ -14,7 +14,7 @@ import { canDiscardCard, canExhaustCard } from '../domain/ability-costs.ts';
 import { changeToken, isCampaignCycle } from '../domain/tokens.ts';
 import type { CampaignCycle, TokenName } from '../domain/tokens.ts';
 import { conditionRecords, conditionReverse, removeCondition, setCondition, supportsCondition, validCondition } from '../domain/conditions.ts';
-import { clearAllArgonauts } from '../domain/battle-reset.ts';
+import { clearAllArgonauts, refreshArgonautCards } from '../domain/battle-reset.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
@@ -29,10 +29,12 @@ export type PartyAction =
   | { type: 'remove-condition'; argonautId: string; id: string }
   | { type: 'reset-conditions'; argonautId: string }
   | { type: 'clear-all'; argonautId: string; partyId: string; confirmed: boolean }
+  | { type: 'refresh-gear'; argonautId: string }
   | { type: 'resource'; argonautId: string; name: string; delta: -1 | 1 }
   | { type: 'remove-resource'; argonautId: string; name: string }
   | { type: 'reset-resources'; argonautId: string }
   | { type: 'argonaut-change'; argonautId: string; name: string; definitionId: string | null; confirmed: boolean; partyId: string; expectedName: string; expectedDefinitionId: string | null }
+  | { type: 'argonaut-rename'; argonautId: string; name: string; partyId: string; expectedName: string; expectedDefinitionId: string | null }
   | { type: 'colour'; argonautId: string; colour: string }
   | { type: 'skill'; argonautId: string; skill: SkillName; delta: -1 | 1 }
   | { type: 'counter'; argonautId: string; counter: CounterName; value: number; confirmOverflow?: boolean }
@@ -76,6 +78,7 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
   const current = party.argonauts.find(argonaut => argonaut.id === action.argonautId)!;
   let updated = current;
   switch (action.type) {
+    case 'refresh-gear': updated = refreshArgonautCards(current); break;
     case 'combat-modifier': {
       if (!['precision', 'speed'].includes(action.modifier) || ![-1, 1].includes(action.delta)) break;
       const modifiers = current.combatModifiers ?? { precision: 0, speed: 0 };
@@ -129,6 +132,11 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
         updated = changeArgonautIdentity(current, action, campaignCycle(party), catalogue);
       }
       break;
+    case 'argonaut-rename': {
+      const name = typeof action.name === 'string' ? action.name.trim() : '';
+      if (name && name.length <= 60 && name !== current.name && action.partyId === party.id && action.expectedName === current.name && action.expectedDefinitionId === current.argonautDefinitionId) updated = { ...current, name };
+      break;
+    }
     case 'colour':
       if (isColour(action.colour)) updated = { ...current, colour: action.colour.toUpperCase() };
       break;
@@ -161,12 +169,12 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       break;
     case 'equipment-exhausted': {
       const item = current.instances.find(item => item.id === action.instanceId);
-      if (item && current.equipment.some(entry => entry.instanceId === item.id) && (action.exhausted === false || action.exhausted === true && !item.discarded && canExhaustCard(catalogue?.getFace(item.definitionId, item.faceId)))) updated = { ...current, instances: current.instances.map(item => item.id === action.instanceId ? { ...item, exhausted: action.exhausted } : item) };
+      if (item && current.equipment.some(entry => entry.instanceId === item.id) && (action.exhausted === false || action.exhausted === true && !item.discarded && catalogue?.getFace(item.definitionId, item.faceId)?.kind === 'gear')) updated = { ...current, instances: current.instances.map(item => item.id === action.instanceId ? { ...item, exhausted: action.exhausted } : item) };
       break;
     }
     case 'equipment-discarded': {
       const item = current.instances.find(item => item.id === action.instanceId);
-      if (item && current.equipment.some(entry => entry.instanceId === item.id) && (action.discarded === false || action.discarded === true && canDiscardCard(catalogue?.getFace(item.definitionId, item.faceId)))) updated = { ...current, instances: current.instances.map(entry => entry.id === item.id ? { ...entry, discarded: action.discarded, ...(action.discarded ? { exhausted: false } : {}) } : entry) };
+      if (item && current.equipment.some(entry => entry.instanceId === item.id) && (action.discarded === false || action.discarded === true && catalogue?.getFace(item.definitionId, item.faceId)?.kind === 'gear')) updated = { ...current, instances: current.instances.map(entry => entry.id === item.id ? { ...entry, discarded: action.discarded, ...(action.discarded ? { exhausted: false } : {}) } : entry) };
       break;
     }
     case 'equipment-effect': {

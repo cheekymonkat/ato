@@ -181,6 +181,27 @@ test('confirmation is mandatory and captured campaign/identity guards reject sta
   for (const name of ['', ' ', 'x'.repeat(61)]) assert.equal(partyReducer(party, request(party, null, name), catalogue), party);
 });
 
+test('name-only updates preserve portrait bonuses, stats, cards and progress, and reject stale or invalid edits', () => {
+  const party = progressedParty();
+  party.argonauts[0].localConditions = ['Historical custom condition'];
+  party.argonauts[0].combatModifiers = { precision: 2, speed: -1 };
+  const original = structuredClone(party);
+  const action = { type: 'argonaut-rename', argonautId: 'a', partyId: party.id, expectedName: party.argonauts[0].name,
+    expectedDefinitionId: party.argonauts[0].argonautDefinitionId, name: '  New display name  ' };
+  const next = partyReducer(party, action, catalogue);
+  assert.deepEqual(next.argonauts[0], { ...party.argonauts[0], name: 'New display name' });
+  assert.deepEqual(stats(next), stats(party));
+  for (const index of [1, 2, 3]) assert.equal(next.argonauts[index], party.argonauts[index]);
+  assert.deepEqual(party, original);
+  for (const change of [{ name: '' }, { name: '   ' }, { name: 'x'.repeat(61) }, { name: null }, { partyId: 'other' }, { expectedName: 'stale' }, { expectedDefinitionId: null }, { argonautId: 'missing' }]) {
+    assert.equal(partyReducer(party, { ...action, ...change }, catalogue), party);
+  }
+  assert.equal(partyReducer(next, action, catalogue), next);
+  assert.equal(partyReducer(next, { ...action, expectedName: next.argonauts[0].name, name: next.argonauts[0].name }, catalogue), next);
+  const profile = { id: next.id, name: 'Rename', party: next };
+  assert.deepEqual(readBackup(exportProfile(profile), catalogue).profile, profile);
+});
+
 test('confirmed custom replacement removes memories and resets stats, and the entire replacement survives local restart', async () => {
   const before = progressedParty();
   const next = partyReducer(before, request(before, null, 'My new Argonaut'), catalogue);
