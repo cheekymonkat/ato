@@ -1,4 +1,6 @@
 import type { Catalogue, CardDefinition, CardFace } from '../domain/cards.ts';
+import { isFaceAvailableInCycle } from '../domain/campaign.ts';
+import type { CampaignCycle } from '../domain/campaign.ts';
 import { parseCatalogue } from './validate.ts';
 
 function freezeDefinitionData(value: unknown): void {
@@ -7,7 +9,7 @@ function freezeDefinitionData(value: unknown): void {
   Object.freeze(value);
 }
 
-export interface CatalogueSearch { query?: string; family?: string; cycle?: string; slot?: string }
+export interface CatalogueSearch { query?: string; family?: string; cycle?: string; campaignCycle?: CampaignCycle; slot?: string }
 export type ReferenceResolution = { status: 'resolved'; card: CardDefinition } | { status: 'ambiguous'; cards: CardDefinition[] } | { status: 'missing'; printedId: string };
 
 /** No network or platform imports. Instances and player state never modify this data. */
@@ -35,10 +37,10 @@ export function createCatalogueRepository(input: unknown) {
       const cards = byPrintedId(printedId);
       return cards.length === 1 ? { status: 'resolved', card: cards[0] } : cards.length ? { status: 'ambiguous', cards } : { status: 'missing', printedId };
     },
-    search: ({ query = '', family, cycle, slot }: CatalogueSearch = {}): CardDefinition[] => {
+    search: ({ query = '', family, cycle, campaignCycle, slot }: CatalogueSearch = {}): CardDefinition[] => {
       const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
       return catalogue.cards.filter(card => terms.every(term => searchText.get(card.id)!.includes(term)) &&
-        card.faces.some(face => (!family || face.family === family) && (!cycle || face.cycle === cycle) && (!slot || (face.kind === 'gear' && face.data.slot === slot))))
+        card.faces.some(face => (campaignCycle === undefined || isFaceAvailableInCycle(face, campaignCycle)) && (!family || face.family === family) && (!cycle || face.cycle === cycle) && (!slot || (face.kind === 'gear' && face.data.slot === slot))))
         .sort((a, b) => a.faces[0].name.localeCompare(b.faces[0].name) || a.id.localeCompare(b.id));
     },
   };

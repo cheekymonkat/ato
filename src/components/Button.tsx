@@ -9,7 +9,7 @@ export function Button({ label, onPress, disabled = false, children, style, quie
   style?: StyleProp<ViewStyle>; quiet?: boolean; role?: AccessibilityRole; selected?: boolean;
 }) {
   return <SwipeGuard><Pressable accessibilityRole={role} accessibilityLabel={label}
-    accessibilityState={{ disabled, ...(selected === undefined ? {} : { selected }) }}
+    accessibilityState={{ disabled, ...(selected === undefined ? {} : role === 'radio' || role === 'checkbox' ? { checked: selected } : { selected }) }}
     disabled={disabled} onPress={onPress}
     style={({ pressed }) => [styles.button, quiet && styles.quiet, style, disabled && styles.disabled, pressed && styles.pressed]}>
     {children || <Text style={[styles.label, quiet && styles.quietLabel]}>{label}</Text>}

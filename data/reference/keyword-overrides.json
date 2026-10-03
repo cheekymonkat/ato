@@ -1,0 +1,12 @@
+{
+  "Despair Resilience 1": {
+    "source": "User clarification, 2 October 2026",
+    "mainDef": [
+      {
+        "abilityText": [
+          { "type": "plainText", "value": "Reduce the effect of Despair by 1" }
+        ]
+      }
+    ]
+  }
+}

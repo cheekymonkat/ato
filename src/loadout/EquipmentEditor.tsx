@@ -4,9 +4,13 @@ import { ScrollView, StyleSheet, Text, TextInput, useWindowDimensions, View } fr
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { Button } from '../components/Button';
+import { CardActionButton } from '../components/cards/CardActionButton';
+import { CardActionRow } from '../components/cards/CardActionRow';
+import { RemovalConfirmation } from '../components/RemovalConfirmation';
 import { GearCard } from '../components/cards/GearCard';
 import { SecretCard } from '../components/cards/SecretCard';
 import { GearResults } from '../components/cards/GearResults';
+import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign';
 import type { CardDefinition } from '../domain/cards';
 import { loadoutState, planEquipment, slotOptions } from '../domain/loadout';
 import type { EquipRequest } from '../domain/loadout';
@@ -17,17 +21,18 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 
-interface Params { position?: string; instance?: string; definition?: string; face?: string; q?: string; cycle?: string }
+interface Params { position?: string; instance?: string; definition?: string; face?: string; q?: string }
 const labels = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 function positionLabel(position: CapacityPosition, positions: CapacityPosition[]) {
   return `${labels[position.kind]} ${positions.filter(entry => entry.kind === position.kind).findIndex(entry => entry.id === position.id) + 1}${position.source ? ' (bonus)' : ''}`;
 }
 
 export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; params: Params }) {
-  const { dispatch } = useParty(), spoilers = useSpoilers(), { width } = useWindowDimensions(), catalogue = getCatalogue();
-  const [query, setQuery] = useState(params.q || ''), [cycle, setCycle] = useState(params.cycle || ''), [allGear, setAllGear] = useState(false), [page, setPage] = useState(0);
+  const { party, dispatch } = useParty(), spoilers = useSpoilers(), { width } = useWindowDimensions(), catalogue = getCatalogue();
+  const cycle = campaignCycle(party);
+  const [query, setQuery] = useState(params.q || ''), [allGear, setAllGear] = useState(false), [page, setPage] = useState(0);
   const [searching, setSearching] = useState(!params.definition && !params.instance);
-  const cycles = useMemo(() => [...new Set(catalogue.search({ family: 'Gear' }).flatMap(card => card.faces.map(face => face.cycle)))].sort(), [catalogue]);
+  const [removing, setRemoving] = useState<{ id: string; name: string } | null>(null);
   const [units, setUnits] = useState<number | undefined>(), [override, setOverride] = useState(false), [reason, setReason] = useState('');
   const [newId] = useState(() => `${argonaut.id}:gear:${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`);
   const scroll = useRef<ScrollView>(null);
@@ -43,9 +48,10 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
   const request: EquipRequest | null = selected && face && target ? { definitionId: selected.id, faceId: face.id, positionId: target.id,
     instanceId: reuse ? instance!.id : newId, reuse, units: selectedUnits, overrideReason: override ? reason : undefined } : null;
   const plan = request ? planEquipment(argonaut, request, catalogue) : null;
-  const canSave = Boolean(plan?.next && !hidden && (!override || reason.trim()));
-  const matches = catalogue.search({ family: 'Gear', query, cycle: cycle || undefined }).filter(card => card.faces.some(face =>
-    (!cycle || face.cycle === cycle) && (allGear || !target || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
+  const available = isFaceAvailableInCycle(face, cycle);
+  const canSave = Boolean(available && plan?.next && !hidden && (!override || reason.trim()));
+  const matches = catalogue.search({ family: 'Gear', query, campaignCycle: cycle }).filter(card => card.faces.some(face =>
+    isFaceAvailableInCycle(face, cycle) && (allGear || !target || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
   const lastPage = Math.max(0, Math.ceil(matches.length / 12) - 1), currentPage = Math.min(page, lastPage);
   const ownedFace = instance && catalogue.getFace(instance.definitionId, instance.faceId);
   const ownDefinition = instance && catalogue.get(instance.definitionId), ownHidden = ownDefinition && spoilers.hidden(ownDefinition);
@@ -60,11 +66,17 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     scroll.current?.scrollTo({ y: 0, animated: true });
   }
   const faceForCard = (card: CardDefinition) => {
-    const eligible = (face: typeof card.faces[number]) => (!cycle || face.cycle === cycle) && (!target || allGear || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target));
+    const eligible = (face: typeof card.faces[number]) => isFaceAvailableInCycle(face, cycle) && (!target || allGear || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target));
     return card.faces.find(face => eligible(face) && (!query.trim() || face.name.toLowerCase().includes(query.trim().toLowerCase())))
       || card.faces.find(eligible) || card.faces[0];
   };
   const showSearch = searching || !selected;
+  const removeButton = instance && <CardActionButton action="Remove" cardName={nameOf(instance.definitionId, instance.faceId)}
+    onPress={() => setRemoving({ id: instance.id, name: nameOf(instance.definitionId, instance.faceId) })} />;
+  if (removing) return <RemovalConfirmation subject={removing.name} detail="This removes the card from this Argonaut’s loadout."
+    onCancel={() => setRemoving(null)} onConfirm={() => {
+      dispatch({ type: 'remove-equipment', argonautId: argonaut.id, instanceId: removing.id }); back();
+    }} />;
   return <SafeAreaView style={styles.safe}><ScrollView ref={scroll} keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets contentContainerStyle={styles.page}>
     <View style={styles.row}><Button quiet label="Back to Argonaut" onPress={back} /><Text style={styles.meta}>{argonaut.name || 'Argonaut'} · Loadout</Text></View>
     <Text accessibilityRole="header" style={styles.title}>{instance ? 'Edit equipment' : 'Choose equipment'}</Text>
@@ -75,21 +87,25 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     </View></View>}
     {instance && assignment && <View style={styles.panel}>
       <Text style={styles.heading}>Current card: {ownHidden ? 'Unrevealed Gear' : ownedFace?.name || 'Unavailable Gear'}</Text>
-      <Text style={styles.body}>{instance.exhausted ? 'Exhausted' : 'Ready'}{state.activeInstanceIds.has(instance.id) ? '' : ' · Needs reassignment'}</Text>
+      <Text style={styles.body}>{instance.discarded ? 'Discarded' : instance.exhausted ? 'Exhausted' : 'Ready'}{state.activeInstanceIds.has(instance.id) ? '' : ' · Needs reassignment'}</Text>
       {assignment.override && <Text style={styles.warning}>Manual override: {assignment.override.reason}</Text>}
-      <Button quiet label="Remove from loadout" onPress={() => { dispatch({ type: 'remove-equipment', argonautId: argonaut.id, instanceId: instance.id }); back(); }} />
+      {showSearch && <CardActionRow>{removeButton}</CardActionRow>}
     </View>}
     {!showSearch && selected && face && <View style={styles.panel}>
       <Text accessibilityRole="header" style={styles.heading}>Review selection</Text>
-      <View style={{ alignItems: 'center' }}>{hidden ? <SecretCard card={selected} compact onReveal={() => spoilers.reveal(selected.id)} /> : face.kind === 'gear' && <GearCard face={face} width={Math.min(270, width - 66)} exhausted={Boolean(reuse && instance?.exhausted)} />}</View>
+      <View style={{ alignItems: 'center' }}>{hidden ? <SecretCard card={selected} compact onReveal={() => spoilers.reveal(selected.id)} /> : face.kind === 'gear' && <GearCard face={face} width={Math.min(270, width - 66)} exhausted={Boolean(reuse && (instance?.exhausted || instance?.discarded))} />}</View>
+      <CardActionRow>
+        {!hidden && otherFace && <CardActionButton action="Flip" cardName={face.name} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ face: otherFace.id }); }} />}
+        <CardActionButton action="Change card" onPress={() => { setSearching(true); scroll.current?.scrollTo({ y: 0, animated: true }); }} />
+        {removeButton}
+      </CardActionRow>
       {!hidden && <>
         <Text style={styles.body}>{face.kind === 'gear' ? `${face.data.slot} · ${face.data.traits.join(' · ')}` : face.family}</Text>
         <Text style={styles.meta}>Check any special requirements in the card’s ability text before equipping.</Text>
-        {otherFace && <Button quiet label={`Flip to ${otherFace.id}`} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ face: otherFace.id }); }} />}
         {options.length > 1 && <View style={styles.row}>{options.map(option => <Button key={`${option.kind}:${option.units}`} quiet label={option.label} selected={option.units === selectedUnits} onPress={() => { setUnits(option.units); setOverride(false); }} />)}</View>}
         {plan?.replacedIds.map(id => {
           const old = argonaut.instances.find(item => item.id === id)!;
-          return <Text key={id} style={styles.warning}>Replaces {nameOf(old.definitionId, old.faceId)}. Cards losing bonus positions remain under Needs reassignment.</Text>;
+          return <Text key={id} style={styles.warning}>Replaces {nameOf(old.definitionId, old.faceId)}. </Text>;
         })}
         {plan?.errors.map(error => <Text key={error} style={styles.warning}>{error}</Text>)}
         {plan?.issues.map((entry, index) => <Text key={`${entry.code}:${index}`} style={styles.warning}>{entry.message}</Text>)}
@@ -98,7 +114,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
           {override && <TextInput accessibilityLabel="Manual override reason" placeholder="Explain the exception" value={reason} onChangeText={setReason} maxLength={300} style={styles.input} />}
         </View>}
       </>}
-      <Button quiet label="Change card" onPress={() => { setSearching(true); scroll.current?.scrollTo({ y: 0, animated: true }); }} />
+      {!available && <Text style={styles.warning}>This card is unavailable in campaign Cycle {cycle}. Change the cycle on the campaign page to equip it.</Text>}
       <Button label={override ? 'Save with override' : reuse ? 'Save placement' : 'Equip card'} disabled={!canSave} onPress={() => {
         if (!request || !plan?.next) return;
         dispatch({ type: 'equip', argonautId: argonaut.id, request }); back();
@@ -107,8 +123,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     {showSearch && <View style={styles.panel}><Text accessibilityRole="header" style={styles.heading}>{instance ? 'Replace with Gear' : 'Find Gear'}</Text>
       {selected && <Button quiet label="Back to selection" onPress={() => { setSearching(false); scroll.current?.scrollTo({ y: 0, animated: true }); }} />}
       <TextInput accessibilityLabel="Search equipment by name or printed ID" placeholder="Search name or ID" value={query} onChangeText={value => { setQuery(value); setPage(0); router.setParams({ q: value }); }} style={styles.input} />
-      <View style={styles.row}>{['', ...cycles].map(value => <Button key={value} quiet label={value || 'All cycles'} selected={value === cycle}
-        onPress={() => { setCycle(value); setPage(0); router.setParams({ cycle: value }); }} />)}</View>
+      <Text style={styles.meta}>Available through campaign Cycle {cycle}. Change the cycle on the campaign page.</Text>
       <Button quiet label={allGear ? 'Show matching Gear' : 'Show all Gear for manual exceptions'} onPress={() => { setAllGear(!allGear); setPage(0); }} />
       <Text accessibilityLiveRegion="polite" style={styles.meta}>{matches.length} matching cards · Page {currentPage + 1} of {lastPage + 1}</Text>
       <GearResults cards={matches.slice(currentPage * 12, (currentPage + 1) * 12)} width={Math.min(270, width - 66)} selecting

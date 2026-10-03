@@ -5,7 +5,7 @@ import { Button } from '../../components/Button';
 import { useParty } from '../../state/PartyProvider';
 
 export default function LoadoutScreen() {
-  const params = useLocalSearchParams<{ id: string; position?: string; instance?: string; definition?: string; face?: string; q?: string; cycle?: string }>();
+  const params = useLocalSearchParams<{ id: string; position?: string; instance?: string; definition?: string; face?: string; q?: string }>();
   const { party } = useParty();
   const argonaut = party.argonauts.find(member => member.id === params.id);
   return argonaut ? <EquipmentEditor key={`${params.id}:${params.instance || params.position || ''}`} argonaut={argonaut} params={params} /> : <View style={{ padding: 24, gap: 20 }}>

@@ -4,6 +4,8 @@ import fs from 'node:fs';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
 import { loadoutState } from '../src/domain/loadout.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
+import { parseParty } from '../src/domain/party.ts';
+import { supportsPattern } from '../src/domain/references.ts';
 import { exportProfile, importProfile, newProfile, parseWorkspace, readBackup, referenceProblems } from '../src/storage/workspace.ts';
 import { CURRENT_KEY, PREVIOUS_KEY, SnapshotStore } from '../src/storage/snapshots.ts';
 
@@ -24,7 +26,7 @@ function complexParty() {
   const reduce = (owner, action) => { party = partyReducer(party, { argonautId: owner, ...action }, catalogue); };
   const equip = (owner, name, positionId, id, extra = {}) => reduce(owner, { type: 'equip', request: { definitionId: named(name).id, faceId: 'front', positionId, instanceId: id, ...extra } });
   for (const [index, member] of party.argonauts.entries()) {
-    reduce(member.id, { type: 'name', name: `Navigator ${index + 1}` });
+    reduce(member.id, { type: 'argonaut-change', name: `Navigator ${index + 1}`, definitionId: null, confirmed: true, partyId: party.id, expectedName: member.name, expectedDefinitionId: member.argonautDefinitionId });
     reduce(member.id, { type: 'colour', colour: ['#347C7A', '#806191', '#626976', '#B46A3C'][index] });
     for (let i = 0; i <= index; i++) reduce(member.id, { type: 'skill', skill: 'Courage', delta: 1 });
     reduce(member.id, { type: 'counter', counter: 'danger', value: index + 3 });
@@ -51,11 +53,41 @@ function complexParty() {
   party.argonauts[0].instances[0].counters = { charges: 3 };
   party.argonauts[0].instances.find(item => item.id === 'backpack').satisfiedEffectIds = [effect];
   for (const [family, key, id] of [['Mnemos', 'mnemosIds', 'memory'], ['Fated Mnemos', 'fatedMnemosIds', 'fated']]) {
-    party.argonauts[3].instances.push({ id, definitionId: catalogue.search({ family })[0].id, faceId: 'front', exhausted: false, enabledEffectIds: [], counters: { node: 2 } });
+    party.argonauts[3].instances.push({ id, definitionId: catalogue.search({ family })[0].id, faceId: 'front', exhausted: false, enabledEffectIds: [], counters: { node: 2 }, memoryProgress: { node: 2, growthUnlocked: family === 'Fated Mnemos' } });
     party.argonauts[3][key] = [id];
+  }
+  for (const kind of ['Trauma', 'Kratos']) {
+    const card = catalogue.search({ family: 'Pattern' }).find(card => supportsPattern(card.faces[0], kind));
+    reduce('arg-4', { type: 'table-override', kind, reference: { definitionId: card.id, faceId: 'front' } });
   }
   return party;
 }
+
+function legacyParty() {
+  const party = complexParty(); party.saveSchemaVersion = 1;
+  for (const member of party.argonauts) {
+    delete member.tableOverrides;
+    member.mnemosIds = member.mnemosIds.filter(Boolean); member.fatedMnemosIds = member.fatedMnemosIds.filter(Boolean);
+    for (const instance of member.instances) delete instance.memoryProgress;
+  }
+  return party;
+}
+
+test('discarded Gear, memories and Titans survive local restart, backup and import independently', async () => {
+  const party = complexParty();
+  const targets = [party.argonauts[0].instances[0], party.argonauts[3].instances.find(item => item.id === 'memory'), party.argonauts[1].titan];
+  for (const item of targets) Object.assign(item, { discarded: true, exhausted: false });
+  const profile = { id: party.id, name: 'Discard round trip', party };
+  const backup = readBackup(exportProfile(profile), catalogue);
+  assert.deepEqual(backup.profile, profile);
+  const workspace = { ...fresh(), profiles: [profile] }, { storage, store } = await readyStore();
+  await store.save(workspace);
+  const restored = await new SnapshotStore(storage).load();
+  assert.equal(restored.kind, 'ready');
+  assert.deepEqual(restored.workspace, workspace);
+  const imported = importProfile(fresh(), backup.profile, 'discard-import', 'Imported discard');
+  assert.deepEqual(imported.profiles.at(-1).party.argonauts, party.argonauts);
+});
 
 test('complete four-Argonaut backup and local restart restore state and recompute capacity', async () => {
   const party = complexParty(), profile = { id: party.id, name: 'Round trip', party };
@@ -83,9 +115,13 @@ test('import is a new independent profile, preserving the source, current party 
 });
 
 test('standalone schema-1 parties migrate explicitly and future schemas fail without modifying input', () => {
-  const party = complexParty(), migrated = parseWorkspace(party);
-  assert.deepEqual(migrated.profiles[0].party, party); assert.equal(migrated.activeProfileId, party.id);
-  assert.deepEqual(readBackup(JSON.stringify(party), catalogue).profile.party, party);
+  const party = legacyParty(), before = structuredClone(party), migrated = parseWorkspace(party), expected = parseParty(party);
+  assert.deepEqual(migrated.profiles[0].party, expected); assert.equal(migrated.activeProfileId, party.id);
+  assert.equal(expected.saveSchemaVersion, 2); assert.deepEqual(expected.argonauts[3].mnemosIds, ['memory', null]);
+  assert.deepEqual(expected.argonauts[3].instances.find(item => item.id === 'memory').memoryProgress, { node: 2, growthUnlocked: false });
+  assert.deepEqual(expected.argonauts[3].instances.find(item => item.id === 'fated').memoryProgress, { node: 2, growthUnlocked: false });
+  assert.deepEqual(readBackup(JSON.stringify(party), catalogue).profile.party, expected);
+  assert.deepEqual(party, before);
   assert.throws(() => parseWorkspace({ ...fresh(), schemaVersion: 99 }), /Unsupported/);
   assert.throws(() => readBackup(JSON.stringify({ ...party, saveSchemaVersion: 99 }), catalogue), /Unsupported/);
 });
@@ -203,13 +239,34 @@ test('a torn primary write recovers from the untouched successful party on resta
 });
 
 test('local legacy migration preserves the raw previous save and unsupported primaries require recovery', async () => {
-  const storage = new MemoryStorage(), party = complexParty(), legacy = JSON.stringify(party);
+  const storage = new MemoryStorage(), party = legacyParty(), expected = parseParty(party), legacy = JSON.stringify(party);
   storage.data.set(CURRENT_KEY, legacy);
   const store = new SnapshotStore(storage), result = await store.load();
-  assert.equal(result.kind, 'ready'); assert.deepEqual(result.workspace.profiles[0].party, party);
+  assert.equal(result.kind, 'ready'); assert.deepEqual(result.workspace.profiles[0].party, expected);
   await store.save(result.workspace); assert.equal(storage.data.get(PREVIOUS_KEY), legacy);
   storage.data.set(CURRENT_KEY, JSON.stringify({ ...result.workspace, schemaVersion: 99 }));
   const recovery = await new SnapshotStore(storage).load();
-  assert.equal(recovery.kind, 'recovery'); assert.deepEqual(recovery.previous.profiles[0].party, party);
+  assert.equal(recovery.kind, 'recovery'); assert.deepEqual(recovery.previous.profiles[0].party, expected);
   assert.equal(JSON.parse(storage.data.get(CURRENT_KEY)).schemaVersion, 99);
+});
+
+test('version-1 parties inside profile and backup envelopes migrate without losing other state', async () => {
+  const party = legacyParty(), expected = parseParty(party), profile = { id: party.id, name: 'Legacy campaign', party };
+  const workspace = { ...fresh(), profiles: [profile] }, before = structuredClone(workspace);
+  const parsed = parseWorkspace(workspace);
+  assert.deepEqual(parsed.profiles[0].party, expected); assert.deepEqual(workspace, before);
+  const backup = JSON.stringify({ format: 'ato-party-backup', backupVersion: 1, profile });
+  assert.deepEqual(readBackup(backup, catalogue).profile.party, expected);
+  assert.equal(JSON.parse(exportProfile(profile)).profile.party.saveSchemaVersion, 2);
+  const storage = new MemoryStorage(), raw = JSON.stringify(workspace); storage.data.set(CURRENT_KEY, raw);
+  const store = new SnapshotStore(storage), loaded = await store.load();
+  assert.deepEqual(loaded.workspace, parsed); await store.save(loaded.workspace);
+  assert.equal(storage.data.get(PREVIOUS_KEY), raw); assert.deepEqual(JSON.parse(storage.data.get(CURRENT_KEY)), parsed);
+  assert.equal(loaded.workspace.profiles[0].name, profile.name);
+  assert.deepEqual(expected.order, party.order); assert.equal(expected.activeArgonautId, party.activeArgonautId);
+  for (let index = 0; index < 4; index++) {
+    const old = party.argonauts[index], current = expected.argonauts[index];
+    for (const field of ['name', 'colour', 'skills', 'equipment', 'titan', 'counters', 'tokens', 'localConditions']) assert.deepEqual(current[field], old[field]);
+    assert.deepEqual(current.tableOverrides, { trauma: null, kratos: null });
+  }
 });

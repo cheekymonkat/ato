@@ -72,6 +72,12 @@ const restored = parseParty(JSON.parse(savedJson));
 
 The calling state/storage layer supplies stable party and instance IDs; the domain has no platform API. Each of four Argonauts owns a name, validated `#RRGGBB` colour, six skills, Titan instance, loadout, memories, counters, conditions and tokens. Party order, active Argonaut ID and shared resources are separate. Creation allocates independent objects and arrays for every Argonaut. Catalogue and save-schema versions are distinct.
 
+Stage 7 adds optional structured condition records alongside legacy labels.
+One of each condition type is allowed per Argonaut, including both sides of a
+reversible card; effects and expiry remain manual. Campaign cycle controls token
+visibility and cumulative card-picker availability without erasing amounts or assignments. The setting is chosen at campaign creation and edited on the campaign page. Shared resources remain a separate party
+pool. See [Stage 7 notes](STAGE_7_TOKENS.md).
+
 Save validation rejects malformed colours, repeated IDs/order, overlapping assignments and dangling instance references. It does not clamp counters or perform death/campaign automation. Resolving missing catalogue definitions and migrations is a later storage/recovery concern. Stage 2 binds colours to a proposed 4 px separator and adds bounded left/right navigation with accessible alternatives.
 
 ## Initial review findings
@@ -86,3 +92,16 @@ Save validation rejects malformed colours, repeated IDs/order, overlapping assig
 - Seven slot effects are recognized; no current capacity candidate remains unmapped.
 
 Do not repair the original exports by guessing missing references. The report gives file and JSON pointer for review. Fifteen domain/import tests cover preservation, IDs, aliases, faces, supported/unsupported effects, runtime validation, independent Argonauts, dynamic capacity and occupied-slot recovery.
+
+## Physical-copy interpretation for future supply tracking
+
+On 2 October 2026 the user confirmed printed card IDs as the physical-copy
+identifiers for quantity limits. Count distinct nonblank IDs per definition, not
+app instance IDs and not front/back faces. The installed Mnemos/Fated definitions
+all have one ID each. Hammer-Sword and Hidden Xiphos share CJ1472/CJ1473, so a
+face change does not create another copy. Five IDs are reused across different
+families (BR0800, AR0483, AR0601, CX1679, DV2539), one record repeats an alias,
+and Hyperborean Ruins has no printed ID. Those exceptions prevent treating IDs
+as globally unique. Preserve registry identities and explicitly review missing
+quantity cases. General supply tracking is planned; the current implementation
+enforces unique Mnemos/Fated assignments per party.

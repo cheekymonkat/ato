@@ -2,7 +2,14 @@
 
 The Triskelion layout checkpoint is committed as `2385c3c`. Stage 5 adds local
 autosave, named four-Argonaut parties and portable JSON backups. The implementation
-is ready for review; the runtime checks listed below still need completion.
+is committed as `67f8b1b`; the runtime checks listed below still need completion.
+Stage 6 subsequently adds memory editing and Pattern overrides; see
+[Stage 6 notes](STAGE_6_REFERENCES.md) for the current party schema and migration.
+Stage 7 adds optional campaign cycle and structured condition fields within
+schema 2, retaining older condition labels. Counts, card references, sources
+and duration notes persist. Tides of Fate cleanup autosaves as one complete party
+change, with no tracker undo history. See
+[Stage 7 notes](STAGE_7_TOKENS.md) for scopes and validation.
 
 ## Using saves
 
@@ -13,10 +20,10 @@ app goes into the background. Wait for **Saved locally** before closing or
 refreshing. A storage error leaves the visible party intact and offers retry
 and backup actions.
 
-Open the top-right menu and choose **Party profiles & backups** to:
+Open the top-right menu and choose **Campaigns & backups** to:
 
-- Create, name and switch between parties, each containing four Argonauts.
-- Rename the current party.
+- Create, name and switch between campaigns, each containing four Argonauts and a chosen Cycle 1–5 (default 1).
+- Rename the current party and edit its cycle with **Save campaign cycle**. Cycle changes update all card pickers and token visibility for that campaign, while preserving existing card assignments and token amounts.
 - Export the complete current party as JSON. Web downloads a file; iOS and
   Android open the device share sheet so the player can choose its destination.
 - Import a JSON file, or paste JSON, validate it and review the four Argonauts
@@ -43,7 +50,8 @@ catalogue remains bundled and immutable. Local state stays on the device; this
 step does not add cloud accounts or synchronisation.
 
 The local envelope is `ato-workspace`, schema version 1. Profiles have stable
-IDs, names and schema-1 parties with a separate catalogue version. The backup
+IDs, names and parties with a separate catalogue version. Stage 5 introduced
+party schema 1; Stage 6 explicitly migrates it to party schema 2. The backup
 envelope is `ato-party-backup`, backup version 1, with an export time and one
 complete profile. Imports assign a new profile/party identity while retaining
 the Argonaut and card-instance IDs within that independent party.
@@ -51,7 +59,8 @@ the Argonaut and card-instance IDs within that independent party.
 Standalone schema-1 party JSON is explicitly migrated into a profile on local
 load and is accepted for import. Future envelope or party versions fail
 validation until a migration is implemented. New save changes should add an
-explicit migration in `workspace.ts`, with a historical fixture and tests.
+explicit migration at the party/envelope validation boundary, with a historical
+fixture and tests.
 
 Missing card definitions, faces, Argonaut definitions and optional/confirmed
 effects are reported. Imports with unresolved references are rejected. Local

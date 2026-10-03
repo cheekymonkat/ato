@@ -24,7 +24,10 @@ export function GateBackground({ gate }: { gate: DisplayGate }) {
 }
 
 /** ATCC's split arrow polygons; native SVG uses an explicit padded viewBox instead of DOM getBBox. */
-export function GateBadge({ gate, height = 15, stat = false }: { gate: DisplayGate; height?: number; stat?: boolean }) {
+export function GateBadge({ gate, height = 15, stat = false, filled = false }: { gate: DisplayGate; height?: number; stat?: boolean; filled?: boolean }) {
+  const paint = useCardColours();
+  const firstFill = filled ? paint.colour(gateColour(gate.type)) : 'none';
+  const secondFill = filled ? paint.colour(gateColour(gate.type2 || gate.type)) : 'none';
   const condition = gate.type === 'Condition', or = gate.combo === 'OR', and = gate.combo === '&' || gate.combo === 'AND';
   const size = condition ? 26 : gate.type === 'Ambrosia' ? 35 : 22;
   const adjustment = condition ? gate.value.length * 15 : gate.type === 'Ambrosia' ? 5 : 0;
@@ -36,9 +39,9 @@ export function GateBadge({ gate, height = 15, stat = false }: { gate: DisplayGa
   return <View accessible accessibilityLabel={gateLabel(gate)} style={{ height, width: height * viewWidth / 36, maxWidth: '100%' }}>
     <Svg width="100%" height="100%" viewBox={`-2 -2 ${viewWidth} 36`}>
       {stat ? <Polygon points={`${width - split - 5},0 ${width - split - 15},32 ${width - split},0 ${width - split - 10},32`} stroke="#FFFFFF" strokeWidth={3} fill="none" /> : <>
-        <Polygon points={`0,16 12,0 ${width - split - 5},0 ${width - split - 15},32 12,32`} stroke="#FFFFFF" strokeWidth={3} fill="none" />
-        {or && <Polygon points={`${width - split},0 ${width - split + spacer - 5},0 ${width - split + spacer - 15},32 ${width - split - 10},32`} stroke="#FFFFFF" strokeWidth={3} fill="none" />}
-        <Polygon points={`${width - split + spacer},0 ${width - 12 + spacer},0 ${width + spacer},16 ${width - 12 + spacer},32 ${width - split - 10 + spacer},32`} stroke="#FFFFFF" strokeWidth={3} fill="none" />
+        <Polygon points={`0,16 12,0 ${width - split - 5},0 ${width - split - 15},32 12,32`} stroke="#FFFFFF" strokeWidth={3} fill={firstFill} />
+        {or && <Polygon points={`${width - split},0 ${width - split + spacer - 5},0 ${width - split + spacer - 15},32 ${width - split - 10},32`} stroke="#FFFFFF" strokeWidth={3} fill={firstFill} />}
+        <Polygon points={`${width - split + spacer},0 ${width - 12 + spacer},0 ${width + spacer},16 ${width - 12 + spacer},32 ${width - split - 10 + spacer},32`} stroke="#FFFFFF" strokeWidth={3} fill={secondFill} />
       </>}
       <G x={iconX} y={iconY}><GateIcon name={condition ? 'Condition' : gate.type} size={size} />
         {and && gate.type2 && <><SvgText x={size + 6} y={size * 0.75} fontSize={20} fontWeight="bold" fill="#FFFFFF" textAnchor="middle">&amp;</SvgText><G x={size + 12}><GateIcon name={gate.type2} size={size} /></G></>}

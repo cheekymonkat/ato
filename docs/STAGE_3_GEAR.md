@@ -7,7 +7,7 @@ Stage 3 adds a searchable Gear catalogue, shared card-face components and full-c
 1. Start `npm run web`, open an Argonaut, open the top-right menu and select **Browse Gear**.
 2. Search `hammer`. Inspect Rebound Hammer, Cyclopean Forge Hammer, Relief Hammer and Hammer-Sword. Select the secret result, then reveal it in the full view to read Hammer Origin.
 3. On Hammer-Sword, select **Flip to back** to see Hidden Xiphos. Select a keyword inline or from the separate Keywords buttons to read its definition.
-4. In Relief Hammer, select **Column** inline or under Referenced cards. Back returns through inspection to the same catalogue search, cycle and page.
+4. In Relief Hammer, select **Column** inline or under Referenced cards. Back returns through inspection to the same catalogue search and page, within the campaign cycle.
 5. Search and select `Trireme Breastplate` for Armor dice, or reveal `Umbral Virus` to inspect the compound Fate/Ambrosia OR gate. **Hide this card** conceals a revealed secret again.
 
 In development, `/argonaut/arg-1?fixture=trireme` loads the existing disposable fixture: a Trireme Breastplate card (now rendered in full on the dashboard), its editing tap target and three derived Support positions. The fixture replaces that Argonaut's preview loadout and is ignored in production. Stage 4 adds selection and editing to equipment positions.
@@ -27,7 +27,28 @@ Inspection intentionally uses intrinsic height, a maximum width of 450 px and mi
 
 ## Navigation, references and spoilers
 
-`/gear` keeps search, cycle and page in route parameters. `/cards/[id]?face=front|back` uses the stable definition ID. Inspection flipping changes only the route's displayed face; it does not mutate a definition or an equipped instance.
+Recognised rich-text keyword tokens are dotted-underlined links on the
+dashboard, catalogue results, editors and reference cards. Tap/click opens the
+full bundled definition immediately; hit slop adds a small touch margin.
+Keyword presses stop propagation so the surrounding card stays unselected.
+Ordinary card taps continue to select/edit it. Unknown keyword tokens stay plain.
+The shared popup scrolls long definitions and includes matching subnames,
+parameters, Auto timing and subdefinitions. Close with ×, the backdrop or
+platform Back/Escape. Keywords within a definition replace the current help.
+Existing selection sheets host help inside their own modal, keeping the draft
+selection mounted and avoiding stacked native modals. Help changes no player data.
+
+The 3 October keyword-help update passed clean lint, typecheck, all 128 domain
+tests and web/iOS/Android exports at `/private/tmp/ato-keyword-help-export`.
+Chrome interaction confirmed that Tumble on an assigned Gear card opens its
+definition while the dashboard URL remains unchanged. Visual review confirmed
+the compact popup, dotted underlines and a further Crash definition link. A
+normal card press selected the editor route; after a development-server reload
+the full editor rendered with its keyword links. Concurrent browser activity
+limited further dismissal/picker interaction checks. Native touch, hardware
+Back and screen-reader acceptance remain pending; exports are build checks.
+
+`/gear` keeps search and page in route parameters. Cycle availability comes from the active campaign; old per-view cycle parameters are ignored. `/cards/[id]?face=front|back` uses the stable definition ID. Inspection flipping changes only the route's displayed face; it does not mutate a definition or an equipped instance.
 
 Printed references resolve through the existing repository. Unique references navigate directly; ambiguous references offer choices; missing references display an explanation. A uniquely identified reverse alias selects that face, while a shared printed ID defaults to the front. Missing card routes show a recoverable Card unavailable screen.
 
@@ -53,7 +74,7 @@ The generated icons and dictionaries are bundled app inputs; a normal checkout d
 
 | Location | Responsibility |
 | --- | --- |
-| `src/cards/GearLibrary.tsx` | Search, cycle filter, 12-card pages and inspection entry |
+| `src/cards/GearLibrary.tsx` | Search, campaign cycle limit, 12-card pages and inspection entry |
 | `src/cards/CardInspection.tsx` | Face display, flip, references and keyword sheets |
 | `src/components/cards/` | Full Gear, equipped grayscale, shared search grid, rich paragraphs, dice, gates and spoiler presentation |
 | `src/domain/card-presentation.ts` | Pure formatting, gate/dice rules, links, secret detection and face selection |

@@ -3,6 +3,9 @@ import { useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
+import { campaignCycle } from '../domain/campaign';
+import type { CampaignCycle } from '../domain/campaign';
+import { CampaignCycleSelector } from './CampaignCycleSelector';
 import { Button } from '../components/Button';
 import { useParty } from '../state/PartyProvider';
 import { downloadBackup, pickBackup } from '../storage/files';
@@ -15,6 +18,8 @@ import { theme } from '../theme/tokens';
 export function PartyProfiles() {
   const state = useParty();
   const scroll = useRef<ScrollView>(null);
+  const [cycle, setCycle] = useState(campaignCycle(state.profile.party));
+  const [newCycle, setNewCycle] = useState<CampaignCycle>(1);
   const [name, setName] = useState(state.profile.name), [newName, setNewName] = useState('');
   const [error, setError] = useState<string | null>(null), [message, setMessage] = useState<string | null>(null);
   const [pending, setPending] = useState<ReturnType<typeof readBackup> | null>(null), [importName, setImportName] = useState('');
@@ -36,7 +41,7 @@ export function PartyProfiles() {
   const mismatch = state.profile.party.catalogueVersion !== getCatalogue().version;
   return <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']}>
     <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={styles.scroll}>
-      <View style={styles.header}><Text accessibilityRole="header" style={styles.title}>Party profiles & backups</Text><Button quiet label="Return to party" disabled={busy} onPress={() => goToParty()} /></View>
+      <View style={styles.header}><Text accessibilityRole="header" style={styles.title}>Campaigns & backups</Text><Button quiet label="Return to party" disabled={busy} onPress={() => goToParty()} /></View>
       <SaveNotice />
       <Text style={styles.text}>Parties save automatically on this device. Export JSON backups to keep a separate copy or move a party to another device.</Text>
       {error && <Text accessibilityRole="alert" style={styles.error}>{error}</Text>}
@@ -49,15 +54,24 @@ export function PartyProfiles() {
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Your parties</Text>
         {state.workspace.profiles.map(profile => <View key={profile.id} style={styles.profileRow}>
           <View style={{ flex: 1 }}><Text style={styles.text}>{profile.name}{profile.id === state.profile.id ? ' · Current' : ''}</Text>
-            <Text style={styles.detail}>{profile.party.order.map(id => profile.party.argonauts.find(member => member.id === id)!.name).join(' · ')}</Text></View>
+            <Text style={styles.detail}>Cycle {campaignCycle(profile.party)} · {profile.party.order.map(id => profile.party.argonauts.find(member => member.id === id)!.name).join(' · ')}</Text></View>
           <Button quiet label={`Open ${profile.name}`} disabled={busy} onPress={() => act(() => { state.switchProfile(profile.id); goToParty(profile.party.activeArgonautId); })}><Text style={styles.openLabel}>Open</Text></Button>
         </View>)}
         <TextInput accessibilityLabel="Party name" value={name} onChangeText={setName} maxLength={80} style={styles.input} />
         <Button quiet label="Rename current party" disabled={busy || !name.trim() || state.preview} onPress={() => act(() => state.renameProfile(name))} />
       </View>
-      <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>New party</Text>
+      <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Current campaign cycle</Text>
+        <Text style={styles.detail}>Applies to all four Argonauts. Cards from this cycle and earlier are available; token types follow this cycle too. Existing assignments and token counts are retained when changing it.</Text>
+        <CampaignCycleSelector label="Current campaign" value={cycle} onChange={setCycle} disabled={busy || state.preview} />
+        <Button label="Save campaign cycle" disabled={busy || state.preview || cycle === campaignCycle(state.profile.party)} onPress={() => act(() => {
+          state.dispatch({ type: 'campaign-cycle', argonautId: state.profile.party.activeArgonautId, cycle }); setMessage(`Campaign cycle saved: Cycle ${cycle}.`);
+        })} />
+      </View>
+      <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>New campaign</Text>
         <TextInput accessibilityLabel="New party name" placeholder="Expedition name" value={newName} onChangeText={setNewName} maxLength={80} style={styles.input} />
-        <Button label="Create party" disabled={busy || !newName.trim()} onPress={() => act(() => goToParty(state.createProfile(newName)))} />
+        <Text style={styles.text}>Campaign cycle</Text>
+        <CampaignCycleSelector label="New campaign" value={newCycle} onChange={setNewCycle} disabled={busy} />
+        <Button label="Create campaign" disabled={busy || !newName.trim()} onPress={() => act(() => goToParty(state.createProfile(newName, newCycle)))} />
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Portable backup</Text>
         <View style={styles.actions}><Button label="Export party JSON" disabled={busy || state.preview} onPress={() => void asyncAct(async () => {
@@ -71,6 +85,7 @@ export function PartyProfiles() {
         {pasteOpen && <><TextInput accessibilityLabel="Backup JSON" multiline value={json} onChangeText={setJson} style={[styles.input, styles.json]} />
           <Button quiet label="Validate pasted backup" disabled={busy || !json.trim()} onPress={() => act(() => review(json))} /></>}
         {pending && <View style={styles.review}><Text style={styles.heading}>Review import</Text>
+          <Text style={styles.detail}>Campaign cycle: {campaignCycle(pending.profile.party)}</Text>
           <Text style={styles.text}>{pending.profile.party.argonauts.map(member => `${member.name}: ${member.instances.length} cards${member.titan ? ' + Titan' : ''}`).join('\n')}</Text>
           {pending.warnings.map(warning => <Text key={warning} style={styles.text}>{warning}</Text>)}
           <TextInput accessibilityLabel="Imported party name" value={importName} onChangeText={setImportName} maxLength={80} style={styles.input} />

@@ -2,6 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { grayscaleColour, grayscaleSvg } from '../src/domain/card-colour.ts';
 import { gearIcons } from '../src/theme/gear-icons.ts';
+import { memoryTheme } from '../src/theme/memory-tokens.ts';
+import { gateColour } from '../src/theme/gear-tokens.ts';
 
 test('grayscale preserves black, white, transparency and relative brightness', () => {
   assert.equal(grayscaleColour('#000000'), '#000000');
@@ -23,6 +25,19 @@ test('SVG recolouring preserves IDs, gradient references and nonpaint content', 
   assert.ok(gray.includes('stroke="#B6B6B6"'));
   assert.ok(gray.includes('>#00FF00</text>'));
   assert.equal(grayscaleSvg(gray), gray);
+});
+
+test('exhausted memories have a distinct neutral palette and their coloured gates and Growth header desaturate', () => {
+  for (const colour of [memoryTheme.inactiveBackground, memoryTheme.inactivePanel, memoryTheme.inactiveInk, grayscaleColour(memoryTheme.growth), grayscaleColour(gateColour('Danger')), grayscaleColour(gateColour('Fate'))]) {
+    assert.equal(colour.slice(1, 3), colour.slice(3, 5));
+    assert.equal(colour.slice(3, 5), colour.slice(5, 7));
+  }
+  assert.notEqual(memoryTheme.inactiveBackground, memoryTheme.background);
+  assert.notEqual(memoryTheme.inactiveInk, memoryTheme.black);
+  // Keep the visible ability text readable on the darker neutral panel.
+  const linear = hex => { const value = parseInt(hex, 16) / 255; return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4; };
+  const contrast = (linear(memoryTheme.inactivePanel.slice(1, 3)) + 0.05) / (linear(memoryTheme.inactiveInk.slice(1, 3)) + 0.05);
+  assert.ok(contrast >= 4.5);
 });
 
 test('all bundled Gear symbols can be desaturated without changing geometry or identity', () => {

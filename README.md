@@ -5,6 +5,65 @@ web, iOS and Android. It contains a bundled catalogue and independent player
 state for four Argonauts. Open the top-right menu and select **Browse Gear** to
 search cards, inspect abilities and flip reversible Gear. Select a dashboard
 card or empty slot to construct or edit a loadout. Secret cards start hidden.
+Memory slots now support ATCC-style cards, saved −/+ node trackers (ten nodes for
+Mnemos, three for Fated Mnemos) and red gateways. Assigned Mnemos hide locked
+abilities until their three/seven-node gateways are reached.
+Fated cards automatically show their blue Growth side at three nodes. Standard
+Mnemos add +1 to listed Argonaut stats; unresolved Fated cards apply -1 until
+resolved. Stat totals and controls allow -9 through 9, starting at zero.
+Select a Titan to view its abilities, and open either reference table in the Titan abilities section
+to choose a Pattern override or return to the Titan default.
+Titan abilities include their keyword explanations directly alongside headings
+and costs. The name, power die, movement icon and value share one line, with
+type/cycle at the top right. Keyword explanations prefer the matching subname,
+falling back to the original keyword when no subname matches.
+Equipment, Support and Attachments share rows when space permits. Memories
+also fit four across, with the Fated pair wrapping below at narrower widths.
+Exhaust appears only on cards with an explicit Exhaust cost. Eligible Titans
+also have an Exhaust/Ready action. Older exhaustion can always be cleared.
+Exhausted memories use a distinct grey palette; Ready restores their appearance.
+Discard appears for explicit Discard costs on the same action row. It clears
+exhaustion, greys out the card and replaces the action with Restore. This state
+is saved independently for each card instance.
+Gear, Mnemos and Condition card actions share compact outlined controls and
+consistent Flip, Exhaust/Ready and Discard/Restore labels where applicable.
+Editor actions sit together below the card, with Remove last. Removing a card
+or shared resource requires checking a confirmation box and confirming removal;
+Cancel or closing the confirmation keeps the saved entry.
+Keywords with bundled definitions have a dotted underline. Tap or click a
+keyword to read its definition without selecting the card; tap elsewhere on the
+card to edit it. Close with × or the backdrop. The same help works in card
+pickers, with touch-friendly targets and no hover requirement.
+Type in the Argonaut name field to see matching named portraits from the
+campaign cycle and earlier. Select a suggestion to apply its printed +1 skill
+bonus (Oleander: Wisdom, available from Cycle IV). Custom names remain manual.
+Changing to another named or custom Argonaut requires a confirmation checkbox.
+The confirmed change resets all six stats to 0, removes every Mnemos and Fated
+Mnemos card and its nodes, clears all conditions and tokens, then applies the
+new portrait bonus. Typing is a draft;
+Cancel keeps the saved Argonaut intact. Selecting the same Argonaut keeps progress.
+Choose the campaign cycle when creating a campaign, or edit it under
+**Campaigns & backups** in the top-right menu. Save the change to apply it to
+all four Argonauts. Gear browsing and all card pickers offer cards from the
+selected cycle and earlier (Cycle 3 includes Cycles 1–3). Non-numbered cards
+remain available. Lowering the cycle retains existing assignments and counts.
+The Tokens section has saved per-Argonaut counters with ATCC symbols. The
+campaign setting shows Ambrosia/Despair in all cycles, adds Midas/Pain
+from Cycle 4 and Oxygen/Aether in Cycle 5. Token gameplay effects remain manual;
+[Stage 7 notes](docs/STAGE_7_TOKENS.md) record the rules for later automation.
+Conditions use white ATCC-style cards with ochre headings/footers, grey ability
+panels and full end-of-battle text. Use **Flip** below reversible cards to change
+sides directly; tap the card to change its selection or remove it. The source
+and duration entry fields are omitted; existing saved notes remain intact. Custom
+entries are supported. Each Argonaut can hold one of each type; reverse sides such
+as Fear/Dread share the same type. Shared resources use a separate campaign pool.
+The menu's last option, **Tides of Fate**, asks for a checked confirmation before
+clearing all four Argonauts' conditions and tokens, readying exhausted/discarded
+cards and setting their Triskelions to zero. Equipment, memory nodes, stats and
+shared resources are preserved. Undo and clear-condition buttons are removed.
+Condition effects, flips and duration expiry remain manual.
+[Stage 6 reference notes](docs/STAGE_6_REFERENCES.md) explain memory progress,
+Pattern selection and the migration of older saves.
 Parties now autosave locally. Use **Party profiles & backups** in the menu to
 create or switch named parties and export/import complete JSON backups.
 [Stage 5 save notes](docs/STAGE_5_SAVES.md) describe recovery, compatibility and

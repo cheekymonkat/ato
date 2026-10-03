@@ -80,7 +80,8 @@ test('two copies keep independent faces, exhaustion and state across navigation'
   const before = JSON.stringify(named('Hammer-Sword'));
   let party = equip(initial(), 'Hammer-Sword', 'base:hand:0', 'first', { faceId: 'back' });
   party = equip(party, 'Hammer-Sword', 'base:hand:1', 'second', { faceId: 'back' });
-  party = reduce(party, { type: 'equipment-exhausted', instanceId: 'first', exhausted: true });
+  // Preserve historical exhaustion saved before costs restricted the action.
+  owner(party).instances.find(item => item.id === 'first').exhausted = true;
   party = reduce(party, { type: 'select', argonautId: 'b' });
   party = reduce(party, { type: 'select' });
   assert.equal(owner(party).instances.find(item => item.id === 'first').exhausted, true);
@@ -110,7 +111,7 @@ test('optional grants are explicit, repeat safely and survive serialize/restore 
 });
 
 test('attachments equip directly and keep their slot and state when unrelated Gear changes', () => {
-  let party = equip(initial(), 'Atlantean Oscillator', 'base:attachment:0', 'attachment');
+  let party = equip(initial(), 'Argocryptex Alpha', 'base:attachment:0', 'attachment');
   assert.ok(loadoutState(owner(party), catalogue).activeInstanceIds.has('attachment'));
   assert.equal(owner(party).equipment[0].attachmentHostId, null);
   party = reduce(party, { type: 'equipment-exhausted', instanceId: 'attachment', exhausted: true });

@@ -11,7 +11,7 @@ const initial = () => createParty('party', ['a', 'b', 'c', 'd'], catalogue.versi
 
 test('editing and navigating retain isolated identity, colour, skills, counters and Titans', () => {
   const start = initial();
-  let party = partyReducer(start, { type: 'name', argonautId: 'a', name: 'Ariadne' });
+  let party = partyReducer(start, { type: 'argonaut-change', argonautId: 'a', name: 'Ariadne', definitionId: null, confirmed: true, partyId: start.id, expectedName: start.argonauts[0].name, expectedDefinitionId: null }, catalogue);
   party = partyReducer(party, { type: 'colour', argonautId: 'a', colour: '#123abc' });
   party = partyReducer(party, { type: 'skill', argonautId: 'a', skill: 'Courage', delta: 1 });
   party = partyReducer(party, { type: 'counter', argonautId: 'a', counter: 'rage', value: 4 });
@@ -43,7 +43,7 @@ test('overflow requires confirmation, decrements remain possible and malformed e
   assert.equal(partyReducer(party, { type: 'select', argonautId: 'missing' }), party);
   assert.equal(partyReducer(party, { type: 'counter', argonautId: 'a', counter: 'danger', value: -1 }), party);
   assert.equal(partyReducer(party, { type: 'counter', argonautId: 'a', counter: 'danger', value: Infinity, confirmOverflow: true }), party);
-  const start = initial(); assert.equal(partyReducer(start, { type: 'skill', argonautId: 'a', skill: 'Courage', delta: -1 }), start);
+  const start = initial(); assert.equal(partyReducer(start, { type: 'skill', argonautId: 'a', skill: 'Courage', delta: -1 }).argonauts[0].skills.Courage, -1);
 });
 
 test('navigation obeys party order and stops at boundaries; swipes ignore vertical and multi-touch input', () => {

@@ -48,7 +48,7 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
   const openEditor = () => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, position: position.id, ...(instance ? { instance: instance.id } : {}) } });
   const content = <>
     <Text style={styles.slotLabel}>{label}</Text>
-    {face?.kind === 'gear' && definition ? <EquippedGear card={definition} face={face} exhausted={instance?.exhausted} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>
+    {face?.kind === 'gear' && definition ? <EquippedGear card={definition} face={face} exhausted={Boolean(instance?.exhausted || instance?.discarded)} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>
       <View style={styles.symbol}><GameIcon name={icons[position.kind]} size={compact ? 28 : 38} /></View>
       <View style={horizontal ? { flex: 1 } : { alignItems: 'center' }}>
         <Text style={[styles.empty, face && styles.cardName]}>{hidden ? 'Unrevealed card' : face?.name || (compact ? 'Unassigned' : 'Unequipped')}</Text>
@@ -60,7 +60,7 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
   return <View testID={`slot-${position.kind}-${index + 1}`} accessibilityLabel={`${label}, ${hidden ? 'unrevealed card' : face?.name || 'empty'}${sourceName ? `, granted by ${sourceName}` : ''}`}
     style={[styles.card, compact && styles.compact, position.source && styles.granted, face && styles.equipped, editable ? [styles.gearSlot, { width: cellWidth }] : styles.memorySlot]}>
     {editable ? <EquipmentSelection label={`${instance ? 'Edit' : 'Equip'} ${label}${instance ? `: ${hidden ? 'unrevealed card' : face?.name || 'card'}` : ''}`} onPress={openEditor}>{content}</EquipmentSelection> : <View style={styles.selection}>{content}</View>}
-    {instance && <Text style={[styles.source, styles.status]}>{instance.exhausted ? 'Exhausted' : 'Ready'}{assignment?.positionIds.length && assignment.positionIds.length > 1 ? ` · Uses ${assignment.positionIds.length} positions` : ''}{assignment?.override ? ' · Manual override' : ''}</Text>}
+    {instance && <Text style={[styles.source, styles.status]}>{instance.discarded ? 'Discarded' : instance.exhausted ? 'Exhausted' : 'Ready'}{assignment?.positionIds.length && assignment.positionIds.length > 1 ? ` · Uses ${assignment.positionIds.length} positions` : ''}{assignment?.override ? ' · Manual override' : ''}</Text>}
     {editable && instance && <EquipmentActions argonautId={argonaut.id} instance={instance} definition={definition} />}
   </View>;
 }
@@ -68,22 +68,37 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
 export function SlotRow({ kinds, positions, argonaut, compact = false, startIndex = 0 }: { kinds: SlotKind[]; positions: CapacityPosition[]; argonaut: Argonaut; compact?: boolean; startIndex?: number }) {
   const { width } = useWindowDimensions();
   const [rowWidth, setRowWidth] = useState(width - 32);
-  const columns = Math.min(3, Math.max(1, Math.floor((rowWidth + slotGap) / (minimumSlotWidth + slotGap))));
+  const slots = positions.filter(position => kinds.includes(position.kind));
+  const columns = Math.min(Math.max(1, slots.length), Math.max(1, Math.floor((rowWidth + slotGap) / (minimumSlotWidth + slotGap))));
   const cellWidth = Math.min(slotWidth, Math.floor((rowWidth - slotGap * (columns - 1)) / columns));
   const counters: Partial<Record<SlotKind, number>> = {};
-  return <View style={styles.row} onLayout={event => { if (event.nativeEvent.layout.width > 0) setRowWidth(event.nativeEvent.layout.width); }}>{positions.filter(position => kinds.includes(position.kind)).map(position => {
+  return <View style={styles.row} onLayout={event => { if (event.nativeEvent.layout.width > 0) setRowWidth(event.nativeEvent.layout.width); }}>{slots.map(position => {
     const index = counters[position.kind] ?? startIndex; counters[position.kind] = index + 1;
     return <SlotCard key={position.id} position={position} index={index} argonaut={argonaut} compact={compact} cellWidth={cellWidth} />;
   })}</View>;
 }
 
 export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosition[]; argonaut: Argonaut }) {
+  const { width } = useWindowDimensions();
+  const [areaWidth, setAreaWidth] = useState(width - 32);
   const needsReassignment = loadoutState(argonaut, getCatalogue()).pending;
   const spoilers = useSpoilers();
+  const groups: { title: string; kinds: SlotKind[]; note?: string; compact?: boolean }[] = [
+    { title: 'Equipment', kinds: ['hand', 'armor'], note: 'Your Titan’s loadout' },
+    { title: 'Support', kinds: ['support'], note: `${positions.filter(position => position.kind === 'support').length} available slots` },
+    { title: 'Attachments', kinds: ['attachment'], compact: true },
+  ];
   return <View style={styles.area}>
-    <View><SectionHeading title="Equipment" note="Your Titan’s loadout" /><SlotRow kinds={['hand', 'armor']} positions={positions} argonaut={argonaut} /></View>
-    <View><SectionHeading title="Support" note={`${positions.filter(position => position.kind === 'support').length} available slots`} /><SlotRow kinds={['support']} positions={positions} argonaut={argonaut} /></View>
-    <View><SectionHeading title="Attachments" /><SlotRow kinds={['attachment']} positions={positions} argonaut={argonaut} compact /></View>
+    <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>{groups.map(group => {
+      const count = Math.max(1, positions.filter(position => group.kinds.includes(position.kind)).length);
+      return <View key={group.title} style={[styles.group, {
+        flexBasis: Math.min(areaWidth, count * minimumSlotWidth + (count - 1) * slotGap),
+        flexGrow: count, maxWidth: Math.min(areaWidth, count * slotWidth + (count - 1) * slotGap),
+      }]}>
+        <SectionHeading title={group.title} note={group.note} />
+        <SlotRow kinds={group.kinds} positions={positions} argonaut={argonaut} compact={group.compact} />
+      </View>;
+    })}</View>
     {needsReassignment.length > 0 && <View style={styles.reassignment}><Text style={styles.reassignmentTitle}>Needs reassignment</Text>
       {needsReassignment.map(({ assignment: entry, reasons }) => {
         const item = argonaut.instances.find(instance => instance.id === entry.instanceId);
@@ -92,16 +107,17 @@ export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosi
         const name = definition && spoilers.hidden(definition) ? 'Unrevealed card' : face?.name || entry.instanceId;
         return <View key={entry.instanceId} style={styles.pendingCard}>
           <EquipmentSelection label={`Reassign ${name}`} onPress={() => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, instance: entry.instanceId } })}>
-            {definition && face?.kind === 'gear' ? <EquippedGear card={definition} face={face} exhausted={item?.exhausted} /> : <Text style={styles.reassignmentText}>{name}</Text>}
+            {definition && face?.kind === 'gear' ? <EquippedGear card={definition} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} /> : <Text style={styles.reassignmentText}>{name}</Text>}
             <Text style={styles.source}>{reasons.join(' ')}</Text>
           </EquipmentSelection>
-          {item && <><Text style={[styles.source, styles.status]}>{item.exhausted ? 'Exhausted' : 'Ready'}</Text><EquipmentActions argonautId={argonaut.id} instance={item} definition={definition} /></>}
+          {item && <><Text style={[styles.source, styles.status]}>{item.discarded ? 'Discarded' : item.exhausted ? 'Exhausted' : 'Ready'}</Text><EquipmentActions argonautId={argonaut.id} instance={item} definition={definition} /></>}
         </View>;
       })}</View>}
   </View>;
 }
 const styles = StyleSheet.create({
-  area: { gap: 24 }, sectionHeading: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8, marginBottom: 12 },
+  area: { gap: 24, minWidth: 0 }, groups: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: 24 },
+  group: { flexShrink: 0, minWidth: 0 }, sectionHeading: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 8, marginBottom: 12 },
   heading: { fontFamily: theme.serif, fontSize: 20, color: theme.ink }, note: { color: theme.muted, fontSize: 11 },
   row: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: slotGap },
   card: { minWidth: 88, minHeight: 168, backgroundColor: '#EAE7DF', borderWidth: 1, borderStyle: 'dashed', borderColor: '#BEB9AE', borderRadius: 6 },

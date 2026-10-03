@@ -4,8 +4,8 @@ import { Button } from '../components/Button';
 import { Chevron } from '../components/Icon';
 import { theme } from '../theme/tokens';
 
-export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfiles }: {
-  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void; onProfiles: () => void;
+export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfiles, onClearAll }: {
+  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void; onProfiles: () => void; onClearAll: () => void;
 }) {
   return <Modal transparent visible={visible} onRequestClose={onClose} animationType="fade">
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.overlay, compact && styles.compact]}>
@@ -17,8 +17,11 @@ export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfi
         <Button quiet label="Browse Gear" onPress={onBrowseGear} style={styles.item}>
           <Text style={styles.itemLabel}>Browse Gear</Text><Chevron />
         </Button>
-        <Button quiet label="Party profiles & backups" onPress={onProfiles} style={styles.item}>
-          <Text style={styles.itemLabel}>Party profiles & backups</Text><Chevron />
+        <Button quiet label="Campaigns & backups" onPress={onProfiles} style={styles.item}>
+          <Text style={styles.itemLabel}>Campaigns & backups</Text><Chevron />
+        </Button>
+        <Button quiet label="Tides of Fate" onPress={onClearAll} style={[styles.item, styles.clearItem]}>
+          <Text style={[styles.itemLabel, { color: theme.danger }]}>Tides of Fate</Text><Chevron />
         </Button>
       </View>
     </SafeAreaView>
@@ -32,4 +35,5 @@ const styles = StyleSheet.create({
   closeButton: { borderWidth: 0, padding: 0, width: 44 }, close: { color: theme.ink, fontSize: 24 },
   item: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', borderWidth: 0, backgroundColor: theme.panel, paddingHorizontal: 12 },
   itemLabel: { color: theme.ink, fontSize: 14 },
+  clearItem: { marginTop: 8, borderTopWidth: 1, borderColor: theme.line },
 });

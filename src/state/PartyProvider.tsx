@@ -3,6 +3,7 @@ import type { Dispatch, ReactNode } from 'react';
 import { AppState, Modal, StyleSheet, Text, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
 import { Button } from '../components/Button';
+import type { CampaignCycle } from '../domain/campaign';
 import type { Party } from '../domain/party';
 import { localStorageAdapter } from '../storage/adapter';
 import { errorMessage, SnapshotStore } from '../storage/snapshots';
@@ -18,7 +19,7 @@ interface PartyContextValue {
   party: Party; dispatch: Dispatch<PartyAction>; workspace: Workspace; profile: PartyProfile;
   saveStatus: SaveStatus; saveError: string | null; preview: boolean;
   flush: () => Promise<void>; switchProfile: (id: string) => void;
-  createProfile: (name: string) => string; renameProfile: (name: string) => void;
+  createProfile: (name: string, cycle: CampaignCycle) => string; renameProfile: (name: string) => void;
   addImport: (profile: PartyProfile, name: string) => string;
   previousSnapshot: () => Promise<Workspace | null>; restoreSnapshot: (snapshot: Workspace) => Promise<void>;
   exitPreview: () => void;
@@ -100,15 +101,17 @@ export function PartyProvider({ children }: { children: ReactNode }) {
       }
       previewRef.current = next; setPreviewParty(next); return;
     }
-    if (next !== party) update({ ...current, profiles: current.profiles.map(entry => entry.id === profile.id ? { ...entry, party: next } : entry) });
+    if (next !== party) {
+      update({ ...current, profiles: current.profiles.map(entry => entry.id === profile.id ? { ...entry, party: next } : entry) });
+    }
   }, [update, persist]);
   const switchProfile = useCallback((id: string) => {
     const current = workspaceRef.current!;
     if (!current.profiles.some(profile => profile.id === id)) throw new Error('Profile no longer exists.');
     exitPreview(); update({ ...current, activeProfileId: id });
   }, [exitPreview, update]);
-  const createProfile = useCallback((name: string) => {
-    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version);
+  const createProfile = useCallback((name: string, cycle: CampaignCycle) => {
+    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version, cycle);
     exitPreview(); update({ ...current, activeProfileId: profile.id, profiles: [...current.profiles, profile] });
     return profile.party.activeArgonautId;
   }, [exitPreview, update]);

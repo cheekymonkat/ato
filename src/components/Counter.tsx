@@ -3,19 +3,19 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Button } from './Button';
 import { theme } from '../theme/tokens';
 
-export function Counter({ name, value, onDecrease, onIncrease, large = false, compact = false, icon }: {
-  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; compact?: boolean; icon?: ReactNode;
+export function Counter({ name, value, onDecrease, onIncrease, large = false, compact = false, dense = false, icon, min = 0, max }: {
+  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; compact?: boolean; dense?: boolean; icon?: ReactNode; min?: number; max?: number;
 }) {
-  const decrease = <Button quiet label={`Decrease ${name}`} disabled={value === 0} onPress={onDecrease} style={styles.button}><Text style={styles.symbol}>−</Text></Button>;
-  const increase = <Button quiet label={`Increase ${name}`} onPress={onIncrease} style={styles.button}><Text style={styles.symbol}>+</Text></Button>;
-  if (compact) return <View style={styles.compactCounter}>
+  const decrease = <Button quiet label={`Decrease ${name}`} disabled={value <= min} onPress={onDecrease} style={styles.button}><Text style={styles.symbol}>−</Text></Button>;
+  const increase = <Button quiet label={`Increase ${name}`} disabled={max !== undefined && value >= max} onPress={onIncrease} style={styles.button}><Text style={styles.symbol}>+</Text></Button>;
+  if (compact) return <View style={[styles.compactCounter, dense && styles.denseCounter]}>
     <View style={styles.compactHeading}>
       {icon && <View style={styles.compactIcon}>{icon}</View>}
       <Text style={styles.name}>{name}</Text>
     </View>
-    <View style={styles.compactControls}>
+    <View style={[styles.compactControls, dense && styles.denseControls]}>
       {decrease}
-      <Text accessibilityLabel={`${name}: ${value}`} accessibilityLiveRegion="polite" style={styles.compactValue}>{value}</Text>
+      <Text accessibilityLabel={`${name}: ${value}`} accessibilityLiveRegion="polite" numberOfLines={dense ? 1 : undefined} style={[styles.compactValue, dense && styles.denseValue]}>{value}</Text>
       {increase}
     </View>
     {large && value > 9 && <Text style={[styles.manual, styles.compactManual]}>Manual value</Text>}
@@ -44,4 +44,7 @@ const styles = StyleSheet.create({
   compactIcon: { width: 22, alignItems: 'center', opacity: 0.65 },
   compactValue: { color: theme.ink, fontFamily: theme.serif, fontSize: 28, lineHeight: 36, minWidth: 32, textAlign: 'center' },
   compactManual: { alignSelf: 'center', marginTop: 0 },
+  // Three skill columns fit a 375 px phone while retaining 44 px action targets.
+  denseCounter: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', minWidth: 110, paddingHorizontal: 0, backgroundColor: theme.paper },
+  denseControls: { gap: 0 }, denseValue: { minWidth: 20, fontSize: 24, letterSpacing: -0.5, flexShrink: 0 },
 });
