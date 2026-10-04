@@ -1,0 +1,611 @@
+{
+  "batch": "epson-211018",
+  "source": "../ato_docs/Epson_04102026211018.jpg",
+  "sourceSha256": "1709152f551f7dfc6bcc38a5469854240361f05e8aa229343fef64c475d19c35",
+  "configurationSha256": "07a8d9009baeeca4b9797ab7f122483a069b8aff5feee1a3bd26a3e354b7a080",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Katarus",
+      "definitionId": "def_54b6ba6736297a521535b8a9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0925",
+        "BJ0926"
+      ],
+      "filename": "katarus.png",
+      "crop": [
+        0,
+        0,
+        500,
+        731
+      ],
+      "width": 500,
+      "height": 731,
+      "preservedPixelCount": 120933,
+      "sha256": "f65f1e90afa085cd9baa0f2ff230620834cd5ac8dc218dddd7dc72347c4fd005",
+      "sourcePrintedIds": [
+        "BJ0925"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/katarus.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/katarus.png",
+        "width": 500,
+        "height": 731,
+        "artBottom": 516
+      }
+    },
+    {
+      "name": "Muck Armor",
+      "definitionId": "def_d50974c7ea7812cfa76eb1d5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0919",
+        "BJ0920"
+      ],
+      "filename": "muck-armor.png",
+      "crop": [
+        500,
+        0,
+        489,
+        731
+      ],
+      "width": 489,
+      "height": 731,
+      "preservedPixelCount": 82176,
+      "sha256": "58ea6b80600cfa5716ba2689880168f6725d1d17f72a4142f85cc966e3a2354c",
+      "sourcePrintedIds": [
+        "BJ0919"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/muck-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/muck-armor.png",
+        "width": 489,
+        "height": 731,
+        "artBottom": 407
+      }
+    },
+    {
+      "name": "Ladder Mode",
+      "definitionId": "def_de2547f0a2fbda3870f6a647",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0915",
+        "BJ0916"
+      ],
+      "filename": "ladder-mode.png",
+      "crop": [
+        1475,
+        0,
+        488,
+        731
+      ],
+      "width": 488,
+      "height": 731,
+      "preservedPixelCount": 51772,
+      "sha256": "51f5f02e0fd591e6f5e4e753b07c818fc066bf4a766ff723346f3b0732f69217",
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/ladder-mode.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/ladder-mode.png",
+        "width": 488,
+        "height": 731,
+        "artBottom": 403
+      }
+    },
+    {
+      "name": "Ladder Buckler",
+      "definitionId": "def_de2547f0a2fbda3870f6a647",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0915",
+        "BJ0916"
+      ],
+      "filename": "ladder-buckler.png",
+      "crop": [
+        1963,
+        0,
+        476,
+        731
+      ],
+      "width": 476,
+      "height": 731,
+      "preservedPixelCount": 81939,
+      "sha256": "c46b4bc78cda19e40c418751ac57055e7d371ddc028678fe964397b38ca484b2",
+      "sourcePrintedIds": [
+        "BJ0915"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/ladder-buckler.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/ladder-buckler.png",
+        "width": 476,
+        "height": 731,
+        "artBottom": 424
+      }
+    },
+    {
+      "name": "Muckbane",
+      "definitionId": "def_6e30e99b6d4b1a2eaf107e99",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0937"
+      ],
+      "filename": "muckbane.png",
+      "crop": [
+        2439,
+        0,
+        485,
+        731
+      ],
+      "width": 485,
+      "height": 731,
+      "preservedPixelCount": 39871,
+      "sha256": "7878b328cdb2d7daaf73c5a8ffa89435f881b5522ff34c040ed29bc3efc1b51b",
+      "sourcePrintedIds": [
+        "BJ0937"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/muckbane.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/muckbane.png",
+        "width": 485,
+        "height": 731,
+        "artBottom": 624
+      }
+    },
+    {
+      "name": "Cyclostus",
+      "definitionId": "def_a64a5f0b6e29f97b7bcf520e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0938"
+      ],
+      "filename": "cyclostus.png",
+      "crop": [
+        2924,
+        0,
+        472,
+        731
+      ],
+      "width": 472,
+      "height": 731,
+      "preservedPixelCount": 100118,
+      "sha256": "397f886215bc9ca3bba32529c6e0e562a5bb6b3a265d6942c55b755dd696d8c7",
+      "sourcePrintedIds": [
+        "BJ0938"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/cyclostus.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/cyclostus.png",
+        "width": 472,
+        "height": 731,
+        "artBottom": 406
+      }
+    },
+    {
+      "name": "Boom Pole",
+      "definitionId": "def_b8081b0e2ccba3a7797a579d",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0928",
+        "BJ0929"
+      ],
+      "filename": "boom-pole.png",
+      "crop": [
+        0,
+        731,
+        499,
+        743
+      ],
+      "width": 499,
+      "height": 743,
+      "preservedPixelCount": 60552,
+      "sha256": "cac5ba1fe85bb7ce13f526bf1f454aca29a06ef5edbb8631a3b903e36488fd16",
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/boom-pole.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/boom-pole.png",
+        "width": 499,
+        "height": 743,
+        "artBottom": 343
+      }
+    },
+    {
+      "name": "Muck Bludgeon",
+      "definitionId": "def_6e9c85fc4e34e78d79c312c7",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0936"
+      ],
+      "filename": "muck-bludgeon.png",
+      "crop": [
+        499,
+        731,
+        490,
+        743
+      ],
+      "width": 490,
+      "height": 743,
+      "preservedPixelCount": 38483,
+      "sha256": "ac844cde8d523759ec3a3e3c1d9185d578cad784813b080310912a793e64cb13",
+      "sourcePrintedIds": [
+        "BJ0936"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/muck-bludgeon.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/muck-bludgeon.png",
+        "width": 490,
+        "height": 743,
+        "artBottom": 521
+      }
+    },
+    {
+      "name": "Dragon Bellow",
+      "definitionId": "def_0e5cc0c028a1e6b02777c401",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0930",
+        "BJ0931"
+      ],
+      "filename": "dragon-bellow.png",
+      "crop": [
+        989,
+        731,
+        486,
+        743
+      ],
+      "width": 486,
+      "height": 743,
+      "preservedPixelCount": 109002,
+      "sha256": "2b90537456409d79fade99f1224d3290a18dc6cc2c68fe82af31513ccd6ff4ae",
+      "sourcePrintedIds": [
+        "BJ0930"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/dragon-bellow.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/dragon-bellow.png",
+        "width": 486,
+        "height": 743,
+        "artBottom": 470
+      }
+    },
+    {
+      "name": "Ambrosia Trocar",
+      "definitionId": "def_c664e37d1bccbf12f92532d1",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0277",
+        "AJ0278"
+      ],
+      "filename": "ambrosia-trocar.png",
+      "crop": [
+        1475,
+        731,
+        488,
+        743
+      ],
+      "width": 488,
+      "height": 743,
+      "preservedPixelCount": 101198,
+      "sha256": "58243ef2d9b442475fe14f436084f85d2f26d8df1bfcabad2283dac3eb4fa2cb",
+      "sourcePrintedIds": [
+        "AJ0277"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/ambrosia-trocar.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/ambrosia-trocar.png",
+        "width": 488,
+        "height": 743,
+        "artBottom": 545
+      }
+    },
+    {
+      "name": "Maulmace",
+      "definitionId": "def_785f5a7f4b5fac9edf01666c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0927"
+      ],
+      "filename": "maulmace.png",
+      "crop": [
+        1963,
+        731,
+        476,
+        743
+      ],
+      "width": 476,
+      "height": 743,
+      "preservedPixelCount": 35035,
+      "sha256": "d993a2208f30bd34a25499994c2e42cc1e5ee2517014f7b7037b04dd11126c6d",
+      "sourcePrintedIds": [
+        "BJ0927"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/maulmace.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/maulmace.png",
+        "width": 476,
+        "height": 743,
+        "artBottom": 517
+      }
+    },
+    {
+      "name": "Needle Sword",
+      "definitionId": "def_6eb329f1f26c218f89699f3e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0921",
+        "BJ0922"
+      ],
+      "filename": "needle-sword.png",
+      "crop": [
+        2439,
+        731,
+        485,
+        743
+      ],
+      "width": 485,
+      "height": 743,
+      "preservedPixelCount": 17209,
+      "sha256": "621e2b8d99172c58a8aa054090eb20eddc500c33a1e5d7088aa651d805bfdafa",
+      "sourcePrintedIds": [
+        "BJ0921"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/needle-sword.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/needle-sword.png",
+        "width": 485,
+        "height": 743,
+        "artBottom": 472
+      }
+    },
+    {
+      "name": "Vaulting Spear",
+      "definitionId": "def_7d504be35f4966b43139cfa8",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0923",
+        "BJ0924"
+      ],
+      "filename": "vaulting-spear.png",
+      "crop": [
+        2924,
+        731,
+        472,
+        743
+      ],
+      "width": 472,
+      "height": 743,
+      "preservedPixelCount": 32147,
+      "sha256": "95c30eaa800bdb8170dbcbe161491ef9a3d3914d59419dda9608bc072581f4cd",
+      "sourcePrintedIds": [
+        "BJ0924"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/vaulting-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/vaulting-spear.png",
+        "width": 472,
+        "height": 743,
+        "artBottom": 426
+      }
+    },
+    {
+      "name": "Temple Camo",
+      "definitionId": "def_1d21790aa90c51fb97044897",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0852",
+        "BJ0853"
+      ],
+      "filename": "temple-camo.png",
+      "crop": [
+        0,
+        1474,
+        495,
+        764
+      ],
+      "width": 495,
+      "height": 764,
+      "preservedPixelCount": 111250,
+      "sha256": "49ca6605a22bc3a4c493762f53431f2445512a9f01a150d456214458ab2cf2be",
+      "sourcePrintedIds": [
+        "BJ0853"
+      ],
+      "reviewNote": "The lower faded figure is covered by a printed movement penalty; the printed region is omitted.",
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/temple-camo.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/temple-camo.png",
+        "width": 495,
+        "height": 764,
+        "artBottom": 420
+      }
+    },
+    {
+      "name": "Faceshield",
+      "definitionId": "def_3e04a88ca2ef6bc9505532d6",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0946",
+        "BJ0947"
+      ],
+      "filename": "faceshield.png",
+      "crop": [
+        495,
+        1474,
+        492,
+        764
+      ],
+      "width": 492,
+      "height": 764,
+      "preservedPixelCount": 95142,
+      "sha256": "9c1c885559a80d4e82805895595a2ea74a4bbea5b8a9505e60571d24ea83059b",
+      "sourcePrintedIds": [
+        "BJ0947"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/faceshield.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/faceshield.png",
+        "width": 492,
+        "height": 764,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Roll Breakers",
+      "definitionId": "def_fc859c21e41ddbb4af93f5ad",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0948",
+        "BJ0949"
+      ],
+      "filename": "roll-breakers.png",
+      "crop": [
+        987,
+        1474,
+        488,
+        764
+      ],
+      "width": 488,
+      "height": 764,
+      "preservedPixelCount": 105201,
+      "sha256": "595d53ad77785ee324d8f2816fb647882f699d62966e2a56d1398c762593c627",
+      "sourcePrintedIds": [
+        "BJ0949"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/roll-breakers.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/roll-breakers.png",
+        "width": 488,
+        "height": 764,
+        "artBottom": 512
+      }
+    },
+    {
+      "name": "Squat Armor",
+      "definitionId": "def_f32459dfab4321815c42457e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0952",
+        "BJ0953"
+      ],
+      "filename": "squat-armor.png",
+      "crop": [
+        1475,
+        1474,
+        488,
+        764
+      ],
+      "width": 488,
+      "height": 764,
+      "preservedPixelCount": 104818,
+      "sha256": "126a589854329ce546556d66cd8d83ffb6de4887acbdc66ac9d94f287db34f5e",
+      "sourcePrintedIds": [
+        "BJ0953"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/squat-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/squat-armor.png",
+        "width": 488,
+        "height": 764,
+        "artBottom": 442
+      }
+    },
+    {
+      "name": "Pithos Armor",
+      "definitionId": "def_d4e33a69642dc1688e9ec15e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0950",
+        "BJ0951"
+      ],
+      "filename": "pithos-armor.png",
+      "crop": [
+        1963,
+        1474,
+        476,
+        764
+      ],
+      "width": 476,
+      "height": 764,
+      "preservedPixelCount": 83500,
+      "sha256": "fbe67ad5906605673af845a8f90de75fd2660db9bfbca346c81466d18ad647a8",
+      "sourcePrintedIds": [
+        "BJ0951"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/pithos-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/pithos-armor.png",
+        "width": 476,
+        "height": 764,
+        "artBottom": 456
+      }
+    },
+    {
+      "name": "Chimeric Xiphos",
+      "definitionId": "def_5a32b9d80bddc54f78fc0e24",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0934",
+        "BJ0935"
+      ],
+      "filename": "chimeric-xiphos.png",
+      "crop": [
+        2439,
+        1474,
+        485,
+        764
+      ],
+      "width": 485,
+      "height": 764,
+      "preservedPixelCount": 14270,
+      "sha256": "793a3d46ce4cb9476b618bafb39177e15e9eed27afe0a264fa0addd5905e448e",
+      "sourcePrintedIds": [
+        "BJ0935"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/chimeric-xiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/chimeric-xiphos.png",
+        "width": 485,
+        "height": 764,
+        "artBottom": 427
+      }
+    },
+    {
+      "name": "Boom Spear",
+      "definitionId": "def_b8081b0e2ccba3a7797a579d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0928",
+        "BJ0929"
+      ],
+      "filename": "boom-spear.png",
+      "crop": [
+        2924,
+        1474,
+        472,
+        764
+      ],
+      "width": 472,
+      "height": 764,
+      "preservedPixelCount": 54615,
+      "sha256": "38aabba70f87bd17f4c6f4070ea08c25862869bbf855180303e33ac755a624ad",
+      "sourcePrintedIds": [
+        "BJ0929"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211018/boom-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-211018/grayscale/boom-spear.png",
+        "width": 472,
+        "height": 764,
+        "artBottom": 535
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Muck Armor",
+      "sourcePrintedIds": [
+        "BJ0920"
+      ],
+      "row": 1,
+      "column": 3,
+      "reason": "Second physical copy of the same catalogue face. Artwork is taken from row 1, column 2 (BJ0919)."
+    }
+  ]
+}

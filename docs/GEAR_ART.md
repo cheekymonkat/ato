@@ -1,0 +1,213 @@
+# Gear image assets
+
+The four supplied scans provide 75 Gear faces, split into individual rounded
+PNGs. Filenames follow the Gear names, using lowercase and hyphens:
+`puzzle-axe.png`, `temenos-scale-umbrella.png`, and so on.
+
+`assets/gear-art/<batch>/` contains the artwork-only backgrounds. All printed
+titles, stats, icons, rules, gates and footer text are masked to sampled paper;
+the app renders them as live UI. `grayscale/` contains equivalent grayscale
+images for exhausted/discarded cards. The original scan is unchanged, and
+retained artwork pixels are copied without resampling.
+
+## Data relationship and rendering
+
+Every linked Gear face in the generated catalogue has an optional `artwork`
+object containing `image`, `grayscaleImage`, pixel dimensions and `artBottom`.
+Links use the stable definition ID and `front`/`back` face ID; names are used
+for filenames, not for runtime guesses. For example, Temenos Xiphos and Temenos
+Whip share a definition but have separate images. A face without supplied art
+continues to use the existing card layout.
+
+`GearCard` displays the appropriate background behind its existing live title,
+stats and icons. It reserves room for the illustration and retains every rule,
+gate and printed ID below it. The background keeps its original aspect ratio
+as card width changes; long ability text can extend the card. Existing secret
+visibility and keyword actions remain part of the live UI.
+
+The static asset registry in `src/components/cards/gear-art-assets.ts` ensures
+the images are bundled on web, iOS and Android. It is generated alongside the
+ID/face links in `src/catalogue/gear-art.ts` and the image manifest. Generated
+catalogue version 2 includes artwork links in its content digest and accepts
+version 1 catalogues without artwork.
+
+## Reproduce or extend
+
+Requires Python 3 and `djpeg` from libjpeg, with no Python packages:
+
+```sh
+python3 scripts/extract-gear-art.py
+npm run catalogue:import
+npm run catalogue:check
+```
+
+Without arguments the extractor processes every `data/reference/gear-art-*.json`
+configuration. To regenerate only selected scans, repeat `--batch`:
+
+```sh
+python3 scripts/extract-gear-art.py --batch epson-210624 --batch epson-211018 --batch epson-211609
+```
+
+Both commands merge **all** batch manifests into the shared registries, retaining
+existing face links. A changed configuration must be regenerated first; manifests
+record its SHA-256 as well as the source image hash. Duplicate definition/face
+links fail explicitly rather than silently replacing another batch.
+
+The source SHA-256 and all source-pixel crop rectangles, artwork polygons and
+erase rectangles are in `data/reference/gear-art-cycle2-a.json`. The extractor
+checks the scan hash and catalogue mappings before processing, copies selected
+source pixels, fills the remaining regions from a clean paper sample, and adds
+antialiased rounded alpha corners. It generates ready/grayscale assets,
+manifests and static registries. Future scans need their own reviewed coordinates
+and mappings. The recorded title rectangles are reference coordinates only;
+titles are not retained in final images.
+
+## Current batches
+
+| Batch | Source under `../ato_docs/` | Source size | Linked faces |
+| --- | --- | --- | --- |
+| `cycle2-a` | `cycle2_a.jpg` | 3,396 × 2,232 | 21 |
+| `epson-210624` | `Epson_04102026210624.jpg` | 3,510 × 2,550 | 21 |
+| `epson-211018` | `Epson_04102026211018.jpg` | 3,396 × 2,238 | 20 |
+| `epson-211609` | `Epson_04102026211609.jpg` | 3,384 × 1,494 | 13 |
+
+The three Epson scans were added on 4 October 2026 using the same deterministic
+artwork-only extraction. Their 55 physical faces yield 54 new artwork links:
+Muck Armor appears twice (BJ0919 and BJ0920), so the first crop supplies its
+shared face and the second is recorded in `skippedCards`. The last scan has an
+empty lower-left grid position. Neither blank space nor duplicate copies create
+additional catalogue definitions or player instances.
+
+Each batch has its own `data/reference/gear-art-<batch>.json`, asset directory
+and manifest, and original/review directory under `../ato_docs/gear-art/`.
+Observed footer IDs are recorded in `sourcePrintedIds` where visible. This
+selects the Cycle II Chain Whip (BJ0874), independently of the other Chain Whip
+definition (BR0729). Metasword/Metabow, Ladder Buckler/Ladder Mode and Boom
+Spear/Boom Pole keep separate images on their existing front/back faces.
+
+## Conversion record: Cycle II A
+
+Completed on 4 October 2026 using the user's chosen **exact extraction**
+approach. The source is a 3,396 × 2,232 JPEG containing seven columns and three
+rows (21 faces). The source SHA-256 is
+`51b101d49166a33bca4f811eaa2b61d91ce7004020bfb2a9a5e566df9f4be3f6`.
+The complete reproducible coordinates and card identities are retained in
+[`gear-art-cycle2-a.json`](../data/reference/gear-art-cycle2-a.json), and the
+implementation is [`extract-gear-art.py`](../scripts/extract-gear-art.py).
+
+The conversion proceeds in this order:
+
+1. Check the original JPEG's hash and dimensions, then decode it with `djpeg`
+   to RGB pixels. “Exact” means copying these decoded source pixels without
+   resizing, recolouring or redrawing the retained illustration.
+2. Crop each card individually using reviewed boundaries. The photograph has
+   small differences between rows, so an evenly divided grid would be inaccurate.
+3. Check each crop against the catalogue's Gear name, persistent definition ID,
+   face ID and printed IDs. Reversible cards get separate artwork for each face.
+4. Keep the union of the recorded artwork rectangles and polygons, then subtract
+   any erase rectangles. Everything outside that mask is replaced by repeated
+   pixels from a clean 30 × 350 paper sample at source position `(242, 112)`.
+   This removes the scanned title as well as stats, icons, rules and footer text.
+5. Apply a 30-pixel outer corner radius. Only corner alpha is antialiased, using
+   4 × 4 coverage samples per pixel; retained RGB artwork is unchanged.
+6. Save a full-resolution RGBA PNG and a grayscale equivalent. Grayscale uses
+   `round(0.2126 × R + 0.7152 × G + 0.0722 × B)` for each channel and keeps the
+   same alpha values.
+7. Write rounded originals, cleaned review strips, manifests, catalogue links
+   and the static asset registry. Reimport the catalogue to include the links.
+
+The resulting batch contains 21 ready images plus 21 grayscale images. The
+manifest records each name, definition/face identity, printed IDs, crop,
+dimensions, preserved-pixel count, PNG hash, artwork metadata and overlap notes.
+Original crops retain the printed content for comparison; only cleaned assets
+are referenced by the app.
+
+## Workflow for the next scan
+
+1. Keep the original image under `../ato_docs/`, unchanged. Record its filename,
+   hash, native dimensions and a unique batch name such as `cycle2-b`.
+2. Inspect the image at native resolution. Identify every card using its title
+   and printed IDs, and resolve its existing definition and front/back face in
+   the catalogue. Report missing or ambiguous identities before linking artwork.
+3. Record each crop and artwork mask in a new batch configuration. Use rectangles
+   for unobstructed artwork and polygons for narrow handles or irregular edges.
+   Select a clean paper sample with a similar tone to the cards. Do not copy the
+   current batch's coordinates or corner radius without checking the new scan.
+4. Inspect where printed boxes overlap artwork. Mask the printed content and
+   record the lost area in `reviewNote`; do not invent hidden artwork. Preserve
+   faint illustrations and secondary views when they are part of the main image.
+5. Generate named ready and grayscale PNGs, originals and review strips. Keep
+   the current artwork-only convention: the app supplies all titles and symbols.
+6. Review every result beside its original at full resolution. Refine masks
+   where text or icons remain, or where artwork has been clipped. Review thin
+   shafts, fingers, chains, faded projections and the edges beside stat boxes.
+7. Add the new batch's links to the shared registries, reimport the catalogue,
+   and verify the artwork in card browsing and assigned Gear at narrow and wide
+   widths, including flipped, exhausted and discarded states.
+
+Coordinate conventions in the configuration:
+
+| Field | Meaning |
+| --- | --- |
+| `crop` | `[left, top, width, height]` in source-image pixels |
+| `paperSample` | `[left, top, width, height]` in source-image pixels |
+| `artRects`, `eraseRects` | `[left, top, right, bottom]` relative to the cropped card; right/bottom are excluded |
+| `artPolygons` | Lists of `[x, y]` vertices relative to the crop; rasterized at pixel centres |
+| `titleRect` | Historical reference coordinates only; does not preserve the title |
+| `batch` | Unique scan/output directory name; use lowercase letters, numbers and hyphens |
+| `definitionId`, `faceId` | Existing catalogue identity and `front` or `back` |
+| `sourcePrintedIds` | IDs visibly printed on this photographed face, checked against its catalogue aliases |
+| `skippedCards` | Duplicate physical crops excluded from artwork links, with identity/location and reason |
+| `filename` | Lowercase Gear-name slug with hyphens and `.png`; verify uniqueness within the batch |
+
+The extractor discovers batch configurations and uses `batch` for output paths.
+It writes one manifest per scan, then merges all manifests into the shared
+TypeScript registries. It checks hashes, expected face mappings and duplicate
+links before writing the registries. Add a new configuration and run its batch;
+keep existing assets, IDs and face links intact. Treat replacing a face's image
+as an explicit reviewed change rather than adding a conflicting link.
+
+Validation commands after adding or changing a batch:
+
+```sh
+npm run catalogue:import
+npm run catalogue:check
+npm run test:domain
+npm run lint
+npm run typecheck
+npx expo export --platform all --output-dir /private/tmp/ato-gear-art-export
+```
+
+[`gear-art.test.mjs`](../tests/gear-art.test.mjs) checks all four batches'
+75 mappings, filenames, source/image hashes, dimensions, transparent corners, grayscale
+channels/alpha, separate reverse-face artwork and invalid catalogue metadata.
+It also verifies duplicate handling and the two Chain Whip definitions.
+Extend its expected batches/counts when more images are added. Also confirm that
+the source hash and all existing catalogue definition IDs remain unchanged.
+The original batch passed these checks and all 186 domain tests, and exported
+successfully for web, iOS and Android. Bundle export checks packaging; review
+the actual UI separately after future visual changes.
+
+Original rounded crops and full-resolution review strips are saved under
+`../ato_docs/gear-art/<batch>/`. The earlier AI preview in
+`../ato_docs/gear-art-preview/` is a discarded experiment and is not used by
+the app.
+
+## Source overlaps
+
+Exact extraction cannot restore artwork that was covered by printing in the
+scan. The original batch has four explicit review notes in its manifest:
+
+- Temenos Scale Shield: the right statistic panel covers part of the shield.
+- Amphoras Belt: the right statistic panel covers part of an amphora.
+- Stonewall: rules cover the bottom of the faded projection.
+- Conqueror Nail: rules cover the lower weapon shafts.
+
+The Epson batches record six further overlaps: Collision Shield's right stat
+panel; the printed regions over the faded figures on Siegetower Pauldron,
+Watchtower Pauldron and Temple Camo; Spartan War Axe's lower shaft beneath the
+left modifier panel; and the left printed edge beside Gastraphetes' bow arm.
+Spartan War Axe's separate visible tip below the panel is retained.
+
+Those areas are blanked or omitted. No replacement artwork was generated.
+Cleaner original illustrations would allow those gaps to be replaced later.

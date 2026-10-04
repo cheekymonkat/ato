@@ -3,6 +3,7 @@ import { CARD_FAMILIES, makeFace, parseSourceCard } from '../domain/cards.ts';
 import { escapePointer, visitJson } from '../domain/json.ts';
 import type { JsonObject } from '../domain/json.ts';
 import { extractSlotEffects } from './effects.ts';
+import { gearArtwork } from './gear-art.ts';
 
 export interface SourceInput { file: string; sha256: string; page: SourcePage }
 export interface QualityIssue { category: string; definitionId: string; file: string; pointer: string; message: string }
@@ -62,7 +63,11 @@ export function normalizeCatalogue(inputs: SourceInput[], resolveId: (card: Sour
     ids.add(id);
     const card: CardDefinition = { id, family: source.renderType, printedIds: aliasesFor(source),
       source: { file: input.file, page: input.page.currentPage, recordIndex, pointer: `/cards/${recordIndex}` },
-      faces: splitFaces(source).map(f => makeFace(f.data, f.id, `${input.file}/cards/${recordIndex}/${f.id}`, f.inheritedFields)) };
+      faces: splitFaces(source).map(f => {
+        const face = makeFace(f.data, f.id, `${input.file}/cards/${recordIndex}/${f.id}`, f.inheritedFields);
+        const artwork = face.kind === 'gear' ? gearArtwork[id]?.[f.id] : undefined;
+        return artwork ? { ...face, artwork } : face;
+      }) };
     const issue = (category: string, pointer: string, message: string): void => { report.issues.push({ category, definitionId: id, file: input.file, pointer, message }); };
     if (card.printedIds.length === 0) issue('missing-printed-id', card.source.pointer, 'Kept with a registry-backed unprinted identity.');
     const rawAliases = splitFaces(source).flatMap(f => f.data.cardIDs);
@@ -106,6 +111,6 @@ export function normalizeCatalogue(inputs: SourceInput[], resolveId: (card: Sour
   report.repeatedAliases = Object.entries(indexes.printedId).filter(([, values]) => values.length > 1).map(([printedId, definitionIds]) => ({ printedId, definitionIds }));
   report.sourceRecords = cards.length; report.definitions = cards.length; report.faces = cards.reduce((sum, c) => sum + c.faces.length, 0);
   const catalogue: Catalogue = { schemaVersion: 1, catalogueVersion, cards, indexes,
-    provenance: { importerVersion: 1, sourceRecords: cards.length, files: inputs.map(input => ({ file: input.file, sha256: input.sha256, records: input.page.cards.length, page: input.page.currentPage })) } };
+    provenance: { importerVersion: 2, sourceRecords: cards.length, files: inputs.map(input => ({ file: input.file, sha256: input.sha256, records: input.page.cards.length, page: input.page.currentPage })) } };
   return { catalogue, report, sourceMap: cards.map(card => ({ definitionId: card.id, ...card.source })) };
 }

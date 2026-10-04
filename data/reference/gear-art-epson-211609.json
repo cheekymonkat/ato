@@ -1,0 +1,708 @@
+{
+  "batch": "epson-211609",
+  "source": "../ato_docs/Epson_04102026211609.jpg",
+  "sourceSha256": "e9541f2cd703c1bd6b0bfea5b4d8bbaf995df6eaf5bf584bdbd794f03981e72e",
+  "sourceSize": [
+    3384,
+    1494
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    2462,
+    117,
+    50,
+    281
+  ],
+  "cards": [
+    {
+      "name": "Carver Kopis",
+      "definitionId": "def_0eea196607c08352330a66d3",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0904"
+      ],
+      "row": 1,
+      "column": 1,
+      "filename": "carver-kopis.png",
+      "crop": [
+        0,
+        0,
+        491,
+        734
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            111,
+            88
+          ],
+          [
+            173,
+            94
+          ],
+          [
+            458,
+            539
+          ],
+          [
+            454,
+            565
+          ],
+          [
+            420,
+            532
+          ],
+          [
+            190,
+            264
+          ],
+          [
+            170,
+            263
+          ],
+          [
+            172,
+            230
+          ],
+          [
+            137,
+            213
+          ],
+          [
+            107,
+            178
+          ],
+          [
+            99,
+            129
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0904"
+      ]
+    },
+    {
+      "name": "Cyclopean Totem",
+      "definitionId": "def_f01d60a752785a861b737dbc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0909"
+      ],
+      "row": 1,
+      "column": 2,
+      "filename": "cyclopean-totem.png",
+      "crop": [
+        491,
+        0,
+        484,
+        734
+      ],
+      "artRects": [
+        [
+          157,
+          121,
+          363,
+          347
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0909"
+      ]
+    },
+    {
+      "name": "Cyclopean Knives",
+      "definitionId": "def_54acada1dd3d96d300f05c15",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0907"
+      ],
+      "row": 1,
+      "column": 3,
+      "filename": "cyclopean-knives.png",
+      "crop": [
+        975,
+        0,
+        486,
+        734
+      ],
+      "artRects": [
+        [
+          122,
+          109,
+          449,
+          468
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0907"
+      ]
+    },
+    {
+      "name": "Spartan Kopis",
+      "definitionId": "def_8356a32e9d8389ef18c1600c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0902"
+      ],
+      "row": 1,
+      "column": 4,
+      "filename": "spartan-kopis.png",
+      "crop": [
+        1461,
+        0,
+        487,
+        734
+      ],
+      "artRects": [
+        [
+          256,
+          91,
+          428,
+          362
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            135,
+            117
+          ],
+          [
+            180,
+            124
+          ],
+          [
+            414,
+            504
+          ],
+          [
+            396,
+            502
+          ],
+          [
+            223,
+            251
+          ],
+          [
+            200,
+            263
+          ],
+          [
+            160,
+            238
+          ],
+          [
+            152,
+            193
+          ],
+          [
+            125,
+            178
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          398,
+          91,
+          428,
+          101
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0902"
+      ]
+    },
+    {
+      "name": "Spartan War Axe",
+      "definitionId": "def_7953a7a5a42900ca3b7ebce9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0900"
+      ],
+      "row": 1,
+      "column": 5,
+      "filename": "spartan-war-axe.png",
+      "crop": [
+        1948,
+        0,
+        486,
+        734
+      ],
+      "artRects": [
+        [
+          280,
+          125,
+          430,
+          273
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            320,
+            200
+          ],
+          [
+            374,
+            209
+          ],
+          [
+            349,
+            250
+          ],
+          [
+            234,
+            390
+          ],
+          [
+            130,
+            514
+          ],
+          [
+            108,
+            515
+          ],
+          [
+            104,
+            472
+          ],
+          [
+            264,
+            265
+          ]
+        ],
+        [
+          [
+            63,
+            527
+          ],
+          [
+            96,
+            526
+          ],
+          [
+            79,
+            552
+          ],
+          [
+            59,
+            557
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          0,
+          459,
+          114,
+          526
+        ]
+      ],
+      "reviewNote": "The left modifier panel covers part of the lower shaft; the visible shaft and separate tip are retained, with the printed panel masked.",
+      "sourcePrintedIds": [
+        "BJ0900"
+      ]
+    },
+    {
+      "name": "Labyrinthization",
+      "definitionId": "def_a2b46c0958ba8e8204b629ca",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0831",
+        "BJ0832",
+        "BJ0833",
+        "BJ0834"
+      ],
+      "row": 1,
+      "column": 6,
+      "filename": "labyrinthization.png",
+      "crop": [
+        2434,
+        0,
+        486,
+        734
+      ],
+      "artRects": [
+        [
+          101,
+          106,
+          396,
+          408
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0833"
+      ]
+    },
+    {
+      "name": "Medusa Extract",
+      "definitionId": "def_8a8cad406c251d20a1eefad5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0854",
+        "BJ0855"
+      ],
+      "row": 1,
+      "column": 7,
+      "filename": "medusa-extract.png",
+      "crop": [
+        2920,
+        0,
+        464,
+        734
+      ],
+      "artRects": [
+        [
+          145,
+          121,
+          330,
+          446
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0854"
+      ]
+    },
+    {
+      "name": "Heavy Spear",
+      "definitionId": "def_3f1413dba827ee88eefbe8c4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0901"
+      ],
+      "row": 2,
+      "column": 2,
+      "filename": "heavy-spear.png",
+      "crop": [
+        491,
+        734,
+        484,
+        760
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            112,
+            115
+          ],
+          [
+            173,
+            157
+          ],
+          [
+            448,
+            542
+          ],
+          [
+            443,
+            555
+          ],
+          [
+            152,
+            188
+          ],
+          [
+            130,
+            175
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0901"
+      ]
+    },
+    {
+      "name": "Gastraphetes",
+      "definitionId": "def_daf5328eb7b0499a62e07465",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0903"
+      ],
+      "row": 2,
+      "column": 3,
+      "filename": "gastraphetes.png",
+      "crop": [
+        975,
+        734,
+        486,
+        760
+      ],
+      "artRects": [
+        [
+          122,
+          163,
+          472,
+          497
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          116,
+          348,
+          130,
+          388
+        ]
+      ],
+      "reviewNote": "The left statistic panel covers the end of the bow arm; the printed edge is masked.",
+      "sourcePrintedIds": [
+        "BJ0903"
+      ]
+    },
+    {
+      "name": "Cyclopean Khopesh",
+      "definitionId": "def_20ecd9e4ed4cf37856d0a0fc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0905"
+      ],
+      "row": 2,
+      "column": 4,
+      "filename": "cyclopean-khopesh.png",
+      "crop": [
+        1461,
+        734,
+        487,
+        760
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            345,
+            119
+          ],
+          [
+            401,
+            130
+          ],
+          [
+            375,
+            201
+          ],
+          [
+            352,
+            256
+          ],
+          [
+            324,
+            284
+          ],
+          [
+            305,
+            332
+          ],
+          [
+            269,
+            446
+          ],
+          [
+            224,
+            514
+          ],
+          [
+            178,
+            573
+          ],
+          [
+            122,
+            631
+          ],
+          [
+            99,
+            646
+          ],
+          [
+            109,
+            588
+          ],
+          [
+            165,
+            502
+          ],
+          [
+            198,
+            441
+          ],
+          [
+            238,
+            353
+          ],
+          [
+            248,
+            269
+          ],
+          [
+            304,
+            208
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0905"
+      ]
+    },
+    {
+      "name": "Cyclopean Forge Hammer",
+      "definitionId": "def_1e96a92c7288054dc7cdb7d0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0910"
+      ],
+      "row": 2,
+      "column": 5,
+      "filename": "cyclopean-forge-hammer.png",
+      "crop": [
+        1948,
+        734,
+        486,
+        760
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            274,
+            124
+          ],
+          [
+            307,
+            132
+          ],
+          [
+            316,
+            163
+          ],
+          [
+            263,
+            221
+          ],
+          [
+            264,
+            246
+          ],
+          [
+            357,
+            353
+          ],
+          [
+            451,
+            439
+          ],
+          [
+            459,
+            505
+          ],
+          [
+            417,
+            489
+          ],
+          [
+            210,
+            292
+          ],
+          [
+            167,
+            296
+          ],
+          [
+            104,
+            236
+          ],
+          [
+            134,
+            206
+          ],
+          [
+            184,
+            175
+          ],
+          [
+            233,
+            172
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0910"
+      ]
+    },
+    {
+      "name": "Cyclopean Visor",
+      "definitionId": "def_802be492d4e7d41a955bed97",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0908"
+      ],
+      "row": 2,
+      "column": 6,
+      "filename": "cyclopean-visor.png",
+      "crop": [
+        2434,
+        734,
+        486,
+        760
+      ],
+      "artRects": [
+        [
+          84,
+          114,
+          367,
+          425
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0908"
+      ]
+    },
+    {
+      "name": "Cyclopean Linothorax",
+      "definitionId": "def_4a60bba7e035ddb3aa5a3097",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0906"
+      ],
+      "row": 2,
+      "column": 7,
+      "filename": "cyclopean-linothorax.png",
+      "crop": [
+        2920,
+        734,
+        464,
+        760
+      ],
+      "artRects": [
+        [
+          104,
+          132,
+          365,
+          529
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0906"
+      ]
+    }
+  ],
+  "skippedCards": []
+}

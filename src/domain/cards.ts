@@ -46,8 +46,11 @@ export interface FatedMnemosData extends SourceCard {
   traits: string[]; stats: string[]; effect: JsonValue; growthAbility: JsonValue; growthName: string;
 }
 interface FaceBase { id: FaceId; name: string; family: string; printedIds: string[]; cycle: string; game: string; inheritedFields: string[]; slotEffects: SlotCapacityEffect[] }
+export interface GearArtwork {
+  image: string; grayscaleImage: string; width: number; height: number; artBottom: number;
+}
 export type CardFace =
-  | (FaceBase & { kind: 'gear'; data: GearData })
+  | (FaceBase & { kind: 'gear'; data: GearData; artwork?: GearArtwork })
   | (FaceBase & { kind: 'titan'; data: TitanData })
   | (FaceBase & { kind: 'mnemos'; data: MnemosData })
   | (FaceBase & { kind: 'fated-mnemos'; data: FatedMnemosData })

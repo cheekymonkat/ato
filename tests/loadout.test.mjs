@@ -18,6 +18,19 @@ const support = catalogue.search({ family: 'Gear', slot: 'Support' }).find(card 
 const paradox = catalogue.search({ family: 'Gear', slot: 'Support' }).find(card => card.faces[0].data.traits.includes('Paradox'));
 const equipDefinition = (party, card, positionId, instanceId, extra = {}) => reduce(party, { type: 'equip', request: { definitionId: card.id, faceId: 'front', positionId, instanceId, ...extra } });
 
+test('Yarn Talisman is offered as an Attachment and equips without a manual exception', () => {
+  const card = named('Yarn Talisman'), face = card.faces[0];
+  assert.equal(card.id, 'def_24c18664df168e0a50b413af');
+  assert.equal(face.data.slot, 'Attachment');
+  assert.deepEqual(catalogue.search({ family: 'Gear', slot: 'Attachment', query: 'yarn', campaignCycle: 1 }).map(card => card.id), [card.id]);
+  assert.equal(catalogue.search({ family: 'Gear', slot: 'Support', query: 'yarn', campaignCycle: 1 }).length, 0);
+  assert.deepEqual(slotOptions(face), [{ kind: 'attachment', units: 1, label: 'Attachment' }]);
+  const party = equip(initial(), 'Yarn Talisman', 'base:attachment:0', 'yarn-talisman');
+  assert.ok(loadoutState(owner(party), catalogue).activeInstanceIds.has('yarn-talisman'));
+  assert.equal(owner(party).equipment[0].override, undefined);
+  assert.deepEqual(owner(party).equipment[0].positionIds, ['base:attachment:0']);
+});
+
 test('equipping/replacing/removing Armor recalculates capacity without changing another Argonaut', () => {
   const start = initial(), party = equip(start, 'Trireme Breastplate', 'base:armor:0', 'armor');
   assert.equal(positions(party, 'support').length, 3);

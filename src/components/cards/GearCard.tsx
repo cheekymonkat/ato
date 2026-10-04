@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import type { CardFace } from '../../domain/cards';
 import { diceLayers, displayGate, displayValue, gearTitleSize, objects, overheadGate, strings } from '../../domain/card-presentation';
 import { cycleColour, gearTheme as g } from '../../theme/gear-tokens';
@@ -9,6 +9,7 @@ import { RichParagraph } from './RichParagraph';
 import type { TextActions } from './RichParagraph';
 import { adjustedStat, MODIFIED_STAT_COLOUR } from '../../domain/combat-modifiers';
 import { useCombatAdjustment } from './CombatStats';
+import { gearArtAssets } from './gear-art-assets';
 
 export function DiceStack({ dice, type = 'Power', scale = 1 }: { dice: string[]; type?: 'Power' | 'Armor'; scale?: number }) {
   if (dice.length === 0) return null;
@@ -37,17 +38,23 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
   const paint = useCardColours();
   const precision = adjustedStat(face.data.offensiveStatistics.precision ?? '', useCombatAdjustment(face, 'precision'));
   const scale = width / g.width, data = face.data, colour = paint.colour(cycleColour(face.cycle));
+  const artwork = face.artwork, artSource = artwork && gearArtAssets[paint.inactive ? artwork.grayscaleImage : artwork.image];
+  const paper = artSource ? '#EEEDE4' : g.papyrus;
   const abilitySize = preview ? 13 * scale : Math.max(14, 13 * scale);
   const statSize = 15 * scale, pad = width * (25 / 130) * 0.03;
   const statCell = { minHeight: 25 * scale + pad * 2, paddingVertical: pad, backgroundColor: paint.colour(g.stat), alignItems: 'center' as const, justifyContent: 'center' as const };
   const offensive = data.offensiveStatistics, power = objects(offensive.power), defensive = objects(data.defensiveStatistics), groups = objects(data.gatedAbilities);
   const content = <View style={{ minHeight: g.height * scale, justifyContent: 'space-between', flexGrow: 1 }}>
+    {artSource && artwork && <View pointerEvents="none" aria-hidden accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
+      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: width * artwork.height / artwork.width }}>
+      <Image testID={`gear-art-${face.id}`} source={artSource} accessible={false} resizeMode="stretch" style={{ width: '100%', height: '100%' }} />
+    </View>}
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 * scale }}>
       <View style={{ flexGrow: 2, flexBasis: 30 * scale }}><Medallion name={data.slot} colour={colour} scale={scale} /></View>
       <Text accessibilityRole="header" style={{ flexGrow: 8, flexBasis: 0, color: colour === '#FFFFFF' ? '#000000' : colour, textAlign: 'center', fontSize: preview ? gearTitleSize(face.name) * scale : Math.max(16, gearTitleSize(face.name) * scale), lineHeight: (preview ? gearTitleSize(face.name) * scale : Math.max(16, gearTitleSize(face.name) * scale)) * 1.5 }}>{face.name}</Text>
       <View style={{ flexGrow: 2, flexBasis: 30 * scale, alignItems: 'flex-end' }}><Medallion name="Gear" colour={colour} scale={scale} /></View>
     </View>
-    <View style={{ flexDirection: 'row', marginVertical: 10 * scale, alignItems: 'center' }}>
+    <View style={{ flexDirection: 'row', marginVertical: 10 * scale, alignItems: 'center', minHeight: artSource && artwork ? Math.max(110 * scale, width * artwork.artBottom / artwork.width - 52 * scale) : undefined }}>
       <View style={{ flex: 25, gap: 8 * scale, overflow: 'hidden' }}>
         {Boolean(offensive.attackDice) && <View accessibilityLabel={`Attack dice ${offensive.attackDice}`} style={[statCell, styles.statRow]}><Text style={{ fontSize: statSize }}>{offensive.attackDice}</Text><CardIcon name="d10" size={statSize * 1.5} /></View>}
         {Boolean(offensive.precision) && <View style={statCell}><Text accessibilityLabel={`Precision ${precision.label}`} style={{ color: paint.colour(precision.changed ? MODIFIED_STAT_COLOUR : '#000000'), fontSize: statSize, lineHeight: statSize * 1.5 }}>{precision.text}</Text></View>}
@@ -70,7 +77,7 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
         </View>;
       })}</View>
     </View>
-    <View>
+    <View style={artSource ? { backgroundColor: paint.colour(paper) } : undefined}>
       <View style={{ paddingHorizontal: 15 * scale, paddingBottom: 15 * scale }}>
         <RichParagraph paragraph={data.abilities} size={abilitySize} onKeyword={onKeyword} onReference={onReference} />
         {data.asteriskEffect != null && <View style={{ marginTop: 4 * scale }}><RichParagraph prefix="*" paragraph={[data.asteriskEffect]} size={preview ? 10 * scale : 12} onKeyword={onKeyword} onReference={onReference} /></View>}
@@ -88,7 +95,7 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
       </View>
     </View>
   </View>;
-  return <View testID={`gear-card-${face.id}`} style={{ width, maxWidth: '100%', backgroundColor: paint.colour(g.papyrus), borderRadius: 10 * scale, overflow: 'hidden' }}>
+  return <View testID={`gear-card-${face.id}`} style={{ width, maxWidth: '100%', backgroundColor: paint.colour(paper), borderRadius: 10 * scale, overflow: 'hidden' }}>
     {preview ? <ScrollView nestedScrollEnabled showsVerticalScrollIndicator={false} style={{ height: g.height * scale }} contentContainerStyle={{ flexGrow: 1 }} keyboardShouldPersistTaps="handled">{content}</ScrollView> : content}
   </View>;
 }

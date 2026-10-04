@@ -1,0 +1,1077 @@
+{
+  "batch": "epson-211018",
+  "source": "../ato_docs/Epson_04102026211018.jpg",
+  "sourceSha256": "1709152f551f7dfc6bcc38a5469854240361f05e8aa229343fef64c475d19c35",
+  "sourceSize": [
+    3396,
+    2238
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    1918,
+    114,
+    28,
+    288
+  ],
+  "cards": [
+    {
+      "name": "Katarus",
+      "definitionId": "def_54b6ba6736297a521535b8a9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0925",
+        "BJ0926"
+      ],
+      "row": 1,
+      "column": 1,
+      "filename": "katarus.png",
+      "crop": [
+        0,
+        0,
+        500,
+        731
+      ],
+      "artRects": [
+        [
+          149,
+          82,
+          467,
+          463
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            336,
+            427
+          ],
+          [
+            381,
+            427
+          ],
+          [
+            387,
+            486
+          ],
+          [
+            374,
+            516
+          ],
+          [
+            348,
+            481
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          408,
+          82,
+          467,
+          110
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0925"
+      ]
+    },
+    {
+      "name": "Muck Armor",
+      "definitionId": "def_d50974c7ea7812cfa76eb1d5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0919",
+        "BJ0920"
+      ],
+      "row": 1,
+      "column": 2,
+      "filename": "muck-armor.png",
+      "crop": [
+        500,
+        0,
+        489,
+        731
+      ],
+      "artRects": [
+        [
+          119,
+          86,
+          375,
+          407
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0919"
+      ]
+    },
+    {
+      "name": "Ladder Mode",
+      "definitionId": "def_de2547f0a2fbda3870f6a647",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0915",
+        "BJ0916"
+      ],
+      "row": 1,
+      "column": 4,
+      "filename": "ladder-mode.png",
+      "crop": [
+        1475,
+        0,
+        488,
+        731
+      ],
+      "artRects": [
+        [
+          161,
+          270,
+          295,
+          403
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            6,
+            277
+          ],
+          [
+            373,
+            69
+          ],
+          [
+            382,
+            78
+          ],
+          [
+            343,
+            99
+          ],
+          [
+            378,
+            155
+          ],
+          [
+            416,
+            137
+          ],
+          [
+            425,
+            151
+          ],
+          [
+            56,
+            356
+          ],
+          [
+            45,
+            348
+          ],
+          [
+            84,
+            326
+          ],
+          [
+            49,
+            268
+          ],
+          [
+            18,
+            287
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Ladder Buckler",
+      "definitionId": "def_de2547f0a2fbda3870f6a647",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0915",
+        "BJ0916"
+      ],
+      "row": 1,
+      "column": 5,
+      "filename": "ladder-buckler.png",
+      "crop": [
+        1963,
+        0,
+        476,
+        731
+      ],
+      "artRects": [
+        [
+          121,
+          108,
+          387,
+          424
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          358,
+          264,
+          475,
+          337
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0915"
+      ]
+    },
+    {
+      "name": "Muckbane",
+      "definitionId": "def_6e30e99b6d4b1a2eaf107e99",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0937"
+      ],
+      "row": 1,
+      "column": 6,
+      "filename": "muckbane.png",
+      "crop": [
+        2439,
+        0,
+        485,
+        731
+      ],
+      "artRects": [
+        [
+          170,
+          84,
+          329,
+          269
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            273,
+            240
+          ],
+          [
+            301,
+            240
+          ],
+          [
+            481,
+            598
+          ],
+          [
+            479,
+            624
+          ],
+          [
+            457,
+            614
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0937"
+      ]
+    },
+    {
+      "name": "Cyclostus",
+      "definitionId": "def_a64a5f0b6e29f97b7bcf520e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0938"
+      ],
+      "row": 1,
+      "column": 7,
+      "filename": "cyclostus.png",
+      "crop": [
+        2924,
+        0,
+        472,
+        731
+      ],
+      "artRects": [
+        [
+          117,
+          86,
+          463,
+          406
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          409,
+          86,
+          463,
+          105
+        ],
+        [
+          357,
+          358,
+          463,
+          406
+        ],
+        [
+          311,
+          343,
+          480,
+          430
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0938"
+      ]
+    },
+    {
+      "name": "Boom Pole",
+      "definitionId": "def_b8081b0e2ccba3a7797a579d",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0928",
+        "BJ0929"
+      ],
+      "row": 2,
+      "column": 1,
+      "filename": "boom-pole.png",
+      "crop": [
+        0,
+        731,
+        499,
+        743
+      ],
+      "artRects": [
+        [
+          135,
+          119,
+          306,
+          343
+        ],
+        [
+          327,
+          120,
+          430,
+          336
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Muck Bludgeon",
+      "definitionId": "def_6e9c85fc4e34e78d79c312c7",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0936"
+      ],
+      "row": 2,
+      "column": 2,
+      "filename": "muck-bludgeon.png",
+      "crop": [
+        499,
+        731,
+        490,
+        743
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            372,
+            141
+          ],
+          [
+            470,
+            143
+          ],
+          [
+            470,
+            201
+          ],
+          [
+            418,
+            266
+          ],
+          [
+            84,
+            516
+          ],
+          [
+            49,
+            521
+          ],
+          [
+            63,
+            484
+          ],
+          [
+            322,
+            231
+          ],
+          [
+            343,
+            166
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          99,
+          486,
+          141,
+          523
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0936"
+      ]
+    },
+    {
+      "name": "Dragon Bellow",
+      "definitionId": "def_0e5cc0c028a1e6b02777c401",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0930",
+        "BJ0931"
+      ],
+      "row": 2,
+      "column": 3,
+      "filename": "dragon-bellow.png",
+      "crop": [
+        989,
+        731,
+        486,
+        743
+      ],
+      "artRects": [
+        [
+          126,
+          161,
+          481,
+          470
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          113,
+          371,
+          133,
+          470
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0930"
+      ]
+    },
+    {
+      "name": "Ambrosia Trocar",
+      "definitionId": "def_c664e37d1bccbf12f92532d1",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0277",
+        "AJ0278"
+      ],
+      "row": 2,
+      "column": 4,
+      "filename": "ambrosia-trocar.png",
+      "crop": [
+        1475,
+        731,
+        488,
+        743
+      ],
+      "artRects": [
+        [
+          289,
+          120,
+          399,
+          337
+        ],
+        [
+          87,
+          225,
+          350,
+          545
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "AJ0277"
+      ]
+    },
+    {
+      "name": "Maulmace",
+      "definitionId": "def_785f5a7f4b5fac9edf01666c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0927"
+      ],
+      "row": 2,
+      "column": 5,
+      "filename": "maulmace.png",
+      "crop": [
+        1963,
+        731,
+        476,
+        743
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            156,
+            115
+          ],
+          [
+            217,
+            117
+          ],
+          [
+            273,
+            147
+          ],
+          [
+            252,
+            245
+          ],
+          [
+            331,
+            346
+          ],
+          [
+            423,
+            479
+          ],
+          [
+            430,
+            517
+          ],
+          [
+            390,
+            505
+          ],
+          [
+            280,
+            376
+          ],
+          [
+            172,
+            281
+          ],
+          [
+            142,
+            229
+          ],
+          [
+            142,
+            150
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0927"
+      ]
+    },
+    {
+      "name": "Needle Sword",
+      "definitionId": "def_6eb329f1f26c218f89699f3e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0921",
+        "BJ0922"
+      ],
+      "row": 2,
+      "column": 6,
+      "filename": "needle-sword.png",
+      "crop": [
+        2439,
+        731,
+        485,
+        743
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            247,
+            122
+          ],
+          [
+            273,
+            119
+          ],
+          [
+            430,
+            460
+          ],
+          [
+            420,
+            472
+          ],
+          [
+            248,
+            161
+          ]
+        ],
+        [
+          [
+            126,
+            262
+          ],
+          [
+            159,
+            262
+          ],
+          [
+            357,
+            395
+          ],
+          [
+            362,
+            409
+          ],
+          [
+            329,
+            397
+          ],
+          [
+            133,
+            287
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0921"
+      ]
+    },
+    {
+      "name": "Vaulting Spear",
+      "definitionId": "def_7d504be35f4966b43139cfa8",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0923",
+        "BJ0924"
+      ],
+      "row": 2,
+      "column": 7,
+      "filename": "vaulting-spear.png",
+      "crop": [
+        2924,
+        731,
+        472,
+        743
+      ],
+      "artRects": [
+        [
+          274,
+          161,
+          371,
+          421
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            358,
+            119
+          ],
+          [
+            395,
+            115
+          ],
+          [
+            365,
+            140
+          ],
+          [
+            155,
+            426
+          ],
+          [
+            141,
+            418
+          ],
+          [
+            316,
+            145
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0924"
+      ]
+    },
+    {
+      "name": "Temple Camo",
+      "definitionId": "def_1d21790aa90c51fb97044897",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0852",
+        "BJ0853"
+      ],
+      "row": 3,
+      "column": 1,
+      "filename": "temple-camo.png",
+      "crop": [
+        0,
+        1474,
+        495,
+        764
+      ],
+      "artRects": [
+        [
+          49,
+          107,
+          409,
+          420
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          49,
+          103,
+          114,
+          129
+        ]
+      ],
+      "reviewNote": "The lower faded figure is covered by a printed movement penalty; the printed region is omitted.",
+      "sourcePrintedIds": [
+        "BJ0853"
+      ]
+    },
+    {
+      "name": "Faceshield",
+      "definitionId": "def_3e04a88ca2ef6bc9505532d6",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0946",
+        "BJ0947"
+      ],
+      "row": 3,
+      "column": 2,
+      "filename": "faceshield.png",
+      "crop": [
+        495,
+        1474,
+        492,
+        764
+      ],
+      "artRects": [
+        [
+          117,
+          105,
+          394,
+          458
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          378,
+          271,
+          478,
+          350
+        ],
+        [
+          114,
+          341,
+          128,
+          418
+        ],
+        [
+          378,
+          239,
+          478,
+          351
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0947"
+      ]
+    },
+    {
+      "name": "Roll Breakers",
+      "definitionId": "def_fc859c21e41ddbb4af93f5ad",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0948",
+        "BJ0949"
+      ],
+      "row": 3,
+      "column": 3,
+      "filename": "roll-breakers.png",
+      "crop": [
+        987,
+        1474,
+        488,
+        764
+      ],
+      "artRects": [
+        [
+          58,
+          115,
+          371,
+          456
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            150,
+            432
+          ],
+          [
+            178,
+            446
+          ],
+          [
+            145,
+            512
+          ],
+          [
+            124,
+            486
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          140,
+          115,
+          371,
+          128
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0949"
+      ]
+    },
+    {
+      "name": "Squat Armor",
+      "definitionId": "def_f32459dfab4321815c42457e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0952",
+        "BJ0953"
+      ],
+      "row": 3,
+      "column": 4,
+      "filename": "squat-armor.png",
+      "crop": [
+        1475,
+        1474,
+        488,
+        764
+      ],
+      "artRects": [
+        [
+          72,
+          112,
+          394,
+          442
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          387,
+          273,
+          483,
+          351
+        ],
+        [
+          380,
+          257,
+          483,
+          360
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0953"
+      ]
+    },
+    {
+      "name": "Pithos Armor",
+      "definitionId": "def_d4e33a69642dc1688e9ec15e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0950",
+        "BJ0951"
+      ],
+      "row": 3,
+      "column": 5,
+      "filename": "pithos-armor.png",
+      "crop": [
+        1963,
+        1474,
+        476,
+        764
+      ],
+      "artRects": [
+        [
+          107,
+          122,
+          357,
+          456
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0951"
+      ]
+    },
+    {
+      "name": "Chimeric Xiphos",
+      "definitionId": "def_5a32b9d80bddc54f78fc0e24",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0934",
+        "BJ0935"
+      ],
+      "row": 3,
+      "column": 6,
+      "filename": "chimeric-xiphos.png",
+      "crop": [
+        2439,
+        1474,
+        485,
+        764
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            352,
+            149
+          ],
+          [
+            395,
+            147
+          ],
+          [
+            394,
+            175
+          ],
+          [
+            117,
+            427
+          ],
+          [
+            98,
+            413
+          ],
+          [
+            303,
+            191
+          ],
+          [
+            336,
+            189
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0935"
+      ]
+    },
+    {
+      "name": "Boom Spear",
+      "definitionId": "def_b8081b0e2ccba3a7797a579d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0928",
+        "BJ0929"
+      ],
+      "row": 3,
+      "column": 7,
+      "filename": "boom-spear.png",
+      "crop": [
+        2924,
+        1474,
+        472,
+        764
+      ],
+      "artRects": [
+        [
+          275,
+          196,
+          408,
+          534
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            329,
+            103
+          ],
+          [
+            354,
+            112
+          ],
+          [
+            355,
+            133
+          ],
+          [
+            339,
+            151
+          ],
+          [
+            249,
+            343
+          ],
+          [
+            153,
+            535
+          ],
+          [
+            137,
+            535
+          ],
+          [
+            130,
+            519
+          ],
+          [
+            228,
+            331
+          ],
+          [
+            320,
+            153
+          ],
+          [
+            321,
+            124
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0929"
+      ]
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Muck Armor",
+      "sourcePrintedIds": [
+        "BJ0920"
+      ],
+      "row": 1,
+      "column": 3,
+      "reason": "Second physical copy of the same catalogue face. Artwork is taken from row 1, column 2 (BJ0919)."
+    }
+  ]
+}

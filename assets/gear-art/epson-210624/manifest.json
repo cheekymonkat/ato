@@ -1,0 +1,640 @@
+{
+  "batch": "epson-210624",
+  "source": "../ato_docs/Epson_04102026210624.jpg",
+  "sourceSha256": "c2b5fcb6025c871c5d94967a2819dc493dd74516bb59f1b585b7ebc338be4978",
+  "configurationSha256": "d5dfc93bf8ed1f5bab93ccca414dc4a37dc153444a6fc7258b3c9a4df2430e69",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Great Breaker",
+      "definitionId": "def_3b6bf24413178ff91c4a0f21",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0879",
+        "BJ0880"
+      ],
+      "filename": "great-breaker.png",
+      "crop": [
+        127,
+        0,
+        484,
+        727
+      ],
+      "width": 484,
+      "height": 727,
+      "preservedPixelCount": 97740,
+      "sha256": "91cb4f2f55161abec1d3982d42805c397a897613b3be392ac2c44407606c53ef",
+      "sourcePrintedIds": [
+        "BJ0879"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/great-breaker.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/great-breaker.png",
+        "width": 484,
+        "height": 727,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Impact Armor",
+      "definitionId": "def_c9381d7b0670cd2782532f6f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0911",
+        "BJ0912"
+      ],
+      "filename": "impact-armor.png",
+      "crop": [
+        611,
+        0,
+        486,
+        727
+      ],
+      "width": 486,
+      "height": 727,
+      "preservedPixelCount": 105740,
+      "sha256": "6a5220104d61574cb99a37dda642471fbb31586ed19ee930d9ce79211bf85969",
+      "sourcePrintedIds": [
+        "BJ0911"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/impact-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/impact-armor.png",
+        "width": 486,
+        "height": 727,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Collision Shield",
+      "definitionId": "def_39fb71e037825c0881e5fe3a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0913",
+        "BJ0914"
+      ],
+      "filename": "collision-shield.png",
+      "crop": [
+        1097,
+        0,
+        488,
+        727
+      ],
+      "width": 488,
+      "height": 727,
+      "preservedPixelCount": 108828,
+      "sha256": "5d2c913e1c0c601bec409641568b94d1226b1619f07883814c928300cc90606f",
+      "sourcePrintedIds": [
+        "BJ0914"
+      ],
+      "reviewNote": "Right stat panel covers part of the shield edge; printed panel is masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/collision-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/collision-shield.png",
+        "width": 488,
+        "height": 727,
+        "artBottom": 494
+      }
+    },
+    {
+      "name": "Iapetus Lifesaver",
+      "definitionId": "def_565980ba3dd68ac1a19f6ba0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0891",
+        "BJ0892",
+        "BJ0893"
+      ],
+      "filename": "iapetus-lifesaver.png",
+      "crop": [
+        1585,
+        0,
+        484,
+        727
+      ],
+      "width": 484,
+      "height": 727,
+      "preservedPixelCount": 152448,
+      "sha256": "82f7c117bb44071444ad7d55b32fa31c91e5038d3da1893f63cb38b6ac4e5488",
+      "sourcePrintedIds": [
+        "BJ0893"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/iapetus-lifesaver.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/iapetus-lifesaver.png",
+        "width": 484,
+        "height": 727,
+        "artBottom": 526
+      }
+    },
+    {
+      "name": "Achillean Hectors",
+      "definitionId": "def_4f67dc040937547c288750f4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0896",
+        "BJ0897"
+      ],
+      "filename": "achillean-hectors.png",
+      "crop": [
+        2069,
+        0,
+        484,
+        727
+      ],
+      "width": 484,
+      "height": 727,
+      "preservedPixelCount": 117950,
+      "sha256": "73f8f1038bba1e8071772262300759282ae6bbdb5172173110f531a2a4d1b9f1",
+      "sourcePrintedIds": [
+        "BJ0896"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/achillean-hectors.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/achillean-hectors.png",
+        "width": 484,
+        "height": 727,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Boost Kothornos",
+      "definitionId": "def_3c014172da91bf78d6cfb2e8",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0894",
+        "BJ0895"
+      ],
+      "filename": "boost-kothornos.png",
+      "crop": [
+        2553,
+        0,
+        484,
+        727
+      ],
+      "width": 484,
+      "height": 727,
+      "preservedPixelCount": 118272,
+      "sha256": "1d7dbc2ef8e12ae74c6d074af57c694fefb637c3477b2a1e0cc6ee836309b5f9",
+      "sourcePrintedIds": [
+        "BJ0895"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/boost-kothornos.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/boost-kothornos.png",
+        "width": 484,
+        "height": 727,
+        "artBottom": 494
+      }
+    },
+    {
+      "name": "Control Module",
+      "definitionId": "def_e3d3918978496f6da2662f4f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0898",
+        "BJ0899"
+      ],
+      "filename": "control-module.png",
+      "crop": [
+        3037,
+        0,
+        473,
+        727
+      ],
+      "width": 473,
+      "height": 727,
+      "preservedPixelCount": 94731,
+      "sha256": "811c541e7b7d5f06ddcdb3795fac9abc665f4c44533ee8e5c3ca3cedca57c4c6",
+      "sourcePrintedIds": [
+        "BJ0899"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/control-module.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/control-module.png",
+        "width": 473,
+        "height": 727,
+        "artBottom": 467
+      }
+    },
+    {
+      "name": "Lethe Guard",
+      "definitionId": "def_23b991706c979449431a4f08",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0849",
+        "BJ0850"
+      ],
+      "filename": "lethe-guard.png",
+      "crop": [
+        120,
+        727,
+        484,
+        746
+      ],
+      "width": 484,
+      "height": 746,
+      "preservedPixelCount": 54725,
+      "sha256": "1ff7161595822adbf1cd8aef468e252521c49106c6f21f51828ed48d915aab04",
+      "sourcePrintedIds": [
+        "BJ0850"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/lethe-guard.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/lethe-guard.png",
+        "width": 484,
+        "height": 746,
+        "artBottom": 376
+      }
+    },
+    {
+      "name": "Asklepios Node",
+      "definitionId": "def_dee1a57fa844368bba3473fd",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0847",
+        "BJ0848"
+      ],
+      "filename": "asklepios-node.png",
+      "crop": [
+        604,
+        727,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 108024,
+      "sha256": "2de94ed2c5f3fa0aeee1d13f7e395387e7602e520f05743985d8f8749daa8b72",
+      "sourcePrintedIds": [
+        "BJ0848"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/asklepios-node.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/asklepios-node.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 519
+      }
+    },
+    {
+      "name": "Covenant",
+      "definitionId": "def_cdddf6feacb4a21fdc5724fc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0851"
+      ],
+      "filename": "covenant.png",
+      "crop": [
+        1090,
+        727,
+        489,
+        746
+      ],
+      "width": 489,
+      "height": 746,
+      "preservedPixelCount": 96404,
+      "sha256": "604c4f40473934c7220d5545359974278001a9f48f796b15aace35d403563853",
+      "sourcePrintedIds": [
+        "BJ0851"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/covenant.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/covenant.png",
+        "width": 489,
+        "height": 746,
+        "artBottom": 420
+      }
+    },
+    {
+      "name": "Siegetower Pauldron",
+      "definitionId": "def_d3f2c8ebc688e9de114aada2",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0889",
+        "BJ0890"
+      ],
+      "filename": "siegetower-pauldron.png",
+      "crop": [
+        1579,
+        727,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 105480,
+      "sha256": "b492f320e3803e2ddc4d22bf209d292de4d0da840446a38360c696312f834cce",
+      "sourcePrintedIds": [
+        "BJ0889"
+      ],
+      "reviewNote": "Title and rules overlap the faded torso; these printed regions are masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/siegetower-pauldron.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/siegetower-pauldron.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 420
+      }
+    },
+    {
+      "name": "Watchtower Pauldron",
+      "definitionId": "def_74865d39073e1119ee52d29d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0887",
+        "BJ0888"
+      ],
+      "filename": "watchtower-pauldron.png",
+      "crop": [
+        2067,
+        727,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 110833,
+      "sha256": "7109d5db6a42bb10cd305f44c804e6e1eefe0c1f0f95d9c86c96442c30382d25",
+      "sourcePrintedIds": [
+        "BJ0887"
+      ],
+      "reviewNote": "Title and rules overlap the faded torso; these printed regions are masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/watchtower-pauldron.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/watchtower-pauldron.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 418
+      }
+    },
+    {
+      "name": "Relief Cestus",
+      "definitionId": "def_66c74d62c9da72087b81c6e2",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0881",
+        "BJ0882"
+      ],
+      "filename": "relief-cestus.png",
+      "crop": [
+        2553,
+        727,
+        484,
+        746
+      ],
+      "width": 484,
+      "height": 746,
+      "preservedPixelCount": 93582,
+      "sha256": "7d67252cfd0efc674ef6e53234270c1f849146861587ec77f45e8081b1b3693e",
+      "sourcePrintedIds": [
+        "BJ0882"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/relief-cestus.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/relief-cestus.png",
+        "width": 484,
+        "height": 746,
+        "artBottom": 496
+      }
+    },
+    {
+      "name": "Stone Relief Armor",
+      "definitionId": "def_e77b306d0dbfd7c7e8f398ac",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0877",
+        "BJ0878"
+      ],
+      "filename": "stone-relief-armor.png",
+      "crop": [
+        3037,
+        727,
+        473,
+        746
+      ],
+      "width": 473,
+      "height": 746,
+      "preservedPixelCount": 120582,
+      "sha256": "5e5c90b15d92307003bcdbebae2c0cdd7a4be53f975062f773b05c8811ec6739",
+      "sourcePrintedIds": [
+        "BJ0878"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/stone-relief-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/stone-relief-armor.png",
+        "width": 473,
+        "height": 746,
+        "artBottom": 511
+      }
+    },
+    {
+      "name": "Grand Ramaxe",
+      "definitionId": "def_024cb29f78198ec49342b34a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0932",
+        "BJ0933"
+      ],
+      "filename": "grand-ramaxe.png",
+      "crop": [
+        114,
+        1473,
+        484,
+        745
+      ],
+      "width": 484,
+      "height": 745,
+      "preservedPixelCount": 105769,
+      "sha256": "88a98617a0085e76b8e13d8ea4122500f5f46f09d55b57e8ddb7ad049c2c4ce0",
+      "sourcePrintedIds": [
+        "BJ0932"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/grand-ramaxe.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/grand-ramaxe.png",
+        "width": 484,
+        "height": 745,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Chain Whip",
+      "definitionId": "def_4d0d52e413f7d54ff269212b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0873",
+        "BJ0874"
+      ],
+      "filename": "chain-whip.png",
+      "crop": [
+        598,
+        1473,
+        484,
+        745
+      ],
+      "width": 484,
+      "height": 745,
+      "preservedPixelCount": 119232,
+      "sha256": "09f3141f762474c32d4dd3a6414eb4e7a17eb3e547b33994c8418ce512bf3bcb",
+      "sourcePrintedIds": [
+        "BJ0874"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/chain-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/chain-whip.png",
+        "width": 484,
+        "height": 745,
+        "artBottom": 547
+      }
+    },
+    {
+      "name": "Fireboat",
+      "definitionId": "def_4cfe7fa97cd49fbf87bb7735",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0875",
+        "BJ0876"
+      ],
+      "filename": "fireboat.png",
+      "crop": [
+        1082,
+        1473,
+        486,
+        745
+      ],
+      "width": 486,
+      "height": 745,
+      "preservedPixelCount": 113481,
+      "sha256": "633e91e9f49d7b395dcee844bdf9b4e78c88e4800fce1cf1c3d58a86ac4ac095",
+      "sourcePrintedIds": [
+        "BJ0876"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/fireboat.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/fireboat.png",
+        "width": 486,
+        "height": 745,
+        "artBottom": 566
+      }
+    },
+    {
+      "name": "Eviscerators",
+      "definitionId": "def_dbb2d468ccb5bb63ebfb5ea7",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0871",
+        "BJ0872"
+      ],
+      "filename": "eviscerators.png",
+      "crop": [
+        1568,
+        1473,
+        490,
+        745
+      ],
+      "width": 490,
+      "height": 745,
+      "preservedPixelCount": 118320,
+      "sha256": "2717461bb8c34d1335d5f44292e7f742bc0e0c31d6a88d4b30a59542f33e5460",
+      "sourcePrintedIds": [
+        "BJ0872"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/eviscerators.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/eviscerators.png",
+        "width": 490,
+        "height": 745,
+        "artBottom": 518
+      }
+    },
+    {
+      "name": "Vaulting Rope",
+      "definitionId": "def_044e1bc110fff9b60e0230f9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0885",
+        "BJ0886"
+      ],
+      "filename": "vaulting-rope.png",
+      "crop": [
+        2058,
+        1473,
+        486,
+        745
+      ],
+      "width": 486,
+      "height": 745,
+      "preservedPixelCount": 108815,
+      "sha256": "3a3aaa99d4727f593c31d81fe2d2a44078137372f488067290e60ed98f126cbb",
+      "sourcePrintedIds": [
+        "BJ0886"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/vaulting-rope.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/vaulting-rope.png",
+        "width": 486,
+        "height": 745,
+        "artBottom": 540
+      }
+    },
+    {
+      "name": "Metabow",
+      "definitionId": "def_db711e05caf4d00fef758b0d",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0883",
+        "BJ0884"
+      ],
+      "filename": "metabow.png",
+      "crop": [
+        2544,
+        1473,
+        486,
+        745
+      ],
+      "width": 486,
+      "height": 745,
+      "preservedPixelCount": 59957,
+      "sha256": "8c37bea97c95d26293e7db7576e6875d52df044b42ff0181af2ee397ac2c3757",
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/metabow.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/metabow.png",
+        "width": 486,
+        "height": 745,
+        "artBottom": 530
+      }
+    },
+    {
+      "name": "Metasword",
+      "definitionId": "def_db711e05caf4d00fef758b0d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0883",
+        "BJ0884"
+      ],
+      "filename": "metasword.png",
+      "crop": [
+        3030,
+        1473,
+        480,
+        745
+      ],
+      "width": 480,
+      "height": 745,
+      "preservedPixelCount": 33580,
+      "sha256": "dccbdc0f59168503f299dfccf634179a8644fb47bb09fc1d09305117890081e1",
+      "sourcePrintedIds": [
+        "BJ0883"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-210624/metasword.png",
+        "grayscaleImage": "assets/gear-art/epson-210624/grayscale/metasword.png",
+        "width": 480,
+        "height": 745,
+        "artBottom": 604
+      }
+    }
+  ],
+  "skippedCards": []
+}

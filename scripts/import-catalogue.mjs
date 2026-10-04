@@ -6,6 +6,7 @@ import { parseSourcePage } from '../src/domain/cards.ts';
 import { normalizeCatalogue } from '../src/catalogue/normalize.ts';
 import { parseCatalogue } from '../src/catalogue/validate.ts';
 import { createIdentityResolver } from './identity-registry.mjs';
+import { gearArtwork } from '../src/catalogue/gear-art.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const allowed = new Set(['source', 'out', 'registry', 'check']);
@@ -36,9 +37,9 @@ try { registry = JSON.parse(await readFile(registryPath, 'utf8')); }
 catch (error) { if (error.code !== 'ENOENT') throw error; }
 const identity = createIdentityResolver(registry);
 const result = normalizeCatalogue(inputs, card => identity.resolve(card), 'pending');
-const digest = createHash('sha256').update(JSON.stringify({ importerVersion: 1,
-  files: inputs.map(input => [input.file, input.sha256]), registry: identity.snapshot() })).digest('hex');
-const version = `atcc-v1-${digest.slice(0, 16)}`;
+const digest = createHash('sha256').update(JSON.stringify({ importerVersion: 2,
+  files: inputs.map(input => [input.file, input.sha256]), registry: identity.snapshot(), artwork: gearArtwork })).digest('hex');
+const version = `atcc-v2-${digest.slice(0, 16)}`;
 result.catalogue.catalogueVersion = version;
 parseCatalogue(result.catalogue);
 const artifacts = [

@@ -5,6 +5,10 @@ web, iOS and Android. It contains a bundled catalogue and independent player
 state for four Argonauts. Open the top-right menu and select **Browse Gear** to
 search cards, inspect abilities and flip reversible Gear. Select a dashboard
 card or empty slot to construct or edit a loadout. Secret cards start hidden.
+The four supplied scans add 75 artwork-only Gear backgrounds, linked by
+persistent card and face IDs. Titles, stats and rules remain live overlays;
+exhausted or discarded cards use matching grayscale images. See
+[Gear artwork](docs/GEAR_ART.md) for the asset mapping and extraction notes.
 Memory slots now support ATCC-style cards, saved −/+ node trackers (ten nodes for
 Mnemos, three for Fated Mnemos) and red gateways. Assigned Mnemos hide locked
 abilities until their three/seven-node gateways are reached.

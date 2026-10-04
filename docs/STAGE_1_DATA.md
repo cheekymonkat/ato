@@ -4,7 +4,7 @@ Stage 1 provides shared TypeScript domain modules and bundled JSON for web, iOS 
 
 ## Files and commands
 
-- `data/source/`: seven unchanged ATCC exports. Preserve these as acquisition evidence.
+- `data/source/`: seven ATCC exports with the reviewed corrections listed below.
 - `data/identity-registry.json`: persistent definition identities; commit this with generated data.
 - `data/generated/catalogue.json`: app data, faces, structured effects, indexes and provenance.
 - `data/generated/quality-report.json`: reference resolutions and import diagnostics.
@@ -12,6 +12,9 @@ Stage 1 provides shared TypeScript domain modules and bundled JSON for web, iOS 
 - `src/catalogue/index.ts`: lazy singleton access to the bundled catalogue.
 - `src/domain/party.ts`: party, Argonaut and card-instance models and runtime validation.
 - `src/domain/slots.ts`: baseline and effect-derived capacity, restrictions and reassignment detection.
+- Gear image relationships and reproducible extraction are described in
+  [Gear art](GEAR_ART.md). Faces can carry an optional `artwork` link; the original
+  source card payload remains unchanged by image metadata.
 
 With Node 22.18 or newer:
 
@@ -23,7 +26,15 @@ npm run typecheck
 npm run lint
 ```
 
-`catalogue:check` reads all inputs and compares the generated files without writing. The importer validates every record and the complete paging set before writing. It uses deterministic JSON, omits generation timestamps and records source SHA-256 digests. Bump the importer version in both importer and validator when changing the normalization contract; catalogue versions incorporate that version, source digests and identity registry.
+`catalogue:check` reads all inputs and compares the generated files without writing. The importer validates every record and the complete paging set before writing. It uses deterministic JSON, omits generation timestamps and records source SHA-256 digests. Bump the importer version in both importer and validator when changing the normalization contract; catalogue versions incorporate that version, source digests, identity registry and artwork links.
+
+### Reviewed source corrections
+
+- 4 October 2026: Yarn Talisman (`AJ0281`, page 1, `/cards/326/slot`)
+  changed from `Support` to `Attachment`, as requested by the user and consistent
+  with its “Titan Attachment” ability. The original acquisition export remains
+  in `../ato_docs/atcc-cards-page-0001.json`. Regeneration updates the slot index
+  and catalogue version while preserving the definition ID and all other fields.
 
 ## Querying definitions
 

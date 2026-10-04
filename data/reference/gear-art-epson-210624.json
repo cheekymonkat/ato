@@ -1,0 +1,864 @@
+{
+  "batch": "epson-210624",
+  "source": "../ato_docs/Epson_04102026210624.jpg",
+  "sourceSha256": "c2b5fcb6025c871c5d94967a2819dc493dd74516bb59f1b585b7ebc338be4978",
+  "sourceSize": [
+    3510,
+    2550
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    1600,
+    137,
+    28,
+    401
+  ],
+  "cards": [
+    {
+      "name": "Great Breaker",
+      "definitionId": "def_3b6bf24413178ff91c4a0f21",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0879",
+        "BJ0880"
+      ],
+      "row": 1,
+      "column": 1,
+      "filename": "great-breaker.png",
+      "crop": [
+        127,
+        0,
+        484,
+        727
+      ],
+      "artRects": [
+        [
+          116,
+          122,
+          386,
+          484
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0879"
+      ]
+    },
+    {
+      "name": "Impact Armor",
+      "definitionId": "def_c9381d7b0670cd2782532f6f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0911",
+        "BJ0912"
+      ],
+      "row": 1,
+      "column": 2,
+      "filename": "impact-armor.png",
+      "crop": [
+        611,
+        0,
+        486,
+        727
+      ],
+      "artRects": [
+        [
+          65,
+          118,
+          376,
+          458
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0911"
+      ]
+    },
+    {
+      "name": "Collision Shield",
+      "definitionId": "def_39fb71e037825c0881e5fe3a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0913",
+        "BJ0914"
+      ],
+      "row": 1,
+      "column": 3,
+      "filename": "collision-shield.png",
+      "crop": [
+        1097,
+        0,
+        488,
+        727
+      ],
+      "artRects": [
+        [
+          110,
+          110,
+          401,
+          494
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          365,
+          270,
+          482,
+          351
+        ]
+      ],
+      "reviewNote": "Right stat panel covers part of the shield edge; printed panel is masked.",
+      "sourcePrintedIds": [
+        "BJ0914"
+      ]
+    },
+    {
+      "name": "Iapetus Lifesaver",
+      "definitionId": "def_565980ba3dd68ac1a19f6ba0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0891",
+        "BJ0892",
+        "BJ0893"
+      ],
+      "row": 1,
+      "column": 4,
+      "filename": "iapetus-lifesaver.png",
+      "crop": [
+        1585,
+        0,
+        484,
+        727
+      ],
+      "artRects": [
+        [
+          57,
+          142,
+          454,
+          526
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0893"
+      ]
+    },
+    {
+      "name": "Achillean Hectors",
+      "definitionId": "def_4f67dc040937547c288750f4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0896",
+        "BJ0897"
+      ],
+      "row": 1,
+      "column": 5,
+      "filename": "achillean-hectors.png",
+      "crop": [
+        2069,
+        0,
+        484,
+        727
+      ],
+      "artRects": [
+        [
+          91,
+          104,
+          441,
+          441
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0896"
+      ]
+    },
+    {
+      "name": "Boost Kothornos",
+      "definitionId": "def_3c014172da91bf78d6cfb2e8",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0894",
+        "BJ0895"
+      ],
+      "row": 1,
+      "column": 6,
+      "filename": "boost-kothornos.png",
+      "crop": [
+        2553,
+        0,
+        484,
+        727
+      ],
+      "artRects": [
+        [
+          95,
+          110,
+          403,
+          494
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0895"
+      ]
+    },
+    {
+      "name": "Control Module",
+      "definitionId": "def_e3d3918978496f6da2662f4f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0898",
+        "BJ0899"
+      ],
+      "row": 1,
+      "column": 7,
+      "filename": "control-module.png",
+      "crop": [
+        3037,
+        0,
+        473,
+        727
+      ],
+      "artRects": [
+        [
+          105,
+          120,
+          378,
+          467
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0899"
+      ]
+    },
+    {
+      "name": "Lethe Guard",
+      "definitionId": "def_23b991706c979449431a4f08",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0849",
+        "BJ0850"
+      ],
+      "row": 2,
+      "column": 1,
+      "filename": "lethe-guard.png",
+      "crop": [
+        120,
+        727,
+        484,
+        746
+      ],
+      "artRects": [
+        [
+          127,
+          101,
+          326,
+          376
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0850"
+      ]
+    },
+    {
+      "name": "Asklepios Node",
+      "definitionId": "def_dee1a57fa844368bba3473fd",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0847",
+        "BJ0848"
+      ],
+      "row": 2,
+      "column": 2,
+      "filename": "asklepios-node.png",
+      "crop": [
+        604,
+        727,
+        486,
+        746
+      ],
+      "artRects": [
+        [
+          114,
+          108,
+          387,
+          519
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          188,
+          99,
+          387,
+          129
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0848"
+      ]
+    },
+    {
+      "name": "Covenant",
+      "definitionId": "def_cdddf6feacb4a21fdc5724fc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0851"
+      ],
+      "row": 2,
+      "column": 3,
+      "filename": "covenant.png",
+      "crop": [
+        1090,
+        727,
+        489,
+        746
+      ],
+      "artRects": [
+        [
+          91,
+          112,
+          404,
+          420
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0851"
+      ]
+    },
+    {
+      "name": "Siegetower Pauldron",
+      "definitionId": "def_d3f2c8ebc688e9de114aada2",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0889",
+        "BJ0890"
+      ],
+      "row": 2,
+      "column": 4,
+      "filename": "siegetower-pauldron.png",
+      "crop": [
+        1579,
+        727,
+        488,
+        746
+      ],
+      "artRects": [
+        [
+          38,
+          112,
+          397,
+          420
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          129,
+          108,
+          397,
+          131
+        ]
+      ],
+      "reviewNote": "Title and rules overlap the faded torso; these printed regions are masked.",
+      "sourcePrintedIds": [
+        "BJ0889"
+      ]
+    },
+    {
+      "name": "Watchtower Pauldron",
+      "definitionId": "def_74865d39073e1119ee52d29d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0887",
+        "BJ0888"
+      ],
+      "row": 2,
+      "column": 5,
+      "filename": "watchtower-pauldron.png",
+      "crop": [
+        2067,
+        727,
+        486,
+        746
+      ],
+      "artRects": [
+        [
+          21,
+          105,
+          391,
+          418
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          154,
+          99,
+          391,
+          126
+        ]
+      ],
+      "reviewNote": "Title and rules overlap the faded torso; these printed regions are masked.",
+      "sourcePrintedIds": [
+        "BJ0887"
+      ]
+    },
+    {
+      "name": "Relief Cestus",
+      "definitionId": "def_66c74d62c9da72087b81c6e2",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0881",
+        "BJ0882"
+      ],
+      "row": 2,
+      "column": 6,
+      "filename": "relief-cestus.png",
+      "crop": [
+        2553,
+        727,
+        484,
+        746
+      ],
+      "artRects": [
+        [
+          69,
+          317,
+          209,
+          496
+        ],
+        [
+          188,
+          145,
+          437,
+          433
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          69,
+          317,
+          95,
+          346
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0882"
+      ]
+    },
+    {
+      "name": "Stone Relief Armor",
+      "definitionId": "def_e77b306d0dbfd7c7e8f398ac",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0877",
+        "BJ0878"
+      ],
+      "row": 2,
+      "column": 7,
+      "filename": "stone-relief-armor.png",
+      "crop": [
+        3037,
+        727,
+        473,
+        746
+      ],
+      "artRects": [
+        [
+          80,
+          133,
+          399,
+          511
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0878"
+      ]
+    },
+    {
+      "name": "Grand Ramaxe",
+      "definitionId": "def_024cb29f78198ec49342b34a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0932",
+        "BJ0933"
+      ],
+      "row": 3,
+      "column": 1,
+      "filename": "grand-ramaxe.png",
+      "crop": [
+        114,
+        1473,
+        484,
+        745
+      ],
+      "artRects": [
+        [
+          137,
+          126,
+          469,
+          426
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            256,
+            365
+          ],
+          [
+            294,
+            376
+          ],
+          [
+            148,
+            543
+          ],
+          [
+            99,
+            532
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0932"
+      ]
+    },
+    {
+      "name": "Chain Whip",
+      "definitionId": "def_4d0d52e413f7d54ff269212b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0873",
+        "BJ0874"
+      ],
+      "row": 3,
+      "column": 2,
+      "filename": "chain-whip.png",
+      "crop": [
+        598,
+        1473,
+        484,
+        745
+      ],
+      "artRects": [
+        [
+          121,
+          99,
+          416,
+          454
+        ],
+        [
+          120,
+          411,
+          279,
+          547
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          397,
+          99,
+          416,
+          116
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0874"
+      ]
+    },
+    {
+      "name": "Fireboat",
+      "definitionId": "def_4cfe7fa97cd49fbf87bb7735",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0875",
+        "BJ0876"
+      ],
+      "row": 3,
+      "column": 3,
+      "filename": "fireboat.png",
+      "crop": [
+        1082,
+        1473,
+        486,
+        745
+      ],
+      "artRects": [
+        [
+          158,
+          99,
+          401,
+          566
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0876"
+      ]
+    },
+    {
+      "name": "Eviscerators",
+      "definitionId": "def_dbb2d468ccb5bb63ebfb5ea7",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0871",
+        "BJ0872"
+      ],
+      "row": 3,
+      "column": 4,
+      "filename": "eviscerators.png",
+      "crop": [
+        1568,
+        1473,
+        490,
+        745
+      ],
+      "artRects": [
+        [
+          127,
+          106,
+          435,
+          490
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            138,
+            490
+          ],
+          [
+            165,
+            478
+          ],
+          [
+            175,
+            490
+          ],
+          [
+            140,
+            516
+          ],
+          [
+            131,
+            518
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          389,
+          99,
+          490,
+          118
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0872"
+      ]
+    },
+    {
+      "name": "Vaulting Rope",
+      "definitionId": "def_044e1bc110fff9b60e0230f9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0885",
+        "BJ0886"
+      ],
+      "row": 3,
+      "column": 5,
+      "filename": "vaulting-rope.png",
+      "crop": [
+        2058,
+        1473,
+        486,
+        745
+      ],
+      "artRects": [
+        [
+          98,
+          186,
+          423,
+          540
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          98,
+          511,
+          313,
+          540
+        ]
+      ],
+      "sourcePrintedIds": [
+        "BJ0886"
+      ]
+    },
+    {
+      "name": "Metabow",
+      "definitionId": "def_db711e05caf4d00fef758b0d",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0883",
+        "BJ0884"
+      ],
+      "row": 3,
+      "column": 6,
+      "filename": "metabow.png",
+      "crop": [
+        2544,
+        1473,
+        486,
+        745
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            97,
+            97
+          ],
+          [
+            167,
+            137
+          ],
+          [
+            319,
+            196
+          ],
+          [
+            324,
+            249
+          ],
+          [
+            476,
+            502
+          ],
+          [
+            461,
+            530
+          ],
+          [
+            376,
+            498
+          ],
+          [
+            247,
+            344
+          ],
+          [
+            121,
+            321
+          ],
+          [
+            106,
+            274
+          ],
+          [
+            127,
+            215
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Metasword",
+      "definitionId": "def_db711e05caf4d00fef758b0d",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0883",
+        "BJ0884"
+      ],
+      "row": 3,
+      "column": 7,
+      "filename": "metasword.png",
+      "crop": [
+        3030,
+        1473,
+        480,
+        745
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            108,
+            107
+          ],
+          [
+            140,
+            150
+          ],
+          [
+            212,
+            236
+          ],
+          [
+            309,
+            359
+          ],
+          [
+            362,
+            443
+          ],
+          [
+            419,
+            549
+          ],
+          [
+            415,
+            595
+          ],
+          [
+            372,
+            604
+          ],
+          [
+            332,
+            561
+          ],
+          [
+            319,
+            504
+          ],
+          [
+            260,
+            422
+          ],
+          [
+            153,
+            255
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "BJ0883"
+      ]
+    }
+  ],
+  "skippedCards": []
+}

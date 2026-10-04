@@ -1,0 +1,393 @@
+{
+  "batch": "epson-211609",
+  "source": "../ato_docs/Epson_04102026211609.jpg",
+  "sourceSha256": "e9541f2cd703c1bd6b0bfea5b4d8bbaf995df6eaf5bf584bdbd794f03981e72e",
+  "configurationSha256": "2bd9b229b9f33b06dfbaaf3da32ba090b5089f74c755ea9950576fe0cce9a405",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Carver Kopis",
+      "definitionId": "def_0eea196607c08352330a66d3",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0904"
+      ],
+      "filename": "carver-kopis.png",
+      "crop": [
+        0,
+        0,
+        491,
+        734
+      ],
+      "width": 491,
+      "height": 734,
+      "preservedPixelCount": 34870,
+      "sha256": "c89f1bbdab0e451d2679a4d6fd3e82aaa18113ad14fdeb6f47f67a4d28c96b15",
+      "sourcePrintedIds": [
+        "BJ0904"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/carver-kopis.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/carver-kopis.png",
+        "width": 491,
+        "height": 734,
+        "artBottom": 565
+      }
+    },
+    {
+      "name": "Cyclopean Totem",
+      "definitionId": "def_f01d60a752785a861b737dbc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0909"
+      ],
+      "filename": "cyclopean-totem.png",
+      "crop": [
+        491,
+        0,
+        484,
+        734
+      ],
+      "width": 484,
+      "height": 734,
+      "preservedPixelCount": 46556,
+      "sha256": "83b2d8ceb3a50a9e067c552f40dab94983331953103fff4807adac3f7b0c3115",
+      "sourcePrintedIds": [
+        "BJ0909"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-totem.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-totem.png",
+        "width": 484,
+        "height": 734,
+        "artBottom": 347
+      }
+    },
+    {
+      "name": "Cyclopean Knives",
+      "definitionId": "def_54acada1dd3d96d300f05c15",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0907"
+      ],
+      "filename": "cyclopean-knives.png",
+      "crop": [
+        975,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 117393,
+      "sha256": "403b2b66eed1fef96f839625e23c110d47a93c163e61db0e3e243996f5372fd6",
+      "sourcePrintedIds": [
+        "BJ0907"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-knives.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-knives.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 468
+      }
+    },
+    {
+      "name": "Spartan Kopis",
+      "definitionId": "def_8356a32e9d8389ef18c1600c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0902"
+      ],
+      "filename": "spartan-kopis.png",
+      "crop": [
+        1461,
+        0,
+        487,
+        734
+      ],
+      "width": 487,
+      "height": 734,
+      "preservedPixelCount": 60122,
+      "sha256": "99beae545260e2e24880b0cf8f0294360bf6b0eb00beea6a85a479556e4a1fbe",
+      "sourcePrintedIds": [
+        "BJ0902"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/spartan-kopis.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/spartan-kopis.png",
+        "width": 487,
+        "height": 734,
+        "artBottom": 504
+      }
+    },
+    {
+      "name": "Spartan War Axe",
+      "definitionId": "def_7953a7a5a42900ca3b7ebce9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0900"
+      ],
+      "filename": "spartan-war-axe.png",
+      "crop": [
+        1948,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 37933,
+      "sha256": "a529b47ea0d64704664db6040849cfeca47d3768b23ba7d504534ef4c474090e",
+      "sourcePrintedIds": [
+        "BJ0900"
+      ],
+      "reviewNote": "The left modifier panel covers part of the lower shaft; the visible shaft and separate tip are retained, with the printed panel masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/spartan-war-axe.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/spartan-war-axe.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 557
+      }
+    },
+    {
+      "name": "Labyrinthization",
+      "definitionId": "def_a2b46c0958ba8e8204b629ca",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0831",
+        "BJ0832",
+        "BJ0833",
+        "BJ0834"
+      ],
+      "filename": "labyrinthization.png",
+      "crop": [
+        2434,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 89090,
+      "sha256": "858f0d3e20a1c35731cf0ee339f2841834f85c539f65b0a1ba77b4da5571c740",
+      "sourcePrintedIds": [
+        "BJ0833"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/labyrinthization.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/labyrinthization.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 408
+      }
+    },
+    {
+      "name": "Medusa Extract",
+      "definitionId": "def_8a8cad406c251d20a1eefad5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0854",
+        "BJ0855"
+      ],
+      "filename": "medusa-extract.png",
+      "crop": [
+        2920,
+        0,
+        464,
+        734
+      ],
+      "width": 464,
+      "height": 734,
+      "preservedPixelCount": 60125,
+      "sha256": "995735235ed942625bd1b481cffe9a13273138379ed4e7378edbbbd4e7f5b55c",
+      "sourcePrintedIds": [
+        "BJ0854"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/medusa-extract.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/medusa-extract.png",
+        "width": 464,
+        "height": 734,
+        "artBottom": 446
+      }
+    },
+    {
+      "name": "Heavy Spear",
+      "definitionId": "def_3f1413dba827ee88eefbe8c4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0901"
+      ],
+      "filename": "heavy-spear.png",
+      "crop": [
+        491,
+        734,
+        484,
+        760
+      ],
+      "width": 484,
+      "height": 760,
+      "preservedPixelCount": 13016,
+      "sha256": "2b957f6f322aebfe793be4fa98dd57485a9813827720ba4834ba884352c40f17",
+      "sourcePrintedIds": [
+        "BJ0901"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/heavy-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/heavy-spear.png",
+        "width": 484,
+        "height": 760,
+        "artBottom": 555
+      }
+    },
+    {
+      "name": "Gastraphetes",
+      "definitionId": "def_daf5328eb7b0499a62e07465",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0903"
+      ],
+      "filename": "gastraphetes.png",
+      "crop": [
+        975,
+        734,
+        486,
+        760
+      ],
+      "width": 486,
+      "height": 760,
+      "preservedPixelCount": 116580,
+      "sha256": "ac2d005ad3f782da38b7350f21bc11ae54de7f10e459567f4a408aae220875ff",
+      "sourcePrintedIds": [
+        "BJ0903"
+      ],
+      "reviewNote": "The left statistic panel covers the end of the bow arm; the printed edge is masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/gastraphetes.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/gastraphetes.png",
+        "width": 486,
+        "height": 760,
+        "artBottom": 497
+      }
+    },
+    {
+      "name": "Cyclopean Khopesh",
+      "definitionId": "def_20ecd9e4ed4cf37856d0a0fc",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0905"
+      ],
+      "filename": "cyclopean-khopesh.png",
+      "crop": [
+        1461,
+        734,
+        487,
+        760
+      ],
+      "width": 487,
+      "height": 760,
+      "preservedPixelCount": 33693,
+      "sha256": "5481d5118a174113743afa60e959f2306014a924aacffd8235d2d9b91f5f4770",
+      "sourcePrintedIds": [
+        "BJ0905"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-khopesh.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-khopesh.png",
+        "width": 487,
+        "height": 760,
+        "artBottom": 646
+      }
+    },
+    {
+      "name": "Cyclopean Forge Hammer",
+      "definitionId": "def_1e96a92c7288054dc7cdb7d0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0910"
+      ],
+      "filename": "cyclopean-forge-hammer.png",
+      "crop": [
+        1948,
+        734,
+        486,
+        760
+      ],
+      "width": 486,
+      "height": 760,
+      "preservedPixelCount": 35934,
+      "sha256": "cb85407bea07aff21ade7607c65d459d4c3c4e3275b90490bc4a9ea555195e03",
+      "sourcePrintedIds": [
+        "BJ0910"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-forge-hammer.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-forge-hammer.png",
+        "width": 486,
+        "height": 760,
+        "artBottom": 505
+      }
+    },
+    {
+      "name": "Cyclopean Visor",
+      "definitionId": "def_802be492d4e7d41a955bed97",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0908"
+      ],
+      "filename": "cyclopean-visor.png",
+      "crop": [
+        2434,
+        734,
+        486,
+        760
+      ],
+      "width": 486,
+      "height": 760,
+      "preservedPixelCount": 88013,
+      "sha256": "a25210ae9be78cc20ce0ff77fb5a772af483817827ca704e797112331622959b",
+      "sourcePrintedIds": [
+        "BJ0908"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-visor.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-visor.png",
+        "width": 486,
+        "height": 760,
+        "artBottom": 425
+      }
+    },
+    {
+      "name": "Cyclopean Linothorax",
+      "definitionId": "def_4a60bba7e035ddb3aa5a3097",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0906"
+      ],
+      "filename": "cyclopean-linothorax.png",
+      "crop": [
+        2920,
+        734,
+        464,
+        760
+      ],
+      "width": 464,
+      "height": 760,
+      "preservedPixelCount": 103617,
+      "sha256": "2f1823d3c24d62a0cffa8d1291b98f99ba16d6bf6c52d383a56e2048aa4ed5a1",
+      "sourcePrintedIds": [
+        "BJ0906"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-211609/cyclopean-linothorax.png",
+        "grayscaleImage": "assets/gear-art/epson-211609/grayscale/cyclopean-linothorax.png",
+        "width": 464,
+        "height": 760,
+        "artBottom": 529
+      }
+    }
+  ],
+  "skippedCards": []
+}

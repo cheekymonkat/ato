@@ -1,0 +1,1489 @@
+{
+  "source": "../ato_docs/cycle2_a.jpg",
+  "sourceSha256": "51b101d49166a33bca4f811eaa2b61d91ce7004020bfb2a9a5e566df9f4be3f6",
+  "sourceSize": [
+    3396,
+    2232
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    242,
+    112,
+    30,
+    350
+  ],
+  "cards": [
+    {
+      "name": "Mazed Cestus",
+      "definitionId": "def_61558188902e56ca96781073",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0862",
+        "BJ0863"
+      ],
+      "row": 1,
+      "column": 1,
+      "filename": "mazed-cestus.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "titleRect": [
+        105,
+        24,
+        390,
+        98
+      ],
+      "artRects": [
+        [
+          120,
+          154,
+          246,
+          422
+        ],
+        [
+          112,
+          270,
+          121,
+          339
+        ],
+        [
+          119,
+          366,
+          123,
+          410
+        ],
+        [
+          281,
+          146,
+          450,
+          468
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          109,
+          340,
+          119,
+          367
+        ]
+      ]
+    },
+    {
+      "name": "Temenos Scale Shield",
+      "definitionId": "def_ac6cc275dc91216e75e05000",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0829",
+        "BJ0830"
+      ],
+      "row": 1,
+      "column": 2,
+      "filename": "temenos-scale-shield.png",
+      "crop": [
+        488,
+        0,
+        486,
+        728
+      ],
+      "titleRect": [
+        111,
+        14,
+        387,
+        105
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            196,
+            119
+          ],
+          [
+            304,
+            128
+          ],
+          [
+            382,
+            177
+          ],
+          [
+            421,
+            244
+          ],
+          [
+            420,
+            318
+          ],
+          [
+            392,
+            378
+          ],
+          [
+            337,
+            428
+          ],
+          [
+            257,
+            448
+          ],
+          [
+            173,
+            430
+          ],
+          [
+            112,
+            383
+          ],
+          [
+            91,
+            310
+          ],
+          [
+            104,
+            225
+          ],
+          [
+            135,
+            181
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          364,
+          260,
+          486,
+          334
+        ]
+      ],
+      "reviewNote": "The right-hand statistic panel covers part of the shield illustration. That panel is masked to paper; hidden artwork is not reconstructed."
+    },
+    {
+      "name": "Temenos Xiphos",
+      "definitionId": "def_c5f40c37c8abd0f63325448f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0839",
+        "BJ0840"
+      ],
+      "row": 1,
+      "column": 3,
+      "filename": "temenos-xiphos.png",
+      "crop": [
+        974,
+        0,
+        488,
+        728
+      ],
+      "titleRect": [
+        108,
+        12,
+        389,
+        101
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            141,
+            89
+          ],
+          [
+            164,
+            88
+          ],
+          [
+            181,
+            117
+          ],
+          [
+            198,
+            128
+          ],
+          [
+            226,
+            136
+          ],
+          [
+            227,
+            152
+          ],
+          [
+            200,
+            157
+          ],
+          [
+            227,
+            204
+          ],
+          [
+            252,
+            230
+          ],
+          [
+            276,
+            270
+          ],
+          [
+            283,
+            299
+          ],
+          [
+            305,
+            330
+          ],
+          [
+            329,
+            365
+          ],
+          [
+            340,
+            399
+          ],
+          [
+            375,
+            443
+          ],
+          [
+            405,
+            491
+          ],
+          [
+            414,
+            521
+          ],
+          [
+            388,
+            507
+          ],
+          [
+            360,
+            479
+          ],
+          [
+            332,
+            440
+          ],
+          [
+            310,
+            414
+          ],
+          [
+            283,
+            369
+          ],
+          [
+            256,
+            335
+          ],
+          [
+            228,
+            294
+          ],
+          [
+            205,
+            256
+          ],
+          [
+            181,
+            214
+          ],
+          [
+            163,
+            175
+          ],
+          [
+            158,
+            156
+          ],
+          [
+            132,
+            155
+          ],
+          [
+            130,
+            139
+          ],
+          [
+            155,
+            126
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Temenos Whip",
+      "definitionId": "def_c5f40c37c8abd0f63325448f",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0839",
+        "BJ0840"
+      ],
+      "row": 1,
+      "column": 4,
+      "filename": "temenos-whip.png",
+      "crop": [
+        1462,
+        0,
+        487,
+        728
+      ],
+      "titleRect": [
+        108,
+        22,
+        382,
+        82
+      ],
+      "artRects": [
+        [
+          103,
+          99,
+          390,
+          414
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            363,
+            80
+          ],
+          [
+            386,
+            87
+          ],
+          [
+            390,
+            103
+          ],
+          [
+            379,
+            121
+          ],
+          [
+            356,
+            116
+          ]
+        ],
+        [
+          [
+            104,
+            382
+          ],
+          [
+            158,
+            344
+          ],
+          [
+            156,
+            381
+          ],
+          [
+            105,
+            438
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          102,
+          100,
+          119,
+          333
+        ]
+      ]
+    },
+    {
+      "name": "Puzzle Axe",
+      "definitionId": "def_5b660ac8bbf14eeaf479685a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0837",
+        "BJ0838"
+      ],
+      "row": 1,
+      "column": 5,
+      "filename": "puzzle-axe.png",
+      "crop": [
+        1949,
+        0,
+        490,
+        728
+      ],
+      "titleRect": [
+        127,
+        27,
+        372,
+        92
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            97,
+            164
+          ],
+          [
+            197,
+            130
+          ],
+          [
+            249,
+            126
+          ],
+          [
+            288,
+            150
+          ],
+          [
+            351,
+            126
+          ],
+          [
+            381,
+            167
+          ],
+          [
+            371,
+            191
+          ],
+          [
+            381,
+            205
+          ],
+          [
+            375,
+            241
+          ],
+          [
+            295,
+            277
+          ],
+          [
+            242,
+            277
+          ],
+          [
+            209,
+            266
+          ],
+          [
+            176,
+            234
+          ],
+          [
+            122,
+            233
+          ]
+        ],
+        [
+          [
+            268,
+            248
+          ],
+          [
+            304,
+            250
+          ],
+          [
+            320,
+            275
+          ],
+          [
+            335,
+            300
+          ],
+          [
+            353,
+            327
+          ],
+          [
+            370,
+            351
+          ],
+          [
+            386,
+            379
+          ],
+          [
+            402,
+            404
+          ],
+          [
+            418,
+            433
+          ],
+          [
+            434,
+            455
+          ],
+          [
+            441,
+            473
+          ],
+          [
+            455,
+            495
+          ],
+          [
+            471,
+            516
+          ],
+          [
+            470,
+            523
+          ],
+          [
+            459,
+            524
+          ],
+          [
+            446,
+            513
+          ],
+          [
+            432,
+            496
+          ],
+          [
+            418,
+            478
+          ],
+          [
+            402,
+            459
+          ],
+          [
+            388,
+            434
+          ],
+          [
+            373,
+            409
+          ],
+          [
+            357,
+            383
+          ],
+          [
+            341,
+            357
+          ],
+          [
+            325,
+            331
+          ],
+          [
+            308,
+            307
+          ],
+          [
+            292,
+            281
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Labyrinth Mauler",
+      "definitionId": "def_8a4a927fa3501e20e64debae",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0835"
+      ],
+      "row": 1,
+      "column": 6,
+      "filename": "labyrinth-mauler.png",
+      "crop": [
+        2439,
+        0,
+        487,
+        728
+      ],
+      "titleRect": [
+        132,
+        12,
+        379,
+        101
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            128,
+            181
+          ],
+          [
+            273,
+            96
+          ],
+          [
+            299,
+            241
+          ],
+          [
+            331,
+            295
+          ],
+          [
+            470,
+            429
+          ],
+          [
+            469,
+            452
+          ],
+          [
+            451,
+            460
+          ],
+          [
+            416,
+            425
+          ],
+          [
+            322,
+            337
+          ],
+          [
+            302,
+            305
+          ],
+          [
+            244,
+            282
+          ],
+          [
+            167,
+            232
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Labyrinth Armor",
+      "definitionId": "def_63677eb8093f4b86a3e7a586",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0827",
+        "BJ0828"
+      ],
+      "row": 1,
+      "column": 7,
+      "filename": "labyrinth-armor.png",
+      "crop": [
+        2926,
+        0,
+        470,
+        728
+      ],
+      "titleRect": [
+        123,
+        12,
+        371,
+        99
+      ],
+      "artRects": [
+        [
+          85,
+          98,
+          408,
+          409
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          369,
+          269,
+          470,
+          340
+        ]
+      ]
+    },
+    {
+      "name": "Temenos Scale Umbrella",
+      "definitionId": "def_ac6cc275dc91216e75e05000",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0829",
+        "BJ0830"
+      ],
+      "row": 2,
+      "column": 1,
+      "filename": "temenos-scale-umbrella.png",
+      "crop": [
+        0,
+        728,
+        504,
+        745
+      ],
+      "titleRect": [
+        117,
+        20,
+        391,
+        115
+      ],
+      "artRects": [
+        [
+          62,
+          140,
+          435,
+          429
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Scale Chakram",
+      "definitionId": "def_560add20be9cf8399e99dc79",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0864",
+        "BJ0865"
+      ],
+      "row": 2,
+      "column": 2,
+      "filename": "scale-chakram.png",
+      "crop": [
+        504,
+        728,
+        485,
+        745
+      ],
+      "titleRect": [
+        109,
+        22,
+        390,
+        115
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            166,
+            204
+          ],
+          [
+            256,
+            189
+          ],
+          [
+            372,
+            200
+          ],
+          [
+            438,
+            242
+          ],
+          [
+            463,
+            305
+          ],
+          [
+            457,
+            375
+          ],
+          [
+            410,
+            419
+          ],
+          [
+            306,
+            446
+          ],
+          [
+            197,
+            433
+          ],
+          [
+            130,
+            398
+          ],
+          [
+            109,
+            347
+          ],
+          [
+            96,
+            307
+          ],
+          [
+            110,
+            260
+          ],
+          [
+            135,
+            226
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Mazechute",
+      "definitionId": "def_e341257ffb5fe8bfb2e80ed5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0866",
+        "BJ0867"
+      ],
+      "row": 2,
+      "column": 3,
+      "filename": "mazechute.png",
+      "crop": [
+        989,
+        728,
+        482,
+        745
+      ],
+      "titleRect": [
+        108,
+        36,
+        392,
+        99
+      ],
+      "artRects": [
+        [
+          105,
+          107,
+          425,
+          434
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Pseudomidion",
+      "definitionId": "def_d37dbc8fdc104b4cbaa96fc0",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0860",
+        "BJ0861"
+      ],
+      "row": 2,
+      "column": 4,
+      "filename": "pseudomidion.png",
+      "crop": [
+        1471,
+        728,
+        483,
+        745
+      ],
+      "titleRect": [
+        97,
+        16,
+        370,
+        75
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            284,
+            157
+          ],
+          [
+            379,
+            81
+          ],
+          [
+            388,
+            89
+          ],
+          [
+            360,
+            193
+          ],
+          [
+            320,
+            189
+          ],
+          [
+            245,
+            275
+          ],
+          [
+            223,
+            300
+          ],
+          [
+            180,
+            275
+          ],
+          [
+            123,
+            407
+          ],
+          [
+            164,
+            418
+          ],
+          [
+            183,
+            430
+          ],
+          [
+            175,
+            445
+          ],
+          [
+            92,
+            545
+          ],
+          [
+            69,
+            554
+          ],
+          [
+            138,
+            450
+          ],
+          [
+            138,
+            437
+          ],
+          [
+            110,
+            434
+          ],
+          [
+            105,
+            411
+          ],
+          [
+            129,
+            354
+          ],
+          [
+            159,
+            284
+          ],
+          [
+            174,
+            256
+          ],
+          [
+            195,
+            254
+          ],
+          [
+            223,
+            277
+          ],
+          [
+            304,
+            181
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Longinus",
+      "definitionId": "def_d37dbc8fdc104b4cbaa96fc0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0860",
+        "BJ0861"
+      ],
+      "row": 2,
+      "column": 5,
+      "filename": "longinus.png",
+      "crop": [
+        1954,
+        728,
+        486,
+        745
+      ],
+      "titleRect": [
+        125,
+        35,
+        382,
+        100
+      ],
+      "artRects": [
+        [
+          100,
+          100,
+          460,
+          469
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          382,
+          0,
+          486,
+          111
+        ],
+        [
+          100,
+          211,
+          116,
+          348
+        ]
+      ]
+    },
+    {
+      "name": "Mazegma",
+      "definitionId": "def_148586339664a76b23490970",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0868"
+      ],
+      "row": 2,
+      "column": 6,
+      "filename": "mazegma.png",
+      "crop": [
+        2440,
+        728,
+        485,
+        745
+      ],
+      "titleRect": [
+        124,
+        30,
+        368,
+        98
+      ],
+      "artRects": [
+        [
+          86,
+          117,
+          423,
+          445
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Stonewall",
+      "definitionId": "def_b12bd681320ce723c4e8e6c6",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0869",
+        "BJ0870"
+      ],
+      "row": 2,
+      "column": 7,
+      "filename": "stonewall.png",
+      "crop": [
+        2925,
+        728,
+        471,
+        745
+      ],
+      "titleRect": [
+        127,
+        27,
+        373,
+        96
+      ],
+      "artRects": [
+        [
+          20,
+          106,
+          471,
+          446
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "reviewNote": "Rules overlap the bottom of the faded projection. The overlapping portion below y=446 is omitted; remaining artwork is unchanged."
+    },
+    {
+      "name": "Ambrostilts",
+      "definitionId": "def_f27a1484fa260d51ca3ef40a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0856",
+        "BJ0857"
+      ],
+      "row": 3,
+      "column": 1,
+      "filename": "ambrostilts.png",
+      "crop": [
+        0,
+        1473,
+        500,
+        759
+      ],
+      "titleRect": [
+        109,
+        24,
+        383,
+        98
+      ],
+      "artRects": [
+        [
+          124,
+          119,
+          380,
+          514
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Amphoras Belt",
+      "definitionId": "def_6f01f1e8ad627539efbaa47c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0841",
+        "BJ0842",
+        "BJ0843"
+      ],
+      "row": 3,
+      "column": 2,
+      "filename": "amphoras-belt.png",
+      "crop": [
+        500,
+        1473,
+        485,
+        759
+      ],
+      "titleRect": [
+        114,
+        29,
+        383,
+        125
+      ],
+      "artRects": [
+        [
+          31,
+          152,
+          427,
+          460
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          365,
+          211,
+          485,
+          285
+        ]
+      ],
+      "reviewNote": "The right-hand statistic panel covers part of an amphora. That panel is masked to paper; hidden artwork is not reconstructed."
+    },
+    {
+      "name": "Isokratos Limiter",
+      "definitionId": "def_11163aef562fe4505b980329",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0845",
+        "BJ0846"
+      ],
+      "row": 3,
+      "column": 3,
+      "filename": "isokratos-limiter.png",
+      "crop": [
+        985,
+        1473,
+        481,
+        759
+      ],
+      "titleRect": [
+        108,
+        21,
+        389,
+        124
+      ],
+      "artRects": [
+        [
+          111,
+          125,
+          391,
+          427
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          145,
+          417,
+          300,
+          450
+        ]
+      ]
+    },
+    {
+      "name": "Stepping Stone",
+      "definitionId": "def_072b6e2a95e6c76278877983",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0844"
+      ],
+      "row": 3,
+      "column": 4,
+      "filename": "stepping-stone.png",
+      "crop": [
+        1466,
+        1473,
+        487,
+        759
+      ],
+      "titleRect": [
+        119,
+        16,
+        377,
+        118
+      ],
+      "artRects": [
+        [
+          19,
+          154,
+          466,
+          375
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Repurposed Cryptex",
+      "definitionId": "def_459ec46e5862daf2ef2ae00f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0967"
+      ],
+      "row": 3,
+      "column": 5,
+      "filename": "repurposed-cryptex.png",
+      "crop": [
+        1953,
+        1473,
+        487,
+        759
+      ],
+      "titleRect": [
+        105,
+        7,
+        380,
+        101
+      ],
+      "artRects": [
+        [
+          106,
+          113,
+          370,
+          427
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Conqueror Nail",
+      "definitionId": "def_d57bf501fdfa02a89d66518c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0968"
+      ],
+      "row": 3,
+      "column": 6,
+      "filename": "conqueror-nail.png",
+      "crop": [
+        2440,
+        1473,
+        486,
+        759
+      ],
+      "titleRect": [
+        107,
+        19,
+        382,
+        114
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            132,
+            79
+          ],
+          [
+            163,
+            127
+          ],
+          [
+            180,
+            154
+          ],
+          [
+            205,
+            169
+          ],
+          [
+            219,
+            192
+          ],
+          [
+            250,
+            246
+          ],
+          [
+            280,
+            293
+          ],
+          [
+            305,
+            338
+          ],
+          [
+            310,
+            350
+          ],
+          [
+            296,
+            354
+          ],
+          [
+            270,
+            311
+          ],
+          [
+            240,
+            259
+          ],
+          [
+            210,
+            206
+          ],
+          [
+            191,
+            189
+          ],
+          [
+            169,
+            181
+          ],
+          [
+            147,
+            157
+          ],
+          [
+            132,
+            122
+          ]
+        ],
+        [
+          [
+            355,
+            87
+          ],
+          [
+            369,
+            91
+          ],
+          [
+            367,
+            128
+          ],
+          [
+            373,
+            172
+          ],
+          [
+            391,
+            232
+          ],
+          [
+            396,
+            289
+          ],
+          [
+            392,
+            346
+          ],
+          [
+            369,
+            349
+          ],
+          [
+            367,
+            292
+          ],
+          [
+            357,
+            251
+          ],
+          [
+            340,
+            216
+          ],
+          [
+            332,
+            176
+          ],
+          [
+            341,
+            126
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "reviewNote": "Rules overlap the lower weapon shafts. The obscured ends are omitted; remaining artwork is unchanged."
+    },
+    {
+      "name": "Pursuer Ultimatum",
+      "definitionId": "def_ab4951636e0ce3c72b9279cb",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0965"
+      ],
+      "row": 3,
+      "column": 7,
+      "filename": "pursuer-ultimatum.png",
+      "crop": [
+        2926,
+        1473,
+        470,
+        759
+      ],
+      "titleRect": [
+        108,
+        19,
+        382,
+        115
+      ],
+      "artRects": [
+        [
+          103,
+          110,
+          427,
+          536
+        ],
+        [
+          102,
+          459,
+          150,
+          591
+        ],
+        [
+          369,
+          459,
+          406,
+          548
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    }
+  ],
+  "batch": "cycle2-a"
+}

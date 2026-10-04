@@ -32,6 +32,13 @@ export function parseCatalogue(value: unknown): Catalogue {
       assert(isRecord(faceValue) && (faceValue.id === 'front' || faceValue.id === 'back') && !faceIds.has(faceValue.id), 'Invalid or repeated face');
       faceIds.add(faceValue.id);
       const validated = makeFace(parseSourceCard(faceValue.data, candidate.id), faceValue.id, candidate.id);
+      if (faceValue.artwork !== undefined) {
+        const art = faceValue.artwork;
+        assert(validated.kind === 'gear' && isRecord(art) && typeof art.image === 'string' && typeof art.grayscaleImage === 'string'
+          && /^assets\/gear-art\/[a-z0-9/-]+\.png$/.test(art.image) && /^assets\/gear-art\/[a-z0-9/-]+\.png$/.test(art.grayscaleImage)
+          && Number.isSafeInteger(art.width) && (art.width as number) > 0 && Number.isSafeInteger(art.height) && (art.height as number) > 0
+          && Number.isSafeInteger(art.artBottom) && (art.artBottom as number) > 0 && (art.artBottom as number) <= (art.height as number), 'Invalid Gear artwork');
+      }
       assert(Array.isArray(faceValue.inheritedFields) && faceValue.inheritedFields.every(k => typeof k === 'string' && ['cardIDs', 'renderType', 'cardType', 'game', 'cycle', 'cardSize'].includes(k)) && (faceValue.id === 'back' || faceValue.inheritedFields.length === 0), 'Invalid inherited metadata');
       for (const key of ['kind', 'name', 'family', 'cycle', 'game'] as const) assert(faceValue[key] === validated[key], `Inconsistent face ${key}`);
       assert(JSON.stringify(faceValue.printedIds) === JSON.stringify(validated.printedIds), 'Inconsistent face aliases');
@@ -53,7 +60,7 @@ export function parseCatalogue(value: unknown): Catalogue {
     assert(isRecord(actual) && Object.keys(actual).length === Object.keys(expected[facet]).length, `Invalid ${facet} index`);
     for (const [key, definitions] of Object.entries(expected[facet])) assert(Object.hasOwn(actual, key) && JSON.stringify(actual[key]) === JSON.stringify(definitions), `Inconsistent ${facet} index: ${key}`);
   }
-  assert(catalogue.provenance.sourceRecords === catalogue.cards.length && catalogue.provenance.importerVersion === 1 && Array.isArray(catalogue.provenance.files), 'Invalid catalogue provenance');
+  assert(catalogue.provenance.sourceRecords === catalogue.cards.length && [1, 2].includes(catalogue.provenance.importerVersion) && Array.isArray(catalogue.provenance.files), 'Invalid catalogue provenance');
   let sourceRecords = 0;
   const fileNames = new Set<string>();
   for (const file of catalogue.provenance.files) {

@@ -1,0 +1,576 @@
+{
+  "batch": "cycle2-a",
+  "source": "../ato_docs/cycle2_a.jpg",
+  "sourceSha256": "51b101d49166a33bca4f811eaa2b61d91ce7004020bfb2a9a5e566df9f4be3f6",
+  "configurationSha256": "d555d0af68be32c97727a9a4b20272b362095bc513593ab2f4bd116cbd5c84bb",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Mazed Cestus",
+      "definitionId": "def_61558188902e56ca96781073",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0862",
+        "BJ0863"
+      ],
+      "filename": "mazed-cestus.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "width": 488,
+      "height": 728,
+      "preservedPixelCount": 88782,
+      "sha256": "401cc7cad773f3a55653e11853752c533531d401829b3d6615b1bcbd1ad04c29",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/mazed-cestus.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/mazed-cestus.png",
+        "width": 488,
+        "height": 728,
+        "artBottom": 468
+      }
+    },
+    {
+      "name": "Temenos Scale Shield",
+      "definitionId": "def_ac6cc275dc91216e75e05000",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0829",
+        "BJ0830"
+      ],
+      "filename": "temenos-scale-shield.png",
+      "crop": [
+        488,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 79710,
+      "sha256": "61bd0d002c282ddcec00f2d3c4d3ee8c78b1d289ea1135cf34c995a3c3c229e6",
+      "reviewNote": "The right-hand statistic panel covers part of the shield illustration. That panel is masked to paper; hidden artwork is not reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/temenos-scale-shield.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/temenos-scale-shield.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 448
+      }
+    },
+    {
+      "name": "Temenos Xiphos",
+      "definitionId": "def_c5f40c37c8abd0f63325448f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0839",
+        "BJ0840"
+      ],
+      "filename": "temenos-xiphos.png",
+      "crop": [
+        974,
+        0,
+        488,
+        728
+      ],
+      "width": 488,
+      "height": 728,
+      "preservedPixelCount": 20568,
+      "sha256": "0dfa2dc7bae70aba6eaf37ef585ae075a3bc3c9812a3dbe03ee676d263054684",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/temenos-xiphos.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/temenos-xiphos.png",
+        "width": 488,
+        "height": 728,
+        "artBottom": 521
+      }
+    },
+    {
+      "name": "Temenos Whip",
+      "definitionId": "def_c5f40c37c8abd0f63325448f",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0839",
+        "BJ0840"
+      ],
+      "filename": "temenos-whip.png",
+      "crop": [
+        1462,
+        0,
+        487,
+        728
+      ],
+      "width": 487,
+      "height": 728,
+      "preservedPixelCount": 87341,
+      "sha256": "e5dba27bf08198a7134ceed06b57770700e73609cfcafcbb37b78ce5c0b25e81",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/temenos-whip.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/temenos-whip.png",
+        "width": 487,
+        "height": 728,
+        "artBottom": 438
+      }
+    },
+    {
+      "name": "Puzzle Axe",
+      "definitionId": "def_5b660ac8bbf14eeaf479685a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0837",
+        "BJ0838"
+      ],
+      "filename": "puzzle-axe.png",
+      "crop": [
+        1949,
+        0,
+        490,
+        728
+      ],
+      "width": 490,
+      "height": 728,
+      "preservedPixelCount": 39000,
+      "sha256": "7585854979f66894ef0ee1b26259c7ed7ccd79842341e6964603efd3988a1ed1",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/puzzle-axe.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/puzzle-axe.png",
+        "width": 490,
+        "height": 728,
+        "artBottom": 524
+      }
+    },
+    {
+      "name": "Labyrinth Mauler",
+      "definitionId": "def_8a4a927fa3501e20e64debae",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0835"
+      ],
+      "filename": "labyrinth-mauler.png",
+      "crop": [
+        2439,
+        0,
+        487,
+        728
+      ],
+      "width": 487,
+      "height": 728,
+      "preservedPixelCount": 27899,
+      "sha256": "99a144dfa9eb354b605212ebb601cb5bcace80748c58dc1d435ca20ecfedb6a9",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/labyrinth-mauler.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/labyrinth-mauler.png",
+        "width": 487,
+        "height": 728,
+        "artBottom": 460
+      }
+    },
+    {
+      "name": "Labyrinth Armor",
+      "definitionId": "def_63677eb8093f4b86a3e7a586",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0827",
+        "BJ0828"
+      ],
+      "filename": "labyrinth-armor.png",
+      "crop": [
+        2926,
+        0,
+        470,
+        728
+      ],
+      "width": 470,
+      "height": 728,
+      "preservedPixelCount": 97684,
+      "sha256": "49d90e5bece57f71cd30d79d58da1d047152a08c1563f440a20fe98f6981a771",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/labyrinth-armor.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/labyrinth-armor.png",
+        "width": 470,
+        "height": 728,
+        "artBottom": 409
+      }
+    },
+    {
+      "name": "Temenos Scale Umbrella",
+      "definitionId": "def_ac6cc275dc91216e75e05000",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0829",
+        "BJ0830"
+      ],
+      "filename": "temenos-scale-umbrella.png",
+      "crop": [
+        0,
+        728,
+        504,
+        745
+      ],
+      "width": 504,
+      "height": 745,
+      "preservedPixelCount": 107797,
+      "sha256": "12808ef7bfe089cd878dc8a070d4bf3ea9111b7a4ff92807b2ee7fb2619622b7",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/temenos-scale-umbrella.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/temenos-scale-umbrella.png",
+        "width": 504,
+        "height": 745,
+        "artBottom": 429
+      }
+    },
+    {
+      "name": "Scale Chakram",
+      "definitionId": "def_560add20be9cf8399e99dc79",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0864",
+        "BJ0865"
+      ],
+      "filename": "scale-chakram.png",
+      "crop": [
+        504,
+        728,
+        485,
+        745
+      ],
+      "width": 485,
+      "height": 745,
+      "preservedPixelCount": 75115,
+      "sha256": "04bc5f8e86c03434a59952c65d7941e101d90dd272931405943de7852773c638",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/scale-chakram.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/scale-chakram.png",
+        "width": 485,
+        "height": 745,
+        "artBottom": 446
+      }
+    },
+    {
+      "name": "Mazechute",
+      "definitionId": "def_e341257ffb5fe8bfb2e80ed5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0866",
+        "BJ0867"
+      ],
+      "filename": "mazechute.png",
+      "crop": [
+        989,
+        728,
+        482,
+        745
+      ],
+      "width": 482,
+      "height": 745,
+      "preservedPixelCount": 104640,
+      "sha256": "0959022f1f5cdd6c8202fac1f3029b9f237ee6773b48558726989a5bf19c7b4a",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/mazechute.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/mazechute.png",
+        "width": 482,
+        "height": 745,
+        "artBottom": 434
+      }
+    },
+    {
+      "name": "Pseudomidion",
+      "definitionId": "def_d37dbc8fdc104b4cbaa96fc0",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0860",
+        "BJ0861"
+      ],
+      "filename": "pseudomidion.png",
+      "crop": [
+        1471,
+        728,
+        483,
+        745
+      ],
+      "width": 483,
+      "height": 745,
+      "preservedPixelCount": 16213,
+      "sha256": "1b39e831d8de099c34148442b534bc83b8ac02b1df8af4179bcd48b115f4f965",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/pseudomidion.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/pseudomidion.png",
+        "width": 483,
+        "height": 745,
+        "artBottom": 554
+      }
+    },
+    {
+      "name": "Longinus",
+      "definitionId": "def_d37dbc8fdc104b4cbaa96fc0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0860",
+        "BJ0861"
+      ],
+      "filename": "longinus.png",
+      "crop": [
+        1954,
+        728,
+        486,
+        745
+      ],
+      "width": 486,
+      "height": 745,
+      "preservedPixelCount": 129790,
+      "sha256": "c5e4e1d7e69f03d5a26f0e2dd6943db11def4c39b674795f23b5a66b1859d922",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/longinus.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/longinus.png",
+        "width": 486,
+        "height": 745,
+        "artBottom": 469
+      }
+    },
+    {
+      "name": "Mazegma",
+      "definitionId": "def_148586339664a76b23490970",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0868"
+      ],
+      "filename": "mazegma.png",
+      "crop": [
+        2440,
+        728,
+        485,
+        745
+      ],
+      "width": 485,
+      "height": 745,
+      "preservedPixelCount": 110536,
+      "sha256": "ffb2afd75509316600b65eaad52866d3083882808091bb167a78785d9c71b61e",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/mazegma.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/mazegma.png",
+        "width": 485,
+        "height": 745,
+        "artBottom": 445
+      }
+    },
+    {
+      "name": "Stonewall",
+      "definitionId": "def_b12bd681320ce723c4e8e6c6",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0869",
+        "BJ0870"
+      ],
+      "filename": "stonewall.png",
+      "crop": [
+        2925,
+        728,
+        471,
+        745
+      ],
+      "width": 471,
+      "height": 745,
+      "preservedPixelCount": 153340,
+      "sha256": "e67ac4e768886ad053770930f216417303e23c2b21835f844b9264612ec439a2",
+      "reviewNote": "Rules overlap the bottom of the faded projection. The overlapping portion below y=446 is omitted; remaining artwork is unchanged.",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/stonewall.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/stonewall.png",
+        "width": 471,
+        "height": 745,
+        "artBottom": 446
+      }
+    },
+    {
+      "name": "Ambrostilts",
+      "definitionId": "def_f27a1484fa260d51ca3ef40a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0856",
+        "BJ0857"
+      ],
+      "filename": "ambrostilts.png",
+      "crop": [
+        0,
+        1473,
+        500,
+        759
+      ],
+      "width": 500,
+      "height": 759,
+      "preservedPixelCount": 101120,
+      "sha256": "433ec5299f76e82ee1d35dde6f5c40b8817a4b3eb1c96a25ede651812f0a8ad1",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/ambrostilts.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/ambrostilts.png",
+        "width": 500,
+        "height": 759,
+        "artBottom": 514
+      }
+    },
+    {
+      "name": "Amphoras Belt",
+      "definitionId": "def_6f01f1e8ad627539efbaa47c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0841",
+        "BJ0842",
+        "BJ0843"
+      ],
+      "filename": "amphoras-belt.png",
+      "crop": [
+        500,
+        1473,
+        485,
+        759
+      ],
+      "width": 485,
+      "height": 759,
+      "preservedPixelCount": 117380,
+      "sha256": "47d9a727fdec8d7c6a85a1cb1b2bdfa56a2981e6e0038c0f5be12276bdcfe914",
+      "reviewNote": "The right-hand statistic panel covers part of an amphora. That panel is masked to paper; hidden artwork is not reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/amphoras-belt.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/amphoras-belt.png",
+        "width": 485,
+        "height": 759,
+        "artBottom": 460
+      }
+    },
+    {
+      "name": "Isokratos Limiter",
+      "definitionId": "def_11163aef562fe4505b980329",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0845",
+        "BJ0846"
+      ],
+      "filename": "isokratos-limiter.png",
+      "crop": [
+        985,
+        1473,
+        481,
+        759
+      ],
+      "width": 481,
+      "height": 759,
+      "preservedPixelCount": 83010,
+      "sha256": "44fe24f4e817aab21659bc9144744ae1032ac4f6677f13ee3b4ea077f8124169",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/isokratos-limiter.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/isokratos-limiter.png",
+        "width": 481,
+        "height": 759,
+        "artBottom": 427
+      }
+    },
+    {
+      "name": "Stepping Stone",
+      "definitionId": "def_072b6e2a95e6c76278877983",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0844"
+      ],
+      "filename": "stepping-stone.png",
+      "crop": [
+        1466,
+        1473,
+        487,
+        759
+      ],
+      "width": 487,
+      "height": 759,
+      "preservedPixelCount": 98787,
+      "sha256": "00f034097238f46082c1058f6f1061a7c4451752ea609edd4f32405c796fe277",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/stepping-stone.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/stepping-stone.png",
+        "width": 487,
+        "height": 759,
+        "artBottom": 375
+      }
+    },
+    {
+      "name": "Repurposed Cryptex",
+      "definitionId": "def_459ec46e5862daf2ef2ae00f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0967"
+      ],
+      "filename": "repurposed-cryptex.png",
+      "crop": [
+        1953,
+        1473,
+        487,
+        759
+      ],
+      "width": 487,
+      "height": 759,
+      "preservedPixelCount": 82896,
+      "sha256": "891f5f59925274e8dae6b5fef892aa978eae967b14ce0308393499ac90d8194a",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/repurposed-cryptex.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/repurposed-cryptex.png",
+        "width": 487,
+        "height": 759,
+        "artBottom": 427
+      }
+    },
+    {
+      "name": "Conqueror Nail",
+      "definitionId": "def_d57bf501fdfa02a89d66518c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0968"
+      ],
+      "filename": "conqueror-nail.png",
+      "crop": [
+        2440,
+        1473,
+        486,
+        759
+      ],
+      "width": 486,
+      "height": 759,
+      "preservedPixelCount": 14545,
+      "sha256": "6a0da259e0a1f2fdf1ee89ebd922e8a379cdbe9789c2aed605363ebcc19de7dd",
+      "reviewNote": "Rules overlap the lower weapon shafts. The obscured ends are omitted; remaining artwork is unchanged.",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/conqueror-nail.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/conqueror-nail.png",
+        "width": 486,
+        "height": 759,
+        "artBottom": 354
+      }
+    },
+    {
+      "name": "Pursuer Ultimatum",
+      "definitionId": "def_ab4951636e0ce3c72b9279cb",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0965"
+      ],
+      "filename": "pursuer-ultimatum.png",
+      "crop": [
+        2926,
+        1473,
+        470,
+        759
+      ],
+      "width": 470,
+      "height": 759,
+      "preservedPixelCount": 141185,
+      "sha256": "404defce6d4b3e177c8f518db5ef4754cbc96bab5afce0609fd372ca7dc235e9",
+      "artwork": {
+        "image": "assets/gear-art/cycle2-a/pursuer-ultimatum.png",
+        "grayscaleImage": "assets/gear-art/cycle2-a/grayscale/pursuer-ultimatum.png",
+        "width": 470,
+        "height": 759,
+        "artBottom": 591
+      }
+    }
+  ],
+  "skippedCards": []
+}
