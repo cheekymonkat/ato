@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Sig | Rout",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_8c7a4be915aa56a888f75aba",
+      "family": "Sig | Rout",
+      "printedIds": [
+        "DR2533"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 227,
+        "pointer": "/cards/227"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blackslash | Right All Wrongs",
+          "family": "Sig | Rout",
+          "printedIds": [
+            "DR2533"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2533"
+            ],
+            "name": "Blackslash | Right All Wrongs",
+            "renderType": "Sig | Rout",
+            "cardType": "Sig | Rout",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "Sig | Rout",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "X",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in front"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "4",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Gain 1 Ambrosia token"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "2+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Knockdown"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Blackslash"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "",
+              "defense": {
+                "type": "",
+                "value": ""
+              },
+              "resources": [],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "The",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Dahaka moves to the center of the Board and turns to face the most Titans"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Lose -1"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "icon",
+                              "value": "Crew"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "and -1"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "icon",
+                              "value": "Hull"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Random Titan dies"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "",
+              "critResponse": [],
+              "name": "Right All Wrongs"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5537 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Mnemos",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_014934458013b6dd7d1f5959",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2643"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 85,
+        "pointer": "/cards/85"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Dogma",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2643"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2643"
+            ],
+            "name": "Dogma",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You were in the right",
+            "traits": [
+              "Fate",
+              "Supernatural",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to suffer Burn, ignore that Burn"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Ignore the effects of Despair tokens until the end of your turn"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "8+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Ignore Ambrosia tokens placed on your Gear with the Light X keyword until the end of this round"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Fury",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_089e849834c629a1b1a3cbb5",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0144"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 231,
+        "pointer": "/cards/231"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blood On Your Hands",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0144"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0144"
+            ],
+            "name": "Blood On Your Hands",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "A look. A word. A misunderstanding and a mistake. You can't wash it off",
+            "traits": [
+              "Deed",
+              "Crime",
+              "Tragedy"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "After you raise you"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for any reason, if your"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "is equal to current"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target's"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", you may gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target token"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target, you gain +1 Precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target, you gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Auto-break 1"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Fury",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0d758740a0be7c6e0214ab12",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2058"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 473,
+        "pointer": "/cards/473"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Peddler of Misery",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2058"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2058"
+            ],
+            "name": "Peddler of Misery",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "When greed becomes the end in itself",
+            "traits": [
+              "Fate",
+              "Voyage",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Startup 2"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard 1 Midas token and place 1 Black token in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Unholy Alchemy"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Place X Closing tokens in the Kratos Pool, where X is the number of tokens turned"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_27c853c370942a857e94339a",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2646"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 88,
+        "pointer": "/cards/88"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Twilight",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2646"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2646"
+            ],
+            "name": "Twilight",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "This is the end",
+            "traits": [
+              "Supernatural",
+              "Tragedy",
+              "Curse"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Flip 1 Aether token"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Ignore an Aether or Oxygen"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "cost"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to perform a Power Roll, add 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "WhitePowerDie"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "to your Power Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Oxygen",
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_288a68a43016c6f61e513af5",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0145"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 232,
+        "pointer": "/cards/232"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Familiar Curse",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0145"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0145"
+            ],
+            "name": "A Familiar Curse",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Restless days in sweat and shade, sleepless nights under dim stars",
+            "traits": [
+              "Fate",
+              "Gods",
+              "Curse"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Turn the Primordial in your direction"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When another Titan is about to gain a Condition card or Condition token, gain it instead"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "While resolving an AI card, when the Primordial moves adjacent to you, become the Target of this AI card"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Danger",
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3764d4b88854e7ff270ed4eb",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0142"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 229,
+        "pointer": "/cards/229"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Death Follows",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0142"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0142"
+            ],
+            "name": "Death Follows",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Most people brush with death, but when he brushed with you, Tanatos paused. You have been trying to outrun him ever since",
+            "traits": [
+              "Gods",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to perform a Power Roll, add 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "RedPowerDie"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "to your Power Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to perform a Power Roll, add 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "BlackPowerDie"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "to your Power Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "8+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to perform a Power Roll, add 2"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Power"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for this Roll"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_39669592a1e18dad7d976c16",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0134"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 221,
+        "pointer": "/cards/221"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Siren Survivor",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0134"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0134"
+            ],
+            "name": "Siren Survivor",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Remember Ambrosia and Despair are not condition tokens, and that knockdown disallows you from using active abilities"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "flavor": "Against all odds, you've survived. Why?",
+            "traits": [
+              "Voyage",
+              "Supernatural",
+              "Deed"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard a Condition token or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Discard"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "instead to discard a Condition card"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard a Condition token from another Titan or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Discard"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "instead to discard a Condition card from another Titan"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to gain a Condition card or token, roll a d10"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "On a 6+, ignore this gain"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3b901846e640c3a2e5dbb29d",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0137"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 224,
+        "pointer": "/cards/224"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Family Feud",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0137"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0137"
+            ],
+            "name": "Family Feud",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Some things should never be spoken. Some bridges can never be rebuilt. There is a wound on your heart that may never heal",
+            "traits": [
+              "Family",
+              "Tragedy",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Place 1 Opening or Break token in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If the Kratos Pool is empty, place up to 2 Opening and/or Break tokens in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If the Kratos Pool is empty, place up to 3 Opening and/or Break tokens in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4a394c69f1af39e8f68d657b",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1270"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 414,
+        "pointer": "/cards/414"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Fall From Eden",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1270"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1270"
+            ],
+            "name": "A Fall From Eden",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Your parent failed. Will you?",
+            "traits": [
+              "Dream",
+              "Voyage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to suffer Knockdown, suffer Time-clocked instead"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Second Chance"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Clutch"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4bd39e6d24ca7c830985b84f",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1274"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 418,
+        "pointer": "/cards/418"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Timekeeper's Child",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1274"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1274"
+            ],
+            "name": "Timekeeper's Child",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Time and its passage is all you know. One day you will simply stop",
+            "traits": [
+              "Supernatural",
+              "Tragedy",
+              "Family"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Arrive from Time-clocked"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Another Titan may arrive from Time-clocked"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you arrive from Time-clocked, gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Speed"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "and"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Auto-black 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "until the end of your turn"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_50f8c2be2281fb8c89e082e9",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2061"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 476,
+        "pointer": "/cards/476"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Mule",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2061"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2061"
+            ],
+            "name": "The Mule",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "What grows in a barren wasteland?",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Supernatural"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Move an Irem Tower Terrain tile one space"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Move an Irem Tower Terrain tile up to 3 spaces"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "8+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Place an"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Irem Tower",
+                      "refID": "DI2028"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Terrain tile anywhere on the Battle Board"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_516fc1c5298dc949305c329f",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2647"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 89,
+        "pointer": "/cards/89"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "He Spoke the Truth",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2647"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2647"
+            ],
+            "name": "He Spoke the Truth",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You have been chosen",
+            "traits": [
+              "Deed",
+              "Curse",
+              "Voyage"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Despair",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Dare"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Despair",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Deny"
+                    }
+                  ],
+                  "costs": [
+                    "Aether",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Despair",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You Titan's Power die becomes"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "MortalPowerDie"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for the duration of this Battle"
+                    }
+                  ],
+                  "costs": [
+                    "Oxygen",
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_525e3aa07cc0e12783b465fd",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1271"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 415,
+        "pointer": "/cards/415"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Unearned Life",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1271"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1271"
+            ],
+            "name": "Unearned Life",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "They were destined for great things. You should have died, not them",
+            "traits": [
+              "Family",
+              "Tragedy",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Assist 1"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Clutch"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Succor"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", then, immediately after current Attack ends, draw an Obol"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5277fb612d3e28a1b1ea2c74",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0645"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 351,
+        "pointer": "/cards/351"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Runt Of The Litter",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0645"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0645"
+            ],
+            "name": "Runt Of The Litter",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You were the weakest of the lot. Were they mistaken?",
+            "traits": [
+              "Curse",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Change 1 negative modifier token into a positive one"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain 1 temporary positive"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Evasion"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "token"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain or lose up to 2"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5abfad517287d697c4af4b6d",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0653"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 359,
+        "pointer": "/cards/359"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Scorned Champion",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0653"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0653"
+            ],
+            "name": "Scorned Champion",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "When you reached the top you realized the only way forward was down",
+            "traits": [
+              "Fate",
+              "Voyage",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Jump"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Reaction"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Reflex"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Run"
+                    }
+                  ],
+                  "costs": [
+                    "ComplicatedAction"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Will",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6d6d2721c10181fda7f99298",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0649"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 355,
+        "pointer": "/cards/355"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Coward's Way",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0649"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0649"
+            ],
+            "name": "Coward's Way",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You owe your cowardice your life. But what kind of life is it?",
+            "traits": [
+              "Deed",
+              "Voyage",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Before performing a Power Roll, gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Fate"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "equal to the BP level to immediately fail this Attack instead, ignoring the Fail Responses"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you do, do not place any tokens in the Kratos Pool"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you fail to Wound, place the BP card back on top of the BP deck instead of discarding it"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to become the Target of an Attack, swap places with an adjacent Titan"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "That Titan becomes the Target instead"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6e4c760a5375164ce5f144b3",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2057"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 472,
+        "pointer": "/cards/472"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Updraft",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2057"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2057"
+            ],
+            "name": "Updraft",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Carries only those determined enough",
+            "traits": [
+              "Supernatural",
+              "Tragedy",
+              "Family"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Hermes Move 1"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Reaction"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Hermes Reflex"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Hermes Move 3"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_71e7ad370a6f150e77e85b24",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1273"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 417,
+        "pointer": "/cards/417"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Time-Crossed Lovers",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1273"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1273"
+            ],
+            "name": "Time-Crossed Lovers",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Even time itself will not keep you apart",
+            "traits": [
+              "Voyage",
+              "Family",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Reestablish your Time Anchor"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may use this ability as a free action or at the end of your turn"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If your Time Anchor is adjacent to that of another Titan's, you have +1 Precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to return to a Time Anchor, treat another Titan's Time Anchor as your own"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Will",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_71fc65612f6527c04d3d14d5",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1276"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 420,
+        "pointer": "/cards/420"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hero By Mistake",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1276"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1276"
+            ],
+            "name": "Hero By Mistake",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "This was not your responsibility. You did not ask for this",
+            "traits": [
+              "Fate",
+              "Voyage",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target token"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are the Priority Target, gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Rouse 1"
+                    }
+                  ],
+                  "costs": [
+                    "Fate"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are the Priority Target, gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Hope 1"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7569509f0bd5c700cfb77dc3",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1277"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 421,
+        "pointer": "/cards/421"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Returned",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1277"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1277"
+            ],
+            "name": "The Returned",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You failed once. Now you need to go back and fix it",
+            "traits": [
+              "Curse",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Start of your turn"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Reestablish your Time Anchor (even if the Backwards Momentum Trait is not in play)"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are on a Time Anchor, you have +1 Precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Rewind"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you die, return from death to your Time Anchor"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Fury",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_777db687eaa50fb877ddbc5c",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0652"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 358,
+        "pointer": "/cards/358"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Forbidden Love",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0652"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0652"
+            ],
+            "name": "Forbidden Love",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You longed for the fobidden things, desired what was denied to you",
+            "traits": [
+              "Deed",
+              "Dream",
+              "Curse"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Daze"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Inspire 1"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Rouse 1"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_798b5e309a5cbff145a1dd31",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2055"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 470,
+        "pointer": "/cards/470"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Third Wish",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2055"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2055"
+            ],
+            "name": "The Third Wish",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You saved the best for last",
+            "traits": [
+              "Family",
+              "Tragedy",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "1+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Wish Armor"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Wishrod"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Fate"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard a"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Wishkeen",
+                      "refID": "DL2011"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Wishagog",
+                      "refID": "DL2011"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Condition card and gained the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Enriched",
+                      "refID": "DL2015"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Lander",
+                      "refID": "DL2019"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Condition card"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7c171bf843e43cddbb43598d",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0651"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 357,
+        "pointer": "/cards/357"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Death Precedes",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0651"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0651"
+            ],
+            "name": "Death Precedes",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Death is your Harbinger",
+            "traits": [
+              "Tragedy",
+              "Supernatural",
+              "Curse"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Start of Battle"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "You may move 1 space towards the Primordial"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Start of Battle"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "You may gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "Start of Battle"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Place 3 Opening tokens, 2 Break tokens, or 1 Rouse token in the Kratos Pool"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7c7d4fd7e997555bd35413c9",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0141"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 228,
+        "pointer": "/cards/228"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Night To Remember",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0141"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0141"
+            ],
+            "name": "A Night To Remember",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Warm air and cold wine and fabulous colors on the night sky. A love realized or an age attained. A joyous celebration",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Dream"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Unexhaust a"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "card"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Another Titan may unexhaust a"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "card"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to exhaust a card, ignore this exhaust"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Fate"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_8fbaff7658f46a2e7e46d358",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0139"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 226,
+        "pointer": "/cards/226"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Haunted",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0139"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0139"
+            ],
+            "name": "Haunted",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You past lingers like a waft of cold air. Something happened to you. Something... unspeakable",
+            "traits": [
+              "Fate",
+              "Supernatural",
+              "Curse"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Once per adventure, you may re-roll any d10 roll"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to roll a d10 during an adventure, add +3 to this roll (once per adventure)"
+                    }
+                  ],
+                  "costs": [
+                    "Fate"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to perform an Argonaut Test during an adventure, automatically pass this test instead (once per adventure)"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Fate"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_903c62caa43ed025bd97b27f",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0647"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 353,
+        "pointer": "/cards/353"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Left For Dead",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0647"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0647"
+            ],
+            "name": "Left For Dead",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "They've all written you off, yet your story is still unwritten",
+            "traits": [
+              "Deed",
+              "Tragedy",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you survive an Obol, lose up to -3"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Danger"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "and up to -2"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Fate"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to die from an Instant Death effect, draw an Obol instead"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are the last Titan alive, you cannot suffer Knockdown and your Titan's Power Die becomes"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "BlackPowerDie"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_938a7a9c2e19a3eb4d9969ee",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0138"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 225,
+        "pointer": "/cards/225"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Imprisonment",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0138"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0138"
+            ],
+            "name": "Imprisonment",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Who can tell how long it's been? Dark and damp, and cramped and lonely, the cell gave no quarters. Just a tiny crack in the wall",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Knockback Reduction 2"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Pushback Reduction 1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you suffer Knockback, you may lose -1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Danger"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_976f30e6aa18e890975f42a1",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1275"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 419,
+        "pointer": "/cards/419"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Disgraceful Parent",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1275"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1275"
+            ],
+            "name": "Disgraceful Parent",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "A lifetime of never being good enough",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Supernatural"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Place 1 Fire token in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If the Kratos Pool is empty, place 1 Fire token and 1 Black token in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If the Kratos Pool is empty, place 3 Hope tokens in the Kratos Pool"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Fury",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a3e4b53c91b1a3d60b884085",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0136"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 223,
+        "pointer": "/cards/223"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Dream You Hold",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0136"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0136"
+            ],
+            "name": "A Dream You Hold",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You are not some castaway on life's tumultuous ocean. Come hell or high water, you will fulfill your dream",
+            "traits": [
+              "Dream",
+              "Voyage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Titans adjacent to you have +1 Precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Another Titan may move 1 space"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "8+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you attack, use another Titan's Kratos Table for this Attack"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a45d245131ae36cd00eb3f0b",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2642"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 84,
+        "pointer": "/cards/84"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shelter",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2642"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2642"
+            ],
+            "name": "Shelter",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "How could you let it happen?",
+            "traits": [
+              "Deed",
+              "Tragedy",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Ambrosia",
+                  "value": "1+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When another Titan dies, immediately perform"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "MovementAction"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Ambrosia",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are adjacent to another Titan, you both ignore Burn"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Ambrosia",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If you are adjacent to another Titan, you both gain Tumble and automatically succeed at the Tumble test"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b3a239439d995fe0aeb66649",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2059"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 474,
+        "pointer": "/cards/474"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Too Big to Fail",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2059"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2059"
+            ],
+            "name": "Too Big to Fail",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "They all said it",
+            "traits": [
+              "Dream",
+              "Voyage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Deflate"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may use this ability while floating"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to suffer Airburst during a Primordial Attack, ignore it"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When a Curse Attack is about to affect you, ignore it (other Targets remain affected)"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b6107d7de2d7ab81739d1f4e",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2641"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 83,
+        "pointer": "/cards/83"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "In Your Image",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2641"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2641"
+            ],
+            "name": "In Your Image",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "What else is there?",
+            "traits": [
+              "Deed",
+              "Family",
+              "Dream"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to gain at least 1 Pain token, test (8+) for each of these tokens"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "For each success, lower Pain gain by 1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard up to 2 Pain tokens"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to draw a Trauma card, gain 5 Pain tokens instead"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c12e9d00681b936cf1218018",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2644"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 86,
+        "pointer": "/cards/86"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Last Crusader",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2644"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2644"
+            ],
+            "name": "Last Crusader",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "There are monsters in this world",
+            "traits": [
+              "Deed",
+              "Voyage",
+              "Crime"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During a Light Check, gain Light 1"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you attack, ignore all negative Precision modifiers"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Block 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Defy 1"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c2adac1ebc4514d3b1c14bdb",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2640"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 82,
+        "pointer": "/cards/82"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Vanishing Point",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2640"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2640"
+            ],
+            "name": "Vanishing Point",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "It was meant to be",
+            "traits": [
+              "Curse",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Pull 1"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Pushback 2"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Pull 3"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "For the purposes of this Pull, ignore"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Lumbering"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c473d53b349f46eb7f241e7b",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0135"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 222,
+        "pointer": "/cards/222"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Someone Waiting",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0135"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0135"
+            ],
+            "name": "Someone Waiting",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You can't quite put a finger on it, but there's a soft pull on your soul's strings each time you look to the north",
+            "traits": [
+              "Voyage",
+              "Family",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Stand up"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Another Titan may"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Stand up"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to suffer Knockdown, you may roll a d10"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "On a 6+, ignore this Knockdown"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c7106ea1cf55eacfd06177e8",
+      "family": "Mnemos",
+      "printedIds": [
+        "CG1272"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 416,
+        "pointer": "/cards/416"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Life Of Regret",
+          "family": "Mnemos",
+          "printedIds": [
+            "CG1272"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "CG1272"
+            ],
+            "name": "Life Of Regret",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Every decision you made was the wrong one. Now all you're left with is regret",
+            "traits": [
+              "Deed",
+              "Crime",
+              "Tragedy"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard 1 Bleeding token"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to suffer Bleeding X or gain Bleeding tokens, ignore that effect"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "5+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to Discard a positive Trauma card due to the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Bleeding",
+                      "refID": "CL1283"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Condition card, return it to the top of the deck instead"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cc1e7b810e1b1db5a7422b27",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0646"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 352,
+        "pointer": "/cards/352"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Mésalliance",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0646"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0646"
+            ],
+            "name": "Mésalliance",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Tyrannous customs branded you a bastard",
+            "traits": [
+              "Deed",
+              "Family",
+              "Dream"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you break a Combo, place 1 Opening or Break token in the Kratos Pool"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you break a Combo, you may lose -1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Fate"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you break a Combo, perform a Bonus Attack!"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Will",
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d13ee8ebf67ae6ba80e1e7a8",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0143"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 230,
+        "pointer": "/cards/230"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Minoan Heritage",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0143"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0143"
+            ],
+            "name": "Minoan Heritage",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Everywhere you look, familiarity. Your roots are buried under the Shattered Island. Or the Shattered Island is burying into you",
+            "traits": [
+              "Voyage",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "MovementAction"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Speed"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for this movement"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "MovementAction"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", gain +2"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Speed"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "and"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Bypass"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for this movement"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "MovementAction"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", gain +3"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Speed"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "and"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Bypass"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "for this movement and gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Vault"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "until the end of your turn"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d1fd157b9eb91f70c0f444ca",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2060"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 475,
+        "pointer": "/cards/475"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Thousandth Night",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2060"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2060"
+            ],
+            "name": "The Thousandth Night",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You can stave off inevitability only for so long",
+            "traits": [
+              "Curse",
+              "Heritage",
+              "Fate"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain +X"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Fate"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "to gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Evasion"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", where X is the sum of Evasion bonuses you have (including this one)"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Second Chance"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to die, postpone the death until the end of your next turn"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You cannot prevent that death in any way"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "timing",
+                      "value": "End of Battle"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Gain a random Curse Affliction"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d468fd19f20185831acfbd12",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2054"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 469,
+        "pointer": "/cards/469"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Seed of Paradise",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2054"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2054"
+            ],
+            "name": "Seed of Paradise",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The more you divide it, the more you have",
+            "traits": [
+              "Voyage",
+              "Family",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you attack, treat the Kratos Pool as Sunstarved or Sunbask 2 for the purposes of triggering abilities"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During the Clear the Kratos Pool step, leave half of the unused tokens there"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you attack, move half of the tokens from the Kratos Pool to this card"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During the Second Ability Window, move them to the Kratos Pool"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e565ea43256b0ffa3fb36564",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0146"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 233,
+        "pointer": "/cards/233"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Curse Of The Gods",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0146"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0146"
+            ],
+            "name": "Curse Of The Gods",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Even in death their words have weight - and consequences",
+            "traits": [
+              "Heritage",
+              "Fate",
+              "Voyage"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "During an Attack Roll, re-roll all 1s on non-Crit dice"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Re-roll an Awakening roll"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "WHen another Titan is about to gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Danger"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", you gain it instead"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Discard"
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "If this"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Danger"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "was dealt by an Attack, resolve a Trauma Draw"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_edff33f4cfe4163bd6d331b9",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0648"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 354,
+        "pointer": "/cards/354"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Spewed By The Abyss",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0648"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0648"
+            ],
+            "name": "Spewed By The Abyss",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Even darkness did not want you",
+            "traits": [
+              "Supernatural",
+              "Fate",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to gain at least 1 Ambrosia token, test (8+) for each of these tokens"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "For each success, lower Ambrosia gain by 1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard up to 2 Ambrosia tokens"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "7+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to draw a Trauma card, gain Ambrosia tokens instead: 1 for Minor, 2 for Major, 3 for Grave, and 4 for an Obol"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Will",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ef3724ead342227d092adf63",
+      "family": "Mnemos",
+      "printedIds": [
+        "DG2056"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 471,
+        "pointer": "/cards/471"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Beggar and the Prince",
+          "family": "Mnemos",
+          "printedIds": [
+            "DG2056"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "DG2056"
+            ],
+            "name": "The Beggar and the Prince",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "A windfall or a sudden fall?",
+            "traits": [
+              "Deed",
+              "Crime",
+              "Tragedy"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard 1 Midas token"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "3+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to gain Midas tokens, ignore that gain"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you attack, discard all Midas tokens and gain that much Precision for this Attack"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Wisdom",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f13a26ebd67c553c3e5f8176",
+      "family": "Mnemos",
+      "printedIds": [
+        "EG2645"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 87,
+        "pointer": "/cards/87"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Words and Deeds",
+          "family": "Mnemos",
+          "printedIds": [
+            "EG2645"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "EG2645"
+            ],
+            "name": "Words and Deeds",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Do as I say",
+            "traits": [
+              "Family",
+              "Heritage",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "gate": "Danger",
+                  "value": "2+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Take a"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Fear",
+                      "refID": "AL0299"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Dread",
+                      "refID": "AL0299"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Condition card of an adjacent Titan and gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Rage"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Take a"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Terror",
+                      "refID": "EL2596"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "or"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Holy Terror",
+                      "refID": "EL2596"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Condition card of an adjacent Titan and gain 1 Aether token"
+                    }
+                  ],
+                  "costs": [
+                    "Fate",
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "9+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Discard all Condition cards"
+                    }
+                  ],
+                  "costs": [
+                    "Discard"
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Courage",
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fb38e8e9e1e5bf116766a5a8",
+      "family": "Mnemos",
+      "printedIds": [
+        "BG0650"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 356,
+        "pointer": "/cards/356"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Castoff",
+          "family": "Mnemos",
+          "printedIds": [
+            "BG0650"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "BG0650"
+            ],
+            "name": "Castoff",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Deemed not worthy, cast from the cliffs, you inexplicably survived",
+            "traits": [
+              "Family",
+              "Heritage",
+              "Gods"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to resolve a Trauma Draw, treat your"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Danger"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "as 1 lower"
+                    }
+                  ],
+                  "costs": [
+                    "Exhaust"
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are knocked down, unexhaust this card"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you stand up, gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Speed"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": ", +1 Precision and"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Auto-break 1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "until the end of your turn"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are about to die from a Trauma Draw, Obol Draw, or an Instant Death effect, you may perform a Bonus Attack! (You still die afterwards"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": ")"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Endurance",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fe8764bbdc87829ec1b72bf1",
+      "family": "Mnemos",
+      "printedIds": [
+        "AG0140"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 227,
+        "pointer": "/cards/227"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Broken Promise",
+          "family": "Mnemos",
+          "printedIds": [
+            "AG0140"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "mnemos",
+          "data": {
+            "cardIDs": [
+              "AG0140"
+            ],
+            "name": "A Broken Promise",
+            "renderType": "Mnemos",
+            "cardType": "Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "A word's no shield, it's easily broken. You probably had a reason, oathbreaker. They all do",
+            "traits": [
+              "Deed",
+              "Tragedy",
+              "Family"
+            ],
+            "abilities": [
+              [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are on a Rear space, you gain +1 Precision"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "4+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are on a Rear space, you gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Power Re-roll 1"
+                    }
+                  ]
+                }
+              ],
+              [
+                {
+                  "gate": "Danger",
+                  "value": "6+",
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When you are on a Rear space, you gain"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Auto-break 1"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "stats": [
+              "Cunning",
+              "Fury"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

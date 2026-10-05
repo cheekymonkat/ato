@@ -1,0 +1,4734 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Pattern",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_01b2e8ad0072d410ec6dccca",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2043"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 322,
+        "pointer": "/cards/322"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Pandoran Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2043"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2043"
+            ],
+            "name": "Pandoran Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Remember",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "2"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Scale",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reposition",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Scale",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Reaction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Hermes Reflex"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_053b5c7624aefa044b36c5fd",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1555"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 222,
+        "pointer": "/cards/222"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shade Training",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1555"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1555"
+            ],
+            "name": "Shade Training",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Hyperboreans saw refuge in shadow",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-2"
+              },
+              {
+                "type": "Major",
+                "range": "3-4"
+              },
+              {
+                "type": "Minor",
+                "range": "5"
+              },
+              {
+                "type": "Major",
+                "range": "6-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Shaded"
+                  }
+                ],
+                "costs": [
+                  "Danger",
+                  "Danger",
+                  "Danger"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0ba001306624d149fcf5e45f",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2616"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 430,
+        "pointer": "/cards/430"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fearless",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2616"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2616"
+            ],
+            "name": "Fearless",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Is it bravery, foolishness, or a disorder?",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Fearless"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_141fd696fe62b68a6b657f61",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2615"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 429,
+        "pointer": "/cards/429"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Heat Conditioning",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2615"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2615"
+            ],
+            "name": "Heat Conditioning",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Titans adapt to any conditions",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Microwave Resistance 1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_145cdcc428c3267260e57e27",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2617"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 431,
+        "pointer": "/cards/431"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Tactical Training",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2617"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2617"
+            ],
+            "name": "Tactical Training",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan shows natural leadership qualities",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Training"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reposition",
+                    "x_value": "2"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "PolePosition"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  },
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Diversion"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Strikeback 1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_159ed0a8323f59539119bfbe",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0979"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 168,
+        "pointer": "/cards/168"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Zen Training",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0979"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0979"
+            ],
+            "name": "Zen Training",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has learned self-restraint",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Superior Stanch"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "("
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ")"
+                  }
+                ],
+                "costs": [
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_1e98f06b0de27c5561e4c806",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0285"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 95,
+        "pointer": "/cards/95"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Promethean Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0285"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0285"
+            ],
+            "name": "Promethean Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has somewhat improved its toughness",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "2-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  }
+                ],
+                "costs": [
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_263e1bac94f05dffdc7abff5",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2039"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 318,
+        "pointer": "/cards/318"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Midas Immunization",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2039"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2039"
+            ],
+            "name": "Midas Immunization",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "It is like an infection",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "After surviving a Grave Trauma or an Obol, discard 1 Midas token"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_28dc61e8034a1c1d7fb73419",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0972",
+        "BW0973",
+        "BW0974",
+        "BW0975"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 164,
+        "pointer": "/cards/164"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Spartan Dreamwalker",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0972",
+            "BW0973",
+            "BW0974",
+            "BW0975"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0972",
+              "BW0973",
+              "BW0974",
+              "BW0975"
+            ],
+            "name": "Spartan Dreamwalker",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Titans of Sparta have gone through the gauntlet",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Cycle"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3397404f85f3adf7d362dcee",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0290"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 100,
+        "pointer": "/cards/100"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Aegisbred",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0290"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0290"
+            ],
+            "name": "Aegisbred",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has an affinity for armor",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Armor Re-roll 1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_35de676907dc99ba77f6eb78",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2038"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 317,
+        "pointer": "/cards/317"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wish Immunization",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2038"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2038"
+            ],
+            "name": "Wish Immunization",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "You have seen a wish fulfilled",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-4"
+              },
+              {
+                "type": "Major",
+                "range": "5-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-10"
+              },
+              {
+                "type": "Obol",
+                "range": "11+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Wish Armor"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3a52a14e5e3ad7d1f7baf808",
+      "family": "Pattern",
+      "printedIds": [
+        "BW9990"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 173,
+        "pointer": "/cards/173"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Atropos Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "BW9990"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW9990"
+            ],
+            "name": "Atropos Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Promo",
+            "faq": [],
+            "errata": {},
+            "flavor": "Rebel against the Fates!",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you are about to resolve a Minor or Major Trauma card,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Second Chance"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_433cbfd30005dd37a838c728",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2041"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 320,
+        "pointer": "/cards/320"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Curser",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2041"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2041"
+            ],
+            "name": "Curser",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "It courses through your veins",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reposition",
+                    "x_value": "2"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "PolePosition"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Scale",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Closing",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_56c9fdfb9ee8c4db1a5e8aa7",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0288"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 98,
+        "pointer": "/cards/98"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Harsh Conditioning",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0288"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0288"
+            ],
+            "name": "Harsh Conditioning",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Centimanes held this thing at bay for centuries",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "After surviving a Major, Grave, or Obol Trauma, lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_659d848c14bfd596da7fb617",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0976"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 165,
+        "pointer": "/cards/165"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Monsteneer",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0976"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0976"
+            ],
+            "name": "Monsteneer",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has been trained to scale even the most towering of beasts",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Conditioning"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Add +X to your Climb tests, where X is equal to half of your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "(rounding up)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6d005db1e4a71f6305ab0c21",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1551"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 218,
+        "pointer": "/cards/218"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Chronian Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1551"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1551"
+            ],
+            "name": "Chronian Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan flows with the tides of Chronos",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain",
+              "Paradox"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Pass",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pass",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Pass",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Pass",
+                    "x_value": "2"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "GreaterPass",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pass",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "gate": "Rage",
+                "value": "7+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "+1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_718d8027d2bfe8e6af4808c4",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2618"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 432,
+        "pointer": "/cards/432"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Silver Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2618"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2618"
+            ],
+            "name": "Silver Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Are these really the features of the Silver People?",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Start of Battle"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 additional Oxygen token"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_743f30c73ef2481c416aae22",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0284"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 94,
+        "pointer": "/cards/94"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Iapetan Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0284"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0284"
+            ],
+            "name": "Iapetan Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Do not leave anything to chance",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Reaction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Reflex"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_83a7a60e59363a6bafff4bf2",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0286"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 96,
+        "pointer": "/cards/96"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Mazewalker",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0286"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0286"
+            ],
+            "name": "Mazewalker",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has specialized in close-quarters maze fighting",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Conditioning"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reposition",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If moving through a Labyrinth tile, you gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "for this movement"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_840a6124b5fe41fe1d701c1e",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0977"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 166,
+        "pointer": "/cards/166"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Canalrunner",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0977"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0977"
+            ],
+            "name": "Canalrunner",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has been trained to navigate the Great River Works with ease",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Jump"
+                  }
+                ],
+                "costs": [
+                  "Fate"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_860cf108ec86e10dafc05b08",
+      "family": "Pattern",
+      "printedIds": [
+        "BW9986"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 171,
+        "pointer": "/cards/171"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blasphemous",
+          "family": "Pattern",
+          "printedIds": [
+            "BW9986"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW9986"
+            ],
+            "name": "Blasphemous",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Promo",
+            "faq": [],
+            "errata": {},
+            "flavor": "They were the greatest of them..",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Training"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Provoke"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "2"
+                  }
+                ],
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Provoke"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Heartseeker"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "+1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "against"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "GT"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_8e38f84e70591ec1f4639a1a",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1553"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 220,
+        "pointer": "/cards/220"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hyperborean Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1553"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1553"
+            ],
+            "name": "Hyperborean Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan dreams of soaring in the skies",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-2"
+              },
+              {
+                "type": "Major",
+                "range": "3-4"
+              },
+              {
+                "type": "Minor",
+                "range": "5"
+              },
+              {
+                "type": "Major",
+                "range": "6-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you have exactly 1 Bleeding token, ignore the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Bleeding",
+                    "refID": "CL1283"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_961d380dbd4d240c8b9ebdb1",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0978"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 167,
+        "pointer": "/cards/167"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Umbral Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0978"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0978"
+            ],
+            "name": "Umbral Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has built up an ambrosia tolerance",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Ambrosia Limit 5"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_aee60b569ff039060b68fec6",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0981"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 170,
+        "pointer": "/cards/170"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Dreamwalker III",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0981"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0981"
+            ],
+            "name": "Dreamwalker III",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Spartan Titan has a greater apptitude for the Triskelion Junction",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b58410a977cf1aad7029be8c",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2619"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 433,
+        "pointer": "/cards/433"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Zero Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2619"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2619"
+            ],
+            "name": "Zero Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has reverted to a less developed, primal form",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Overbreak",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Overbreak",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Taint",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Overbreak",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Taint",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Diversion"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  },
+                  {
+                    "name": "Taint",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Overbreak",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Overbreak",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Taint",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bcc00b7eea480f8e4b19a610",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1554"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 221,
+        "pointer": "/cards/221"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hypertime Conditioning",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1554"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1554"
+            ],
+            "name": "Hypertime Conditioning",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has endured the ravages of time",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reestablish your Time Anchor"
+                  }
+                ],
+                "costs": [
+                  "Fate"
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may use this ability as a free action or at the end of your turn"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c0b3fa9141b016bb7dec3f39",
+      "family": "Pattern",
+      "printedIds": [
+        "BW0980"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 169,
+        "pointer": "/cards/169"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Support Specialization",
+          "family": "Pattern",
+          "printedIds": [
+            "BW0980"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW0980"
+            ],
+            "name": "Support Specialization",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has been trained to fill a support role",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Support"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c3f58da590109c4805fab26a",
+      "family": "Pattern",
+      "printedIds": [
+        "BW9988"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 172,
+        "pointer": "/cards/172"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Polemarchos",
+          "family": "Pattern",
+          "printedIds": [
+            "BW9988"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BW9988"
+            ],
+            "name": "Polemarchos",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Promo",
+            "faq": [],
+            "errata": {},
+            "flavor": "Such was his anger that he would not stand the stench of Teleboas",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Training"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "2"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Motivate",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Inspire",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Diversion",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Motivate",
+                    "x_value": "2"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Rouse",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "for each empty"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot you ahve (up to 3)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c40f882931ef165c7c779e51",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2042"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 321,
+        "pointer": "/cards/321"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Pioneer",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2042"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2042"
+            ],
+            "name": "Pioneer",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Enhanced capabilities fracture the Junction",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Cryptex Loathing"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Once per Battle, gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to gain a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "then gain a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Fatigue token"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cda744816b396e868de9d72e",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2614"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 428,
+        "pointer": "/cards/428"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Pain Conditioning",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2614"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2614"
+            ],
+            "name": "Pain Conditioning",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Pain is just an impulse",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-4"
+              },
+              {
+                "type": "Major",
+                "range": "5-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-10"
+              },
+              {
+                "type": "Obol",
+                "range": "11+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Pain Resilience 1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d3c044a876a59d1d6cb1439b",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2037"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 316,
+        "pointer": "/cards/316"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Djinnian Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2037"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2037"
+            ],
+            "name": "Djinnian Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Of many arms and giant hands, natural tree climbers",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional Weapon"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "OneHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot (this slot does not allow you to use"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ThreeHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Weapons)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_da99d254d58507080aee808b",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0289"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 99,
+        "pointer": "/cards/99"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Heavy-Gear Training",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0289"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0289"
+            ],
+            "name": "Heavy-Gear Training",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has been trained to use heavy equipment",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Ignore up to -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "penalty from any 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e66d2b05928603036a42da2e",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1552"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 219,
+        "pointer": "/cards/219"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Scorch Conditioning",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1552"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1552"
+            ],
+            "name": "Scorch Conditioning",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan has survived the harsh love of the Sun",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Conditioning"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Laser Attack hit and Sun Attack hit deals 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "less to you (to a minimum of 1)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e6afcefc5c1a64a0019a14f0",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2609",
+        "EW2610",
+        "EW2611",
+        "EW2612"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 426,
+        "pointer": "/cards/426"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cycladean Dreamwalker",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2609",
+            "EW2610",
+            "EW2611",
+            "EW2612"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2609",
+              "EW2610",
+              "EW2611",
+              "EW2612"
+            ],
+            "name": "Cycladean Dreamwalker",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "In the Cradle of the Gods, the Titans grow defiant",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Cycle"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Reaction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Reflex"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e779a218c5531ba195870396",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1547",
+        "CW1548",
+        "CW1549",
+        "CW1550"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 217,
+        "pointer": "/cards/217"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Delphian Dreamwalker",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1547",
+            "CW1548",
+            "CW1549",
+            "CW1550"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1547",
+              "CW1548",
+              "CW1549",
+              "CW1550"
+            ],
+            "name": "Delphian Dreamwalker",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Titans of Delphi have acclimated to the Time Loop",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Cycle"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Reaction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Reflex"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f0ad879b7c7603d4508658c5",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2040"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 319,
+        "pointer": "/cards/319"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Skyscraper",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2040"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2040"
+            ],
+            "name": "Skyscraper",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "A natural aptitude for climbing",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Training"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-4"
+              },
+              {
+                "type": "Major",
+                "range": "5-7"
+              },
+              {
+                "type": "Grave",
+                "range": "8-10"
+              },
+              {
+                "type": "Obol",
+                "range": "11+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You gain +2 bonus to the Ascent Check"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f5a11b3a199968b32bcbd5a9",
+      "family": "Pattern",
+      "printedIds": [
+        "AW0287"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 97,
+        "pointer": "/cards/97"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Dreamwalker II",
+          "family": "Pattern",
+          "printedIds": [
+            "AW0287"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AW0287"
+            ],
+            "name": "Dreamwalker II",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "More accustomed to the Triskelion Junction, this Titan can reach higher heights",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Training"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f5f514e79d20bcd650ed5ee8",
+      "family": "Pattern",
+      "printedIds": [
+        "DW2033",
+        "DW2034",
+        "DW2035",
+        "DW2036"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 315,
+        "pointer": "/cards/315"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Persian Dreamwalker",
+          "family": "Pattern",
+          "printedIds": [
+            "DW2033",
+            "DW2034",
+            "DW2035",
+            "DW2036"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DW2033",
+              "DW2034",
+              "DW2035",
+              "DW2036"
+            ],
+            "name": "Persian Dreamwalker",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "Here and there, they saw stone obelisks, and they knew giants dwelled there",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Cycle"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Pushback",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ],
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Reaction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Reflex"
+                  }
+                ],
+                "costs": [
+                  "Fate",
+                  "Exhaust"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f772c7b90a1e2b3c2eed667e",
+      "family": "Pattern",
+      "printedIds": [
+        "CW1556"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 223,
+        "pointer": "/cards/223"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sisyphean Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "CW1556"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CW1556"
+            ],
+            "name": "Sisyphean Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "This Titan is ready for the ultimate sacrifice",
+            "patternType": "Kratos",
+            "traits": [
+              "Kratos",
+              "Strain"
+            ],
+            "kratosTable": [
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Burden",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Break",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Red"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Black",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Opening",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  },
+                  {
+                    "name": "Burden",
+                    "x_value": "1"
+                  }
+                ]
+              ],
+              [
+                [
+                  {
+                    "name": "Reroll",
+                    "x_value": "1"
+                  }
+                ]
+              ]
+            ],
+            "traumaTable": [],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Crit Miss"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fd86f7255a7596e1945229a2",
+      "family": "Pattern",
+      "printedIds": [
+        "EW2613"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 427,
+        "pointer": "/cards/427"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Siren Strain",
+          "family": "Pattern",
+          "printedIds": [
+            "EW2613"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EW2613"
+            ],
+            "name": "Siren Strain",
+            "renderType": "Pattern",
+            "cardType": "Pattern",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "It has all happened before",
+            "patternType": "Trauma",
+            "traits": [
+              "Trauma",
+              "Strain"
+            ],
+            "kratosTable": [],
+            "traumaTable": [
+              {
+                "type": "Minor",
+                "range": "1-3"
+              },
+              {
+                "type": "Major",
+                "range": "4-6"
+              },
+              {
+                "type": "Grave",
+                "range": "7-9"
+              },
+              {
+                "type": "Obol",
+                "range": "10+"
+              }
+            ],
+            "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Spiral 1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

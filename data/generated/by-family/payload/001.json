@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Payload",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_05f8cb3173a66be43e1a5eb7",
+      "family": "Payload",
+      "printedIds": [
+        "EA2791"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 490,
+        "pointer": "/cards/490"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Beacon of Light",
+          "family": "Payload",
+          "printedIds": [
+            "EA2791"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EA2791"
+            ],
+            "name": "Beacon of Light",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "kintsukuroi": true,
+            "abilities": [
+              {
+                "name": "Ability",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Choose a Titan that is about to perform a Trauma Draw"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "That Titan gains"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Second Chance"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for that Draw"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "We Bring Our Own Light",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "When a Titan dies, regain 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Energy"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Argo Ability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_95305c7df55400c9d9eb90e5",
+      "family": "Payload",
+      "printedIds": [
+        "EA2792"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 491,
+        "pointer": "/cards/491"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Markerlight",
+          "family": "Payload",
+          "printedIds": [
+            "EA2792"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EA2792"
+            ],
+            "name": "Markerlight",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "kintsukuroi": true,
+            "abilities": [
+              {
+                "name": "Ability",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Choose a Titan performing an Attack"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "That Titan gains"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Heartseeker"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Attack"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "We Bring Our Own Light",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "When a Titan dies, regain 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Energy"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Argo Ability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_9a0d85693ee023f2850e7ae1",
+      "family": "Payload",
+      "printedIds": [
+        "CY1635"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 227,
+        "pointer": "/cards/227"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Chronoice Payload",
+          "family": "Payload",
+          "printedIds": [
+            "CY1635"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CY1635"
+            ],
+            "name": "Chronoice Payload",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "foundIn": "Secret Deck 08",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "83",
+            "kintsukuroi": false,
+            "abilities": [
+              {
+                "name": "Stormbreaker",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "When the Timefront advances, lower the advance by 1 +"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "RedPowerDie"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Clothflesh or Eyecluster resource"
+              },
+              {
+                "name": "Destroyer",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Remove 1 Adaptation token from the Adaptation Board"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Razorclaw or Icarian Feather resource"
+              },
+              {
+                "name": "Incinerator",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Place 1 negative"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "AT"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "token in the Kratos Pool"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Writhing Tentacles or Sunburned Skull resource"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_9a81dedbe2509a5c7b58ef24",
+      "family": "Payload",
+      "printedIds": [
+        "EA2793"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 492,
+        "pointer": "/cards/492"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Flash Aegis",
+          "family": "Payload",
+          "printedIds": [
+            "EA2793"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EA2793"
+            ],
+            "name": "Flash Aegis",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "kintsukuroi": true,
+            "abilities": [
+              {
+                "name": "Ability",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Choose a Titan attacked by a Primordial"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "That Titan gains"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Block 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "or"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Defy 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Attack"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "We Bring Our Own Light",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "When a Titan dies, regain 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Energy"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Argo Ability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_df42eba8086e98478c62f68c",
+      "family": "Payload",
+      "printedIds": [
+        "BY1050"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 183,
+        "pointer": "/cards/183"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Adversary Payload",
+          "family": "Payload",
+          "printedIds": [
+            "BY1050"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BY1050"
+            ],
+            "name": "Adversary Payload",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Secret Deck 05",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "45",
+            "kintsukuroi": false,
+            "abilities": [
+              {
+                "name": "Shieldburster",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire to give the Primordial 1 negative AT token until the end of the Round"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Note: Primes on a 7+"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Retractable Mechanism or Reliefshell Fragment resource"
+              },
+              {
+                "name": "Hermesian Cutting Beam",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire to give the Primordial 1 negative Precision token"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Grotesque Beak or Powdered Matter resource"
+              },
+              {
+                "name": "Black Fireboat",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire to palce 5 Fire tokens in the Kratos Pool"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Living Abyss or Skin of Malice resource"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e0df40fe3655e04021d31595",
+      "family": "Payload",
+      "printedIds": [
+        "EA2794"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 493,
+        "pointer": "/cards/493"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Flareshot",
+          "family": "Payload",
+          "printedIds": [
+            "EA2794"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EA2794"
+            ],
+            "name": "Flareshot",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "kintsukuroi": true,
+            "abilities": [
+              {
+                "name": "Ability",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Ignore Vanish, Fade In, or Black March, or perform a Scan on any Petrified Vent"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "We Bring Our Own Light",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "When a Titan dies, regain 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Energy"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "for this Argo Ability"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_effe4aac9a73346e2cf1ee41",
+      "family": "Payload",
+      "printedIds": [
+        "BY1048"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 181,
+        "pointer": "/cards/181"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Argo Payload",
+          "family": "Payload",
+          "printedIds": [
+            "BY1048"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BY1048"
+            ],
+            "name": "Argo Payload",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Secret Deck 05",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "43",
+            "kintsukuroi": false,
+            "abilities": [
+              {
+                "name": "Trireme Spear",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Place 3 Opening tokens in the Kratos Pool"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Note: Primes on a 5+"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "3 Mortal resources"
+              },
+              {
+                "name": "Red Fireboat",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Place 2 Break tokens in the Kratos Pool"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Note: Primes on a 5+"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "2 Ambrosia resources"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f1e012db59837c7d48708384",
+      "family": "Payload",
+      "printedIds": [
+        "BY1049"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 182,
+        "pointer": "/cards/182"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Labyrinthian Payload",
+          "family": "Payload",
+          "printedIds": [
+            "BY1049"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BY1049"
+            ],
+            "name": "Labyrinthian Payload",
+            "renderType": "Payload",
+            "cardType": "Payload",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Secret Deck 05",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "44",
+            "kintsukuroi": false,
+            "abilities": [
+              {
+                "name": "Maze Fragmentator",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire to give the Primordial 1 negative Precision token"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Infused Mechanism or Fleshy Mantle resource"
+              },
+              {
+                "name": "Pyramid Spear",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire to give the Primordial 1 negative To Hit token"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Fear Essence or Maze Fragment resource"
+              },
+              {
+                "name": "Thunderram",
+                "effects": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Fire when you attack to gain Pushback 4 and ignore the Lumbering Trait"
+                      }
+                    ]
+                  }
+                ],
+                "cost": "1 Muscle Cluster or Calcified Knuckle Bone resource"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

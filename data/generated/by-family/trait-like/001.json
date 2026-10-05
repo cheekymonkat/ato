@@ -1,0 +1,4309 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Trait-like",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_0dd8b1642a13dfb226455614",
+      "family": "Trait-like",
+      "printedIds": [
+        "DZ2580"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 336,
+        "pointer": "/cards/336"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Stones to Sticks",
+          "family": "Trait-like",
+          "printedIds": [
+            "DZ2580"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DZ2580"
+            ],
+            "name": "Stones to Sticks",
+            "renderType": "Trait-like",
+            "cardType": "Global Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "cardRef",
+                    "value": "Irem Tower",
+                    "refID": "DI2028"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Terrain tiles gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Destructible"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you move off an Irem Tower, it is destroyed"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you end your turn on an Irem Tower, it is destroyed, then you suffer Crash"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "I"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0f0b6072abc4842ba3a28098",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2455"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 187,
+        "pointer": "/cards/187"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wish Dissonance",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2455"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2455"
+            ],
+            "name": "Wish Dissonance",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Random Titan dies"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_11b8fb7ec01d2e60fdb1f907",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3173"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 344,
+        "pointer": "/cards/344"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Mind Games",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3173"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3173"
+            ],
+            "name": "Mind Games",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When this Feint is drawn, clear the Kratos Pool and place this card in the Kratos Pool"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, the next time you would place tokens in the Kratos Pool, don't, but discard this card instead"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If this card was drawn as an effect of the AI 0, discard it and draw again"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_1b5a22c6c9cb4b5ea431fcb1",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3081"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 293,
+        "pointer": "/cards/293"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Black Immolation",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3081"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3081"
+            ],
+            "name": "Black Immolation",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan discards 1 Oxygen token, suffers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Burn"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", and gains 1 Ambrosia token"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Meduketos",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_253b19381383b675662c0a22",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3174"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 345,
+        "pointer": "/cards/345"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Feint Injury",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3174"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3174"
+            ],
+            "name": "Feint Injury",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When this Feint is drawn,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Heal 1"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then remove this card form the Feint deck"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this card was drawn as an effect of the AI 0, discard it and draw again"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_27dfdfd443e2d41f983ee0c2",
+      "family": "Trait-like",
+      "printedIds": [
+        "CR1365"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 88,
+        "pointer": "/cards/88"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Omega Terminus",
+          "family": "Trait-like",
+          "printedIds": [
+            "CR1365"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CR1365"
+            ],
+            "name": "Omega Terminus",
+            "renderType": "Trait-like",
+            "cardType": "Status",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "While on this card, during your turn, you can only unexhaust and/or attack"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If you deal a Wound, place your Titan on a space adjacent to the Timefront in a straight line from the Oracle"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you fail to Wound, ignore responses"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "At the end of your turn, if you're still in the Omega Terminus, you are erased from existence"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Zeus Godform gains +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "here"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hypertime Oracle",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3752b7a17335988f1fcc6c68",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3175"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 346,
+        "pointer": "/cards/346"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Junction Seizure",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3175"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3175"
+            ],
+            "name": "Junction Seizure",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When this Feint is drawn, if all Titans have 10+ Pain tokens combined, discard those tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Every Titan gains as much"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "as they discard Pain tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If the Titans don't have 10+ Pain tokens, every Titan gains 2 Pain tokens instead"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3a4a54cc147c9c5aecdbc5d6",
+      "family": "Trait-like",
+      "printedIds": [
+        "BR0800"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 43,
+        "pointer": "/cards/43"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Terrorize",
+          "family": "Trait-like",
+          "printedIds": [
+            "BR0800"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BR0800"
+            ],
+            "name": "Terrorize",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "All Titans on Vantage Points suffer Displacement onto a Rear space and Knockdown"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1 Humanity"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Chimera Metastasios",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_429919ab3e8c3994364f0c15",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3141"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 315,
+        "pointer": "/cards/315"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Aether Suck",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3141"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3141"
+            ],
+            "name": "Aether Suck",
+            "renderType": "Trait-like",
+            "cardType": "Flare",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "foundIn": "Envelope Beta",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When resolving Hermesian Pursuer’s Flare cards, if it says “Perform Signature”, resolve it after the current action"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, if it says “Perform Heal”, resolve it after the Wound step"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "In all other cases, resolve it immediately"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Remove all Aether tokens from each Titan"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "For every 4 tokens removed this way, perform Signature"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, Blackbeak moves to the center of the Board, turns to face the most Titans, and performs AI"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Blackbeak",
+            "level": "F"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_49354b6ac4a4da46f34ff1d8",
+      "family": "Trait-like",
+      "printedIds": [
+        "DZ9961"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 340,
+        "pointer": "/cards/340"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Kiss of Ploûtos",
+          "family": "Trait-like",
+          "printedIds": [
+            "DZ9961"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DZ9961"
+            ],
+            "name": "Kiss of Ploûtos",
+            "renderType": "Trait-like",
+            "cardType": "Global Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "foundIn": "Promo",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "End of Titan turn"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If you attacked and failed to deal at least one Wound,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Midas 1"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you didn't attack at all, Midas 3"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Last Endjinn",
+            "level": "IV"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4b76a774a5c21c366ed05232",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0483"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 463,
+        "pointer": "/cards/463"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Call",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0483"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0483"
+            ],
+            "name": "The Call",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Labyrinthauros pauses to sing the song of surrender. Many listen",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Argo loses -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Labyrinthauros",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_51f91c83eec1ca7f8b134493",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2456"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 188,
+        "pointer": "/cards/188"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Last Wish",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2456"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2456"
+            ],
+            "name": "The Last Wish",
+            "renderType": "Trait-like",
+            "cardType": "True Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "bold",
+                    "value": "Start of Battle (Level 4+):"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Place this card at the bottom of the AI deck and never shuffle or discard it"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "All Titans die"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_52ba33bea3045c714b043cab",
+      "family": "Trait-like",
+      "printedIds": [
+        "DZ2581"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 337,
+        "pointer": "/cards/337"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sand to Sea",
+          "family": "Trait-like",
+          "printedIds": [
+            "DZ2581"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DZ2581"
+            ],
+            "name": "Sand to Sea",
+            "renderType": "Trait-like",
+            "cardType": "Global Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Normal (not Terrain) Battle Board spaces are considered Terrain tiles with the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Chasm"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "I"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5a7a3a4fec9ddd8cdeddadb6",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0603"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 6,
+        "pointer": "/cards/6"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia: Burnout",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0603"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0603"
+            ],
+            "name": "Ambrosia: Burnout",
+            "renderType": "Trait-like",
+            "cardType": "Flare",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When resolving Hermesian Pursuer’s Flare cards, if it says “Perform Signature”, resolve it after the current action"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, if it says “Perform Heal”, resolve it after the Wound step"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "In all other cases, resolve it immediately"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains as many"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "as they have Ambrosia tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, the Pursuer moves to the center of the Board, turns to face the most Titans, and performs Signature"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hermesian Pursuer",
+            "level": "F"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5fadc47c81c995b58bb58b9a",
+      "family": "Trait-like",
+      "printedIds": [
+        "DZ2582"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 338,
+        "pointer": "/cards/338"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sand to Silica",
+          "family": "Trait-like",
+          "printedIds": [
+            "DZ2582"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DZ2582"
+            ],
+            "name": "Sand to Silica",
+            "renderType": "Trait-like",
+            "cardType": "Global Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you attack, you gain -X Precision, where X is the number of Fire tokens in the Kratos Pool"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "I"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_683929af5f0c0ecaf4ed6557",
+      "family": "Trait-like",
+      "printedIds": [
+        "BR0744"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 22,
+        "pointer": "/cards/22"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Infuriating Roar",
+          "family": "Trait-like",
+          "printedIds": [
+            "BR0744"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BR0744"
+            ],
+            "name": "Infuriating Roar",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Refugees"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Cyclonus moves to center of the Board"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Cyclonus",
+            "level": "X"
+          }
+        },
+        {
+          "id": "back",
+          "name": "Infuriating Roar",
+          "family": "Trait-like",
+          "printedIds": [
+            "BR0744"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BR0744"
+            ],
+            "name": "Infuriating Roar",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Cyclonus moves to center of the Board"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Cyclonus",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6c8315688414aee2bcc757ad",
+      "family": "Trait-like",
+      "printedIds": [
+        "ES3195"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 420,
+        "pointer": "/cards/420"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Overstep",
+          "family": "Trait-like",
+          "printedIds": [
+            "ES3195"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3195"
+            ],
+            "name": "Overstep",
+            "renderType": "Trait-like",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you rolled a Crit Chance, immmediately end this Attack and discard this card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, Chain Break"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, Titan X immediately performs AI against you"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, remove this card from the deck"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "II"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7266f5c5f4fc6e462cdafb4a",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2415"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 166,
+        "pointer": "/cards/166"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Impaled",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2415"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2415"
+            ],
+            "name": "Impaled",
+            "renderType": "Trait-like",
+            "cardType": "Status",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you become Impaled, place your miniature on this card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "During your turn you can either try to Get Free or attack"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You can only use Melee Weapons"
+                  }
+                ]
+              },
+              {
+                "gate": "Wound",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you deal a Wound, in addition to normal responses, create a VP (you stay Impaled)!"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Get Free!:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Test"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Endurance"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Endurance or"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fury"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Fury (9+)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you succeed, Displace"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "End of your turn:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If you start your turn Impaled,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Midas 2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", then gain X+5"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", where X is the number of Midas tokens you have, then resolve a Trauma Draw"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Midascore",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_73cfba1de72eb281fcb741e0",
+      "family": "Trait-like",
+      "printedIds": [
+        "AS0503"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 46,
+        "pointer": "/cards/46"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Gaze Of Temenos",
+          "family": "Trait-like",
+          "printedIds": [
+            "AS0503"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0503"
+            ],
+            "name": "Gaze Of Temenos",
+            "renderType": "Trait-like",
+            "cardType": "Trap",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Test Endurance (8+)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Fail: Gain +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Dread",
+                    "refID": "AL0299"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then remove this card from the deck and draw another BP card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The will beyond wills looks into your heart and finds only fear"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Labyrinthauros",
+            "level": "III"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_73d4d754bf385ca4027dfb73",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3168"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 339,
+        "pointer": "/cards/339"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Overstep (II)",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3168"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3168"
+            ],
+            "name": "Overstep (II)",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Shuffle the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Overstep BP II",
+                    "refID": "ES3195"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "into the BP deck"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, remove this card from the Feint deck"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_79675bbaa900af9f1a2d33b1",
+      "family": "Trait-like",
+      "printedIds": [
+        "ES3194"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 419,
+        "pointer": "/cards/419"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Overstep",
+          "family": "Trait-like",
+          "printedIds": [
+            "ES3194"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3194"
+            ],
+            "name": "Overstep",
+            "renderType": "Trait-like",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you rolled a Crit Chance, immmediately end this Attack and discard this card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, Chain Break"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, Titan X immediately performs AI against you"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, remove this card from the deck"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "I"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7d2dcf906db6186215b53dac",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3042"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 273,
+        "pointer": "/cards/273"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Churning Black",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3042"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3042"
+            ],
+            "name": "Churning Black",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan discard 1 Oxygen token and a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card with the highest Light X keyword"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then the Dragon of Phobos disappears (remove it from the Battle Board)"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Dragon of Phobos",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_8f9b7f88064c75a467feddd4",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3167"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 338,
+        "pointer": "/cards/338"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Overstep (I)",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3167"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3167"
+            ],
+            "name": "Overstep (I)",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Shuffle the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Overstep BP I",
+                    "refID": "ES3194"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "into the BP deck"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, remove this card from the Feint deck"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_99b437054010323533678185",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3166"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 337,
+        "pointer": "/cards/337"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Unreadable",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3166"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3166"
+            ],
+            "name": "Unreadable",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as this Feint is in play, draw AI and BP cards form the bottom of the appropriate deck (and not the top)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you wound a BP III, after performing Escalation, shuffle the BP deck"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_9be23b1d587f2dbb54e929c3",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3169"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 340,
+        "pointer": "/cards/340"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Riposte",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3169"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3169"
+            ],
+            "name": "Riposte",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as this Feint is in play, all your Attacks gain: \""
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Full Miss:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Titan X performs Signature against the Attacker\""
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a03ed92a19eeff72779b9a4d",
+      "family": "Trait-like",
+      "printedIds": [
+        "CR1343"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 66,
+        "pointer": "/cards/66"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "In Media Res",
+          "family": "Trait-like",
+          "printedIds": [
+            "CR1343"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CR1343"
+            ],
+            "name": "In Media Res",
+            "renderType": "Trait-like",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "This card cannot be chain broken"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Starting from the lowest"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and continuing in ascending order, Titans must draw and resolve a Minor, Major, and Grave Trauma (one card per Titan)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then remove this card from the Battle and draw another AI card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "This card never escalates"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hypertime Oracle",
+            "level": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a0a98888f15903c5d4e2daa3",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3121"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 314,
+        "pointer": "/cards/314"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Argo Burns",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3121"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3121"
+            ],
+            "name": "Argo Burns",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Move Ur-Fleece 6 spaces on the Abyss Track"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Ur-Fleece",
+            "level": "X"
+          }
+        },
+        {
+          "id": "back",
+          "name": "Coming of Darkness",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3121"
+          ],
+          "cycle": "Mnestis Theatre",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3121"
+            ],
+            "name": "Coming of Darkness",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Mnestis Theatre",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "All Titans gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Terror",
+                    "refID": "EL2596"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Black March"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Black March"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Ur-Fleece",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a1b26fba4fea50bb4bedb199",
+      "family": "Trait-like",
+      "printedIds": [
+        "CR1714"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 108,
+        "pointer": "/cards/108"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Icarian Shriek",
+          "family": "Trait-like",
+          "printedIds": [
+            "CR1714"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CR1714"
+            ],
+            "name": "Icarian Shriek",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan suffers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Bleeding 3"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Icarian Harpy",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a77cb23741ffe5686e746ed1",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0413"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 442,
+        "pointer": "/cards/442"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Idle Hands",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0413"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0413"
+            ],
+            "name": "Idle Hands",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Devil's playthings",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Argo loses -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hekaton",
+            "level": "X"
+          }
+        },
+        {
+          "id": "back",
+          "name": "Cow Toss",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0413"
+          ],
+          "cycle": "Mnestis Theatre",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0413"
+            ],
+            "name": "Cow Toss",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Mnestis Theatre",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Furthest Titan suffers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Knockdown"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", raise"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to 9, and draws an Obol"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Hekaton moves adjacent to Closest Titan with Unlimited"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hekaton",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ac84a0a22f995c9e4ca225e0",
+      "family": "Trait-like",
+      "printedIds": [
+        "BS0822"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 123,
+        "pointer": "/cards/123"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Absorbed",
+          "family": "Trait-like",
+          "printedIds": [
+            "BS0822"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0822"
+            ],
+            "name": "Absorbed",
+            "renderType": "Trait-like",
+            "cardType": "Status",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you are Absorbed, place your Titan here"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as you are Absorbed, you cannot move (voluntarily or involuntarily) and you attack as if you were on a VP"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Indigestion"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ": If there are any Absorbed Titans, when the Chimera suffers a Secondary Stack Wound, place 1 generic token under each Titan miniature here"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then, if there are 2 or more generic tokens under a miniature, that Titan is regurgitated! Place their miniature on an empty space adjacent to the Chimera"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "timing",
+                    "value": "End of Titan Round"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Each Absorbed Titan gains 1 Ambrosia token and draws an Obol"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard all generic tokens under the Absorbed Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Zeus",
+                    "refID": "AQ0386"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Godform has +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "when Absorbed"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If you are ever Absorbed while being Absorbed, you die"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "timing",
+                    "value": "End of Battle"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Each still Absorbed Titan resolves the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Bellynaut"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Chimera Metastasios",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b73c696da2c2654165eeabaa",
+      "family": "Trait-like",
+      "printedIds": [
+        "CR1364"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 87,
+        "pointer": "/cards/87"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Skip Timeline",
+          "family": "Trait-like",
+          "printedIds": [
+            "CR1364"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CR1364"
+            ],
+            "name": "Skip Timeline",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Oracle moves 4 spaces towards the Timefront (stop if adjacent)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Escalate 1"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hypertime Oracle",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b89f8123e0c1740084b9f3bd",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0605"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 8,
+        "pointer": "/cards/8"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia: Drain",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0605"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0605"
+            ],
+            "name": "Ambrosia: Drain",
+            "renderType": "Trait-like",
+            "cardType": "Flare",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When resolving Hermesian Pursuer’s Flare cards, if it says “Perform Signature”, resolve it after the current action"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, if it says “Perform Heal”, resolve it after the Wound step"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "In all other cases, resolve it immediately"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If there are 3+ Ambrosia tokens in total on all Titans, the Pursuer performs Heal"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, Pursuer moves to the center of the Board, turns to face the most Titans, and performs Signature"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hermesian Pursuer",
+            "level": "F"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bde7fe4907576d9aa78682dc",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0602"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 5,
+        "pointer": "/cards/5"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia: Harrow",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0602"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0602"
+            ],
+            "name": "Ambrosia: Harrow",
+            "renderType": "Trait-like",
+            "cardType": "Flare",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When resolving Hermesian Pursuer’s Flare cards, if it says “Perform Signature”, resolve it after the current action"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, if it says “Perform Heal”, resolve it after the Wound step"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "In all other cases, resolve it immediately"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains as many"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "as they have Ambrosia tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, the Pursuer moves to the center of the Board, turns to face the most Titans, and performs Signature"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hermesian Pursuer",
+            "level": "F"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c04f4a292aa2ed7da4087895",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2453"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 185,
+        "pointer": "/cards/185"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Last Wish",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2453"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2453"
+            ],
+            "name": "The Last Wish",
+            "renderType": "Trait-like",
+            "cardType": "True Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "All Titans die"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "IV"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c11675f62d7c7bc3354915cd",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3165"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 336,
+        "pointer": "/cards/336"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Eyes on the Gleaming Prize",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3165"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3165"
+            ],
+            "name": "Eyes on the Gleaming Prize",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Titan X moves to the closest Board Edge; move all Titans 8 spaces in the opposite direction"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Titan X turns to face the most Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c4bb84ea6b7251c27810e630",
+      "family": "Trait-like",
+      "printedIds": [
+        "BR1130"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 86,
+        "pointer": "/cards/86"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Imposter's Gaze",
+          "family": "Trait-like",
+          "printedIds": [
+            "BR1130"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BR1130"
+            ],
+            "name": "Imposter's Gaze",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Steal 1 Mnemos node from each Titan"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Progress"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token from the current Story card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If there are no"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Progress"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "tokens on the current Story card, gain +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "instead"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Burden moves to the center of the Board"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "The Burden",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dbfc32b85665984e29da908a",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2414"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 165,
+        "pointer": "/cards/165"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Auric Storm",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2414"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2414"
+            ],
+            "name": "Auric Storm",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains 2 Midas tokens and 2 Ambrosia tokens"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Midascore",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_deea484a5a63af6c7e2d0c04",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0601"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 4,
+        "pointer": "/cards/4"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Eyes On The Prize",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0601"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0601"
+            ],
+            "name": "Eyes On The Prize",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Pursuer remembers why it came here",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Pursuer moves to the center of the Board and turns to face the most Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hermesian Pursuer",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e53ba2f0761671643b5b85fe",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3172"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 343,
+        "pointer": "/cards/343"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blinding Lights",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3172"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3172"
+            ],
+            "name": "Blinding Lights",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When this Feint is drawn, Titan goes for the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Argo"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately discard 1 random Argo Ability from the Battle"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eb84a933945c866a634b7a9c",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0541"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 483,
+        "pointer": "/cards/483"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Contract",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0541"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0541"
+            ],
+            "name": "Contract",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Temenos's body contracts, becoming an impenetrable shell",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Temenos gains 1 postiive"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AT"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard this token after the next Temenos attack"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Alpha Temenos",
+            "level": "X"
+          }
+        },
+        {
+          "id": "back",
+          "name": "Contract Will",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0541"
+          ],
+          "cycle": "Mnestis Theatre",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0541"
+            ],
+            "name": "Contract Will",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Mnestis Theatre",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Temenos's body contracts, becoming an impenetrable shell",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains 1 Despair token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Temenos gains 1 postiive"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AT"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard this token after the next Temenos attack"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Alpha Temenos",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f1841de40c32f9f58c63d45f",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3170"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 341,
+        "pointer": "/cards/341"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Met Your Match",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3170"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3170"
+            ],
+            "name": "Met Your Match",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as this Feint is in play, all your Attacks gain: \""
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Full Miss:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Pain X"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", where X is the top BP card's level\""
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f591b83739b278564ea773b3",
+      "family": "Trait-like",
+      "printedIds": [
+        "ER3171"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 342,
+        "pointer": "/cards/342"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "No Rules",
+          "family": "Trait-like",
+          "printedIds": [
+            "ER3171"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3171"
+            ],
+            "name": "No Rules",
+            "renderType": "Trait-like",
+            "cardType": "Feint",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as this Feint is in play, and you're in front of Titan X, ignore Opening and Closing tokens"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Titan X",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f69724e23a6f6dc06b2c4159",
+      "family": "Trait-like",
+      "printedIds": [
+        "DR2495"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 208,
+        "pointer": "/cards/208"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Total Lunacy",
+          "family": "Trait-like",
+          "printedIds": [
+            "DR2495"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2495"
+            ],
+            "name": "Total Lunacy",
+            "renderType": "Trait-like",
+            "cardType": "Routine",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "bold",
+                    "value": "Staircase:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Disappears!"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Random Titan dies"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Babelian Lunacy",
+            "level": "X"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f952788a8b54fc179e83a1d8",
+      "family": "Trait-like",
+      "printedIds": [
+        "DZ2583"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 339,
+        "pointer": "/cards/339"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Pillars to Pyres",
+          "family": "Trait-like",
+          "printedIds": [
+            "DZ2583"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DZ2583"
+            ],
+            "name": "Pillars to Pyres",
+            "renderType": "Trait-like",
+            "cardType": "Global Wish",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When this card is placed on the Active Global Wish space, all"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Irem Tower",
+                    "refID": "DI2028"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Terrain tiles becomes 'pyres'"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "All Titans on pyres die"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you end your voluntary movement or end your turn on a pyre, you die"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you end your involuntary movement on a pyre"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "WoO"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "you die"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Demidjinn",
+            "level": "II"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fda0e6f292c44c2162d17fcd",
+      "family": "Trait-like",
+      "printedIds": [
+        "AR0604"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 7,
+        "pointer": "/cards/7"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia: Stain",
+          "family": "Trait-like",
+          "printedIds": [
+            "AR0604"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0604"
+            ],
+            "name": "Ambrosia: Stain",
+            "renderType": "Trait-like",
+            "cardType": "Flare",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When resolving Hermesian Pursuer’s Flare cards, if it says “Perform Signature”, resolve it after the current action"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Otherwise, if it says “Perform Heal”, resolve it after the Wound step"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "In all other cases, resolve it immediately"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan assigns all of their Ambrosia tokens to their Titan Sheet, Kratos Table, or to any of their"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "or Mnemos cards (up to 1 token on each element)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Treat these elements' ability text as blank"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "These Ambrosia tokens still count towards the Ambrosia Limit"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, the Pursuer moves to the center of the Board, turns to face the most Titans, and performs Signature"
+                  }
+                ]
+              }
+            ],
+            "usedFor": "Hermesian Pursuer",
+            "level": "F"
+          }
+        }
+      ]
+    }
+  ]
+}

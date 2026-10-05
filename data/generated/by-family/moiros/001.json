@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Moiros",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_24f3db7014be92f44f115731",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0379"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 407,
+        "pointer": "/cards/407"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Another's Thread",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0379"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0379"
+            ],
+            "name": "Another's Thread",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Another random Titan gains +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", and suffers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Knockdown"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_33557bf5d3906508f3bf44ed",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0384"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 412,
+        "pointer": "/cards/412"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fated To Die",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0384"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0384"
+            ],
+            "name": "Fated To Die",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Spawn the Adversary"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If it is already on the Voyage Map, instead resolve 2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5bec95bac2c44b53b4cbb5be",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0378"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 406,
+        "pointer": "/cards/406"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fate Worse Than Death",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0378"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0378"
+            ],
+            "name": "Fate Worse Than Death",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain this card and the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "PriorityTarget"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Priority Target token (even if someone has the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Marked for Death",
+                    "refID": "AM0323"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Trauma card)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "While you have this card, you cannot lose this token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "End of Battle"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If your Titan is dead, resolve the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Fate Worse Than Death"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5e348a5cf37a69973ae02709",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0381"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 409,
+        "pointer": "/cards/409"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fated Memory",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0381"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0381"
+            ],
+            "name": "Fated Memory",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately gain a Fated Mnemos card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you already have 2 Fated Mnemos cards, lose all nodes from a random Fated Mnemos instead"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_722bf97b8169b76762b57826",
+      "family": "Moiros",
+      "printedIds": [
+        "CO1318"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 58,
+        "pointer": "/cards/58"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Preordained Awakening",
+          "family": "Moiros",
+          "printedIds": [
+            "CO1318"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CO1318"
+            ],
+            "name": "Preordained Awakening",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "foundIn": "Secret Deck 07",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "143",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to Awaken"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you do,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_761e1f5db842652865f1d4a9",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0383"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 411,
+        "pointer": "/cards/411"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hadeosis",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0383"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0383"
+            ],
+            "name": "Hadeosis",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reduce your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to 0"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "After Battle, resolve the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Fateful Visitant"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_76332dfbe372038c5a52dad6",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0382"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 410,
+        "pointer": "/cards/410"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Argo's Days Are Numbered",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0382"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0382"
+            ],
+            "name": "Argo's Days Are Numbered",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately lose 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b3464c1c54f1b6064e51a2dd",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0380"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 408,
+        "pointer": "/cards/408"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Argo Will Suffer",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0380"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0380"
+            ],
+            "name": "Argo Will Suffer",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d0b203637067d08d83674556",
+      "family": "Moiros",
+      "printedIds": [
+        "EO2591"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 247,
+        "pointer": "/cards/247"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Defiant Awakening",
+          "family": "Moiros",
+          "printedIds": [
+            "EO2591"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EO2591"
+            ],
+            "name": "Defiant Awakening",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "foundIn": "Secret Deck 15",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "253",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to Awaken"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you do,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reduce your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to 0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d6fa57dc873d3e2fe188960a",
+      "family": "Moiros",
+      "printedIds": [
+        "AO0385"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 413,
+        "pointer": "/cards/413"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fatebringer",
+          "family": "Moiros",
+          "printedIds": [
+            "AO0385"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AO0385"
+            ],
+            "name": "Fatebringer",
+            "renderType": "Moiros",
+            "cardType": "Moiros",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

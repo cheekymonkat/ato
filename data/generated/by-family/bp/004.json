@@ -1,0 +1,5741 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "BP",
+  "part": 4,
+  "cards": [
+    {
+      "id": "def_de9c1d6175956a40b63df936",
+      "family": "BP",
+      "printedIds": [
+        "ES3092"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 375,
+        "pointer": "/cards/375"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Voracious Head",
+          "family": "BP",
+          "printedIds": [
+            "ES3092"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3092"
+            ],
+            "name": "Voracious Head",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Meduketos",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "10"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Microwave Cell"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain X Despair tokens, where X is the Primordial level"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Knockdown"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Ambrosia tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Retreat 10"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "As the Primordial snaps at you, you meet it half-way with a blunt strike that shatters its teeth and sends the splinters deep into its throat. Choke on it!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the Burn keyword"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dfc5a58e8377b12e23eb0bd8",
+      "family": "BP",
+      "printedIds": [
+        "ES3177"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 402,
+        "pointer": "/cards/402"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hephaestean Shin Armor",
+          "family": "BP",
+          "printedIds": [
+            "ES3177"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3177"
+            ],
+            "name": "Hephaestean Shin Armor",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Titan X",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "6"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Orichalcum Alloy"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Feint"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your strike does not break the shin armor, but it must've cracked the tibia bone, because Titan X becomes visibly slower",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reduce the amount of spaces Titan X moves past its Target during Flash Step by 2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e036ae0b2c2cca7a603b0bad",
+      "family": "BP",
+      "printedIds": [
+        "BS0763"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 104,
+        "pointer": "/cards/104"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Iron Endoskeleton",
+          "family": "BP",
+          "printedIds": [
+            "BS0763"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0763"
+            ],
+            "name": "Iron Endoskeleton",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Cyclonus",
+            "level": "III",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Violent Ambrosia"
+              },
+              {
+                "count": "1",
+                "name": "Black Chain"
+              }
+            ],
+            "nonResponseText": "Hardened This BP has +2 AT. Ignore this ability if you rolled a Crit Chance",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Exhaust your active Weapon"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your weapon shatters the iron spine!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may perform a Bonus Attack with +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e058137b281e2cd5d2223f68",
+      "family": "BP",
+      "printedIds": [
+        "CS1376"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 142,
+        "pointer": "/cards/142"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Inner Eye Colony",
+          "family": "BP",
+          "printedIds": [
+            "CS1376"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1376"
+            ],
+            "name": "Inner Eye Colony",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hypertime Oracle",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Eye Cluster"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Time-clocked"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Glaciate the previous Attacker space"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move the Timefront 1 space backward"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your weapon digs deep into the Oracle's flesh. So deep you damage the innerwards layer",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Quantum Eye"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Trait!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e0d352fb0f10daa0c7100ca5",
+      "family": "BP",
+      "printedIds": [
+        "BS0809"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 111,
+        "pointer": "/cards/111"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cult Statue",
+          "family": "BP",
+          "printedIds": [
+            "BS0809"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0809"
+            ],
+            "name": "Cult Statue",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Chimera Metastasios",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Supersolid Relief Mass"
+              }
+            ],
+            "nonResponseText": "Supersolid",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "A sole Spartan Warrior dive attacks you from the top of the statue"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 negative Precision tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Bellerophonic Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "The giant statue of the dead god snaps in half, wounding the abomination on the way down. Peculiarly, the broken statue seems to have a handle..",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Remembrance",
+                    "refID": "BJ0942"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 5, card 49),"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AdversaryActivation"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e17067810a6701259c3894ae",
+      "family": "BP",
+      "printedIds": [
+        "ES3059"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 363,
+        "pointer": "/cards/363"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Doom-Shaped Heart",
+          "family": "BP",
+          "printedIds": [
+            "ES3059"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3059"
+            ],
+            "name": "Doom-Shaped Heart",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dragon of Phobos",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "12"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Die"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "During the second ability window, turn all your Despair tokens into Hope tokens or place 2 Hope tokens in the Kratos Pool"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "What is the shape of doom? It is the sleepless nights, the trembled whispers, the small deaths",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Dragon of Phobos dies! Gain +1 permanent Courage (once per Argonaut Lifetime)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e2349a777d658de71fc07b60",
+      "family": "BP",
+      "printedIds": [
+        "CS1764"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 177,
+        "pointer": "/cards/177"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Lens-Eyes",
+          "family": "BP",
+          "printedIds": [
+            "CS1764"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1764"
+            ],
+            "name": "Lens-Eyes",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Sun Descendent",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Frozen Ambrosia"
+              },
+              {
+                "count": "1",
+                "name": "Writhing Tentacle"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 7"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You break the hidden eye cluster responsible for the focused light attacks!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, Laser Attacks deal -2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "(to a minimum of 1)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may reset your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may perform a Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e3c5b6f5ac3a610145e0c141",
+      "family": "BP",
+      "printedIds": [
+        "CS1759"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 172,
+        "pointer": "/cards/172"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Skulljaw",
+          "family": "BP",
+          "printedIds": [
+            "CS1759"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1759"
+            ],
+            "name": "Skulljaw",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Sun Descendent",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Writhing Tentacle"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +1"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Fate"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "and the Muffled Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Create a VP"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You unhinge the giant jaw, turning it into a prop for your imminent ascent to the top!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Create a VP"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, when attacked from VP1, Sun Descendant has -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AT"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e603c195b420d827f8f5f038",
+      "family": "BP",
+      "printedIds": [
+        "DS2473"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 262,
+        "pointer": "/cards/262"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wishbone of the Unspent",
+          "family": "BP",
+          "printedIds": [
+            "DS2473"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2473"
+            ],
+            "name": "Wishbone of the Unspent",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Demidjinn",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "8",
+              "value2": "9",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Remove the closest Irem Tower Terrain tile"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move to the Endless Staircase"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Wishagog",
+                            "refID": "DL2011"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Is it a bone? Is it an organ? To you it matters not. As it sags and dissolves, a wish is granted",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Demidjinn dies! After the Battle, resolve the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Wish Granted"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e745dfd46354bfcccf4131eb",
+      "family": "BP",
+      "printedIds": [
+        "ES3125"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 385,
+        "pointer": "/cards/385"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fossilized Body",
+          "family": "BP",
+          "printedIds": [
+            "ES3125"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3125"
+            ],
+            "name": "Fossilized Body",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Ur-Fleece",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "9"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Ambrosia tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Fear",
+                            "refID": "AL0299"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Flicker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Its body looks long-dead, yet it still writhes, like a maggot. Or dreams of youth",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Perform a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e782273feb36278b917f3952",
+      "family": "BP",
+      "printedIds": [
+        "CS1727"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 161,
+        "pointer": "/cards/161"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hollow Eye",
+          "family": "BP",
+          "printedIds": [
+            "CS1727"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1727"
+            ],
+            "name": "Hollow Eye",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Icarian Harpy",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "6"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Razorclaw"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Sealed Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "PriorityTarget"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Priority Target token"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "These fake eyes do serve a purpose - they connect to something divine... you just blinded them!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Muffled",
+                    "refID": "CL1291"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Sealed",
+                    "refID": "CL1291"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Conditions"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard all Muffled and Sealed Condition cards from Titans"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e78a0dfba2b7639366281564",
+      "family": "BP",
+      "printedIds": [
+        "AS0422"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 17,
+        "pointer": "/cards/17"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Exposed Back Arms",
+          "family": "BP",
+          "printedIds": [
+            "AS0422"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0422"
+            ],
+            "name": "Exposed Back Arms",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hekaton",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "4"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Muscle Cluster"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pushback 1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +2"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 5"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your strike goes through the protective arms and punctures the drum-heart",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Deal an additional Single Wound"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e853f0ba5ba08806ac08901d",
+      "family": "BP",
+      "printedIds": [
+        "AS0427"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 22,
+        "pointer": "/cards/22"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "One In A Hundred",
+          "family": "BP",
+          "printedIds": [
+            "AS0427"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0427"
+            ],
+            "name": "One In A Hundred",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hekaton",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "6"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Muscle Cluster"
+              },
+              {
+                "count": "1",
+                "name": "Raw Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pushback 2"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +3"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 5"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "As you cut the arm at the elbow, you notice it is different. Blackened from decay but somehow more human",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Deal an additional Single Wound"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e886e10e9cb60b9474d73af6",
+      "family": "BP",
+      "printedIds": [
+        "ES3123"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 383,
+        "pointer": "/cards/383"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Crawls",
+          "family": "BP",
+          "printedIds": [
+            "ES3123"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3123"
+            ],
+            "name": "The Crawls",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Ur-Fleece",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "10"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Fear",
+                            "refID": "AL0299"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Ur-Knockback 4"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Ambrosia tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Flicker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "A grotesque tentacle-like mass undulates to the rhythm of a heartbeat",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Perform a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e8f80557fc504f05fef1f0da",
+      "family": "BP",
+      "printedIds": [
+        "ES3135"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 395,
+        "pointer": "/cards/395"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Tainted Godhood",
+          "family": "BP",
+          "printedIds": [
+            "ES3135"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3135"
+            ],
+            "name": "Tainted Godhood",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Ur-Fleece",
+            "level": "III",
+            "defense": {
+              "type": "GT",
+              "value": "42"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Disable the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Just a Memory",
+                            "refID": "EX3244"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Trait"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Aether tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Flicker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "What is this power that corrupts even the pillars of the world, the almighty Olympians? Or... were they never that to begin with...?",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable Despair effects"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e98327a9b04fae904c3b24b1",
+      "family": "BP",
+      "printedIds": [
+        "BS0820"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 122,
+        "pointer": "/cards/122"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cancerous Core",
+          "family": "BP",
+          "printedIds": [
+            "BS0820"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0820"
+            ],
+            "name": "Cancerous Core",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Chimera Metastasios",
+            "level": "III",
+            "defense": {
+              "type": "AT",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Violent Ambrosia"
+              },
+              {
+                "count": "1",
+                "name": "Supersolid Relief Mass"
+              }
+            ],
+            "nonResponseText": "Corrosive You may voluntarily end this Attack before performing a Power Roll. If you do, clear the Kratos Pool",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "You are swallowed whole, black tumors begin to rapidly grow from every part of your body"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "You die"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "There, in the churning black morass, vacuous misshapen eyes, everchanging, never blinking, like the tyrannous stars. You gouge them out! The Chimera melts into ruin, like a snow field on a hot summer day",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1 Humanity"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Chimera dies"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ec0b1668fe7c4fbca220a505",
+      "family": "BP",
+      "printedIds": [
+        "CS1772"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 185,
+        "pointer": "/cards/185"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sanctified Effigy",
+          "family": "BP",
+          "printedIds": [
+            "CS1772"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1772"
+            ],
+            "name": "Sanctified Effigy",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Sun Descendent",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "18"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Writhing Tentacle"
+              },
+              {
+                "count": "4",
+                "name": "Frozen Ambrosia"
+              }
+            ],
+            "nonResponseText": "When you attack from VP II or III. you may initiate a Combined Attack instead",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Time-clocked"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "For this is but a Descendant and the real thing is still much revered. End its reign!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Merciless Sun",
+                    "refID": ""
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Trait"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ed3890d70be11f414beb427b",
+      "family": "BP",
+      "printedIds": [
+        "DS2500"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 268,
+        "pointer": "/cards/268"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Substructural Stone Plating",
+          "family": "BP",
+          "printedIds": [
+            "DS2500"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2500"
+            ],
+            "name": "Substructural Stone Plating",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Babelian Lunacy",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "9",
+              "value2": "8",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Midas 1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 1 Ambrosia token"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Wish Away"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Each hit chinks the fortified stone -- and if the Staircase truly is endless, you'll make yourself a ladder!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, all Titans gain a +1 bonus to Ascent Checks!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eda79c8f3062a94f54d9766e",
+      "family": "BP",
+      "printedIds": [
+        "AS0543"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 47,
+        "pointer": "/cards/47"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fleshy Tentacle",
+          "family": "BP",
+          "printedIds": [
+            "AS0543"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0543"
+            ],
+            "name": "Fleshy Tentacle",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Alpha Temenos",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "4"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Raw Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Fear Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You cut off one of the long tentacles. As it wiggles on the ground, you are emboldened to push forward",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "PriorityTarget"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Priority Target token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "you may perform a Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_edb8e33802bb91dfcd2e2296",
+      "family": "BP",
+      "printedIds": [
+        "DS2419"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 231,
+        "pointer": "/cards/231"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hardened Underbelly",
+          "family": "BP",
+          "printedIds": [
+            "DS2419"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2419"
+            ],
+            "name": "Hardened Underbelly",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Midascore",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Midas 1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Midas 2"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You feel the thick fluid drip on you, its bitter taste on your lips. Is it ambrosia? Or gold? Is there a difference?",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan may perform"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Unholy Alchemy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ef2db6d621b454507dbb6016",
+      "family": "BP",
+      "printedIds": [
+        "BS1132"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 143,
+        "pointer": "/cards/143"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Retractable Leg",
+          "family": "BP",
+          "printedIds": [
+            "BS1132"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS1132"
+            ],
+            "name": "Retractable Leg",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "The Burden",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "6"
+            },
+            "resources": [
+              {
+                "count": "2",
+                "name": "Reliefshell Fragment"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +1"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Kickback 6"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You rip off one of the Burden's mechanical legs! It still moves as if it had a mind of its own",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Leg Khopesh",
+                    "refID": "BJ0945"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 5, card 52)!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f03e1f8573cab0eb52ac22c1",
+      "family": "BP",
+      "printedIds": [
+        "ES3049"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 353,
+        "pointer": "/cards/353"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hellhorns",
+          "family": "BP",
+          "printedIds": [
+            "ES3049"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3049"
+            ],
+            "name": "Hellhorns",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dragon of Phobos",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "9"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Amygdalan Extract"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "equal to the Primordial level"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Vanish 4"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Left without its devil horns, the dragon seems diminished, its once smiling maw now shut, solemn",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Fear",
+                    "refID": "AL0299"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Dread",
+                    "refID": "AL0299"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition card effects"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard all"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Fear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Dread"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition cards from all Titans"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f04ad8c047546c61d27a18ee",
+      "family": "BP",
+      "printedIds": [
+        "CS1374"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 140,
+        "pointer": "/cards/140"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Temporal Icicle Gland",
+          "family": "BP",
+          "printedIds": [
+            "CS1374"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1374"
+            ],
+            "name": "Temporal Icicle Gland",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hypertime Oracle",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "5"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Clothflesh"
+              }
+            ],
+            "nonResponseText": "Atemporal",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +3"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Fate"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Time-clocked"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You shatter one of the black icicles and for a moment all your realities are bared before you. You choose the one in which you smash this abomination into oblivion!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may reset"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and perform a Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f1768f552d762ca944c7a7a6",
+      "family": "BP",
+      "printedIds": [
+        "CS1726"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 160,
+        "pointer": "/cards/160"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wedgehead",
+          "family": "BP",
+          "printedIds": [
+            "CS1726"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1726"
+            ],
+            "name": "Wedgehead",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Icarian Harpy",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Icarian Feather"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pull 3"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Muffled Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain Bleeding up to 2"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "The Harpy moves to the center of the Board and turns to face the most Titans"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "The blow breaks the monster's skull, spilling brain fluid like a leaky amphora",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Deal an additional Single Wound!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f212ee95bcc711bfe91ba15b",
+      "family": "BP",
+      "printedIds": [
+        "ES3098"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 381,
+        "pointer": "/cards/381"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Medusal Crown",
+          "family": "BP",
+          "printedIds": [
+            "ES3098"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3098"
+            ],
+            "name": "Medusal Crown",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Meduketos",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "12"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "You are petrified (die)"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Ambrosia tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Retreat 5"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "From which the monster takes its name, the writhing crown of eye-stalks that makes the seas burn. Become like Perseus, and wear it!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Oculus Headlamp",
+                    "refID": "EJ2969"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 18, card 285)!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f2548fc46fbb60f6be4fdb1f",
+      "family": "BP",
+      "printedIds": [
+        "CV1812"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 210,
+        "pointer": "/cards/210"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Heavenly Back",
+          "family": "BP",
+          "printedIds": [
+            "CV1812"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CV1812"
+            ],
+            "name": "Heavenly Back",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "foundIn": "Envelope 2",
+            "faq": [],
+            "errata": {},
+            "usedFor": "The Pitiless",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "11"
+            },
+            "resources": [],
+            "nonResponseText": "Do not escalate. If this BP has been Wounded and there are no cards in the deck, see 0203",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "The Pitiless appears at the closest Sun Circle"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your weapon almost shatters on the radiant back of the Olympian and you could swear the god hunched a little",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Another Titan may immediately move up to their"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Speed"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and perform a Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f25a2a13326f89fede140fed",
+      "family": "BP",
+      "printedIds": [
+        "CS1381"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 147,
+        "pointer": "/cards/147"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Invisible Eyes Parasite",
+          "family": "BP",
+          "printedIds": [
+            "CS1381"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1381"
+            ],
+            "name": "Invisible Eyes Parasite",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hypertime Oracle",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Clothflesh"
+              },
+              {
+                "count": "1",
+                "name": "Frozen Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Immaterial and unseen, yet not beyond your reach. You gouge them out!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Paradox",
+                    "refID": "CJ1503"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 8, card 85),"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AdversaryActivation"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f2afb15336d7194d8311c9c1",
+      "family": "BP",
+      "printedIds": [
+        "BS1099"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 131,
+        "pointer": "/cards/131"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Inscribed Ribcage",
+          "family": "BP",
+          "printedIds": [
+            "BS1099"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS1099"
+            ],
+            "name": "Inscribed Ribcage",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {
+              "v1.1": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Reversed sequencing of Knockdown and Knockback: \"Knockback 10"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Knockdown\" to \"Knockdown"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Knockback 10\""
+                    }
+                  ]
+                }
+              ]
+            },
+            "usedFor": "The Nietzschean",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "8"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Skin of Malice"
+              },
+              {
+                "count": "1",
+                "name": "Living Abyss"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockdown"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 10"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +2"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +2"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Rage"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "and +1 Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You crush the inscribed bones, collapsing the ribcage. A lesser creature would die instantly; the Nietzschean just coughs black ash. The thick curl of smoke sticks to your right arm",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Fumeblade",
+                    "refID": "BJ0958"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 5, card 178)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "AdversaryActivation"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f2c58f3db0ec78acd23ad1d0",
+      "family": "BP",
+      "printedIds": [
+        "DS2462"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 251,
+        "pointer": "/cards/251"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sandstorm",
+          "family": "BP",
+          "printedIds": [
+            "DS2462"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2462"
+            ],
+            "name": "Sandstorm",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Demidjinn",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "7",
+              "value2": "8",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +1"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Fate"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move to the Endless Staircase"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move the Demidjinn up to 2 spaces"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You destabilize the Sandstorm",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Move the Demidjinn up to 3 spaces"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may perform a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "Bonus Attack!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f333a8bef057fa312604867d",
+      "family": "BP",
+      "printedIds": [
+        "CS1733"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 167,
+        "pointer": "/cards/167"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Egg",
+          "family": "BP",
+          "printedIds": [
+            "CS1733"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1733"
+            ],
+            "name": "The Egg",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Icarian Harpy",
+            "level": "III",
+            "defense": {
+              "type": "AT",
+              "value": "9"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Icarian Feather"
+              },
+              {
+                "count": "1",
+                "name": "Frozen Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "For a second you ponder the question: is this the Harpy's progeny or is the monster trapped in an even tighter loop of evolution... then you smash the Egg!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may perform a Bonus Attack, ignoring the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Rapid Adaptation",
+                    "refID": "CX1679"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Trait!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f3422b55aa853bbdacbad797",
+      "family": "BP",
+      "printedIds": [
+        "CS1372"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 138,
+        "pointer": "/cards/138"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Unholy Chasuble",
+          "family": "BP",
+          "printedIds": [
+            "CS1372"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1372"
+            ],
+            "name": "Unholy Chasuble",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hypertime Oracle",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Clothflesh"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move the Timefront 1 space forward"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Time-clocked"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You must've hit a vital organ, as the fleshy chasuble writhes and crumbles like burned leaves. The Oracle is diminished, its towering body crooked and hunched",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable 'The Oracle moves towards the Timefront' effects"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f372bb2ff7a47081ff6f8059",
+      "family": "BP",
+      "printedIds": [
+        "AS0488"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 31,
+        "pointer": "/cards/31"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Underbelly Seal",
+          "family": "BP",
+          "printedIds": [
+            "AS0488"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0488"
+            ],
+            "name": "Underbelly Seal",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Labyrinthauros",
+            "level": "I",
+            "defense": {
+              "type": "AT-Q",
+              "value": "2"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Raw Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Fear Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You destroy the waxy seal and the air fills with a putrid smell. A black fluid pours out of the opening",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "One Argonaut may lose the Mazetouched Affliction"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f3b276cbf3c354a2fc4c3095",
+      "family": "BP",
+      "printedIds": [
+        "DV2556"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 310,
+        "pointer": "/cards/310"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Luminous Heart",
+          "family": "BP",
+          "printedIds": [
+            "DV2556"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DV2556"
+            ],
+            "name": "Luminous Heart",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "foundIn": "Envelope Y",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Old Haunt",
+            "level": "III",
+            "defense": {
+              "type": "GT",
+              "value": "19"
+            },
+            "resources": [],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Draw an Obol"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "The Old Haunt moves 6 spaces directly away from the Attack"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Beautiful, gleaming heart of a heartless monster. You rip it out!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the Luminous Beacon"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 11, card 204),"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f6589c52f8c4962d75a4462c",
+      "family": "BP",
+      "printedIds": [
+        "DS2420"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 232,
+        "pointer": "/cards/232"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Long Neck",
+          "family": "BP",
+          "printedIds": [
+            "DS2420"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2420"
+            ],
+            "name": "Long Neck",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Midascore",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "5"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Knockdown"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Imperial Impetus"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your weapon finds purchase in the aurified skin, again and again, as if you were carving a golden staircase",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Create the Vantage Point"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If the VP is already in play, gain +2 Precision when attacking from the VP or Impaled!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f7e84b4e9956e8f5a61088ae",
+      "family": "BP",
+      "printedIds": [
+        "BS0748"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 89,
+        "pointer": "/cards/89"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Mighty Pectoral Muscle",
+          "family": "BP",
+          "printedIds": [
+            "BS0748"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0748"
+            ],
+            "name": "Mighty Pectoral Muscle",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Cyclonus",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "5"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Violent Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the Hatred Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You tear into the Cyclonus' enormous muscles and though there seems to be no end to them, you're sure you've made a difference",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, Cyclonus Knockbacks are reduced by 2"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f82d1fc4b9d1d452c676e6a5",
+      "family": "BP",
+      "printedIds": [
+        "DS2464"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 253,
+        "pointer": "/cards/253"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blackstone Exoskull",
+          "family": "BP",
+          "printedIds": [
+            "DS2464"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2464"
+            ],
+            "name": "Blackstone Exoskull",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Demidjinn",
+            "level": "II",
+            "defense": {
+              "type": "AT-Q",
+              "value": "6",
+              "value2": "7",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Wish Embryo"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Remove the closest Irem Tower Terrain tile from the Battle Board"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Wish Away"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Made from black stone, golden plates, and unfulfilled desires, it cracks under the weight of your staggering blow!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, the Demidjinn gains -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AT"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "during Attacks performed from the Blindspot or Endless Staircase!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f8db5542c27eaaa1329f85b1",
+      "family": "BP",
+      "printedIds": [
+        "AS0558"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 62,
+        "pointer": "/cards/62"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Contraction Center",
+          "family": "BP",
+          "printedIds": [
+            "AS0558"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0558"
+            ],
+            "name": "Contraction Center",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Alpha Temenos",
+            "level": "III",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Maze Fragment"
+              },
+              {
+                "count": "2",
+                "name": "Raw Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Create a Vantage Point"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You strike at the gordian knot of tissue, muscles and ligaments reaching far beyond this world and cut it clean",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Temenos gains 1 negative"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "AT"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable Routine"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fad396b37e98e93d8af5ad3b",
+      "family": "BP",
+      "printedIds": [
+        "ES3045"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 349,
+        "pointer": "/cards/349"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cnidarian Tail",
+          "family": "BP",
+          "printedIds": [
+            "ES3045"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3045"
+            ],
+            "name": "Cnidarian Tail",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dragon of Phobos",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Oxydized Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Vanish 4"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You rip away a strand of the semi-gelatinous, flourescent tail!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Phobos Whip",
+                    "refID": "EJ2967"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card (Secret deck 18, card 283),"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fb221b97bf30b3c04ab49aae",
+      "family": "BP",
+      "printedIds": [
+        "BS0819"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 121,
+        "pointer": "/cards/121"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Stem Cells Cluster",
+          "family": "BP",
+          "printedIds": [
+            "BS0819"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BS0819"
+            ],
+            "name": "Stem Cells Cluster",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Chimera Metastasios",
+            "level": "III",
+            "defense": {
+              "type": "AT",
+              "value": "6"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Violent Ambrosia"
+              },
+              {
+                "count": "1",
+                "name": "Chimeric Tar"
+              }
+            ],
+            "nonResponseText": "Gelatinous",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "The Chimera spontaneously regenerates"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Heal"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "A boiling font of black, sticky liquid, dividing, multiplying, as if bearing darkness from nothingness. As you crush the cluster with a satisfying squish, the whole creature loses its shape",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Metamorphosis"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Trait"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fb7778805e5b3fd2394cc471",
+      "family": "BP",
+      "printedIds": [
+        "AS0421"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 16,
+        "pointer": "/cards/16"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shoulderhands",
+          "family": "BP",
+          "printedIds": [
+            "AS0421"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AS0421"
+            ],
+            "name": "Shoulderhands",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hekaton",
+            "level": "II",
+            "defense": {
+              "type": "AT",
+              "value": "5"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Muscle Cluster"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pushback 1"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain +2"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "icon",
+                            "value": "Danger"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 5"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "You hack at the outer layer of hand, the fall to the ground like dead leeches",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable Hekaton's Pushbacks"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fcbbd45791035e3ed58ab535",
+      "family": "BP",
+      "printedIds": [
+        "ES3180"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 405,
+        "pointer": "/cards/405"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hephaestean Plated Back",
+          "family": "BP",
+          "printedIds": [
+            "ES3180"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ES3180"
+            ],
+            "name": "Hephaestean Plated Back",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Titan X",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "9"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Slave Metal"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockdown"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 10 to the left"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockback 7 to the left"
+                          }
+                        ]
+                      }
+                    ],
+                    "WoO": true
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Pain 1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Your hit connects with the Titan's back, and for a moment you think they're going to fall down, but instead they gracefully roll forward",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Another Titan may perform a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "MovementAction"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fda74ee1d6ff6cdb33eb49d1",
+      "family": "BP",
+      "printedIds": [
+        "DS2471"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 260,
+        "pointer": "/cards/260"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hingeless Jaw",
+          "family": "BP",
+          "printedIds": [
+            "DS2471"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2471"
+            ],
+            "name": "Hingeless Jaw",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Demidjinn",
+            "level": "III",
+            "defense": {
+              "type": "AT-Q",
+              "value": "9",
+              "value2": "10",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Mutable Ambrosia"
+              }
+            ],
+            "nonResponseText": "You may voluntarily end this Attack before performing the Power Roll. If you do, clear the Kratos Pool",
+            "responses": [
+              {
+                "type": "Instinct",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain the"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Wishagog",
+                            "refID": "DL2011"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "plainText",
+                            "value": "Condition card"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Move to the Endless Staircase"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "This jaw was not for biting; it was a snare for those who lusted a bit too much. Now you've broken it",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Wish Attacks become normal Attacks"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ff4ab2724f8f60f10ed75d03",
+      "family": "BP",
+      "printedIds": [
+        "CS1760"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 173,
+        "pointer": "/cards/173"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Swordwing",
+          "family": "BP",
+          "printedIds": [
+            "CS1760"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1760"
+            ],
+            "name": "Swordwing",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Sun Descendent",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "7"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Sunburned Skull"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Perform Signature against the Attacker"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Create a VP"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "The razorsharp wing falls limp at the monster's side, revealing a bony protrusion that will surely give you purchase!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Create a VP"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "During Escalation, choose which BP II card to add to the deck (instead of drawing randomly)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ff713f4c0c2e08db38d02e2f",
+      "family": "BP",
+      "printedIds": [
+        "DS2496"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 264,
+        "pointer": "/cards/264"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Radial Footing",
+          "family": "BP",
+          "printedIds": [
+            "DS2496"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DS2496"
+            ],
+            "name": "Radial Footing",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Babelian Lunacy",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "9",
+              "value2": "8",
+              "comboType": "Staircase"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Promised Future"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Gain 2 Ambrosia tokens"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Create an"
+                          },
+                          {
+                            "type": "whitespace",
+                            "value": " "
+                          },
+                          {
+                            "type": "cardRef",
+                            "value": "Irem Tower",
+                            "refID": "DI2028"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "keyword",
+                            "value": "Midas 1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "Like a living thing, the tower sprouted wicked roots of bronze, gold, and umbral stone. As you pull some of them out, the whole thing creaks",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Create all Vantage Points!"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ffbbc34505c7c603915360c0",
+      "family": "BP",
+      "printedIds": [
+        "CS1721"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 155,
+        "pointer": "/cards/155"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Tentacle Appendage",
+          "family": "BP",
+          "printedIds": [
+            "CS1721"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CS1721"
+            ],
+            "name": "Tentacle Appendage",
+            "renderType": "BP",
+            "cardType": "BP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Icarian Harpy",
+            "level": "I",
+            "defense": {
+              "type": "AT",
+              "value": "5"
+            },
+            "resources": [
+              {
+                "count": "1",
+                "name": "Frozen Ambrosia"
+              }
+            ],
+            "nonResponseText": "",
+            "responses": [
+              {
+                "type": "Fail",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pull 3"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Wound",
+                "effects": [
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Knockdown"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "effect": [
+                      {
+                        "abilityText": [
+                          {
+                            "type": "plainText",
+                            "value": "Pushback 3"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "critFlavor": "As the Harpy lashes at you with its tongue, you cleanly shave it off with a precision cut!",
+            "critResponse": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Disable the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Pull X"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword on Harpy Attacks"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

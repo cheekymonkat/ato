@@ -1,0 +1,2182 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Nymph",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_0afe02841857a69d4909dd56",
+      "family": "Nymph",
+      "printedIds": [
+        "AP0391"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 416,
+        "pointer": "/cards/416"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Amalthean Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "AP0391"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AP0391"
+            ],
+            "name": "Amalthean Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 03",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "29",
+            "title": "Amalthea's Milk",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When a Titan is about to die from an Obol Draw"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Treat the Titan as if they drew a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "You Live!"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Obol card"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Additionally, they lose -3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and -3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0d3979bbf39c55feda39c004",
+      "family": "Nymph",
+      "printedIds": [
+        "DQ2053"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 145,
+        "pointer": "/cards/145"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Natron Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "DQ2053"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DQ2053"
+            ],
+            "name": "Natron Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 14",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "251",
+            "title": "Memory of an Ancient Shore",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When an Argonaut is about to die and either"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "During Battle:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "bold",
+                    "value": "During Voyage:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "3 or less"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Prevent the Argonaut death, as if you used an Echo of Recollection, and lose -1 Titan instead"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2d822170fb36b8ad297c90ce",
+      "family": "Nymph",
+      "printedIds": [
+        "CP1323"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 61,
+        "pointer": "/cards/61"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Age Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "CP1323"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CP1323"
+            ],
+            "name": "Age Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 09",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "106",
+            "title": "Aeon Bypass",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Choose a Titan"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "During the Titan Round, the chosen Titan gains a bonus turn"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "OR When a Titan dies, place the Age Nymph token on their space or the closest legal free space"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "During the next Titan Round, the chosen Titan may discard the Age Nymph token to reappear in its space and take their turn"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At the end of that Titan Round, the Titan disappears again"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2df6c9c9c9876fc09e462950",
+      "family": "Nymph",
+      "printedIds": [
+        "CP1324"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 62,
+        "pointer": "/cards/62"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hope Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "CP1324"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CP1324"
+            ],
+            "name": "Hope Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 09",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "107",
+            "title": "Stuff of Legends",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "There is only 1 Titan alive"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until the end of Battle, the last Titan can perform an additional"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "MovementAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatAction"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "They cannot suffer"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Knockdown"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "or"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Time-clocked"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and cannot gain"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "over 9"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When they resolve an Obol Draw, they always draw from the standard 2-card Obol deck"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3b5410dea1a977b290fa9005",
+      "family": "Nymph",
+      "printedIds": [
+        "CP1322"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 60,
+        "pointer": "/cards/60"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Night Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "CP1322"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CP1322"
+            ],
+            "name": "Night Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 09",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "105",
+            "title": "Veil of Nyx",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "None"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Choose a waterway on any explored Map tile, leading to an unexplored tile"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reveal that tile and place the Night Nymph token on it"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you enter that tile, discard the token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Treat that tile as if you've just revealed it"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_45bb3f93f6f327737033ce33",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0707"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 496,
+        "pointer": "/cards/496"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Forge Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0707"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0707"
+            ],
+            "name": "Forge Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "76",
+            "title": "Masterpiece",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "None"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Resolve the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Forging a Masterpiece"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event of your current Cycle Storybook (or Cycle II Storybook for Cycle I)"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Give the acquired"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card to one of the Argonauts, that"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card gains the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Argonaut Possession"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "After the next Battle: Lose that"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card permanently"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Argonaut gains the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Apathy",
+                    "refID": "CF1261"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Fated Mnemos card"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4cfc0641a1c0c5934e11ee83",
+      "family": "Nymph",
+      "printedIds": [
+        "DQ2052"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 144,
+        "pointer": "/cards/144"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Midas Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "DQ2052"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DQ2052"
+            ],
+            "name": "Midas Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 14",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "250",
+            "title": "The Double-Edged Coin",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or you have 16+ Midas tokens among all your Titans"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately remove all Midas tokens and Conditon cards from all Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "OR Immediately turn all Ambrosia tokens into Midas tokens"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4f211358561ab09483861888",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0710"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 499,
+        "pointer": "/cards/499"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Mask Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0710"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0710"
+            ],
+            "name": "Mask Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "79",
+            "title": "Face, Off",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Start of Battle"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "One Titan may perform their turn before the first Primordial Round, instead of in the first Titan Round"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5008a274b7caa28c9b063de2",
+      "family": "Nymph",
+      "printedIds": [
+        "CP1325"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 63,
+        "pointer": "/cards/63"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Machina Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "CP1325"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CP1325"
+            ],
+            "name": "Machina Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 09",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "108",
+            "title": "Postmodern Exorcism",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Unexhaust all"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "of all Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each prepared Argo Ability regains 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Energy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_55ec22a3da968055b87df328",
+      "family": "Nymph",
+      "printedIds": [
+        "DQ2051"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 143,
+        "pointer": "/cards/143"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Silica Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "DQ2051"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DQ2051"
+            ],
+            "name": "Silica Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 14",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "249",
+            "title": "Atomic Thaw",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately create 6 Glass"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Irem Tower",
+                    "refID": "DI2028"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "tiles"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "A Glass Irem Tower loses the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Shifting"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword and gains the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Destructible"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "keyword"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5ec5b3cee70fe7f66c403cd5",
+      "family": "Nymph",
+      "printedIds": [
+        "EQ2638"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 251,
+        "pointer": "/cards/251"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "EQ2638"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EQ2638"
+            ],
+            "name": "Ambrosia Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 16",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "258",
+            "title": "Final Descent",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard all Ambrosia tokens from all Titans"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan gains 1 Aether token for each 2 Ambrosia tokens discarded this way"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_744adecbbdbda38684dfbe96",
+      "family": "Nymph",
+      "printedIds": [
+        "EQ2639"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 252,
+        "pointer": "/cards/252"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Aether Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "EQ2639"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EQ2639"
+            ],
+            "name": "Aether Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 16",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "259",
+            "title": "Oxygen Destroyer",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Flip all Aether tokens or all Oxygen tokens"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_76b55ccccac13554af81a4af",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0706"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 495,
+        "pointer": "/cards/495"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Nietzschean Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0706"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0706"
+            ],
+            "name": "Nietzschean Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "75",
+            "title": "Transcend!",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "A Titan has just died"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Choose a Titan other than the one that just died"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "That Titan immediately Awakens, then discards 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Trespass"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7cccab02a272805436a7085b",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0708"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 497,
+        "pointer": "/cards/497"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blade Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0708"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0708"
+            ],
+            "name": "Blade Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "77",
+            "title": "Vorpal Secret",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Assign this card and the Blade Nymph token to a Titan"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As long as you have this card, you have +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Before each Power Roll you must say if you will Wound the Primordial or not"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you waver, discard this card and your Weapon"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you're sure and then you do not Wound, discard this card, permanently lose your Weapon, and draw an Obol"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Start of your turn:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Discard the Blade Nymph token"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you cannot, discard this card instead"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_845c398297b74f03bf81f026",
+      "family": "Nymph",
+      "printedIds": [
+        "AP0393"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 418,
+        "pointer": "/cards/418"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Depths Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "AP0393"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AP0393"
+            ],
+            "name": "Depths Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 03",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "31",
+            "title": "Midnight Tide",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Any Titan has at least 4 Ambrosia tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +6"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "as a group"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately remove all Terrain tiles with the Ambrosia keyword and discard all Ambrosia tokens from all Titans"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_a039b62be12a716fcb418624",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0709"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 498,
+        "pointer": "/cards/498"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Knowledge Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0709"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0709"
+            ],
+            "name": "Knowledge Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "78",
+            "title": "Page Infinite",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Be on a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "City"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "tile"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You cannot use Voyage Technology abilities this day"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately research 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatTech"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "or"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "StructuralTech"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Technology"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You need to meet the Technology card's requirements"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c1ba1cfdc191a161780df759",
+      "family": "Nymph",
+      "printedIds": [
+        "AP0392"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 417,
+        "pointer": "/cards/417"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Labyrinth Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "AP0392"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AP0392"
+            ],
+            "name": "Labyrinth Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 03",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "30",
+            "title": "Minotaur Logic",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When a Titan is about to die from an Obol Draw"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately remove, move, or place 3 different Labyrinth tiles anywhere on the Board"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "All moved or placed tiles must create a connected Labyrinth path"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The first Titan Attack this Round performed from a Labyrinth tile gains +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Power"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d05b78d3262baffebd611dc0",
+      "family": "Nymph",
+      "printedIds": [
+        "CP1321"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 59,
+        "pointer": "/cards/59"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Curiosity Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "CP1321"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CP1321"
+            ],
+            "name": "Curiosity Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 09",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "104",
+            "title": "Insatiable Secret",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "6+"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "This Nymph does not exhaust"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Progress"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "or +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoKnowledge"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1 unavoidable"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ddb4246dfad4899ad86958ed",
+      "family": "Nymph",
+      "printedIds": [
+        "BP0705"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 494,
+        "pointer": "/cards/494"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sweets Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "BP0705"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BP0705"
+            ],
+            "name": "Sweets Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 06",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "74",
+            "title": "Grand Fete",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Be on a"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "City"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "tile"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You cannot use Voyage Technology abilities this day"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lower"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to 0"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ec14c8e6352fb8b703158569",
+      "family": "Nymph",
+      "printedIds": [
+        "AP0390"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 415,
+        "pointer": "/cards/415"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Solitude Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "AP0390"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AP0390"
+            ],
+            "name": "Solitude Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 03",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "28",
+            "title": "Gaia's Hold",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At least 1 Titan has died or drawn an Obol"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Immediately discard the drawn AI card, without resolving it"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Treat it as resolved"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f468f9c8a9d0bec15435126c",
+      "family": "Nymph",
+      "printedIds": [
+        "AP0389"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 414,
+        "pointer": "/cards/414"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Engine Nymph",
+          "family": "Nymph",
+          "printedIds": [
+            "AP0389"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AP0389"
+            ],
+            "name": "Engine Nymph",
+            "renderType": "Nymph",
+            "cardType": "Nymph",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Tarot",
+            "foundIn": "Secret Deck 03",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "27",
+            "title": "God-Charged Engine",
+            "requirements": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "or less"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you are about to move the Argo, move the Argo two times instead"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Do not resolve any other Voyage steps on the first tile moved to"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If the tile you ignored was unexplored, place the Engine Nymph token on it"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Next time you enter that tile, discard that token and treat the tile as if you have just revealed it"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

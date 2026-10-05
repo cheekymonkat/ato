@@ -1,0 +1,510 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Trauma",
+  "part": 2,
+  "cards": [
+    {
+      "id": "def_f69da7f197f0556f419a3463",
+      "family": "Trauma",
+      "printedIds": [
+        "AM0341",
+        "AM0342",
+        "AM0348"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 381,
+        "pointer": "/cards/381"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Disemboweled",
+          "family": "Trauma",
+          "printedIds": [
+            "AM0341",
+            "AM0342",
+            "AM0348"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AM0341",
+              "AM0342",
+              "AM0348"
+            ],
+            "name": "Disemboweled",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "subtype": "Grave",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You die"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Shuffle this card back into the Trauma Deck"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "",
+            "sign": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f7c4cdfc06eb9ce0f85cf147",
+      "family": "Trauma",
+      "printedIds": [
+        "AM0358"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 396,
+        "pointer": "/cards/396"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Your Gruesome Death Becomes Legend",
+          "family": "Trauma",
+          "printedIds": [
+            "AM0358"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AM0358"
+            ],
+            "name": "Your Gruesome Death Becomes Legend",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "And close my eyes and quench my breath... I have a rendezvous with Death",
+            "subtype": "Obol",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Roll a d10"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "On a '9-10', you Awaken instead,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "! If you die,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "bold",
+                    "value": "End of Battle"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ": Your Argonaut dies from Triskelion shock"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Resolve the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "italics",
+                    "value": "Rude Awakening"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Special Event"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "",
+            "sign": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f851db8724f3a5d440af7d7b",
+      "family": "Trauma",
+      "printedIds": [
+        "EM2627"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 239,
+        "pointer": "/cards/239"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "A Gap of Heart",
+          "family": "Trauma",
+          "printedIds": [
+            "EM2627"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EM2627"
+            ],
+            "name": "A Gap of Heart",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "subtype": "Major",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Holy Terror",
+                    "refID": "EL2596"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition card"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "7",
+            "sign": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f96785d1ff0724922319678d",
+      "family": "Trauma",
+      "printedIds": [
+        "AM0356"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 394,
+        "pointer": "/cards/394"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "You Live!",
+          "family": "Trauma",
+          "printedIds": [
+            "AM0356"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AM0356"
+            ],
+            "name": "You Live!",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "By the power of the Dead Gods..",
+            "subtype": "Obol",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "",
+            "sign": "+"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fcb77ca76fc7ac60092e1ef5",
+      "family": "Trauma",
+      "printedIds": [
+        "AM0318"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 358,
+        "pointer": "/cards/358"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fear",
+          "family": "Trauma",
+          "printedIds": [
+            "AM0318"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AM0318"
+            ],
+            "name": "Fear",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "subtype": "Minor",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "cardRef",
+                    "value": "Fear",
+                    "refID": "AL0299"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Condition card"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "",
+            "sign": "-"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fe8328ebb1acc913fa984282",
+      "family": "Trauma",
+      "printedIds": [
+        "BM9973"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 492,
+        "pointer": "/cards/492"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Deathtouched",
+          "family": "Trauma",
+          "printedIds": [
+            "BM9973"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BM9973"
+            ],
+            "name": "Deathtouched",
+            "renderType": "Trauma",
+            "cardType": "Trauma",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "foundIn": "Promo",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "subtype": "Grave",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you're fighting the Nietzschean, for the duration of the Battle, add this card to the Trauma deck"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Gain +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  }
+                ]
+              }
+            ],
+            "isCondition": "",
+            "arrow": "",
+            "number": "",
+            "sign": "-"
+          }
+        }
+      ]
+    }
+  ]
+}

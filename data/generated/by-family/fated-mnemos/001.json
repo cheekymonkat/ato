@@ -1,0 +1,3947 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Fated Mnemos",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_01e90e94d1fa4ab14b87f4dd",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2078"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 468,
+        "pointer": "/cards/468"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Expendable",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2078"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2078"
+            ],
+            "name": "Expendable",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Your robes are daubed crimson",
+            "traits": [
+              "Deed",
+              "Gods",
+              "Fate"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot re-draw Obol cards"
+                }
+              ]
+            },
+            "growthName": "Indispensable",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you draw an Obol and don't re-draw it, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0c990c8e929bd04e7462bb0c",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0131"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 218,
+        "pointer": "/cards/218"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Honorblind",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0131"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0131"
+            ],
+            "name": "Honorblind",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Honor has its place, but you've misplaced it",
+            "traits": [
+              "Voyage",
+              "Supernatural",
+              "Deed"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot end voluntary movement in a Rear space"
+                }
+              ]
+            },
+            "growthName": "Honor is a sea",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you are about to attack, if you are on a Rear space, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0de2a60386087958f1211129",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0639"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 345,
+        "pointer": "/cards/345"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Reluctant",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0639"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0639"
+            ],
+            "name": "Reluctant",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You'd have nothing to do with the barbarism",
+            "traits": [
+              "Fate",
+              "Supernatural",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot use"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "cards with the following traits:"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "italics",
+                  "value": "Axe, Blade, Javelin, Khopesh, Knife, Lance, Spear, Sword"
+                }
+              ]
+            },
+            "growthName": "Someone has to do it",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you deal a Wound, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_0e21ae9814e0670059b729d3",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2074"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 464,
+        "pointer": "/cards/464"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wishful Thinker",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2074"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2074"
+            ],
+            "name": "Wishful Thinker",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "I've got this!",
+            "traits": [
+              "Deed",
+              "Supernatural",
+              "Dream"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you Wound, after Escalation, if the AI card on the top of the AI deck isn't an AI III or IV, shuffle the AI deck (once per Wound)"
+                }
+              ]
+            },
+            "growthName": "Wishful Doer",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you take your turn last during the Titan Round, if you shuffle the BP deck, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_120aea8d65c1f3df5f5fba14",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0642"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 348,
+        "pointer": "/cards/348"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ambrosia Addiction",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0642"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0642"
+            ],
+            "name": "Ambrosia Addiction",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Just one more sip..",
+            "traits": [
+              "Voyage",
+              "Supernatural",
+              "Deed"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "keyword",
+                  "value": "Ambrosia Limit -1"
+                }
+              ]
+            },
+            "growthName": "Ambrosia Tolerance",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you discard at least 1 Ambrosia token, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_179767208236f68ef1cb86de",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2651"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 76,
+        "pointer": "/cards/76"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Humiliated",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2651"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2651"
+            ],
+            "name": "Humiliated",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Nobody will tell you you're a coward!",
+            "traits": [
+              "Voyage",
+              "Dream",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot voluntarily move away from the Primordial"
+                }
+              ]
+            },
+            "growthName": "Self-confident",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you move away from the Primordial with a"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "MovementAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": ", lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_19620d56be1cf63889465093",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1260"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 404,
+        "pointer": "/cards/404"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Psychosomatic Disorder",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1260"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1260"
+            ],
+            "name": "Psychosomatic Disorder",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You just can't pinpoint the pain - but it's there..",
+            "traits": [
+              "Deed",
+              "Gods",
+              "Fate"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you draw a positive Truma card, ignore it and draw again (once per Trauma Draw)"
+                }
+              ]
+            },
+            "growthName": "Perseverance",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you draw a negative Trauma card, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_1a159466e5fec108eb80bb6b",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2072"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 462,
+        "pointer": "/cards/462"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Thrice-Cursed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2072"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2072"
+            ],
+            "name": "Thrice-Cursed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You see things",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "At the end of your turn, if you didn't move your full"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Speed"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "value or use all of your available Hermes Moves, gain +1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "growthName": "Premonition",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you move your full"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Speed"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "value or use all of your available Hermes Moves, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_1ebe18e35cfef2ed7f057bcd",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2071"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 461,
+        "pointer": "/cards/461"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Twice-Cursed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2071"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2071"
+            ],
+            "name": "Twice-Cursed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You're as light as a feather--and just as fickle",
+            "traits": [
+              "Supernatural",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "Gain the Windblight Curse Affliction. When you suffer involuntary movement, Knockdown, or Float, gain +1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "growthName": "Second Wind",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you stand up, deflate, or arrive form Time-clocked, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2271931dca64fa6b0fce4b6b",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0133"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 220,
+        "pointer": "/cards/220"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Selfishness",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0133"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0133"
+            ],
+            "name": "Selfishness",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You were nobility once. Yes, you must've been",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot place tokens in the Kratos Pool"
+                }
+              ]
+            },
+            "growthName": "Selfless",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you are about to attack, if the Kratos Pool is empty, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2db4afdf9adae6c9ed61c404",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2075"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 465,
+        "pointer": "/cards/465"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Deprived",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2075"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2075"
+            ],
+            "name": "Deprived",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "That spark that burns in others--you don't have it",
+            "traits": [
+              "Deed",
+              "Supernatural",
+              "Voyage"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot Awaken. You cannot summon during your turn"
+                }
+              ]
+            },
+            "growthName": "Hopeful",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you Awaken or Summon during your turn, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2f573ca952254ef5653308dd",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0636"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 342,
+        "pointer": "/cards/342"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hapless",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0636"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0636"
+            ],
+            "name": "Hapless",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The World just seems out to get you",
+            "traits": [
+              "Heritage",
+              "Gods",
+              "Fate"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "Apply a -1 penalty to all tests you perform (note: rolls are not tests)"
+                }
+              ]
+            },
+            "growthName": "The cards we are dealt",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you fail a test, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_325550b35c359194bd37ebdc",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0640"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 346,
+        "pointer": "/cards/346"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Scapegoat",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0640"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0640"
+            ],
+            "name": "Scapegoat",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "It's always you..",
+            "traits": [
+              "Fate",
+              "Tragedy",
+              "Family"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "Start of Battle"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Gain the"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "cardRef",
+                  "value": "Marked for Death",
+                  "refID": "AM0323"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Major Trauma card"
+                }
+              ]
+            },
+            "growthName": "Decoy",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain the Priority Target token, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_32960b62a6a80c0f68831385",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2649"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 74,
+        "pointer": "/cards/74"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Delusional",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2649"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2649"
+            ],
+            "name": "Delusional",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "They want to poison us",
+            "traits": [
+              "Supernatural",
+              "Tragedy",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When your Attack hits, but before revealing the BP card, guess the"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "AT"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": ". If you guess incorrectly, gain 1 Ambrosia token"
+                }
+              ]
+            },
+            "growthName": "Rational",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When your Attack hits, but before revealing the BP card, guess the"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "AT"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": ". If you guess correctly, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3374ed5771e4a5a2ffa1dd66",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1263"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 407,
+        "pointer": "/cards/407"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Timid",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1263"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1263"
+            ],
+            "name": "Timid",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Not you, please, not you..",
+            "traits": [
+              "Fate",
+              "Supernatural",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain the"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "PriorityTarget"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Priority Target token, gain +1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "growthName": "Chance-taker",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you lsoe the Priority Target token, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_33cc91a1eb21d263ee7af8c1",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0641"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 347,
+        "pointer": "/cards/347"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Restless",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0641"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0641"
+            ],
+            "name": "Restless",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The wait is killing you!",
+            "traits": [
+              "Deed",
+              "Tragedy",
+              "Dream"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You must always use your"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "MovementAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "to move at least one space"
+                }
+              ]
+            },
+            "growthName": "Still mind",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "End of your turn: If you didn't voluntarily move this turn, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_39df25703948cf89797599dd",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2652"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 77,
+        "pointer": "/cards/77"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Depressed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2652"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2652"
+            ],
+            "name": "Depressed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You cannot go on this way..",
+            "traits": [
+              "Deed",
+              "Curse",
+              "Dream"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "Start of your turn"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Gain 1 Despair token"
+                }
+              ]
+            },
+            "growthName": "Content",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain 2+ Despair tokens from one source, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3ec20d52e075fc772295f1b4",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1268"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 412,
+        "pointer": "/cards/412"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Denigrated",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1268"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1268"
+            ],
+            "name": "Denigrated",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You were worthless. At least that's what your father told you",
+            "traits": [
+              "Supernatural",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "After you place any tokens in the Kratos Pool, remove 1 token from the Kratos Pool"
+                }
+              ]
+            },
+            "growthName": "Self-worth",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you place 5+ Kratos tokens in the Kratos Pool in a single ability window, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4103a493aff21a7e3ad1010e",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1265"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 409,
+        "pointer": "/cards/409"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Superstitous",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1265"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1265"
+            ],
+            "name": "Superstitous",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "This will not be your day, the Oracles have spoken",
+            "traits": [
+              "Deed",
+              "Supernatural",
+              "Dream"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot ignore or re-draw Trauma cards"
+                }
+              ]
+            },
+            "growthName": "Only facts",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you re-draw a Trauma card or otherwise ignore its effect, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_41401c9ff6be680b474550b1",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2076"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 466,
+        "pointer": "/cards/466"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Hoarder",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2076"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2076"
+            ],
+            "name": "Hoarder",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "I need that",
+            "traits": [
+              "Fate",
+              "Gods",
+              "Family"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot voluntarily discard tokens and card"
+                }
+              ]
+            },
+            "growthName": "Kondo",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you discard a"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "card, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_58b533e0eefe7f3c0f33f734",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2073"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 463,
+        "pointer": "/cards/463"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fear of Heights",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2073"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2073"
+            ],
+            "name": "Fear of Heights",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Don't look down",
+            "traits": [
+              "Voyage",
+              "Dream",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When on an Elevated space or a VP, you gain -1 Precision and"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "bold",
+                  "value": "Crit Fail:"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "keyword",
+                  "value": "Knockdown"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "(end your attack)"
+                }
+              ]
+            },
+            "growthName": "Acrophilia",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you successfully perform a Climb test, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_5bbc4e10f3e48929dd61f321",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2655"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 80,
+        "pointer": "/cards/80"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Godfearing",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2655"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2655"
+            ],
+            "name": "Godfearing",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "This is their punishment",
+            "traits": [
+              "Family",
+              "Gods",
+              "Fate"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain a negative Mind Condition card, gain 1 negative Precision token"
+                }
+              ]
+            },
+            "growthName": "Godforsaken",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain a Mind Condition card, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_645dece3824af8f0fac2a162",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0638"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 344,
+        "pointer": "/cards/344"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Coward",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0638"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0638"
+            ],
+            "name": "Coward",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You have no stomach for this",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you are in front of the Primordial, you have -1 Precision"
+                }
+              ]
+            },
+            "growthName": "Bravery",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "End of your turn: If you are in front and adjacent to the Primordial, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_65f807c91dc17a3d31a9923c",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0644"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 350,
+        "pointer": "/cards/350"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Clumsy",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0644"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0644"
+            ],
+            "name": "Clumsy",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Things break so easily when you're around",
+            "traits": [
+              "Crime",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot unexhaust your"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "cards"
+                }
+              ]
+            },
+            "growthName": "Tinker",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you involuntarily exhaust a"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "card, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_699c86eeecd7cd12bc506b96",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2650"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 75,
+        "pointer": "/cards/75"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Dogmatic",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2650"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2650"
+            ],
+            "name": "Dogmatic",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "This would be sacrilege",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot use Aether tokens in any way"
+                }
+              ]
+            },
+            "growthName": "Broad-minded",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you use Aether tokens, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6c15866ceb763c28056fb43a",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0132"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 219,
+        "pointer": "/cards/219"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Egotist",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0132"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0132"
+            ],
+            "name": "Egotist",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You see it so clearly. Scion of legend. Yours should be the glory",
+            "traits": [
+              "Voyage",
+              "Family",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You must be the first one to take your turn during the Titan Round"
+                }
+              ]
+            },
+            "growthName": "Humble",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "End of your turn"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "If you did not attack this turn, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6eca4613f0174bb6fa95eb7a",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1267"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 411,
+        "pointer": "/cards/411"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Late",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1267"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1267"
+            ],
+            "name": "Late",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You arrived too late. Or too soon..",
+            "traits": [
+              "Voyage",
+              "Dream",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "During the Titan Round, you cannot voluntarily be the first or last to take your turn"
+                }
+              ]
+            },
+            "growthName": "Right on time",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you take your turn second or third during the Titan Round, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6f1d2ad11e559276ec7964a3",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0128"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 215,
+        "pointer": "/cards/215"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Left Behind",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0128"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0128"
+            ],
+            "name": "Left Behind",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You were just a burden to them",
+            "traits": [
+              "Fate",
+              "Supernatural",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot be the last one to take your turn during the Titan Round, unless there are no other living Titans"
+                }
+              ]
+            },
+            "growthName": "Last one out",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you take your turn last during the Titan Round, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7a74e4a6981026b80c05b939",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2648"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 73,
+        "pointer": "/cards/73"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sanctimonious",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2648"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2648"
+            ],
+            "name": "Sanctimonious",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "I know what's best for us",
+            "traits": [
+              "Fate",
+              "Gods",
+              "Family"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot equip"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "with the Light X keyword"
+                }
+              ]
+            },
+            "growthName": "Forthright",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you place Ambrosia tokens on your"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Gear"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "cards, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_838daa8c2e2bcdc976fd4a11",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2656"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 81,
+        "pointer": "/cards/81"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Messianic",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2656"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2656"
+            ],
+            "name": "Messianic",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "My death was promised",
+            "traits": [
+              "Supernatural",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you are about to draw an Obol, add an additional"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "italics",
+                  "value": "You died"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Obol to the Obol deck (for this draw only)"
+                }
+              ]
+            },
+            "growthName": "Realist",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you survive an Obol Draw from 3 or more Obol cards, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Fury"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_908a4649402eec0ac6db196a",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2070"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 460,
+        "pointer": "/cards/460"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cursed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2070"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2070"
+            ],
+            "name": "Cursed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You covet that which gleams like the Sun",
+            "traits": [
+              "Family",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "Gain the Goldthirst Curse Affliction. When you gain at least 1 Midas token, gain +1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "growthName": "Thrifty",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you discard or turn (into another token) at least 1 Midas token, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_9224874e8265bfb96ba0a675",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0129"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 216,
+        "pointer": "/cards/216"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Oblivious",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0129"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0129"
+            ],
+            "name": "Oblivious",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Huh?",
+            "traits": [
+              "Deed",
+              "Tragedy",
+              "Family"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You don't benefit from Opening tokens"
+                }
+              ]
+            },
+            "growthName": "Mindful",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you are about to attack, if there are 3+ Opening tokens in the Kratos Pool, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_96c29e6612eb39483525ec22",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0127"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 214,
+        "pointer": "/cards/214"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Alone",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0127"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0127"
+            ],
+            "name": "Alone",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "There was no one there for you",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "Start of your turn"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "If you're more than 5 spaces from all other Titans, gain +2"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "growthName": "A company",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "Start of your turn"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "If all Titans are within 4 spaces of you, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_96eb4e56e5ecb8eaf128e0e1",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1269"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 413,
+        "pointer": "/cards/413"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sowed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1269"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1269"
+            ],
+            "name": "Sowed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "foundIn": "Secret Deck 07",
+            "faq": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "ITU Alkes: When gaining this card, ignore the Fated Mnemos limit"
+                  }
+                ]
+              }
+            ],
+            "errata": {},
+            "secretCardNumber": "82",
+            "flavor": "You feel something moving beyond the horizon. Something in you has irrevocably changed",
+            "traits": [
+              "Family",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "Conqueror Nail and Repurposed Cryptex gain the"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "keyword",
+                  "value": "Argonaut Possession"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "keyword. During an Attack Roll, treat a '1' rolled on any of your dice as a Crit Miss (it may result in Crit Miss effects triggering multiple times). You cannot lose this Fated Mnemos, only resolve it"
+                }
+              ]
+            },
+            "growthName": "Reaped",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "Resolve the Reaped Special Event in the Cycle II Storybook"
+                }
+              ]
+            },
+            "stats": [
+              "Will",
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_9f7a0efff68b7bbb4e8dfa50",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0130"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 217,
+        "pointer": "/cards/217"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ikari",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0130"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0130"
+            ],
+            "name": "Ikari",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "I don't want to do this..",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Dream"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You must be the last one to take your turn during the Titan Round"
+                }
+              ]
+            },
+            "growthName": "First one in",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you take your turn first during the Titan Round, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_abc77d9408d36705be4d1df7",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1262"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 406,
+        "pointer": "/cards/406"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fate-Hexed",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1262"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1262"
+            ],
+            "name": "Fate-Hexed",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Moirai have curse you",
+            "traits": [
+              "Curse",
+              "Dream",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot gain Crit Chances"
+                }
+              ]
+            },
+            "growthName": "Make your own luck",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain a Crit Chance, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Cunning"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b04eaa7e7aafac127a5a5271",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0126"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 213,
+        "pointer": "/cards/213"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Betrayal",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0126"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0126"
+            ],
+            "name": "Betrayal",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The soft sweet lies, the hard sharp truth. Never again",
+            "traits": [
+              "Family",
+              "Tragedy",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot voluntarily end your movement no a space adjacent to another Titan"
+                }
+              ]
+            },
+            "growthName": "Bonds of trust",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you start and end your turn adjacent to a Titan, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bb3dcc4f8a59d6b225410af7",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2653"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 78,
+        "pointer": "/cards/78"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Memory of Drowning",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2653"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2653"
+            ],
+            "name": "Memory of Drowning",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The worst death",
+            "traits": [
+              "Voyage",
+              "Supernatural",
+              "Deed"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot gain additional Oxygen tokens"
+                }
+              ]
+            },
+            "growthName": "Breath of life",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you discard or spend Oxygen tokens (but not flip them!), lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c4c902a0e1277f6ddfeb0a0f",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "DF2077"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 467,
+        "pointer": "/cards/467"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Indebted",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "DF2077"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "DF2077"
+            ],
+            "name": "Indebted",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Taxes trump death",
+            "traits": [
+              "Dream",
+              "Tragedy",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain at least 1 Condition token or Ambrosia token, gain 1 more of that token"
+                }
+              ]
+            },
+            "growthName": "Investor",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain at least 3 Condition tokens or Ambrosia tokens from a single source, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_da0413a2940a3b62766751d0",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0637"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 343,
+        "pointer": "/cards/343"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Weak",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0637"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0637"
+            ],
+            "name": "Weak",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "They left you in the mountains, like they do with all the weaklings",
+            "traits": [
+              "Voyage",
+              "Tragedy",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you are about to draw an Obol, add an Obol card from the next threshold on the Massive Danger Chart to the Obol Deck for this draw only"
+                }
+              ]
+            },
+            "growthName": "Resilient",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you survive an Obol, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_de50e923327636a2c8bd50ad",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1264"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 408,
+        "pointer": "/cards/408"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Enervated",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1264"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1264"
+            ],
+            "name": "Enervated",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You're so tired all the time..",
+            "traits": [
+              "Fate",
+              "Gods",
+              "Family"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "timing",
+                  "value": "Start of Battle"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Gain 1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "CombatAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "or"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "MovementAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Fatigue token"
+                }
+              ]
+            },
+            "growthName": "Invigorated",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain a"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "CombatAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "or"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "MovementAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Fatigue token,, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Endurance"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dff18bd88af541a173dcb816",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "EF2654"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 79,
+        "pointer": "/cards/79"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Phantom Pain",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "EF2654"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "EF2654"
+            ],
+            "name": "Phantom Pain",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "I still feel it",
+            "traits": [
+              "Deed",
+              "Heritage",
+              "Curse"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you draw a Trauma card, gain 1 Pain"
+                }
+              ]
+            },
+            "growthName": "Comfort",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain 2+ Pain tokens from one source, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e47dbd19d3da6d7eaf15852b",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1261"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 405,
+        "pointer": "/cards/405"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Apathy",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1261"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1261"
+            ],
+            "name": "Apathy",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The passion is gone",
+            "traits": [
+              "Dream",
+              "Tragedy",
+              "Crime"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You cannot use"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "Rerolls"
+                }
+              ]
+            },
+            "growthName": "Rekindled Interest",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you rerolled 2 or more Attack Dice and none of them are hits, lost -1 Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eac32754d446dbbb4cfdf28f",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "BF0643"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 349,
+        "pointer": "/cards/349"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Bloodthirsty",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "BF0643"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "BF0643"
+            ],
+            "name": "Bloodthirsty",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You will kill every last one of them!",
+            "traits": [
+              "Voyage",
+              "Family",
+              "Gods"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "You can use your"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "CombatAction"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "only to perform attacks"
+                }
+              ]
+            },
+            "growthName": "Cold steel",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "End of your turn: If you didn't attack this turn, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Wisdom"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f1f91373cc6555b1334f7c10",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "AF0125"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 212,
+        "pointer": "/cards/212"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Memory Of Death",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "AF0125"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "AF0125"
+            ],
+            "name": "Memory Of Death",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "That moment is etched in your soul for all eternity",
+            "traits": [
+              "Heritage",
+              "Gods",
+              "Fate"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "During the Trauma Draw, treat your"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Danger"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "plainText",
+                  "value": "as 1 higher"
+                }
+              ]
+            },
+            "growthName": "A life worth living",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "If you fully evade an attack, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Will"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fbda7c7df53a66a11fdefb3b",
+      "family": "Fated Mnemos",
+      "printedIds": [
+        "CF1266"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 410,
+        "pointer": "/cards/410"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Queasy",
+          "family": "Fated Mnemos",
+          "printedIds": [
+            "CF1266"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "fated-mnemos",
+          "data": {
+            "cardIDs": [
+              "CF1266"
+            ],
+            "name": "Queasy",
+            "renderType": "Fated Mnemos",
+            "cardType": "Fated Mnemos",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "You have seen too much blood already..",
+            "traits": [
+              "Voyage",
+              "Supernatural",
+              "Deed"
+            ],
+            "effect": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain at least 1 Bleeding token, gain +1 Bleeding token"
+                }
+              ]
+            },
+            "growthName": "Centered",
+            "growthAbility": {
+              "abilityText": [
+                {
+                  "type": "plainText",
+                  "value": "When you gain at least 1 Bleeding token, lose -1"
+                },
+                {
+                  "type": "whitespace",
+                  "value": " "
+                },
+                {
+                  "type": "icon",
+                  "value": "Fate"
+                }
+              ]
+            },
+            "stats": [
+              "Courage"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

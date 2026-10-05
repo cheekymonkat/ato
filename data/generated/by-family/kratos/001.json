@@ -1,0 +1,863 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Kratos",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_2a22b7cc49bb494cddf8d37c",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0377"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 405,
+        "pointer": "/cards/405"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Abandon",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0377"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0377"
+            ],
+            "name": "Abandon",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The primal urge to flee is just too strong",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You are fleeing"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "On your turn, you must use your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "MovementAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to move towards the closest Board Edge"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You cannot attack or use other actions or abilities, unless stated otherwise"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you would cross the Board Edge, remove your Titan from the Board"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "It runs away (for all purposes treat it as dead)"
+                  }
+                ]
+              }
+            ],
+            "rally": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may test Courage ("
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "+)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2fe0f169af2f53a4a0a5967b",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0373"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 401,
+        "pointer": "/cards/401"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Reject Argonaut",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0373"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0373"
+            ],
+            "name": "Reject Argonaut",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "The Titan is having a serologic reaction to the Argonaut",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Perform a Kratos Roll"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Fail"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "You die"
+                  }
+                ]
+              }
+            ],
+            "rally": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_348fb262243fef2ca714d336",
+      "family": "Kratos",
+      "printedIds": [
+        "BN0701"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 493,
+        "pointer": "/cards/493"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Violent Awakening",
+          "family": "Kratos",
+          "printedIds": [
+            "BN0701"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BN0701"
+            ],
+            "name": "Violent Awakening",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "foundIn": "Secret Deck 07",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "142",
+            "flavor": "",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to Awaken"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you do,"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ],
+            "rally": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3607680849cfc31354f317d5",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0376"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 404,
+        "pointer": "/cards/404"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fate Paradox",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0376"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0376"
+            ],
+            "name": "Fate Paradox",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "equal to your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              }
+            ],
+            "rally": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_58c9f8649ba120ac3e486110",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0375"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 403,
+        "pointer": "/cards/403"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Moirosis",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0375"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0375"
+            ],
+            "name": "Moirosis",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "equal to your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Reduce your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to 0"
+                  }
+                ]
+              }
+            ],
+            "rally": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6621b13590138bc0cdfd35fd",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0374"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 402,
+        "pointer": "/cards/402"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Berserk",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0374"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0374"
+            ],
+            "name": "Berserk",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Rage"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Titan Round you must activate first"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You cannot Block"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Your Titan Power Die is one tier higher"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "On your turn, you must use your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "MovementAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to move towards the closest Target (Titan or Primordial) along the shortest possible path, then use your"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "CombatAction"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to attack it"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You can perform free actions as normal"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you attack a Titan, do not resolve the Attack Sequence, instead that Titan gains +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and suffers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "keyword",
+                    "value": "Knockdown"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "Start of your turn"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Unexhaust 1 Weapon"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "timing",
+                    "value": "End of Battle"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If you still have this card, you die"
+                  }
+                ]
+              }
+            ],
+            "rally": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may test Courage or Will (10+)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_720dfaf6a8d951238d8aaa20",
+      "family": "Kratos",
+      "printedIds": [
+        "EN2590"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 246,
+        "pointer": "/cards/246"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Painful Awakening",
+          "family": "Kratos",
+          "printedIds": [
+            "EN2590"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EN2590"
+            ],
+            "name": "Painful Awakening",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "foundIn": "Secret Deck 15",
+            "faq": [],
+            "errata": {},
+            "secretCardNumber": "252",
+            "flavor": "",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Awaken, then"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Pain tokens"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Regardless of anything, you will die after the Battle (you cannot use a Pygmalion stone to save this Titan)"
+                  }
+                ]
+              }
+            ],
+            "rally": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_96e89e4d94b241193b63cfec",
+      "family": "Kratos",
+      "printedIds": [
+        "AN0372"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 400,
+        "pointer": "/cards/400"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Egolock",
+          "family": "Kratos",
+          "printedIds": [
+            "AN0372"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AN0372"
+            ],
+            "name": "Egolock",
+            "renderType": "Kratos",
+            "cardType": "Kratos",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "flavor": "Someone - or something - is trying to wrest control",
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You are paralyzed"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You cannot move voluntarily, attack, or use actions or abilities, unless stated otherwise"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "When you are attacked, instead of performing the Evasion Roll, immediately die"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Do not resolve any other hit effects and proceed to After Attack"
+                  }
+                ]
+              }
+            ],
+            "rally": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may test Courage ("
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "+)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

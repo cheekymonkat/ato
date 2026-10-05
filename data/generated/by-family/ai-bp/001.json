@@ -1,0 +1,4974 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "AI | BP",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_093d17444d19e018a947aa24",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2526"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 220,
+        "pointer": "/cards/220"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shadowcleaver | Blackflesh Arm",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2526"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2526"
+            ],
+            "name": "Shadowcleaver | Blackflesh Arm",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Highest"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "3+ +1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "d10"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "4",
+              "difficulty": "8",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 4"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "If you gain 10+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": ", you die without a Trauma Draw"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Shadowcleaver"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT-Q",
+                "value": "11",
+                "value2": "9",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "keyword",
+                              "value": "Reverse Unholy Alchemy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "You catch the Primordial mid-transformation and hack away the arm at the shoulder!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Shadowcleaver",
+                      "refID": "DJ2366"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "card (Secret deck 11, card 197)!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Blackflesh Arm"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_19494d43110a2a7b70a182fb",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2517"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 211,
+        "pointer": "/cards/211"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shadepass | Ephemeral Ghost Feet",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2517"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2517"
+            ],
+            "name": "Shadepass | Ephemeral Ghost Feet",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Furthest Titan in front"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Furthest Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Furthest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "3",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "One hit deals 5"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 1 Ambrosia token; two or more hits deal 9"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 2 Ambrosia tokens"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": true,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "4+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Knockdown"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Knockback 10"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Shadepass"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT",
+                "value": "7",
+                "value2": "6",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Somewhere in the cloud of sand and dust is the creature you staggered!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target token"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may perform a Bonus Attack!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Ephemeral Ghost Feet"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_205b4f74a74ce9c329d447f7",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2521"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 215,
+        "pointer": "/cards/215"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blade Cloud | Paracausal Trapmaw",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2521"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2521"
+            ],
+            "name": "Blade Cloud | Paracausal Trapmaw",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Highest"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": false,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "preAttack": "Attack all adjacent Titans",
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "5",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Gain 1 Ambrosia token"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+ Gain 1 negative Precision ("
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Precision"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": ") token"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": true,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Dissipate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Blade Cloud"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT-Q",
+                "value": "12",
+                "value2": "10",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "cardRef",
+                              "value": "Covetous",
+                              "refID": "DL2007"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Place this card on top of the AI deck"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "It has waited for a paradox to cast off these bonds, and that hour has come at last!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Disable the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Shackles of Regret"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Trait"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may perform a Bonus Attack!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Paracausal Trapmaw"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_2c695f3e44b702db4aaa00d5",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2531"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 225,
+        "pointer": "/cards/225"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ur-Doom Unmake | Memory of the First Trench",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2531"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2531"
+            ],
+            "name": "Ur-Doom Unmake | Memory of the First Trench",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": true,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "uber": true,
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Mnemos with the"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "italics",
+                          "value": "Voyage"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Trait"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "PriorityTarget"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Priority Target in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": false,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Judgement"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "8+ +1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "d10"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "2",
+              "difficulty": "11",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Doomed"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Wisdom"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Wisdom/"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Courage"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Courage/"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Will"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Will"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "If the Attack hits, the Titan and the Argonaut die; gain +1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Doom"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "The Dahaka moves to the center of the Board, then turns to face the most Titans"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Ur-Doom Unmake",
+              "interruptEffect": "If no Interrupt Attack, perform next AI"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT-Q",
+                "value": "15",
+                "value2": "12",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "3",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next Ai"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Your strike reaches further and further into the unknown, and suddenly it touches on the monster's master. It is not pleased",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Draw an Obol"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Then the Dahaka dies!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Memory of the First Trench"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_34c4927def2f1fdb8a54add2",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2522"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 216,
+        "pointer": "/cards/216"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fumestorm | Roiling Shadowmass",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2522"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2522"
+            ],
+            "name": "Fumestorm | Roiling Shadowmass",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Zone 2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Zone"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "5",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 1 Ambrosia token"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Dissipate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Fumestorm"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT",
+                "value": "13",
+                "value2": "11",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "keyword",
+                              "value": "Reverse Unholy Alchemy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Can one cripple a sandstorm? You just did!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "keyword",
+                      "value": "Drift"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "becomes Move Unlimited"
+                    }
+                  ]
+                }
+              ],
+              "name": "Roiling Shadowmass"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_3b2fbef4f08de03f8e8ce21b",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2515"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 209,
+        "pointer": "/cards/209"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shadowslash | Folds of the Blackrobe",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2515"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2515"
+            ],
+            "name": "Shadowslash | Folds of the Blackrobe",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in front"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "5",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Gain 1 Ambrosia tokens"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": true,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "2+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Knockdown"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Shadowslash"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT",
+                "value": "7",
+                "value2": "6",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 2 Ambrosia tokens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Where your weapon connects, the robe parts, like a wave crashing on a seawall!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "PriorityTarget"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Priority Target token"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may perform a Bonus Attack!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Folds of the Blackrobe"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4067405f25ac8afda2d721f9",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2532"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 226,
+        "pointer": "/cards/226"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ghost of Luminous Irem | Barren Foam",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2532"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2532"
+            ],
+            "name": "Ghost of Luminous Irem | Barren Foam",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Zone 2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Wish",
+                "Zone"
+              ],
+              "dice": "4",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Gain 1 Midas token for each hit and Ambrosia token you have"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 5"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "7+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Float"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "The Dahaka moves to the center of the Board, then turns to face the most Titans"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Ghost of Luminous Irem",
+              "interruptEffect": "If no Interrupt Attack, perform next AI"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT-Q",
+                "value": "15",
+                "value2": "12",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "2",
+                  "name": "Onyx Dust"
+                },
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Disable the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "keyword",
+                              "value": "Shackles of Regret"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Trait"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Disable the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "keyword",
+                              "value": "Shackles of Regret"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Trait"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Each of your attacks leaves a bit of the Dahaka on the desert floor, and soon you are wading in ashen foam, as if you were emerging on some primordial shore",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Progress"
+                    }
+                  ]
+                }
+              ],
+              "name": "Barren Foam"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_45e745201fb446dbee4a0da9",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2529"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 223,
+        "pointer": "/cards/223"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Bodyflood | Vapor of Godichor",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2529"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2529"
+            ],
+            "name": "Bodyflood | Vapor of Godichor",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Titan in Blindspot"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Mnemos with the"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "italics",
+                          "value": "Voyage"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Trait"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "PriorityTarget"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Priority Target in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "5",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "One hit, raise"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "to 9; two or three hits, you die; four or more hits, you die, and the Argonaut dies"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Bodyflood"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT",
+                "value": "15",
+                "value2": "12",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "2",
+                  "name": "Onyx Dust"
+                },
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 3 Ambrosia tokens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "You winnow through the creature of smog like an unstoppable wind, and suddenly arrive in a pocket of rarified, blessed air",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Permanently gain Ambrosia Limit 6 (once per Argonaut Lifetime)"
+                    }
+                  ]
+                }
+              ],
+              "name": "Vapor of Godichor"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_4f946a169d5dcd7814be0293",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2518"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 212,
+        "pointer": "/cards/212"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Doomspeak | Tattered Cowl",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2518"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2518"
+            ],
+            "name": "Doomspeak | Tattered Cowl",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Curse Afflicition in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "PriorityTarget"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Priority Target in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": false,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Judgement",
+                "Wish"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "3",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Courage/Will"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "One hit, gain the"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "cardRef",
+                          "value": "Covetous",
+                          "refID": "DL2007"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Condition card; two hits, gain the"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "cardRef",
+                          "value": "Greed-crazed",
+                          "refID": "DL2007"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Condition card; three hits, you die"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "The Dahaka moves to the center of the Board, then turns to face the most Titans"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Doomspeak",
+              "interruptEffect": "If no Interrupt Attack, perform next AI"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT-Q",
+                "value": "8",
+                "value2": "7",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "cardRef",
+                              "value": "Fear",
+                              "refID": "AL0299"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "cardRef",
+                              "value": "Wishkeen",
+                              "refID": "DL2011"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Under it you saw your futile future -- and seized it!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Disable the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "keyword",
+                      "value": "Soulrend"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Trait!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Tattered Cowl"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_63b382a234657fe1762d1194",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2525"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 219,
+        "pointer": "/cards/219"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fire from the Depths | Floating Embers",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2525"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2525"
+            ],
+            "name": "Fire from the Depths | Floating Embers",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Titan in Blindspot"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Curse Affliction not in front, in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan not in front, in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in front, in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Wish"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "6+ +2"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "d10"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "4",
+              "difficulty": "8",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "If the Attack hits, gain 3 Ambrosia tokens"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Then, gain +3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "for each Ambrosia token you have"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Dissipate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Fire from the Depths"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT",
+                "value": "12",
+                "value2": "10",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 3 Ambrosia tokens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Discard 1 Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "You fan the embers and embrace the flame that burns away ambrosia. Why does the fire feel wet?",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Remove all Ambrosia tokens from each Titan"
+                    }
+                  ]
+                }
+              ],
+              "name": "Floating Embers"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_6766c1cfbfaeaafe5e797fa9",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2527"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 221,
+        "pointer": "/cards/221"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Tentacles of the Old Smog | Head of Smogsludge",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2527"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2527"
+            ],
+            "name": "Tentacles of the Old Smog | Head of Smogsludge",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Highest"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": false,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "5",
+              "difficulty": "8",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "6+ 4"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "instead"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Lose -1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Rage"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 1 Mnemos or Fated Mnemos node per hit"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 6"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Tentacles of the Old Smog"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT-Q",
+                "value": "16",
+                "value2": "13",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "2",
+                  "name": "Onyx Dust"
+                },
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 4 Ambrosia tokens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Lose 1 Mnemos ?node?"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Your blow shatters the alien face into fine dust... Dust that you then inhale...",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Dahaka Mask",
+                      "refID": "DJ2365"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "card (Secret deck 11, card 196)!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Head of Smogsludge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_7ff4f1a52b27b6b6fc8992f8",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2524"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 218,
+        "pointer": "/cards/218"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Doomwail | Stolen Efreethead",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2524"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2524"
+            ],
+            "name": "Doomwail | Stolen Efreethead",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "PriorityTarget"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Priority Target in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": false,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Judgement",
+                "Wish"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "4",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Courage/Will"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "One Hit,"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Death 2"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "; two hits,"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Death 1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "; three or more hits, you die"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "The Dahaka moves to the center of the Board, then turns to face the most Titans"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Doomwail",
+              "interruptEffect": "If no Interrupt Attack, perform next AI"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT-Q",
+                "value": "11",
+                "value2": "9",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "cardRef",
+                              "value": "Dread",
+                              "refID": "AL0299"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain the"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "cardRef",
+                              "value": "Wishagog",
+                              "refID": "DL2011"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "Condition card"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "As you hit the djinn-like face, it collapses on itself with a lustrous glimmer",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Wish Attacks become normal Attacks!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Stolen Efreethead"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b9ffac84c33d9d6082a50377",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2516"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 210,
+        "pointer": "/cards/210"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shadowpierce | Shadowspicule",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2516"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2516"
+            ],
+            "name": "Shadowpierce | Shadowspicule",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan not in front"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Curse Affliction in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "dice": "4",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "If the Attack hits, it deals 8"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": ", gain 2 Ambrosia tokens, Pushback 1"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": true,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "3+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Knockdown"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Shadowpierce"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT",
+                "value": "8",
+                "value2": "7",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 2 Ambrosia"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "As the needle rushes toward you like floodwater, you flow around it!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Resolve a Fated Mnemos! Immediately resolve the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "italics",
+                      "value": "Memory of the Boiling Sea"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Special Event"
+                    }
+                  ]
+                }
+              ],
+              "name": "Shadowspicule"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c49e615bdeda58f5fcc6e68a",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2528"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 222,
+        "pointer": "/cards/222"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Soot Nebula | Starless Canvas",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2528"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2528"
+            ],
+            "name": "Soot Nebula | Starless Canvas",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Zone 3"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "5+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Soulrend"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "4",
+              "difficulty": "9",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 4"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 1 Ambrosia token"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Dissipate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Soot Nebula"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT",
+                "value": "17",
+                "value2": "14",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "3",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Raise"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "icon",
+                              "value": "Danger"
+                            },
+                            {
+                              "type": "whitespace",
+                              "value": " "
+                            },
+                            {
+                              "type": "plainText",
+                              "value": "to 9, draw an Obol"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "keyword",
+                              "value": "Reverse Unholy Alchemy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Fathomless depths stare into you, but you do not blink!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Deal an additional Single Wound! After the Battle, resolve the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "italics",
+                      "value": "Trench and the Cosmos"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "Special Event"
+                    }
+                  ]
+                }
+              ],
+              "name": "Starless Canvas"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dc78b47c6103dd8585771159",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2519"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 213,
+        "pointer": "/cards/213"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Fumewave | Carcass of Hazes",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2519"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2519"
+            ],
+            "name": "Fumewave | Carcass of Hazes",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "I",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Titan in Blindpost"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Regular"
+              ],
+              "attackBanners": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "3+ +1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "d10"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "dice": "4",
+              "difficulty": "8",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "and 1 Ambrosia token"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": false,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 4"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Fumewave"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT",
+                "value": "7",
+                "value2": "6",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Knockdown"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Knockdown 10"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Knockdown"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Knockback 7"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "As you strike, the Dahaka envelopes you. Things slither across your skin, neither solid, nor liquid!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "The Dahaka gains 1 negative To Hit"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "ToHit"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "token"
+                    }
+                  ]
+                }
+              ],
+              "name": "Carcass of Hazes"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ec10006a27dade13f917b87e",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2530"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 224,
+        "pointer": "/cards/224"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Endless Dragon | Stormcloud Heart",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2530"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2530"
+            ],
+            "name": "Endless Dragon | Stormcloud Heart",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "III",
+              "targeting": [],
+              "preActionWoO": false,
+              "moveType": "",
+              "moveLocation": null,
+              "attackType": [
+                "Drown",
+                "Curse"
+              ],
+              "dice": "",
+              "difficulty": "",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Heal 1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Endless Dragon",
+              "interruptEffect": "If no Interrupt Attack, shuffle this card and the discard pile into the deck, then draw another AI card"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "III",
+              "defense": {
+                "type": "AT-Q",
+                "value": "17",
+                "value2": "14",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                },
+                {
+                  "count": "2",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Instinct",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Your attack causes a cascade of implosions in the rumble heart, now more a maelstrom of inscrutable black. It stiffens suddenly, like a fresh corpse",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain the"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "cardRef",
+                      "value": "Dahaka Blade",
+                      "refID": "DJ2364"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Gear"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "card (Secret deck 11, card 195)!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Stormcloud Heart"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eff92dc9489fb443ddd3f57b",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2520"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 214,
+        "pointer": "/cards/214"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Blackdraught | Coils of Smoke",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2520"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2520"
+            ],
+            "name": "Blackdraught | Coils of Smoke",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Mnemos with the"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "italics",
+                          "value": "Voyage"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Trait"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "PriorityTarget"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "Priority Target in sight"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Closest Titan in sight"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "Drift",
+              "moveLocation": null,
+              "attackType": [
+                "Zone"
+              ],
+              "attackDiagram": [
+                "WWWWWWWWWWWWWWWWWWWWWWWWW",
+                "WWWWWWWWWPPBBBBBBWWWWWWWW",
+                "WWWWWWWWWPPBBBBBBWWWWWWWW",
+                "WWWWWWWWWWWWWWWWWWWWWWWWW"
+              ],
+              "dice": "5",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 4"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Gain 1 Ambrosia"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "banner": true,
+                  "WoO": true,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "icon",
+                          "value": "Fate"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "plainText",
+                          "value": "4+"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "keyword",
+                          "value": "Knockdown"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Knockback 5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": true,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "keyword",
+                          "value": "Shadowstep 5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Blackdraught"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "I",
+              "defense": {
+                "type": "AT-Q",
+                "value": "7",
+                "value2": "6",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Onyx Dust"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Interrupt Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Gain 2 Ambrosia tokens"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "As you frantically dispel the tentacled smoke, possible pasts flicker before your eyes",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Gain 1 Mnemos node for a chosen Mnemos"
+                    }
+                  ]
+                }
+              ],
+              "name": "Coils of Smoke"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fce1a404c02828a87e2255ef",
+      "family": "AI | BP",
+      "printedIds": [
+        "DR2523"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 217,
+        "pointer": "/cards/217"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Ebonshard Whirlpool | Bones of Smoke and Sand",
+          "family": "AI | BP",
+          "printedIds": [
+            "DR2523"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2523"
+            ],
+            "name": "Ebonshard Whirlpool | Bones of Smoke and Sand",
+            "renderType": "AI | BP",
+            "cardType": "AI | BP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Tarot",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dahaka",
+            "uber": false,
+            "Attack": {
+              "cardType": "AI | BP",
+              "usedFor": "Dahaka",
+              "flavor": [],
+              "level": "II",
+              "targeting": [
+                {
+                  "type": "Target:",
+                  "target": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Zone 2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preActionWoO": true,
+              "moveType": "None",
+              "moveLocation": null,
+              "attackType": [
+                "Zone"
+              ],
+              "dice": "3",
+              "difficulty": "10",
+              "consequences": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit discard 1"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Gear"
+                        }
+                      ]
+                    },
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "Each hit deals 3"
+                        },
+                        {
+                          "type": "whitespace",
+                          "value": " "
+                        },
+                        {
+                          "type": "icon",
+                          "value": "Danger"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "preAfterAttackWoO": true,
+              "afterFinal": true,
+              "afterAttackEffects": [
+                {
+                  "banner": false,
+                  "WoO": false,
+                  "effect": [
+                    {
+                      "abilityText": [
+                        {
+                          "type": "plainText",
+                          "value": "The Dahaka moves to the center of the Board, then turns to face the most Titans"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Ebonshard Whirlpool",
+              "interruptEffect": "If no Interrupt Attack, perform next AI"
+            },
+            "BP": {
+              "usedFor": "Dahaka",
+              "level": "II",
+              "defense": {
+                "type": "AT",
+                "value": "13",
+                "value2": "11",
+                "comboType": "Interrupt"
+              },
+              "resources": [
+                {
+                  "count": "1",
+                  "name": "Ire Essence"
+                }
+              ],
+              "nonResponseText": "",
+              "responses": [
+                {
+                  "type": "Fail",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "plainText",
+                              "value": "Perform next AI"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Interrupt Wound",
+                  "effects": [
+                    {
+                      "effect": [
+                        {
+                          "abilityText": [
+                            {
+                              "type": "keyword",
+                              "value": "Reverse Unholy Alchemy"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "critFlavor": "Your weapon passes through the thick cloud unimpeded, yet you hear a bone-chilling crack!",
+              "critResponse": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Another Titan may perform a Bonus Attack!"
+                    }
+                  ]
+                }
+              ],
+              "name": "Bones of Smoke and Sand"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

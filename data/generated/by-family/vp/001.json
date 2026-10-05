@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "VP",
+  "part": 1,
+  "cards": [
+    {
+      "id": "def_a4755f86bb0fe1a73d8082a2",
+      "family": "VP",
+      "printedIds": [
+        "CX1679"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 224,
+        "pointer": "/cards/224"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sun Descendant VPs",
+          "family": "VP",
+          "printedIds": [
+            "CX1679"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CX1679"
+            ],
+            "name": "Sun Descendant VPs",
+            "renderType": "VP",
+            "cardType": "VP",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Half-Page",
+            "faq": [],
+            "errata": {},
+            "figure_size": "",
+            "diagramEffects": [],
+            "vp": {
+              "vpCount": "3",
+              "climbTest": {
+                "stat": "Climb",
+                "difficulty": "("
+              },
+              "holdOn": {
+                "test": "Endurance 7+",
+                "fail": "Knockdown, gain @Danger equal to VP level, displace to any adjacent space"
+              },
+              "effects": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "When on VP I and VP II: you gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Power"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "newline"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "plainText",
+                      "value": "WHen on VP III: you gain +2"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Power"
+                    }
+                  ]
+                }
+              ]
+            },
+            "levels": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c7f57aca9f6787e86a379eee",
+      "family": "VP",
+      "printedIds": [
+        "DV2539"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 292,
+        "pointer": "/cards/292"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Eclipse Point",
+          "family": "VP",
+          "printedIds": [
+            "DV2539"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DV2539"
+            ],
+            "name": "Eclipse Point",
+            "renderType": "VP",
+            "cardType": "VP",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "foundIn": "Envelope Y",
+            "faq": [],
+            "errata": {},
+            "figure_size": "",
+            "diagramEffects": [],
+            "vp": {
+              "vpCount": "1",
+              "climbTest": {
+                "stat": "Fury",
+                "difficulty": "1"
+              },
+              "holdOn": {
+                "test": "",
+                "fail": "After you perform an Attack, or at the end of the Primordial Round, place your Titan on any empty space on the Board"
+              },
+              "effects": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "VP is always Shaded"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "While on the VP, gain +1"
+                    },
+                    {
+                      "type": "whitespace",
+                      "value": " "
+                    },
+                    {
+                      "type": "icon",
+                      "value": "Power"
+                    }
+                  ]
+                },
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "You may perform Combined Attacks"
+                    }
+                  ]
+                }
+              ]
+            },
+            "levels": []
+          }
+        }
+      ]
+    }
+  ]
+}

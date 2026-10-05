@@ -1,0 +1,1304 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Attack",
+  "part": 5,
+  "cards": [
+    {
+      "id": "def_fd674b5648e5e3b403f5c906",
+      "family": "Attack",
+      "printedIds": [
+        "CR1711"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 105,
+        "pointer": "/cards/105"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Unholy Sun",
+          "family": "Attack",
+          "printedIds": [
+            "CR1711"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CR1711"
+            ],
+            "name": "Unholy Sun",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Icarian Harpy",
+            "flavor": [],
+            "level": "III",
+            "uber": true,
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "All Titans in sight"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAction": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Regurgitate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "None",
+            "moveLocation": "",
+            "attackType": [
+              "Range",
+              "Simultaneous"
+            ],
+            "rangeSize": "10",
+            "dice": "5",
+            "difficulty": "10",
+            "consequences": [
+              {
+                "banner": true,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "Fate"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "8+: Double the Pull"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Bleeding 2"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Pull 1+2 per hit until adjacent"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Then, if adjacent, each hits deals 3"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": ","
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Knockdown"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "If not, each hit deals 2"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": true,
+            "afterFinal": true,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Consume all adjacent knocked down Titans"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fe68abbf72122c52663fe371",
+      "family": "Attack",
+      "printedIds": [
+        "ER3029"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 260,
+        "pointer": "/cards/260"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Shredding",
+          "family": "Attack",
+          "printedIds": [
+            "ER3029"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3029"
+            ],
+            "name": "Shredding",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Dragon of Phobos",
+            "flavor": [],
+            "level": "II",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "PriorityTarget"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Priority Target"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Closest Titan in sight"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAction": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Gain 2 Despair tokens"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "Move",
+            "moveLocation": "",
+            "attackType": [
+              "Regular"
+            ],
+            "attackBanners": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "Fate"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "6+: +2"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "d10"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "dice": "4",
+            "difficulty": "10",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Each hit deals 2"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "and 1 Ambrosia token"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Four or more hits, additionally gain the"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "cardRef",
+                        "value": "Holy Terror",
+                        "refID": "EL2596"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Condition card"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": false,
+            "afterFinal": false,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Vanish 4"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fe94a2cb22b7b4d5fbff8a13",
+      "family": "Attack",
+      "printedIds": [
+        "DR2409"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 160,
+        "pointer": "/cards/160"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "The Horn of Crooked Alchemy",
+          "family": "Attack",
+          "printedIds": [
+            "DR2409"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2409"
+            ],
+            "name": "The Horn of Crooked Alchemy",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Midascore",
+            "flavor": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "The Invisible Horn of the market bears down on you"
+                  }
+                ]
+              }
+            ],
+            "level": "III",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Closest Titan in front"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Closest Titan in sight"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": false,
+            "moveType": "None",
+            "moveLocation": "",
+            "attackType": [
+              "Judgement"
+            ],
+            "dice": "X",
+            "difficulty": "10",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "X is the number of Midas tokens you have (minimum 3)"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "newline"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Courage"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Courage/"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Will"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Will"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "newline"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Each hit deals 4"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "and"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "keyword",
+                        "value": "Midas 1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": true,
+            "afterFinal": false,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Airburst 4"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_feb2746a52ffde724e032a3d",
+      "family": "Attack",
+      "printedIds": [
+        "DR2449"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 181,
+        "pointer": "/cards/181"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Four Corners of the World",
+          "family": "Attack",
+          "printedIds": [
+            "DR2449"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DR2449"
+            ],
+            "name": "Four Corners of the World",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Demidjinn",
+            "flavor": [],
+            "level": "III",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Furthest Titan in front"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Furthest Titan in sight"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "Move",
+            "moveLocation": "",
+            "attackType": [
+              "Regular"
+            ],
+            "dice": "4",
+            "difficulty": "8",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "One hit deals 5"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "; two hits deals 10"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "; three or more hits, you die"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": true,
+            "afterFinal": false,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Wish Away"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fed83056ea342349db4a48d2",
+      "family": "Attack",
+      "printedIds": [
+        "AR0400"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 429,
+        "pointer": "/cards/429"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Omnipunch",
+          "family": "Attack",
+          "printedIds": [
+            "AR0400"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AR0400"
+            ],
+            "name": "Omnipunch",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Hekaton",
+            "flavor": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "As if it was a sea urchin, the Primordial extends all of its limbs in every direction, punching everything at arms' length"
+                  }
+                ]
+              }
+            ],
+            "level": "II",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "All adjacent Titans"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "No Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Perform Signature"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "None",
+            "moveLocation": "",
+            "attackType": [
+              "Simultaneous"
+            ],
+            "dice": "3",
+            "difficulty": "9",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Each hit deals 1"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "banner": true,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "Fate"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "4+: 2"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "instead"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "banner": false,
+                "WoO": true,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Knockback 5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ff1399123f455e1999b6247b",
+      "family": "Attack",
+      "printedIds": [
+        "BR0790"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 32,
+        "pointer": "/cards/32"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Livor Pooling",
+          "family": "Attack",
+          "printedIds": [
+            "BR0790"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BR0790"
+            ],
+            "name": "Livor Pooling",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Chimera Metastasios",
+            "flavor": [],
+            "level": "II",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Zone 2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "None",
+            "moveLocation": "",
+            "attackType": [
+              "Zone"
+            ],
+            "attackDiagram": [
+              "WWWWWWWWWWWAAAWWWWWWWWWWW",
+              "WWWWWWWWWWWAAAWWWWWWWWWWW",
+              "WWWWWWWWWWWAAAWWWWWWWWWWW",
+              "WWWWWWWWAAAPPPAAAWWWWWWWW",
+              "WWWWWWWWAAAPPPAAAWWWWWWWW",
+              "WWWWWWWWAAAPPPAAAWWWWWWWW",
+              "WWWWWWWWWWWAAAWWWWWWWWWWW",
+              "WWWWWWWWWWWAAAWWWWWWWWWWW",
+              "WWWWWWWWWWWAAAWWWWWWWWWWW"
+            ],
+            "dice": "2",
+            "difficulty": "9",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Gain 1 Ambrosia token per hit"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Each hit deals 2"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "banner": true,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "Fate"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "6+: 3"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "instead"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": true,
+            "afterFinal": true,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Place all Ambrosia Trail tiles around the Chimera (adjacent, one on each side)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ff72c06949f7925ed0271af8",
+      "family": "Attack",
+      "printedIds": [
+        "ER3068"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 280,
+        "pointer": "/cards/280"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Flashfire",
+          "family": "Attack",
+          "printedIds": [
+            "ER3068"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "ER3068"
+            ],
+            "name": "Flashfire",
+            "renderType": "Attack",
+            "cardType": "AI",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Standard",
+            "faq": [],
+            "errata": {},
+            "usedFor": "Meduketos",
+            "flavor": [],
+            "level": "II",
+            "targeting": [
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Titan on VP"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Most Light"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "Target:",
+                "target": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "PriorityTarget"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Priority Target"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preActionWoO": true,
+            "moveType": "Move Lateral",
+            "moveLocation": "",
+            "attackType": [
+              "Microwave"
+            ],
+            "attackBanners": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "icon",
+                        "value": "Fate"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "6+: Gain the"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "cardRef",
+                        "value": "Terror",
+                        "refID": "EL2596"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "Condition card"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "laserCount": "1",
+            "dice": "2",
+            "difficulty": "10",
+            "consequences": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Gain 2 Ambrosia tokens"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "keyword",
+                        "value": "Burn"
+                      }
+                    ]
+                  },
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Each hit deals 4"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "icon",
+                        "value": "Danger"
+                      },
+                      {
+                        "type": "whitespace",
+                        "value": " "
+                      },
+                      {
+                        "type": "plainText",
+                        "value": "and 1 Despair token"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "preAfterAttackWoO": false,
+            "afterFinal": false,
+            "afterAttackEffects": [
+              {
+                "banner": false,
+                "WoO": false,
+                "effect": [
+                  {
+                    "abilityText": [
+                      {
+                        "type": "plainText",
+                        "value": "Gain 1 Ambrosia token"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

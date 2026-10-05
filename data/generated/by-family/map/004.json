@@ -1,0 +1,8036 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Map",
+  "part": 4,
+  "cards": [
+    {
+      "id": "def_b95451edccc3c64486e718cd",
+      "family": "Map",
+      "printedIds": [
+        "A043"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 43,
+        "pointer": "/cards/43"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "043",
+          "family": "Map",
+          "printedIds": [
+            "A043"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A043"
+            ],
+            "name": "043",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "042"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "044"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b981b1bc15973eeabea3ce60",
+      "family": "Map",
+      "printedIds": [
+        "C058"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 241,
+        "pointer": "/cards/241"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "058",
+          "family": "Map",
+          "printedIds": [
+            "C058"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C058"
+            ],
+            "name": "058",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [
+              "FuturePortal"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "060"
+                },
+                {
+                  "nextTile": "P 090"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b988a184d7c3f73121d50131",
+      "family": "Map",
+      "printedIds": [
+        "D032"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 259,
+        "pointer": "/cards/259"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "032",
+          "family": "Map",
+          "printedIds": [
+            "D032"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D032"
+            ],
+            "name": "032",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Aristotelians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "041"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "023"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "033"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_b9fba7c213565710392800f4",
+      "family": "Map",
+      "printedIds": [
+        "C028"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 211,
+        "pointer": "/cards/211"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "028",
+          "family": "Map",
+          "printedIds": [
+            "C028"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C028"
+            ],
+            "name": "028",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Sunheirs"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "029"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "024"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ba156f6b406ff08dcc6519a7",
+      "family": "Map",
+      "printedIds": [
+        "A021"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 21,
+        "pointer": "/cards/21"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "021",
+          "family": "Map",
+          "printedIds": [
+            "A021"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A021"
+            ],
+            "name": "021",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Minoans"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "016"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "026"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ba2e9674c4e916c887374afa",
+      "family": "Map",
+      "printedIds": [
+        "A079"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 79,
+        "pointer": "/cards/79"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "079",
+          "family": "Map",
+          "printedIds": [
+            "A079"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A079"
+            ],
+            "name": "079",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "074"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "078"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "080"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ba84dd318e673aab3b98a8ce",
+      "family": "Map",
+      "printedIds": [
+        "C061"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 244,
+        "pointer": "/cards/244"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "061",
+          "family": "Map",
+          "printedIds": [
+            "C061"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C061"
+            ],
+            "name": "061",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "062"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "063"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bbfd20eea6ac8fcb7947f64c",
+      "family": "Map",
+      "printedIds": [
+        "D051"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 278,
+        "pointer": "/cards/278"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "051",
+          "family": "Map",
+          "printedIds": [
+            "D051"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D051"
+            ],
+            "name": "051",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "060"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "050"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bc128cc29bd93a373ce0d9cc",
+      "family": "Map",
+      "printedIds": [
+        "D018"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 245,
+        "pointer": "/cards/245"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "018",
+          "family": "Map",
+          "printedIds": [
+            "D018"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D018"
+            ],
+            "name": "018",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "027"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "017"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "009"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bc3a41a725f260907850abff",
+      "family": "Map",
+      "printedIds": [
+        "B034"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 137,
+        "pointer": "/cards/137"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "034",
+          "family": "Map",
+          "printedIds": [
+            "B034"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B034"
+            ],
+            "name": "034",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "027"
+                }
+              ],
+              "west": [
+                {
+                  "lock": "Upstream",
+                  "nextTile": "033"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "040"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "035"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bc4929a89fe2dd0719b0146f",
+      "family": "Map",
+      "printedIds": [
+        "D017"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 244,
+        "pointer": "/cards/244"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "017",
+          "family": "Map",
+          "printedIds": [
+            "D017"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D017"
+            ],
+            "name": "017",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Aristotelians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "026"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "016"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "008"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "018"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bc630686282546d878d66793",
+      "family": "Map",
+      "printedIds": [
+        "E023"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 363,
+        "pointer": "/cards/363"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "023",
+          "family": "Map",
+          "printedIds": [
+            "E023"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E023"
+            ],
+            "name": "023",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "013"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "022"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "033"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "024"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "023",
+          "family": "Map",
+          "printedIds": [
+            "E023"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E023"
+            ],
+            "name": "023",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "013"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "022"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "024"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "Map clue *1*7"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bd405cea2d08282d0d4b51a8",
+      "family": "Map",
+      "printedIds": [
+        "A060"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 60,
+        "pointer": "/cards/60"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "060",
+          "family": "Map",
+          "printedIds": [
+            "A060"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A060"
+            ],
+            "name": "060",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Minoans"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "AdventureHub",
+              "MinotaurTemple"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "055"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "065"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bd6ad290f2da29823d025584",
+      "family": "Map",
+      "printedIds": [
+        "B023"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 126,
+        "pointer": "/cards/126"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "023",
+          "family": "Map",
+          "printedIds": [
+            "B023"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B023"
+            ],
+            "name": "023",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cyclopes"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "lock": "SecondCataract",
+                  "nextTile": "016"
+                }
+              ],
+              "south": [
+                {
+                  "lock": "Upstream",
+                  "nextTile": "030"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "024"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bd6dc7364dea4ae87fd8173b",
+      "family": "Map",
+      "printedIds": [
+        "D003"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 230,
+        "pointer": "/cards/230"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "003",
+          "family": "Map",
+          "printedIds": [
+            "D003"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D003"
+            ],
+            "name": "003",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Aristotelians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "GraveoftheAnemoi"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "012"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "002"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "004"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_bd8d6ec5abcbc943ba08cfad",
+      "family": "Map",
+      "printedIds": [
+        "B081"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 184,
+        "pointer": "/cards/184"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "081",
+          "family": "Map",
+          "printedIds": [
+            "B081"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B081"
+            ],
+            "name": "081",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "074"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "080"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "082"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_be7cec5b3e54cc7093e4d5c3",
+      "family": "Map",
+      "printedIds": [
+        "B031"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 134,
+        "pointer": "/cards/134"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "031",
+          "family": "Map",
+          "printedIds": [
+            "B031"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B031"
+            ],
+            "name": "031",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots",
+              "Cyclopes"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "024"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "032"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c0fec8cbbe84b8adff5d998a",
+      "family": "Map",
+      "printedIds": [
+        "A047"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 47,
+        "pointer": "/cards/47"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "047",
+          "family": "Map",
+          "printedIds": [
+            "A047"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A047"
+            ],
+            "name": "047",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "046"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "052"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "048"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c129a186a28548a0976c3332",
+      "family": "Map",
+      "printedIds": [
+        "E066"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 406,
+        "pointer": "/cards/406"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "066",
+          "family": "Map",
+          "printedIds": [
+            "E066"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E066"
+            ],
+            "name": "066",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "056"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "067"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "066",
+          "family": "Map",
+          "printedIds": [
+            "E066"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E066"
+            ],
+            "name": "066",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "056"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "067"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c144ee8226fc50f8ae5d0e91",
+      "family": "Map",
+      "printedIds": [
+        "E079"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 419,
+        "pointer": "/cards/419"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "079",
+          "family": "Map",
+          "printedIds": [
+            "E079"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E079"
+            ],
+            "name": "079",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "069"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "078"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "080"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "079",
+          "family": "Map",
+          "printedIds": [
+            "E079"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E079"
+            ],
+            "name": "079",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "078"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "080"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c1d53bc11155efed2409855d",
+      "family": "Map",
+      "printedIds": [
+        "E049"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 389,
+        "pointer": "/cards/389"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "049",
+          "family": "Map",
+          "printedIds": [
+            "E049"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E049"
+            ],
+            "name": "049",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "039"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "050"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "049",
+          "family": "Map",
+          "printedIds": [
+            "E049"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E049"
+            ],
+            "name": "049",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "039"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "050"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c21492c1a6582e1459fb4723",
+      "family": "Map",
+      "printedIds": [
+        "B014"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 117,
+        "pointer": "/cards/117"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "014",
+          "family": "Map",
+          "printedIds": [
+            "B014"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B014"
+            ],
+            "name": "014",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Symmachy"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "006"
+                }
+              ],
+              "south": [
+                {
+                  "lock": "Upstream",
+                  "nextTile": "021"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "015"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c2512b5398e41b3f6d0873d5",
+      "family": "Map",
+      "printedIds": [
+        "B038"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 141,
+        "pointer": "/cards/141"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "038",
+          "family": "Map",
+          "printedIds": [
+            "B038"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B038"
+            ],
+            "name": "038",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "032"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "045"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "039"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c27be7d13ead865127880767",
+      "family": "Map",
+      "printedIds": [
+        "C012"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 195,
+        "pointer": "/cards/195"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "012",
+          "family": "Map",
+          "printedIds": [
+            "C012"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C012"
+            ],
+            "name": "012",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "TimeWound"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "005"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "011"
+                },
+                {
+                  "nextTile": "W 021/023"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c4e5e3ac25f7696559dfc1af",
+      "family": "Map",
+      "printedIds": [
+        "B015"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 118,
+        "pointer": "/cards/118"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "015",
+          "family": "Map",
+          "printedIds": [
+            "B015"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B015"
+            ],
+            "name": "015",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Symmachy"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "007"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "014"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "022"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c4e76f2520b6257e56c0ec55",
+      "family": "Map",
+      "printedIds": [
+        "D011"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 238,
+        "pointer": "/cards/238"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "011",
+          "family": "Map",
+          "printedIds": [
+            "D011"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D011"
+            ],
+            "name": "011",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Aristotelians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "020"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "010"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "002"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "012"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c5cf02752beb35912ecb25a1",
+      "family": "Map",
+      "printedIds": [
+        "C062"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 245,
+        "pointer": "/cards/245"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "062",
+          "family": "Map",
+          "printedIds": [
+            "C062"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C062"
+            ],
+            "name": "062",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [
+              "ChariotA"
+            ],
+            "movementArrows": {
+              "south": [
+                {
+                  "nextTile": "061"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c60f8efcc4691a067a813d4b",
+      "family": "Map",
+      "printedIds": [
+        "A077"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 77,
+        "pointer": "/cards/77"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "077",
+          "family": "Map",
+          "printedIds": [
+            "A077"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A077"
+            ],
+            "name": "077",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "072"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "076"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "078"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c72f46812eb068f40c849ff0",
+      "family": "Map",
+      "printedIds": [
+        "A056"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 56,
+        "pointer": "/cards/56"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "056",
+          "family": "Map",
+          "printedIds": [
+            "A056"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A056"
+            ],
+            "name": "056",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "(River) 020"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "(River) 061"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "River"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c73052082c6a10072db4cf09",
+      "family": "Map",
+      "printedIds": [
+        "C068"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 251,
+        "pointer": "/cards/251"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "068",
+          "family": "Map",
+          "printedIds": [
+            "C068"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C068"
+            ],
+            "name": "068",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Sunheirs"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "TimeWound"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "069"
+                },
+                {
+                  "nextTile": "W 087"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "064"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c738f738dbd25b1faf56900a",
+      "family": "Map",
+      "printedIds": [
+        "C065"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 248,
+        "pointer": "/cards/248"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "065",
+          "family": "Map",
+          "printedIds": [
+            "C065"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C065"
+            ],
+            "name": "065",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "Lighthouse"
+            ],
+            "movementArrows": {
+              "south": [
+                {
+                  "nextTile": "064"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c7de8fea12aba3b3541c7cb0",
+      "family": "Map",
+      "printedIds": [
+        "E069"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 409,
+        "pointer": "/cards/409"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "069",
+          "family": "Map",
+          "printedIds": [
+            "E069"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E069"
+            ],
+            "name": "069",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "068"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "079"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "070"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "069",
+          "family": "Map",
+          "printedIds": [
+            "E069"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E069"
+            ],
+            "name": "069",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "068"
+                },
+                {
+                  "nextTile": "068"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "070"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c841625a2e6f2766bb3eea58",
+      "family": "Map",
+      "printedIds": [
+        "C090"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 273,
+        "pointer": "/cards/273"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "090",
+          "family": "Map",
+          "printedIds": [
+            "C090"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C090"
+            ],
+            "name": "090",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Sunheirs"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "FuturePortal"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "085"
+                },
+                {
+                  "nextTile": "P 058"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c9097186bee81d062cae654a",
+      "family": "Map",
+      "printedIds": [
+        "E006"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 346,
+        "pointer": "/cards/346"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "006",
+          "family": "Map",
+          "printedIds": [
+            "E006"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E006"
+            ],
+            "name": "006",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "005"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "016"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "007"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "006",
+          "family": "Map",
+          "printedIds": [
+            "E006"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E006"
+            ],
+            "name": "006",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "005"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "016"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c992d55b8ff018eb230f483d",
+      "family": "Map",
+      "printedIds": [
+        "E048"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 388,
+        "pointer": "/cards/388"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "048",
+          "family": "Map",
+          "printedIds": [
+            "E048"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E048"
+            ],
+            "name": "048",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "038"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "047"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "058"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "049"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "048",
+          "family": "Map",
+          "printedIds": [
+            "E048"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E048"
+            ],
+            "name": "048",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "038"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "047"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "058"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "049"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_c9b31cc203b2c186096c6d71",
+      "family": "Map",
+      "printedIds": [
+        "E038"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 378,
+        "pointer": "/cards/378"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "038",
+          "family": "Map",
+          "printedIds": [
+            "E038"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E038"
+            ],
+            "name": "038",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "south": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "039"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "038",
+          "family": "Map",
+          "printedIds": [
+            "E038"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E038"
+            ],
+            "name": "038",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "lock": "UnderwaterCave",
+                  "nextTile": "028"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "039"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ca1d907737e2a52f0ad7034f",
+      "family": "Map",
+      "printedIds": [
+        "A038"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 38,
+        "pointer": "/cards/38"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "038",
+          "family": "Map",
+          "printedIds": [
+            "A038"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A038"
+            ],
+            "name": "038",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "033"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "037"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "039"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cd34d9bfd3d3de0e0c37afbc",
+      "family": "Map",
+      "printedIds": [
+        "E059"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 399,
+        "pointer": "/cards/399"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "059",
+          "family": "Map",
+          "printedIds": [
+            "E059"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E059"
+            ],
+            "name": "059",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "a",
+                  "nextTile": "049"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "058"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "058"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "069"
+                }
+              ],
+              "east": [
+                {
+                  "split": "a",
+                  "nextTile": "060"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "060"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "059",
+          "family": "Map",
+          "printedIds": [
+            "E059"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E059"
+            ],
+            "name": "059",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "UnderwaterCity"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "a",
+                  "nextTile": "049"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "058"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "058"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "069"
+                }
+              ],
+              "east": [
+                {
+                  "split": "a",
+                  "nextTile": "060"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "060"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cd3a3963371c0ed5e24557a9",
+      "family": "Map",
+      "printedIds": [
+        "A318"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 84,
+        "pointer": "/cards/84"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "018",
+          "family": "Map",
+          "printedIds": [
+            "A318"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A318"
+            ],
+            "name": "018",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Minoans"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "017"
+                }
+              ],
+              "east": [
+                {
+                  "split": "b",
+                  "nextTile": "019"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cd64e3a1d975aff5549fb563",
+      "family": "Map",
+      "printedIds": [
+        "A019"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 19,
+        "pointer": "/cards/19"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "019",
+          "family": "Map",
+          "printedIds": [
+            "A019"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A019"
+            ],
+            "name": "019",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "014"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "018"
+                }
+              ],
+              "south": [
+                {
+                  "lock": "River",
+                  "nextTile": "024"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "Map Clue *1*6"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cd761adb4dfb1b80aeb72715",
+      "family": "Map",
+      "printedIds": [
+        "A013"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 13,
+        "pointer": "/cards/13"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "013",
+          "family": "Map",
+          "printedIds": [
+            "A013"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A013"
+            ],
+            "name": "013",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Minoans"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "008"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "012"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "018"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "014"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cdf7c4768070fa6bec439692",
+      "family": "Map",
+      "printedIds": [
+        "A031"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 31,
+        "pointer": "/cards/31"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "031",
+          "family": "Map",
+          "printedIds": [
+            "A031"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A031"
+            ],
+            "name": "031",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "026"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "036"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "032"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ce8ff1c96ed823eb3c322e25",
+      "family": "Map",
+      "printedIds": [
+        "E033"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 373,
+        "pointer": "/cards/373"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "033",
+          "family": "Map",
+          "printedIds": [
+            "E033"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E033"
+            ],
+            "name": "033",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "023"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "043"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "034"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "033",
+          "family": "Map",
+          "printedIds": [
+            "E033"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E033"
+            ],
+            "name": "033",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "south": [
+                {
+                  "nextTile": "043"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "034"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cf44e0232771573afc129263",
+      "family": "Map",
+      "printedIds": [
+        "A078"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 78,
+        "pointer": "/cards/78"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "078",
+          "family": "Map",
+          "printedIds": [
+            "A078"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A078"
+            ],
+            "name": "078",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "073"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "077"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "079"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": [
+              "0211"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cf46c58c050eb9978240d1d1",
+      "family": "Map",
+      "printedIds": [
+        "D053"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 280,
+        "pointer": "/cards/280"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "053",
+          "family": "Map",
+          "printedIds": [
+            "D053"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D053"
+            ],
+            "name": "053",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "062"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "052"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "044"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "054"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_cfbefbab31b6f5af49bc765a",
+      "family": "Map",
+      "printedIds": [
+        "B068"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 171,
+        "pointer": "/cards/171"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "068",
+          "family": "Map",
+          "printedIds": [
+            "B068"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B068"
+            ],
+            "name": "068",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "061"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "067"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "075"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "069"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d24b8849736a776a1f92287f",
+      "family": "Map",
+      "printedIds": [
+        "C064"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 247,
+        "pointer": "/cards/247"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "064",
+          "family": "Map",
+          "printedIds": [
+            "C064"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C064"
+            ],
+            "name": "064",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "063"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "068"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d3f6c3096e30804bc4ab4858",
+      "family": "Map",
+      "printedIds": [
+        "C074"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 257,
+        "pointer": "/cards/257"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "074",
+          "family": "Map",
+          "printedIds": [
+            "C074"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C074"
+            ],
+            "name": "074",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "075"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "078"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d49cb7e8fb88696020c071b4",
+      "family": "Map",
+      "printedIds": [
+        "A015"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 15,
+        "pointer": "/cards/15"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "015",
+          "family": "Map",
+          "printedIds": [
+            "A015"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A015"
+            ],
+            "name": "015",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "010"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "014"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "051"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d4b12bcaebc6aca65614696d",
+      "family": "Map",
+      "printedIds": [
+        "E051"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 391,
+        "pointer": "/cards/391"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "051",
+          "family": "Map",
+          "printedIds": [
+            "E051"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E051"
+            ],
+            "name": "051",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "City",
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "041"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "061"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "051",
+          "family": "Map",
+          "printedIds": [
+            "E051"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E051"
+            ],
+            "name": "051",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "041"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "061"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": [
+              "Spiral",
+              "25",
+              ">",
+              "Spiral",
+              "14(?)"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d65a184a913b748018e96e35",
+      "family": "Map",
+      "printedIds": [
+        "E073"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 413,
+        "pointer": "/cards/413"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "073",
+          "family": "Map",
+          "printedIds": [
+            "E073"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E073"
+            ],
+            "name": "073",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "063"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "072"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "074"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "073",
+          "family": "Map",
+          "printedIds": [
+            "E073"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E073"
+            ],
+            "name": "073",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "063"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "072"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "074"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d6a5f43151ebf15cdc462ad0",
+      "family": "Map",
+      "printedIds": [
+        "AT05"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 88,
+        "pointer": "/cards/88"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "T05",
+          "family": "Map",
+          "printedIds": [
+            "AT05"
+          ],
+          "cycle": "Tutorial",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AT05"
+            ],
+            "name": "T05",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Tutorial",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Minoans"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "T04"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "027"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d6afcde49ccfee52ab787a1e",
+      "family": "Map",
+      "printedIds": [
+        "C031"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 214,
+        "pointer": "/cards/214"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "031",
+          "family": "Map",
+          "printedIds": [
+            "C031"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C031"
+            ],
+            "name": "031",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "Titan"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "026"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "030"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d6ee2824cb91841c33e9f290",
+      "family": "Map",
+      "printedIds": [
+        "E004"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 344,
+        "pointer": "/cards/344"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "004",
+          "family": "Map",
+          "printedIds": [
+            "E004"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E004"
+            ],
+            "name": "004",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "003"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "014"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "005"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "004",
+          "family": "Map",
+          "printedIds": [
+            "E004"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E004"
+            ],
+            "name": "004",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "003"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "014"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "005"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": [
+              "Spiral",
+              "1",
+              "<",
+              "Spiral",
+              "3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d72c203d62fd59a57d99f1a5",
+      "family": "Map",
+      "printedIds": [
+        "B066"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 169,
+        "pointer": "/cards/169"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "066",
+          "family": "Map",
+          "printedIds": [
+            "B066"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B066"
+            ],
+            "name": "066",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cyclopes"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "073"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d7a543a0d9aeb321d0616014",
+      "family": "Map",
+      "printedIds": [
+        "E008"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 348,
+        "pointer": "/cards/348"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "008",
+          "family": "Map",
+          "printedIds": [
+            "E008"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E008"
+            ],
+            "name": "008",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "007"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "018"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "009"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "008",
+          "family": "Map",
+          "printedIds": [
+            "E008"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E008"
+            ],
+            "name": "008",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "007"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "018"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "009"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d7e2879fdca6db2a50f58439",
+      "family": "Map",
+      "printedIds": [
+        "E052"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 392,
+        "pointer": "/cards/392"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "052",
+          "family": "Map",
+          "printedIds": [
+            "E052"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E052"
+            ],
+            "name": "052",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "042"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "053"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "052",
+          "family": "Map",
+          "printedIds": [
+            "E052"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E052"
+            ],
+            "name": "052",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "042"
+                }
+              ],
+              "south": [
+                {
+                  "lock": "UnderwaterCave",
+                  "nextTile": "062"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "053"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d842348850d0a0d77b38154f",
+      "family": "Map",
+      "printedIds": [
+        "B052"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 155,
+        "pointer": "/cards/155"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "052",
+          "family": "Map",
+          "printedIds": [
+            "B052"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B052"
+            ],
+            "name": "052",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "a",
+                  "lock": "FirstCataract",
+                  "nextTile": "045"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "051"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "split": "a",
+                  "nextTile": "053"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "053"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "@Diolkos to move between a and b",
+              "Map clue *4*7"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d88ede29f2d7eacc502768c3",
+      "family": "Map",
+      "printedIds": [
+        "AT00"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 83,
+        "pointer": "/cards/83"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "T00",
+          "family": "Map",
+          "printedIds": [
+            "AT00"
+          ],
+          "cycle": "Tutorial",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AT00"
+            ],
+            "name": "T00",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Tutorial",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              ""
+            ],
+            "progDoom": [],
+            "symbols": [],
+            "movementArrows": {
+              "east": [
+                {
+                  "nextTile": "T02"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_d9cbe5f11f4380c7c2544724",
+      "family": "Map",
+      "printedIds": [
+        "D056"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 283,
+        "pointer": "/cards/283"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "056",
+          "family": "Map",
+          "printedIds": [
+            "D056"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D056"
+            ],
+            "name": "056",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Wasters"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "055"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "047"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_da2c96637f62178db4adf62a",
+      "family": "Map",
+      "printedIds": [
+        "E021"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 361,
+        "pointer": "/cards/361"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "021",
+          "family": "Map",
+          "printedIds": [
+            "E021"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E021"
+            ],
+            "name": "021",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "011"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "022"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "021",
+          "family": "Map",
+          "printedIds": [
+            "E021"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E021"
+            ],
+            "name": "021",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "UnderwaterCity"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "011"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "022"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_da689d7bb1bca71a750a343b",
+      "family": "Map",
+      "printedIds": [
+        "A004"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 4,
+        "pointer": "/cards/4"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "004",
+          "family": "Map",
+          "printedIds": [
+            "A004"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A004"
+            ],
+            "name": "004",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "Titan"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "003"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "009"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "005"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dacb7b0f780c1bfd0ce02fae",
+      "family": "Map",
+      "printedIds": [
+        "B004"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 107,
+        "pointer": "/cards/107"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "004",
+          "family": "Map",
+          "printedIds": [
+            "B004"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B004"
+            ],
+            "name": "004",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cyclopes"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "003"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "005"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dbc31d7cd4359e03f2ed7137",
+      "family": "Map",
+      "printedIds": [
+        "A064"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 64,
+        "pointer": "/cards/64"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "064",
+          "family": "Map",
+          "printedIds": [
+            "A064"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A064"
+            ],
+            "name": "064",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "065"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dbea9103923a9634e94e50a1",
+      "family": "Map",
+      "printedIds": [
+        "C025"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 208,
+        "pointer": "/cards/208"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "025",
+          "family": "Map",
+          "printedIds": [
+            "C025"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C025"
+            ],
+            "name": "025",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R",
+              "FrozenTime"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "021"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "030"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dc619594f95ec2e43ffafe6d",
+      "family": "Map",
+      "printedIds": [
+        "C049"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 232,
+        "pointer": "/cards/232"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "049",
+          "family": "Map",
+          "printedIds": [
+            "C049"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C049"
+            ],
+            "name": "049",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "050"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "044"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dcc846d6c13a7aeb8d963f67",
+      "family": "Map",
+      "printedIds": [
+        "C087"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 270,
+        "pointer": "/cards/270"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "087",
+          "family": "Map",
+          "printedIds": [
+            "C087"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C087"
+            ],
+            "name": "087",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City",
+              "FrozenTime",
+              "TimeWound"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "088"
+                },
+                {
+                  "nextTile": "088"
+                },
+                {
+                  "nextTile": "W 068"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_dd5515f8c4805bcb5ca2216b",
+      "family": "Map",
+      "printedIds": [
+        "A335"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 87,
+        "pointer": "/cards/87"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "035",
+          "family": "Map",
+          "printedIds": [
+            "A335"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A335"
+            ],
+            "name": "035",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "b",
+                  "nextTile": "030"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "034"
+                }
+              ],
+              "south": [
+                {
+                  "split": "a",
+                  "nextTile": "040"
+                }
+              ],
+              "east": [
+                {
+                  "split": "b",
+                  "nextTile": "071"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ddde86335cd1c1f3fb935b5f",
+      "family": "Map",
+      "printedIds": [
+        "C063"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 246,
+        "pointer": "/cards/246"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "063",
+          "family": "Map",
+          "printedIds": [
+            "C063"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C063"
+            ],
+            "name": "063",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R",
+              "FrozenTime"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "064"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "061"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_de94df871b92e7f4fa5dfbfa",
+      "family": "Map",
+      "printedIds": [
+        "E032"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 372,
+        "pointer": "/cards/372"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "032",
+          "family": "Map",
+          "printedIds": [
+            "E032"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E032"
+            ],
+            "name": "032",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "022"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "032",
+          "family": "Map",
+          "printedIds": [
+            "E032"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E032"
+            ],
+            "name": "032",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "022"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_df75a680c233fb91370b7123",
+      "family": "Map",
+      "printedIds": [
+        "B040"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 143,
+        "pointer": "/cards/143"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "040",
+          "family": "Map",
+          "printedIds": [
+            "B040"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B040"
+            ],
+            "name": "040",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Helots",
+              "Symmachy"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "034"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "039"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "047"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e05c3b923c493bc39b4d8636",
+      "family": "Map",
+      "printedIds": [
+        "D052"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 279,
+        "pointer": "/cards/279"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "052",
+          "family": "Map",
+          "printedIds": [
+            "D052"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D052"
+            ],
+            "name": "052",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "061"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "043"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "053"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e06811ff1caa24a900cbbe30",
+      "family": "Map",
+      "printedIds": [
+        "C082"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 265,
+        "pointer": "/cards/265"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "082",
+          "family": "Map",
+          "printedIds": [
+            "C082"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C082"
+            ],
+            "name": "082",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Twilight Watch"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan",
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "079"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "081"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e0a0fb8e2febba97a5663c1d",
+      "family": "Map",
+      "printedIds": [
+        "D079"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 306,
+        "pointer": "/cards/306"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "079",
+          "family": "Map",
+          "printedIds": [
+            "D079"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D079"
+            ],
+            "name": "079",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Wasters"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "GraveoftheAnemoi"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "078"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "070"
+                }
+              ],
+              "east": [
+                {
+                  "split": "b",
+                  "nextTile": "080"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e0caeb3d9a0415c35c5db4d2",
+      "family": "Map",
+      "printedIds": [
+        "B037"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 140,
+        "pointer": "/cards/140"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "037",
+          "family": "Map",
+          "printedIds": [
+            "B037"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B037"
+            ],
+            "name": "037",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cyclopes"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "Titan",
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "030"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": [
+              "3721"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e307c0dd87188a3cc11d2441",
+      "family": "Map",
+      "printedIds": [
+        "C046"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 229,
+        "pointer": "/cards/229"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "046",
+          "family": "Map",
+          "printedIds": [
+            "C046"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C046"
+            ],
+            "name": "046",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "047"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "045"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "051"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e3342e1cef83bad0a6dce316",
+      "family": "Map",
+      "printedIds": [
+        "D024"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 251,
+        "pointer": "/cards/251"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "024",
+          "family": "Map",
+          "printedIds": [
+            "D024"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D024"
+            ],
+            "name": "024",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "033"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "023"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "015"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e33a5db260defe9e851e839a",
+      "family": "Map",
+      "printedIds": [
+        "A063"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 63,
+        "pointer": "/cards/63"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "063",
+          "family": "Map",
+          "printedIds": [
+            "A063"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A063"
+            ],
+            "name": "063",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "Titan"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "(River) 062"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "068"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "River"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e3dee12a137c6841f13260cb",
+      "family": "Map",
+      "printedIds": [
+        "D014"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 241,
+        "pointer": "/cards/241"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "014",
+          "family": "Map",
+          "printedIds": [
+            "D014"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D014"
+            ],
+            "name": "014",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "013"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "005"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "015"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e492124d9ed1e90276784cd7",
+      "family": "Map",
+      "printedIds": [
+        "E042"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 382,
+        "pointer": "/cards/382"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "042",
+          "family": "Map",
+          "printedIds": [
+            "E042"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E042"
+            ],
+            "name": "042",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "032"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "041"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "052"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "043"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "042",
+          "family": "Map",
+          "printedIds": [
+            "E042"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E042"
+            ],
+            "name": "042",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "a",
+                  "nextTile": "032"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "041"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "052"
+                }
+              ],
+              "east": [
+                {
+                  "split": "b",
+                  "nextTile": "043"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e59ef94ecca18fe487ff1e41",
+      "family": "Map",
+      "printedIds": [
+        "B056"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 159,
+        "pointer": "/cards/159"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "056",
+          "family": "Map",
+          "printedIds": [
+            "B056"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B056"
+            ],
+            "name": "056",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Symmachy"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "055"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "063"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e5aef93aa995a38213c00f1a",
+      "family": "Map",
+      "printedIds": [
+        "E034"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 374,
+        "pointer": "/cards/374"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "034",
+          "family": "Map",
+          "printedIds": [
+            "E034"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E034"
+            ],
+            "name": "034",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "024"
+                },
+                {
+                  "nextTile": "024"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "033"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "044"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "035"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "034",
+          "family": "Map",
+          "printedIds": [
+            "E034"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E034"
+            ],
+            "name": "034",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "SilverRemnant"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "024"
+                },
+                {
+                  "nextTile": "024"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "033"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "044"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "035"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": [
+              "Spiral",
+              "5",
+              "<",
+              "Spiral",
+              "7"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e5ede1a2222b7cf45af30830",
+      "family": "Map",
+      "printedIds": [
+        "C011"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 194,
+        "pointer": "/cards/194"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "011",
+          "family": "Map",
+          "printedIds": [
+            "C011"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C011"
+            ],
+            "name": "011",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [
+              "Progress",
+              "Doom"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "012"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "004"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "010"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e63e26ef67287cbd046408af",
+      "family": "Map",
+      "printedIds": [
+        "A055"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 55,
+        "pointer": "/cards/55"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "055",
+          "family": "Map",
+          "printedIds": [
+            "A055"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A055"
+            ],
+            "name": "055",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Hornsworn"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "050"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "054"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "060"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e6d7ecb6341e13302ed6167a",
+      "family": "Map",
+      "printedIds": [
+        "A030"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 30,
+        "pointer": "/cards/30"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "030",
+          "family": "Map",
+          "printedIds": [
+            "A030"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A030"
+            ],
+            "name": "030",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "lock": "River",
+                  "nextTile": "025"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "035"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "066"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "Map Clue *4*7"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e729357218e867293f333739",
+      "family": "Map",
+      "printedIds": [
+        "B063"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 166,
+        "pointer": "/cards/166"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "063",
+          "family": "Map",
+          "printedIds": [
+            "B063"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B063"
+            ],
+            "name": "063",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Symmachy"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "056"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "062"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "070"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e78dc408cebe8072a74b4d6b",
+      "family": "Map",
+      "printedIds": [
+        "B058"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 161,
+        "pointer": "/cards/161"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "058",
+          "family": "Map",
+          "printedIds": [
+            "B058"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "B058"
+            ],
+            "name": "058",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cyclopes"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [
+              "SpartanStronghold"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "051"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "059"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e7b19d28bfb81c09f9405250",
+      "family": "Map",
+      "printedIds": [
+        "D080"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 307,
+        "pointer": "/cards/307"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "080",
+          "family": "Map",
+          "printedIds": [
+            "D080"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D080"
+            ],
+            "name": "080",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cloud Thieves"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "079"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "071"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "081"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e86657a0695cbad0fdeee410",
+      "family": "Map",
+      "printedIds": [
+        "E041"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 381,
+        "pointer": "/cards/381"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "041",
+          "family": "Map",
+          "printedIds": [
+            "E041"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E041"
+            ],
+            "name": "041",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "051"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "041",
+          "family": "Map",
+          "printedIds": [
+            "E041"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E041"
+            ],
+            "name": "041",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "031"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "051"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e8bd2b5dd0a3d964687676d0",
+      "family": "Map",
+      "printedIds": [
+        "C072"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 255,
+        "pointer": "/cards/255"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "072",
+          "family": "Map",
+          "printedIds": [
+            "C072"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C072"
+            ],
+            "name": "072",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub",
+              "FuturePortal"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "073"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "075"
+                },
+                {
+                  "nextTile": "P 042"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e97416ee1dbc1bf7596ed6f0",
+      "family": "Map",
+      "printedIds": [
+        "C078"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 261,
+        "pointer": "/cards/261"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "078",
+          "family": "Map",
+          "printedIds": [
+            "C078"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "C078"
+            ],
+            "name": "078",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Delphians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "west": [
+                {
+                  "nextTile": "074"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "077"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e98de6ff76382c6f10005263",
+      "family": "Map",
+      "printedIds": [
+        "A058"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 58,
+        "pointer": "/cards/58"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "058",
+          "family": "Map",
+          "printedIds": [
+            "A058"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A058"
+            ],
+            "name": "058",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "053"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "(River) 057"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "River"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ea6a91bb48231ac063fa574f",
+      "family": "Map",
+      "printedIds": [
+        "E058"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 398,
+        "pointer": "/cards/398"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "058",
+          "family": "Map",
+          "printedIds": [
+            "E058"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E058"
+            ],
+            "name": "058",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "057"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "068"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "059"
+                },
+                {
+                  "nextTile": "059"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "058",
+          "family": "Map",
+          "printedIds": [
+            "E058"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E058"
+            ],
+            "name": "058",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Cycladean Protectorate"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "Titan"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "048"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "057"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "068"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "059"
+                },
+                {
+                  "nextTile": "059"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eadc164d0c10cffad55f5f1a",
+      "family": "Map",
+      "printedIds": [
+        "D068"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 295,
+        "pointer": "/cards/295"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "068",
+          "family": "Map",
+          "printedIds": [
+            "D068"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D068"
+            ],
+            "name": "068",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Wasters"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "077"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "067"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "059"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "069"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_eb52171bc7d6968b85cfa2e8",
+      "family": "Map",
+      "printedIds": [
+        "D030"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 257,
+        "pointer": "/cards/257"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "030",
+          "family": "Map",
+          "printedIds": [
+            "D030"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D030"
+            ],
+            "name": "030",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Wasters"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "039"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "029"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "021"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "031"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ebd49ac12282d1f28efe96a5",
+      "family": "Map",
+      "printedIds": [
+        "D020"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 247,
+        "pointer": "/cards/247"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "020",
+          "family": "Map",
+          "printedIds": [
+            "D020"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "D020"
+            ],
+            "name": "020",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Aristotelians"
+            ],
+            "progDoom": [
+              "Doom"
+            ],
+            "symbols": [
+              "AdventureHub"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "029"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "011"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "021"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ebd548a99d3181099c8e7084",
+      "family": "Map",
+      "printedIds": [
+        "E075"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 415,
+        "pointer": "/cards/415"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "075",
+          "family": "Map",
+          "printedIds": [
+            "E075"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E075"
+            ],
+            "name": "075",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "074"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "076"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "075",
+          "family": "Map",
+          "printedIds": [
+            "E075"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E075"
+            ],
+            "name": "075",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "065"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "074"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "076"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ec46f15cdb1452456f200d51",
+      "family": "Map",
+      "printedIds": [
+        "E020"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0005.json",
+        "page": 5,
+        "recordIndex": 360,
+        "pointer": "/cards/360"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "020",
+          "family": "Map",
+          "printedIds": [
+            "E020"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E020"
+            ],
+            "name": "020",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Outcast Vanguard"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City",
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "010"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "019"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "030"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        },
+        {
+          "id": "back",
+          "name": "020",
+          "family": "Map",
+          "printedIds": [
+            "E020"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "E020"
+            ],
+            "name": "020",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Followers of Arete"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "R&R"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "010"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "019"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "030"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ecbb0392c37e6d7297660657",
+      "family": "Map",
+      "printedIds": [
+        "A062"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 62,
+        "pointer": "/cards/62"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "062",
+          "family": "Map",
+          "printedIds": [
+            "A062"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A062"
+            ],
+            "name": "062",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [],
+            "symbols": [
+              "City"
+            ],
+            "movementArrows": {
+              "north": [
+                {
+                  "nextTile": "(River) 057"
+                }
+              ],
+              "west": [
+                {
+                  "nextTile": "(River) 061"
+                }
+              ],
+              "south": [
+                {
+                  "nextTile": "(River) 067"
+                }
+              ],
+              "east": [
+                {
+                  "nextTile": "(River) 063"
+                }
+              ]
+            },
+            "otherFeatures": [
+              "River"
+            ],
+            "secrets": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ed37a13ca14afb08798fc824",
+      "family": "Map",
+      "printedIds": [
+        "A309"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 81,
+        "pointer": "/cards/81"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "009",
+          "family": "Map",
+          "printedIds": [
+            "A309"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "A309"
+            ],
+            "name": "009",
+            "renderType": "Map",
+            "cardType": "Map",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Square",
+            "faq": [],
+            "errata": {},
+            "factions": [
+              "Labyrinthians"
+            ],
+            "progDoom": [
+              "Progress"
+            ],
+            "symbols": [],
+            "movementArrows": {
+              "north": [
+                {
+                  "split": "a",
+                  "nextTile": "004"
+                }
+              ],
+              "west": [
+                {
+                  "split": "a",
+                  "nextTile": "008"
+                }
+              ],
+              "south": [
+                {
+                  "split": "b",
+                  "nextTile": "014"
+                }
+              ],
+              "east": [
+                {
+                  "split": "a",
+                  "nextTile": "010"
+                },
+                {
+                  "split": "b",
+                  "nextTile": "010"
+                }
+              ]
+            },
+            "otherFeatures": [],
+            "secrets": []
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2262 @@
+{
+  "schemaVersion": 1,
+  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "family": "Exploration",
+  "part": 3,
+  "cards": [
+    {
+      "id": "def_e070cfc94801681c34c85f8e",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0078"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 143,
+        "pointer": "/cards/143"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Labyrinthian Vessel",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0078"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0078"
+            ],
+            "name": "Labyrinthian Vessel",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Resolve an effect based on your Diplomacy with Labyrinthians"
+                  }
+                ]
+              },
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "and +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              },
+              {
+                "gate": "Friendly",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Calcified Knuckle Bone or Fleshy Mantle resource and +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              },
+              {
+                "gate": "Neutral",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Argonauts gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Fate"
+                  }
+                ]
+              },
+              {
+                "gate": "Unfriendly",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  }
+                ]
+              },
+              {
+                "gate": "Denounced",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "At the start of the next Timeline Battle, Escalate 1"
+                  }
+                ]
+              },
+              {
+                "gate": "At War",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "ArgoFate",
+                "value": "7+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Random Argonaut gains 1 Despair token"
+                  }
+                ]
+              }
+            ],
+            "number": 31,
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "All"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e21f26d6dcdb2ff626557bb8",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1224"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 269,
+        "pointer": "/cards/269"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cyclopean Shrine Of Hyperion",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1224"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1224"
+            ],
+            "name": "Cyclopean Shrine Of Hyperion",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Relief resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Refugees",
+                "value": "5+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Relief resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 22,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "1, 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e23e3650d61c61777c57df07",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1242"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 285,
+        "pointer": "/cards/285"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Spy Network",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1242"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1242"
+            ],
+            "name": "Spy Network",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Progress"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Roll a d10"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "On 8+, gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoKnowledge"
+                  }
+                ]
+              }
+            ],
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e3ce66810765e536e2cfa149",
+      "family": "Exploration",
+      "printedIds": [
+        "CB1673"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 380,
+        "pointer": "/cards/380"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Grand Temple Of Helios",
+          "family": "Exploration",
+          "printedIds": [
+            "CB1673"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CB1673"
+            ],
+            "name": "Grand Temple Of Helios",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Sirenshell resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may gain +3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to gain +1 Preist"
+                  }
+                ]
+              }
+            ],
+            "number": 22,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "2, 3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e57e4c579d0c056efa1224cd",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0100"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 165,
+        "pointer": "/cards/165"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Desecrated Temple",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0100"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0100"
+            ],
+            "name": "Desecrated Temple",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Monument resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Denounced-",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              }
+            ],
+            "number": 18,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "2, 3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e6997ebb148f92781f3d876d",
+      "family": "Exploration",
+      "printedIds": [
+        "EB2709"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 30,
+        "pointer": "/cards/30"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Operational Vertical Mine",
+          "family": "Exploration",
+          "printedIds": [
+            "EB2709"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EB2709"
+            ],
+            "name": "Operational Vertical Mine",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 5 Orichalcum Chunk resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1 Titan"
+                  }
+                ]
+              },
+              {
+                "gate": "Aligned with Nemesis",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -2 Titans"
+                  }
+                ]
+              }
+            ],
+            "number": 26,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e6a9cd5a6f77cc6dd1cdcff6",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0075"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 140,
+        "pointer": "/cards/140"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Dog Days",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0075"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0075"
+            ],
+            "name": "Dog Days",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {
+              "v1.1": [
+                {
+                  "abilityText": [
+                    {
+                      "type": "plainText",
+                      "value": "Added missing \"32\" identifier"
+                    }
+                  ]
+                }
+              ]
+            },
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "For each 3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Then lose -3"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If no"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Crew"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "was lost, gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "ArgoFate",
+                "value": "7+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +2"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Strangers"
+                  }
+                ]
+              }
+            ],
+            "number": 32,
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "All"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e84cb3d836dfc80dfc4a9b9a",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0111"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 176,
+        "pointer": "/cards/176"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Cackle",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0111"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0111"
+            ],
+            "name": "Cackle",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "gate": "ArgoFate",
+                "value": "8+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Resolve an additional"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ],
+            "adversaryTriggers": "2",
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_e8bf5a0c9999162d021dbd25",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1210"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 255,
+        "pointer": "/cards/255"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Temenos Mineshaft",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1210"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1210"
+            ],
+            "name": "Temenos Mineshaft",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Maze Fragment resource"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Refugees",
+                "value": "5+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Maze Fragment resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 8,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_ecb230e16b5e5756e8afbf48",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0080"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 145,
+        "pointer": "/cards/145"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Trade Post",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0080"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0080"
+            ],
+            "name": "Trade Post",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Trireme"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Friendly+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Trireme resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 8,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_efd3c512761d4bd6998afa76",
+      "family": "Exploration",
+      "printedIds": [
+        "DB2147"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 408,
+        "pointer": "/cards/408"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "City of Glass and Gold",
+          "family": "Exploration",
+          "printedIds": [
+            "DB2147"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DB2147"
+            ],
+            "name": "City of Glass and Gold",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 5 Imperial Scroll resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Progress"
+                  }
+                ]
+              }
+            ],
+            "number": 26,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f2cfe6e3cf1c7c4f6965fc50",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0105"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 170,
+        "pointer": "/cards/170"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Bronze People Armory",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0105"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0105"
+            ],
+            "name": "Bronze People Armory",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 5 Armament resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoKnowledge"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "(once until the next Timeline Battle)"
+                  }
+                ]
+              }
+            ],
+            "number": 21,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f3d3733593e85ec9e063ee91",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1209"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 254,
+        "pointer": "/cards/254"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Temenos Mineshaft",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1209"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1209"
+            ],
+            "name": "Temenos Mineshaft",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Maze Fragment resource"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Refugees",
+                "value": "5+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Maze Fragment resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 4,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f3e40ba0795388fc42d5d575",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1250"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 293,
+        "pointer": "/cards/293"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Black Sludge",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1250"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1250"
+            ],
+            "name": "Black Sludge",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Randomly determine a direction"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Place an"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token on the corresponding side of your current Map tile"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "All waterways leading in that direction from this tile are blocked"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Discard the"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "token after the next Timeline Battle"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Refugees",
+                "value": "6+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "or"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Doom"
+                  }
+                ]
+              }
+            ],
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f3f3b5a7e691e29c8b0b05a5",
+      "family": "Exploration",
+      "printedIds": [
+        "DB2116"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 377,
+        "pointer": "/cards/377"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Wrath of the Anemoi",
+          "family": "Exploration",
+          "printedIds": [
+            "DB2116"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DB2116"
+            ],
+            "name": "Wrath of the Anemoi",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Randomly determine a sailable direction"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Place a Sandstorm token on the corresponding side of your current Map tile"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Until a new Sandstorm marker is placed, movement in that direction from this tile is blocked"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "BabelianDebt",
+                "value": "4+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "or"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Resolve"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Adversary"
+                  }
+                ]
+              }
+            ],
+            "number": 30,
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f560367449d8c6c188de0bce",
+      "family": "Exploration",
+      "printedIds": [
+        "CB1658"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 365,
+        "pointer": "/cards/365"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Delphian Fleet",
+          "family": "Exploration",
+          "printedIds": [
+            "CB1658"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CB1658"
+            ],
+            "name": "Delphian Fleet",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Resolve an effect based on your Diplomacy with Delphians"
+                  }
+                ]
+              },
+              {
+                "gate": "Allied",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "SummoningCharge"
+                  }
+                ]
+              },
+              {
+                "gate": "Friendly",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1 Titan"
+                  }
+                ]
+              },
+              {
+                "gate": "Neutral",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Each Argonaut gains +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Danger"
+                  }
+                ]
+              },
+              {
+                "gate": "Unfriendly",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ArgoFate"
+                  }
+                ]
+              },
+              {
+                "gate": "Denounced",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1 Titan"
+                  }
+                ]
+              },
+              {
+                "gate": "At War",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Hull"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "ArgoFate",
+                "value": "7+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Random Argonaut gains 1 Fated Mnemos card"
+                  }
+                ]
+              }
+            ],
+            "number": 32,
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_f9178bfbf5e91fd1eaab5505",
+      "family": "Exploration",
+      "printedIds": [
+        "AB0086"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0001.json",
+        "page": 1,
+        "recordIndex": 151,
+        "pointer": "/cards/151"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Weapons Cache",
+          "family": "Exploration",
+          "printedIds": [
+            "AB0086"
+          ],
+          "cycle": "Cycle I",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "AB0086"
+            ],
+            "name": "Weapons Cache",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle I",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Armament resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Denounced-",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Armament resource instead"
+                  }
+                ]
+              }
+            ],
+            "number": 2,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0, 1, 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fa1e2795d064922154b38eb9",
+      "family": "Exploration",
+      "printedIds": [
+        "EB2682"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0006.json",
+        "page": 6,
+        "recordIndex": 3,
+        "pointer": "/cards/3"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Staircase Demolition",
+          "family": "Exploration",
+          "printedIds": [
+            "EB2682"
+          ],
+          "cycle": "Cycle V",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "EB2682"
+            ],
+            "name": "Staircase Demolition",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle V",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Black-tainted Stepfinger resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Friendly+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Black-tainted Stepfinger resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 4,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fc4faf0898cd754a9059607b",
+      "family": "Exploration",
+      "printedIds": [
+        "DB2142"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 403,
+        "pointer": "/cards/403"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Buried Persian City",
+          "family": "Exploration",
+          "printedIds": [
+            "DB2142"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DB2142"
+            ],
+            "name": "Buried Persian City",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 Imperial Scroll resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "You may gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "BabelianDebt"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "to gain +1 Priest"
+                  }
+                ]
+              }
+            ],
+            "number": 16,
+            "adversaryTriggers": "1",
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "2, 3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fc612dc601cd0ec4870d636e",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1247"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 290,
+        "pointer": "/cards/290"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Sabotage: Titan Armory",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1247"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1247"
+            ],
+            "name": "Sabotage: Titan Armory",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "If you have 2+"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Refugees"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": ", permanently lose a random"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Gear"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "card from the Argo Armory"
+                  }
+                ]
+              },
+              {
+                "abilityText": [
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "If this ability didn't trigger, gain +1"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Refugees"
+                  }
+                ]
+              }
+            ],
+            "stackType": "Continue Stack",
+            "removeEffect": "Shuffle back into the Sabotage deck. %ArgoFate 7+% or %Refugees 4+% Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fdf70d4e5f8101234960cf68",
+      "family": "Exploration",
+      "printedIds": [
+        "BB1226"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0002.json",
+        "page": 2,
+        "recordIndex": 271,
+        "pointer": "/cards/271"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Palirroia Trireme",
+          "family": "Exploration",
+          "printedIds": [
+            "BB1226"
+          ],
+          "cycle": "Cycle II",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "BB1226"
+            ],
+            "name": "Palirroia Trireme",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle II",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 3 War Trireme resources"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Refugees",
+                "value": "4+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Lose -1 Titan"
+                  }
+                ]
+              }
+            ],
+            "number": 14,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "1, 2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fe5932394d67406ee5a3589a",
+      "family": "Exploration",
+      "printedIds": [
+        "DB2121"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0004.json",
+        "page": 4,
+        "recordIndex": 382,
+        "pointer": "/cards/382"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Charred Steps",
+          "family": "Exploration",
+          "printedIds": [
+            "DB2121"
+          ],
+          "cycle": "Cycle IV",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "DB2121"
+            ],
+            "name": "Charred Steps",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle IV",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 1 Blackened Halo resource"
+                  }
+                ]
+              }
+            ],
+            "effects2": [
+              {
+                "gate": "Friendly+",
+                "abilityText": [
+                  {
+                    "type": "plainText",
+                    "value": "Gain 2 Blackened Halo resources instead"
+                  }
+                ]
+              }
+            ],
+            "number": 8,
+            "stackType": "End Stack",
+            "removeEffect": "",
+            "acclimation": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "def_fec9e2c2e58ea32a8b270970",
+      "family": "Exploration",
+      "printedIds": [
+        "CB1677"
+      ],
+      "source": {
+        "file": "atcc-cards-page-0003.json",
+        "page": 3,
+        "recordIndex": 384,
+        "pointer": "/cards/384"
+      },
+      "faces": [
+        {
+          "id": "front",
+          "name": "Nubian Traders",
+          "family": "Exploration",
+          "printedIds": [
+            "CB1677"
+          ],
+          "cycle": "Cycle III",
+          "game": "Odyssey",
+          "inheritedFields": [],
+          "slotEffects": [],
+          "kind": "other",
+          "data": {
+            "cardIDs": [
+              "CB1677"
+            ],
+            "name": "Nubian Traders",
+            "renderType": "Exploration",
+            "cardType": "Exploration",
+            "game": "Odyssey",
+            "cycle": "Cycle III",
+            "cardSize": "Mini American",
+            "faq": [],
+            "errata": {},
+            "effects": [
+              {
+                "abilityText": [
+                  {
+                    "type": "bold",
+                    "value": "Trading:"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "You may exchange (up to 5 times):"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "3 Hyperborean Alloy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Sirenshell"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "4 Hyperborean Alloy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Daedalus Makina"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Sirenshell"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Hyperborean Alloy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Daedalus Makina"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "2 Hyperborean Alloy"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Clothflesh or 1 Razorclaw"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "2 Frozen Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Eyecluster or 1 Icarian Feather"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "3 Frozen Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "4 Frozen Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Clothflesh or 1 Razorclaw"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "newline"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "5 Frozen Ambrosia"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "1 Eyecluster or 1 Icarian Feather"
+                  }
+                ]
+              }
+            ],
+            "stackType": "Continue Stack",
+            "removeEffect": "Remove until the next Timeline Battle",
+            "acclimation": "Other"
+          }
+        }
+      ]
+    }
+  ]
+}
