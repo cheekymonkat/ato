@@ -399,3 +399,20 @@ when extra selections are removed or changed to Dreamwalkers. It also applies
 to restored saves; exhausted or discarded Titans remain selected and count.
 Unresolved references are not assumed to be Argo-bred. Selection remains
 possible so the warning does not erase or block campaign data.
+
+## Memory layout rounding correction
+
+Memory family groups now receive explicit widths from the measured Memories
+container before card sizing, replacing their separate child-driven flex growth
+and layout measurements. Card widths round down with spare space for fractional
+browser/native layout rounding, keeping a family's last card from unexpectedly
+wrapping and leaving a large gap. All four baseline memories share a row when
+the container is at least 838 px wide. At narrower widths the Fated pair moves
+below the Mnemos pair; each pair keeps two columns when it fits, then one on
+phones. Cards retain the existing 262 px maximum outer width and full contents.
+Saved slots beyond current capacity remain visible in the same family.
+
+Layout regression scenarios sweep fractional widths through 5000 px, both
+baseline pairs, phone widths, wrapping boundaries and expanded saved-slot counts.
+Interactive visual verification remains pending: computer use reported no
+available browsers/apps and a native pipe startup failure during this review.

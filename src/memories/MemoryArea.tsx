@@ -1,7 +1,6 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
-import type { ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
 import { CardActionButton } from '../components/cards/CardActionButton';
 import { CardActionRow } from '../components/cards/CardActionRow';
@@ -17,17 +16,24 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { NodeTracker } from './NodeTracker';
+import { MEMORY_GAP, memoryCardSize, memoryGroupWidths } from './memory-layout';
 
 export function MemoryArea({ argonaut }: { argonaut: Argonaut }) {
   const { party, dispatch } = useParty(), catalogue = getCatalogue(), spoilers = useSpoilers();
+  const { width } = useWindowDimensions();
+  const [areaWidth, setAreaWidth] = useState(width - 32);
   const positions = loadoutState(argonaut, catalogue).positions;
+  const groups = (['mnemos', 'fated-mnemos'] as const).map(kind => {
+    const capacity = positions.filter(position => position.kind === kind).length;
+    return { kind, capacity, count: Math.max(capacity, argonaut[memoryKey(kind)].length) };
+  });
+  const groupWidths = memoryGroupWidths(areaWidth, groups.map(group => group.count));
   return <View style={styles.area}>
     <SectionHeading title="Memories" />
-    <View style={styles.groups}>
-    {(['mnemos', 'fated-mnemos'] as const).map(kind => {
-      const capacity = positions.filter(position => position.kind === kind).length;
-      const count = Math.max(capacity, argonaut[memoryKey(kind)].length);
-      return <MemoryGroup key={kind} count={count}>{cellWidth => Array.from({ length: count }, (_, index) => {
+    <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>
+    {groups.map(({ kind, capacity, count }, groupIndex) => {
+      const groupWidth = groupWidths[groupIndex], { width: cellWidth } = memoryCardSize(groupWidth, count);
+      return <View key={kind} style={[styles.row, { width: groupWidth }]}>{Array.from({ length: count }, (_, index) => {
         const item = memoryAt(argonaut, kind, index), card = item && catalogue.get(item.definitionId), face = item && catalogue.getFace(item.definitionId, item.faceId);
         const hidden = card && spoilers.hidden(card), progress = item && memoryProgress(item);
         const visibleName = face?.kind === 'fated-mnemos' ? fatedMemorySide(face, progress).name : face?.name;
@@ -54,24 +60,15 @@ export function MemoryArea({ argonaut }: { argonaut: Argonaut }) {
             </CardActionRow>
           </>}
         </View>;
-      })}</MemoryGroup>;
+      })}</View>;
     })}
     </View>
   </View>;
 }
-function MemoryGroup({ count, children }: { count: number; children: (cellWidth: number) => ReactNode }) {
-  const [width, setWidth] = useState(412);
-  const columns = Math.min(Math.max(1, count), Math.max(1, Math.floor((width + 12) / 212)));
-  const cellWidth = Math.min(262, (width - (columns - 1) * 12) / columns);
-  return <View onLayout={event => { if (event.nativeEvent.layout.width > 0) setWidth(event.nativeEvent.layout.width); }} style={[styles.row, {
-    flexBasis: Math.max(1, count) * 200 + Math.max(0, count - 1) * 12,
-    flexGrow: Math.max(1, count), maxWidth: Math.max(1, count) * 262 + Math.max(0, count - 1) * 12,
-  }]}>{children(cellWidth)}</View>;
-}
 const styles = StyleSheet.create({
-  area: { gap: 12, minWidth: 0 }, groups: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, alignItems: 'flex-start' },
-  row: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, alignItems: 'flex-start', flexShrink: 1, minWidth: 0 },
-  cell: { padding: 10, borderWidth: 1, borderColor: theme.line, backgroundColor: theme.paper, borderRadius: 6, gap: 8 },
+  area: { gap: 12, minWidth: 0 }, groups: { width: '100%', flexDirection: 'row', flexWrap: 'wrap', gap: MEMORY_GAP, alignItems: 'flex-start' },
+  row: { flexDirection: 'row', flexWrap: 'wrap', gap: MEMORY_GAP, alignItems: 'flex-start', flexShrink: 0, minWidth: 0, maxWidth: '100%' },
+  cell: { flexShrink: 0, minWidth: 0, padding: 10, borderWidth: 1, borderColor: theme.line, backgroundColor: theme.paper, borderRadius: 6, gap: 8 },
   cardTarget: { gap: 10 },
   label: { color: theme.muted, fontSize: 10, fontWeight: '700', letterSpacing: 1 },
   empty: { minHeight: 110, alignItems: 'center', justifyContent: 'center', padding: 12 }, hint: { color: theme.muted, fontSize: 12, lineHeight: 18, textAlign: 'center' },
