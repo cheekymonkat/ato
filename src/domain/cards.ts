@@ -1,5 +1,7 @@
 import { assert, isJsonValue, isRecord } from './json.ts';
 import type { JsonObject, JsonValue } from './json.ts';
+import { deriveTitanWeaponRules } from './titan-loadout-rules.ts';
+import type { TitanWeaponRules } from './titan-loadout-rules.ts';
 
 export const CARD_FAMILIES = ['AI | BP', 'Argonaut', 'Attack', 'BP', 'Clue', 'Condition', 'Doom',
   'Exploration', 'Fated Mnemos', 'Gear', 'Godform', 'Kratos', 'Map', 'Mnemos', 'Moiros', 'Nymph',
@@ -19,7 +21,7 @@ export interface SourcePage {
   cards: SourceCard[]; currentPage: number; totalCards: number; totalPages: number; perPageLimit: number;
 }
 export type SlotKind = 'support' | 'hand' | 'armor' | 'attachment' | 'mnemos' | 'fated-mnemos';
-export interface SlotEligibility { family: 'Gear'; requiredTraits: string[] }
+export interface SlotEligibility { family: 'Gear'; requiredTraits: string[]; forbiddenWeaponHands?: number[] }
 export interface EffectCondition { type: 'gate'; gate: string; value: string | null }
 export interface SlotCapacityEffect {
   id: string; type: 'slot-capacity'; slot: SlotKind; amount: number;
@@ -51,7 +53,7 @@ export interface GearArtwork {
 }
 export type CardFace =
   | (FaceBase & { kind: 'gear'; data: GearData; artwork?: GearArtwork })
-  | (FaceBase & { kind: 'titan'; data: TitanData })
+  | (FaceBase & { kind: 'titan'; data: TitanData; weaponRules?: TitanWeaponRules })
   | (FaceBase & { kind: 'mnemos'; data: MnemosData })
   | (FaceBase & { kind: 'fated-mnemos'; data: FatedMnemosData })
   | (FaceBase & { kind: 'other'; data: SourceCard });
@@ -117,7 +119,7 @@ export function makeFace(data: SourceCard, id: FaceId, path: string, inheritedFi
     }
     case 'Titan':
       checkStrings(data, ['titanPower', 'speed'], path); checkArrays(data, ['abilities', 'kratosTable', 'traumaTable'], path);
-      return { ...base, kind: 'titan', data: data as TitanData };
+      return { ...base, kind: 'titan', data: data as TitanData, weaponRules: deriveTitanWeaponRules(data.abilities as JsonValue[]) };
     case 'Mnemos':
       checkArrays(data, ['traits', 'stats'], path, true); checkArrays(data, ['abilities'], path);
       return { ...base, kind: 'mnemos', data: data as MnemosData };

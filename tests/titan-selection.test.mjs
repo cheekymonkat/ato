@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
-import { argoBredArgonauts, dreamwalkerVariants, isDreamwalker, titanDisplayName, titanSelectionCards } from '../src/domain/titan-selection.ts';
+import { argoBredArgonauts, argoBredConflicts, dreamwalkerVariants, isDreamwalker, titanDisplayName, titanSelectionCards } from '../src/domain/titan-selection.ts';
 import { createParty } from '../src/domain/party.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 import { resolveTable } from '../src/domain/references.ts';
@@ -13,7 +13,7 @@ const titans = catalogue.search({ family: 'Titan' });
 const dreamwalkers = titans.filter(card => isDreamwalker(card.faces[0]));
 const reference = card => ({ definitionId: card.id, faceId: card.faces[0].id });
 
-test('Argo-bred count tracks all Argonauts and clears when extra Titans are replaced or removed', () => {
+test('different Argo-bred types coexist and duplicate warnings clear when the repeated type is replaced or removed', () => {
   let party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
   const choose = (argonautId, name) => {
     const card = titans.find(card => card.faces[0].name === name);
@@ -24,6 +24,12 @@ test('Argo-bred count tracks all Argonauts and clears when extra Titans are repl
   assert.deepEqual(argoBredArgonauts(party, catalogue).map(a => a.id), ['a']);
   choose('d', 'Gamechanger');
   assert.deepEqual(argoBredArgonauts(party, catalogue).map(a => a.id), ['a', 'd']);
+  assert.deepEqual(argoBredConflicts(party, catalogue), []);
+  choose('c', 'Mazerunner');
+  assert.deepEqual(argoBredConflicts(party, catalogue).map(group => ({ name: group.name, owners: group.argonauts.map(a => a.id) })), [{ name: 'Mazerunner', owners: ['a', 'c'] }]);
+  choose('c', 'Earthshaker');
+  assert.deepEqual(argoBredConflicts(party, catalogue), []);
+  choose('c', null);
   party = partyReducer(party, { type: 'select', argonautId: 'b' }, catalogue);
   assert.equal(argoBredArgonauts(party, catalogue).length, 2);
   choose('d', 'Solon');
@@ -35,8 +41,11 @@ test('Argo-bred count tracks all Argonauts and clears when extra Titans are repl
 test('every named Dreamwalker subtype is exempt; unresolved references are not classified as Argo-bred', () => {
   const party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
   for (const card of dreamwalkers) {
+    for (const member of party.argonauts) member.titan = null;
     party.argonauts[0].titan = { id: 'a:titan', ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} };
     assert.equal(argoBredArgonauts(party, catalogue).length, 0);
+    for (const member of party.argonauts) member.titan = { id: `${member.id}:titan`, ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} };
+    assert.deepEqual(argoBredConflicts(party, catalogue), []);
   }
   const argoBred = titans.find(card => card.faces[0].name === 'Mazerunner');
   for (const argonaut of party.argonauts.slice(0, 2)) {
@@ -47,6 +56,8 @@ test('every named Dreamwalker subtype is exempt; unresolved references are not c
   party.argonauts[2].titan = null;
   const restored = readBackup(exportProfile({ id: 'p', name: 'Titans', party }), catalogue).profile.party;
   assert.equal(argoBredArgonauts(restored, catalogue).length, 2);
+  assert.equal(argoBredConflicts(restored, catalogue)[0].name, 'Mazerunner');
+  assert.deepEqual(argoBredConflicts(restored, catalogue)[0].argonauts.map(a => a.id), ['a', 'b']);
 });
 
 test('twenty named Dreamwalkers merge into one selectable result while keeping five cycle variants', () => {
@@ -99,4 +110,42 @@ test('selected Dreamwalker variants preserve their printed tables and saved IDs 
     assert.equal(restored.argonauts[1].titan, null);
     assert.deepEqual(copy, before);
   }
+});
+
+
+test('four different Argo-bred types are legal; each Argonaut retains exactly one selected Titan', () => {
+  let party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
+  for (const [index, name] of ['Mazerunner', 'Gamechanger', 'Logicbreaker', 'Earthshaker'].entries()) {
+    const argonautId = party.order[index], card = catalogue.byName(name)[0];
+    party = partyReducer(party, { type: 'titan', argonautId, titan: { id: `${argonautId}:titan`, ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} } }, catalogue);
+  }
+  assert.equal(argoBredArgonauts(party, catalogue).length, 4);
+  assert.deepEqual(argoBredConflicts(party, catalogue), []);
+  const before = party.argonauts[0].titan, card = catalogue.byName('Solon')[0];
+  const changed = partyReducer(party, { type: 'titan', argonautId: 'a', titan: { ...before, ...reference(card) } }, catalogue);
+  assert.equal(changed.argonauts[0].titan.definitionId, card.id);
+  assert.equal(changed.argonauts[0].instances.some(instance => instance.id === before.id), false);
+  assert.deepEqual(changed.argonauts.slice(1), party.argonauts.slice(1));
+  assert.deepEqual(argoBredConflicts(changed, catalogue), []);
+});
+
+test('all repeated Argo-bred groups are reported independently, while distinct full type names stay separate', () => {
+  const party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
+  for (const [index, name] of ['Mazerunner', 'Gamechanger', 'Mazerunner', 'Gamechanger'].entries()) {
+    const member = party.argonauts[index], card = catalogue.byName(name)[0];
+    member.titan = { id: `${member.id}:titan`, ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} };
+  }
+  assert.deepEqual(argoBredConflicts(party, catalogue).map(group => [group.name, group.argonauts.map(a => a.id)]), [['Mazerunner', ['a', 'c']], ['Gamechanger', ['b', 'd']]]);
+  const truthbearer = catalogue.byName('Truthbearer')[0], immortal = catalogue.byName('Immortal Truthbearer')[0];
+  party.argonauts[0].titan = { ...party.argonauts[0].titan, ...reference(truthbearer) };
+  party.argonauts[1].titan = { ...party.argonauts[1].titan, ...reference(immortal) };
+  assert.deepEqual(argoBredConflicts(party, catalogue), []);
+});
+
+test('different catalogue copies of the same printed Titan type share the Argo-bred limit', () => {
+  const party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version), card = catalogue.byName('Mazerunner')[0];
+  party.argonauts[0].titan = { id: 'a:titan', ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} };
+  party.argonauts[1].titan = { id: 'b:titan', definitionId: 'other-copy', faceId: 'front', exhausted: false, enabledEffectIds: [], counters: {} };
+  const copies = { getFace: (id, side) => id === 'other-copy' ? { ...card.faces[0], name: '  MAZERUNNER  ' } : catalogue.getFace(id, side) };
+  assert.deepEqual(argoBredConflicts(party, copies).map(group => group.argonauts.map(a => a.id)), [['a', 'b']]);
 });

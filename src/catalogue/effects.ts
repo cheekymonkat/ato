@@ -4,6 +4,7 @@ import type { JsonObject, JsonValue } from '../domain/json.ts';
 
 export interface EffectDiagnostic { pointer: string; message: string }
 export interface EffectResult { effects: SlotCapacityEffect[]; diagnostics: EffectDiagnostic[] }
+export const SLOT_EFFECTS_VERSION = 2;
 
 /** Rendering may format each token separately. This is only an importer/search utility. */
 export function tokenText(tokens: JsonValue): string {
@@ -14,8 +15,7 @@ export function tokenText(tokens: JsonValue): string {
 /** Recognises a narrow audited grammar; icons must be icons, not words in prose. */
 export function extractSlotEffects(face: CardFace, definitionId: string): EffectResult {
   const result: EffectResult = { effects: [], diagnostics: [] };
-  if (face.kind !== 'gear') return result;
-  const gearData = face.data;
+  if (face.kind !== 'gear' && face.family !== 'Pattern') return result;
   function walk(value: JsonValue, path: string, conditions: EffectCondition[]): void {
     if (Array.isArray(value)) { value.forEach((v, i) => walk(v, `${path}/${i}`, conditions)); return; }
     if (!isRecord(value)) return;
@@ -31,15 +31,17 @@ export function extractSlotEffects(face: CardFace, definitionId: string): Effect
         const icons = object.abilityText.filter(t => isRecord(t) && t.type === 'icon').map(t => (t as JsonObject).value);
         const support = /^You have ([1-9]\d*) additional Support slots?(?: for a Gear with the ([\w -]+) Trait)?$/.exec(text);
         const hand = /^You may gain ([1-9]\d*) additional OneHanded slots? during Loadout$/.exec(text);
-        const recognized = (support && icons.includes('Support') && (!support[2] || icons.includes('Gear'))) || (hand && icons.includes('OneHanded'));
+        const restrictedHand = /^You have ([1-9]\d*) additional Weapon OneHanded slots? \(this slot does not allow you to use ThreeHanded Weapons\)$/.exec(text);
+        const recognized = (support && icons.includes('Support') && (!support[2] || icons.includes('Gear'))) || (hand && icons.includes('OneHanded'))
+          || (restrictedHand && icons.includes('OneHanded') && icons.includes('ThreeHanded'));
         if (recognized && validTokens && !Object.hasOwn(object, 'costs')) {
-          const amount = Number((support || hand)![1]);
+          const amount = Number((support || hand || restrictedHand)![1]);
           if (!Number.isSafeInteger(amount)) result.diagnostics.push({ pointer, message: 'Capacity amount is outside the supported integer range.' });
-          else result.effects.push({ id: `${face.id}:capacity:${support ? 'support' : 'hand'}:${hand ? 'optional-loadout' : 'automatic'}:${encodeURIComponent(support?.[2] || 'any')}:${encodeURIComponent(JSON.stringify(gated))}`, type: 'slot-capacity', slot: support ? 'support' : 'hand', amount,
+          else result.effects.push({ id: `${face.id}:capacity:${support ? 'support' : 'hand'}:${hand ? 'optional-loadout' : 'automatic'}:${encodeURIComponent(support?.[2] || 'any')}:${encodeURIComponent(JSON.stringify(gated))}${restrictedHand ? ':no-three-handed' : ''}`, type: 'slot-capacity', slot: support ? 'support' : 'hand', amount,
             source: { definitionId, faceId: face.id, pointer, tokens: object.abilityText as AbilityToken[] },
             activation: hand ? 'optional-loadout' : 'automatic',
-            eligibility: support?.[2] ? { family: 'Gear', requiredTraits: [support[2]] } : null,
-            conditions: gated, consequences: hand ? gearData.abilities.flatMap(ability => {
+            eligibility: restrictedHand ? { family: 'Gear', requiredTraits: [], forbiddenWeaponHands: [3] } : support?.[2] ? { family: 'Gear', requiredTraits: [support[2]] } : null,
+            conditions: gated, consequences: hand && Array.isArray(face.data.abilities) ? face.data.abilities.flatMap(ability => {
               if (!isRecord(ability)) return [];
               const consequence = tokenText(ability.abilityText as JsonValue);
               return consequence.startsWith('If you do,') ? [consequence] : [];
@@ -52,7 +54,7 @@ export function extractSlotEffects(face: CardFace, definitionId: string): Effect
     });
   }
   // Do not treat FAQ, errata or flavour text as active abilities.
-  walk(face.data.abilities, '/abilities', []);
-  walk(face.data.gatedAbilities, '/gatedAbilities', []);
+  if (Array.isArray(face.data.abilities)) walk(face.data.abilities, '/abilities', []);
+  if (Array.isArray(face.data.gatedAbilities)) walk(face.data.gatedAbilities, '/gatedAbilities', []);
   return result;
 }

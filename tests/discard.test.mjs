@@ -6,6 +6,7 @@ import { canDiscardCard, hasDiscardCost } from '../src/domain/ability-costs.ts';
 import { canDiscardMemory, memoryProgress } from '../src/domain/memories.ts';
 import { createParty, parseParty } from '../src/domain/party.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
+import { deriveTitanWeaponRules } from '../src/domain/titan-loadout-rules.ts';
 
 const raw = JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json', import.meta.url)));
 const catalogue = createCatalogueRepository(raw);
@@ -15,7 +16,9 @@ const reduce = (party, action, repo = catalogue) => partyReducer(party, { argona
 const ability = costs => ({ abilityText: [{ type: 'keyword', value: 'Reflex' }], costs });
 const withCosts = (card, field, costs) => {
   const input = structuredClone(raw);
-  input.cards.find(item => item.id === card.id).faces[0].data[field] = [ability(costs)];
+  const face = input.cards.find(item => item.id === card.id).faces[0];
+  face.data[field] = [ability(costs)];
+  if (face.kind === 'titan') face.weaponRules = deriveTitanWeaponRules(face.data.abilities);
   return createCatalogueRepository(input);
 };
 const equip = (party, card, id = 'g', positionId = 'base:attachment:0', repo = catalogue) => reduce(party, {

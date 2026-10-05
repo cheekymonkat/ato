@@ -26,6 +26,7 @@ export function TitanSelectionMenu({ argonaut, onClose }: { argonaut: Argonaut; 
       dispatch({ type: 'titan', argonautId: argonaut.id, titan: null }); onClose();
     }} />;
   return <Sheet visible title="Choose Titan" onClose={onClose}>
+    <Text style={styles.cycle}>One Titan per Argonaut. Each Argo-bred type can be selected once across the party; Dreamwalker variants may repeat.</Text>
     <ArgoBredWarning />
     {party.inventory?.enforce && <><Text style={styles.cycle}>Showing acquired Titans and Dreamwalker variants through this campaign’s cycle.</Text><Button quiet label="Manage available Titans on Argo" onPress={() => { onClose(); router.push('/argo'); }} /></>}
     {cards.map(card => {

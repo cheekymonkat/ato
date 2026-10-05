@@ -108,7 +108,7 @@ test('slot patterns retain source tokens, restrictions, optional choice and cons
   const backpack = gear('Nosoi Backpack').faces[0].slotEffects[0];
   assert.equal(backpack.slot, 'hand'); assert.equal(backpack.activation, 'optional-loadout');
   assert.deepEqual(backpack.consequences, ['If you do, gain 2 Ambrosia tokens at the start of Battle']);
-  assert.equal(generated.cards.flatMap(c => c.faces).flatMap(f => f.slotEffects).length, 7);
+  assert.equal(generated.cards.flatMap(c => c.faces).flatMap(f => f.slotEffects).length, 9);
   const reordered = structuredClone(gear('Trireme Breastplate').faces[0]);
   reordered.data.abilities.unshift({ abilityText: [{ type: 'plainText', value: 'Unrelated ability added later' }] });
   const reorderedEffect = extractSlotEffects(reordered, gear('Trireme Breastplate').id).effects[0];

@@ -10,6 +10,7 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { adjustedStat, combatAdjustments } from '../domain/combat-modifiers';
+import { slotRestrictionLabel } from '../domain/slots';
 
 const slotNames = { hand: 'Hands', armor: 'Armor', support: 'Support', attachment: 'Attachments', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const signed = (value: number) => value > 0 ? `+${value}` : String(value);
@@ -22,6 +23,10 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
     const card = instance && catalogue.get(instance.definitionId);
     return card && spoilers.hidden(card) ? 'Unrevealed Gear' : instance && catalogue.getFace(instance.definitionId, instance.faceId)?.name || 'Unavailable Gear';
   };
+  const grantName = (definitionId: string, faceId: string) => {
+    const card = catalogue.get(definitionId);
+    return card && spoilers.hidden(card) ? 'Unrevealed card' : catalogue.getFace(definitionId, faceId)?.name || 'Unavailable card';
+  };
   const cards = assignedGateCards(argonaut, catalogue).filter(entry => !spoilers.hidden(entry.card));
   const titanCard = argonaut.titan && catalogue.get(argonaut.titan.definitionId);
   const showTitanRule = titanCard && !spoilers.hidden(titanCard);
@@ -29,7 +34,7 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
   return <Sheet visible title="Rules assistance" subtitle={argonaut.name || 'Argonaut'} wide onClose={onClose}>
     <SwipeGuard><View style={styles.toggleRow}>
       <View style={styles.toggleLabel}><Text style={styles.heading}>Highlight card gates</Text>
-        <Text style={styles.body}>Applies to Gear, Titans and memories for all four Argonauts, using each one’s own counters and equipment.</Text></View>
+        <Text style={styles.body}>Applies to Gear, Titans, memories and selected Patterns for all four Argonauts, using each one’s own counters and equipment.</Text></View>
       <Switch accessibilityLabel="Highlight card gates for this campaign" value={party.rulesAssistance === true}
         onValueChange={enabled => dispatch({ type: 'rules-assistance', partyId: party.id, argonautId: argonaut.id, enabled })}
         trackColor={{ false: theme.line, true: '#416EAA' }} />
@@ -40,7 +45,7 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
 
     <View style={styles.section}><Text accessibilityRole="header" style={styles.heading}>Combat modifiers</Text>
       <Text style={styles.body}>Precision tokens {signed(argonaut.combatModifiers?.precision ?? 0)} · Speed tokens {signed(argonaut.combatModifiers?.speed ?? 0)}</Text>
-      <Text style={styles.body}>Red values include your modifier tokens and direct passive Gear bonuses or penalties. Weapon Precision bonuses apply to that Weapon; non-weapon Precision bonuses apply to all Weapons. Gear Speed effects adjust the selected Titan. Gated bonuses update when their requirement is met, independently of gate highlighting.</Text>
+      <Text style={styles.body}>Red values include your modifier tokens and direct passive Gear or Pattern bonuses and penalties. Weapon Precision bonuses apply to that Weapon; non-weapon Precision bonuses apply to all Weapons. Gear and Pattern Speed effects adjust the selected Titan. Gated bonuses update when their requirement is met, independently of gate highlighting.</Text>
       {[...combat].flatMap(([face, modifiers]) => {
         const name = face.kind === 'titan' ? 'Speed' : 'Precision';
         const printed = face.kind === 'titan' ? face.data.speed : face.kind === 'gear' ? face.data.offensiveStatistics.precision : undefined;
@@ -69,10 +74,10 @@ export function RulesAssistanceSheet({ argonaut, onClose }: { argonaut: Argonaut
       {review.capacity.map(row => <View key={row.kind} style={styles.capacity}>
         <Text style={styles.label}>{slotNames[row.kind]}: {row.occupied} / {row.available} used</Text>
         <Text style={styles.body}>{row.baseline} base{row.available !== row.baseline ? ` + ${row.available - row.baseline} granted` : ''}</Text>
-        {row.grants.map(position => <Text key={position.id} style={styles.note}>+1 from {nameOf(position.source!.instanceId)}{position.eligibility ? ` · ${position.eligibility.requiredTraits.join(', ')} Gear only` : ''}</Text>)}
+        {row.grants.map(position => <Text key={position.id} style={styles.note}>+1 from {grantName(position.source!.definitionId, position.source!.faceId)}{position.eligibility ? ` · ${slotRestrictionLabel(position.eligibility)}` : ''}</Text>)}
       </View>)}
       {showTitanRule && review.handRule && <Text style={styles.body}>{review.handRule}: three-handed Weapons can occupy two hands. Equipment selection offers this option while this Titan is assigned. Other effects of the ability stay manual.</Text>}
-      {showTitanRule && review.unknownMight && <Text style={styles.warning}>Unknown Might needs a manual loadout exception: three-handed Weapons may occupy two hands, but using it also removes one Support slot. That trade-off is not applied automatically.</Text>}
+      {showTitanRule && review.unknownMight && <Text style={styles.body}>Unknown Might removes one Support slot while a three-handed Weapon uses two hands. Gear in a lost slot stays available under Needs reassignment. Removing or discarding that Weapon restores the slot.</Text>}
       {review.notices.map((notice, index) => <View key={`${notice.code}:${index}`} style={styles.notice}>
         <Text style={styles.label}>{notice.instanceIds.map(nameOf).join(' · ')}</Text><Text style={styles.warning}>{notice.message}</Text>
       </View>)}

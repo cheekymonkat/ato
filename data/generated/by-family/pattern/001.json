@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-f012312e95852ae6",
+  "catalogueVersion": "atcc-v2-14e5a2709ecdc39d",
   "family": "Pattern",
   "part": 1,
   "cards": [
@@ -2941,7 +2941,45 @@
           "cycle": "Cycle II",
           "game": "Odyssey",
           "inheritedFields": [],
-          "slotEffects": [],
+          "slotEffects": [
+            {
+              "id": "front:capacity:support:automatic:any:%5B%5D",
+              "type": "slot-capacity",
+              "slot": "support",
+              "amount": 1,
+              "source": {
+                "definitionId": "def_c0b3fa9141b016bb7dec3f39",
+                "faceId": "front",
+                "pointer": "/cards/169/abilities/0/abilityText",
+                "tokens": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Support"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot"
+                  }
+                ]
+              },
+              "activation": "automatic",
+              "eligibility": null,
+              "conditions": [],
+              "consequences": []
+            }
+          ],
           "kind": "other",
           "data": {
             "cardIDs": [
@@ -3413,7 +3451,67 @@
           "cycle": "Cycle IV",
           "game": "Odyssey",
           "inheritedFields": [],
-          "slotEffects": [],
+          "slotEffects": [
+            {
+              "id": "front:capacity:hand:automatic:any:%5B%5D:no-three-handed",
+              "type": "slot-capacity",
+              "slot": "hand",
+              "amount": 1,
+              "source": {
+                "definitionId": "def_d3c044a876a59d1d6cb1439b",
+                "faceId": "front",
+                "pointer": "/cards/316/abilities/0/abilityText",
+                "tokens": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional Weapon"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "OneHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot (this slot does not allow you to use"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ThreeHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Weapons)"
+                  }
+                ]
+              },
+              "activation": "automatic",
+              "eligibility": {
+                "family": "Gear",
+                "requiredTraits": [],
+                "forbiddenWeaponHands": [
+                  3
+                ]
+              },
+              "conditions": [],
+              "consequences": []
+            }
+          ],
           "kind": "other",
           "data": {
             "cardIDs": [

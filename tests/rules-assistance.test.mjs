@@ -141,7 +141,7 @@ test('verified Titan hand rules offer two-hand placement for three-handed Weapon
     const plan = planEquipment(owner, request, catalogue);
     assert.ok(plan.next); assert.equal(plan.next.equipment[0].positionIds.length, 2);
     party.argonauts[0] = plan.next; const before = JSON.stringify(party.argonauts[1]);
-    const changed = reduce(party, { type: 'titan', titan: instance('Gamechanger', 'other-titan') });
+    const changed = reduce(party, { type: 'titan', titan: instance('Mazerunner', 'other-titan') });
     assert.ok(changed.argonauts[0].instances.some(item => item.id === 'weapon'));
     assert.equal(loadoutState(changed.argonauts[0], catalogue).pending.length, 1);
     assert.equal(JSON.stringify(changed.argonauts[1]), before);
@@ -151,9 +151,9 @@ test('verified Titan hand rules offer two-hand placement for three-handed Weapon
   }
 });
 
-test('Unknown Might identifies its Support trade-off without applying an incomplete hand rule', () => {
+test('Unknown Might identifies its Support trade-off and keeps full Support capacity until used', () => {
   const argonaut = fresh().argonauts[0]; argonaut.titan = instance('Gamechanger', 'gamechanger');
-  assert.equal(titanHandRule(argonaut, catalogue), null);
+  assert.equal(titanHandRule(argonaut, catalogue), 'Unknown Might');
   assert.equal(loadoutReview(argonaut, catalogue).unknownMight, true);
   assert.equal(loadoutReview(argonaut, catalogue).capacity.find(row => row.kind === 'support').available, 2);
 });

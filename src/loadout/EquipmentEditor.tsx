@@ -12,12 +12,12 @@ import { GearCard } from '../components/cards/GearCard';
 import { SecretCard } from '../components/cards/SecretCard';
 import { GearResults } from '../components/cards/GearResults';
 import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign';
-import { titanHandRule } from '../domain/hand-rules';
+import { titanLoadoutRules } from '../domain/hand-rules';
 import type { CardDefinition } from '../domain/cards';
 import { loadoutState, planEquipment, slotOptions } from '../domain/loadout';
 import type { EquipRequest } from '../domain/loadout';
 import type { Argonaut } from '../domain/party';
-import { meetsSlotRestriction } from '../domain/slots';
+import { meetsSlotRestriction, slotRestrictionLabel } from '../domain/slots';
 import type { CapacityPosition } from '../domain/slots';
 import { useParty } from '../state/PartyProvider';
 import { CampaignCardVisibility, useSpoilers } from '../state/SpoilerProvider';
@@ -50,7 +50,7 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
   const face = selected?.faces.find(face => face.id === (params.face || instance?.faceId || 'front')) || selected?.faces[0];
   const otherFace = selected?.faces.find(side => side.id !== face?.id);
   const hidden = selected && spoilers.hidden(selected), reuse = Boolean(instance && selected?.id === instance.definitionId);
-  const options = face ? slotOptions(face, titanHandRule(argonaut, catalogue)).filter(option => !target || option.kind === target.kind) : [];
+  const options = face ? slotOptions(face, titanLoadoutRules(argonaut, catalogue)).filter(option => !target || option.kind === target.kind) : [];
   const selectedUnits = units ?? (reuse && face?.id === instance?.faceId ? options.find(option => option.units === assignment?.positionIds.length)?.units : undefined) ?? options[0]?.units ?? 1;
   const request: EquipRequest | null = selected && face && target ? { definitionId: selected.id, faceId: face.id, positionId: target.id,
     instanceId: reuse ? instance!.id : newId, reuse, units: selectedUnits, overrideReason: override ? reason : undefined } : null;
@@ -60,7 +60,7 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
   const stock = selected && gearStock(party, selected.id, catalogue);
   const canSave = Boolean(inventoryAllowed && available && plan?.next && !hidden && (!override || reason.trim()));
   const matches = catalogue.search({ family: 'Gear', query, campaignCycle: cycle }).filter(card => (!party.inventory?.enforce || card.id === instance?.definitionId || gearStock(party, card.id, catalogue).available > 0) && card.faces.some(face =>
-    isFaceAvailableInCycle(face, cycle) && (allGear || !target || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
+    isFaceAvailableInCycle(face, cycle) && (allGear || !target || slotOptions(face, titanLoadoutRules(argonaut, catalogue)).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
   const lastPage = Math.max(0, Math.ceil(matches.length / 12) - 1), currentPage = Math.min(page, lastPage);
   const ownedFace = instance && catalogue.getFace(instance.definitionId, instance.faceId);
   const ownDefinition = instance && catalogue.get(instance.definitionId), ownHidden = ownDefinition && spoilers.hidden(ownDefinition);
@@ -75,7 +75,7 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
     scroll.current?.scrollTo({ y: 0, animated: true });
   }
   const faceForCard = (card: CardDefinition) => {
-    const eligible = (face: typeof card.faces[number]) => isFaceAvailableInCycle(face, cycle) && (!target || allGear || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target));
+    const eligible = (face: typeof card.faces[number]) => isFaceAvailableInCycle(face, cycle) && (!target || allGear || slotOptions(face, titanLoadoutRules(argonaut, catalogue)).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target));
     return card.faces.find(face => eligible(face) && (!query.trim() || face.name.toLowerCase().includes(query.trim().toLowerCase())))
       || card.faces.find(eligible) || card.faces[0];
   };
@@ -90,7 +90,7 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
     <View style={styles.row}><Button quiet label="Back to Argonaut" onPress={back} /><Text style={styles.meta}>{argonaut.name || 'Argonaut'} · Loadout</Text></View>
     <Text accessibilityRole="header" style={styles.title}>{instance ? 'Edit equipment' : 'Choose equipment'}</Text>
     <Text style={styles.body}>{target ? positionLabel(target, state.positions) : 'Choose a destination to reassign this card.'}</Text>
-    {target?.eligibility && <Text style={styles.warning}>{target.eligibility.requiredTraits.join(', ')} Gear only in this bonus position.</Text>}
+    {target?.eligibility && <Text style={styles.warning}>{slotRestrictionLabel(target.eligibility)} in this bonus position.</Text>}
     {!target && <View style={styles.panel}><Text style={styles.heading}>Destination</Text><View style={styles.row}>
       {state.positions.filter(position => !['mnemos', 'fated-mnemos'].includes(position.kind)).map(position => <Button key={position.id} quiet label={positionLabel(position, state.positions)} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ position: positionRouteParam(position.id) }); }} />)}
     </View></View>}

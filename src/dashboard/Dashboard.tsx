@@ -33,6 +33,7 @@ import { StatusBar } from './StatusBar';
 import { TitanSelectionMenu } from './TitanSelectionMenu';
 import { titanArtwork } from '../theme/titan-art';
 import { ArgoBredWarning } from './ArgoBredWarning';
+import { TitanLoadoutChoice } from './TitanLoadoutChoice';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -131,6 +132,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
                   instanceId: argonaut.titan.id, definitionId: argonaut.titan.definitionId, faceId: argonaut.titan.faceId, abilityId, exhausted }); }} />
                 : <Button quiet label="Choose Titan" onPress={() => setChoosingTitan(true)} />}
               {argonaut.titan?.discarded && <Text style={styles.referenceHint}>Discarded</Text>}
+              <TitanLoadoutChoice argonaut={argonaut} />
               {argonaut.titan && <SwipeGuard><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
                 {(argonaut.titan.discarded || titan && !hiddenTitan && canDiscardCard(titan)) && <Button quiet label={argonaut.titan.discarded ? 'Restore Titan' : 'Discard Titan'} onPress={() => dispatch({ type: 'titan-discarded', argonautId: argonaut.id, instanceId: argonaut.titan!.id, discarded: !argonaut.titan?.discarded })} />}
               </View></SwipeGuard>}

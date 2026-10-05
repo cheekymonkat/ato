@@ -14,6 +14,22 @@ export function argoBredArgonauts(party: Pick<Party, 'argonauts'>, catalogue: Pi
     return face?.kind === 'titan' && !isDreamwalker(face);
   });
 }
+/** One of each printed Argo-bred type across the party; Dreamwalker variants never conflict.
+ * Full names distinguish e.g. Truthbearer from Immortal Truthbearer. Catalogue copies
+ * of the same named type share the limit even if their definition IDs differ.
+ */
+export function argoBredConflicts(party: Pick<Party, 'argonauts'>, catalogue: Pick<CatalogueRepository, 'getFace'>) {
+  const groups = new Map<string, { name: string; argonauts: Party['argonauts'] }>();
+  for (const argonaut of argoBredArgonauts(party, catalogue)) {
+    const face = catalogue.getFace(argonaut.titan!.definitionId, argonaut.titan!.faceId)!;
+    const name = face.name.trim().replace(/\s+/g, ' ');
+    const key = name.normalize('NFKC').toLowerCase() || argonaut.titan!.definitionId;
+    const group = groups.get(key);
+    if (group) group.argonauts.push(argonaut);
+    else groups.set(key, { name: name || argonaut.titan!.definitionId, argonauts: [argonaut] });
+  }
+  return [...groups.values()].filter(group => group.argonauts.length > 1);
+}
 export function titanDisplayName(face: CardFace): string {
   return isDreamwalker(face) ? 'Dreamwalker' : face.name;
 }

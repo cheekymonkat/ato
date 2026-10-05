@@ -11,12 +11,14 @@ import { GameIcon } from '../components/Icon';
 import type { GameIconName } from '../components/Icon';
 import type { Argonaut } from '../domain/party';
 import type { CapacityPosition } from '../domain/slots';
+import { slotRestrictionLabel } from '../domain/slots';
 import { loadoutState } from '../domain/loadout';
 import type { SlotKind } from '../domain/cards';
 import { theme } from '../theme/tokens';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { equipmentGroupWidths, equipmentSlotSize, GROUP_GAP, SLOT_GAP, SLOT_WIDTH } from './equipment-layout';
 import { positionRouteParam } from '../loadout/position-params';
+import { visibleEquipmentPositions } from './equipment-positions';
 
 const labels: Record<SlotKind, string> = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'FatedMnemos' };
@@ -54,7 +56,7 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
       <View style={styles.symbol}><GameIcon name={icons[position.kind]} size={compact ? 28 : 38} /></View>
       <View style={horizontal ? { flex: 1 } : { alignItems: 'center' }}>
         <Text style={[styles.empty, face && styles.cardName]}>{hidden ? 'Unrevealed card' : face?.name || (compact ? 'Unassigned' : 'Unequipped')}</Text>
-        {source && <Text style={styles.grantText}>{position.eligibility ? `${position.eligibility.requiredTraits.join(', ')} Gear only` : 'Additional slot'}</Text>}
+        {source && <Text style={styles.grantText}>{position.eligibility ? slotRestrictionLabel(position.eligibility) : 'Additional slot'}</Text>}
       </View>
     </View>}
     {sourceName && <Text style={styles.source}>Granted by {sourceName}</Text>}
@@ -80,19 +82,20 @@ function SlotRow({ kinds, positions, argonaut, rowWidth, compact = false, startI
 export function EquipmentArea({ positions, argonaut, headingAction }: { positions: CapacityPosition[]; argonaut: Argonaut; headingAction?: ReactNode }) {
   const { width } = useWindowDimensions();
   const [areaWidth, setAreaWidth] = useState(width - 32);
-  const needsReassignment = loadoutState(argonaut, getCatalogue()).pending;
+  const state = loadoutState(argonaut, getCatalogue()), needsReassignment = state.pending;
+  const visiblePositions = visibleEquipmentPositions(positions, argonaut.equipment, state.activeInstanceIds);
   const spoilers = useSpoilers();
   const groups: { title: string; kinds: SlotKind[]; note?: string; compact?: boolean }[] = [
     { title: 'Equipment', kinds: ['hand', 'armor'], note: 'Your Titan’s loadout' },
     { title: 'Support', kinds: ['support'], note: `${positions.filter(position => position.kind === 'support').length} available slots` },
     { title: 'Attachments', kinds: ['attachment'], compact: true },
   ];
-  const groupWidths = equipmentGroupWidths(areaWidth, groups.map(group => positions.filter(position => group.kinds.includes(position.kind)).length));
+  const groupWidths = equipmentGroupWidths(areaWidth, groups.map(group => visiblePositions.filter(position => group.kinds.includes(position.kind)).length));
   return <View style={styles.area}>
     <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>{groups.map((group, index) => {
       return <View key={group.title} style={[styles.group, { width: groupWidths[index] }]}>
         <SectionHeading title={group.title} note={group.note} action={index === 0 ? headingAction : undefined} />
-        <SlotRow kinds={group.kinds} positions={positions} argonaut={argonaut} rowWidth={groupWidths[index]} compact={group.compact} />
+        <SlotRow kinds={group.kinds} positions={visiblePositions} argonaut={argonaut} rowWidth={groupWidths[index]} compact={group.compact} />
       </View>;
     })}</View>
     {needsReassignment.length > 0 && <View style={styles.reassignment}><Text style={styles.reassignmentTitle}>Needs reassignment</Text>

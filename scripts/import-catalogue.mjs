@@ -8,6 +8,8 @@ import { parseCatalogue } from '../src/catalogue/validate.ts';
 import { createIdentityResolver } from './identity-registry.mjs';
 import { gearArtwork } from '../src/catalogue/gear-art.ts';
 import { catalogueReviewFiles } from './catalogue-review-files.mjs';
+import { TITAN_LOADOUT_RULES_VERSION } from '../src/domain/titan-loadout-rules.ts';
+import { SLOT_EFFECTS_VERSION } from '../src/catalogue/effects.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const allowed = new Set(['source', 'out', 'registry', 'check']);
@@ -39,7 +41,8 @@ catch (error) { if (error.code !== 'ENOENT') throw error; }
 const identity = createIdentityResolver(registry);
 const result = normalizeCatalogue(inputs, card => identity.resolve(card), 'pending');
 const digest = createHash('sha256').update(JSON.stringify({ importerVersion: 2,
-  files: inputs.map(input => [input.file, input.sha256]), registry: identity.snapshot(), artwork: gearArtwork })).digest('hex');
+  files: inputs.map(input => [input.file, input.sha256]), registry: identity.snapshot(), artwork: gearArtwork,
+  titanLoadoutRulesVersion: TITAN_LOADOUT_RULES_VERSION, slotEffectsVersion: SLOT_EFFECTS_VERSION })).digest('hex');
 const version = `atcc-v2-${digest.slice(0, 16)}`;
 result.catalogue.catalogueVersion = version;
 parseCatalogue(result.catalogue);

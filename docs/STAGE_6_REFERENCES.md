@@ -392,13 +392,17 @@ then refresh, restart, and export/import. Check that only the selected ability
 changes and that tapping its control never opens the memory editor or swipes
 to another Argonaut.
 
-The dashboard and Titan picker show a campaign-wide warning when more than one
-Argonaut has an Argo-bred (non-Dreamwalker) Titan selected. All named Dreamwalker
-subtypes are exempt. The warning lists the affected Argonauts and disappears
-when extra selections are removed or changed to Dreamwalkers. It also applies
-to restored saves; exhausted or discarded Titans remain selected and count.
-Unresolved references are not assumed to be Argo-bred. Selection remains
-possible so the warning does not erase or block campaign data.
+The dashboard, Titan picker and Argo page warn only when the same Argo-bred
+(non-Dreamwalker) Titan type is selected by multiple Argonauts. Different
+Argo-bred types can coexist across all four Argonauts. Full printed type names
+are grouped, so copies of the same named type share the limit while distinct
+names remain separate. The warning lists each duplicate type and its owners,
+and disappears when duplicates are removed or replaced. Every named Dreamwalker
+and cycle subtype may repeat, including four copies of the same variant.
+Exhausted/discarded Titans still count as selected; unresolved references are not
+assumed to be Argo-bred. This remains an advisory warning and never erases or
+blocks restored campaign data. Each Argonaut has one selected Titan reference;
+choosing another replaces it.
 
 ## Memory layout rounding correction
 

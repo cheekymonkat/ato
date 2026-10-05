@@ -5,6 +5,7 @@ import { loadoutState } from './loadout.ts';
 import type { Argonaut } from './party.ts';
 import { checkGate, gateValues } from './rules-assistance.ts';
 import type { GateValues } from './rules-assistance.ts';
+import { assignedPatternSources } from './references.ts';
 
 export type CombatModifier = 'precision' | 'speed';
 export interface StatContribution { source: string; amount: number }
@@ -35,6 +36,27 @@ export function passiveGearModifiers(face: Extract<CardFace, { kind: 'gear' }>, 
   return totals;
 }
 
+/** Pattern gates may sit directly on an ability (Chronian Strain), unlike Gear's grouped gates. */
+export function passivePatternModifiers(face: CardFace, values: GateValues): { precision: number; speed: number } {
+  const totals = { precision: 0, speed: 0 };
+  if (face.family !== 'Pattern') return totals;
+  for (const ability of objects(face.data.abilities)) {
+    if (ability.costs != null && (!Array.isArray(ability.costs) || ability.costs.length > 0)) continue;
+    const gate = displayGate(ability);
+    if (gate && checkGate(gate, values).status !== 'met') continue;
+    const tokens = objects(ability.abilityText);
+    if (!tokens.length || tokens.some(token => !['plainText', 'whitespace', 'icon'].includes(String(token.type)))) continue;
+    const text = tokens.map(token => String(token.value ?? '')).join('').replace(/\s+/g, ' ').trim();
+    const leading = /^(?:Gain )?([+-]\d+) (Precision|Speed)$/.exec(text);
+    const trailing = /^(Precision|Speed) ([+-]\d+)$/.exec(text);
+    if (!leading && !trailing) continue;
+    const amount = Number(leading?.[1] ?? trailing?.[2]);
+    const name = (leading?.[2] ?? trailing?.[1])?.toLowerCase() as CombatModifier;
+    if (Number.isSafeInteger(amount)) totals[name] += amount;
+  }
+  return totals;
+}
+
 /** Printed definitions stay immutable. Each equipped instance contributes once, even with multiple hands. */
 export function combatAdjustments(argonaut: Argonaut, catalogue: CatalogueRepository): Map<CardFace, Partial<Record<CombatModifier, StatAdjustment>>> {
   const result = new Map<CardFace, Partial<Record<CombatModifier, StatAdjustment>>>();
@@ -46,15 +68,21 @@ export function combatAdjustments(argonaut: Argonaut, catalogue: CatalogueReposi
   });
   const manual = (name: CombatModifier): StatContribution[] => argonaut.combatModifiers?.[name]
     ? [{ source: `${name === 'precision' ? 'Precision' : 'Speed'} modifier tokens`, amount: argonaut.combatModifiers[name] }] : [];
+  const patterns = assignedPatternSources(argonaut, catalogue).flatMap(source => {
+    const face = catalogue.getFace(source.definition.id, source.instance.faceId);
+    return face ? [{ face, modifiers: passivePatternModifiers(face, values) }] : [];
+  });
+  const patternContributions = (name: CombatModifier) => patterns.filter(item => item.modifiers[name])
+    .map(({ face, modifiers }) => ({ source: face.name, amount: modifiers[name] }));
   const localPrecision = (face: Extract<CardFace, { kind: 'gear' }>) => /Hands?/.test(face.data.slot) || Boolean(face.data.offensiveStatistics.precision);
   const globalPrecision = gear.filter(({ face }) => !localPrecision(face))
     .filter(({ modifiers }) => modifiers.precision).map(({ face, modifiers }) => ({ source: face.name, amount: modifiers.precision }));
   for (const { face, modifiers } of gear) {
-    result.set(face, { precision: adjustment([...manual('precision'), ...globalPrecision,
+    result.set(face, { precision: adjustment([...manual('precision'), ...globalPrecision, ...patternContributions('precision'),
       ...(modifiers.precision && localPrecision(face) ? [{ source: face.name, amount: modifiers.precision }] : [])]) });
   }
   const titan = argonaut.titan && catalogue.getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
-  if (titan?.kind === 'titan') result.set(titan, { speed: adjustment([...manual('speed'), ...gear.filter(item => item.modifiers.speed)
+  if (titan?.kind === 'titan') result.set(titan, { speed: adjustment([...manual('speed'), ...patternContributions('speed'), ...gear.filter(item => item.modifiers.speed)
     .map(({ face, modifiers }) => ({ source: face.name, amount: modifiers.speed }))]) });
   return result;
 }

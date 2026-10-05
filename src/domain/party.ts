@@ -20,6 +20,8 @@ export interface CardInstance {
   id: string; definitionId: DefinitionId; faceId: FaceId; exhausted: boolean;
   /** Reversible discard marker; absent in older saves means false. */
   discarded?: boolean;
+  /** Six-Armed loadout choice. Missing means the Titan's default weapon capacity. */
+  loadoutMode?: 'weapons' | 'support';
   /** Titan/Mnemos ability readiness, keyed by face and printed ability path. */
   exhaustedAbilityIds?: string[];
   enabledEffectIds: string[]; counters: Record<string, number>;
@@ -115,6 +117,7 @@ function checkInstance(value: unknown, path: string): asserts value is CardInsta
   assert(value.faceId === 'front' || value.faceId === 'back', `${path}: invalid face`);
   assert(typeof value.exhausted === 'boolean' && strings(value.enabledEffectIds) && dictionary(value.counters), `${path}: invalid instance state`);
   assert(value.discarded === undefined || typeof value.discarded === 'boolean', `${path}: invalid discarded state`);
+  assert(value.loadoutMode === undefined || value.loadoutMode === 'weapons' || value.loadoutMode === 'support', `${path}: invalid Titan loadout mode`);
   assert(!(value.discarded && value.exhausted), `${path}: discarded card cannot also be exhausted`);
   assert(value.satisfiedEffectIds === undefined || strings(value.satisfiedEffectIds), `${path}: invalid confirmed effects`);
   assert(value.exhaustedAbilityIds === undefined || strings(value.exhaustedAbilityIds) && new Set(value.exhaustedAbilityIds).size === value.exhaustedAbilityIds.length, `${path}: invalid or duplicate exhausted abilities`);

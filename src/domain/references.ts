@@ -3,6 +3,7 @@ import type { CardFace } from './cards.ts';
 import type { JsonValue } from './json.ts';
 import type { Argonaut, CardReference } from './party.ts';
 import type { PatternKind } from './pattern-table.ts';
+import type { CapacitySource } from './slots.ts';
 
 export const overrideKey = (kind: PatternKind) => kind === 'Trauma' ? 'trauma' : 'kratos';
 export function faceTable(face: CardFace | undefined, kind: PatternKind): JsonValue[] | null {
@@ -12,6 +13,20 @@ export function faceTable(face: CardFace | undefined, kind: PatternKind): JsonVa
 }
 export function supportsPattern(face: CardFace | undefined, kind: PatternKind): boolean {
   return face?.family === 'Pattern' && faceTable(face, kind) !== null;
+}
+
+/** Stable unsaved source identities keep Pattern grants separate from equipment instances. */
+export function assignedPatternSources(argonaut: Argonaut, catalogue: CatalogueRepository): CapacitySource[] {
+  return (['Trauma', 'Kratos'] as const).flatMap(referenceKind => {
+    const reference = argonaut.tableOverrides[overrideKey(referenceKind)];
+    if (!reference) return [];
+    const definition = catalogue.get(reference.definitionId), face = catalogue.getFace(reference.definitionId, reference.faceId);
+    if (!definition || !supportsPattern(face, referenceKind)) return [];
+    return [{ definition, referenceKind, instance: {
+      id: `pattern:${encodeURIComponent(argonaut.id)}:${referenceKind}:${encodeURIComponent(definition.id)}:${reference.faceId}`,
+      definitionId: definition.id, faceId: reference.faceId, exhausted: false, enabledEffectIds: [], counters: {},
+    } }];
+  });
 }
 export interface ResolvedTable { source: 'titan' | 'pattern' | 'missing'; face: CardFace | null; table: JsonValue[]; message: string | null }
 /** An unresolved explicit override must not silently display the Titan default instead. */

@@ -13,6 +13,7 @@ function validateEffect(value: unknown, card: CardDefinition, face: CardFace): a
   assert(Array.isArray(value.conditions) && value.conditions.every(c => isRecord(c) && c.type === 'gate' && typeof c.gate === 'string' && (c.value === null || typeof c.value === 'string')), 'Invalid effect conditions');
   assert(Array.isArray(value.consequences) && value.consequences.every(c => typeof c === 'string'), 'Invalid effect consequences');
   assert(value.eligibility === null || (isRecord(value.eligibility) && value.eligibility.family === 'Gear' && Array.isArray(value.eligibility.requiredTraits) && value.eligibility.requiredTraits.every(v => typeof v === 'string' && v.trim())), 'Invalid slot eligibility');
+  if (isRecord(value.eligibility) && value.eligibility.forbiddenWeaponHands !== undefined) assert(Array.isArray(value.eligibility.forbiddenWeaponHands) && value.eligibility.forbiddenWeaponHands.every(n => Number.isSafeInteger(n) && n > 0), 'Invalid weapon hand restriction');
 }
 
 /** A shared validation boundary for generated files and future catalogue updates. */
@@ -34,6 +35,8 @@ export function parseCatalogue(value: unknown): Catalogue {
       assert(isRecord(faceValue) && (faceValue.id === 'front' || faceValue.id === 'back') && !faceIds.has(faceValue.id), 'Invalid or repeated face');
       faceIds.add(faceValue.id);
       const validated = makeFace(parseSourceCard(faceValue.data, candidate.id), faceValue.id, candidate.id);
+      // Older catalogue snapshots have no derived rules; current imports must agree with their printed abilities.
+      if (faceValue.weaponRules !== undefined) assert(validated.kind === 'titan' && JSON.stringify(faceValue.weaponRules) === JSON.stringify(validated.weaponRules), 'Inconsistent Titan weapon rules');
       if (faceValue.artwork !== undefined) {
         const art = faceValue.artwork;
         assert(validated.kind === 'gear' && isRecord(art) && typeof art.image === 'string' && typeof art.grayscaleImage === 'string'

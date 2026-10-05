@@ -30,7 +30,7 @@ function ArgoBody() {
     <View style={styles.row}><Button quiet label="Campaign settings & backups" onPress={() => router.push('/profiles')} /><Button quiet label="Open Cargo" onPress={() => router.replace('/cargo')} /></View>
     <InventorySettings />
     <View style={styles.panel}><Text accessibilityRole="header" style={styles.heading}>Available Titans</Text>
-      <Text style={styles.body}>Dreamwalkers are available automatically through the campaign’s cycle. Mark Argo-bred Titans as acquired to make them selectable when inventory tracking is enabled.</Text>
+      <Text style={styles.body}>Each Argonaut selects one Titan. Different Argo-bred types can coexist, with one of each type across the party. Dreamwalker variants may repeat and are available automatically through the campaign’s cycle. Mark Argo-bred Titans as acquired to make them selectable when inventory tracking is enabled.</Text>
       <ArgoBredWarning />
       {cards.map(card => {
         const face = card.faces.find(face => face.kind === 'titan'); if (!face) return null;

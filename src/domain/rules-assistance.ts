@@ -8,11 +8,11 @@ import { isRecord } from './json.ts';
 import { loadoutState } from './loadout.ts';
 import { SKILL_NAMES } from './party.ts';
 import type { Argonaut, MemoryProgress } from './party.ts';
-import { DEFAULT_BASELINE } from './slots.ts';
 import { titanHandRule } from './hand-rules.ts';
 import { TOKEN_TYPES } from './tokens.ts';
 import { fatedMemorySide, memoryAbilityPanels } from './memory-presentation.ts';
 import { memoryProgress } from './memories.ts';
+import { assignedPatternSources } from './references.ts';
 
 export type GateStatus = 'met' | 'unmet' | 'review';
 export interface GateCheck { status: GateStatus; explanation: string }
@@ -92,7 +92,8 @@ export function cardGates(face: CardFace, progress?: MemoryProgress): DisplayGat
 /** Same assigned faces and visible memory panels as the dashboard; no hidden future node abilities. */
 export function assignedGateCards(argonaut: Argonaut, catalogue: CatalogueRepository) {
   const assignedIds = new Set([...argonaut.equipment.map(entry => entry.instanceId), ...argonaut.mnemosIds, ...argonaut.fatedMnemosIds].filter(id => id !== null));
-  const instances = [...argonaut.instances.filter(instance => assignedIds.has(instance.id)), ...(argonaut.titan ? [argonaut.titan] : [])];
+  const instances = [...argonaut.instances.filter(instance => assignedIds.has(instance.id)), ...(argonaut.titan ? [argonaut.titan] : []),
+    ...assignedPatternSources(argonaut, catalogue).map(source => source.instance)];
   return instances.flatMap(instance => {
     const card = catalogue.get(instance.definitionId), face = catalogue.getFace(instance.definitionId, instance.faceId);
     if (!card || !face) return [];
@@ -115,7 +116,7 @@ export interface LoadoutNotice { instanceIds: string[]; message: string; code: s
 export function loadoutReview(argonaut: Argonaut, catalogue: CatalogueRepository) {
   const state = loadoutState(argonaut, catalogue), notices: LoadoutNotice[] = [];
   const occupied = new Set(argonaut.equipment.filter(entry => state.activeInstanceIds.has(entry.instanceId)).flatMap(entry => entry.positionIds));
-  const capacity = (['hand', 'armor', 'support', 'attachment'] as SlotKind[]).map(kind => ({ kind, baseline: DEFAULT_BASELINE[kind],
+  const capacity = (['hand', 'armor', 'support', 'attachment'] as SlotKind[]).map(kind => ({ kind, baseline: state.positions.filter(position => position.kind === kind && !position.source).length,
     available: state.positions.filter(position => position.kind === kind).length,
     occupied: state.positions.filter(position => position.kind === kind && occupied.has(position.id)).length,
     grants: state.positions.filter(position => position.kind === kind && position.source) }));

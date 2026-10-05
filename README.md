@@ -102,9 +102,14 @@ contributions, slot capacity and gates on Gear, Titans and unlocked memory panel
 Turn on **Highlight card gates** to check each Argonaut’s Triskelion, token counts
 and equipped Gear traits (such as Labyrinth); the preference is saved with the
 campaign. Each equipped Gear instance contributes once; exhausted Gear retains
-traits, while discarded or pending Gear does not. Cyclopean Might and Elder
-Might offer verified two-hand placement for three-handed Weapons. Unknown
-Might’s Support trade-off and other unresolved effects remain manual.
+traits, while discarded or pending Gear does not. All 44 Titans have explicit
+weapon rules, including three-handed allowances, weapon restrictions, Earthshaker’s
+saved Six-Armed choice and Gamechanger’s conditional Support reduction.
+Multi-hand Weapons appear once while reserving their occupied positions.
+See the [Titan loadout audit](docs/TITAN_LOADOUT_AUDIT.md) for the verified rules.
+Selected Trauma/Kratos Patterns also apply supported effects: Support Specialization
+adds Support capacity, Djinnian Strain adds a restricted weapon position, and
+Chronian Strain adds Speed at Rage 7+. See the [Pattern effect audit](docs/PATTERN_EFFECTS_AUDIT.md).
 The Titan selector row has signed **Precision** and **Speed** modifier counters,
 shown as icons with − / value / + controls and saved per Argonaut.
 Assigned Weapon Precision and Titan movement show adjusted
@@ -120,7 +125,10 @@ groups use measured widths so complete rows remain together as the page widens.
 Stage 9 adds persistent header icons for **Argo, Map, Cargo, Technology, Argonauts
 and Timeline**, reflowing beneath the brand on narrow screens. **Cargo** records
 acquired Gear and shows allocated/available copies across all four Argonauts.
-**Argo** manages acquired Titans, shared resources and campaign notes. Enable
+**Argo** manages acquired Titans, shared resources and campaign notes. Each
+Argonaut selects one Titan. Different Argo-bred types can coexist; repeated
+selections of the same Argo-bred type trigger a warning. Dreamwalker variants
+can repeat across Argonauts. Enable
 **Use campaign inventory for equipment and Titan selection** after reviewing the
 acquired copies; existing loadouts seed the inventory and remain intact. Turning
 tracking off keeps inventory records. Map, Technology and Timeline are planned

@@ -19,6 +19,7 @@ import { clearAllArgonauts, refreshArgonautCards } from '../domain/battle-reset.
 import { AFFLICTIONS } from '../domain/afflictions.ts';
 import type { AfflictionId } from '../domain/afflictions.ts';
 import { setAbilityExhausted } from '../domain/ability-state.ts';
+import { titanLoadoutRules } from '../domain/hand-rules.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
@@ -50,6 +51,7 @@ export type PartyAction =
   | { type: 'skill'; argonautId: string; skill: SkillName; delta: -1 | 1 }
   | { type: 'counter'; argonautId: string; counter: CounterName; value: number; confirmOverflow?: boolean }
   | { type: 'titan'; argonautId: string; titan: CardInstance | null }
+  | { type: 'titan-loadout-mode'; argonautId: string; instanceId: string; mode: 'weapons' | 'support' }
   | { type: 'titan-face'; argonautId: string; faceId: 'front' | 'back' }
   | { type: 'titan-exhausted'; argonautId: string; exhausted: boolean }
   | { type: 'ability-exhausted'; argonautId: string; instanceId: string; definitionId: string; faceId: 'front' | 'back'; abilityId: string; exhausted: boolean }
@@ -212,6 +214,11 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
         updated = { ...current, counters: { ...current.counters, [action.counter]: action.value } };
       }
       break;
+    case 'titan-loadout-mode': {
+      if (current.titan?.id === action.instanceId && catalogue && titanLoadoutRules(current, catalogue)?.alternative && (action.mode === 'weapons' || action.mode === 'support'))
+        updated = { ...current, titan: { ...current.titan, loadoutMode: action.mode } };
+      break;
+    }
     case 'titan': {
       if (party.inventory?.enforce && action.titan && action.titan.definitionId !== current.titan?.definitionId && (!catalogue || !inventoryAllowsTitan(party, action.titan.definitionId, action.titan.faceId, catalogue))) break;
       const detached = current.titan && (current.titan.definitionId !== action.titan?.definitionId || current.titan.id !== action.titan?.id) ? unlinkRemovedHost(current, current.titan.id) : current;

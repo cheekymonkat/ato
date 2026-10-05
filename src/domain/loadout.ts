@@ -1,26 +1,31 @@
 import type { CatalogueRepository } from '../catalogue/repository.ts';
 import type { CardFace, FaceId, SlotKind } from './cards.ts';
 import type { Argonaut, CardInstance, EquipmentAssignment } from './party.ts';
-import { DEFAULT_BASELINE, deriveCapacity, meetsSlotRestriction } from './slots.ts';
-import type { CapacityPosition, CapacitySource } from './slots.ts';
-import { titanHandRule } from './hand-rules.ts';
+import { deriveCapacity, meetsSlotRestriction } from './slots.ts';
+import type { CapacityPosition, CapacitySource, SlotBaseline } from './slots.ts';
+import { titanLoadoutRules, titanSlotBaseline } from './hand-rules.ts';
+import type { TitanWeaponRules } from './titan-loadout-rules.ts';
+import { assignedPatternSources } from './references.ts';
 
 export interface SlotOption { kind: SlotKind; units: number; label: string; review?: boolean }
 export interface LoadoutIssue { code: string; message: string; requiresOverride: boolean }
 const issue = (code: string, message: string, requiresOverride = true): LoadoutIssue => ({ code, message, requiresOverride });
 
 /** Printed slot syntax only; unusual combinations remain an explicit player choice. */
-export function slotOptions(face: CardFace, handRule: ReturnType<typeof titanHandRule> = null): SlotOption[] {
+export function slotOptions(face: CardFace, handRule: TitanWeaponRules | string | null = null): SlotOption[] {
   if (face.kind !== 'gear') return [];
+  const conversions = typeof handRule === 'string' ? [{ printedHands: 3, occupiedHands: 2 }] : handRule?.conversions ?? [];
+  const allowed = typeof handRule === 'object' ? handRule?.allowedWeaponHands : undefined;
   return face.data.slot.split(',').flatMap<SlotOption>(part => {
     const value = part.trim(), simple = { Support: 'support', Armor: 'armor', Attachment: 'attachment', DoubleAttachment: 'attachment' } as const;
     if (Object.hasOwn(simple, value)) return [{ kind: simple[value as keyof typeof simple], units: value === 'DoubleAttachment' ? 2 : 1, label: value }];
     const hands = value.match(/^(\d+)( 1)? Hands?$/);
+    if (hands && allowed && !allowed.includes(hands[2] ? 1 : Number(hands[1]))) return [];
     if (hands) return [
-      ...(handRule && value === '3 Hands' ? [{ kind: 'hand' as const, units: 2, label: '2 Hands (Titan ability)' }] : []),
+      ...(face.data.slot.trim() === '3 Hands' ? conversions.filter(rule => rule.printedHands === 3).map(rule => ({ kind: 'hand' as const, units: rule.occupiedHands, label: `${rule.occupiedHands} Hands (Titan ability)` })) : []),
       { kind: 'hand' as const, units: Number(hands[1]), label: value, review: Boolean(hands[2]) },
     ];
-    if (value === '* Hands') return [1, 2, 3].map(units => ({ kind: 'hand' as const, units, label: `${units} ${units === 1 ? 'Hand' : 'Hands'} (manual)`, review: true }));
+    if (value === '* Hands') return [1, 2, 3].filter(units => !allowed || allowed.includes(units)).map(units => ({ kind: 'hand' as const, units, label: `${units} ${units === 1 ? 'Hand' : 'Hands'} (manual)`, review: true }));
     return [];
   });
 }
@@ -31,10 +36,12 @@ function assignmentIssues(argonaut: Argonaut, assignment: EquipmentAssignment, p
   const occupied = assignment.positionIds.map(id => positions.find(position => position.id === id));
   if (occupied.some(position => !position)) return [issue('capacity', assignment.positionIds.some(id => id.startsWith('unassigned:')) ? 'This card needs a destination.' : 'A required position is no longer available.')];
   const actual = occupied as CapacityPosition[], kinds = new Set(actual.map(position => position.kind));
-  const options = slotOptions(face, titanHandRule(argonaut, catalogue)), issues: LoadoutIssue[] = [];
+  const rules = titanLoadoutRules(argonaut, catalogue);
+  const options = slotOptions(face, rules), issues: LoadoutIssue[] = [];
   const option = options.find(option => kinds.size === 1 && option.kind === actual[0].kind && option.units === actual.length);
   if (!option) issues.push(issue('slot', `Printed slot ${face.data.slot} does not match these ${actual.length} positions.`));
-  if (actual.some(position => !meetsSlotRestriction(face, position))) issues.push(issue('restriction', 'This bonus position requires the printed traits shown on the slot.'));
+  if (kinds.has('hand') && !options.some(option => option.kind === 'hand') && rules?.sourceAbilities.length) issues.push(issue('titan-weapon', `${rules.sourceAbilities.join(', ')} does not permit this weapon's printed hand requirement.`));
+  if (actual.some(position => !meetsSlotRestriction(face, position, actual.length))) issues.push(issue('restriction', 'This bonus position does not permit this Gear’s traits or weapon hand requirement.'));
   if (option?.review) issues.push(issue('interpretation', `Confirm the hand requirement for ${face.data.slot} from its ability text.`, false));
   return issues;
 }
@@ -45,7 +52,26 @@ function accepts(assignment: EquipmentAssignment, issues: LoadoutIssue[]): boole
 
 /** Resolve capacity chains from independently available base positions. */
 export function loadoutState(argonaut: Argonaut, catalogue: CatalogueRepository) {
-  let positions = deriveCapacity([], DEFAULT_BASELINE), active = new Set<string>();
+  const baseline = titanSlotBaseline(argonaut, catalogue);
+  const unrestricted = resolveLoadout(argonaut, catalogue, baseline);
+  const rules = titanLoadoutRules(argonaut, catalogue);
+  const penalty = Math.max(0, ...(rules?.conversions ?? []).map(rule => {
+    const used = argonaut.equipment.some(assignment => {
+      const item = argonaut.instances.find(item => item.id === assignment.instanceId);
+      const face = item && catalogue.getFace(item.definitionId, item.faceId);
+      return unrestricted.activeInstanceIds.has(assignment.instanceId) && !item?.discarded && face?.kind === 'gear'
+        && face.data.slot.trim() === `${rule.printedHands} Hands`
+        && assignment.positionIds.length === rule.occupiedHands
+        && assignment.positionIds.every(id => unrestricted.positions.some(position => position.id === id && position.kind === 'hand'));
+    });
+    return used ? rule.supportPenalty : 0;
+  }));
+  return penalty ? resolveLoadout(argonaut, catalogue, { ...baseline, support: Math.max(0, baseline.support - penalty) }) : unrestricted;
+}
+
+function resolveLoadout(argonaut: Argonaut, catalogue: CatalogueRepository, baseline: SlotBaseline) {
+  const patterns = assignedPatternSources(argonaut, catalogue);
+  let positions = deriveCapacity(patterns, baseline), active = new Set<string>();
   for (let iteration = 0; iteration <= argonaut.equipment.length; iteration++) {
     const nextActive = new Set(argonaut.equipment.filter(assignment =>
       assignment.positionIds.every(id => positions.some(position => position.id === id)) &&
@@ -54,7 +80,7 @@ export function loadoutState(argonaut: Argonaut, catalogue: CatalogueRepository)
       const instance = argonaut.instances.find(item => item.id === id), definition = instance && catalogue.get(instance.definitionId);
       return instance && definition ? [{ instance, definition }] : [];
     });
-    const nextPositions = deriveCapacity(sources, DEFAULT_BASELINE, { gateSatisfied: (condition, source) => {
+    const nextPositions = deriveCapacity([...patterns, ...sources], baseline, { gateSatisfied: (condition, source) => {
       const face = source.definition.faces.find(face => face.id === source.instance.faceId);
       return Boolean(face?.slotEffects.some(effect => effect.conditions.includes(condition) && source.instance.satisfiedEffectIds?.includes(effect.id)));
     } });
@@ -99,11 +125,12 @@ export function planEquipment(argonaut: Argonaut, request: EquipRequest, catalog
   base = { ...base, equipment: base.equipment.filter(entry => entry.instanceId !== request.instanceId) };
   const state = loadoutState(base, catalogue), destination = state.positions.find(position => position.id === target.id);
   if (!destination) return fail('Replacing this source removes the chosen bonus position.');
-  const options = slotOptions(face, titanHandRule(base, catalogue)).filter(option => option.kind === target.kind);
+  const options = slotOptions(face, titanLoadoutRules(base, catalogue)).filter(option => option.kind === target.kind);
   const units = request.units ?? options[0]?.units ?? 1;
   if (!Number.isSafeInteger(units) || units < 1 || units > 12) return fail('Select a valid position count.');
   const busy = new Set(base.equipment.filter(entry => state.activeInstanceIds.has(entry.instanceId)).flatMap(entry => entry.positionIds));
-  const positions = [destination, ...state.positions.filter(position => position.kind === target.kind && position.id !== target.id && !busy.has(position.id))].slice(0, units);
+  const positions = [destination, ...state.positions.filter(position => position.kind === target.kind && position.id !== target.id && !busy.has(position.id)
+    && (request.overrideReason?.trim() || meetsSlotRestriction(face, position, units)))].slice(0, units);
   const instance: CardInstance = currentInstance && request.reuse ? { ...currentInstance, faceId: request.faceId } : { id: request.instanceId, definitionId: request.definitionId, faceId: request.faceId, exhausted: false, enabledEffectIds: [], counters: {} };
   const assignment: EquipmentAssignment = { instanceId: instance.id, positionIds: positions.map(position => position.id), attachmentHostId: null };
   const selectedIds = new Set(assignment.positionIds);

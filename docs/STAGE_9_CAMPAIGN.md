@@ -17,7 +17,7 @@ backups and confirmed Tides of Fate.
   Acquired cards remain readable even when secret-card filtering is on. The final
   copy requires checked removal confirmation and cannot be removed while allocated.
 - **Argo:** acquire/remove Argo-bred Titans, see current selections and the existing
-  multiple-Argo-bred warning, manage shared resources, and write growing multiline
+  duplicate-Argo-bred-type warning, manage shared resources, and write growing multiline
   campaign notes. Selected Titans must be removed from their Argonaut before their
   acquired record can be removed. Dreamwalker subtypes remain automatically
   available through the campaign cycle.
@@ -66,12 +66,14 @@ old confirmation dialogs from applying to a newly selected campaign.
 
 Inventory does not automate story unlocks, crafting, consumed physical cards, Titan
 production costs or encounter aftermath. Titan availability is a manual acquired
-list; the existing Argo-bred warning remains advisory. Broader roster/history,
+list; the Argo-bred warning remains advisory and flags only duplicate types,
+not different Argo-bred Titans. One of each type can coexist; Dreamwalker
+variants can repeat. Each Argonaut selects one Titan at a time. Broader roster/history,
 technology, voyage maps and timelines are later Stage 9 increments.
 
 ## Verification
 
-- 227 tests pass, including 14 inventory/navigation scenarios and React DOM
+- 230 tests pass, including 14 inventory/navigation scenarios and React DOM
   regressions for navigation icons and selectable cards with nested controls.
 - Scenarios cover safe seeding, independent Argonaut allocation, replacement,
   manual exceptions, two-hand Gear, reverse faces, exhaustion/discard, Tides of Fate,

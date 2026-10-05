@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-f012312e95852ae6",
+  "catalogueVersion": "atcc-v2-14e5a2709ecdc39d",
   "cards": [
     {
       "id": "def_0003f07224deddf7f702e53f",
@@ -1335,6 +1335,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -20758,6 +20770,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -33836,6 +33860,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -43798,6 +43834,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Cyclopean Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Cyclopean Might"
+            ]
           }
         }
       ]
@@ -44752,6 +44809,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -65123,6 +65192,24 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 3,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": {
+              "mode": "support",
+              "handSlots": 2,
+              "supportSlots": 3
+            },
+            "sourceAbilities": [
+              "Six-Armed"
+            ]
           }
         }
       ]
@@ -66342,6 +66429,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -98426,6 +98525,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -102177,6 +102288,18 @@
                   }
                 ]
               }
+            ]
+          },
+          "weaponRules": {
+            "handSlots": 4,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": [
+              "Four-Armed Centimanes"
             ]
           }
         }
@@ -116448,6 +116571,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -145231,6 +145366,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -152300,6 +152447,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -161733,6 +161892,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Cyclopean Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Cyclopean Might"
+            ]
           }
         }
       ]
@@ -168451,6 +168631,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -170840,6 +171032,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -173259,6 +173463,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -175139,6 +175355,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -201750,6 +201978,19 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 3,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": [
+              "Nimble Feet"
+            ]
           }
         }
       ]
@@ -203461,6 +203702,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -204790,6 +205043,18 @@
                   }
                 ]
               }
+            ]
+          },
+          "weaponRules": {
+            "handSlots": 4,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": [
+              "Four-Armed Centimanes"
             ]
           }
         }
@@ -227556,6 +227821,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 1,
+                "ability": "Unknown Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Unknown Might"
+            ]
           }
         }
       ]
@@ -228674,6 +228960,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -228844,6 +229142,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -237348,6 +237658,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -248141,6 +248463,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -259382,6 +259716,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -264713,6 +265059,26 @@
                   }
                 ]
               }
+            ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Lightweight Curse"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Lightweight Curse"
             ]
           }
         }
@@ -275399,6 +275765,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Cyclopean Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Cyclopean Might"
+            ]
           }
         }
       ]
@@ -276681,6 +277068,20 @@
                   }
                 ]
               }
+            ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 3,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": [
+              "Stout"
             ]
           }
         }
@@ -288545,6 +288946,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -300289,6 +300702,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Cyclopean Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Cyclopean Might"
+            ]
           }
         }
       ]
@@ -302698,6 +303132,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -304849,7 +305295,45 @@
           "cycle": "Cycle II",
           "game": "Odyssey",
           "inheritedFields": [],
-          "slotEffects": [],
+          "slotEffects": [
+            {
+              "id": "front:capacity:support:automatic:any:%5B%5D",
+              "type": "slot-capacity",
+              "slot": "support",
+              "amount": 1,
+              "source": {
+                "definitionId": "def_c0b3fa9141b016bb7dec3f39",
+                "faceId": "front",
+                "pointer": "/cards/169/abilities/0/abilityText",
+                "tokens": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "Support"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot"
+                  }
+                ]
+              },
+              "activation": "automatic",
+              "eligibility": null,
+              "conditions": [],
+              "consequences": []
+            }
+          ],
           "kind": "other",
           "data": {
             "cardIDs": [
@@ -320040,6 +320524,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -320398,6 +320894,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -334796,7 +335304,67 @@
           "cycle": "Cycle IV",
           "game": "Odyssey",
           "inheritedFields": [],
-          "slotEffects": [],
+          "slotEffects": [
+            {
+              "id": "front:capacity:hand:automatic:any:%5B%5D:no-three-handed",
+              "type": "slot-capacity",
+              "slot": "hand",
+              "amount": 1,
+              "source": {
+                "definitionId": "def_d3c044a876a59d1d6cb1439b",
+                "faceId": "front",
+                "pointer": "/cards/316/abilities/0/abilityText",
+                "tokens": [
+                  {
+                    "type": "plainText",
+                    "value": "You have 1 additional Weapon"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "OneHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "slot (this slot does not allow you to use"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "icon",
+                    "value": "ThreeHanded"
+                  },
+                  {
+                    "type": "whitespace",
+                    "value": " "
+                  },
+                  {
+                    "type": "plainText",
+                    "value": "Weapons)"
+                  }
+                ]
+              },
+              "activation": "automatic",
+              "eligibility": {
+                "family": "Gear",
+                "requiredTraits": [],
+                "forbiddenWeaponHands": [
+                  3
+                ]
+              },
+              "conditions": [],
+              "consequences": []
+            }
+          ],
           "kind": "other",
           "data": {
             "cardIDs": [
@@ -345575,6 +346143,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -350071,6 +350651,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Elder Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Elder Might"
+            ]
           }
         }
       ]
@@ -351863,6 +352464,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -354258,6 +354871,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -365515,6 +366140,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -380519,6 +381156,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -385567,6 +386216,27 @@
                   }
                 ]
               }
+            ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Elder Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Elder Might"
             ]
           }
         }
@@ -398240,6 +398910,27 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [
+              {
+                "printedHands": 3,
+                "occupiedHands": 2,
+                "supportPenalty": 0,
+                "ability": "Cyclopean Might"
+              }
+            ],
+            "alternative": null,
+            "sourceAbilities": [
+              "Cyclopean Might"
+            ]
           }
         }
       ]
@@ -402476,6 +403167,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
@@ -408083,6 +408786,18 @@
                 ]
               }
             ]
+          },
+          "weaponRules": {
+            "handSlots": 2,
+            "supportSlots": 2,
+            "allowedWeaponHands": [
+              1,
+              2,
+              3
+            ],
+            "conversions": [],
+            "alternative": null,
+            "sourceAbilities": []
           }
         }
       ]
