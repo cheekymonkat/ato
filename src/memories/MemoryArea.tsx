@@ -1,6 +1,7 @@
+import { CardSelectionTarget } from '../components/cards/CardSelectionTarget';
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
 import { CardActionButton } from '../components/cards/CardActionButton';
 import { CardActionRow } from '../components/cards/CardActionRow';
@@ -43,12 +44,12 @@ export function MemoryArea({ argonaut }: { argonaut: Argonaut }) {
         const conflict = item && memoryConflict(party, item.definitionId, { argonautId: argonaut.id, kind, index });
         const open = (kind: MemoryKind) => router.push({ pathname: '/memory/[id]', params: { id: argonaut.id, kind, index: String(index) } });
         return <View key={`${kind}:${index}`} style={[styles.cell, { width: cellWidth, maxWidth: '100%' }]}>
-          <SwipeGuard><Pressable accessibilityRole="button" accessibilityLabel={`Edit ${label}${!hidden && visibleName ? `: ${visibleName}` : ''}`}
+          <SwipeGuard><CardSelectionTarget label={`Edit ${label}${!hidden && visibleName ? `: ${visibleName}` : ''}`}
             onPress={() => open(kind)} style={({ pressed }) => [styles.cardTarget, pressed && { opacity: 0.75 }]}>
             <Text style={styles.label}>{label}</Text>
             {card && face ? <ReferenceCard card={card} face={face} exhausted={Boolean(item?.discarded)} revealable={false} memoryProgress={progress} instance={item} onAbilityExhausted={item ? (abilityId, exhausted) => dispatch({ type: 'ability-exhausted', argonautId: argonaut.id, instanceId: item.id, definitionId: item.definitionId, faceId: item.faceId, abilityId, exhausted }) : undefined} />
               : <View style={styles.empty}><Text style={styles.hint}>{item ? 'Saved card unavailable. Select to replace or remove.' : 'Select a memory'}</Text></View>}
-          </Pressable></SwipeGuard>
+          </CardSelectionTarget></SwipeGuard>
           {index >= capacity && item && <Text style={styles.warning}>Outside current capacity. Progress is kept.</Text>}
           {conflict && <Text style={styles.warning}>Also assigned to {conflict.argonautName || 'Argonaut'}. Remove one copy.</Text>}
           {item && <>

@@ -24,7 +24,7 @@ export function GearLibrary({ initialQuery = '', initialPage = 0 }: { initialQue
     return card.faces.find(face => isFaceAvailableInCycle(face, cycle) && face.name.toLowerCase().includes(term)) || card.faces.find(face => isFaceAvailableInCycle(face, cycle))!;
   };
   const inspect = (card: CardDefinition, face: CardFace) => router.push({ pathname: '/cards/[id]', params: { id: card.id, face: face.id } });
-  return <SafeAreaView style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.page}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.page}>
     <View style={styles.header}><Button quiet label="Back to Argonaut" onPress={() => router.replace({ pathname: '/argonaut/[id]', params: { id: party.activeArgonautId } })} />
       <Button quiet label={spoilers.hideSecrets ? 'Reveal all secret cards' : 'Hide secret cards'} onPress={spoilers.toggle} /></View>
     <View><Text accessibilityRole="header" style={styles.title}>Gear catalogue</Text><Text style={styles.subtitle}>Browse cards, inspect abilities and turn reversible Gear.</Text></View>

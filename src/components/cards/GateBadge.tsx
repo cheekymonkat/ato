@@ -18,7 +18,7 @@ function GateIcon({ name, size }: { name: string; size: number }) {
 export function GateBackground({ gate }: { gate: DisplayGate }) {
   const paint = useCardColours();
   const id = `gate-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
-  return <View accessible={false} pointerEvents="none" style={StyleSheet.absoluteFill}>
+  return <View accessible={false} style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}>
     <Svg width="100%" height="100%"><Defs><LinearGradient id={id} x1="0%" y1="0%" x2="100%" y2="0%">
       <Stop offset="30%" stopColor={paint.colour(gateColour(gate.type))} /><Stop offset="70%" stopColor={paint.colour(gateColour(gate.type2 || gate.type))} />
     </LinearGradient></Defs><Rect width="100%" height="100%" fill={`url(#${id})`} /></Svg>

@@ -15,7 +15,7 @@ function PatternSymbol({ name, size }: { name: string; size: number }) {
 
 function Gradient({ colour, band = false }: { colour: string; band?: boolean }) {
   const id = `pattern-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
-  return <View pointerEvents="none" accessible={false} style={StyleSheet.absoluteFill}>
+  return <View accessible={false} style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}>
     <Svg width="100%" height="100%">
       <Defs><LinearGradient id={id} x1="0%" y1={band ? '0%' : '100%'} x2={band ? '100%' : '0%'} y2={band ? '0%' : '65%'}>
         <Stop offset={band ? '20%' : '0%'} stopColor={colour} />
@@ -51,7 +51,7 @@ export function PatternTable({ kind, table }: { kind: PatternKind; table: readon
           <Text style={styles.range}>{row.range}</Text>
           <View accessible={false} importantForAccessibility="no-hide-descendants" style={styles.traumaSymbol}><PatternSymbol name={row.type} size={p.traumaSize} /></View>
         </View>) : kratosRows(table).map(row => <View key={row.rage} accessible accessibilityLabel={kratosRowLabel(row)} style={styles.kratosRow}>
-          <View pointerEvents="none" style={styles.diamond}><Svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><Polygon points="50,0 100,50 50,100 0,50" fill={p.white} /></Svg></View>
+          <View style={[styles.diamond, { pointerEvents: 'none' }]}><Svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><Polygon points="50,0 100,50 50,100 0,50" fill={p.white} /></Svg></View>
           <View style={styles.rage}><Text style={styles.rageNumber}>{row.rage}</Text></View>
           <View accessible={false} importantForAccessibility="no-hide-descendants" style={[styles.options, row.options.length === 1 && styles.singleOption]}>
             {row.options.map((option, index) => <View key={index} style={styles.option}>

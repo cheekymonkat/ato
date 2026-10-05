@@ -53,7 +53,7 @@ export function ColourWheel({ colour, onChange }: { colour: HsvColour; onChange:
   return <SwipeGuard><View style={[styles.wheel, webDragStyle]} onLayout={event => setSize(event.nativeEvent.layout.width)} {...handlers}
     testID="colour-wheel" accessible accessibilityRole="image" accessibilityLabel="Colour wheel"
     accessibilityHint="Drag to choose hue and saturation. Hue and saturation buttons below allow fine adjustment.">
-    <View pointerEvents="none" accessible={false} style={StyleSheet.absoluteFill}>
+    <View accessible={false} style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}>
       <Svg width="100%" height="100%" viewBox={`0 0 ${COLOUR_WHEEL_SIZE} ${COLOUR_WHEEL_SIZE}`}>
         <Spectrum gradientId={gradientId} />
         <Circle cx={150} cy={150} r={COLOUR_WHEEL_RADIUS} fill="#000000" opacity={1 - colour.value} />
@@ -78,7 +78,7 @@ export function ColourBrightness({ colour, onChange }: { colour: HsvColour; onCh
       if (event.nativeEvent.actionName === 'increment') onChange(Math.min(1, colour.value + 0.01));
       if (event.nativeEvent.actionName === 'decrement') onChange(Math.max(0, colour.value - 0.01));
     }}>
-    <View pointerEvents="none" accessible={false} style={StyleSheet.absoluteFill}>
+    <View accessible={false} style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}>
       <Svg width="100%" height="100%" viewBox="0 0 300 44" preserveAspectRatio="none">
         <Defs><LinearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="0%">
           <Stop offset="0%" stopColor="#000000" /><Stop offset="100%" stopColor={hsvToHex({ ...colour, value: 1 })} />

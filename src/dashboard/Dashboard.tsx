@@ -1,4 +1,3 @@
-import { router } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import type { LayoutChangeEvent } from 'react-native';
@@ -8,7 +7,7 @@ import { ReferenceCard } from '../components/cards/ReferenceCard';
 import { GateAssistance } from '../components/cards/GateAssistance';
 import { CombatStats } from '../components/cards/CombatStats';
 import { Button } from '../components/Button';
-import { Chevron, Emblem } from '../components/Icon';
+import { Chevron } from '../components/Icon';
 import { SwipeGuard, SwipeSurface } from '../components/SwipeSurface';
 import { canDiscardCard } from '../domain/ability-costs';
 import type { Argonaut } from '../domain/party';
@@ -21,8 +20,6 @@ import { MemoryArea } from '../memories/MemoryArea';
 import { textOnColour, theme } from '../theme/tokens';
 import { ArgonautName } from './ArgonautName';
 import { ColourPicker } from './ColourPicker';
-import { TidesOfFateDialog } from './TidesOfFateDialog';
-import { DashboardMenu } from './DashboardMenu';
 import { EquipmentArea, SectionHeading } from './EquipmentArea';
 import { dashboardPositions } from './model';
 import { OverflowDialog } from './OverflowDialog';
@@ -41,7 +38,7 @@ export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
 }
 function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
-  const { party, profile, dispatch } = useParty(), { width: windowWidth } = useWindowDimensions();
+  const { party, dispatch } = useParty(), { width: windowWidth } = useWindowDimensions();
   const [containerWidth, setContainerWidth] = useState<number | null>(null);
   const width = Math.min(windowWidth, containerWidth ?? windowWidth);
   const measureContainer = useCallback((event: LayoutChangeEvent) => {
@@ -52,10 +49,9 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const narrow = width < 1040, small = width < 600;
   const identityStacked = narrow ? width < 760 : width < 1300;
   const [colourOpen, setColourOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false), [optionsOpen, setOptionsOpen] = useState(false);
+  const [optionsOpen, setOptionsOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);
   const [choosingTitan, setChoosingTitan] = useState(false);
-  const [clearing, setClearing] = useState<{ partyId: string; argonautId: string; campaignName: string } | null>(null);
   const [overflow, setOverflow] = useState<CounterName | null>(null), [reference, setReference] = useState<'Trauma' | 'Kratos' | null>(null);
   const index = party.order.indexOf(argonaut.id);
   const positions = useMemo(() => dashboardPositions(argonaut, getCatalogue()), [argonaut]);
@@ -79,19 +75,9 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
     </Button>
   )}</View>;
 
-  return <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']} onLayout={measureContainer}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe} onLayout={measureContainer}>
     <SwipeSurface onNavigate={navigate}>
       <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.scroll}>
-        <View style={styles.masthead}><View style={[styles.mastheadContent, small && styles.mobilePadding]}>
-          <View style={styles.brand}><Emblem /><View><Text style={styles.brandTitle}>AEON TRESPASS</Text><Text style={styles.brandSub}>O D Y S S E Y</Text></View></View>
-          <View style={styles.mastheadActions}>
-            {!small && <Text style={styles.mastheadLabel}>THE ARGONAUT JOURNAL</Text>}
-            <Button quiet label="Open menu" onPress={() => setMenuOpen(true)} style={styles.menuButton}>
-              <View style={styles.menuIcon}><View style={styles.menuLine} /><View style={styles.menuLine} /><View style={styles.menuLine} /></View>
-            </Button>
-          </View>
-        </View></View>
-
         <View style={[styles.content, small && styles.mobilePadding]}>
           <View style={styles.chapter}><View style={styles.campaignHeading}><Text style={styles.eyebrow}>YOUR EXPEDITION</Text><SaveNotice showStatus={false} /></View>
             <Button quiet label="Argonaut Options" onPress={() => setOptionsOpen(true)} style={styles.optionsButton}>
@@ -135,7 +121,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
           </View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
             <View style={styles.titanCanvas}>
-            {artwork && <View pointerEvents="none" style={StyleSheet.absoluteFill}><Image source={artwork} resizeMode="cover" accessible={false} style={styles.titanArt} /></View>}
+            {artwork && <View style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}><Image source={artwork} resizeMode="cover" accessible={false} style={styles.titanArt} /></View>}
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
               {(!titan || hiddenTitan) && referenceLinks}
               {titan && titanCard ? <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.discarded)} showTables={false} revealable={false}
@@ -157,18 +143,10 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
         <View style={[styles.footer, small && styles.mobilePadding]}><Text style={styles.footerText}>AEON TRESPASS · ODYSSEY</Text><Text numberOfLines={1} style={[styles.footerText, { flex: 1, textAlign: 'right' }]}>{argonaut.name || `Argonaut ${index + 1}`} · {index + 1} / 4</Text></View>
       </ScrollView>
     </SwipeSurface>
-    <DashboardMenu visible={menuOpen} compact={small} onClose={() => setMenuOpen(false)} onBrowseGear={() => {
-      setMenuOpen(false); router.push('/gear');
-    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} onClearAll={() => {
-      setMenuOpen(false); setClearing({ partyId: party.id, argonautId: argonaut.id, campaignName: profile.name });
-    }} />
     {optionsOpen && <ArgonautOptions key={`${party.id}:${argonaut.id}`} argonaut={argonaut} onClose={() => setOptionsOpen(false)}
       onRules={() => { setOptionsOpen(false); setRulesOpen(true); }} />}
     {rulesOpen && <RulesAssistanceSheet argonaut={argonaut} onClose={() => setRulesOpen(false)} />}
     {choosingTitan && <TitanSelectionMenu key={`${party.id}:${argonaut.id}`} argonaut={argonaut} onClose={() => setChoosingTitan(false)} />}
-    {clearing && <TidesOfFateDialog campaignName={clearing.campaignName} onClose={() => setClearing(null)} onConfirm={() => {
-      dispatch({ type: 'clear-all', argonautId: clearing.argonautId, partyId: clearing.partyId, confirmed: true }); setClearing(null);
-    }} />}
     {colourOpen && <ColourPicker colour={argonaut.colour} onClose={() => setColourOpen(false)} onSelect={colour => {
       dispatch({ type: 'colour', argonautId: argonaut.id, colour }); setColourOpen(false);
     }} />}
@@ -181,10 +159,6 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
 
 const styles = StyleSheet.create({
   safe: { flex: 1, minWidth: 0, backgroundColor: theme.canvas }, scroll: { paddingBottom: 20 },
-  masthead: { backgroundColor: theme.charcoal }, mastheadContent: { width: '100%', paddingHorizontal: 32, minHeight: 86, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
-  brand: { flexDirection: 'row', alignItems: 'center', gap: 14 }, brandTitle: { color: '#F1EBDE', fontFamily: theme.serif, fontSize: 17, letterSpacing: 2.4 }, brandSub: { color: theme.gold, fontSize: 9, marginTop: 5 }, mastheadLabel: { color: '#B8B3A8', fontSize: 9, letterSpacing: 1.6 },
-  mastheadActions: { flexDirection: 'row', alignItems: 'center', gap: 16 }, menuButton: { width: 44, padding: 0, borderColor: '#706D65' },
-  menuIcon: { gap: 4 }, menuLine: { width: 20, height: 2, backgroundColor: '#F1EBDE', borderRadius: 1 },
   content: { width: '100%', paddingHorizontal: 32 },
   chapter: { marginTop: 26, marginBottom: 16, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   eyebrow: { color: theme.muted, fontSize: 10, fontWeight: '700', letterSpacing: 1.6 },

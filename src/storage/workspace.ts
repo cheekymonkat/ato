@@ -1,3 +1,4 @@
+import { inventoryNotices } from '../domain/inventory.ts';
 import type { CatalogueRepository } from '../catalogue/repository.ts';
 import { assert, isJsonValue, isRecord } from '../domain/json.ts';
 import { createParty, parseParty } from '../domain/party.ts';
@@ -54,6 +55,9 @@ export function parseWorkspace(value: unknown): Workspace {
 
 export function referenceProblems(party: Party, catalogue: CatalogueRepository): string[] {
   const problems: string[] = duplicateMemories(party).map(assignment => `${assignment.argonautName} / ${assignment.instance.id}: duplicate unique memory ${assignment.instance.definitionId}`);
+  for (const [family, ids] of [['Gear', Object.keys(party.inventory?.gear ?? {})], ['Titan', party.inventory?.titans ?? []]] as const) {
+    for (const id of ids) if (catalogue.get(id)?.family !== family) problems.push(`Campaign inventory: unavailable ${family} ${id}`);
+  }
   for (const member of party.argonauts) {
     const conditions = conditionRecords(member);
     for (const condition of conditions) if (conditionConflict(conditions, condition, catalogue)) problems.push(`${member.name}: duplicate condition type ${condition.name}`);
@@ -113,7 +117,7 @@ export function readBackup(text: string, catalogue: CatalogueRepository): { prof
   }
   const problems = referenceProblems(profile.party, catalogue);
   assert(!problems.length, `Backup has invalid or unresolved references:\n${problems.join('\n')}`);
-  return { profile, warnings: profile.party.catalogueVersion === catalogue.version ? [] : ['This backup uses a different catalogue version. Capacity will be recalculated using the installed catalogue.'] };
+  return { profile, warnings: [...(profile.party.catalogueVersion === catalogue.version ? [] : ['This backup uses a different catalogue version. Capacity will be recalculated using the installed catalogue.']), ...(profile.party.inventory ? inventoryNotices(profile.party, catalogue) : [])] };
 }
 
 export function importProfile(workspace: Workspace, source: PartyProfile, id: string, name: string): Workspace {

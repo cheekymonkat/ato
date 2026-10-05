@@ -39,7 +39,7 @@ export function PartyProfiles() {
   };
   const problems = referenceProblems(state.profile.party, getCatalogue());
   const mismatch = state.profile.party.catalogueVersion !== getCatalogue().version;
-  return <SafeAreaView style={styles.safe} edges={['top', 'left', 'right']}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}>
     <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={styles.scroll}>
       <View style={styles.header}><Text accessibilityRole="header" style={styles.title}>Campaigns & backups</Text><Button quiet label="Return to party" disabled={busy} onPress={() => goToParty()} /></View>
       <SaveNotice />

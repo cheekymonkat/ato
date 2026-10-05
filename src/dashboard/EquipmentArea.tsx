@@ -1,7 +1,8 @@
+import { CardSelectionTarget } from '../components/cards/CardSelectionTarget';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import type { ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
 import { EquippedGear } from '../components/cards/EquippedGear';
 import { EquipmentActions } from '../components/cards/EquipmentActions';
@@ -22,8 +23,8 @@ const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor
 const slotWidth = SLOT_WIDTH, slotGap = SLOT_GAP;
 
 function EquipmentSelection({ label, onPress, children }: { label: string; onPress: () => void; children: ReactNode }) {
-  return <SwipeGuard><Pressable accessibilityRole="button" accessibilityLabel={label} accessibilityHint="Opens equipment selection and editing"
-    onPress={onPress} style={({ pressed }) => [styles.selection, pressed && styles.pressed]}>{children}</Pressable></SwipeGuard>;
+  return <SwipeGuard><CardSelectionTarget label={label} hint="Opens equipment selection and editing"
+    onPress={onPress} style={({ pressed }) => [styles.selection, pressed && styles.pressed]}>{children}</CardSelectionTarget></SwipeGuard>;
 }
 
 export function SectionHeading({ title, note, action }: { title: string; note?: string; action?: ReactNode }) {

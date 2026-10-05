@@ -1,3 +1,4 @@
+import { gearStock, inventoryAllowsEquipment, inventoryFor } from '../domain/inventory';
 import { router } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, useWindowDimensions, View } from 'react-native';
@@ -19,7 +20,7 @@ import type { Argonaut } from '../domain/party';
 import { meetsSlotRestriction } from '../domain/slots';
 import type { CapacityPosition } from '../domain/slots';
 import { useParty } from '../state/PartyProvider';
-import { useSpoilers } from '../state/SpoilerProvider';
+import { CampaignCardVisibility, useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { positionFromRoute, positionRouteParam } from './position-params';
 
@@ -30,6 +31,10 @@ function positionLabel(position: CapacityPosition, positions: CapacityPosition[]
 }
 
 export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; params: Params }) {
+  const { party } = useParty();
+  return <CampaignCardVisibility definitionIds={Object.keys(inventoryFor(party, getCatalogue()).gear)}><EquipmentEditorBody argonaut={argonaut} params={params} /></CampaignCardVisibility>;
+}
+function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params: Params }) {
   const { party, dispatch } = useParty(), spoilers = useSpoilers(), { width } = useWindowDimensions(), catalogue = getCatalogue();
   const cycle = campaignCycle(party);
   const [query, setQuery] = useState(params.q || ''), [allGear, setAllGear] = useState(false), [page, setPage] = useState(0);
@@ -51,8 +56,10 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     instanceId: reuse ? instance!.id : newId, reuse, units: selectedUnits, overrideReason: override ? reason : undefined } : null;
   const plan = request ? planEquipment(argonaut, request, catalogue) : null;
   const available = isFaceAvailableInCycle(face, cycle);
-  const canSave = Boolean(available && plan?.next && !hidden && (!override || reason.trim()));
-  const matches = catalogue.search({ family: 'Gear', query, campaignCycle: cycle }).filter(card => card.faces.some(face =>
+  const inventoryAllowed = !plan?.next || inventoryAllowsEquipment(party, argonaut, plan.next, catalogue);
+  const stock = selected && gearStock(party, selected.id, catalogue);
+  const canSave = Boolean(inventoryAllowed && available && plan?.next && !hidden && (!override || reason.trim()));
+  const matches = catalogue.search({ family: 'Gear', query, campaignCycle: cycle }).filter(card => (!party.inventory?.enforce || card.id === instance?.definitionId || gearStock(party, card.id, catalogue).available > 0) && card.faces.some(face =>
     isFaceAvailableInCycle(face, cycle) && (allGear || !target || slotOptions(face).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
   const lastPage = Math.max(0, Math.ceil(matches.length / 12) - 1), currentPage = Math.min(page, lastPage);
   const ownedFace = instance && catalogue.getFace(instance.definitionId, instance.faceId);
@@ -79,7 +86,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
     onCancel={() => setRemoving(null)} onConfirm={() => {
       dispatch({ type: 'remove-equipment', argonautId: argonaut.id, instanceId: removing.id }); back();
     }} />;
-  return <SafeAreaView style={styles.safe}><ScrollView ref={scroll} keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets contentContainerStyle={styles.page}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}><ScrollView ref={scroll} keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets contentContainerStyle={styles.page}>
     <View style={styles.row}><Button quiet label="Back to Argonaut" onPress={back} /><Text style={styles.meta}>{argonaut.name || 'Argonaut'} · Loadout</Text></View>
     <Text accessibilityRole="header" style={styles.title}>{instance ? 'Edit equipment' : 'Choose equipment'}</Text>
     <Text style={styles.body}>{target ? positionLabel(target, state.positions) : 'Choose a destination to reassign this card.'}</Text>
@@ -116,6 +123,9 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
           {override && <TextInput accessibilityLabel="Manual override reason" placeholder="Explain the exception" value={reason} onChangeText={setReason} maxLength={300} style={styles.input} />}
         </View>}
       </>}
+      {party.inventory?.enforce && stock && <Text style={styles.meta}>{stock.owned} acquired · {stock.allocated} allocated · {stock.available} available in campaign inventory.</Text>}
+      {!inventoryAllowed && <Text style={styles.warning}>No acquired copy is available. Add acquired Gear in Cargo or free a copy from another Argonaut.</Text>}
+      {!inventoryAllowed && <Button quiet label="Manage Cargo" onPress={() => router.push('/cargo')} />}
       {!available && <Text style={styles.warning}>This card is unavailable in campaign Cycle {cycle}. Change the cycle on the campaign page to equip it.</Text>}
       <Button label={override ? 'Save with override' : reuse ? 'Save placement' : 'Equip card'} disabled={!canSave} onPress={() => {
         if (!request || !plan?.next) return;
@@ -127,6 +137,7 @@ export function EquipmentEditor({ argonaut, params }: { argonaut: Argonaut; para
       <TextInput accessibilityLabel="Search equipment by name or printed ID" placeholder="Search name or ID" value={query} onChangeText={value => { setQuery(value); setPage(0); router.setParams({ q: value }); }} style={styles.input} />
       <Text style={styles.meta}>Available through campaign Cycle {cycle}. Change the cycle on the campaign page.</Text>
       <Button quiet label={allGear ? 'Show matching Gear' : 'Show all Gear for manual exceptions'} onPress={() => { setAllGear(!allGear); setPage(0); }} />
+      {party.inventory?.enforce && <View style={styles.row}><Text style={styles.meta}>Showing available acquired copies. Manual slot exceptions also require an acquired copy.</Text><Button quiet label="Manage Cargo" onPress={() => router.push('/cargo')} /></View>}
       <Text accessibilityLiveRegion="polite" style={styles.meta}>{matches.length} matching cards · Page {currentPage + 1} of {lastPage + 1}</Text>
       <GearResults cards={matches.slice(currentPage * 12, (currentPage + 1) * 12)} width={Math.min(270, width - 66)} selecting
         faceForCard={faceForCard} onSelect={(card, face) => choose(card.id, face.id)} />

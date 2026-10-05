@@ -29,7 +29,7 @@ export function CardInspection({ card, faceId }: { card: CardDefinition; faceId:
   }
   const resolution = reference ? getCatalogue().resolveReference(reference) : null;
   const textActions = { onKeyword: setKeyword, onReference: openReference };
-  return <SafeAreaView style={styles.safe}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}>
     <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.page}>
       <View style={styles.header}><Button quiet label="Back" onPress={() => router.canGoBack() ? router.back() : router.replace('/gear')} />
         <Text style={styles.eyebrow}>CARD INSPECTION</Text></View>

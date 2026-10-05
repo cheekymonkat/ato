@@ -1,3 +1,4 @@
+import { allocatedGear, inventoryFor, inventoryAllowsEquipment, inventoryAllowsTitan, physicalGearLimit } from '../domain/inventory.ts';
 import type { Argonaut, CardInstance, CardReference, ConditionRecord, MemoryProgress, Party, SkillName } from '../domain/party.ts';
 import { assignMemory, changeMemoryNodes, memoryConflict, removeMemory, updateMemory } from '../domain/memories.ts';
 import type { MemoryKind, MemoryRequest } from '../domain/memories.ts';
@@ -9,7 +10,7 @@ import { changeEquipmentFace, unlinkRemovedHost, planEquipment, removeEquipment 
 import type { EquipRequest } from '../domain/loadout.ts';
 import { argonautSkills, argonautSkillModifiers, SKILL_MAX, SKILL_MIN } from '../domain/argonaut-stats.ts';
 import { changeArgonautIdentity } from '../domain/argonaut-identity.ts';
-import { campaignCycle } from '../domain/campaign.ts';
+import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign.ts';
 import { canDiscardCard, canExhaustCard } from '../domain/ability-costs.ts';
 import { changeToken, isCampaignCycle } from '../domain/tokens.ts';
 import type { CampaignCycle, TokenName } from '../domain/tokens.ts';
@@ -21,6 +22,10 @@ import { setAbilityExhausted } from '../domain/ability-state.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
+  | { type: 'inventory-mode'; argonautId: string; partyId: string; enabled: boolean }
+  | { type: 'inventory-quantity'; argonautId: string; partyId: string; definitionId: string; delta: -1 | 1; confirmed?: boolean }
+  | { type: 'inventory-titan'; argonautId: string; partyId: string; definitionId: string; acquired: boolean; confirmed?: boolean }
+  | { type: 'campaign-notes'; argonautId: string; partyId: string; text: string }
   | { type: 'select'; argonautId: string }
   | { type: 'campaign-cycle'; argonautId: string; cycle: CampaignCycle }
   | { type: 'rules-assistance'; argonautId: string; partyId: string; enabled: boolean }
@@ -65,6 +70,30 @@ export type PartyAction =
 /** Every edit names its owner explicitly, including callbacks opened before navigation. */
 export function partyReducer(party: Party, action: PartyAction, catalogue?: CatalogueRepository): Party {
   if (!party.order.includes(action.argonautId)) return party;
+  if (action.type === 'campaign-notes') return action.partyId === party.id && typeof action.text === 'string' && action.text !== (party.campaignNotes ?? '') ? { ...party, campaignNotes: action.text } : party;
+  if (action.type === 'inventory-mode') return catalogue && action.partyId === party.id && typeof action.enabled === 'boolean'
+    ? { ...party, inventory: { ...inventoryFor(party, catalogue), enforce: action.enabled } } : party;
+  if (action.type === 'inventory-quantity') {
+    if (!catalogue || action.partyId !== party.id || ![-1, 1].includes(action.delta)) return party;
+    const inventory = inventoryFor(party, catalogue), card = catalogue.get(action.definitionId);
+    const old = Object.hasOwn(inventory.gear, action.definitionId) ? inventory.gear[action.definitionId] : 0, count = old + action.delta;
+    const limit = card ? physicalGearLimit(card, catalogue) : null;
+    if (!Number.isSafeInteger(count) || count < 0 || count < (allocatedGear(party, catalogue)[action.definitionId] ?? 0)
+      || action.delta > 0 && (!card || card.family !== 'Gear' || !card.faces.some(face => isFaceAvailableInCycle(face, campaignCycle(party))) || limit !== null && count > limit)
+      || count === 0 && action.confirmed !== true) return party;
+    const gear = { ...inventory.gear };
+    if (count === 0) delete gear[action.definitionId]; else gear[action.definitionId] = count;
+    return { ...party, inventory: { ...inventory, gear } };
+  }
+  if (action.type === 'inventory-titan') {
+    if (!catalogue || action.partyId !== party.id || typeof action.acquired !== 'boolean') return party;
+    const inventory = inventoryFor(party, catalogue), card = catalogue.get(action.definitionId);
+    if (action.acquired && (!card || card.family !== 'Titan' || !card.faces.some(face => isFaceAvailableInCycle(face, campaignCycle(party))))
+      || !action.acquired && (action.confirmed !== true || party.argonauts.some(member => member.titan?.definitionId === action.definitionId))) return party;
+    const titans = new Set(inventory.titans);
+    if (action.acquired) titans.add(action.definitionId); else titans.delete(action.definitionId);
+    return { ...party, inventory: { ...inventory, titans: [...titans] } };
+  }
   if (action.type === 'rules-assistance') return action.partyId === party.id && typeof action.enabled === 'boolean' && Boolean(party.rulesAssistance) !== action.enabled
     ? { ...party, rulesAssistance: action.enabled } : party;
   if (action.type === 'clear-all') return action.confirmed === true && action.partyId === party.id ? clearAllArgonauts(party) : party;
@@ -184,6 +213,7 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       }
       break;
     case 'titan': {
+      if (party.inventory?.enforce && action.titan && action.titan.definitionId !== current.titan?.definitionId && (!catalogue || !inventoryAllowsTitan(party, action.titan.definitionId, action.titan.faceId, catalogue))) break;
       const detached = current.titan && (current.titan.definitionId !== action.titan?.definitionId || current.titan.id !== action.titan?.id) ? unlinkRemovedHost(current, current.titan.id) : current;
       updated = { ...detached, titan: action.titan }; break;
     }
@@ -191,7 +221,9 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       if (!catalogue) break;
       const usedElsewhere = party.argonauts.some(member => member.id !== current.id && (member.titan?.id === action.request.instanceId || member.instances.some(item => item.id === action.request.instanceId))) || party.argonauts.some(member => member.id === action.request.instanceId);
       if (usedElsewhere) break;
-      updated = planEquipment(current, action.request, catalogue).next || current; break;
+      const next = planEquipment(current, action.request, catalogue).next;
+      if (next && inventoryAllowsEquipment(party, current, next, catalogue)) updated = next;
+      break;
     }
     case 'remove-equipment': updated = removeEquipment(current, action.instanceId); break;
     case 'equipment-face':

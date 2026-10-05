@@ -30,3 +30,13 @@ export function AssignedCardVisibility({ argonaut, children }: { argonaut: Argon
   }, [argonaut, parent]);
   return <Context.Provider value={value}>{children}</Context.Provider>;
 }
+
+/** Campaign-owned cards stay readable without revealing other catalogue entries. */
+export function CampaignCardVisibility({ definitionIds, children }: { definitionIds: string[]; children: ReactNode }) {
+  const parent = useSpoilers();
+  const value = useMemo(() => {
+    const known = new Set(definitionIds);
+    return { ...parent, hidden: (card: CardDefinition) => !known.has(card.id) && parent.hidden(card) };
+  }, [definitionIds, parent]);
+  return <Context.Provider value={value}>{children}</Context.Provider>;
+}

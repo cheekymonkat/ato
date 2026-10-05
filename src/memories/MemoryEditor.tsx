@@ -39,7 +39,7 @@ export function MemoryEditor({ argonaut, kind, index }: { argonaut: Argonaut; ki
   const remove = () => { dispatch({ type: 'remove-memory', argonautId: argonaut.id, kind, index }); back(); };
   if (removing) return <RemovalConfirmation subject={removing.name} detail="This removes the memory and its recorded nodes from this Argonaut."
     onCancel={() => setRemoving(null)} onConfirm={() => { if (item?.id === removing.id) remove(); else setRemoving(null); }} />;
-  return <SafeAreaView style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets contentContainerStyle={styles.page}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" automaticallyAdjustKeyboardInsets contentContainerStyle={styles.page}>
     <Button quiet label="Back to Argonaut" onPress={back} />
     <Text accessibilityRole="header" style={styles.title}>{memoryFamily(kind)} {index + 1}</Text>
     <Text style={styles.meta}>{argonaut.name}</Text>

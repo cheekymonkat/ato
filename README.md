@@ -117,6 +117,17 @@ unassigned secret cards retain the catalogue’s spoiler protection. Equipment
 groups use measured widths so complete rows remain together as the page widens.
 [Stage 8 rule sources and review notes](docs/STAGE_8_RULES.md) define the supported subset.
 
+Stage 9 adds persistent header icons for **Argo, Map, Cargo, Technology, Argonauts
+and Timeline**, reflowing beneath the brand on narrow screens. **Cargo** records
+acquired Gear and shows allocated/available copies across all four Argonauts.
+**Argo** manages acquired Titans, shared resources and campaign notes. Enable
+**Use campaign inventory for equipment and Titan selection** after reviewing the
+acquired copies; existing loadouts seed the inventory and remain intact. Turning
+tracking off keeps inventory records. Map, Technology and Timeline are planned
+feature pages for later additions.
+[Stage 9 behavior and verification](docs/STAGE_9_CAMPAIGN.md) explain ownership,
+printed-copy limits and save compatibility.
+
 ## Start
 
 From this directory:

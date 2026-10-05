@@ -1,3 +1,5 @@
+import { router } from 'expo-router';
+import { inventoryAllowsTitan } from '../domain/inventory';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
@@ -17,7 +19,7 @@ export function TitanSelectionMenu({ argonaut, onClose }: { argonaut: Argonaut; 
   const { party, dispatch } = useParty(), catalogue = getCatalogue(), spoilers = useSpoilers();
   const [removing, setRemoving] = useState(false);
   const cycle = campaignCycle(party);
-  const cards = titanOptionCards(catalogue.search({ family: 'Titan' }), cycle, argonaut.titan).filter(card => !spoilers.hidden(card));
+  const cards = titanOptionCards(catalogue.search({ family: 'Titan' }), cycle, argonaut.titan).filter(card => card.id === argonaut.titan?.definitionId || (!spoilers.hidden(card) || party.inventory?.titans.includes(card.id)) && card.faces.some(face => inventoryAllowsTitan(party, card.id, face.id, catalogue)));
   const selected = argonaut.titan && catalogue.getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   if (removing) return <RemovalConfirmation subject={selected ? titanDisplayName(selected) : 'the selected Titan'}
     detail="This removes the Titan from this Argonaut." onCancel={() => setRemoving(false)} onConfirm={() => {
@@ -25,6 +27,7 @@ export function TitanSelectionMenu({ argonaut, onClose }: { argonaut: Argonaut; 
     }} />;
   return <Sheet visible title="Choose Titan" onClose={onClose}>
     <ArgoBredWarning />
+    {party.inventory?.enforce && <><Text style={styles.cycle}>Showing acquired Titans and Dreamwalker variants through this campaign’s cycle.</Text><Button quiet label="Manage available Titans on Argo" onPress={() => { onClose(); router.push('/argo'); }} /></>}
     {cards.map(card => {
       const face = card.faces.find(face => face.kind === 'titan' && isFaceAvailableInCycle(face, cycle));
       if (!face) return null;

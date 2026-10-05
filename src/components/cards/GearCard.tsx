@@ -45,8 +45,8 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
   const statCell = { minHeight: 25 * scale + pad * 2, paddingVertical: pad, backgroundColor: paint.colour(g.stat), alignItems: 'center' as const, justifyContent: 'center' as const };
   const offensive = data.offensiveStatistics, power = objects(offensive.power), defensive = objects(data.defensiveStatistics), groups = objects(data.gatedAbilities);
   const content = <View style={{ minHeight: g.height * scale, justifyContent: 'space-between', flexGrow: 1 }}>
-    {artSource && artwork && <View pointerEvents="none" aria-hidden accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
-      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: width * artwork.height / artwork.width }}>
+    {artSource && artwork && <View aria-hidden accessibilityElementsHidden importantForAccessibility="no-hide-descendants"
+      style={{ pointerEvents: 'none', position: 'absolute', top: 0, left: 0, width: '100%', height: width * artwork.height / artwork.width }}>
       <Image testID={`gear-art-${face.id}`} source={artSource} accessible={false} resizeMode="stretch" style={{ width: '100%', height: '100%' }} />
     </View>}
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 * scale }}>

@@ -51,6 +51,9 @@ export interface Argonaut {
   /** Persistent selections from the affliction reference list; absent means none. */
   afflictions?: AfflictionId[];
 }
+export interface CampaignInventory {
+  version: 1; enforce: boolean; gear: Record<string, number>; titans: string[];
+}
 export interface Party {
   saveSchemaVersion: 2; id: string; catalogueVersion: string;
   /** Optional for compatibility with existing saves; missing means Cycle 1. */
@@ -59,6 +62,9 @@ export interface Party {
   rulesAssistance?: boolean;
   argonauts: Argonaut[]; order: string[]; activeArgonautId: string;
   resources: Record<string, number>;
+  /** Optional acquired stock; older saves keep unrestricted equipment selection until enabled. */
+  inventory?: CampaignInventory;
+  campaignNotes?: string;
 }
 
 export function isColour(value: unknown): value is string {
@@ -123,6 +129,9 @@ export function parseParty(value: unknown): Party {
   assert(isRecord(value) && isJsonValue(value) && value.saveSchemaVersion === 2, 'Unsupported party save schema or non-JSON state');
   assert(typeof value.id === 'string' && value.id.trim() && typeof value.catalogueVersion === 'string' && value.catalogueVersion.trim(), 'Invalid party identity/version');
   assert(value.campaignCycle === undefined || isCampaignCycle(value.campaignCycle), 'Invalid campaign cycle');
+  assert(value.campaignNotes === undefined || typeof value.campaignNotes === 'string', 'Invalid campaign notes');
+  const inventory = value.inventory;
+  assert(inventory === undefined || isRecord(inventory) && inventory.version === 1 && typeof inventory.enforce === 'boolean' && dictionary(inventory.gear) && Object.entries(inventory.gear).every(([id, count]) => id.trim() && count >= 0) && strings(inventory.titans) && new Set(inventory.titans).size === inventory.titans.length, 'Invalid campaign inventory');
   assert(value.rulesAssistance === undefined || typeof value.rulesAssistance === 'boolean', 'Invalid rules assistance setting');
   assert(Array.isArray(value.argonauts) && value.argonauts.length === 4, 'Party must contain four Argonauts');
   const allInstanceIds = new Set<string>();

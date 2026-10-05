@@ -16,7 +16,7 @@ function SheetBody({ title, subtitle, visible, onClose, children, wide = false, 
   const help = useKeywordHelp(), showingKeyword = Boolean(help?.keyword);
   return <Modal transparent visible={visible} onRequestClose={showingKeyword ? help!.dismiss : onClose} animationType="fade">
     <SafeAreaView style={styles.overlay}>
-      <View style={styles.contents} pointerEvents={showingKeyword ? 'none' : 'auto'} accessibilityElementsHidden={showingKeyword} importantForAccessibility={showingKeyword ? 'no-hide-descendants' : 'auto'} aria-hidden={showingKeyword}>
+      <View style={[styles.contents, { pointerEvents: showingKeyword ? 'none' : 'auto' }]} accessibilityElementsHidden={showingKeyword} importantForAccessibility={showingKeyword ? 'no-hide-descendants' : 'auto'} aria-hidden={showingKeyword}>
       <Pressable accessibilityRole="button" accessibilityLabel="Dismiss dialog" onPress={onClose} style={StyleSheet.absoluteFill} />
       <View accessibilityViewIsModal style={[styles.sheet, wide && styles.wide, maxWidth !== undefined && { maxWidth }]}>
         <View style={styles.header}><View style={{ flex: 1 }}><Text accessibilityRole="header" style={styles.title}>{title}</Text>

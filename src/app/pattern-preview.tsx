@@ -17,7 +17,7 @@ export default function PatternPreview() {
   const { width } = useLocalSearchParams<{ width?: string }>();
   const reviewWidth = ['264', '320', '390'].includes(width || '') ? Number(width) : undefined;
   if (!__DEV__) return <Redirect href="/" />;
-  return <SafeAreaView style={styles.safe}><ScrollView contentContainerStyle={[styles.content, reviewWidth !== undefined && { width: reviewWidth, maxWidth: '100%' }]}>
+  return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}><ScrollView contentContainerStyle={[styles.content, reviewWidth !== undefined && { width: reviewWidth, maxWidth: '100%' }]}>
     <Text accessibilityRole="header" style={styles.title}>Pattern table review</Text>
     <Text style={styles.note}>Development preview · original ranges, combined effects and variable row counts</Text>
     <View style={styles.samples}>{samples.map(sample => {
