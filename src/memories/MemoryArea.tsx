@@ -9,7 +9,7 @@ import { ReferenceCard } from '../components/cards/ReferenceCard';
 import { SwipeGuard } from '../components/SwipeSurface';
 import { SectionHeading } from '../dashboard/EquipmentArea';
 import { loadoutState } from '../domain/loadout';
-import { canDiscardMemory, canExhaustMemory, fatedGrowthAvailable, memoryAt, memoryConflict, memoryFamily, memoryKey, memoryProgress } from '../domain/memories';
+import { canDiscardMemory, fatedGrowthAvailable, memoryAt, memoryConflict, memoryFamily, memoryKey, memoryProgress } from '../domain/memories';
 import { fatedMemorySide } from '../domain/memory-presentation';
 import type { MemoryKind } from '../domain/memories';
 import type { Argonaut } from '../domain/party';
@@ -40,7 +40,7 @@ export function MemoryArea({ argonaut }: { argonaut: Argonaut }) {
           <SwipeGuard><Pressable accessibilityRole="button" accessibilityLabel={`Edit ${label}${!hidden && visibleName ? `: ${visibleName}` : ''}`}
             onPress={() => open(kind)} style={({ pressed }) => [styles.cardTarget, pressed && { opacity: 0.75 }]}>
             <Text style={styles.label}>{label}</Text>
-            {card && face ? <ReferenceCard card={card} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} revealable={false} memoryProgress={progress} />
+            {card && face ? <ReferenceCard card={card} face={face} exhausted={Boolean(item?.discarded)} revealable={false} memoryProgress={progress} instance={item} onAbilityExhausted={item ? (abilityId, exhausted) => dispatch({ type: 'ability-exhausted', argonautId: argonaut.id, instanceId: item.id, definitionId: item.definitionId, faceId: item.faceId, abilityId, exhausted }) : undefined} />
               : <View style={styles.empty}><Text style={styles.hint}>{item ? 'Saved card unavailable. Select to replace or remove.' : 'Select a memory'}</Text></View>}
           </Pressable></SwipeGuard>
           {index >= capacity && item && <Text style={styles.warning}>Outside current capacity. Progress is kept.</Text>}
@@ -48,9 +48,8 @@ export function MemoryArea({ argonaut }: { argonaut: Argonaut }) {
           {item && <>
             <NodeTracker argonautId={argonaut.id} instance={item} label={label} kind={kind} />
             {!hidden && progress && kind === 'fated-mnemos' && <Text style={styles.hint}>{fatedGrowthAvailable(progress) ? 'Resolved · Growth side' : 'Unresolved · Front side'}</Text>}
-            {(item.discarded || item.exhausted) && <Text style={styles.hint}>{item.discarded ? 'Discarded' : 'Exhausted'}</Text>}
-            <CardActionRow>{!item.discarded && (item.exhausted || !hidden && canExhaustMemory(face, memoryProgress(item))) && <CardActionButton action={item.exhausted ? 'Ready' : 'Exhaust'} cardName={actionName} onPress={() => dispatch({ type: 'memory-state', argonautId: argonaut.id, instanceId: item.id, exhausted: !item.exhausted })} />}
-              {(item.discarded || !hidden && canDiscardMemory(face, memoryProgress(item))) && <CardActionButton action={item.discarded ? 'Restore' : 'Discard'} cardName={actionName} onPress={() => dispatch({ type: 'memory-state', argonautId: argonaut.id, instanceId: item.id, discarded: !item.discarded })} />}
+            {item.discarded && <Text style={styles.hint}>Discarded</Text>}
+            <CardActionRow>{(item.discarded || !hidden && canDiscardMemory(face, memoryProgress(item))) && <CardActionButton action={item.discarded ? 'Restore' : 'Discard'} cardName={actionName} onPress={() => dispatch({ type: 'memory-state', argonautId: argonaut.id, instanceId: item.id, discarded: !item.discarded })} />}
               {otherFace && !hidden && <CardActionButton action="Flip" cardName={actionName} onPress={() => dispatch({ type: 'memory-state', argonautId: argonaut.id, instanceId: item.id, faceId: otherFace.id })} />}
             </CardActionRow>
           </>}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-a5831f229d559167",
+  "catalogueVersion": "atcc-v2-f012312e95852ae6",
   "family": "Titan",
   "part": 1,
   "cards": [
@@ -2520,7 +2520,7 @@
             },
             "subtitle": null,
             "titanPower": "Red",
-            "speed": "5",
+            "speed": "7",
             "kratosTable": [
               [
                 [
@@ -2640,6 +2640,14 @@
               }
             ],
             "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Auto-break 1"
+                  }
+                ]
+              },
               {
                 "abilityText": [
                   {

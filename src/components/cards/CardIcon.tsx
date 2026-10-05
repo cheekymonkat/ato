@@ -27,12 +27,17 @@ function invertSvg(key: string, xml: string) {
   inverted.set(key, withDefaultFill); return withDefaultFill;
 }
 
-export function CardIcon({ name, size = 13, type, invert = false, colour = '#000000' }: { name: string; size?: number; type?: 'Power' | 'Armor'; invert?: boolean; colour?: string }) {
+export function CardIcon({ name, size = 13, type, invert = false, colour = '#000000', tint }: { name: string; size?: number; type?: 'Power' | 'Armor'; invert?: boolean; colour?: string; tint?: string }) {
   const paint = useCardColours();
   const id = useId().replace(/[^a-zA-Z0-9_-]/g, ''), key = iconKey(name, type, invert);
   const source = gearIcons[key];
   if (!source) return <Text accessibilityLabel={`Missing symbol: ${name}`} style={{ color: paint.colour(colour), fontSize: size, flexShrink: 1 }}>{name}</Text>;
-  let xml = paint.svg(invert && !nonInvertible.has(key) ? invertSvg(key, source) : source);
+  let xml = invert && !nonInvertible.has(key) ? invertSvg(key, source) : source;
+  if (tint) {
+    xml = xml.replace(/(fill|stroke)="(?:#000000|#000|black)"/gi, `$1="${tint}"`);
+    if (!/^<svg\b[^>]*\bfill=/.test(xml)) xml = xml.replace('<svg ', `<svg fill="${tint}" `);
+  }
+  xml = paint.svg(xml);
   // Isolate SVG IDs on web when the same symbol occurs several times in a card.
   const ids = [...xml.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
   for (const svgId of ids) { xml = xml.replaceAll(`id="${svgId}"`, `id="${svgId}-${id}"`).replaceAll(`url(#${svgId})`, `url(#${svgId}-${id})`).replaceAll(`href="#${svgId}"`, `href="#${svgId}-${id}"`); }

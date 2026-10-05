@@ -18,8 +18,10 @@ export function EquipmentActions({ argonautId, instance, definition }: { argonau
   return <View style={styles.actions}>
     <CardActionRow>
       {!instance.discarded && (instance.exhausted || !hidden && face?.kind === 'gear') && <CardActionButton action={instance.exhausted ? 'Ready' : 'Exhaust'} cardName={name}
+        icon="Exhaust" active={instance.exhausted}
         onPress={() => dispatch({ type: 'equipment-exhausted', argonautId, instanceId: instance.id, exhausted: !instance.exhausted })} />}
       {(instance.discarded || !hidden && face?.kind === 'gear') && <CardActionButton action={instance.discarded ? 'Restore' : 'Discard'} cardName={name}
+        icon="Discard" active={Boolean(instance.discarded)}
         onPress={() => dispatch({ type: 'equipment-discarded', argonautId, instanceId: instance.id, discarded: !instance.discarded })} />}
       {!hidden && nextFace && <CardActionButton action="Flip" cardName={name}
         onPress={() => dispatch({ type: 'equipment-face', argonautId, instanceId: instance.id, faceId: nextFace.id })} />}

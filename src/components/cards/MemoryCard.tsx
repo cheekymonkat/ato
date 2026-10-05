@@ -8,6 +8,8 @@ import type { MemoryProgress } from '../../domain/party';
 import { memoryTheme as m } from '../../theme/memory-tokens';
 import { useCardColours } from './CardColours';
 import { RichParagraph } from './RichParagraph';
+import { AbilityPanel } from './AbilityState';
+import { cardAbilities } from '../../domain/ability-state';
 
 type MemoryFace = Extract<CardFace, { kind: 'mnemos' | 'fated-mnemos' }>;
 
@@ -32,6 +34,7 @@ export function MemoryCard({ face, progress }: { face: MemoryFace; progress?: Me
   const ink = paint.inactive ? m.inactiveInk : m.black;
   const fated = face.kind === 'fated-mnemos', data = face.data;
   const side = face.kind === 'fated-mnemos' ? fatedMemorySide(face, progress) : undefined;
+  const abilities = cardAbilities(face, progress);
   const name = side?.name ?? face.name, traits = side?.traits ?? data.traits, stats = side?.stats ?? data.stats;
   const scale = Math.min(1, width / m.width), padding = Math.max(10, 15 * scale);
   const titleSize = Math.max(16, Math.min(fated ? 19 : 18, 300 / ((fated ? 1.2 : 1) * name.length)) * scale);
@@ -44,12 +47,17 @@ export function MemoryCard({ face, progress }: { face: MemoryFace; progress?: Me
     {face.kind === 'mnemos' ? <View style={[styles.panels, { marginHorizontal: padding }]}>
       {memoryAbilityPanels(face, progress).map(({ group, index }) => <View key={index} style={[styles.ability, { backgroundColor: paint.colour(paint.inactive ? m.inactivePanel : m.ability) }]}>
         {progress && <Text style={[styles.availability, { color: ink }]}>{`Ability ${index + 1} · Nodes unlocked`}</Text>}
-        <RichParagraph paragraph={group} inlineGates size={14} colour={ink} />
+        {abilities.filter(ability => ability.available && (ability.id === `${face.id}:abilities:${index}` || ability.id.startsWith(`${face.id}:abilities:${index}:`))).map((ability, entry) =>
+          <AbilityPanel key={ability.id} id={ability.id} heading={ability.heading} label={`${face.name} ability ${index + 1}${group.length > 1 ? `.${entry + 1}` : ''}`}>
+            <RichParagraph paragraph={ability.heading} abilityCosts inlineGates size={14} colour={ink} />
+          </AbilityPanel>)}
       </View>)}
     </View> : side && <>
       {Boolean(side.flavor) && <Text style={[styles.flavor, { color: paint.colour(paint.inactive ? ink : m.flavor) }]}>{displayValue(side.flavor).replace(/[.!?]$/, '')}.</Text>}
       <View style={styles.effectBox}><View style={[styles.effect, { backgroundColor: paint.colour(paint.inactive ? m.inactivePanel : m.effect) }]}>
-        <RichParagraph paragraph={side.ability} inlineGates size={14} colour={ink} />
+        {abilities.filter(ability => ability.available).map((ability, index) => <AbilityPanel key={ability.id} id={ability.id} heading={ability.heading} label={`${name} ability ${index + 1}`}>
+          <RichParagraph paragraph={ability.heading} abilityCosts inlineGates size={14} colour={ink} />
+        </AbilityPanel>)}
       </View></View>
     </>}
     {stats.length > 0 && <View style={styles.skills}>{stats.map((skill, index) => <SkillBadge key={`${skill}:${index}`} skill={skill} value={fated ? -1 : 1} />)}</View>}

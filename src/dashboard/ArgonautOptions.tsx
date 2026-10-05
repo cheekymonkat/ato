@@ -13,8 +13,6 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { ConditionEditor } from './ConditionEditor';
-import { TitanPicker } from './TitanPicker';
-import { titanDisplayName } from '../domain/titan-selection';
 
 export function ArgonautOptions({ argonaut, onClose, onRules }: {
   argonaut: Argonaut; onClose: () => void; onRules: () => void;
@@ -22,8 +20,6 @@ export function ArgonautOptions({ argonaut, onClose, onRules }: {
   const { dispatch, party } = useParty(), catalogue = getCatalogue(), cycle = campaignCycle(party), spoilers = useSpoilers();
   const records = conditionRecords(argonaut);
   const [addingCustom, setAddingCustom] = useState(false);
-  const [choosingTitan, setChoosingTitan] = useState(false);
-  const titanFace = argonaut.titan && catalogue.getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   const [removal, setRemoval] = useState<{ kind: 'condition'; record: ConditionRecord } | { kind: 'affliction'; id: AfflictionId; name: string } | null>(null);
   const choices = (() => {
     const unique: ConditionRecord[] = [];
@@ -36,12 +32,6 @@ export function ArgonautOptions({ argonaut, onClose, onRules }: {
     return unique;
   })();
   const extra = records.filter(record => !choices.some(choice => conditionConflict([record], { ...choice, id: '' }, catalogue)));
-  if (choosingTitan) return <TitanPicker selected={argonaut.titan} onClose={() => setChoosingTitan(false)} onSelect={reference => {
-    dispatch({ type: 'titan', argonautId: argonaut.id, titan: reference ? argonaut.titan?.definitionId === reference.definitionId
-      ? { ...argonaut.titan, faceId: reference.faceId }
-      : { id: `${argonaut.id}:titan`, ...reference, exhausted: false, enabledEffectIds: [], counters: {} } : null });
-    setChoosingTitan(false);
-  }} />;
   if (removal) return <RemovalConfirmation title={`Remove ${removal.kind}`} itemType={removal.kind} subject={removal.kind === 'condition' ? removal.record.name : removal.name}
     onCancel={() => setRemoval(null)} onConfirm={() => {
       if (removal.kind === 'condition') dispatch({ type: 'remove-condition', argonautId: argonaut.id, id: removal.record.id });
@@ -52,8 +42,6 @@ export function ArgonautOptions({ argonaut, onClose, onRules }: {
     dispatch({ type: 'condition', argonautId: argonaut.id, condition }); setAddingCustom(false);
   }} />;
   return <Sheet visible title="Argonaut Options" subtitle={argonaut.name || 'Selected Argonaut'} onClose={onClose}>
-    <Text accessibilityRole="header" style={styles.heading}>Titan</Text>
-    <Button quiet label={titanFace ? `Change Titan: ${titanDisplayName(titanFace)} · ${titanFace.cycle}` : 'Choose Titan'} onPress={() => setChoosingTitan(true)} />
     <Text accessibilityRole="header" style={styles.heading}>Conditions</Text>
     <View style={styles.choices}>{choices.map(choice => {
       const current = conditionConflict(records, { ...choice, id: '' }, catalogue);

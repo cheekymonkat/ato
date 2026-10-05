@@ -8,10 +8,11 @@ import { GateBadge } from './GateBadge';
 import { useCardColours } from './CardColours';
 import { useKeywordHelp } from '../KeywordHelpContext';
 import { SwipeGuard } from '../SwipeSurface';
+import { AbilityCostIcon } from './AbilityState';
 
 export interface TextActions { onReference?: (id: string, name: string) => void; onKeyword?: (name: string) => void }
-export function RichParagraph({ paragraph, prefix = '', size = 13, colour = '#000000', align = 'center', invert = false, inlineGates = false, boldKeywords = false, onReference, onKeyword }: TextActions & {
-  paragraph: unknown; prefix?: string; size?: number; colour?: string; align?: 'left' | 'center'; invert?: boolean; inlineGates?: boolean; boldKeywords?: boolean;
+export function RichParagraph({ paragraph, prefix = '', size = 13, colour = '#000000', align = 'center', invert = false, inlineGates = false, boldKeywords = false, abilityCosts = false, onReference, onKeyword }: TextActions & {
+  paragraph: unknown; prefix?: string; size?: number; colour?: string; align?: 'left' | 'center'; invert?: boolean; inlineGates?: boolean; boldKeywords?: boolean; abilityCosts?: boolean;
 }) {
   const paint = useCardColours();
   const help = useKeywordHelp();
@@ -21,7 +22,10 @@ export function RichParagraph({ paragraph, prefix = '', size = 13, colour = '#00
       {block.map((word, wordIndex) => <View key={wordIndex} style={[styles.word, { marginRight: word.spaceAfter ? size * 0.28 : 0, minHeight: size * 1.5 }]}>
         {Boolean(prefix) && blockIndex === 0 && wordIndex === 0 && <Text style={{ color: paint.colour(colour), fontSize: size, lineHeight: size * 1.5 }}>{prefix}</Text>}
         {word.segments.map((segment, index) => {
-          if (segment.kind === 'icon') return <CardIcon key={index} name={segment.name} size={size} invert={invert} colour={colour} />;
+          if (segment.kind === 'icon') {
+            const Icon = abilityCosts ? AbilityCostIcon : CardIcon;
+            return <Icon key={index} name={segment.name} size={size} invert={invert} colour={colour} />;
+          }
           if (segment.kind === 'gate') return <GateBadge key={index} gate={segment.gate} height={size * 1.15} filled={inlineGates} />;
           const keywordAction = segment.keyword && keywordRepository.resolve(segment.keyword) ? help?.open || onKeyword : undefined;
           const referenceAction = segment.reference && onReference;

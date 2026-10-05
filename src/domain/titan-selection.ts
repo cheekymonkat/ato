@@ -9,6 +9,10 @@ export function isDreamwalker(face: CardFace | undefined): boolean {
 export function titanDisplayName(face: CardFace): string {
   return isDreamwalker(face) ? 'Dreamwalker' : face.name;
 }
+/** Dashboard selection exposes the printed cycle subtype, while named copies still share one choice. */
+export function titanVariantDisplayName(face: CardFace): string {
+  return isDreamwalker(face) ? String(face.data.subtitle || 'Dreamwalker') : face.name;
+}
 const titanFace = (card: CardDefinition) => card.faces.find(face => face.kind === 'titan');
 
 /** Named copies share rules within a cycle; keep real references for saved data and tables. */
@@ -37,4 +41,9 @@ export function titanSelectionCards(cards: CardDefinition[], cycle: CampaignCycl
   const dreamwalker = variants.find(card => card.id === preferred?.definitionId) ?? variants.at(-1);
   return [...matches.filter(card => !isDreamwalker(titanFace(card))), ...(dreamwalker ? [dreamwalker] : [])]
     .sort((a, b) => titanDisplayName(titanFace(a)!).localeCompare(titanDisplayName(titanFace(b)!)) || a.id.localeCompare(b.id));
+}
+
+export function titanOptionCards(cards: CardDefinition[], cycle: CampaignCycle, preferred?: CardReference | null): CardDefinition[] {
+  return [...titanSelectionCards(cards, cycle, '', preferred).filter(card => !isDreamwalker(titanFace(card))), ...dreamwalkerVariants(cards, cycle, preferred)]
+    .sort((a, b) => titanVariantDisplayName(titanFace(a)!).localeCompare(titanVariantDisplayName(titanFace(b)!)) || a.id.localeCompare(b.id));
 }

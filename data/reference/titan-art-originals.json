@@ -1,0 +1,219 @@
+{
+  "method": "Exact full-resolution rectangles; printed titles, symbols and rules excluded. Artwork obscured by printing is not reconstructed. Solon is shared by all Dreamwalker variants.",
+  "images": [
+    {
+      "name": "Mazerunner",
+      "source": "../ato_docs/pics/originals/Epson_28092026091558.jpg",
+      "sourceSha256": "fd33faa4956edfe921fa4e2691e722c1d71ef04782720f3214010d0ef57a4af7",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1252
+      ],
+      "image": "assets/titan-art/mazerunner.jpg",
+      "archive": "../ato_docs/titan-art/mazerunner.png"
+    },
+    {
+      "name": "Dreamwalker",
+      "source": "../ato_docs/pics/originals/Epson_28092026093813.jpg",
+      "sourceSha256": "73fb46f6141e0c727b79901f4153e584998bbfe792aab328caea369dcdd74bad",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1528
+      ],
+      "image": "assets/titan-art/dreamwalker.jpg",
+      "archive": "../ato_docs/titan-art/dreamwalker.png"
+    },
+    {
+      "name": "Logicbreaker",
+      "source": "../ato_docs/pics/originals/Epson_28092026094006.jpg",
+      "sourceSha256": "63490c89a493d7e2972a2d5e2e1818d6e4bca7b9273ef628e7fde983f77218b2",
+      "cropLTRB": [
+        1280,
+        312,
+        2392,
+        1624
+      ],
+      "image": "assets/titan-art/logicbreaker.jpg",
+      "archive": "../ato_docs/titan-art/logicbreaker.png"
+    },
+    {
+      "name": "Gamechanger",
+      "source": "../ato_docs/pics/originals/Epson_28092026094110.jpg",
+      "sourceSha256": "fe8b650c6af7518d316760b7f94d885cc9f659fee8819432f16e86f008836ffe",
+      "cropLTRB": [
+        8,
+        316,
+        1208,
+        1524
+      ],
+      "image": "assets/titan-art/gamechanger.jpg",
+      "archive": "../ato_docs/titan-art/gamechanger.png"
+    },
+    {
+      "name": "Earthshaker",
+      "source": "../ato_docs/pics/originals/Epson_28092026094231.jpg",
+      "sourceSha256": "df36e5969a47668db43bc4929a7c22998164f15a740a3e2a35ba3f9618fe20e7",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1528
+      ],
+      "image": "assets/titan-art/earthshaker.jpg",
+      "archive": "../ato_docs/titan-art/earthshaker.png"
+    },
+    {
+      "name": "Skyseer",
+      "source": "../ato_docs/pics/originals/Epson_28092026102650.jpg",
+      "sourceSha256": "eb1004befe85e2d2476ff5f2d659b88a68969882f699ee110698fd32b7e7a85f",
+      "cropLTRB": [
+        8,
+        320,
+        1208,
+        1192
+      ],
+      "image": "assets/titan-art/skyseer.jpg",
+      "archive": "../ato_docs/titan-art/skyseer.png"
+    },
+    {
+      "name": "Dawnburner",
+      "source": "../ato_docs/pics/originals/Epson_28092026102834.jpg",
+      "sourceSha256": "3104682da813257e9d22a08188b9f7cf37d80602e8044a625dea3fec0c53385a",
+      "cropLTRB": [
+        8,
+        320,
+        1208,
+        1216
+      ],
+      "image": "assets/titan-art/dawnburner.jpg",
+      "archive": "../ato_docs/titan-art/dawnburner.png"
+    },
+    {
+      "name": "Truthbearer",
+      "source": "../ato_docs/pics/originals/Epson_28092026102949.jpg",
+      "sourceSha256": "3a357afa45a3d201d59ef81cdb3b20c144e08a8b7bf9831679273a438b683a21",
+      "cropLTRB": [
+        1400,
+        360,
+        2392,
+        1364
+      ],
+      "image": "assets/titan-art/truthbearer.jpg",
+      "archive": "../ato_docs/titan-art/truthbearer.png"
+    },
+    {
+      "name": "Immortal Truthbearer",
+      "source": "../ato_docs/pics/originals/Epson_28092026103150.jpg",
+      "sourceSha256": "f3e056a0e2c68aa501e9a598ccea8d2b979e81da9fcc1606dff7a1d0a1160a04",
+      "cropLTRB": [
+        1312,
+        360,
+        2392,
+        1624
+      ],
+      "image": "assets/titan-art/immortal-truthbearer.jpg",
+      "archive": "../ato_docs/titan-art/immortal-truthbearer.png"
+    },
+    {
+      "name": "Returner",
+      "source": "../ato_docs/pics/originals/Epson_28092026103613.jpg",
+      "sourceSha256": "731ed228501706f317156e1f3145b2c0e52c714defab392ab173b4d5fd7cacda",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1260
+      ],
+      "image": "assets/titan-art/returner.jpg",
+      "archive": "../ato_docs/titan-art/returner.png"
+    },
+    {
+      "name": "Firestarter",
+      "source": "../ato_docs/pics/originals/Epson_28092026104024.jpg",
+      "sourceSha256": "3aa5073a04041c1269ea47eacfa8e671e5d55c5c08c7098eb171681717e250e1",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1272
+      ],
+      "image": "assets/titan-art/firestarter.jpg",
+      "archive": "../ato_docs/titan-art/firestarter.png"
+    },
+    {
+      "name": "Abysswatcher",
+      "source": "../ato_docs/pics/originals/Epson_28092026104842.jpg",
+      "sourceSha256": "65c1764766c6bdd7b731864cb0aa29b0da99704b4fce225efad47dcbea39da4c",
+      "cropLTRB": [
+        8,
+        340,
+        1208,
+        1356
+      ],
+      "image": "assets/titan-art/abysswatcher.jpg",
+      "archive": "../ato_docs/titan-art/abysswatcher.png"
+    },
+    {
+      "name": "Ascender",
+      "source": "../ato_docs/pics/originals/Epson_28092026105037.jpg",
+      "sourceSha256": "5c374352e029386a99bdf7dcb0203bc21b937f8dddecc2ccb19c20d3be2fbcd9",
+      "cropLTRB": [
+        8,
+        320,
+        1208,
+        1364
+      ],
+      "image": "assets/titan-art/ascender.jpg",
+      "archive": "../ato_docs/titan-art/ascender.png"
+    },
+    {
+      "name": "Warkeeper",
+      "source": "../ato_docs/pics/originals/Epson_28092026105138.jpg",
+      "sourceSha256": "51b6816cc38f60ac2246ce4ce62daa97efeb9f6586d62b783b0aa35246e6ff9c",
+      "cropLTRB": [
+        1240,
+        320,
+        2384,
+        1624
+      ],
+      "image": "assets/titan-art/warkeeper.jpg",
+      "archive": "../ato_docs/titan-art/warkeeper.png"
+    },
+    {
+      "name": "Talespinner",
+      "source": "../ato_docs/pics/originals/Epson_28092026105242.jpg",
+      "sourceSha256": "594fcb4b8c4c100c07c2a3c01f8e7b73ec78026cb2b8955824d2d00c7f843670",
+      "cropLTRB": [
+        8,
+        4,
+        1208,
+        1260
+      ],
+      "image": "assets/titan-art/talespinner.jpg",
+      "archive": "../ato_docs/titan-art/talespinner.png"
+    }
+  ],
+  "delivery": "Lossless full-resolution PNG crops archived in ato_docs/titan-art; app ships full-resolution quality-92 JPEGs.",
+  "catalogueCorrections": [
+    {
+      "printedId": "CK1282",
+      "name": "Skyseer",
+      "sourceFile": "data/source/atcc-cards-page-0004.json",
+      "sourceRecordIndex": 38,
+      "scan": "../ato_docs/pics/originals/Epson_28092026102650.jpg",
+      "changes": {
+        "speed": {
+          "before": "5",
+          "after": "7"
+        },
+        "abilitiesAdded": [
+          "Auto-break 1"
+        ]
+      }
+    }
+  ]
+}

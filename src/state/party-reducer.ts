@@ -17,6 +17,7 @@ import { conditionRecords, conditionReverse, removeCondition, setCondition, supp
 import { clearAllArgonauts, refreshArgonautCards } from '../domain/battle-reset.ts';
 import { AFFLICTIONS } from '../domain/afflictions.ts';
 import type { AfflictionId } from '../domain/afflictions.ts';
+import { setAbilityExhausted } from '../domain/ability-state.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
@@ -46,6 +47,7 @@ export type PartyAction =
   | { type: 'titan'; argonautId: string; titan: CardInstance | null }
   | { type: 'titan-face'; argonautId: string; faceId: 'front' | 'back' }
   | { type: 'titan-exhausted'; argonautId: string; exhausted: boolean }
+  | { type: 'ability-exhausted'; argonautId: string; instanceId: string; definitionId: string; faceId: 'front' | 'back'; abilityId: string; exhausted: boolean }
   | { type: 'titan-discarded'; argonautId: string; instanceId: string; discarded: boolean }
   | { type: 'memory'; argonautId: string; request: MemoryRequest }
   | { type: 'remove-memory'; argonautId: string; kind: MemoryKind; index: number }
@@ -95,6 +97,16 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       if (action.partyId === party.id && typeof action.text === 'string' && action.text !== (current.notes ?? '')) updated = { ...current, notes: action.text };
       break;
     case 'refresh-gear': updated = refreshArgonautCards(current); break;
+    case 'ability-exhausted': {
+      const item = current.titan?.id === action.instanceId ? current.titan : current.instances.find(item => item.id === action.instanceId
+        && [...current.mnemosIds, ...current.fatedMnemosIds].includes(item.id));
+      if (!item || item.definitionId !== action.definitionId || item.faceId !== action.faceId) break;
+      const face = catalogue?.getFace(item.definitionId, item.faceId);
+      const next = setAbilityExhausted(item, face, action.abilityId, action.exhausted);
+      if (next !== item) updated = current.titan === item ? { ...current, titan: next }
+        : { ...current, instances: current.instances.map(entry => entry === item ? next : entry) };
+      break;
+    }
     case 'combat-modifier': {
       if (!['precision', 'speed'].includes(action.modifier) || ![-1, 1].includes(action.delta)) break;
       const modifiers = current.combatModifiers ?? { precision: 0, speed: 0 };
@@ -138,10 +150,12 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       if (current.titan && catalogue?.getFace(current.titan.definitionId, action.faceId)?.kind === 'titan') updated = { ...current, titan: { ...current.titan, faceId: action.faceId } };
       break;
     case 'titan-exhausted':
-      if (current.titan && (action.exhausted === false || action.exhausted === true && !current.titan.discarded && canExhaustCard(catalogue?.getFace(current.titan.definitionId, current.titan.faceId)))) updated = { ...current, titan: { ...current.titan, exhausted: action.exhausted } };
+      if (current.titan && (action.exhausted === false || action.exhausted === true && !current.titan.discarded && canExhaustCard(catalogue?.getFace(current.titan.definitionId, current.titan.faceId)))) updated = { ...current, titan: { ...current.titan, exhausted: action.exhausted,
+        ...(action.exhausted === false && current.titan.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}) } };
       break;
     case 'titan-discarded':
-      if (current.titan?.id === action.instanceId && (action.discarded === false || action.discarded === true && canDiscardCard(catalogue?.getFace(current.titan.definitionId, current.titan.faceId)))) updated = { ...current, titan: { ...current.titan, discarded: action.discarded, ...(action.discarded ? { exhausted: false } : {}) } };
+      if (current.titan?.id === action.instanceId && (action.discarded === false || action.discarded === true && canDiscardCard(catalogue?.getFace(current.titan.definitionId, current.titan.faceId)))) updated = { ...current, titan: { ...current.titan, discarded: action.discarded, ...(action.discarded ? { exhausted: false,
+        ...(current.titan.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}) } : {}) } };
       break;
     case 'argonaut-change':
       if (catalogue && action.confirmed === true && action.partyId === party.id && action.expectedName === current.name && action.expectedDefinitionId === current.argonautDefinitionId) {

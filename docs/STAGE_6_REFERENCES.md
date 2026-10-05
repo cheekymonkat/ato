@@ -343,3 +343,51 @@ Implementation API references: [Expo SDK 57](https://docs.expo.dev/versions/v57.
 [Expo Router parameters](https://docs.expo.dev/router/reference/url-parameters/),
 [React Native 0.86 Pressable](https://reactnative.dev/docs/0.86/pressable),
 [Expo SVG](https://docs.expo.dev/versions/v57.0.0/sdk/svg/).
+
+## Titan artwork and ability exhaustion
+
+The approved Titan layout places the selected Titan's illustration behind the
+Titan and Memories column. The Titan name opens a compact title/cycle picker;
+Titan selection is no longer part of Argonaut Options. Every Dreamwalker uses
+Solon's illustration. The picker lists Dreamwalker, Spartan Dreamwalker,
+Delphian Dreamwalker, Persian Dreamwalker and Cycladean Dreamwalker separately,
+including only types from the current campaign cycle and earlier. Named copies
+within the same subtype remain one choice, retaining a selected copy's ID.
+Movement appears before the power die. Standalone
+Auto-black, Auto-break and Power Re-roll modifiers appear beside that die,
+while limit abilities appear as clickable icon/value chips below the heading.
+Other abilities keep their full supplied explanations, with cost icons directly
+after the title. The Truth adds Auto-hope 1 to the dice row at Rage 7 or higher.
+
+Titan, Mnemos and Fated Mnemos exhaustion belongs to individual printed
+abilities. An optional `CardInstance.exhaustedAbilityIds` list records face/path
+IDs, such as `front:abilities:1:0`; two identical abilities remain independent.
+Only an unlocked ability with an explicit Exhaust cost has a tappable printed
+Exhaust cost icon. There is no separate action button beneath the ability.
+The icon turns red when exhausted; tapping it again readies the ability. Exhaust
+dims that ability, while leaving the name, stats,
+passives, other abilities and node tracker active. Neither action spends other
+costs automatically. Discard retains its existing whole-card behaviour.
+
+Older saves remain schema version 2. A legacy whole-card Exhaust flag is shown
+on currently unlocked Exhaust-cost abilities only. The first individual edit
+converts that marker to the list without losing other abilities' state. Missing
+references retain saved IDs. Refresh Gear and Tides of Fate clear both forms of
+exhaustion; backups persist the per-ability list. Memory nodes and Fated-side
+changes keep each ability's readiness, including temporarily hidden panels.
+
+Artwork is reproducible using `python3 scripts/extract-titan-art.py`.
+`data/reference/titan-art-originals.json` records source hashes and exact
+full-resolution crop rectangles. Lossless PNG crops are archived under
+`../ato_docs/titan-art`; the app bundles smaller full-resolution JPEGs in
+`assets/titan-art`, registered by `src/theme/titan-art.ts`. Printing is excluded
+by cropping; obscured illustration pixels are not invented or reconstructed.
+The same record documents the original Skyseer scan's movement 7 and
+Auto-break 1 correction to source card CK1282, followed by catalogue import.
+
+Manual acceptance: on web, iOS and Android, choose different Titans and
+Dreamwalkers, tap modifier/limit details, exhaust one of two unlocked Mnemos
+abilities, adjust nodes across both gateways and the Fated resolution point,
+then refresh, restart, and export/import. Check that only the selected ability
+changes and that tapping its control never opens the memory editor or swipes
+to another Argonaut.

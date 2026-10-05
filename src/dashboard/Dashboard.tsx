@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useCallback, useMemo, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
@@ -10,7 +10,7 @@ import { CombatStats } from '../components/cards/CombatStats';
 import { Button } from '../components/Button';
 import { Chevron, Emblem } from '../components/Icon';
 import { SwipeGuard, SwipeSurface } from '../components/SwipeSurface';
-import { canDiscardCard, canExhaustCard } from '../domain/ability-costs';
+import { canDiscardCard } from '../domain/ability-costs';
 import type { Argonaut } from '../domain/party';
 import { adjacentArgonautId } from '../state/party-reducer';
 import type { CounterName } from '../state/party-reducer';
@@ -33,6 +33,8 @@ import { ArgonautNotes } from './ArgonautNotes';
 import { ArgonautOptions } from './ArgonautOptions';
 import { StatsSwitcher } from './StatsSwitcher';
 import { StatusBar } from './StatusBar';
+import { TitanSelectionMenu } from './TitanSelectionMenu';
+import { titanArtwork } from '../theme/titan-art';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -51,6 +53,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const [colourOpen, setColourOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false), [optionsOpen, setOptionsOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);
+  const [choosingTitan, setChoosingTitan] = useState(false);
   const [clearing, setClearing] = useState<{ partyId: string; argonautId: string; campaignName: string } | null>(null);
   const [overflow, setOverflow] = useState<CounterName | null>(null), [reference, setReference] = useState<'Trauma' | 'Kratos' | null>(null);
   const index = party.order.indexOf(argonaut.id);
@@ -58,6 +61,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const titan = argonaut.titan && getCatalogue().getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   const titanCard = argonaut.titan && getCatalogue().get(argonaut.titan.definitionId), spoilers = useSpoilers();
   const hiddenTitan = titanCard && spoilers.hidden(titanCard);
+  const artwork = !hiddenTitan && titanArtwork(titan);
   const navigate = useCallback((direction: -1 | 1) => {
     const id = adjacentArgonautId(party.order, argonaut.id, direction);
     if (id) onSelect(id);
@@ -128,18 +132,23 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
             <ArgonautNotes key={`notes:${party.id}:${argonaut.id}`} argonaut={argonaut} />
           </View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
+            <View style={styles.titanCanvas}>
+            {artwork && <View pointerEvents="none" style={StyleSheet.absoluteFill}><Image source={artwork} resizeMode="cover" accessible={false} style={styles.titanArt} /></View>}
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
               {(!titan || hiddenTitan) && referenceLinks}
-              {titan && titanCard ? <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.exhausted || argonaut.titan?.discarded)} showTables={false} revealable={false}
-                titanHeaderActions={referenceLinks} />
-                : <Text style={styles.referenceHint}>Choose a Titan in Argonaut Options to view its abilities, or set a Pattern override in a table.</Text>}
+              {titan && titanCard ? <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.discarded)} showTables={false} revealable={false}
+                titanHeaderActions={referenceLinks} onSelectTitan={() => setChoosingTitan(true)} titanBackdrop={Boolean(artwork)}
+                instance={argonaut.titan || undefined} rage={argonaut.counters.rage}
+                onAbilityExhausted={(abilityId, exhausted) => { if (argonaut.titan) dispatch({ type: 'ability-exhausted', argonautId: argonaut.id,
+                  instanceId: argonaut.titan.id, definitionId: argonaut.titan.definitionId, faceId: argonaut.titan.faceId, abilityId, exhausted }); }} />
+                : <Button quiet label="Choose Titan" onPress={() => setChoosingTitan(true)} />}
               {argonaut.titan?.discarded && <Text style={styles.referenceHint}>Discarded</Text>}
               {argonaut.titan && <SwipeGuard><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
-                {!argonaut.titan.discarded && (argonaut.titan.exhausted || titan && !hiddenTitan && canExhaustCard(titan)) && <Button quiet label={argonaut.titan.exhausted ? 'Ready Titan' : 'Exhaust Titan'} onPress={() => dispatch({ type: 'titan-exhausted', argonautId: argonaut.id, exhausted: !argonaut.titan?.exhausted })} />}
                 {(argonaut.titan.discarded || titan && !hiddenTitan && canDiscardCard(titan)) && <Button quiet label={argonaut.titan.discarded ? 'Restore Titan' : 'Discard Titan'} onPress={() => dispatch({ type: 'titan-discarded', argonautId: argonaut.id, instanceId: argonaut.titan!.id, discarded: !argonaut.titan?.discarded })} />}
               </View></SwipeGuard>}
             </View>
             <MemoryArea argonaut={argonaut} />
+            </View>
             <SharedResources owner={argonaut.id} />
           </View>
         </View></GateAssistance></CombatStats>
@@ -154,6 +163,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
     {optionsOpen && <ArgonautOptions key={`${party.id}:${argonaut.id}`} argonaut={argonaut} onClose={() => setOptionsOpen(false)}
       onRules={() => { setOptionsOpen(false); setRulesOpen(true); }} />}
     {rulesOpen && <RulesAssistanceSheet argonaut={argonaut} onClose={() => setRulesOpen(false)} />}
+    {choosingTitan && <TitanSelectionMenu key={`${party.id}:${argonaut.id}`} argonaut={argonaut} onClose={() => setChoosingTitan(false)} />}
     {clearing && <TidesOfFateDialog campaignName={clearing.campaignName} onClose={() => setClearing(null)} onConfirm={() => {
       dispatch({ type: 'clear-all', argonautId: clearing.argonautId, partyId: clearing.partyId, confirmed: true }); setClearing(null);
     }} />}
@@ -192,7 +202,9 @@ const styles = StyleSheet.create({
   identityStatsNarrow: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' },
   separator: { height: 4, width: '100%', marginBottom: 16 },
   board: { width: '100%', paddingHorizontal: 32, flexDirection: 'row', gap: 24, alignItems: 'flex-start' }, boardNarrow: { flexDirection: 'column', gap: 32 },
-  equipmentColumn: { flexGrow: 1.85, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },
+  equipmentColumn: { flexGrow: 1.3, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },
+  titanCanvas: { position: 'relative', overflow: 'hidden', padding: 16, borderRadius: 8, backgroundColor: theme.panel, gap: 24 },
+  titanArt: { width: '100%', height: '100%', opacity: 0.42 },
   fullColumn: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' },
   referenceLinks: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 }, referenceButton: { backgroundColor: theme.panel, flexDirection: 'row', paddingHorizontal: 8, gap: 6 }, referenceLabel: { fontSize: 12, color: theme.ink }, referenceHint: { fontSize: 10, color: theme.muted, textAlign: 'center', lineHeight: 16 },
   footer: { width: '100%', paddingHorizontal: 32, flexDirection: 'row', justifyContent: 'space-between', paddingTop: 30, paddingBottom: 18, gap: 16 }, footerText: { color: theme.muted, fontSize: 9, letterSpacing: 1.3 },

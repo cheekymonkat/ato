@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { CardDefinition, CardFace } from '../../domain/cards';
-import type { MemoryProgress } from '../../domain/party';
+import type { CardInstance, MemoryProgress } from '../../domain/party';
 import { displayValue, strings } from '../../domain/card-presentation';
 import { faceTable, flattenAbilities } from '../../domain/references';
 import { useSpoilers } from '../../state/SpoilerProvider';
@@ -14,23 +14,25 @@ import { MemoryCard } from './MemoryCard';
 import { TitanCardBody } from './TitanCard';
 import { ConditionCard } from './ConditionCard';
 import { conditionEffects, supportsCondition } from '../../domain/conditions';
+import { AbilityState } from './AbilityState';
 
 /** Full-height presentations share rich text and the ATCC-style table renderer. */
-export function ReferenceCard({ card, face, exhausted = false, showTables = true, revealable = true, memoryProgress, titanHeaderActions, onSelectTitan }: {
+export function ReferenceCard({ card, face, exhausted = false, showTables = true, revealable = true, memoryProgress, titanHeaderActions, onSelectTitan, instance, onAbilityExhausted, titanBackdrop = false, rage }: {
   card: CardDefinition; face: CardFace; exhausted?: boolean; showTables?: boolean; revealable?: boolean; memoryProgress?: MemoryProgress;
   titanHeaderActions?: ReactNode; onSelectTitan?: () => void;
+  instance?: CardInstance; onAbilityExhausted?: (id: string, exhausted: boolean) => void; titanBackdrop?: boolean; rage?: number;
 }) {
   const spoilers = useSpoilers();
   return spoilers.hidden(card) ? <SecretCard card={card} compact onReveal={revealable ? () => spoilers.reveal(card.id) : undefined} />
-    : <CardColours exhausted={exhausted}>{face.kind === 'mnemos' || face.kind === 'fated-mnemos'
-      ? <MemoryCard face={face} progress={memoryProgress} /> : face.family === 'Condition' ? <ConditionCard face={face} /> : <ReferenceFace face={face} showTables={showTables} titanHeaderActions={titanHeaderActions} onSelectTitan={onSelectTitan} />}</CardColours>;
+    : <CardColours exhausted={exhausted}><AbilityState instance={instance} face={face} onExhausted={onAbilityExhausted}>{face.kind === 'mnemos' || face.kind === 'fated-mnemos'
+      ? <MemoryCard face={face} progress={memoryProgress} /> : face.family === 'Condition' ? <ConditionCard face={face} /> : <ReferenceFace face={face} showTables={showTables} titanHeaderActions={titanHeaderActions} onSelectTitan={onSelectTitan} titanBackdrop={titanBackdrop} rage={rage} />}</AbilityState></CardColours>;
 }
-function ReferenceFace({ face, showTables, titanHeaderActions, onSelectTitan }: { face: Exclude<CardFace, { kind: 'mnemos' | 'fated-mnemos' }>; showTables: boolean; titanHeaderActions?: ReactNode; onSelectTitan?: () => void }) {
+function ReferenceFace({ face, showTables, titanHeaderActions, onSelectTitan, titanBackdrop, rage }: { face: Exclude<CardFace, { kind: 'mnemos' | 'fated-mnemos' }>; showTables: boolean; titanHeaderActions?: ReactNode; onSelectTitan?: () => void; titanBackdrop?: boolean; rage?: number }) {
   const paint = useCardColours(), data = face.data, colour = paint.colour(cycleColour(face.cycle));
   const ink = paint.colour(colour === '#FFFFFF' ? '#000000' : colour);
-  return <View testID={`reference-card-${face.id}`} style={[styles.card, { backgroundColor: paint.colour(g.papyrus), borderColor: paint.colour(g.papyrusDark) }]}>
+  return <View testID={`reference-card-${face.id}`} style={[styles.card, { backgroundColor: titanBackdrop ? '#FAF9F680' : paint.colour(g.papyrus), borderColor: paint.colour(g.papyrusDark) }]}>
     <View style={styles.body}>
-      {face.kind === 'titan' ? <TitanCardBody face={face} ink={ink} headerActions={titanHeaderActions} onSelect={onSelectTitan} /> : <>
+      {face.kind === 'titan' ? <TitanCardBody face={face} ink={ink} headerActions={titanHeaderActions} onSelect={onSelectTitan} rage={rage} /> : <>
       <Text style={[styles.meta, { color: ink }]}>{face.family} · {face.cycle}</Text>
       <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{face.name}</Text>
       {Boolean(data.subtitle) && <Text style={styles.subtitle}>{displayValue(data.subtitle)}</Text>}

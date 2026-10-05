@@ -88,8 +88,10 @@ export function updateMemory(argonaut: Argonaut, id: string, changes: { faceId?:
   if (changes.progress?.growthUnlocked === true && (progress.node ?? 0) < memoryNodeLimit('fated-mnemos')) return argonaut;
   if (progress.node !== null && (!Number.isSafeInteger(progress.node) || progress.node < 0) || typeof progress.growthUnlocked !== 'boolean' || kind === 'mnemos' && changes.progress?.growthUnlocked !== undefined) return argonaut;
   return { ...argonaut, instances: argonaut.instances.map(instance => instance.id === id ? { ...instance,
-    ...(changes.faceId ? { faceId: changes.faceId } : {}), ...(changes.exhausted === undefined ? {} : { exhausted: changes.exhausted }),
-    ...(changes.discarded === undefined ? {} : { discarded: changes.discarded, ...(changes.discarded ? { exhausted: false } : {}) }),
+    ...(changes.faceId ? { faceId: changes.faceId } : {}), ...(changes.exhausted === undefined ? {} : { exhausted: changes.exhausted,
+      ...(changes.exhausted === false && instance.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}) }),
+    ...(changes.discarded === undefined ? {} : { discarded: changes.discarded, ...(changes.discarded ? { exhausted: false,
+      ...(instance.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}) } : {}) }),
     ...(changes.progress ? { memoryProgress: progress } : {}) } : instance) };
 }
 

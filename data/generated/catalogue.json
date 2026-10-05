@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-a5831f229d559167",
+  "catalogueVersion": "atcc-v2-f012312e95852ae6",
   "cards": [
     {
       "id": "def_0003f07224deddf7f702e53f",
@@ -168256,7 +168256,7 @@
             },
             "subtitle": null,
             "titanPower": "Red",
-            "speed": "5",
+            "speed": "7",
             "kratosTable": [
               [
                 [
@@ -168376,6 +168376,14 @@
               }
             ],
             "abilities": [
+              {
+                "abilityText": [
+                  {
+                    "type": "keyword",
+                    "value": "Auto-break 1"
+                  }
+                ]
+              },
               {
                 "abilityText": [
                   {
@@ -435842,7 +435850,7 @@
       },
       {
         "file": "atcc-cards-page-0004.json",
-        "sha256": "d2def366d53a716d2cdc09112e2f63a2346ce0f0f49fd286b19d4a9f81c56c01",
+        "sha256": "0bc37a119cb073a11807a94502a10f6ea2efd8668d52371f4ec4ec1aa47eb657",
         "records": 500,
         "page": 4
       },

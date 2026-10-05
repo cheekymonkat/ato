@@ -20,6 +20,8 @@ export interface CardInstance {
   id: string; definitionId: DefinitionId; faceId: FaceId; exhausted: boolean;
   /** Reversible discard marker; absent in older saves means false. */
   discarded?: boolean;
+  /** Titan/Mnemos ability readiness, keyed by face and printed ability path. */
+  exhaustedAbilityIds?: string[];
   enabledEffectIds: string[]; counters: Record<string, number>;
   /** Explicit player confirmation, never inferred from a condition's prose. */
   satisfiedEffectIds?: string[];
@@ -109,6 +111,7 @@ function checkInstance(value: unknown, path: string): asserts value is CardInsta
   assert(value.discarded === undefined || typeof value.discarded === 'boolean', `${path}: invalid discarded state`);
   assert(!(value.discarded && value.exhausted), `${path}: discarded card cannot also be exhausted`);
   assert(value.satisfiedEffectIds === undefined || strings(value.satisfiedEffectIds), `${path}: invalid confirmed effects`);
+  assert(value.exhaustedAbilityIds === undefined || strings(value.exhaustedAbilityIds) && new Set(value.exhaustedAbilityIds).size === value.exhaustedAbilityIds.length, `${path}: invalid or duplicate exhausted abilities`);
   const progress = value.memoryProgress;
   assert(progress === undefined || isRecord(progress) && (progress.node === null || Number.isSafeInteger(progress.node) && (progress.node as number) >= 0) && typeof progress.growthUnlocked === 'boolean', `${path}: invalid memory progress`);
   assert(progress === undefined || progress.breakthroughs === undefined || Array.isArray(progress.breakthroughs) && progress.breakthroughs.length === 2 && progress.breakthroughs.every(value => typeof value === 'boolean') && (!progress.breakthroughs[1] || progress.breakthroughs[0]), `${path}: invalid memory breakthroughs`);
