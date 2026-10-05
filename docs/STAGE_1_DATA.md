@@ -6,7 +6,8 @@ Stage 1 provides shared TypeScript domain modules and bundled JSON for web, iOS 
 
 - `data/source/`: seven ATCC exports with the reviewed corrections listed below.
 - `data/identity-registry.json`: persistent definition identities; commit this with generated data.
-- `data/generated/catalogue.json`: app data, faces, structured effects, indexes and provenance.
+- `data/generated/catalogue.json`: formatted app data, faces, structured effects, indexes and provenance; exactly one catalogue object.
+- `data/generated/by-family/`: smaller, formatted copies grouped by card type, with a manifest of file paths, counts and hashes.
 - `data/generated/quality-report.json`: reference resolutions and import diagnostics.
 - `data/generated/source-map.json`: each definition's exact original file and JSON pointer.
 - `src/catalogue/index.ts`: lazy singleton access to the bundled catalogue.
@@ -27,6 +28,37 @@ npm run lint
 ```
 
 `catalogue:check` reads all inputs and compares the generated files without writing. The importer validates every record and the complete paging set before writing. It uses deterministic JSON, omits generation timestamps and records source SHA-256 digests. Bump the importer version in both importer and validator when changing the normalization contract; catalogue versions incorporate that version, source digests, identity registry and artwork links.
+
+### Readable catalogue and smaller files
+
+`catalogue.json` uses two-space indentation and retains a single schema-1
+catalogue object. Do not wrap successive versions in an array or append an old
+catalogue: the app expects one object, and `catalogue:check` catches differences
+from the source-derived result. On 5 October 2026 the file was regenerated after
+an array containing the old and current catalogue caused the startup error
+“Unsupported catalogue schema”. Regeneration retains the current content
+version, all definition IDs and artwork links; saved parties are unchanged.
+
+For manageable reading and diffs, the importer also writes the same definitions
+under `data/generated/by-family/`, such as `gear/001.json`, `mnemos/001.json` and
+`condition/001.json`. Files hold at most 100 definitions and 512 KiB, with cards
+in stable ID order. Each complete definition keeps its front/back faces together.
+`manifest.json` records the catalogue version, families, part numbers, definition
+counts, byte sizes and SHA-256 hashes. These copies are generated from the
+validated catalogue, so no card text, artwork link or metadata is lost.
+
+The app imports `catalogue.json`; the smaller files are for browsing and review
+and are not included through app imports. Formatting changes source readability,
+not gameplay or catalogue identities. Splitting alone would not save parsing
+work if every file were immediately loaded and assembled. Loading only selected
+types or cycles could save work later but needs changes to cross-family search
+and reference resolution; this change keeps the existing loading behavior.
+
+Make corrections in `data/source/` or the relevant artwork configuration, then
+run `npm run catalogue:import`. Direct edits to generated files are overwritten.
+`npm run catalogue:check` verifies both the main catalogue and every generated
+readable part. The readable-parts test checks file sizes, formatting, hashes,
+unique IDs and exact preservation of all 3,014 definitions and 3,217 faces.
 
 ### Reviewed source corrections
 

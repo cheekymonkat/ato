@@ -17,7 +17,9 @@ function validateEffect(value: unknown, card: CardDefinition, face: CardFace): a
 
 /** A shared validation boundary for generated files and future catalogue updates. */
 export function parseCatalogue(value: unknown): Catalogue {
-  assert(isRecord(value) && isJsonValue(value) && value.schemaVersion === 1, 'Unsupported catalogue schema');
+  assert(isRecord(value), 'Expected a single catalogue object; arrays of catalogue versions are not supported');
+  assert(value.schemaVersion === 1, 'Unsupported catalogue schema');
+  assert(isJsonValue(value), 'Catalogue contains non-JSON values');
   assert(typeof value.catalogueVersion === 'string' && value.catalogueVersion.trim(), 'Missing catalogue version');
   assert(Array.isArray(value.cards) && isRecord(value.indexes) && isRecord(value.provenance), 'Malformed catalogue');
   const ids = new Set<string>();

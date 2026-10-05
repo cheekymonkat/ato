@@ -9,6 +9,9 @@ The four supplied scans add 75 artwork-only Gear backgrounds, linked by
 persistent card and face IDs. Titles, stats and rules remain live overlays;
 exhausted or discarded cards use matching grayscale images. See
 [Gear artwork](docs/GEAR_ART.md) for the asset mapping and extraction notes.
+The main catalogue is formatted with two-space indentation. Smaller generated
+copies under `data/generated/by-family/` group cards by type, capped at 100 cards
+or 512 KiB per file. See [data notes](docs/STAGE_1_DATA.md) for regeneration.
 Memory slots now support ATCC-style cards, saved −/+ node trackers (ten nodes for
 Mnemos, three for Fated Mnemos) and red gateways. Assigned Mnemos hide locked
 abilities until their three/seven-node gateways are reached.

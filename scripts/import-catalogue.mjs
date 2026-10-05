@@ -7,6 +7,7 @@ import { normalizeCatalogue } from '../src/catalogue/normalize.ts';
 import { parseCatalogue } from '../src/catalogue/validate.ts';
 import { createIdentityResolver } from './identity-registry.mjs';
 import { gearArtwork } from '../src/catalogue/gear-art.ts';
+import { catalogueReviewFiles } from './catalogue-review-files.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const allowed = new Set(['source', 'out', 'registry', 'check']);
@@ -43,10 +44,11 @@ const version = `atcc-v2-${digest.slice(0, 16)}`;
 result.catalogue.catalogueVersion = version;
 parseCatalogue(result.catalogue);
 const artifacts = [
-  [resolve(outDirectory, 'catalogue.json'), JSON.stringify(result.catalogue) + '\n'],
+  [resolve(outDirectory, 'catalogue.json'), JSON.stringify(result.catalogue, null, 2) + '\n'],
   [resolve(outDirectory, 'quality-report.json'), JSON.stringify({ catalogueVersion: version, ...result.report }, null, 2) + '\n'],
   [resolve(outDirectory, 'source-map.json'), JSON.stringify(result.sourceMap, null, 2) + '\n'],
   [registryPath, JSON.stringify(identity.snapshot(), null, 2) + '\n'],
+  ...catalogueReviewFiles(result.catalogue).map(({ path, content }) => [resolve(outDirectory, 'by-family', path), content]),
 ];
 // All validation completes before any output is written. --check is read-only.
 for (const [path, content] of artifacts) {

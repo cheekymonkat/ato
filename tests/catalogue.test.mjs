@@ -132,6 +132,7 @@ test('unsupported slot language, plain text symbols and action costs do not sile
 });
 
 test('runtime validation rejects corrupted schemas, indexes, token effects and family fields', () => {
+  assert.throws(() => parseCatalogue([generated, generated]), /single catalogue object/);
   let broken = structuredClone(generated); broken.schemaVersion = 99;
   assert.throws(() => parseCatalogue(broken), /schema/);
   broken = structuredClone(generated); broken.indexes.printedId.AJ0266 = [];
