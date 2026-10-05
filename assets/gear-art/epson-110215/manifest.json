@@ -1,0 +1,638 @@
+{
+  "batch": "epson-110215",
+  "source": "../ato_docs/ato-gear/cycle 1/Epson_05102026110215.jpg",
+  "sourceSha256": "2bbeb40d85d62a9bf2a09593196b0010c77df69cc946d8b5ad12dec4771c73a7",
+  "configurationSha256": "dd9d6e570bf407593a71a5ab744dc0bead45e62155edafb880ad4fe0ddaa8e6a",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Jawbone Axe",
+      "definitionId": "def_69349c7d961f6be3772b15b3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0187",
+        "AJ0188"
+      ],
+      "filename": "jawbone-axe.png",
+      "crop": [
+        12,
+        0,
+        486,
+        730
+      ],
+      "width": 486,
+      "height": 730,
+      "preservedPixelCount": 97353,
+      "sha256": "dc31aed7f34dab1b6ffab7f1ef5b3fa568307a56125a70031426207babf46628",
+      "sourcePrintedIds": [
+        "AJ0187"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/jawbone-axe.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/jawbone-axe.png",
+        "width": 486,
+        "height": 730,
+        "artBottom": 466
+      }
+    },
+    {
+      "name": "Analyticos Module",
+      "definitionId": "def_63472730bfeee66f1f1b40af",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0217",
+        "AJ0218"
+      ],
+      "filename": "analyticos-module.png",
+      "crop": [
+        498,
+        0,
+        486,
+        730
+      ],
+      "width": 486,
+      "height": 730,
+      "preservedPixelCount": 108800,
+      "sha256": "abf37508ba0835d5387793d1b1ab0e1ae7d99f212c57cdb23928bba528d06720",
+      "sourcePrintedIds": [
+        "AJ0218"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/analyticos-module.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/analyticos-module.png",
+        "width": 486,
+        "height": 730,
+        "artBottom": 483
+      }
+    },
+    {
+      "name": "Impetus Breakers",
+      "definitionId": "def_3948cd4a98c2a5415d18cf24",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0215",
+        "AJ0216"
+      ],
+      "filename": "impetus-breakers.png",
+      "crop": [
+        984,
+        0,
+        485,
+        730
+      ],
+      "width": 485,
+      "height": 730,
+      "preservedPixelCount": 219897,
+      "sha256": "cd07e03c08c937d4265b1eb86270716235ac1b54ff42e231ca40662ff53777e2",
+      "sourcePrintedIds": [
+        "AJ0216"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/impetus-breakers.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/impetus-breakers.png",
+        "width": 485,
+        "height": 730,
+        "artBottom": 565
+      }
+    },
+    {
+      "name": "Safety Rope",
+      "definitionId": "def_47d6d3c98167dbde2c77c579",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0241",
+        "AJ0242"
+      ],
+      "filename": "safety-rope.png",
+      "crop": [
+        1469,
+        0,
+        484,
+        730
+      ],
+      "width": 484,
+      "height": 730,
+      "preservedPixelCount": 161896,
+      "sha256": "bcce4144745bcacf9fbd943ff696bd5d7ca01a03c7c2e043c1a05ab865ff3cc6",
+      "sourcePrintedIds": [
+        "AJ0241"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/safety-rope.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/safety-rope.png",
+        "width": 484,
+        "height": 730,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Primordial Lure",
+      "definitionId": "def_434eeadfabb1d4771f957aa5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0219"
+      ],
+      "filename": "primordial-lure.png",
+      "crop": [
+        1953,
+        0,
+        485,
+        730
+      ],
+      "width": 485,
+      "height": 730,
+      "preservedPixelCount": 82874,
+      "sha256": "1e08c4ce92c12ee477ff8d6e8f584f24bf7d63f5800ca7b2125e1234f642367f",
+      "sourcePrintedIds": [
+        "AJ0219"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/primordial-lure.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/primordial-lure.png",
+        "width": 485,
+        "height": 730,
+        "artBottom": 470
+      }
+    },
+    {
+      "name": "Aeolipile Engine",
+      "definitionId": "def_05098400b17549cbe7a088a0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0235",
+        "AJ0236"
+      ],
+      "filename": "aeolipile-engine.png",
+      "crop": [
+        2438,
+        0,
+        485,
+        730
+      ],
+      "width": 485,
+      "height": 730,
+      "preservedPixelCount": 81992,
+      "sha256": "67a8941b194704c622ed3ae3ec6837f6cf44850e052154048769e50c65d90049",
+      "sourcePrintedIds": [
+        "AJ0235"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/aeolipile-engine.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/aeolipile-engine.png",
+        "width": 485,
+        "height": 730,
+        "artBottom": 397
+      }
+    },
+    {
+      "name": "Grappling Hook",
+      "definitionId": "def_133b24070b87d84c90a0d64c",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0239",
+        "AJ0240"
+      ],
+      "filename": "grappling-hook.png",
+      "crop": [
+        2923,
+        0,
+        473,
+        730
+      ],
+      "width": 473,
+      "height": 730,
+      "preservedPixelCount": 150867,
+      "sha256": "dd68910e2096f9fc5bea765c2aaac902d08bb5e40ca7139a2c3980a8acf7dd4c",
+      "sourcePrintedIds": [
+        "AJ0239"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/grappling-hook.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/grappling-hook.png",
+        "width": 473,
+        "height": 730,
+        "artBottom": 499
+      }
+    },
+    {
+      "name": "Liontail Whip",
+      "definitionId": "def_50a6af6cd018aa9033cf99fd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0193",
+        "AJ0194"
+      ],
+      "filename": "liontail-whip.png",
+      "crop": [
+        6,
+        730,
+        492,
+        747
+      ],
+      "width": 492,
+      "height": 747,
+      "preservedPixelCount": 65158,
+      "sha256": "018da63a091b0569fce07a39a46436f7a23915103e170517a8e10ef4281ff093",
+      "sourcePrintedIds": [
+        "AJ0194"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/liontail-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/liontail-whip.png",
+        "width": 492,
+        "height": 747,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Longmast Spear",
+      "definitionId": "def_b73e1947101203d9a9a4b81c",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0197",
+        "AJ0198"
+      ],
+      "filename": "longmast-spear.png",
+      "crop": [
+        498,
+        730,
+        486,
+        747
+      ],
+      "width": 486,
+      "height": 747,
+      "preservedPixelCount": 14394,
+      "sha256": "065b6c1c8587d692b8405db832021f14b048b75f596909b3e5a77bb93dc1a133",
+      "sourcePrintedIds": [
+        "AJ0198"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/longmast-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/longmast-spear.png",
+        "width": 486,
+        "height": 747,
+        "artBottom": 508
+      }
+    },
+    {
+      "name": "Hermes Tatters",
+      "definitionId": "def_b895aa3655a51513d20bdce2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0264"
+      ],
+      "filename": "hermes-tatters.png",
+      "crop": [
+        984,
+        730,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 62487,
+      "sha256": "90da3a5a0d0938a2f3fb9c198d20d7ec62eed3565118f05ee309d9d6af7af16d",
+      "sourcePrintedIds": [
+        "AJ0264"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/hermes-tatters.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hermes-tatters.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 496
+      }
+    },
+    {
+      "name": "Mothlame",
+      "definitionId": "def_e975236904d97af23031f3c3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0262",
+        "AJ0263"
+      ],
+      "filename": "mothlame.png",
+      "crop": [
+        1469,
+        730,
+        484,
+        747
+      ],
+      "width": 484,
+      "height": 747,
+      "preservedPixelCount": 118944,
+      "sha256": "d7675a7f9a73d6768bfd815f639637358d56cd33821c21d047e8809bdc191b79",
+      "sourcePrintedIds": [
+        "AJ0263"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/mothlame.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/mothlame.png",
+        "width": 484,
+        "height": 747,
+        "artBottom": 464
+      }
+    },
+    {
+      "name": "Pursuer Imperative",
+      "definitionId": "def_7a6baa4b125a04f69ba8bcef",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0261"
+      ],
+      "filename": "pursuer-imperative.png",
+      "crop": [
+        1953,
+        730,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 153533,
+      "sha256": "fd1191c3da9c43fb2162b362ca4256e5b45b417bfb64a3255999141dc03653c4",
+      "sourcePrintedIds": [
+        "AJ0261"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/pursuer-imperative.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/pursuer-imperative.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 581
+      }
+    },
+    {
+      "name": "Naval Ram",
+      "definitionId": "def_043048383c1c7516476b3664",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0183",
+        "AJ0184"
+      ],
+      "filename": "naval-ram.png",
+      "crop": [
+        2438,
+        730,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 124124,
+      "sha256": "2382853a56bbfc4eb7b9ff4bb0a91baa67d7663ca8553a9811505335bf6034e1",
+      "sourcePrintedIds": [
+        "AJ0183"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/naval-ram.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/naval-ram.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 519
+      }
+    },
+    {
+      "name": "Heavy Kopis",
+      "definitionId": "def_27dd2160f29e4f618251e9a0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0185",
+        "AJ0186"
+      ],
+      "filename": "heavy-kopis.png",
+      "crop": [
+        2923,
+        730,
+        473,
+        747
+      ],
+      "width": 473,
+      "height": 747,
+      "preservedPixelCount": 20612,
+      "sha256": "131d2effa14d5fbca9e43487ea6f70fd46eceed2edf15a4d4ca21195500b5dde",
+      "sourcePrintedIds": [
+        "AJ0186"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/heavy-kopis.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/heavy-kopis.png",
+        "width": 473,
+        "height": 747,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Instinct Linothorax",
+      "definitionId": "def_638c1e0031219748eb9f2305",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0243",
+        "AJ0244"
+      ],
+      "filename": "instinct-linothorax.png",
+      "crop": [
+        5,
+        1477,
+        493,
+        746
+      ],
+      "width": 493,
+      "height": 746,
+      "preservedPixelCount": 129852,
+      "sha256": "0fed03a7caa784c81dd740e26a94a44599aba8779f6bbd6bfac9ffd5ac141cfa",
+      "sourcePrintedIds": [
+        "AJ0244"
+      ],
+      "reviewNote": "The right statistic panel covers the outer sleeve edge; the printed panel is masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/instinct-linothorax.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/instinct-linothorax.png",
+        "width": 493,
+        "height": 746,
+        "artBottom": 546
+      }
+    },
+    {
+      "name": "Smelted Aspis",
+      "definitionId": "def_98e3a22fc47f26006a471331",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0211",
+        "AJ0212"
+      ],
+      "filename": "smelted-aspis.png",
+      "crop": [
+        498,
+        1477,
+        489,
+        746
+      ],
+      "width": 489,
+      "height": 746,
+      "preservedPixelCount": 86800,
+      "sha256": "af22383b952116d87130f710bf5353f340ce6c9b1d445a4e5b5e7e5de6bd8c93",
+      "sourcePrintedIds": [
+        "AJ0211"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/smelted-aspis.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-aspis.png",
+        "width": 489,
+        "height": 746,
+        "artBottom": 400
+      }
+    },
+    {
+      "name": "Smelted Xiphos",
+      "definitionId": "def_4655aff19d1e0da88e783827",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0213",
+        "AJ0214"
+      ],
+      "filename": "smelted-xiphos.png",
+      "crop": [
+        987,
+        1477,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 24558,
+      "sha256": "af07e03fd981d164978d25c2483b1a6ac087cf3bfd4175a3ce0afefdafdb6b05",
+      "sourcePrintedIds": [
+        "AJ0213"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/smelted-xiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-xiphos.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 585
+      }
+    },
+    {
+      "name": "Smelted Breastplate",
+      "definitionId": "def_d6eb05ebc03e46b73653cefd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0209",
+        "AJ0210"
+      ],
+      "filename": "smelted-breastplate.png",
+      "crop": [
+        1475,
+        1477,
+        487,
+        746
+      ],
+      "width": 487,
+      "height": 746,
+      "preservedPixelCount": 106176,
+      "sha256": "60a17719eb57f3f5aaf3d9d6972101fa881ccd87520efeda9a7e3e990eb6d55c",
+      "sourcePrintedIds": [
+        "AJ0209"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/smelted-breastplate.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-breastplate.png",
+        "width": 487,
+        "height": 746,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Knuckle Shield",
+      "definitionId": "def_d79254fa73a5796c07b057b2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0222",
+        "AJ0223"
+      ],
+      "filename": "knuckle-shield.png",
+      "crop": [
+        1962,
+        1463,
+        477,
+        746
+      ],
+      "width": 477,
+      "height": 746,
+      "preservedPixelCount": 62463,
+      "sha256": "66b8677b54599a4cac283100c4212ed6ee6e42046cfcac04ca7901a7af11973f",
+      "sourcePrintedIds": [
+        "AJ0222"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/knuckle-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/knuckle-shield.png",
+        "width": 477,
+        "height": 746,
+        "artBottom": 418
+      }
+    },
+    {
+      "name": "Hekaton Panoply Armor",
+      "definitionId": "def_f7c77a43c882cdec4b163cb7",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0220",
+        "AJ0221"
+      ],
+      "filename": "hekaton-panoply-armor.png",
+      "crop": [
+        2439,
+        1476,
+        483,
+        742
+      ],
+      "width": 483,
+      "height": 742,
+      "preservedPixelCount": 61864,
+      "sha256": "fcc78e0497e09801ee31c6f815fb84864db7300d00300da554a1097b42ea92ec",
+      "sourcePrintedIds": [
+        "AJ0220"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/hekaton-panoply-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hekaton-panoply-armor.png",
+        "width": 483,
+        "height": 742,
+        "artBottom": 414
+      }
+    },
+    {
+      "name": "Whalebone Bident",
+      "definitionId": "def_e72023f732f783a9b6a146bd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0195",
+        "AJ0196"
+      ],
+      "filename": "whalebone-bident.png",
+      "crop": [
+        2922,
+        1476,
+        474,
+        742
+      ],
+      "width": 474,
+      "height": 742,
+      "preservedPixelCount": 9824,
+      "sha256": "fd8505723e9f143ca159bd457fac9b71125f57ee51778ed133aac2d2ebbe4927",
+      "sourcePrintedIds": [
+        "AJ0196"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110215/whalebone-bident.png",
+        "grayscaleImage": "assets/gear-art/epson-110215/grayscale/whalebone-bident.png",
+        "width": 474,
+        "height": 742,
+        "artBottom": 513
+      }
+    }
+  ],
+  "skippedCards": []
+}

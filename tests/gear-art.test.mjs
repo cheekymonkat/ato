@@ -36,8 +36,9 @@ function decodePng(bytes) {
 
 test('all reviewed Gear batches have named, hashed, rounded artwork and matching grayscale pixels', async () => {
   assert.deepEqual(Object.fromEntries(manifests.map(manifest => [manifest.batch ?? 'cycle2-a', manifest.cards.length])),
-    { 'cycle2-a': 21, 'epson-210624': 21, 'epson-211018': 20, 'epson-211609': 13 });
-  assert.equal(artwork.length, 75);
+    { 'cycle2-a': 21, 'epson-105748': 21, 'epson-110215': 21, 'epson-110738': 13,
+      'epson-210624': 21, 'epson-211018': 20, 'epson-211609': 13 });
+  assert.equal(artwork.length, 130);
   const linked = catalogue.cards.flatMap(card => card.faces.filter(face => face.artwork));
   assert.equal(linked.length, artwork.length);
   for (const entry of artwork) {
@@ -47,7 +48,7 @@ test('all reviewed Gear batches have named, hashed, rounded artwork and matching
     assert.equal(face.name, entry.name);
     assert.deepEqual(face.printedIds, entry.printedIds);
     assert.deepEqual(face.artwork, entry.artwork);
-    assert.equal(entry.filename, entry.name.toLowerCase().replaceAll(' ', '-') + '.png');
+    assert.equal(entry.filename, entry.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') + '.png');
     const bytes = await readFile(new URL(face.artwork.image, root));
     assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.sha256);
     const colour = decodePng(bytes);
@@ -73,8 +74,16 @@ test('new scans preserve original artwork links, disambiguate copies and link re
   for (const [index, config] of configs.entries()) {
     const manifest = manifests[index];
     assert.equal(manifest.source, config.source);
+    assert.equal(manifest.sourceSha256, config.sourceSha256);
+    assert.match(manifest.sourceSha256, /^[a-f0-9]{64}$/);
     assert.equal(createHash('sha256').update(await readFile(new URL(`data/reference/gear-art-${config.batch}.json`, root))).digest('hex'), manifest.configurationSha256);
-    assert.equal(createHash('sha256').update(await readFile(new URL(config.source, root))).digest('hex'), manifest.sourceSha256);
+    // Completed assets remain usable after the user removes a source scan.
+    // A retained/restored source must still match the recorded extraction hash.
+    const source = await readFile(new URL(config.source, root)).catch(error => {
+      if (error.code === 'ENOENT') return undefined;
+      throw error;
+    });
+    if (source) assert.equal(createHash('sha256').update(source).digest('hex'), manifest.sourceSha256);
     assert.deepEqual(manifest.cards.map(card => [card.definitionId, card.faceId, card.filename]),
       config.cards.map(card => [card.definitionId, card.faceId, card.filename]));
     for (const card of manifest.cards) {
@@ -82,7 +91,7 @@ test('new scans preserve original artwork links, disambiguate copies and link re
       for (const alias of card.sourcePrintedIds ?? []) assert.ok(card.printedIds.includes(alias));
     }
   }
-  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 75);
+  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 130);
   const chainWhips = catalogue.cards.filter(card => card.faces[0].name === 'Chain Whip');
   assert.equal(chainWhips.length, 2);
   assert.ok(chainWhips.find(card => card.printedIds.includes('BJ0874')).faces[0].artwork);
@@ -95,6 +104,12 @@ test('new scans preserve original artwork links, disambiguate copies and link re
     const faces = catalogue.cards.find(card => card.faces[0].name === name).faces;
     assert.ok(faces[0].artwork); assert.ok(faces[1].artwork);
     assert.notEqual(faces[0].artwork.image, faces[1].artwork.image);
+  }
+  // Similar names are separate Cycle I cards, rather than implied reverse sides.
+  for (const names of [['Gigan', 'Gigas'], ["Ariadne's Hello", "Ariadne's Goodbye"], ['Iapetus Lifeguard', 'Iapetus Lifesaver']]) {
+    const cards = names.map(name => catalogue.cards.find(card => card.faces[0].name === name));
+    assert.notEqual(cards[0].id, cards[1].id);
+    assert.notEqual(cards[0].faces[0].artwork.image, cards[1].faces[0].artwork.image);
   }
 });
 

@@ -1,6 +1,6 @@
 # Gear image assets
 
-The four supplied scans provide 75 Gear faces, split into individual rounded
+The seven supplied scans provide 130 Gear faces, split into individual rounded
 PNGs. Filenames follow the Gear names, using lowercase and hyphens:
 `puzzle-axe.png`, `temenos-scale-umbrella.png`, and so on.
 
@@ -41,8 +41,12 @@ npm run catalogue:import
 npm run catalogue:check
 ```
 
-Without arguments the extractor processes every `data/reference/gear-art-*.json`
-configuration. To regenerate only selected scans, repeat `--batch`:
+Without arguments the extractor processes configurations whose original scans
+are still present, then merges all completed batch manifests. Removed source
+scans are not required to use or validate completed assets. Their recorded
+hashes, masks, identities and PNG hashes remain in the conversion records;
+restore the exact source JPEG if that batch needs regenerating. An explicitly
+selected batch requires its source scan. To regenerate selected scans, repeat `--batch`:
 
 ```sh
 python3 scripts/extract-gear-art.py --batch epson-210624 --batch epson-211018 --batch epson-211609
@@ -70,6 +74,9 @@ titles are not retained in final images.
 | `epson-210624` | `Epson_04102026210624.jpg` | 3,510 × 2,550 | 21 |
 | `epson-211018` | `Epson_04102026211018.jpg` | 3,396 × 2,238 | 20 |
 | `epson-211609` | `Epson_04102026211609.jpg` | 3,384 × 1,494 | 13 |
+| `epson-105748` | `ato-gear/cycle 1/Epson_05102026105748.jpg` | 3,396 × 2,238 | 21 |
+| `epson-110215` | `ato-gear/cycle 1/Epson_05102026110215.jpg` | 3,396 × 2,232 | 21 |
+| `epson-110738` | `ato-gear/cycle 1/Epson_05102026110738.jpg` | 3,402 × 1,494 | 13 |
 
 The three Epson scans were added on 4 October 2026 using the same deterministic
 artwork-only extraction. Their 55 physical faces yield 54 new artwork links:
@@ -84,6 +91,46 @@ Observed footer IDs are recorded in `sourcePrintedIds` where visible. This
 selects the Cycle II Chain Whip (BJ0874), independently of the other Chain Whip
 definition (BR0729). Metasword/Metabow, Ladder Buckler/Ladder Mode and Boom
 Spear/Boom Pole keep separate images on their existing front/back faces.
+
+## Conversion record: Cycle I scans
+
+Added on 5 October 2026 using exact source-pixel extraction from the three
+JPEGs under `../ato_docs/ato-gear/cycle 1/`. The 55 supplied faces all match
+existing Cycle I Gear definitions by their observed AJ footer IDs. The empty
+lower-left position in the final scan is recorded and skipped. No new card
+definitions, instances or player-data identities are created.
+
+Gigan and Gigas, and Ariadne's Hello and Ariadne's Goodbye, remain separate
+definitions as recorded in the catalogue; similarly named cards are not assumed
+to be reverse sides. Iapetus Lifeguard uses its AJ identifiers independently
+of the Cycle II Iapetus Lifesaver. Apostrophes become hyphens in named files:
+`ariadne-s-hello.png` and `ariadne-s-goodbye.png`.
+
+Each batch uses its own reviewed crop boundaries, artwork masks, clean paper
+sample and 30-pixel rounded corners. All scanned titles, statistics, icons,
+rules and footers are removed. Thin handles, ropes, pale projections and
+secondary illustrations are retained where exposed. Ready and grayscale PNGs
+are linked to stable definition/face IDs through the existing renderer.
+
+Reproduce these batches with:
+
+```sh
+python3 scripts/extract-gear-art.py --batch epson-105748 --batch epson-110215 --batch epson-110738
+npm run catalogue:import
+```
+
+The existing Puzzle Axe `Auto-break 2 instead` and Voice of the People
+`Inspire 2 instead` corrections were copied from the generated catalogue back
+to their source records so reimporting preserves them. Their card identities
+and all other rules data remain unchanged.
+
+Validation on 5 October 2026: all 196 domain tests, catalogue reproducibility,
+lint, typecheck and web/iOS/Android exports passed. All 55 cleaned faces were
+reviewed at native resolution, including refined masks beside printed panels
+and around ropes, blade tips and pale projections. The 3,014 definition IDs,
+all pre-existing artwork links and all generated rules data were verified
+unchanged. Interactive browser review was unavailable because the computer-use
+service could not start; bundle export verifies asset packaging, not live UI.
 
 ## Conversion record: Cycle II A
 
@@ -124,7 +171,7 @@ are referenced by the app.
 
 ## Workflow for the next scan
 
-1. Keep the original image under `../ato_docs/`, unchanged. Record its filename,
+1. Keep the original image under `../ato_docs/`, unchanged while converting it. Record its filename,
    hash, native dimensions and a unique batch name such as `cycle2-b`.
 2. Inspect the image at native resolution. Identify every card using its title
    and printed IDs, and resolve its existing definition and front/back face in
@@ -178,8 +225,8 @@ npm run typecheck
 npx expo export --platform all --output-dir /private/tmp/ato-gear-art-export
 ```
 
-[`gear-art.test.mjs`](../tests/gear-art.test.mjs) checks all four batches'
-75 mappings, filenames, source/image hashes, dimensions, transparent corners, grayscale
+[`gear-art.test.mjs`](../tests/gear-art.test.mjs) checks all seven batches'
+130 mappings, filenames, retained-source/image hashes, dimensions, transparent corners, grayscale
 channels/alpha, separate reverse-face artwork and invalid catalogue metadata.
 It also verifies duplicate handling and the two Chain Whip definitions.
 Extend its expected batches/counts when more images are added. Also confirm that
@@ -208,6 +255,10 @@ panel; the printed regions over the faded figures on Siegetower Pauldron,
 Watchtower Pauldron and Temple Camo; Spartan War Axe's lower shaft beneath the
 left modifier panel; and the left printed edge beside Gastraphetes' bow arm.
 Spartan War Axe's separate visible tip below the panel is retained.
+
+The Cycle I batches record five further overlaps: Siren Shield's left panel;
+Instinct Linothorax's right sleeve panel; rules over the lower sword blades of
+Gigan and Gigas; and the Will line beside Morpheus Module's faint projection.
 
 Those areas are blanked or omitted. No replacement artwork was generated.
 Cleaner original illustrations would allow those gaps to be replaced later.

@@ -1,9 +1,10 @@
 """Split reviewed card scans and mask printed content without generating artwork.
 
 Requires `djpeg` (libjpeg); all remaining processing uses Python's standard library.
-Run all batches: python3 scripts/extract-gear-art.py
+Run available source batches: python3 scripts/extract-gear-art.py
 Run selected batches: python3 scripts/extract-gear-art.py --batch epson-210624
-Original scan bytes and every retained artwork pixel are preserved.
+Completed batch assets remain valid after their source scans are removed.
+Every extraction checks the original scan and preserves retained artwork pixels.
 """
 import argparse
 import hashlib
@@ -178,9 +179,20 @@ def main():
     configs = sorted((ROOT / 'data/reference').glob('gear-art-*.json'))
     by_batch = {json.loads(path.read_text())['batch']: path for path in configs}
     assert len(by_batch) == len(configs), 'Repeated batch name.'
-    selected = args.batch or list(by_batch)
+    selected = args.batch if args.batch else [batch for batch, path in by_batch.items()
+        if (ROOT / json.loads(path.read_text())['source']).is_file()]
     assert set(selected) <= set(by_batch), 'Unknown batch name.'
     # Check all selections before any writes.
+    for batch in selected:
+        source = ROOT / json.loads(by_batch[batch].read_text())['source']
+        if not source.is_file():
+            raise FileNotFoundError(f'{batch}: restore the recorded source scan to regenerate this batch: {source}')
+    for batch in set(by_batch) - set(selected):
+        manifest = ROOT / 'assets/gear-art' / batch / 'manifest.json'
+        if not manifest.is_file():
+            raise FileNotFoundError(f'{batch}: no completed manifest; restore the source scan before extracting.')
+        if not args.batch:
+            print(f'{batch}: source scan removed; retaining completed assets and manifest.', flush=True)
     for batch in dict.fromkeys(selected):
         extract(by_batch[batch])
     write_registries(configs)

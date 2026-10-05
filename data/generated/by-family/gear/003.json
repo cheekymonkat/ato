@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 3,
   "cards": [
@@ -3721,6 +3721,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/analyticos-module.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/analyticos-module.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 483
           }
         }
       ]
@@ -4424,6 +4431,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/instinct-linothorax.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/instinct-linothorax.png",
+            "width": 493,
+            "height": 746,
+            "artBottom": 546
           }
         }
       ]
@@ -5061,6 +5075,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/great-tree-club.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/great-tree-club.png",
+            "width": 487,
+            "height": 750,
+            "artBottom": 573
           }
         }
       ]
@@ -5497,6 +5518,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/jawbone-axe.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/jawbone-axe.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 466
           }
         }
       ]
@@ -9067,6 +9095,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/stabilizers.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/stabilizers.png",
+            "width": 485,
+            "height": 754,
+            "artBottom": 410
           }
         }
       ]
@@ -11322,6 +11357,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/iapetus-lifeguard.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/iapetus-lifeguard.png",
+            "width": 491,
+            "height": 750,
+            "artBottom": 540
           }
         }
       ]
@@ -11957,6 +11999,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/pursuer-imperative.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/pursuer-imperative.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 581
           }
         }
       ]

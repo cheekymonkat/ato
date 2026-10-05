@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "cards": [
     {
       "id": "def_0003f07224deddf7f702e53f",
@@ -4867,6 +4867,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/naval-ram.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/naval-ram.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 519
           }
         }
       ]
@@ -6087,6 +6094,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/aeolipile-engine.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/aeolipile-engine.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 397
           }
         }
       ]
@@ -25000,6 +25014,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/mazemmer.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/mazemmer.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 529
           }
         }
       ]
@@ -28143,6 +28164,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/grappling-hook.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/grappling-hook.png",
+            "width": 473,
+            "height": 730,
+            "artBottom": 499
           }
         }
       ]
@@ -55118,6 +55146,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/petrified-javelin.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/petrified-javelin.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 604
           }
         }
       ]
@@ -59375,6 +59410,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/heavy-kopis.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/heavy-kopis.png",
+            "width": 473,
+            "height": 747,
+            "artBottom": 457
           }
         }
       ]
@@ -69345,6 +69387,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sirenteeth.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenteeth.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 577
           }
         }
       ]
@@ -69875,6 +69924,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/maze-rake.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/maze-rake.png",
+            "width": 483,
+            "height": 732,
+            "artBottom": 437
           }
         }
       ]
@@ -81624,6 +81680,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/hekatomb.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hekatomb.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 616
           }
         }
       ]
@@ -90818,6 +90881,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/impetus-breakers.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/impetus-breakers.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 565
           }
         }
       ]
@@ -97214,6 +97284,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/shipwrecker-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/shipwrecker-shield.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 564
           }
         }
       ]
@@ -100064,6 +100141,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sail-camo.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-camo.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 426
           }
         }
       ]
@@ -109361,6 +109445,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/gigas.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigas.png",
+            "width": 487,
+            "height": 746,
+            "artBottom": 667
           }
         }
       ]
@@ -109633,6 +109724,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/primordial-lure.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/primordial-lure.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 470
           }
         }
       ]
@@ -114753,6 +114851,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-xiphos.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-xiphos.png",
+            "width": 488,
+            "height": 746,
+            "artBottom": 585
           }
         }
       ]
@@ -117161,6 +117266,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/safety-rope.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/safety-rope.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 543
           }
         }
       ]
@@ -129483,6 +129595,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/liontail-whip.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/liontail-whip.png",
+            "width": 492,
+            "height": 747,
+            "artBottom": 458
           }
         }
       ]
@@ -157812,6 +157931,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/analyticos-module.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/analyticos-module.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 483
           }
         }
       ]
@@ -158830,6 +158956,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/instinct-linothorax.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/instinct-linothorax.png",
+            "width": 493,
+            "height": 746,
+            "artBottom": 546
           }
         }
       ]
@@ -166831,6 +166964,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/great-tree-club.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/great-tree-club.png",
+            "width": 487,
+            "height": 750,
+            "artBottom": 573
           }
         }
       ]
@@ -168492,6 +168632,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/jawbone-axe.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/jawbone-axe.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 466
           }
         }
       ]
@@ -186479,6 +186626,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/stabilizers.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/stabilizers.png",
+            "width": 485,
+            "height": 754,
+            "artBottom": 410
           }
         }
       ]
@@ -191639,6 +191793,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/iapetus-lifeguard.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/iapetus-lifeguard.png",
+            "width": 491,
+            "height": 750,
+            "artBottom": 540
           }
         }
       ]
@@ -193914,6 +194075,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/pursuer-imperative.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/pursuer-imperative.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 581
           }
         }
       ]
@@ -220285,6 +220453,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/morpheus-module.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/morpheus-module.png",
+            "width": 485,
+            "height": 732,
+            "artBottom": 327
           }
         }
       ]
@@ -220424,6 +220599,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/ariadne-s-goodbye.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-goodbye.png",
+            "width": 488,
+            "height": 746,
+            "artBottom": 570
           }
         }
       ]
@@ -226351,6 +226533,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/kratos-kopis.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/kratos-kopis.png",
+            "width": 454,
+            "height": 730,
+            "artBottom": 530
           }
         }
       ]
@@ -229674,6 +229863,13 @@
             "ascended": false,
             "abilities": [],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/teeth-khopesh.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/teeth-khopesh.png",
+            "width": 484,
+            "height": 745,
+            "artBottom": 648
           }
         }
       ]
@@ -232708,6 +232904,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/ariadne-s-hello.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-hello.png",
+            "width": 489,
+            "height": 732,
+            "artBottom": 526
           }
         }
       ]
@@ -241776,6 +241979,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/bull-aspis.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/bull-aspis.png",
+            "width": 474,
+            "height": 735,
+            "artBottom": 443
           }
         }
       ]
@@ -242095,6 +242305,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-aspis.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-aspis.png",
+            "width": 489,
+            "height": 746,
+            "artBottom": 400
           }
         }
       ]
@@ -252984,6 +253201,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/boatmace.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/boatmace.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 530
           }
         }
       ]
@@ -259228,6 +259452,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/siren-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-panoply-armor.png",
+            "width": 484,
+            "height": 747,
+            "artBottom": 582
           }
         }
       ]
@@ -269899,6 +270130,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/rebound-hammer.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/rebound-hammer.png",
+            "width": 468,
+            "height": 746,
+            "artBottom": 588
           }
         }
       ]
@@ -280790,6 +281028,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/makesheath.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/makesheath.png",
+            "width": 484,
+            "height": 745,
+            "artBottom": 511
           }
         }
       ]
@@ -290087,6 +290332,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/longmast-spear.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/longmast-spear.png",
+            "width": 486,
+            "height": 747,
+            "artBottom": 508
           }
         }
       ]
@@ -292405,6 +292657,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ancient-siren-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ancient-siren-panoply-armor.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 588
           }
         }
       ]
@@ -292760,6 +293019,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sirenblade.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenblade.png",
+            "width": 492,
+            "height": 730,
+            "artBottom": 592
           }
         }
       ]
@@ -292881,6 +293147,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/hermes-tatters.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hermes-tatters.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 496
           }
         }
       ]
@@ -315561,6 +315834,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sail-spolas.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-spolas.png",
+            "width": 481,
+            "height": 730,
+            "artBottom": 568
           }
         }
       ]
@@ -321936,6 +322216,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/whale-knives.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/whale-knives.png",
+            "width": 485,
+            "height": 745,
+            "artBottom": 514
           }
         }
       ]
@@ -339397,6 +339684,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-breastplate.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-breastplate.png",
+            "width": 487,
+            "height": 746,
+            "artBottom": 458
           }
         }
       ]
@@ -340973,6 +341267,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/knuckle-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/knuckle-shield.png",
+            "width": 477,
+            "height": 746,
+            "artBottom": 418
           }
         }
       ]
@@ -348671,6 +348972,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/siren-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-shield.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 550
           }
         }
       ]
@@ -349193,6 +349501,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/spring-harness.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/spring-harness.png",
+            "width": 487,
+            "height": 749,
+            "artBottom": 551
           }
         }
       ]
@@ -350026,6 +350341,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/pillarmace.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/pillarmace.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 588
           }
         }
       ]
@@ -354906,6 +355228,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/tackle-sheath.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/tackle-sheath.png",
+            "width": 487,
+            "height": 730,
+            "artBottom": 305
           }
         }
       ]
@@ -356007,6 +356336,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/gigan.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigan.png",
+            "width": 487,
+            "height": 732,
+            "artBottom": 586
           }
         }
       ]
@@ -357848,6 +358184,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/hullbow.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hullbow.png",
+            "width": 489,
+            "height": 732,
+            "artBottom": 476
           }
         }
       ]
@@ -364973,6 +365316,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ares-aulos.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ares-aulos.png",
+            "width": 472,
+            "height": 745,
+            "artBottom": 539
           }
         }
       ]
@@ -368477,6 +368827,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/whaler-javelin.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/whaler-javelin.png",
+            "width": 488,
+            "height": 732,
+            "artBottom": 490
           }
         }
       ]
@@ -369206,6 +369563,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/whalebone-bident.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/whalebone-bident.png",
+            "width": 474,
+            "height": 742,
+            "artBottom": 513
           }
         }
       ]
@@ -372882,6 +373246,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/mothlame.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/mothlame.png",
+            "width": 484,
+            "height": 747,
+            "artBottom": 464
           }
         }
       ]
@@ -394948,6 +395319,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ballista-gun.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ballista-gun.png",
+            "width": 480,
+            "height": 747,
+            "artBottom": 448
           }
         }
       ]
@@ -396903,6 +397281,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/hekaton-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hekaton-panoply-armor.png",
+            "width": 483,
+            "height": 742,
+            "artBottom": 414
           }
         }
       ]
@@ -435445,7 +435830,7 @@
       },
       {
         "file": "atcc-cards-page-0002.json",
-        "sha256": "0a5c0c20dc63c0eac3e142733f3d47424551b1fe7c317e60150fd3c2c0122f37",
+        "sha256": "9c5b848636d13f05379c3ca2b593657f0810dd7c8c36b747b1ac20d1f7d282c6",
         "records": 500,
         "page": 2
       },

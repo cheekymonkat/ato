@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 4,
   "cards": [
@@ -2818,6 +2818,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/morpheus-module.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/morpheus-module.png",
+            "width": 485,
+            "height": 732,
+            "artBottom": 327
           }
         }
       ]
@@ -2957,6 +2964,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/ariadne-s-goodbye.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-goodbye.png",
+            "width": 488,
+            "height": 746,
+            "artBottom": 570
           }
         }
       ]
@@ -4665,6 +4679,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/kratos-kopis.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/kratos-kopis.png",
+            "width": 454,
+            "height": 730,
+            "artBottom": 530
           }
         }
       ]
@@ -5401,6 +5422,13 @@
             "ascended": false,
             "abilities": [],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/teeth-khopesh.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/teeth-khopesh.png",
+            "width": 484,
+            "height": 745,
+            "artBottom": 648
           }
         }
       ]
@@ -6039,6 +6067,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/ariadne-s-hello.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-hello.png",
+            "width": 489,
+            "height": 732,
+            "artBottom": 526
           }
         }
       ]
@@ -8442,6 +8477,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/bull-aspis.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/bull-aspis.png",
+            "width": 474,
+            "height": 735,
+            "artBottom": 443
           }
         }
       ]
@@ -8605,6 +8647,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-aspis.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-aspis.png",
+            "width": 489,
+            "height": 746,
+            "artBottom": 400
           }
         }
       ]
@@ -11766,6 +11815,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/boatmace.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/boatmace.png",
+            "width": 486,
+            "height": 730,
+            "artBottom": 530
           }
         }
       ]
@@ -12558,6 +12614,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/siren-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-panoply-armor.png",
+            "width": 484,
+            "height": 747,
+            "artBottom": 582
           }
         }
       ]
@@ -13843,6 +13906,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/rebound-hammer.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/rebound-hammer.png",
+            "width": 468,
+            "height": 746,
+            "artBottom": 588
           }
         }
       ]
@@ -16060,6 +16130,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/makesheath.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/makesheath.png",
+            "width": 484,
+            "height": 745,
+            "artBottom": 511
           }
         }
       ]
@@ -17088,6 +17165,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/longmast-spear.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/longmast-spear.png",
+            "width": 486,
+            "height": 747,
+            "artBottom": 508
           }
         }
       ]

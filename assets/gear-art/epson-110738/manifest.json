@@ -1,0 +1,404 @@
+{
+  "batch": "epson-110738",
+  "source": "../ato_docs/ato-gear/cycle 1/Epson_05102026110738.jpg",
+  "sourceSha256": "212723e547075b2af9dd6a2e91c36af39ca448cf42830cec139b3709cd8a049b",
+  "configurationSha256": "15540381dc65a2bb64c7f7d8c184473ca8fd189ddd16fd28ad54087956feaabe",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Gigan",
+      "definitionId": "def_ddffa5e259c0964591d8b101",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0230"
+      ],
+      "filename": "gigan.png",
+      "crop": [
+        7,
+        0,
+        487,
+        732
+      ],
+      "width": 487,
+      "height": 732,
+      "preservedPixelCount": 49165,
+      "sha256": "bf39453b3bf16855d463418f237bed5d2c01f8707670ea242919c2e2de7516a1",
+      "sourcePrintedIds": [
+        "AJ0230"
+      ],
+      "reviewNote": "Rules cover the lower sword tip; the overlapping print is masked without reconstructing hidden artwork.",
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/gigan.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigan.png",
+        "width": 487,
+        "height": 732,
+        "artBottom": 586
+      }
+    },
+    {
+      "name": "Maze Rake",
+      "definitionId": "def_2e484acd500bb552149b1bcf",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0247",
+        "AJ0248"
+      ],
+      "filename": "maze-rake.png",
+      "crop": [
+        494,
+        0,
+        483,
+        732
+      ],
+      "width": 483,
+      "height": 732,
+      "preservedPixelCount": 85581,
+      "sha256": "a933cb45381699d7ac5f375ecf1d796e5e521a929af2e66e463251e429588400",
+      "sourcePrintedIds": [
+        "AJ0248"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/maze-rake.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/maze-rake.png",
+        "width": 483,
+        "height": 732,
+        "artBottom": 437
+      }
+    },
+    {
+      "name": "Whaler Javelin",
+      "definitionId": "def_e6b499a4413aa8c421626944",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0249",
+        "AJ0250"
+      ],
+      "filename": "whaler-javelin.png",
+      "crop": [
+        977,
+        0,
+        488,
+        732
+      ],
+      "width": 488,
+      "height": 732,
+      "preservedPixelCount": 109414,
+      "sha256": "7681b6f155d32642e47c4724aec2b2eafdfb0384f0358e2f6ae37131a97af95b",
+      "sourcePrintedIds": [
+        "AJ0249"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/whaler-javelin.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/whaler-javelin.png",
+        "width": 488,
+        "height": 732,
+        "artBottom": 490
+      }
+    },
+    {
+      "name": "Hullbow",
+      "definitionId": "def_dec8f7bb68a71c0bb79091b2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0251",
+        "AJ0252"
+      ],
+      "filename": "hullbow.png",
+      "crop": [
+        1465,
+        0,
+        489,
+        732
+      ],
+      "width": 489,
+      "height": 732,
+      "preservedPixelCount": 79112,
+      "sha256": "7790494a9699a985ab55b91bb8a837a80695cd13d2b1be8dad5e91ca7e9469e6",
+      "sourcePrintedIds": [
+        "AJ0252"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/hullbow.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hullbow.png",
+        "width": 489,
+        "height": 732,
+        "artBottom": 476
+      }
+    },
+    {
+      "name": "Ariadne's Hello",
+      "definitionId": "def_92a3b1b5608afef175edadc9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0253"
+      ],
+      "filename": "ariadne-s-hello.png",
+      "crop": [
+        1954,
+        0,
+        489,
+        732
+      ],
+      "width": 489,
+      "height": 732,
+      "preservedPixelCount": 121283,
+      "sha256": "72c683f06ffdfcccdc1126cfebaf0dedadb04b9179462fd23da98140cb5d5d64",
+      "sourcePrintedIds": [
+        "AJ0253"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/ariadne-s-hello.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-hello.png",
+        "width": 489,
+        "height": 732,
+        "artBottom": 526
+      }
+    },
+    {
+      "name": "Morpheus Module",
+      "definitionId": "def_89c7d41636b225cdbab445e9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0275",
+        "AJ0276"
+      ],
+      "filename": "morpheus-module.png",
+      "crop": [
+        2443,
+        0,
+        485,
+        732
+      ],
+      "width": 485,
+      "height": 732,
+      "preservedPixelCount": 44025,
+      "sha256": "d613a11e203bb30bf8d8530552c2726a29e130eb88800bd6497e496d238a0b7b",
+      "sourcePrintedIds": [
+        "AJ0276"
+      ],
+      "reviewNote": "The +1 Will line overlaps the faint helmet projection; the printed line is masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/morpheus-module.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/morpheus-module.png",
+        "width": 485,
+        "height": 732,
+        "artBottom": 327
+      }
+    },
+    {
+      "name": "Bull Aspis",
+      "definitionId": "def_98dd4a0879022ac6c406e8a5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0245",
+        "AJ0246"
+      ],
+      "filename": "bull-aspis.png",
+      "crop": [
+        2928,
+        0,
+        474,
+        735
+      ],
+      "width": 474,
+      "height": 735,
+      "preservedPixelCount": 65187,
+      "sha256": "4dba7fb8f32279477ee37eac74b1ffa3e04dbac3cd8feb12455d4b0a1afefa7f",
+      "sourcePrintedIds": [
+        "AJ0246"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/bull-aspis.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/bull-aspis.png",
+        "width": 474,
+        "height": 735,
+        "artBottom": 443
+      }
+    },
+    {
+      "name": "Ariadne's Goodbye",
+      "definitionId": "def_89d368e9790400b185be80d9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0256"
+      ],
+      "filename": "ariadne-s-goodbye.png",
+      "crop": [
+        479,
+        732,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 132408,
+      "sha256": "e4b14df1c6c4ff00f95b7a37e45e3cadd910771f3eaa4b63e8733919d1bfbf49",
+      "sourcePrintedIds": [
+        "AJ0256"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/ariadne-s-goodbye.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/ariadne-s-goodbye.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 570
+      }
+    },
+    {
+      "name": "Mazemmer",
+      "definitionId": "def_109ffcc7e3de5f88dcccfd3e",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0255"
+      ],
+      "filename": "mazemmer.png",
+      "crop": [
+        967,
+        735,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 81672,
+      "sha256": "b336e2c8c70f8945c6a01f48c9326b4072b6720e555d088377ff83a557da0394",
+      "sourcePrintedIds": [
+        "AJ0255"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/mazemmer.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/mazemmer.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 529
+      }
+    },
+    {
+      "name": "Gigas",
+      "definitionId": "def_432153d343c8647f57e893f2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0254"
+      ],
+      "filename": "gigas.png",
+      "crop": [
+        1453,
+        736,
+        487,
+        746
+      ],
+      "width": 487,
+      "height": 746,
+      "preservedPixelCount": 56532,
+      "sha256": "1e0c230a6c953c5e73b83e90232da9b08269ce9831de1d3f313d9aca8264b3d7",
+      "sourcePrintedIds": [
+        "AJ0254"
+      ],
+      "reviewNote": "Rules cover the lower sword blade; the overlapping printed lines are masked, retaining the exposed tip.",
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/gigas.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigas.png",
+        "width": 487,
+        "height": 746,
+        "artBottom": 667
+      }
+    },
+    {
+      "name": "Pillarmace",
+      "definitionId": "def_dbb19a86cf0bc8c638594cd5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0224",
+        "AJ0225"
+      ],
+      "filename": "pillarmace.png",
+      "crop": [
+        1940,
+        735,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 42533,
+      "sha256": "47d2c198b9e8c809d603cb4524c8d05e1f656afafe4fab1755b43b4eae5f3df0",
+      "sourcePrintedIds": [
+        "AJ0225"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/pillarmace.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/pillarmace.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 588
+      }
+    },
+    {
+      "name": "Hekatomb",
+      "definitionId": "def_33c6fbe9d86ba0ebd7c5ad66",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0226",
+        "AJ0227"
+      ],
+      "filename": "hekatomb.png",
+      "crop": [
+        2441,
+        735,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 140560,
+      "sha256": "e3cbc93986937965639de88ce78275247d4291a728747888fac86a5f3365a852",
+      "sourcePrintedIds": [
+        "AJ0226"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/hekatomb.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hekatomb.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 616
+      }
+    },
+    {
+      "name": "Rebound Hammer",
+      "definitionId": "def_a9cc21f7d2684ae8d2dd07f1",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0228",
+        "AJ0229"
+      ],
+      "filename": "rebound-hammer.png",
+      "crop": [
+        2934,
+        741,
+        468,
+        746
+      ],
+      "width": 468,
+      "height": 746,
+      "preservedPixelCount": 38534,
+      "sha256": "82936020cc0f158a4811f7fde0d70cbd1b9f45b95f6fcd57daf345c7f6119315",
+      "sourcePrintedIds": [
+        "AJ0228"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-110738/rebound-hammer.png",
+        "grayscaleImage": "assets/gear-art/epson-110738/grayscale/rebound-hammer.png",
+        "width": 468,
+        "height": 746,
+        "artBottom": 588
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 2,
+      "column": 1,
+      "reason": "Empty grid position; no card or artwork link."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 2,
   "cards": [
@@ -87,6 +87,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sirenteeth.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenteeth.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 577
           }
         }
       ]
@@ -213,6 +220,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/maze-rake.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/maze-rake.png",
+            "width": 483,
+            "height": 732,
+            "artBottom": 437
           }
         }
       ]
@@ -3118,6 +3132,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/hekatomb.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hekatomb.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 616
           }
         }
       ]
@@ -4613,6 +4634,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/impetus-breakers.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/impetus-breakers.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 565
           }
         }
       ]
@@ -6189,6 +6217,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/shipwrecker-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/shipwrecker-shield.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 564
           }
         }
       ]
@@ -7009,6 +7044,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sail-camo.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-camo.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 426
           }
         }
       ]
@@ -9122,6 +9164,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/gigas.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigas.png",
+            "width": 487,
+            "height": 746,
+            "artBottom": 667
           }
         }
       ]
@@ -9200,6 +9249,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/primordial-lure.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/primordial-lure.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 470
           }
         }
       ]
@@ -10307,6 +10363,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-xiphos.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-xiphos.png",
+            "width": 488,
+            "height": 746,
+            "artBottom": 585
           }
         }
       ]
@@ -10471,6 +10534,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/safety-rope.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/safety-rope.png",
+            "width": 484,
+            "height": 730,
+            "artBottom": 543
           }
         }
       ]
@@ -13432,6 +13502,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/liontail-whip.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/liontail-whip.png",
+            "width": 492,
+            "height": 747,
+            "artBottom": 458
           }
         }
       ]

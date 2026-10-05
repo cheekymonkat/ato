@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 1,
   "cards": [
@@ -623,6 +623,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/naval-ram.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/naval-ram.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 519
           }
         }
       ]
@@ -1445,6 +1452,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/aeolipile-engine.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/aeolipile-engine.png",
+            "width": 485,
+            "height": 730,
+            "artBottom": 397
           }
         }
       ]
@@ -6558,6 +6572,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/mazemmer.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/mazemmer.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 529
           }
         }
       ]
@@ -6913,6 +6934,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/grappling-hook.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/grappling-hook.png",
+            "width": 473,
+            "height": 730,
+            "artBottom": 499
           }
         }
       ]
@@ -13908,6 +13936,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/petrified-javelin.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/petrified-javelin.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 604
           }
         }
       ]
@@ -14569,6 +14604,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/heavy-kopis.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/heavy-kopis.png",
+            "width": 473,
+            "height": 747,
+            "artBottom": 457
           }
         }
       ]

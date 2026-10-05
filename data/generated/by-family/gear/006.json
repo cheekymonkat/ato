@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 6,
   "cards": [
@@ -260,6 +260,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/pillarmace.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/pillarmace.png",
+            "width": 486,
+            "height": 746,
+            "artBottom": 588
           }
         }
       ]
@@ -2055,6 +2062,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/tackle-sheath.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/tackle-sheath.png",
+            "width": 487,
+            "height": 730,
+            "artBottom": 305
           }
         }
       ]
@@ -2205,6 +2219,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/gigan.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/gigan.png",
+            "width": 487,
+            "height": 732,
+            "artBottom": 586
           }
         }
       ]
@@ -2966,6 +2987,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/hullbow.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/hullbow.png",
+            "width": 489,
+            "height": 732,
+            "artBottom": 476
           }
         }
       ]
@@ -4850,6 +4878,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ares-aulos.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ares-aulos.png",
+            "width": 472,
+            "height": 745,
+            "artBottom": 539
           }
         }
       ]
@@ -5285,6 +5320,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110738/whaler-javelin.png",
+            "grayscaleImage": "assets/gear-art/epson-110738/grayscale/whaler-javelin.png",
+            "width": 488,
+            "height": 732,
+            "artBottom": 490
           }
         }
       ]
@@ -5529,6 +5571,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/whalebone-bident.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/whalebone-bident.png",
+            "width": 474,
+            "height": 742,
+            "artBottom": 513
           }
         }
       ]
@@ -6715,6 +6764,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/mothlame.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/mothlame.png",
+            "width": 484,
+            "height": 747,
+            "artBottom": 464
           }
         }
       ]
@@ -12367,6 +12423,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ballista-gun.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ballista-gun.png",
+            "width": 480,
+            "height": 747,
+            "artBottom": 448
           }
         }
       ]
@@ -12665,6 +12728,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/hekaton-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hekaton-panoply-armor.png",
+            "width": 483,
+            "height": 742,
+            "artBottom": 414
           }
         }
       ]

@@ -1,0 +1,644 @@
+{
+  "batch": "epson-105748",
+  "source": "../ato_docs/ato-gear/cycle 1/Epson_05102026105748.jpg",
+  "sourceSha256": "b7b380a631e3056b37d0e346e92f4a7c8847093c162353e5d6355de5c1ac2e35",
+  "configurationSha256": "0a1e92b93047e0b0b2cf0305bcef5b19a831d3e086483957aa5853d9af2c02bd",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Sirenblade",
+      "definitionId": "def_b8957a092c2c3350354ac51b",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0173",
+        "AJ0174"
+      ],
+      "filename": "sirenblade.png",
+      "crop": [
+        28,
+        0,
+        492,
+        730
+      ],
+      "width": 492,
+      "height": 730,
+      "preservedPixelCount": 135572,
+      "sha256": "5b817444d6f84e03410e0406e959f23c5efbe580d6cfa022ff05bd21ce2edd3c",
+      "sourcePrintedIds": [
+        "AJ0173"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/sirenblade.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenblade.png",
+        "width": 492,
+        "height": 730,
+        "artBottom": 592
+      }
+    },
+    {
+      "name": "Boatmace",
+      "definitionId": "def_a035d24b1a379370df47f1ba",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0171",
+        "AJ0172"
+      ],
+      "filename": "boatmace.png",
+      "crop": [
+        520,
+        0,
+        486,
+        730
+      ],
+      "width": 486,
+      "height": 730,
+      "preservedPixelCount": 99007,
+      "sha256": "d2aad602e40d405697cc4c4a51d5befde1944256da040aa492115304aa307c18",
+      "sourcePrintedIds": [
+        "AJ0171"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/boatmace.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/boatmace.png",
+        "width": 486,
+        "height": 730,
+        "artBottom": 530
+      }
+    },
+    {
+      "name": "Kratos Kopis",
+      "definitionId": "def_8d23e1cabdf1256d01f920a3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0175",
+        "AJ0176"
+      ],
+      "filename": "kratos-kopis.png",
+      "crop": [
+        1006,
+        0,
+        454,
+        730
+      ],
+      "width": 454,
+      "height": 730,
+      "preservedPixelCount": 36285,
+      "sha256": "920ec6286944044101b3729fc76e277049fe17cb4d9361599cb6e82c10cd3f25",
+      "sourcePrintedIds": [
+        "AJ0176"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/kratos-kopis.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/kratos-kopis.png",
+        "width": 454,
+        "height": 730,
+        "artBottom": 530
+      }
+    },
+    {
+      "name": "Shipwrecker Shield",
+      "definitionId": "def_3c0b7969e25b0b0199a06bd3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0163",
+        "AJ0164"
+      ],
+      "filename": "shipwrecker-shield.png",
+      "crop": [
+        1460,
+        0,
+        484,
+        730
+      ],
+      "width": 484,
+      "height": 730,
+      "preservedPixelCount": 106540,
+      "sha256": "7a19cb45bdeae0d0781ba7930ea25dbc63c65f6edd64b13d0c5b4e9d2a3bcb2e",
+      "sourcePrintedIds": [
+        "AJ0163"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/shipwrecker-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/shipwrecker-shield.png",
+        "width": 484,
+        "height": 730,
+        "artBottom": 564
+      }
+    },
+    {
+      "name": "Sail Camo",
+      "definitionId": "def_3e19edef63981f07d536ddbb",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0231",
+        "AJ0232"
+      ],
+      "filename": "sail-camo.png",
+      "crop": [
+        1944,
+        0,
+        484,
+        730
+      ],
+      "width": 484,
+      "height": 730,
+      "preservedPixelCount": 59831,
+      "sha256": "b24e3900d67307d9abb2fcecbacccce9a6b9cb1baf53ed12788d5eff484f3378",
+      "sourcePrintedIds": [
+        "AJ0231"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/sail-camo.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-camo.png",
+        "width": 484,
+        "height": 730,
+        "artBottom": 426
+      }
+    },
+    {
+      "name": "Tackle Sheath",
+      "definitionId": "def_dd70bd7bc6df7d486f6bb2dd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0233",
+        "AJ0234"
+      ],
+      "filename": "tackle-sheath.png",
+      "crop": [
+        2428,
+        0,
+        487,
+        730
+      ],
+      "width": 487,
+      "height": 730,
+      "preservedPixelCount": 68880,
+      "sha256": "4074aafa8e5272e418e054a1fd54a134257a6cb3a19386335b8368ddd335bbf2",
+      "sourcePrintedIds": [
+        "AJ0234"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/tackle-sheath.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/tackle-sheath.png",
+        "width": 487,
+        "height": 730,
+        "artBottom": 305
+      }
+    },
+    {
+      "name": "Sail Spolas",
+      "definitionId": "def_c6923c7aa6f687df11c5e135",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0160",
+        "AJ0161",
+        "AJ0162"
+      ],
+      "filename": "sail-spolas.png",
+      "crop": [
+        2915,
+        0,
+        481,
+        730
+      ],
+      "width": 481,
+      "height": 730,
+      "preservedPixelCount": 191350,
+      "sha256": "56ea03190736ca883458f63f834a43b571566e037b2c27a5b854e7033beee17d",
+      "sourcePrintedIds": [
+        "AJ0161"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/sail-spolas.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-spolas.png",
+        "width": 481,
+        "height": 730,
+        "artBottom": 568
+      }
+    },
+    {
+      "name": "Iapetus Lifeguard",
+      "definitionId": "def_78e420f19b3fc645e129a461",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0199",
+        "AJ0200",
+        "AJ0201"
+      ],
+      "filename": "iapetus-lifeguard.png",
+      "crop": [
+        0,
+        690,
+        491,
+        750
+      ],
+      "width": 491,
+      "height": 750,
+      "preservedPixelCount": 129880,
+      "sha256": "26fff2a5639fb0769e6c3b930243122e5e31eec63fa06abb59062ea3eeff9673",
+      "sourcePrintedIds": [
+        "AJ0201"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/iapetus-lifeguard.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/iapetus-lifeguard.png",
+        "width": 491,
+        "height": 750,
+        "artBottom": 540
+      }
+    },
+    {
+      "name": "Ballista Gun",
+      "definitionId": "def_f62a818d125939d126bc2a1f",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0189",
+        "AJ0190"
+      ],
+      "filename": "ballista-gun.png",
+      "crop": [
+        500,
+        730,
+        480,
+        747
+      ],
+      "width": 480,
+      "height": 747,
+      "preservedPixelCount": 57120,
+      "sha256": "ef90371005f38ac0bbc661e2ee5e85c124e4525578c8a5004e6dbbc0f1236350",
+      "sourcePrintedIds": [
+        "AJ0190"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/ballista-gun.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ballista-gun.png",
+        "width": 480,
+        "height": 747,
+        "artBottom": 448
+      }
+    },
+    {
+      "name": "Petrified Javelin",
+      "definitionId": "def_241caec1b63497a48ec9aa3b",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0191",
+        "AJ0192"
+      ],
+      "filename": "petrified-javelin.png",
+      "crop": [
+        980,
+        730,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 14008,
+      "sha256": "2dee9af2d9c09677fb35a025c319cf531644f81c6a854707baa44760033c42b0",
+      "sourcePrintedIds": [
+        "AJ0191"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/petrified-javelin.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/petrified-javelin.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 604
+      }
+    },
+    {
+      "name": "Siren Shield",
+      "definitionId": "def_db47d7e5872e7ec33d30250b",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0167",
+        "AJ0168"
+      ],
+      "filename": "siren-shield.png",
+      "crop": [
+        1463,
+        730,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 142177,
+      "sha256": "b680b99bf3d17910329705b0bb31120c0d29dfc4e5187d5e135c44280d869843",
+      "sourcePrintedIds": [
+        "AJ0168"
+      ],
+      "reviewNote": "The left statistic panel covers the left edge of the shield; the printed panel is masked.",
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/siren-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-shield.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Siren Panoply Armor",
+      "definitionId": "def_a3bc2021b4b453c3e42fbe0b",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0165",
+        "AJ0166"
+      ],
+      "filename": "siren-panoply-armor.png",
+      "crop": [
+        1946,
+        730,
+        484,
+        747
+      ],
+      "width": 484,
+      "height": 747,
+      "preservedPixelCount": 130777,
+      "sha256": "f73500cb39b4c9e4813eeb8e2c532688960a433adc39a9294317644db43a72f5",
+      "sourcePrintedIds": [
+        "AJ0166"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/siren-panoply-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-panoply-armor.png",
+        "width": 484,
+        "height": 747,
+        "artBottom": 582
+      }
+    },
+    {
+      "name": "Ancient Siren Panoply Armor",
+      "definitionId": "def_b82caa233e714012200a133d",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0271",
+        "AJ0272"
+      ],
+      "filename": "ancient-siren-panoply-armor.png",
+      "crop": [
+        2430,
+        730,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 133503,
+      "sha256": "1282be49c52e989c5c9597d8441ff2fd47f3a85aab10174cbf6d888bfc2734b4",
+      "sourcePrintedIds": [
+        "AJ0272"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/ancient-siren-panoply-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ancient-siren-panoply-armor.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 588
+      }
+    },
+    {
+      "name": "Sirenteeth",
+      "definitionId": "def_2e19eb905c5e258dd31be205",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0169",
+        "AJ0170"
+      ],
+      "filename": "sirenteeth.png",
+      "crop": [
+        2913,
+        730,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 117906,
+      "sha256": "0d7fca8f57547a3dee038b160f4496ee9d4956e4c9f9511ca1f82b512af75b7a",
+      "sourcePrintedIds": [
+        "AJ0170"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/sirenteeth.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenteeth.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 577
+      }
+    },
+    {
+      "name": "Stabilizers",
+      "definitionId": "def_74d6fea2292e207031ddfac0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0237",
+        "AJ0238"
+      ],
+      "filename": "stabilizers.png",
+      "crop": [
+        10,
+        1455,
+        485,
+        754
+      ],
+      "width": 485,
+      "height": 754,
+      "preservedPixelCount": 58782,
+      "sha256": "1319ee85deaf4d8ba1e9f5fd4b13a5c62ce9363be505b4faae26dff7c776af73",
+      "sourcePrintedIds": [
+        "AJ0238"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/stabilizers.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/stabilizers.png",
+        "width": 485,
+        "height": 754,
+        "artBottom": 410
+      }
+    },
+    {
+      "name": "Great Tree Club",
+      "definitionId": "def_67d2e489f63ec9910a7ddc08",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0179",
+        "AJ0180"
+      ],
+      "filename": "great-tree-club.png",
+      "crop": [
+        497,
+        1480,
+        487,
+        750
+      ],
+      "width": 487,
+      "height": 750,
+      "preservedPixelCount": 126832,
+      "sha256": "03ec4de18ff467598933014c3074c29351897bbac2b58c9dba148ab9092ed5bc",
+      "sourcePrintedIds": [
+        "AJ0179"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/great-tree-club.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/great-tree-club.png",
+        "width": 487,
+        "height": 750,
+        "artBottom": 573
+      }
+    },
+    {
+      "name": "Whale Knives",
+      "definitionId": "def_cb67f79bd7632c8c06d89ec1",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0177",
+        "AJ0178"
+      ],
+      "filename": "whale-knives.png",
+      "crop": [
+        982,
+        1475,
+        485,
+        745
+      ],
+      "width": 485,
+      "height": 745,
+      "preservedPixelCount": 126228,
+      "sha256": "581f1358655790c0f58522a7ef5d69a5269d1f909ceae1aebb7c5560305e39b9",
+      "sourcePrintedIds": [
+        "AJ0178"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/whale-knives.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/whale-knives.png",
+        "width": 485,
+        "height": 745,
+        "artBottom": 514
+      }
+    },
+    {
+      "name": "Teeth Khopesh",
+      "definitionId": "def_8f997a462c10907119ee1ba0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0181",
+        "AJ0182"
+      ],
+      "filename": "teeth-khopesh.png",
+      "crop": [
+        1467,
+        1475,
+        484,
+        745
+      ],
+      "width": 484,
+      "height": 745,
+      "preservedPixelCount": 171012,
+      "sha256": "c20c3195b9905e510d3b820596b99de7b43189004bda8a882884a7ad94da75e1",
+      "sourcePrintedIds": [
+        "AJ0181"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/teeth-khopesh.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/teeth-khopesh.png",
+        "width": 484,
+        "height": 745,
+        "artBottom": 648
+      }
+    },
+    {
+      "name": "Spring Harness",
+      "definitionId": "def_db7bd8e9aa70542fe0a232c9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0206",
+        "AJ0207",
+        "AJ0208"
+      ],
+      "filename": "spring-harness.png",
+      "crop": [
+        1951,
+        1464,
+        487,
+        749
+      ],
+      "width": 487,
+      "height": 749,
+      "preservedPixelCount": 113696,
+      "sha256": "2791c23d7033a66c929e42d074c46ac5f24d57d03d2ebdd2cb4da4b524fe15c6",
+      "sourcePrintedIds": [
+        "AJ0207"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/spring-harness.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/spring-harness.png",
+        "width": 487,
+        "height": 749,
+        "artBottom": 551
+      }
+    },
+    {
+      "name": "Makesheath",
+      "definitionId": "def_b1846d413cc85d650e899753",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0204",
+        "AJ0205"
+      ],
+      "filename": "makesheath.png",
+      "crop": [
+        2440,
+        1476,
+        484,
+        745
+      ],
+      "width": 484,
+      "height": 745,
+      "preservedPixelCount": 103950,
+      "sha256": "9cb06f744ac8a0c93ff5138ef64f405b061ec4d3e290b5ec23862cde6a50e397",
+      "sourcePrintedIds": [
+        "AJ0205"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/makesheath.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/makesheath.png",
+        "width": 484,
+        "height": 745,
+        "artBottom": 511
+      }
+    },
+    {
+      "name": "Ares Aulos",
+      "definitionId": "def_e40ab8d533de288af01db102",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0202",
+        "AJ0203"
+      ],
+      "filename": "ares-aulos.png",
+      "crop": [
+        2924,
+        1476,
+        472,
+        745
+      ],
+      "width": 472,
+      "height": 745,
+      "preservedPixelCount": 129228,
+      "sha256": "15df691613a250f5e41a4aa55caa6b02151086560d278d0ff8f18088d11ee710",
+      "sourcePrintedIds": [
+        "AJ0203"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-105748/ares-aulos.png",
+        "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ares-aulos.png",
+        "width": 472,
+        "height": 745,
+        "artBottom": 539
+      }
+    }
+  ],
+  "skippedCards": []
+}

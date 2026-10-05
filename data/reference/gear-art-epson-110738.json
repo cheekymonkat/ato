@@ -1,0 +1,841 @@
+{
+  "batch": "epson-110738",
+  "source": "../ato_docs/ato-gear/cycle 1/Epson_05102026110738.jpg",
+  "sourceSha256": "212723e547075b2af9dd6a2e91c36af39ca448cf42830cec139b3709cd8a049b",
+  "sourceSize": [
+    3402,
+    1494
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    1380,
+    129,
+    45,
+    270
+  ],
+  "cards": [
+    {
+      "name": "Gigan",
+      "definitionId": "def_ddffa5e259c0964591d8b101",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0230"
+      ],
+      "sourcePrintedIds": [
+        "AJ0230"
+      ],
+      "filename": "gigan.png",
+      "crop": [
+        7,
+        0,
+        487,
+        732
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            343,
+            37
+          ],
+          [
+            385,
+            37
+          ],
+          [
+            402,
+            61
+          ],
+          [
+            359,
+            133
+          ],
+          [
+            377,
+            150
+          ],
+          [
+            396,
+            157
+          ],
+          [
+            388,
+            188
+          ],
+          [
+            347,
+            211
+          ],
+          [
+            214,
+            539
+          ],
+          [
+            199,
+            583
+          ],
+          [
+            180,
+            586
+          ],
+          [
+            108,
+            532
+          ],
+          [
+            116,
+            499
+          ],
+          [
+            255,
+            193
+          ],
+          [
+            245,
+            180
+          ],
+          [
+            247,
+            150
+          ],
+          [
+            276,
+            141
+          ],
+          [
+            298,
+            139
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          50,
+          524,
+          443,
+          652
+        ],
+        [
+          392,
+          37,
+          408,
+          91
+        ]
+      ],
+      "reviewNote": "Rules cover the lower sword tip; the overlapping print is masked without reconstructing hidden artwork.",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "name": "Maze Rake",
+      "definitionId": "def_2e484acd500bb552149b1bcf",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0247",
+        "AJ0248"
+      ],
+      "sourcePrintedIds": [
+        "AJ0248"
+      ],
+      "filename": "maze-rake.png",
+      "crop": [
+        494,
+        0,
+        483,
+        732
+      ],
+      "artRects": [
+        [
+          150,
+          104,
+          407,
+          437
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 1,
+      "column": 2
+    },
+    {
+      "name": "Whaler Javelin",
+      "definitionId": "def_e6b499a4413aa8c421626944",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0249",
+        "AJ0250"
+      ],
+      "sourcePrintedIds": [
+        "AJ0249"
+      ],
+      "filename": "whaler-javelin.png",
+      "crop": [
+        977,
+        0,
+        488,
+        732
+      ],
+      "artRects": [
+        [
+          107,
+          110,
+          403,
+          490
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          120,
+          121,
+          339
+        ]
+      ],
+      "row": 1,
+      "column": 3
+    },
+    {
+      "name": "Hullbow",
+      "definitionId": "def_dec8f7bb68a71c0bb79091b2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0251",
+        "AJ0252"
+      ],
+      "sourcePrintedIds": [
+        "AJ0252"
+      ],
+      "filename": "hullbow.png",
+      "crop": [
+        1465,
+        0,
+        489,
+        732
+      ],
+      "artRects": [
+        [
+          140,
+          135,
+          372,
+          476
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 1,
+      "column": 4
+    },
+    {
+      "name": "Ariadne's Hello",
+      "definitionId": "def_92a3b1b5608afef175edadc9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0253"
+      ],
+      "sourcePrintedIds": [
+        "AJ0253"
+      ],
+      "filename": "ariadne-s-hello.png",
+      "crop": [
+        1954,
+        0,
+        489,
+        732
+      ],
+      "artRects": [
+        [
+          102,
+          137,
+          429,
+          526
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          120,
+          122,
+          433
+        ]
+      ],
+      "row": 1,
+      "column": 5
+    },
+    {
+      "name": "Morpheus Module",
+      "definitionId": "def_89c7d41636b225cdbab445e9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0275",
+        "AJ0276"
+      ],
+      "sourcePrintedIds": [
+        "AJ0276"
+      ],
+      "filename": "morpheus-module.png",
+      "crop": [
+        2443,
+        0,
+        485,
+        732
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            134,
+            104
+          ],
+          [
+            292,
+            104
+          ],
+          [
+            378,
+            128
+          ],
+          [
+            374,
+            297
+          ],
+          [
+            348,
+            327
+          ],
+          [
+            294,
+            300
+          ],
+          [
+            167,
+            300
+          ],
+          [
+            177,
+            222
+          ],
+          [
+            147,
+            211
+          ],
+          [
+            143,
+            194
+          ],
+          [
+            152,
+            188
+          ],
+          [
+            139,
+            170
+          ],
+          [
+            126,
+            156
+          ],
+          [
+            128,
+            141
+          ],
+          [
+            133,
+            138
+          ],
+          [
+            120,
+            131
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          180,
+          300,
+          313,
+          329
+        ]
+      ],
+      "reviewNote": "The +1 Will line overlaps the faint helmet projection; the printed line is masked.",
+      "row": 1,
+      "column": 6
+    },
+    {
+      "name": "Bull Aspis",
+      "definitionId": "def_98dd4a0879022ac6c406e8a5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0245",
+        "AJ0246"
+      ],
+      "sourcePrintedIds": [
+        "AJ0246"
+      ],
+      "filename": "bull-aspis.png",
+      "crop": [
+        2928,
+        0,
+        474,
+        735
+      ],
+      "artRects": [
+        [
+          127,
+          182,
+          378,
+          443
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          374,
+          198,
+          474,
+          279
+        ]
+      ],
+      "row": 1,
+      "column": 7
+    },
+    {
+      "name": "Ariadne's Goodbye",
+      "definitionId": "def_89d368e9790400b185be80d9",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0256"
+      ],
+      "sourcePrintedIds": [
+        "AJ0256"
+      ],
+      "filename": "ariadne-s-goodbye.png",
+      "crop": [
+        479,
+        732,
+        488,
+        746
+      ],
+      "artRects": [
+        [
+          119,
+          119,
+          434,
+          570
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          120,
+          122,
+          447
+        ],
+        [
+          119,
+          534,
+          360,
+          570
+        ]
+      ],
+      "row": 2,
+      "column": 2
+    },
+    {
+      "name": "Mazemmer",
+      "definitionId": "def_109ffcc7e3de5f88dcccfd3e",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0255"
+      ],
+      "sourcePrintedIds": [
+        "AJ0255"
+      ],
+      "filename": "mazemmer.png",
+      "crop": [
+        967,
+        735,
+        486,
+        746
+      ],
+      "artRects": [
+        [
+          131,
+          137,
+          344,
+          529
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          517,
+          283,
+          530
+        ]
+      ],
+      "row": 2,
+      "column": 3
+    },
+    {
+      "name": "Gigas",
+      "definitionId": "def_432153d343c8647f57e893f2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0254"
+      ],
+      "sourcePrintedIds": [
+        "AJ0254"
+      ],
+      "filename": "gigas.png",
+      "crop": [
+        1453,
+        736,
+        487,
+        746
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            103,
+            25
+          ],
+          [
+            137,
+            32
+          ],
+          [
+            196,
+            168
+          ],
+          [
+            263,
+            169
+          ],
+          [
+            292,
+            194
+          ],
+          [
+            280,
+            214
+          ],
+          [
+            476,
+            624
+          ],
+          [
+            471,
+            667
+          ],
+          [
+            442,
+            660
+          ],
+          [
+            322,
+            541
+          ],
+          [
+            183,
+            283
+          ],
+          [
+            140,
+            278
+          ],
+          [
+            134,
+            263
+          ],
+          [
+            163,
+            241
+          ],
+          [
+            149,
+            211
+          ],
+          [
+            102,
+            91
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          45,
+          544,
+          465,
+          661
+        ],
+        [
+          0,
+          124,
+          121,
+          515
+        ]
+      ],
+      "reviewNote": "Rules cover the lower sword blade; the overlapping printed lines are masked, retaining the exposed tip.",
+      "row": 2,
+      "column": 4
+    },
+    {
+      "name": "Pillarmace",
+      "definitionId": "def_dbb19a86cf0bc8c638594cd5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0224",
+        "AJ0225"
+      ],
+      "sourcePrintedIds": [
+        "AJ0225"
+      ],
+      "filename": "pillarmace.png",
+      "crop": [
+        1940,
+        735,
+        486,
+        746
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            348,
+            105
+          ],
+          [
+            402,
+            128
+          ],
+          [
+            433,
+            168
+          ],
+          [
+            406,
+            192
+          ],
+          [
+            377,
+            196
+          ],
+          [
+            317,
+            298
+          ],
+          [
+            273,
+            389
+          ],
+          [
+            229,
+            440
+          ],
+          [
+            142,
+            570
+          ],
+          [
+            97,
+            588
+          ],
+          [
+            67,
+            551
+          ],
+          [
+            75,
+            530
+          ],
+          [
+            188,
+            357
+          ],
+          [
+            244,
+            271
+          ],
+          [
+            301,
+            177
+          ],
+          [
+            331,
+            163
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          132,
+          560,
+          365,
+          588
+        ]
+      ],
+      "row": 2,
+      "column": 5
+    },
+    {
+      "name": "Hekatomb",
+      "definitionId": "def_33c6fbe9d86ba0ebd7c5ad66",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0226",
+        "AJ0227"
+      ],
+      "sourcePrintedIds": [
+        "AJ0226"
+      ],
+      "filename": "hekatomb.png",
+      "crop": [
+        2441,
+        735,
+        486,
+        746
+      ],
+      "artRects": [
+        [
+          156,
+          105,
+          432,
+          616
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          398,
+          100,
+          433,
+          119
+        ]
+      ],
+      "row": 2,
+      "column": 6
+    },
+    {
+      "name": "Rebound Hammer",
+      "definitionId": "def_a9cc21f7d2684ae8d2dd07f1",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0228",
+        "AJ0229"
+      ],
+      "sourcePrintedIds": [
+        "AJ0228"
+      ],
+      "filename": "rebound-hammer.png",
+      "crop": [
+        2934,
+        741,
+        468,
+        746
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            104,
+            122
+          ],
+          [
+            194,
+            112
+          ],
+          [
+            259,
+            124
+          ],
+          [
+            269,
+            148
+          ],
+          [
+            246,
+            177
+          ],
+          [
+            294,
+            308
+          ],
+          [
+            345,
+            412
+          ],
+          [
+            408,
+            511
+          ],
+          [
+            422,
+            575
+          ],
+          [
+            407,
+            588
+          ],
+          [
+            377,
+            578
+          ],
+          [
+            274,
+            384
+          ],
+          [
+            199,
+            252
+          ],
+          [
+            181,
+            223
+          ],
+          [
+            159,
+            258
+          ],
+          [
+            137,
+            244
+          ],
+          [
+            122,
+            221
+          ],
+          [
+            117,
+            185
+          ],
+          [
+            105,
+            181
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          0,
+          118,
+          113,
+          454
+        ]
+      ],
+      "row": 2,
+      "column": 7
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 2,
+      "column": 1,
+      "reason": "Empty grid position; no card or artwork link."
+    }
+  ]
+}

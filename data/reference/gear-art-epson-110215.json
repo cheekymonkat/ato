@@ -1,0 +1,1085 @@
+{
+  "batch": "epson-110215",
+  "source": "../ato_docs/ato-gear/cycle 1/Epson_05102026110215.jpg",
+  "sourceSha256": "2bbeb40d85d62a9bf2a09593196b0010c77df69cc946d8b5ad12dec4771c73a7",
+  "sourceSize": [
+    3396,
+    2232
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    894,
+    111,
+    55,
+    280
+  ],
+  "cards": [
+    {
+      "name": "Jawbone Axe",
+      "definitionId": "def_69349c7d961f6be3772b15b3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0187",
+        "AJ0188"
+      ],
+      "sourcePrintedIds": [
+        "AJ0187"
+      ],
+      "filename": "jawbone-axe.png",
+      "crop": [
+        12,
+        0,
+        486,
+        730
+      ],
+      "artRects": [
+        [
+          137,
+          93,
+          398,
+          466
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 1,
+      "column": 1
+    },
+    {
+      "name": "Analyticos Module",
+      "definitionId": "def_63472730bfeee66f1f1b40af",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0217",
+        "AJ0218"
+      ],
+      "sourcePrintedIds": [
+        "AJ0218"
+      ],
+      "filename": "analyticos-module.png",
+      "crop": [
+        498,
+        0,
+        486,
+        730
+      ],
+      "artRects": [
+        [
+          84,
+          130,
+          394,
+          483
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          80,
+          476,
+          174,
+          484
+        ]
+      ],
+      "row": 1,
+      "column": 2
+    },
+    {
+      "name": "Impetus Breakers",
+      "definitionId": "def_3948cd4a98c2a5415d18cf24",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0215",
+        "AJ0216"
+      ],
+      "sourcePrintedIds": [
+        "AJ0216"
+      ],
+      "filename": "impetus-breakers.png",
+      "crop": [
+        984,
+        0,
+        485,
+        730
+      ],
+      "artRects": [
+        [
+          0,
+          104,
+          479,
+          565
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          104,
+          2,
+          565
+        ]
+      ],
+      "row": 1,
+      "column": 3
+    },
+    {
+      "name": "Safety Rope",
+      "definitionId": "def_47d6d3c98167dbde2c77c579",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0241",
+        "AJ0242"
+      ],
+      "sourcePrintedIds": [
+        "AJ0241"
+      ],
+      "filename": "safety-rope.png",
+      "crop": [
+        1469,
+        0,
+        484,
+        730
+      ],
+      "artRects": [
+        [
+          44,
+          130,
+          436,
+          543
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 1,
+      "column": 4
+    },
+    {
+      "name": "Primordial Lure",
+      "definitionId": "def_434eeadfabb1d4771f957aa5",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0219"
+      ],
+      "sourcePrintedIds": [
+        "AJ0219"
+      ],
+      "filename": "primordial-lure.png",
+      "crop": [
+        1953,
+        0,
+        485,
+        730
+      ],
+      "artRects": [
+        [
+          95,
+          189,
+          397,
+          470
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          369,
+          263,
+          485,
+          334
+        ]
+      ],
+      "row": 1,
+      "column": 5
+    },
+    {
+      "name": "Aeolipile Engine",
+      "definitionId": "def_05098400b17549cbe7a088a0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0235",
+        "AJ0236"
+      ],
+      "sourcePrintedIds": [
+        "AJ0235"
+      ],
+      "filename": "aeolipile-engine.png",
+      "crop": [
+        2438,
+        0,
+        485,
+        730
+      ],
+      "artRects": [
+        [
+          107,
+          101,
+          384,
+          397
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 1,
+      "column": 6
+    },
+    {
+      "name": "Grappling Hook",
+      "definitionId": "def_133b24070b87d84c90a0d64c",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0239",
+        "AJ0240"
+      ],
+      "sourcePrintedIds": [
+        "AJ0239"
+      ],
+      "filename": "grappling-hook.png",
+      "crop": [
+        2923,
+        0,
+        473,
+        730
+      ],
+      "artRects": [
+        [
+          60,
+          115,
+          468,
+          499
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          150,
+          472,
+          365,
+          499
+        ]
+      ],
+      "row": 1,
+      "column": 7
+    },
+    {
+      "name": "Liontail Whip",
+      "definitionId": "def_50a6af6cd018aa9033cf99fd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0193",
+        "AJ0194"
+      ],
+      "sourcePrintedIds": [
+        "AJ0194"
+      ],
+      "filename": "liontail-whip.png",
+      "crop": [
+        6,
+        730,
+        492,
+        747
+      ],
+      "artRects": [
+        [
+          160,
+          141,
+          378,
+          458
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          430,
+          301,
+          458
+        ]
+      ],
+      "row": 2,
+      "column": 1
+    },
+    {
+      "name": "Longmast Spear",
+      "definitionId": "def_b73e1947101203d9a9a4b81c",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0197",
+        "AJ0198"
+      ],
+      "sourcePrintedIds": [
+        "AJ0198"
+      ],
+      "filename": "longmast-spear.png",
+      "crop": [
+        498,
+        730,
+        486,
+        747
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            381,
+            150
+          ],
+          [
+            407,
+            148
+          ],
+          [
+            380,
+            199
+          ],
+          [
+            347,
+            231
+          ],
+          [
+            238,
+            368
+          ],
+          [
+            243,
+            381
+          ],
+          [
+            208,
+            434
+          ],
+          [
+            215,
+            458
+          ],
+          [
+            163,
+            487
+          ],
+          [
+            170,
+            508
+          ],
+          [
+            134,
+            508
+          ],
+          [
+            112,
+            482
+          ],
+          [
+            137,
+            453
+          ],
+          [
+            139,
+            434
+          ],
+          [
+            111,
+            448
+          ],
+          [
+            115,
+            427
+          ],
+          [
+            140,
+            439
+          ],
+          [
+            168,
+            407
+          ],
+          [
+            136,
+            399
+          ],
+          [
+            137,
+            389
+          ],
+          [
+            154,
+            395
+          ],
+          [
+            176,
+            412
+          ],
+          [
+            241,
+            333
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "row": 2,
+      "column": 2
+    },
+    {
+      "name": "Hermes Tatters",
+      "definitionId": "def_b895aa3655a51513d20bdce2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0264"
+      ],
+      "sourcePrintedIds": [
+        "AJ0264"
+      ],
+      "filename": "hermes-tatters.png",
+      "crop": [
+        984,
+        730,
+        485,
+        747
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            136,
+            117
+          ],
+          [
+            252,
+            119
+          ],
+          [
+            358,
+            128
+          ],
+          [
+            374,
+            491
+          ],
+          [
+            324,
+            496
+          ],
+          [
+            276,
+            410
+          ],
+          [
+            257,
+            389
+          ],
+          [
+            207,
+            400
+          ],
+          [
+            160,
+            351
+          ],
+          [
+            163,
+            297
+          ],
+          [
+            190,
+            215
+          ],
+          [
+            148,
+            201
+          ],
+          [
+            158,
+            168
+          ],
+          [
+            135,
+            177
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "row": 2,
+      "column": 3
+    },
+    {
+      "name": "Mothlame",
+      "definitionId": "def_e975236904d97af23031f3c3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0262",
+        "AJ0263"
+      ],
+      "sourcePrintedIds": [
+        "AJ0263"
+      ],
+      "filename": "mothlame.png",
+      "crop": [
+        1469,
+        730,
+        484,
+        747
+      ],
+      "artRects": [
+        [
+          68,
+          110,
+          404,
+          464
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 2,
+      "column": 4
+    },
+    {
+      "name": "Pursuer Imperative",
+      "definitionId": "def_7a6baa4b125a04f69ba8bcef",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0261"
+      ],
+      "sourcePrintedIds": [
+        "AJ0261"
+      ],
+      "filename": "pursuer-imperative.png",
+      "crop": [
+        1953,
+        730,
+        485,
+        747
+      ],
+      "artRects": [
+        [
+          60,
+          130,
+          418,
+          581
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          60,
+          556,
+          377,
+          581
+        ]
+      ],
+      "row": 2,
+      "column": 5
+    },
+    {
+      "name": "Naval Ram",
+      "definitionId": "def_043048383c1c7516476b3664",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0183",
+        "AJ0184"
+      ],
+      "sourcePrintedIds": [
+        "AJ0183"
+      ],
+      "filename": "naval-ram.png",
+      "crop": [
+        2438,
+        730,
+        485,
+        747
+      ],
+      "artRects": [
+        [
+          128,
+          116,
+          436,
+          519
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 2,
+      "column": 6
+    },
+    {
+      "name": "Heavy Kopis",
+      "definitionId": "def_27dd2160f29e4f618251e9a0",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0185",
+        "AJ0186"
+      ],
+      "sourcePrintedIds": [
+        "AJ0186"
+      ],
+      "filename": "heavy-kopis.png",
+      "crop": [
+        2923,
+        730,
+        473,
+        747
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            123,
+            98
+          ],
+          [
+            244,
+            167
+          ],
+          [
+            380,
+            325
+          ],
+          [
+            464,
+            457
+          ],
+          [
+            441,
+            446
+          ],
+          [
+            372,
+            386
+          ],
+          [
+            249,
+            242
+          ],
+          [
+            211,
+            210
+          ],
+          [
+            190,
+            208
+          ],
+          [
+            177,
+            196
+          ],
+          [
+            130,
+            153
+          ],
+          [
+            123,
+            158
+          ],
+          [
+            113,
+            155
+          ],
+          [
+            114,
+            140
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "row": 2,
+      "column": 7
+    },
+    {
+      "name": "Instinct Linothorax",
+      "definitionId": "def_638c1e0031219748eb9f2305",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0243",
+        "AJ0244"
+      ],
+      "sourcePrintedIds": [
+        "AJ0244"
+      ],
+      "filename": "instinct-linothorax.png",
+      "crop": [
+        5,
+        1477,
+        493,
+        746
+      ],
+      "artRects": [
+        [
+          97,
+          126,
+          412,
+          546
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          378,
+          215,
+          488,
+          287
+        ]
+      ],
+      "reviewNote": "The right statistic panel covers the outer sleeve edge; the printed panel is masked.",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "name": "Smelted Aspis",
+      "definitionId": "def_98e3a22fc47f26006a471331",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0211",
+        "AJ0212"
+      ],
+      "sourcePrintedIds": [
+        "AJ0211"
+      ],
+      "filename": "smelted-aspis.png",
+      "crop": [
+        498,
+        1477,
+        489,
+        746
+      ],
+      "artRects": [
+        [
+          135,
+          114,
+          445,
+          400
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          130,
+          394,
+          445,
+          403
+        ]
+      ],
+      "row": 3,
+      "column": 2
+    },
+    {
+      "name": "Smelted Xiphos",
+      "definitionId": "def_4655aff19d1e0da88e783827",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0213",
+        "AJ0214"
+      ],
+      "sourcePrintedIds": [
+        "AJ0213"
+      ],
+      "filename": "smelted-xiphos.png",
+      "crop": [
+        987,
+        1477,
+        488,
+        746
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            329,
+            101
+          ],
+          [
+            355,
+            108
+          ],
+          [
+            361,
+            130
+          ],
+          [
+            344,
+            148
+          ],
+          [
+            317,
+            201
+          ],
+          [
+            321,
+            226
+          ],
+          [
+            302,
+            245
+          ],
+          [
+            278,
+            313
+          ],
+          [
+            227,
+            443
+          ],
+          [
+            149,
+            585
+          ],
+          [
+            128,
+            567
+          ],
+          [
+            148,
+            492
+          ],
+          [
+            230,
+            278
+          ],
+          [
+            252,
+            204
+          ],
+          [
+            280,
+            193
+          ],
+          [
+            316,
+            143
+          ],
+          [
+            306,
+            127
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          147,
+          545,
+          361,
+          586
+        ]
+      ],
+      "row": 3,
+      "column": 3
+    },
+    {
+      "name": "Smelted Breastplate",
+      "definitionId": "def_d6eb05ebc03e46b73653cefd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0209",
+        "AJ0210"
+      ],
+      "sourcePrintedIds": [
+        "AJ0209"
+      ],
+      "filename": "smelted-breastplate.png",
+      "crop": [
+        1475,
+        1477,
+        487,
+        746
+      ],
+      "artRects": [
+        [
+          77,
+          125,
+          402,
+          458
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          369,
+          294,
+          487,
+          353
+        ],
+        [
+          396,
+          277,
+          487,
+          295
+        ]
+      ],
+      "row": 3,
+      "column": 4
+    },
+    {
+      "name": "Knuckle Shield",
+      "definitionId": "def_d79254fa73a5796c07b057b2",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0222",
+        "AJ0223"
+      ],
+      "sourcePrintedIds": [
+        "AJ0222"
+      ],
+      "filename": "knuckle-shield.png",
+      "crop": [
+        1962,
+        1463,
+        477,
+        746
+      ],
+      "artRects": [
+        [
+          259,
+          91,
+          385,
+          230
+        ],
+        [
+          139,
+          176,
+          345,
+          418
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          259,
+          91,
+          296,
+          98
+        ]
+      ],
+      "row": 3,
+      "column": 5
+    },
+    {
+      "name": "Hekaton Panoply Armor",
+      "definitionId": "def_f7c77a43c882cdec4b163cb7",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0220",
+        "AJ0221"
+      ],
+      "sourcePrintedIds": [
+        "AJ0220"
+      ],
+      "filename": "hekaton-panoply-armor.png",
+      "crop": [
+        2439,
+        1476,
+        483,
+        742
+      ],
+      "artRects": [
+        [
+          140,
+          118,
+          349,
+          414
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "row": 3,
+      "column": 6
+    },
+    {
+      "name": "Whalebone Bident",
+      "definitionId": "def_e72023f732f783a9b6a146bd",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0195",
+        "AJ0196"
+      ],
+      "sourcePrintedIds": [
+        "AJ0196"
+      ],
+      "filename": "whalebone-bident.png",
+      "crop": [
+        2922,
+        1476,
+        474,
+        742
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            367,
+            133
+          ],
+          [
+            376,
+            131
+          ],
+          [
+            356,
+            164
+          ],
+          [
+            353,
+            188
+          ],
+          [
+            375,
+            168
+          ],
+          [
+            381,
+            144
+          ],
+          [
+            387,
+            138
+          ],
+          [
+            383,
+            174
+          ],
+          [
+            370,
+            192
+          ],
+          [
+            344,
+            218
+          ],
+          [
+            276,
+            321
+          ],
+          [
+            132,
+            513
+          ],
+          [
+            112,
+            509
+          ],
+          [
+            193,
+            404
+          ],
+          [
+            318,
+            219
+          ],
+          [
+            307,
+            209
+          ],
+          [
+            323,
+            187
+          ],
+          [
+            337,
+            177
+          ],
+          [
+            344,
+            151
+          ]
+        ]
+      ],
+      "eraseRects": [],
+      "row": 3,
+      "column": 7
+    }
+  ],
+  "skippedCards": []
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-b598c52cef8b704c",
+  "catalogueVersion": "atcc-v2-a5831f229d559167",
   "family": "Gear",
   "part": 5,
   "cards": [
@@ -690,6 +690,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/ancient-siren-panoply-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/ancient-siren-panoply-armor.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 588
           }
         }
       ]
@@ -780,6 +787,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sirenblade.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sirenblade.png",
+            "width": 492,
+            "height": 730,
+            "artBottom": 592
           }
         }
       ]
@@ -901,6 +915,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/hermes-tatters.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/hermes-tatters.png",
+            "width": 485,
+            "height": 747,
+            "artBottom": 496
           }
         }
       ]
@@ -5952,6 +5973,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/sail-spolas.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/sail-spolas.png",
+            "width": 481,
+            "height": 730,
+            "artBottom": 568
           }
         }
       ]
@@ -7753,6 +7781,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/whale-knives.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/whale-knives.png",
+            "width": 485,
+            "height": 745,
+            "artBottom": 514
           }
         }
       ]
@@ -14249,6 +14284,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/smelted-breastplate.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/smelted-breastplate.png",
+            "width": 487,
+            "height": 746,
+            "artBottom": 458
           }
         }
       ]
@@ -14731,6 +14773,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-110215/knuckle-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-110215/grayscale/knuckle-shield.png",
+            "width": 477,
+            "height": 746,
+            "artBottom": 418
           }
         }
       ]
@@ -16991,6 +17040,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/siren-shield.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/siren-shield.png",
+            "width": 483,
+            "height": 747,
+            "artBottom": 550
           }
         }
       ]
@@ -17312,6 +17368,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-105748/spring-harness.png",
+            "grayscaleImage": "assets/gear-art/epson-105748/grayscale/spring-harness.png",
+            "width": 487,
+            "height": 749,
+            "artBottom": 551
           }
         }
       ]
