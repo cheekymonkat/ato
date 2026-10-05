@@ -1,10 +1,18 @@
 import type { CardDefinition, CardFace } from './cards.ts';
 import type { CampaignCycle } from './campaign.ts';
 import { CAMPAIGN_CYCLES, isFaceAvailableInCycle } from './campaign.ts';
-import type { CardReference } from './party.ts';
+import type { CardReference, Party } from './party.ts';
+import type { CatalogueRepository } from '../catalogue/repository.ts';
 
 export function isDreamwalker(face: CardFace | undefined): boolean {
   return face?.kind === 'titan' && /\bDreamwalker\b/i.test(String(face.data.subtitle ?? face.name));
+}
+/** Count assigned Titans across the party, including exhausted/discarded selections. */
+export function argoBredArgonauts(party: Pick<Party, 'argonauts'>, catalogue: Pick<CatalogueRepository, 'getFace'>) {
+  return party.argonauts.filter(argonaut => {
+    const face = argonaut.titan && catalogue.getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
+    return face?.kind === 'titan' && !isDreamwalker(face);
+  });
 }
 export function titanDisplayName(face: CardFace): string {
   return isDreamwalker(face) ? 'Dreamwalker' : face.name;

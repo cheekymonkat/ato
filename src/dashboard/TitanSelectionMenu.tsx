@@ -10,6 +10,7 @@ import { titanVariantDisplayName as titanDisplayName, titanOptionCards } from '.
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
+import { ArgoBredWarning } from './ArgoBredWarning';
 
 /** Compact title/cycle list matches the approved picker; selecting immediately updates the column. */
 export function TitanSelectionMenu({ argonaut, onClose }: { argonaut: Argonaut; onClose: () => void }) {
@@ -23,6 +24,7 @@ export function TitanSelectionMenu({ argonaut, onClose }: { argonaut: Argonaut; 
       dispatch({ type: 'titan', argonautId: argonaut.id, titan: null }); onClose();
     }} />;
   return <Sheet visible title="Choose Titan" onClose={onClose}>
+    <ArgoBredWarning />
     {cards.map(card => {
       const face = card.faces.find(face => face.kind === 'titan' && isFaceAvailableInCycle(face, cycle));
       if (!face) return null;

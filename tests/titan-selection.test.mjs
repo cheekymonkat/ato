@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
-import { dreamwalkerVariants, isDreamwalker, titanDisplayName, titanSelectionCards } from '../src/domain/titan-selection.ts';
+import { argoBredArgonauts, dreamwalkerVariants, isDreamwalker, titanDisplayName, titanSelectionCards } from '../src/domain/titan-selection.ts';
 import { createParty } from '../src/domain/party.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 import { resolveTable } from '../src/domain/references.ts';
@@ -12,6 +12,42 @@ const catalogue = createCatalogueRepository(JSON.parse(fs.readFileSync(new URL('
 const titans = catalogue.search({ family: 'Titan' });
 const dreamwalkers = titans.filter(card => isDreamwalker(card.faces[0]));
 const reference = card => ({ definitionId: card.id, faceId: card.faces[0].id });
+
+test('Argo-bred count tracks all Argonauts and clears when extra Titans are replaced or removed', () => {
+  let party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
+  const choose = (argonautId, name) => {
+    const card = titans.find(card => card.faces[0].name === name);
+    party = partyReducer(party, { type: 'titan', argonautId, titan: card ? { id: `${argonautId}:titan`, ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} } : null }, catalogue);
+  };
+  assert.deepEqual(argoBredArgonauts(party, catalogue), []);
+  choose('a', 'Mazerunner');
+  assert.deepEqual(argoBredArgonauts(party, catalogue).map(a => a.id), ['a']);
+  choose('d', 'Gamechanger');
+  assert.deepEqual(argoBredArgonauts(party, catalogue).map(a => a.id), ['a', 'd']);
+  party = partyReducer(party, { type: 'select', argonautId: 'b' }, catalogue);
+  assert.equal(argoBredArgonauts(party, catalogue).length, 2);
+  choose('d', 'Solon');
+  assert.equal(argoBredArgonauts(party, catalogue).length, 1);
+  choose('a', null);
+  assert.equal(argoBredArgonauts(party, catalogue).length, 0);
+});
+
+test('every named Dreamwalker subtype is exempt; unresolved references are not classified as Argo-bred', () => {
+  const party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
+  for (const card of dreamwalkers) {
+    party.argonauts[0].titan = { id: 'a:titan', ...reference(card), exhausted: false, enabledEffectIds: [], counters: {} };
+    assert.equal(argoBredArgonauts(party, catalogue).length, 0);
+  }
+  const argoBred = titans.find(card => card.faces[0].name === 'Mazerunner');
+  for (const argonaut of party.argonauts.slice(0, 2)) {
+    argonaut.titan = { id: `${argonaut.id}:titan`, ...reference(argoBred), exhausted: argonaut.id === 'a', discarded: argonaut.id === 'b', enabledEffectIds: [], counters: {} };
+  }
+  party.argonauts[2].titan = { id: 'c:titan', definitionId: 'missing', faceId: 'front', exhausted: false, enabledEffectIds: [], counters: {} };
+  assert.equal(argoBredArgonauts(party, catalogue).length, 2);
+  party.argonauts[2].titan = null;
+  const restored = readBackup(exportProfile({ id: 'p', name: 'Titans', party }), catalogue).profile.party;
+  assert.equal(argoBredArgonauts(restored, catalogue).length, 2);
+});
 
 test('twenty named Dreamwalkers merge into one selectable result while keeping five cycle variants', () => {
   assert.equal(dreamwalkers.length, 20);

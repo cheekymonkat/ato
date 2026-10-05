@@ -35,6 +35,7 @@ import { StatsSwitcher } from './StatsSwitcher';
 import { StatusBar } from './StatusBar';
 import { TitanSelectionMenu } from './TitanSelectionMenu';
 import { titanArtwork } from '../theme/titan-art';
+import { ArgoBredWarning } from './ArgoBredWarning';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -98,6 +99,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
               <Text style={styles.optionsLabel}>Argonaut Options</Text>
             </Button>
           </View>
+          <ArgoBredWarning />
           <View style={styles.navigation}>
             <View style={styles.tabs}>{party.order.map((id, tabIndex) => {
               const member = party.argonauts.find(entry => entry.id === id)!;

@@ -391,3 +391,11 @@ abilities, adjust nodes across both gateways and the Fated resolution point,
 then refresh, restart, and export/import. Check that only the selected ability
 changes and that tapping its control never opens the memory editor or swipes
 to another Argonaut.
+
+The dashboard and Titan picker show a campaign-wide warning when more than one
+Argonaut has an Argo-bred (non-Dreamwalker) Titan selected. All named Dreamwalker
+subtypes are exempt. The warning lists the affected Argonauts and disappears
+when extra selections are removed or changed to Dreamwalkers. It also applies
+to restored saves; exhausted or discarded Titans remain selected and count.
+Unresolved references are not assumed to be Argo-bred. Selection remains
+possible so the warning does not erase or block campaign data.
