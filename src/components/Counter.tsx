@@ -1,14 +1,15 @@
 import type { ReactNode } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import type { StyleProp, ViewStyle } from 'react-native';
 import { Button } from './Button';
 import { theme } from '../theme/tokens';
 
-export function Counter({ name, value, onDecrease, onIncrease, large = false, compact = false, dense = false, icon, min = 0, max }: {
-  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; compact?: boolean; dense?: boolean; icon?: ReactNode; min?: number; max?: number;
+export function Counter({ name, value, onDecrease, onIncrease, large = false, compact = false, dense = false, icon, min = 0, max, style }: {
+  name: string; value: number; onDecrease: () => void; onIncrease: () => void; large?: boolean; compact?: boolean; dense?: boolean; icon?: ReactNode; min?: number; max?: number; style?: StyleProp<ViewStyle>;
 }) {
   const decrease = <Button quiet label={`Decrease ${name}`} disabled={value <= min} onPress={onDecrease} style={styles.button}><Text style={styles.symbol}>−</Text></Button>;
   const increase = <Button quiet label={`Increase ${name}`} disabled={max !== undefined && value >= max} onPress={onIncrease} style={styles.button}><Text style={styles.symbol}>+</Text></Button>;
-  if (compact) return <View style={[styles.compactCounter, dense && styles.denseCounter]}>
+  if (compact) return <View style={[styles.compactCounter, dense && styles.denseCounter, style]}>
     <View style={styles.compactHeading}>
       {icon && <View style={styles.compactIcon}>{icon}</View>}
       <Text style={styles.name}>{name}</Text>
@@ -20,7 +21,7 @@ export function Counter({ name, value, onDecrease, onIncrease, large = false, co
     </View>
     {large && value > 9 && <Text style={[styles.manual, styles.compactManual]}>Manual value</Text>}
   </View>;
-  return <View style={[styles.counter, large && styles.large]}>
+  return <View style={[styles.counter, large && styles.large, style]}>
     <Text style={styles.name}>{name}</Text>
     <Text accessibilityLabel={`${name}: ${value}`} accessibilityLiveRegion="polite" style={[styles.value, large && styles.largeValue]}>{value}</Text>
     <View style={styles.controls}>

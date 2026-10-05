@@ -20,4 +20,17 @@ export function TokenRules({ onClose }: { onClose: () => void }) {
     </View>)}
   </Sheet>;
 }
-const styles = StyleSheet.create({ item: { gap: 8 }, heading: { flexDirection: 'row', gap: 8, alignItems: 'center' }, name: { color: theme.ink, fontWeight: '600', fontSize: 16 }, text: { color: theme.ink, lineHeight: 21, fontSize: 14 } });
+/** Open the same reference guidance directly from an individual dashboard badge. */
+export function TokenDetails({ name, value, onClose }: { name: string; value: number; onClose: () => void }) {
+  const modifier = name === 'Precision' || name === 'Movement';
+  const text = guidance.find(([token]) => token === name)?.[1] ?? (name === 'Precision'
+    ? 'This modifier adjusts the Precision shown on equipped weapon cards. Positive values increase it; negative values decrease it. Active card bonuses are also included in the displayed weapon value.'
+    : name === 'Movement' ? 'This modifier adjusts the selected Titan’s Speed (movement). Positive values increase it; negative values decrease it. Active card bonuses are also included in the displayed value.'
+      : 'Reference rules have not yet been supplied for this token. Apply its effects manually.');
+  return <Sheet visible title={name} subtitle={modifier ? `Current modifier: ${value > 0 ? '+' : ''}${value}` : `${value} ${value === 1 ? 'token' : 'tokens'}`} onClose={onClose}>
+    <View style={styles.heading}><CardIcon name={name === 'Movement' ? 'Speed' : name} size={22} /><Text style={styles.name}>{name}</Text></View>
+    <Text style={styles.text}>{text}</Text>
+    {!modifier && <Text style={styles.manual}>Apply effects and limit modifiers manually.</Text>}
+  </Sheet>;
+}
+const styles = StyleSheet.create({ item: { gap: 8 }, heading: { flexDirection: 'row', gap: 8, alignItems: 'center' }, name: { color: theme.ink, fontWeight: '600', fontSize: 16 }, text: { color: theme.ink, lineHeight: 21, fontSize: 14 }, manual: { color: theme.muted, fontSize: 12, lineHeight: 18 } });

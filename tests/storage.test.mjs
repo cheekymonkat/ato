@@ -6,7 +6,7 @@ import { loadoutState } from '../src/domain/loadout.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 import { parseParty } from '../src/domain/party.ts';
 import { supportsPattern } from '../src/domain/references.ts';
-import { exportProfile, importProfile, newProfile, parseWorkspace, readBackup, referenceProblems } from '../src/storage/workspace.ts';
+import { acknowledgeCatalogueUpdate, exportProfile, importProfile, newProfile, parseWorkspace, readBackup, referenceProblems } from '../src/storage/workspace.ts';
 import { CURRENT_KEY, PREVIOUS_KEY, SnapshotStore } from '../src/storage/snapshots.ts';
 
 const catalogue = createCatalogueRepository(JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json', import.meta.url))));
@@ -153,6 +153,36 @@ test('a catalogue version difference is reported without rewriting the saved ver
   const party = complexParty(); party.catalogueVersion = 'older';
   const result = readBackup(JSON.stringify(party), catalogue);
   assert.equal(result.warnings.length, 1); assert.equal(result.profile.party.catalogueVersion, 'older');
+});
+
+test('acknowledging a catalogue update preserves all progress and other campaigns, and survives restart and backup', async () => {
+  const workspace = fresh(), party = complexParty(); party.catalogueVersion = 'older';
+  workspace.profiles[0].party = party;
+  workspace.profiles.push(newProfile('other', 'Another campaign', 'another-version'));
+  const before = structuredClone(workspace);
+  const next = acknowledgeCatalogueUpdate(workspace, 'p', 'older', catalogue);
+  const expected = structuredClone(before); expected.profiles[0].party.catalogueVersion = catalogue.version;
+  assert.deepEqual(next, expected); assert.deepEqual(workspace, before);
+  assert.equal(next.profiles[1], workspace.profiles[1]);
+  assert.equal(acknowledgeCatalogueUpdate(next, 'p', catalogue.version, catalogue), next);
+  const backup = readBackup(exportProfile(next.profiles[0]), catalogue);
+  assert.deepEqual(backup.warnings, []);
+  const { storage, store } = await readyStore(); await store.save(next);
+  assert.deepEqual((await new SnapshotStore(storage).load()).workspace, next);
+});
+
+test('acknowledgement rejects stale campaign/version callbacks and unresolved saved cards without modifying records', () => {
+  const workspace = fresh(); workspace.profiles[0].party = complexParty(); workspace.profiles[0].party.catalogueVersion = 'older';
+  workspace.profiles.push(newProfile('other', 'Other', 'older'));
+  const before = structuredClone(workspace);
+  assert.throws(() => acknowledgeCatalogueUpdate(workspace, 'other', 'older', catalogue), /campaign changed/);
+  assert.throws(() => acknowledgeCatalogueUpdate(workspace, 'absent', 'older', catalogue), /campaign changed/);
+  assert.throws(() => acknowledgeCatalogueUpdate(workspace, 'p', 'stale', catalogue), /notice changed/);
+  assert.deepEqual(workspace, before);
+  workspace.profiles[0].party.argonauts[0].instances[0].definitionId = 'missing-card';
+  const unresolved = structuredClone(workspace);
+  assert.throws(() => acknowledgeCatalogueUpdate(workspace, 'p', 'older', catalogue), /Resolve the listed saved card issues/);
+  assert.deepEqual(workspace, unresolved);
 });
 
 test('ordered writes capture data immediately and keep the most recent successful snapshot', async () => {

@@ -83,6 +83,17 @@ export function referenceProblems(party: Party, catalogue: CatalogueRepository):
   return problems;
 }
 
+/** Explicitly accept an installed catalogue after checking the current campaign. */
+export function acknowledgeCatalogueUpdate(workspace: Workspace, profileId: string, expectedVersion: string, catalogue: CatalogueRepository): Workspace {
+  const profile = workspace.profiles.find(profile => profile.id === profileId);
+  assert(profile && workspace.activeProfileId === profileId, 'The campaign changed. Review its catalogue notices again.');
+  assert(profile.party.catalogueVersion === expectedVersion, 'The catalogue notice changed. Review it again.');
+  assert(referenceProblems(profile.party, catalogue).length === 0, 'Resolve the listed saved card issues before acknowledging this catalogue update.');
+  if (profile.party.catalogueVersion === catalogue.version) return workspace;
+  return { ...workspace, profiles: workspace.profiles.map(entry => entry.id === profileId
+    ? { ...entry, party: { ...entry.party, catalogueVersion: catalogue.version } } : entry) };
+}
+
 export function exportProfile(profile: PartyProfile): string {
   const validated = parseProfile(profile);
   return JSON.stringify({ format: 'ato-party-backup', backupVersion: 1, exportedAt: new Date().toISOString(), profile: validated }, null, 2);

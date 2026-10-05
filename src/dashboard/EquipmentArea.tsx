@@ -26,9 +26,9 @@ function EquipmentSelection({ label, onPress, children }: { label: string; onPre
     onPress={onPress} style={({ pressed }) => [styles.selection, pressed && styles.pressed]}>{children}</Pressable></SwipeGuard>;
 }
 
-export function SectionHeading({ title, note }: { title: string; note?: string }) {
+export function SectionHeading({ title, note, action }: { title: string; note?: string; action?: ReactNode }) {
   return <View style={styles.sectionHeading}><Text accessibilityRole="header" style={styles.heading}>{title}</Text>
-    {note && <Text style={styles.note}>{note}</Text>}</View>;
+    {action || note && <Text style={styles.note}>{note}</Text>}</View>;
 }
 
 function SlotCard({ position, index, argonaut, compact, cellWidth }: { position: CapacityPosition; index: number; argonaut: Argonaut; compact?: boolean; cellWidth: number }) {
@@ -76,7 +76,7 @@ function SlotRow({ kinds, positions, argonaut, rowWidth, compact = false, startI
   })}</View>;
 }
 
-export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosition[]; argonaut: Argonaut }) {
+export function EquipmentArea({ positions, argonaut, headingAction }: { positions: CapacityPosition[]; argonaut: Argonaut; headingAction?: ReactNode }) {
   const { width } = useWindowDimensions();
   const [areaWidth, setAreaWidth] = useState(width - 32);
   const needsReassignment = loadoutState(argonaut, getCatalogue()).pending;
@@ -90,7 +90,7 @@ export function EquipmentArea({ positions, argonaut }: { positions: CapacityPosi
   return <View style={styles.area}>
     <View style={styles.groups} onLayout={event => { if (event.nativeEvent.layout.width > 0) setAreaWidth(event.nativeEvent.layout.width); }}>{groups.map((group, index) => {
       return <View key={group.title} style={[styles.group, { width: groupWidths[index] }]}>
-        <SectionHeading title={group.title} note={group.note} />
+        <SectionHeading title={group.title} note={group.note} action={index === 0 ? headingAction : undefined} />
         <SlotRow kinds={group.kinds} positions={positions} argonaut={argonaut} rowWidth={groupWidths[index]} compact={group.compact} />
       </View>;
     })}</View>

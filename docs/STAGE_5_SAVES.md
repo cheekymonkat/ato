@@ -30,6 +30,11 @@ Open the top-right menu and choose **Campaigns & backups** to:
   before choosing **Import as new profile**. Imports keep the existing party.
 - Review and explicitly restore the previous local snapshot. This restores
   the entire workspace, including its profiles and active selection.
+- Under **Catalogue notices**, choose **Acknowledge catalogue update** to clear
+  a version-only notice. This checks saved card references, updates the current
+  campaign's saved catalogue version and saves it immediately. Cards, stats and
+  progress are retained; other campaigns keep their own versions. Resolve any
+  listed card issues first. Later catalogue updates show a new notice.
 
 Names, colours, skills, Titans, independent card instances, faces, exhaustion,
 equipment assignments, optional/confirmed effects, recorded placement exceptions,

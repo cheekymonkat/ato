@@ -4,6 +4,7 @@ import { keywordRepository } from '../../catalogue/keywords';
 import type { CardFace } from '../../domain/cards';
 import { displayValue, strings } from '../../domain/card-presentation';
 import { titanAbilityRows } from '../../domain/titan-presentation';
+import { titanDisplayName } from '../../domain/titan-selection';
 import { gearTheme as g } from '../../theme/gear-tokens';
 import { useCardColours } from './CardColours';
 import { CardIcon } from './CardIcon';
@@ -21,7 +22,7 @@ export function TitanCardBody({ face, ink, headerActions, onSelect }: { face: Ex
       <View style={styles.identity}>
         <View style={styles.identityLine}>
           <TitanSelection onSelect={onSelect} inline>
-          <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{face.name}</Text>
+          <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{titanDisplayName(face)}</Text>
           <View style={styles.stats}>
             <DiceStack dice={[face.data.titanPower]} />
             <View accessible accessibilityLabel={`Speed ${speed.label}`} style={styles.speed}>
@@ -31,7 +32,7 @@ export function TitanCardBody({ face, ink, headerActions, onSelect }: { face: Ex
           </TitanSelection>
           {headerActions}
         </View>
-        {Boolean(face.data.subtitle) && <TitanSelection onSelect={onSelect}><Text style={styles.subtitle}>{displayValue(face.data.subtitle)}</Text></TitanSelection>}
+        {Boolean(face.data.subtitle) && face.data.subtitle !== titanDisplayName(face) && <TitanSelection onSelect={onSelect}><Text style={styles.subtitle}>{displayValue(face.data.subtitle)}</Text></TitanSelection>}
       </View>
       <Text style={[styles.meta, { color: ink }]}>{face.family} · {face.cycle}</Text>
     </View>

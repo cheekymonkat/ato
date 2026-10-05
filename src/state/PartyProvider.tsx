@@ -8,7 +8,7 @@ import type { Party } from '../domain/party';
 import { localStorageAdapter } from '../storage/adapter';
 import { errorMessage, SnapshotStore } from '../storage/snapshots';
 import type { LoadResult } from '../storage/snapshots';
-import { importProfile, newProfile, profileName } from '../storage/workspace';
+import { acknowledgeCatalogueUpdate, importProfile, newProfile, profileName } from '../storage/workspace';
 import type { PartyProfile, Workspace } from '../storage/workspace';
 import { theme } from '../theme/tokens';
 import { partyReducer } from './party-reducer';
@@ -20,6 +20,7 @@ interface PartyContextValue {
   saveStatus: SaveStatus; saveError: string | null; preview: boolean;
   flush: () => Promise<void>; switchProfile: (id: string) => void;
   createProfile: (name: string, cycle: CampaignCycle) => string; renameProfile: (name: string) => void;
+  acknowledgeCatalogue: (profileId: string, expectedVersion: string) => void;
   addImport: (profile: PartyProfile, name: string) => string;
   previousSnapshot: () => Promise<Workspace | null>; restoreSnapshot: (snapshot: Workspace) => Promise<void>;
   exitPreview: () => void;
@@ -119,6 +120,12 @@ export function PartyProvider({ children }: { children: ReactNode }) {
     const current = workspaceRef.current!, validName = profileName(name);
     update({ ...current, profiles: current.profiles.map(profile => profile.id === current.activeProfileId ? { ...profile, name: validName } : profile) });
   }, [update]);
+  const acknowledgeCatalogue = useCallback((profileId: string, expectedVersion: string) => {
+    if (previewRef.current) throw new Error('Leave the temporary preview before acknowledging catalogue notices.');
+    const current = workspaceRef.current!;
+    const next = acknowledgeCatalogueUpdate(current, profileId, expectedVersion, getCatalogue());
+    if (next !== current) update(next);
+  }, [update]);
   const addImport = useCallback((source: PartyProfile, name: string) => {
     const next = importProfile(workspaceRef.current!, source, uniqueId(), name);
     exitPreview(); update(next);
@@ -145,7 +152,7 @@ export function PartyProvider({ children }: { children: ReactNode }) {
   if (!workspace) return <View style={styles.gate}><Text style={styles.text}>Loading your party…</Text></View>;
   const profile = workspace.profiles.find(profile => profile.id === workspace.activeProfileId)!;
   const value: PartyContextValue = { party: previewParty || profile.party, dispatch, workspace, profile, saveStatus, saveError, preview: !!previewParty,
-    flush, switchProfile, createProfile, renameProfile, addImport, previousSnapshot: () => store.previous(), restoreSnapshot, exitPreview };
+    flush, switchProfile, createProfile, renameProfile, acknowledgeCatalogue, addImport, previousSnapshot: () => store.previous(), restoreSnapshot, exitPreview };
   return <PartyContext.Provider value={value}>{children}
     <Modal transparent visible={restoring} onRequestClose={() => {}}>
       <View style={styles.restoring}><View style={styles.restorePanel}><Text accessibilityLiveRegion="polite" style={styles.text}>Restoring your save…</Text></View></View>

@@ -1,5 +1,112 @@
 # Four-Argonaut dashboard
 
+## Current dashboard layout (October 2026)
+
+This approved layout supersedes the earlier Stage 2 arrangement described below.
+The campaign heading displays `Campaign: <name> - Cycle <number>`. The masthead
+menu contains Browse Gear, Campaigns & backups, and Tides of Fate. Argonaut
+Options beside the campaign heading contains Titan selection, condition and
+affliction checklists, and Rules assistance. Adding entries keeps Options open;
+deselecting an entry requires the existing removal confirmation.
+
+Triskelion is the default counter view. A switch selects editable Argonaut skills
+instead; the other values remain visible above as shaded, bordered labels with
+bold numbers. Both views reserve the same height at a given width, preventing
+Equipment from moving when switched. Skill counters use three columns where
+they fit and two on the smallest phones, retaining 44 px action targets.
+Rage, Fate and Danger occupy one row in that order when the stats area is at
+least 430 px wide, with Danger to the right of Fate. The shared stats area is
+48 px shorter at those widths in both views. Below that width, Danger remains
+centred beneath Rage/Fate so the existing control sizes remain usable.
+All three Triskelion boxes use a pale tint of the selected Argonaut colour, with
+dark icons and text. The default red, blue, green and gold backgrounds are
+`#F3E5E3`, `#E5ECF3`, `#E7EEE5` and `#EEE8DA`. Other palette colours and saved
+custom colours receive matching pale backgrounds without changing saved colours.
+The colour picker uses a continuous hue/saturation wheel and brightness slider,
+with a draggable selection marker and live previews of the colour and Triskelion
+tint. Hue, saturation and brightness also have fine-adjustment buttons for
+keyboard and assistive-technology use. Changes save only with “Use colour”;
+Cancel or closing the dialog keeps the existing colour. No code entry is needed.
+
+Trauma and Kratos reference dialogs are capped at 420 px instead of the wider
+620 px sheet size. The shared table renderer is centred and capped at 340 px,
+including tables inside Pattern overrides and previews, so its full dark
+background cannot stretch across a wide card. Vertical table insets are 12 px,
+row gaps 6 px and Kratos rows have a 34 px minimum height. Kratos option boxes
+fit their contents with a 32 px minimum width and 4 px horizontal / 3 px vertical
+padding, replacing the previous 22% minimum width. Effect icons and number sizes,
+combined-effect grouping and responsive wrapping are retained.
+
+Current conditions, afflictions, nonzero Precision/Movement modifiers and positive
+token counts appear as badges immediately above Equipment. Conditions use bright
+yellow, afflictions purple, positive modifiers blue and negative modifiers red.
+Ambrosia, Despair, Midas and Pain use gold yellow; Bleeding uses blood red with
+white text/symbols, Oxygen navy with white text/symbols, and Aether white with dark
+text/symbols. Condition and affliction badges open their details and confirmed
+removal flows. Condition details retain the card flip action. Token and modifier
+badges also open individual details, using the existing token-reference wording
+and the current count. Precision and Movement describe how they adjust displayed
+combat values. The separate Token Reference option and its combined overlay are
+removed from Argonaut Options.
+
+The Tokens dropdown sits at the far right of that row. It contains Precision,
+Movement and the token types enabled by the campaign cycle. Count adjustments
+keep it open and update badges, card gates and derived combat values through the
+existing reducer. An outside press, close button or platform modal-dismiss action
+closes it. Its width fits both the viewport and its dashboard column; its content
+scrolls when the available height is limited. Existing recorded later-cycle or
+custom token badges remain visible even when their counter is unavailable.
+
+Refresh Gear sits beside the Equipment heading and retains its existing behaviour:
+ready the selected Argonaut's exhausted Gear and memories, retaining discards.
+The separate Titan-selection/cycle row and the lower Tokens, Conditions and
+Afflictions sections are removed. Titans are chosen, changed and removed through
+Argonaut Options; the abilities card no longer opens Titan selection. Trauma/Kratos links, Notes and
+Shared resources remain available.
+
+At 1040 px and wider, Titan abilities, memories and shared resources start beside
+the identity/stats area. Below that width they follow Equipment and Notes. The
+Argonaut colour separator spans only the equipment column. Layout responds to
+both the measured dashboard area and the window width; the page remains uncapped.
+When the name and stats sit beside one another, the name occupies 34% of the
+equipment column (260–460 px) without shrinking; the stats receive the remaining
+space. Stacked layouts give the name the full width. The name input stays inside
+its column, using 40 px type from 600 px dashboard width and 32 px on smaller
+screens, so the Triskelion area cannot cover it.
+
+Safari review used an unsaved, populated preview at 320, 390, 1024 and 1440 px.
+It verified reflow, both stats views, badge colours, persistent token adjustments,
+derived weapon Precision, condition selection, cancelled removal and the main
+menu. Leaving the preview restored the original Cycle 1 campaign with its empty
+loadout; the temporary review route was removed. Native device interaction and
+text-scaling checks remain pending.
+
+Lint, typecheck and production exports for web/iOS/Android passed. The current
+domain run passed 193 of 196 tests. Three catalogue consistency checks fail on
+pre-existing manual generated-data edits (including Puzzle Axe); this layout
+change preserves those edits and does not regenerate the catalogue.
+
+### Dreamwalker selection
+
+The 20 named Dreamwalker definitions (Solon, Herodotus, Ulyssea and Philoctera
+across five cycles) appear as one **Dreamwalker** result in the Titan picker.
+Its default is the latest available cycle, or the existing saved Dreamwalker when
+one is already selected. Review offers one variant for each eligible cycle;
+later cycles remain excluded by the campaign limit. The named copies have
+identical power, speed, abilities and reference tables within a cycle, but Kratos
+tables differ across cycles, so selecting a cycle retains its actual card data.
+
+All original definitions and printed IDs remain intact. Original names and IDs
+still find the grouped choice. Existing saves retain their exact reference and
+tables, while card headings, selection controls and reference subtitles display
+Dreamwalker. No catalogue regeneration or save migration is required.
+
+The Titan-selection and existing reference tests pass (10 tests), including
+all 20 saved IDs, cumulative cycle filtering, grouped search, table fidelity,
+backup/reload and owner isolation. Safari verified selection through Options,
+one Dreamwalker search result, return to Options after assignment, and token
+badge details in an unsaved preview. Native device checks remain pending.
+
 Stage 2 adds the Expo Router application shell and dashboard components. The source follows `../ato_docs/layout.pdf` and the proposed neutral parchment, charcoal and gold palette in the development plan. It uses the existing SVG game symbols, with editor metadata removed from the embedded copies for native rendering. Their originals remain unchanged in `ato_docs/images`.
 
 ## Status
@@ -33,7 +140,7 @@ The app entry point is now `expo-router/entry`. Routes live under `src/app`; oth
 - Triskelion sits beside the Argonaut skills in the identity area, following `../ato_docs/trisk.png`: Rage and Fate across the top, Danger centred underneath. Each counter keeps its icon/title immediately above the decrease–value–increase controls, enclosed by a subtle 1 px rounded border with 4 px padding. Current Cycle remains beside the heading. Below 780 px dashboard width, Triskelion stacks beneath the skills. Values above nine retain their manual-value indicator and overflow confirmation.
 - Trauma and Kratos table links are in the Titan abilities section. With a visible Titan, they sit after the name, power dice and speed, wrapping within the header when necessary. They are separate from the Titan edit press targets. The links remain available without a Titan or with a concealed Titan, allowing Pattern overrides to be accessed.
 - Counters start in the 0–9 range. Increasing beyond 9 opens a manual-value confirmation. The reducer refuses unconfirmed increases beyond 9; lowering an accepted manual value remains possible. No death or campaign consequence is automated.
-- The colour picker offers eight named colours and a validated custom hex input. A full-width, 4 px separator immediately above the card area shows the active colour. Names and page numbers remain visible. Tab number contrast adapts to the chosen colour.
+- The colour picker offers a continuous wheel for hue/saturation, a brightness slider and fine-adjustment buttons. Previously saved custom colours initialise the picker exactly. A 4 px separator immediately above the equipment area shows the active colour, while the Triskelion boxes use its pale tint. Names and page numbers remain visible. Tab-number and colour-preview text contrast adapt to the chosen colour.
 - The Titan picker searches the catalogue within the campaign cycle and earlier cycles. Choose or edit the campaign cycle on the campaign page. Selecting a Titan enables its Trauma and Kratos reference tables.
 - Both reference tables now use the extracted ATCC Pattern styling, preserving ranges, symbols and Kratos alternatives/combined effects. [Design and verification](PATTERN_TABLES.md)
 - The layout includes two Weapon positions, Armor, two base Supports, three Attachments, two Mnemos and two Fated Mnemos areas, plus Tokens and Conditions reference areas.
@@ -72,7 +179,7 @@ Remaining runtime review:
 
 1. Extend the recorded 320, 390, 800 and 1000 px browser layout review to populated equipment, text scaling and native devices. The empty-loadout preview confirms Triskelion ordering and section spacing; the smallest view wraps battle counters and equipment cards.
 2. Edit each Argonaut, move through all four, return and confirm each edit remains isolated.
-3. Check name edits, palette/custom colours and full-width separator changes.
+3. Check name edits, wheel/brightness dragging, save/cancel, saved custom colours and separator changes.
 4. Select Titans and inspect both reference tables.
 5. Increase a counter through 9, cancel overflow, confirm a manual value, then decrement it.
 6. Swipe at both boundaries; drag on counters and inputs; scroll vertically without changing Argonaut.

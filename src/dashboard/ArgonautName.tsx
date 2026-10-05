@@ -11,7 +11,7 @@ import type { ArgonautChange } from '../domain/argonaut-identity';
 import { ArgonautChangeConfirmation } from './ArgonautChangeConfirmation';
 import { theme } from '../theme/tokens';
 
-export function ArgonautName({ argonaut, number }: { argonaut: Argonaut; number: number }) {
+export function ArgonautName({ argonaut, number, large = false }: { argonaut: Argonaut; number: number; large?: boolean }) {
   const { party, dispatch } = useParty(), catalogue = getCatalogue();
   const input = useRef<TextInput>(null);
   const [draft, setDraft] = useState<string | null>(null);
@@ -28,13 +28,13 @@ export function ArgonautName({ argonaut, number }: { argonaut: Argonaut; number:
     setPending({ ...next, partyId: party.id, expectedName: argonaut.name, expectedDefinitionId: argonaut.argonautDefinitionId });
   }
   const cancel = () => { input.current?.blur(); setPending(null); setDraft(null); };
-  return <View>
+  return <View style={styles.container}>
     <SwipeGuard><TextInput ref={input} accessibilityLabel="Argonaut name" accessibilityHint="Type a name, then select a suggested Argonaut or use a custom name. Update name only keeps your progress; replacing the Argonaut requires confirmation before resetting stats, memories, conditions and tokens."
       placeholder={`Argonaut ${number}`} maxLength={60} selectTextOnFocus autoCorrect={false}
       value={name} onChangeText={setDraft} onSubmitEditing={() => {
         if (name.trim() === argonaut.name) setDraft(null);
         else if (draft !== null) choose({ name, definitionId: null });
-      }} style={styles.input} /></SwipeGuard>
+      }} style={[styles.input, large && styles.largeInput]} /></SwipeGuard>
     {draft !== null && !pending && <View style={styles.suggestions}>
       <Text accessibilityLiveRegion="polite" style={styles.detail}>{matches.length ? 'Select an Argonaut to apply their skill bonus.' : 'No matching Argonauts in this campaign cycle.'}</Text>
       {matches.slice(0, 5).map(match => <Button key={match.definitionId} quiet
@@ -58,7 +58,9 @@ export function ArgonautName({ argonaut, number }: { argonaut: Argonaut; number:
   </View>;
 }
 const styles = StyleSheet.create({
-  input: { fontFamily: theme.serif, color: theme.ink, fontSize: 32, minHeight: 52, paddingVertical: 4, marginTop: 8, borderBottomWidth: 1, borderBottomColor: theme.line },
+  container: { width: '100%', minWidth: 0 },
+  input: { width: '100%', minWidth: 0, fontFamily: theme.serif, color: theme.ink, fontSize: 32, minHeight: 52, paddingVertical: 4, marginTop: 8, borderBottomWidth: 1, borderBottomColor: theme.line },
+  largeInput: { fontSize: 40, minHeight: 64 },
   suggestions: { padding: 8, gap: 6, backgroundColor: theme.paper, borderWidth: 1, borderColor: theme.line, borderRadius: 5, marginTop: 6 },
   suggestion: { alignItems: 'flex-start', paddingHorizontal: 10, paddingVertical: 8 },
   name: { color: theme.ink, fontSize: 14, fontWeight: '600' },

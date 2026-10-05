@@ -4,8 +4,8 @@ import { Button } from '../components/Button';
 import { Chevron } from '../components/Icon';
 import { theme } from '../theme/tokens';
 
-export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfiles, onRules, onClearAll }: {
-  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void; onProfiles: () => void; onRules: () => void; onClearAll: () => void;
+export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfiles, onClearAll }: {
+  visible: boolean; compact: boolean; onClose: () => void; onBrowseGear: () => void; onProfiles: () => void; onClearAll: () => void;
 }) {
   return <Modal transparent visible={visible} onRequestClose={onClose} animationType="fade">
     <SafeAreaView edges={['top', 'left', 'right']} style={[styles.overlay, compact && styles.compact]}>
@@ -19,9 +19,6 @@ export function DashboardMenu({ visible, compact, onClose, onBrowseGear, onProfi
         </Button>
         <Button quiet label="Campaigns & backups" onPress={onProfiles} style={styles.item}>
           <Text style={styles.itemLabel}>Campaigns & backups</Text><Chevron />
-        </Button>
-        <Button quiet label="Rules assistance" onPress={onRules} style={styles.item}>
-          <Text style={styles.itemLabel}>Rules assistance</Text><Chevron />
         </Button>
         <Button quiet label="Tides of Fate" onPress={onClearAll} style={[styles.item, styles.clearItem]}>
           <Text style={[styles.itemLabel, { color: theme.danger }]}>Tides of Fate</Text><Chevron />

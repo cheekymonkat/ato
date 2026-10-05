@@ -6,12 +6,13 @@ import { getCatalogue } from '../catalogue';
 import { useParty } from '../state/PartyProvider';
 import { theme } from '../theme/tokens';
 import { referenceProblems } from './workspace';
+import { campaignCycle } from '../domain/campaign';
 
 export function SaveNotice({ showStatus = true }: { showStatus?: boolean }) {
-  const { profile, preview, exitPreview, saveStatus, saveError, flush } = useParty();
+  const { party, profile, preview, exitPreview, saveStatus, saveError, flush } = useParty();
   const hasNotices = useMemo(() => profile.party.catalogueVersion !== getCatalogue().version || referenceProblems(profile.party, getCatalogue()).length > 0, [profile.party]);
   return <View style={styles.notice}>
-    <Text accessibilityLiveRegion="polite" style={styles.status}>{showStatus ? `${profile.name} · ${preview ? 'Temporary preview · not saved' : saveStatus === 'saved' ? 'Saved locally' : saveStatus === 'saving' ? 'Saving…' : 'Save failed'}` : `Campaign: ${profile.name}`}</Text>
+    <Text accessibilityLiveRegion="polite" style={styles.status}>{showStatus ? `${profile.name} · ${preview ? 'Temporary preview · not saved' : saveStatus === 'saved' ? 'Saved locally' : saveStatus === 'saving' ? 'Saving…' : 'Save failed'}` : `Campaign: ${profile.name} - Cycle ${campaignCycle(party)}`}</Text>
     {preview && !showStatus && <Text style={styles.status}>Temporary preview · not saved</Text>}
     {preview && <Button quiet label="Leave preview" onPress={() => { exitPreview(); router.replace({ pathname: '/argonaut/[id]', params: { id: profile.party.activeArgonautId } }); }} />}
     {hasNotices && <Button quiet label="Review saved card notices" onPress={() => router.push('/profiles')} />}

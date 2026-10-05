@@ -5,17 +5,12 @@ import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
 import { ReferenceCard } from '../components/cards/ReferenceCard';
-import { CardIcon } from '../components/cards/CardIcon';
 import { GateAssistance } from '../components/cards/GateAssistance';
 import { CombatStats } from '../components/cards/CombatStats';
 import { Button } from '../components/Button';
-import { Counter } from '../components/Counter';
-import { Chevron, Emblem, GameIcon } from '../components/Icon';
+import { Chevron, Emblem } from '../components/Icon';
 import { SwipeGuard, SwipeSurface } from '../components/SwipeSurface';
-import { SKILL_NAMES } from '../domain/party';
-import { argonautSkills, SKILL_MAX, SKILL_MIN } from '../domain/argonaut-stats';
 import { canDiscardCard, canExhaustCard } from '../domain/ability-costs';
-import { campaignCycle } from '../domain/campaign';
 import type { Argonaut } from '../domain/party';
 import { adjacentArgonautId } from '../state/party-reducer';
 import type { CounterName } from '../state/party-reducer';
@@ -32,17 +27,12 @@ import { EquipmentArea, SectionHeading } from './EquipmentArea';
 import { dashboardPositions } from './model';
 import { OverflowDialog } from './OverflowDialog';
 import { ReferenceDialog } from './ReferenceDialog';
-import { TitanPicker } from './TitanPicker';
-import { TokenArea } from './TokenArea';
-import { ConditionArea } from './ConditionArea';
 import { SharedResources } from './SharedResources';
 import { RulesAssistanceSheet } from './RulesAssistanceSheet';
-import { ModifierControls } from './ModifierControls';
 import { ArgonautNotes } from './ArgonautNotes';
-import { AfflictionArea } from './AfflictionArea';
-import { afflictionRecords } from '../domain/afflictions';
-import { conditionRecords } from '../domain/conditions';
-import { TOKEN_TYPES, tokenCount } from '../domain/tokens';
+import { ArgonautOptions } from './ArgonautOptions';
+import { StatsSwitcher } from './StatsSwitcher';
+import { StatusBar } from './StatusBar';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -56,18 +46,15 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
     if (nextWidth > 0) setContainerWidth(nextWidth);
   }, []);
   // Give the three equipment columns enough room before putting references beside them.
-  const narrow = width < 1150, small = width < 600;
-  const identityStacked = width < 1040, statsStacked = width < 780;
-  const [colourOpen, setColourOpen] = useState(false), [titanOpen, setTitanOpen] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const narrow = width < 1040, small = width < 600;
+  const identityStacked = narrow ? width < 760 : width < 1300;
+  const [colourOpen, setColourOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false), [optionsOpen, setOptionsOpen] = useState(false);
   const [rulesOpen, setRulesOpen] = useState(false);
   const [clearing, setClearing] = useState<{ partyId: string; argonautId: string; campaignName: string } | null>(null);
   const [overflow, setOverflow] = useState<CounterName | null>(null), [reference, setReference] = useState<'Trauma' | 'Kratos' | null>(null);
   const index = party.order.indexOf(argonaut.id);
   const positions = useMemo(() => dashboardPositions(argonaut, getCatalogue()), [argonaut]);
-  const conditions = useMemo(() => conditionRecords(argonaut), [argonaut]);
-  const tokenNotifications = TOKEN_TYPES.map(({ name }) => ({ name, count: tokenCount(argonaut, name) })).filter(token => token.count > 0);
-  const skills = useMemo(() => argonautSkills(argonaut, getCatalogue()), [argonaut]);
   const titan = argonaut.titan && getCatalogue().getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
   const titanCard = argonaut.titan && getCatalogue().get(argonaut.titan.definitionId), spoilers = useSpoilers();
   const hiddenTitan = titanCard && spoilers.hidden(titanCard);
@@ -81,21 +68,6 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
     else dispatch({ type: 'counter', argonautId: argonaut.id, counter, value });
   };
 
-  const triskelion = (
-    <View testID="triskelion-section" style={[styles.triskelionArea, statsStacked && styles.triskelionStacked]}>
-      <SectionHeading title="Triskelion" note={`Current Cycle: ${campaignCycle(party)}`} />
-      <View style={styles.triskelion}><View style={styles.counters}>{(['rage', 'fate'] as const).map(counter =>
-        <Counter key={counter} large compact icon={<GameIcon name={counter === 'rage' ? 'Rage' : 'Fate'} size={22} />}
-          name={counter[0].toUpperCase() + counter.slice(1)} value={argonaut.counters[counter]}
-          onDecrease={() => counterChange(counter, -1)} onIncrease={() => counterChange(counter, 1)} />
-      )}</View>
-      <View style={styles.dangerRow}><View style={styles.dangerCell}>
-        <Counter large compact icon={<GameIcon name="Danger" size={22} />} name="Danger" value={argonaut.counters.danger}
-          onDecrease={() => counterChange('danger', -1)} onIncrease={() => counterChange('danger', 1)} />
-      </View></View>
-      </View>
-    </View>
-  );
   const referenceLinks = <View style={styles.referenceLinks}>{(['Trauma', 'Kratos'] as const).map(kind =>
     <Button key={kind} quiet label={`${kind} table`} onPress={() => setReference(kind)} style={styles.referenceButton}>
       <Text style={styles.referenceLabel}>{kind} table</Text><Chevron />
@@ -116,8 +88,12 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
         </View></View>
 
         <View style={[styles.content, small && styles.mobilePadding]}>
-          <View style={styles.chapter}><Text style={styles.eyebrow}>YOUR EXPEDITION</Text><Text style={styles.chapterMeta}>Four Argonauts. One odyssey.</Text></View>
-          <SaveNotice showStatus={false} />
+          <View style={styles.chapter}><View style={styles.campaignHeading}><Text style={styles.eyebrow}>YOUR EXPEDITION</Text><SaveNotice showStatus={false} /></View>
+            <Button quiet label="Argonaut Options" onPress={() => setOptionsOpen(true)} style={styles.optionsButton}>
+              <View style={styles.optionsIcon}><View style={styles.optionsLine} /><View style={styles.optionsLine} /><View style={styles.optionsLine} /></View>
+              <Text style={styles.optionsLabel}>Argonaut Options</Text>
+            </Button>
+          </View>
           <View style={styles.navigation}>
             <View style={styles.tabs}>{party.order.map((id, tabIndex) => {
               const member = party.argonauts.find(entry => entry.id === id)!;
@@ -130,60 +106,33 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
             })}</View>
           </View>
 
-          <View style={[styles.identity, identityStacked && styles.identityNarrow]}>
-            <View style={[styles.identityName, identityStacked && styles.identityNameNarrow]}>
-              <Text style={styles.eyebrow}>ARGONAUT {index + 1}</Text>
-              <ArgonautName key={argonaut.id} argonaut={argonaut} number={index + 1} />
-              <View style={styles.identityActions}><Button quiet label="Choose Argonaut colour" onPress={() => setColourOpen(true)} style={styles.colourButton}>
-                <View style={[styles.colourDot, { backgroundColor: argonaut.colour }]} /><Text style={styles.colourLabel}>Identity colour</Text><Chevron direction="down" />
-              </Button></View>
-            </View>
-            <View style={[styles.identityStats, statsStacked && styles.identityStatsStacked, identityStacked && styles.identityStatsFull]}>
-            <View testID="argonaut-skills" style={[styles.skills, statsStacked && styles.skillsStacked]}>{SKILL_NAMES.map(skill => <View key={skill} style={styles.skillCell}>
-              <Counter compact dense name={skill} value={skills[skill]} min={SKILL_MIN} max={SKILL_MAX} onDecrease={() => dispatch({ type: 'skill', argonautId: argonaut.id, skill, delta: -1 })}
-                onIncrease={() => dispatch({ type: 'skill', argonautId: argonaut.id, skill, delta: 1 })} />
-            </View>)}</View>
-            {triskelion}
-            </View>
-          </View>
-          <View style={[styles.titanBar, width < 1040 && styles.titanBarSmall]}>
-            <View style={styles.titanChoice}><Text style={styles.eyebrow}>TITAN</Text><Button quiet label="Choose Titan" onPress={() => setTitanOpen(true)} style={styles.titanButton}>
-              <GameIcon name="Titan" size={20} /><Text style={styles.titanName}>{hiddenTitan ? 'Unrevealed Titan' : titan?.name || (argonaut.titan ? 'Unavailable Titan' : 'Choose a Titan')}</Text><Chevron direction="down" />
-            </Button><View style={styles.titanStatus}>
-              {titan && !hiddenTitan && <Text style={styles.titanMeta}>{titan.cycle}</Text>}
-              {conditions.map(condition => <View key={condition.id} testID={`condition-label-${condition.id}`} style={styles.conditionLabel}>
-                <Text accessibilityLabel={`Active condition: ${condition.name}`} style={styles.conditionText}>{condition.name}</Text>
-              </View>)}
-              {afflictionRecords(argonaut).map(affliction => <View key={affliction.id} testID={`affliction-label-${affliction.id}`} style={styles.conditionLabel}>
-                <Text accessibilityLabel={`Active affliction: ${affliction.name}`} style={styles.conditionText}>{affliction.name}</Text>
-              </View>)}
-              {tokenNotifications.map(({ name, count }) => <View key={name} testID={`token-notification-${name}`} accessible
-                accessibilityLabel={`${name}: ${count} ${count === 1 ? 'token' : 'tokens'}`} accessibilityLiveRegion="polite" style={styles.conditionLabel}>
-                <CardIcon name={name} size={18} invert colour="#FFFFFF" />
-                <Text style={styles.conditionText}>{count}</Text>
-              </View>)}
-            </View></View>
-            {width >= 1040 && <View style={styles.modifiers}><ModifierControls argonaut={argonaut} /></View>}
-            <Button quiet label="Refresh Gear" onPress={() => dispatch({ type: 'refresh-gear', argonautId: argonaut.id })} style={styles.refreshGear} />
-            {width < 1040 && <View style={styles.modifiersSmall}><ModifierControls argonaut={argonaut} /></View>}
-          </View>
         </View>
 
-        <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
-
-        <CombatStats argonaut={argonaut}><GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}><View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
+        <CombatStats argonaut={argonaut}><GateAssistance enabled={party.rulesAssistance === true} argonaut={argonaut}>
+        <View testID="dashboard-board" style={[styles.board, small && styles.mobilePadding, narrow && styles.boardNarrow]}>
           <View style={[styles.equipmentColumn, narrow && styles.fullColumn]}>
-            <EquipmentArea positions={positions} argonaut={argonaut} />
-            <ArgonautNotes key={`${party.id}:${argonaut.id}`} argonaut={argonaut} />
+            <View style={[styles.identity, identityStacked && styles.identityNarrow]}>
+              <View style={[styles.identityName, identityStacked && styles.identityNameNarrow]}>
+                <Text style={styles.eyebrow}>ARGONAUT {index + 1}</Text>
+                <ArgonautName key={argonaut.id} argonaut={argonaut} number={index + 1} large={!small} />
+                <View style={styles.identityActions}><Button quiet label="Choose Argonaut colour" onPress={() => setColourOpen(true)} style={styles.colourButton}>
+                  <View style={[styles.colourDot, { backgroundColor: argonaut.colour }]} /><Text style={styles.colourLabel}>Identity colour</Text><Chevron direction="down" />
+                </Button></View>
+              </View>
+              <View style={[styles.identityStats, identityStacked && styles.identityStatsNarrow]}><StatsSwitcher argonaut={argonaut} onCounterChange={counterChange} /></View>
+            </View>
+            <StatusBar key={`status:${party.id}:${argonaut.id}`} argonaut={argonaut} />
+            <View testID="argonaut-colour-separator" accessibilityLabel={`Argonaut colour ${argonaut.colour}`} style={[styles.separator, { backgroundColor: argonaut.colour }]} />
+            <EquipmentArea positions={positions} argonaut={argonaut} headingAction={<Button quiet label="Refresh Gear"
+              onPress={() => dispatch({ type: 'refresh-gear', argonautId: argonaut.id })} style={styles.refreshGear} />} />
+            <ArgonautNotes key={`notes:${party.id}:${argonaut.id}`} argonaut={argonaut} />
           </View>
           <View style={[styles.referenceColumn, narrow && styles.fullColumn]}>
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
               {(!titan || hiddenTitan) && referenceLinks}
-              {titan && titanCard ? <SwipeGuard>{hiddenTitan ? <Pressable accessibilityRole="button" accessibilityLabel="Edit selected Titan" onPress={() => setTitanOpen(true)}>
-                <ReferenceCard card={titanCard} face={titan} revealable={false} />
-              </Pressable> : <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.exhausted || argonaut.titan?.discarded)} showTables={false} revealable={false}
-                titanHeaderActions={referenceLinks} onSelectTitan={() => setTitanOpen(true)} />}</SwipeGuard>
-                : <Text style={styles.referenceHint}>Choose a Titan to view its abilities, or set a Pattern override in a table.</Text>}
+              {titan && titanCard ? <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.exhausted || argonaut.titan?.discarded)} showTables={false} revealable={false}
+                titanHeaderActions={referenceLinks} />
+                : <Text style={styles.referenceHint}>Choose a Titan in Argonaut Options to view its abilities, or set a Pattern override in a table.</Text>}
               {argonaut.titan?.discarded && <Text style={styles.referenceHint}>Discarded</Text>}
               {argonaut.titan && <SwipeGuard><View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
                 {!argonaut.titan.discarded && (argonaut.titan.exhausted || titan && !hiddenTitan && canExhaustCard(titan)) && <Button quiet label={argonaut.titan.exhausted ? 'Ready Titan' : 'Exhaust Titan'} onPress={() => dispatch({ type: 'titan-exhausted', argonautId: argonaut.id, exhausted: !argonaut.titan?.exhausted })} />}
@@ -191,9 +140,6 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
               </View></SwipeGuard>}
             </View>
             <MemoryArea argonaut={argonaut} />
-            <TokenArea argonaut={argonaut} />
-            <ConditionArea argonaut={argonaut} />
-            <AfflictionArea key={`${party.id}:${argonaut.id}`} argonaut={argonaut} />
             <SharedResources owner={argonaut.id} />
           </View>
         </View></GateAssistance></CombatStats>
@@ -202,20 +148,17 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
     </SwipeSurface>
     <DashboardMenu visible={menuOpen} compact={small} onClose={() => setMenuOpen(false)} onBrowseGear={() => {
       setMenuOpen(false); router.push('/gear');
-    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} onRules={() => { setMenuOpen(false); setRulesOpen(true); }} onClearAll={() => {
+    }} onProfiles={() => { setMenuOpen(false); router.push('/profiles'); }} onClearAll={() => {
       setMenuOpen(false); setClearing({ partyId: party.id, argonautId: argonaut.id, campaignName: profile.name });
     }} />
+    {optionsOpen && <ArgonautOptions key={`${party.id}:${argonaut.id}`} argonaut={argonaut} onClose={() => setOptionsOpen(false)}
+      onRules={() => { setOptionsOpen(false); setRulesOpen(true); }} />}
     {rulesOpen && <RulesAssistanceSheet argonaut={argonaut} onClose={() => setRulesOpen(false)} />}
     {clearing && <TidesOfFateDialog campaignName={clearing.campaignName} onClose={() => setClearing(null)} onConfirm={() => {
       dispatch({ type: 'clear-all', argonautId: clearing.argonautId, partyId: clearing.partyId, confirmed: true }); setClearing(null);
     }} />}
     {colourOpen && <ColourPicker colour={argonaut.colour} onClose={() => setColourOpen(false)} onSelect={colour => {
       dispatch({ type: 'colour', argonautId: argonaut.id, colour }); setColourOpen(false);
-    }} />}
-    {titanOpen && <TitanPicker selected={argonaut.titan} onClose={() => setTitanOpen(false)} onSelect={reference => {
-      dispatch({ type: 'titan', argonautId: argonaut.id, titan: reference ? argonaut.titan?.definitionId === reference.definitionId
-        ? { ...argonaut.titan, faceId: reference.faceId }
-        : { id: `${argonaut.id}:titan`, ...reference, exhausted: false, enabledEffectIds: [], counters: {} } : null }); setTitanOpen(false);
     }} />}
     {overflow && <OverflowDialog name={overflow[0].toUpperCase() + overflow.slice(1)} value={argonaut.counters[overflow]} onClose={() => setOverflow(null)} onConfirm={value => {
       dispatch({ type: 'counter', argonautId: argonaut.id, counter: overflow, value, confirmOverflow: true }); setOverflow(null);
@@ -232,32 +175,25 @@ const styles = StyleSheet.create({
   menuIcon: { gap: 4 }, menuLine: { width: 20, height: 2, backgroundColor: '#F1EBDE', borderRadius: 1 },
   content: { width: '100%', paddingHorizontal: 32 },
   chapter: { marginTop: 26, marginBottom: 16, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
-  eyebrow: { color: theme.muted, fontSize: 10, fontWeight: '700', letterSpacing: 1.6 }, chapterMeta: { color: theme.muted, fontSize: 11 },
-  navigation: { flexDirection: 'row', alignItems: 'center', marginBottom: 28 },
+  eyebrow: { color: theme.muted, fontSize: 10, fontWeight: '700', letterSpacing: 1.6 },
+  navigation: { flexDirection: 'row', alignItems: 'center', marginBottom: 24 },
   tabs: { flex: 1, flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: theme.line },
   tab: { minHeight: 60, paddingVertical: 12, paddingHorizontal: 12, flexDirection: 'row', alignItems: 'center', gap: 10, borderBottomWidth: 2, borderBottomColor: 'transparent' },
   selectedTab: { borderBottomColor: theme.ink }, tabBadge: { width: 26, height: 26, borderRadius: 13, alignItems: 'center', justifyContent: 'center' }, tabNumber: { color: theme.white, fontSize: 11, fontWeight: '600' }, tabLabel: { flex: 1, color: theme.muted, fontSize: 13 }, selectedLabel: { color: theme.ink, fontWeight: '600' },
   smallTab: { paddingHorizontal: 0, justifyContent: 'center' },
-  refreshGear: { backgroundColor: theme.paper },
-  identity: { flexDirection: 'row', gap: 32, alignItems: 'center' }, identityNarrow: { flexDirection: 'column', alignItems: 'stretch', gap: 24 },
-  identityName: { width: 255 }, identityNameNarrow: { width: '100%' },
-  identityActions: { alignItems: 'flex-start', marginTop: 12 }, colourButton: { flexDirection: 'row', gap: 9, borderWidth: 0, paddingHorizontal: 0, minHeight: 44 }, colourDot: { width: 14, height: 14, borderRadius: 7 }, colourLabel: { color: theme.muted, fontSize: 12 },
-  identityStats: { flex: 1, minWidth: 0, flexDirection: 'row', alignItems: 'center', gap: 24 },
-  identityStatsFull: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' }, identityStatsStacked: { flexDirection: 'column', alignItems: 'stretch', gap: 16 },
-  skills: { flex: 1, minWidth: 0, flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-  skillsStacked: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' }, skillCell: { flexGrow: 1, flexShrink: 0, flexBasis: '30%', minWidth: 110 },
-  titanBar: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: 16, marginTop: 22, marginBottom: 26 }, titanBarSmall: { flexWrap: 'wrap' },
-  modifiers: { flex: 1, minWidth: 320 }, modifiersSmall: { flexGrow: 1, flexShrink: 0, flexBasis: '100%', minWidth: 0 },
-  titanChoice: { flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 16, flexShrink: 1 }, titanButton: { flexDirection: 'row', gap: 12, backgroundColor: theme.paper, paddingHorizontal: 14, flexShrink: 1 }, titanName: { color: theme.ink, fontSize: 13, flexShrink: 1 }, titanMeta: { color: theme.muted, fontSize: 11 },
-  titanStatus: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 6, flexShrink: 1, maxWidth: '100%' },
-  conditionLabel: { flexDirection: 'row', alignItems: 'center', gap: 6, borderWidth: 1, borderColor: '#000000', backgroundColor: '#70429B', borderRadius: 3, paddingHorizontal: 8, paddingVertical: 4, maxWidth: '100%' },
-  conditionText: { color: '#FFFFFF', fontSize: 12, lineHeight: 18, fontWeight: '600', flexShrink: 1 },
-  separator: { height: 4, width: '100%' },
-  board: { width: '100%', paddingHorizontal: 32, paddingTop: 26, flexDirection: 'row', gap: 32 }, boardNarrow: { flexDirection: 'column', gap: 32 },
-  equipmentColumn: { flexGrow: 1.6, flexShrink: 1, flexBasis: 0, minWidth: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },
+  optionsButton: { flexDirection: 'row', gap: 10, backgroundColor: theme.paper, paddingHorizontal: 10, maxWidth: 180 },
+  optionsIcon: { gap: 4 }, optionsLine: { width: 16, height: 1, backgroundColor: theme.ink }, optionsLabel: { color: theme.ink, fontSize: 12, flexShrink: 1 },
+  campaignHeading: { flex: 1, gap: 8 }, refreshGear: { backgroundColor: theme.paper, paddingHorizontal: 10 },
+  identity: { flexDirection: 'row', gap: 16, alignItems: 'flex-start' }, identityNarrow: { flexDirection: 'column', alignItems: 'stretch', gap: 20 },
+  identityName: { width: '34%', minWidth: 260, maxWidth: 460, flexShrink: 0, paddingTop: 10 },
+  identityNameNarrow: { width: '100%', minWidth: 0, maxWidth: '100%' },
+  identityActions: { alignItems: 'flex-start', marginTop: 12 }, colourButton: { flexDirection: 'row', gap: 9, borderWidth: 0, paddingHorizontal: 0, minHeight: 44 }, colourDot: { width: 14, height: 14, borderRadius: 3 }, colourLabel: { color: theme.muted, fontSize: 12 },
+  identityStats: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, alignSelf: 'stretch' },
+  identityStatsNarrow: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto' },
+  separator: { height: 4, width: '100%', marginBottom: 16 },
+  board: { width: '100%', paddingHorizontal: 32, flexDirection: 'row', gap: 24, alignItems: 'flex-start' }, boardNarrow: { flexDirection: 'column', gap: 32 },
+  equipmentColumn: { flexGrow: 1.85, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 0 }, referenceColumn: { flexGrow: 1, flexShrink: 1, flexBasis: 0, minWidth: 0, gap: 24 },
   fullColumn: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' },
-  triskelionArea: { flex: 0.8, minWidth: 288 }, triskelionStacked: { flexGrow: 0, flexShrink: 0, flexBasis: 'auto', width: '100%' },
-  triskelion: { gap: 8 }, counters: { flexDirection: 'row', gap: 8 }, dangerRow: { flexDirection: 'row', justifyContent: 'center' }, dangerCell: { width: '50%', flexDirection: 'row', paddingHorizontal: 2 },
   referenceLinks: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 }, referenceButton: { backgroundColor: theme.panel, flexDirection: 'row', paddingHorizontal: 8, gap: 6 }, referenceLabel: { fontSize: 12, color: theme.ink }, referenceHint: { fontSize: 10, color: theme.muted, textAlign: 'center', lineHeight: 16 },
   footer: { width: '100%', paddingHorizontal: 32, flexDirection: 'row', justifyContent: 'space-between', paddingTop: 30, paddingBottom: 18, gap: 16 }, footerText: { color: theme.muted, fontSize: 9, letterSpacing: 1.3 },
   mobilePadding: { paddingHorizontal: 16 },

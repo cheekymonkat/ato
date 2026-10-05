@@ -14,6 +14,7 @@ import type { CardDefinition, CardFace } from '../domain/cards';
 import type { CardReference, MemoryProgress } from '../domain/party';
 import type { PatternKind } from '../domain/pattern-table';
 import { supportsPattern } from '../domain/references';
+import { dreamwalkerVariants, isDreamwalker, titanDisplayName, titanSelectionCards } from '../domain/titan-selection';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 
@@ -29,7 +30,9 @@ export function ReferencePicker({ family, tableKind, selected, onSelect, onClose
   const [searching, setSearching] = useState(!selected);
   const [removing, setRemoving] = useState(false);
   const eligible = (face: CardFace) => isFaceAvailableInCycle(face, cycle) && face.family === family && (!tableKind || supportsPattern(face, tableKind));
-  const matches = catalogue.search({ family, query, campaignCycle: cycle }).filter(card => card.faces.some(face => eligible(face)));
+  const titanCards = family === 'Titan' ? catalogue.search({ family }) : [];
+  const matches = (family === 'Titan' ? titanSelectionCards(titanCards, cycle, query, selected) : catalogue.search({ family, query, campaignCycle: cycle }))
+    .filter(card => card.faces.some(face => eligible(face)));
   const card = candidate && catalogue.get(candidate.definitionId), face = candidate && catalogue.getFace(candidate.definitionId, candidate.faceId);
   const hidden = card && spoilers.hidden(card);
   const blocked = candidate && unavailable?.(candidate);
@@ -37,7 +40,8 @@ export function ReferencePicker({ family, tableKind, selected, onSelect, onClose
   const lastPage = Math.max(0, Math.ceil(matches.length / 6) - 1), currentPage = Math.min(page, lastPage);
   const label = tableKind ? `${tableKind} Pattern` : family;
   const memory = family === 'Mnemos' || family === 'Fated Mnemos';
-  const safeName = (definition: CardDefinition, side: CardFace) => spoilers.hidden(definition) ? secretLabel(definition) : side.name;
+  const safeName = (definition: CardDefinition, side: CardFace) => spoilers.hidden(definition) ? secretLabel(definition) : titanDisplayName(side);
+  const variants = family === 'Titan' && isDreamwalker(face || undefined) ? dreamwalkerVariants(titanCards, cycle, candidate) : [];
   const selectedCard = selected && catalogue.get(selected.definitionId), selectedFace = selected && catalogue.getFace(selected.definitionId, selected.faceId);
   const removeButton = selected && <CardActionButton action={family === 'Pattern' ? 'Use Titan default' : 'Remove'}
     cardName={family === 'Pattern' ? undefined : selectedCard && selectedFace ? safeName(selectedCard, selectedFace) : 'unavailable card'}
@@ -49,9 +53,17 @@ export function ReferencePicker({ family, tableKind, selected, onSelect, onClose
   return <Sheet wide visible title={`Choose ${label}`} subtitle="Select a card to review its full details." onClose={onClose}
     scrollKey={searching ? `results:${currentPage}` : 'review'}>
     {!searching && card && face ? <>
+      {variants.length > 1 && <View style={styles.variants}>
+        <Text style={styles.meta}>Dreamwalker variant</Text>
+        <View style={styles.row}>{variants.map(variant => {
+          const side = variant.faces.find(face => eligible(face))!;
+          return <Button key={variant.id} quiet role="radio" selected={variant.id === card.id} label={`Dreamwalker · ${side.cycle}`}
+            onPress={() => setCandidate({ definitionId: variant.id, faceId: side.id })} />;
+        })}</View>
+      </View>}
       <ReferenceCard card={card} face={face} memoryProgress={candidate?.definitionId === selected?.definitionId ? selectedMemoryProgress : undefined} />
       <CardActionRow>
-        {otherFace && !hidden && <CardActionButton action="Flip" cardName={face.name} onPress={() => setCandidate({ definitionId: card.id, faceId: otherFace.id })} />}
+        {otherFace && !hidden && <CardActionButton action="Flip" cardName={safeName(card, face)} onPress={() => setCandidate({ definitionId: card.id, faceId: otherFace.id })} />}
         <CardActionButton action="Change card" onPress={() => setSearching(true)} />
         {removeButton}
       </CardActionRow>
@@ -91,4 +103,5 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 }, meta: { color: theme.muted, fontSize: 12, lineHeight: 20 },
   result: { gap: 8, borderBottomWidth: 1, borderColor: theme.line, paddingBottom: 16 },
   warning: { color: theme.danger, fontSize: 12, lineHeight: 20 }, unavailable: { opacity: 0.6 },
+  variants: { gap: 8 },
 });

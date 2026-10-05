@@ -1993,7 +1993,7 @@
                     "abilityText": [
                       {
                         "type": "keyword",
-                        "value": "Auto-break 1"
+                        "value": "Auto-break 2 instead"
                       }
                     ]
                   }
@@ -12878,7 +12878,7 @@
                     "abilityText": [
                       {
                         "type": "keyword",
-                        "value": "Inspire 1"
+                        "value": "Inspire 2 instead"
                       }
                     ]
                   }

@@ -50,6 +50,14 @@ export function PartyProfiles() {
         {mismatch && <Text style={styles.text}>This party uses a different catalogue version. Slot capacity is recalculated using the installed catalogue.</Text>}
         {problems.map((problem, index) => <Text key={index} style={styles.error}>{problem}</Text>)}
         {!!problems.length && <Text style={styles.text}>All saved records have been retained. Export a backup before making changes to unresolved cards.</Text>}
+        {mismatch && <>
+          <Button quiet label="Acknowledge catalogue update" disabled={busy || state.preview || problems.length > 0} onPress={() => void asyncAct(async () => {
+            state.acknowledgeCatalogue(state.profile.id, state.profile.party.catalogueVersion);
+            await state.flush();
+            setMessage('Catalogue update acknowledged. Your campaign progress is unchanged.');
+          })} />
+          {!!problems.length && <Text style={styles.detail}>Resolve the listed card issues to acknowledge this update.</Text>}
+        </>}
       </View>}
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Your parties</Text>
         {state.workspace.profiles.map(profile => <View key={profile.id} style={styles.profileRow}>

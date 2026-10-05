@@ -9,6 +9,7 @@ import { RemovalConfirmation } from '../components/RemovalConfirmation';
 import type { Argonaut } from '../domain/party';
 import type { PatternKind } from '../domain/pattern-table';
 import { overrideKey, resolveTable } from '../domain/references';
+import { titanDisplayName } from '../domain/titan-selection';
 import { ReferencePicker } from '../references/ReferencePicker';
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
@@ -26,7 +27,7 @@ export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind
   if (choosing) return <ReferencePicker family="Pattern" tableKind={kind} selected={override} onClose={() => setChoosing(false)} onSelect={reference => {
     dispatch({ type: 'table-override', argonautId: argonaut.id, kind, reference }); setChoosing(false);
   }} />;
-  return <Sheet wide visible title={`${kind} reference`} subtitle={hidden ? 'Unrevealed card' : resolved.face?.name || 'Reference unavailable'} onClose={onClose}>
+  return <Sheet visible maxWidth={420} title={`${kind} reference`} subtitle={hidden ? 'Unrevealed card' : resolved.face ? titanDisplayName(resolved.face) : 'Reference unavailable'} onClose={onClose}>
     <Text style={{ color: theme.muted, fontSize: 13 }}>{override ? 'Pattern override' : 'Titan default'}</Text>
     {resolved.message ? <Text style={{ color: theme.danger, lineHeight: 22 }}>{resolved.message}</Text>
       : resolved.source === 'pattern' || hidden ? card && resolved.face && <ReferenceCard card={card} face={resolved.face} />
