@@ -19,7 +19,7 @@ interface PartyContextValue {
   party: Party; dispatch: Dispatch<PartyAction>; workspace: Workspace; profile: PartyProfile;
   saveStatus: SaveStatus; saveError: string | null; preview: boolean;
   flush: () => Promise<void>; switchProfile: (id: string) => void;
-  createProfile: (name: string, cycle: CampaignCycle) => string; renameProfile: (name: string) => void;
+  createProfile: (name: string, cycle: CampaignCycle, inventoryTracking?: boolean) => string; renameProfile: (name: string) => void;
   acknowledgeCatalogue: (profileId: string, expectedVersion: string) => void;
   addImport: (profile: PartyProfile, name: string) => string;
   previousSnapshot: () => Promise<Workspace | null>; restoreSnapshot: (snapshot: Workspace) => Promise<void>;
@@ -111,8 +111,8 @@ export function PartyProvider({ children }: { children: ReactNode }) {
     if (!current.profiles.some(profile => profile.id === id)) throw new Error('Profile no longer exists.');
     exitPreview(); update({ ...current, activeProfileId: id });
   }, [exitPreview, update]);
-  const createProfile = useCallback((name: string, cycle: CampaignCycle) => {
-    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version, cycle);
+  const createProfile = useCallback((name: string, cycle: CampaignCycle, inventoryTracking = false) => {
+    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version, cycle, inventoryTracking);
     exitPreview(); update({ ...current, activeProfileId: profile.id, profiles: [...current.profiles, profile] });
     return profile.party.activeArgonautId;
   }, [exitPreview, update]);

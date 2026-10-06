@@ -24,11 +24,12 @@ test('afflictions follow campaign cycle, allow multiple unique selections and ed
   assert.equal(before.argonauts[0].afflictions, undefined);
   assert.equal(add(party, 'mazetouched'), party);
   assert.equal(partyReducer(party, { type: 'add-affliction', partyId: 'other', argonautId: 'a', id: 'mazetouched' }), party);
-  party = partyReducer(party, { type: 'campaign-cycle', argonautId: 'a', cycle: 3 });
+  for (const expectedCycle of [1, 2]) party = partyReducer(party, { type: 'advance-cycle', partyId: party.id, argonautId: 'a', expectedCycle, confirmed: true });
   party = add(add(party, 'black-breath'), 'fractured');
   assert.deepEqual(afflictionRecords(party.argonauts[0]).map(record => record.name), ['Mazetouched', 'Black Breath', 'Fractured']);
   assert.equal(add(party, 'abyss-curse'), party);
   const lower = partyReducer(party, { type: 'campaign-cycle', argonautId: 'a', cycle: 1 });
+  assert.equal(lower, party, 'A campaign cannot go back a cycle');
   assert.deepEqual(lower.argonauts[0].afflictions, party.argonauts[0].afflictions);
 });
 
@@ -47,7 +48,7 @@ test('affliction removal requires confirmation and the captured campaign; cleanu
 test('afflictions round-trip with backups and older saves; malformed and duplicate selections are rejected', () => {
   const older = fresh();
   assert.equal(parseParty(older).argonauts[0].afflictions, undefined);
-  let party = partyReducer(older, { type: 'campaign-cycle', argonautId: 'a', cycle: 5 });
+  let party = { ...older, campaignCycle: 5 };
   for (const affliction of AFFLICTIONS) party = add(party, affliction.id);
   const loaded = readBackup(exportProfile({ id: party.id, name: 'Voyage', party }), catalogue).profile.party;
   assert.deepEqual(afflictionRecords(loaded.argonauts[0]), AFFLICTIONS);

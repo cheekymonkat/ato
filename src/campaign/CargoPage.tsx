@@ -16,7 +16,6 @@ import { useParty } from '../state/PartyProvider';
 import { CampaignCardVisibility, useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { CampaignPage, campaignStyles as styles } from './CampaignPage';
-import { InventorySettings } from './InventorySettings';
 
 export function CargoPage() {
   const { party } = useParty();
@@ -30,6 +29,7 @@ function CargoBody() {
   const [query, setQuery] = useState(''), [page, setPage] = useState(0), [adding, setAdding] = useState(false);
   const [search, setSearch] = useState(''), [searchPage, setSearchPage] = useState(0), [selected, setSelected] = useState<{ id: string; face: string } | null>(null);
   const [removing, setRemoving] = useState<{ id: string; name: string } | null>(null);
+  const [added, setAdded] = useState<string | null>(null);
   const inventory = inventoryFor(party, catalogue), cycle = campaignCycle(party), cardWidth = Math.max(160, Math.min(250, width - 100));
   const owned = Object.keys(inventory.gear).filter(id => inventory.gear[id] > 0 &&
     (!query.trim() || [id, ...(catalogue.get(id)?.faces.map(face => face.name) ?? []), ...(catalogue.get(id)?.printedIds ?? [])].join(' ').toLowerCase().includes(query.trim().toLowerCase())))
@@ -39,6 +39,7 @@ function CargoBody() {
   const searchPageCount = Math.max(1, Math.ceil(matches.length / 12)), currentSearchPage = Math.min(searchPage, searchPageCount - 1);
   const card = selected && catalogue.get(selected.id), face = card?.faces.find(face => face.id === selected?.face), hidden = card && spoilers.hidden(card);
   const notices = inventoryNotices(party, catalogue);
+  function openCatalogue() { setAdding(true); setSelected(null); setAdded(null); }
   function adjust(id: string, delta: -1 | 1, confirmed = false) {
     dispatch({ type: 'inventory-quantity', partyId: party.id, argonautId: party.activeArgonautId, definitionId: id, delta, confirmed });
   }
@@ -49,8 +50,7 @@ function CargoBody() {
   const faceForCard = (card: CardDefinition) => card.faces.find(face => isFaceAvailableInCycle(face, cycle) && face.name.toLowerCase().includes(search.trim().toLowerCase()))
     ?? card.faces.find(face => isFaceAvailableInCycle(face, cycle)) ?? card.faces[0];
   return <CampaignPage title="Cargo" subtitle="Acquired Gear is shared across all four Argonauts. Removing equipment from a loadout returns its copy here.">
-    <InventorySettings />
-    <View style={styles.row}><Button label="Add acquired Gear" onPress={() => { setAdding(true); setSelected(null); }} /><Button quiet label="Browse catalogue" onPress={() => router.push('/gear')} /></View>
+    <View style={styles.row}><Button label="Add acquired Gear" onPress={openCatalogue} /><Button quiet label="Browse catalogue" onPress={openCatalogue} /></View>
     {notices.length > 0 && <View style={styles.panel}><Text style={styles.heading}>Inventory review</Text>{notices.map(notice => <Text key={notice} style={styles.warning}>{notice}</Text>)}</View>}
     <TextInput accessibilityLabel="Search acquired Gear" value={query} onChangeText={value => { setQuery(value); setPage(0); }} placeholder="Search acquired Gear by name or ID" style={styles.input} />
     <Text accessibilityLiveRegion="polite" style={styles.meta}>{owned.length} acquired Gear types · Page {currentPage + 1} of {pageCount}</Text>
@@ -73,17 +73,20 @@ function CargoBody() {
     {pageCount > 1 && <View style={styles.row}><Button quiet label="Previous page" disabled={currentPage === 0} onPress={() => setPage(currentPage - 1)} /><Button quiet label="Next page" disabled={currentPage >= pageCount - 1} onPress={() => setPage(currentPage + 1)} /></View>}
     <Sheet visible={adding} wide maxWidth={900} scrollKey={selected?.id ?? `results:${currentSearchPage}`} title="Add acquired Gear" subtitle={`Available through Cycle ${cycle}`} onClose={() => setAdding(false)}>
       {card && face ? <>
-        {hidden ? <SecretCard card={card} onReveal={() => spoilers.reveal(card.id)} /> : face.kind === 'gear' && <View style={{ alignItems: 'center' }}><GearCard face={face} width={cardWidth} preview /></View>}
         <Text style={styles.body}>{gearStock(party, card.id, catalogue).owned} acquired · {gearStock(party, card.id, catalogue).allocated} allocated</Text>
         <Text style={styles.meta}>Printed supply: {physicalGearLimit(card, catalogue) ?? 'verify manually'}</Text>
-        <Button label="Add one acquired copy" disabled={Boolean(hidden) || !canAcquire(card)} onPress={() => adjust(card.id, 1)} />
+        <Button label="Add one acquired copy" disabled={Boolean(hidden) || !canAcquire(card)} onPress={() => { adjust(card.id, 1); setAdded(face.name); }} />
+        {added && <Text accessibilityLiveRegion="polite" style={styles.body}>Added {added} to Cargo.</Text>}
+        {hidden && <Text style={styles.meta}>Reveal this card below before adding an acquired copy.</Text>}
         {!canAcquire(card) && <Text style={styles.meta}>All printed copies are already recorded, or the card is outside this cycle.</Text>}
+        {hidden ? <SecretCard card={card} onReveal={() => spoilers.reveal(card.id)} /> : face.kind === 'gear' && <View style={{ alignItems: 'center' }}><GearCard face={face} width={cardWidth} preview /></View>}
         {card.faces.filter(side => side.id !== face.id).map(side => <Button key={side.id} quiet label="View other face" onPress={() => setSelected({ id: card.id, face: side.id })} />)}
-        <Button quiet label="Choose another Gear card" onPress={() => setSelected(null)} />
+        <Button quiet label="Choose another Gear card" onPress={() => { setSelected(null); setAdded(null); }} />
       </> : <>
+        <Text style={styles.body}>Search the catalogue, select a card, then choose “Add one acquired copy” to record it in Cargo.</Text>
         <TextInput accessibilityLabel="Search Gear to acquire" value={search} onChangeText={value => { setSearch(value); setSearchPage(0); }} placeholder="Search name or ID" style={styles.input} />
         <Text style={styles.meta}>{matches.length} matching cards · Page {currentSearchPage + 1} of {searchPageCount}</Text>
-        <GearResults selecting cards={matches.slice(currentSearchPage * 12, (currentSearchPage + 1) * 12)} width={cardWidth} faceForCard={faceForCard} onSelect={(card, face) => setSelected({ id: card.id, face: face.id })} />
+        <GearResults selecting cards={matches.slice(currentSearchPage * 12, (currentSearchPage + 1) * 12)} width={cardWidth} faceForCard={faceForCard} onSelect={(card, face) => { setSelected({ id: card.id, face: face.id }); setAdded(null); }} />
         {matches.length === 0 && <Text style={styles.body}>No matching Gear in this cycle.</Text>}
         {searchPageCount > 1 && <View style={styles.row}><Button quiet label="Previous results" disabled={currentSearchPage === 0} onPress={() => setSearchPage(currentSearchPage - 1)} /><Button quiet label="Next results" disabled={currentSearchPage >= searchPageCount - 1} onPress={() => setSearchPage(currentSearchPage + 1)} /></View>}
       </>}

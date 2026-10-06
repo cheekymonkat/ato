@@ -1,4 +1,4 @@
-import { gearStock, inventoryAllowsEquipment, inventoryFor } from '../domain/inventory';
+import { equipmentSupplyIssue, gearStock, inventoryFor, physicalGearLimit } from '../domain/inventory';
 import { router } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, useWindowDimensions, View } from 'react-native';
@@ -56,9 +56,10 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
     instanceId: reuse ? instance!.id : newId, reuse, units: selectedUnits, overrideReason: override ? reason : undefined } : null;
   const plan = request ? planEquipment(argonaut, request, catalogue) : null;
   const available = isFaceAvailableInCycle(face, cycle);
-  const inventoryAllowed = !plan?.next || inventoryAllowsEquipment(party, argonaut, plan.next, catalogue);
+  const supplyIssue = plan?.next ? equipmentSupplyIssue(party, argonaut, plan.next, catalogue) : null;
   const stock = selected && gearStock(party, selected.id, catalogue);
-  const canSave = Boolean(inventoryAllowed && available && plan?.next && !hidden && (!override || reason.trim()));
+  const printedLimit = selected && physicalGearLimit(selected, catalogue);
+  const canSave = Boolean(!supplyIssue && available && plan?.next && !hidden && (!override || reason.trim()));
   const matches = catalogue.search({ family: 'Gear', query, campaignCycle: cycle }).filter(card => (!party.inventory?.enforce || card.id === instance?.definitionId || gearStock(party, card.id, catalogue).available > 0) && card.faces.some(face =>
     isFaceAvailableInCycle(face, cycle) && (allGear || !target || slotOptions(face, titanLoadoutRules(argonaut, catalogue)).some(option => option.kind === target.kind) && meetsSlotRestriction(face, target))));
   const lastPage = Math.max(0, Math.ceil(matches.length / 12) - 1), currentPage = Math.min(page, lastPage);
@@ -124,8 +125,9 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
         </View>}
       </>}
       {party.inventory?.enforce && stock && <Text style={styles.meta}>{stock.owned} acquired · {stock.allocated} allocated · {stock.available} available in campaign inventory.</Text>}
-      {!inventoryAllowed && <Text style={styles.warning}>No acquired copy is available. Add acquired Gear in Cargo or free a copy from another Argonaut.</Text>}
-      {!inventoryAllowed && <Button quiet label="Manage Cargo" onPress={() => router.push('/cargo')} />}
+      {!party.inventory?.enforce && stock && printedLimit != null && <Text style={styles.meta}>{printedLimit} printed {printedLimit === 1 ? 'copy' : 'copies'} · {stock.allocated} allocated across all Argonauts.</Text>}
+      {supplyIssue && <Text style={styles.warning}>{supplyIssue.message}</Text>}
+      {supplyIssue?.kind === 'inventory' && <Button quiet label="Manage Cargo" onPress={() => router.push('/cargo')} />}
       {!available && <Text style={styles.warning}>This card is unavailable in campaign Cycle {cycle}. Change the cycle on the campaign page to equip it.</Text>}
       <Button label={override ? 'Save with override' : reuse ? 'Save placement' : 'Equip card'} disabled={!canSave} onPress={() => {
         if (!request || !plan?.next) return;

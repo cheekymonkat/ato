@@ -17,6 +17,7 @@ for colour in ('Red', 'Black', 'White', 'Mortal'):
         for prefix in ('', 'Reversed'):
             NAMES.add(f'{prefix}{colour}{kind}Die')
 NAMES.update({'EvasionReroll', 'PowerReroll', 'LaserResistance', 'MicrowaveResistance', 'InvertedDoom', 'InvertedProgress'})
+NAMES.update({'StructuralTech', 'CombatTech', 'City', 'ArgoKnowledge', 'ArgoFate'})
 
 
 def visit(value):
@@ -42,6 +43,8 @@ for card in catalogue['cards']:
             visit(face['data'])
             for stat in face['data']['defensiveStatistics']:
                 NAMES.add(ALIASES.get(stat.get('type'), stat.get('type', '')))
+        elif face['family'] == 'Technology':
+            visit(face['data'])
 for filename in ('keywords.json', 'titanAbilityData.json', 'primordialAbilityData.json'):
     visit(json.loads((ROOT / 'data/reference' / filename).read_text()))
 

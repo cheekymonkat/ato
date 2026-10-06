@@ -10,7 +10,7 @@ review; browser and device interaction checks remain pending.
 
 Select a memory card or empty position on the main board. The memory editor
 opens for that Argonaut and position. **Choose card** / **Change card** opens
-a searchable catalogue with complete card details, limited to the campaign cycle and earlier cycles. Set or edit the cycle on the campaign page. Select a
+a searchable catalogue with complete card details, limited to the campaign cycle and earlier cycles. Choose a starting cycle at campaign creation; advance one cycle at a time on the campaign page after confirmation. Select a
 card to hide results and review it, then choose **Use this Mnemos** or **Use this
 Fated Mnemos**. Secret cards require explicit reveal. Removal stays inside the
 editor; exhaustion controls appear below cards on the main board.

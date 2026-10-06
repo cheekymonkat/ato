@@ -131,8 +131,11 @@ selections of the same Argo-bred type trigger a warning. Dreamwalker variants
 can repeat across Argonauts. Enable
 **Use campaign inventory for equipment and Titan selection** after reviewing the
 acquired copies; existing loadouts seed the inventory and remain intact. Turning
-tracking off keeps inventory records. Map, Technology and Timeline are planned
-feature pages for later additions.
+tracking off keeps inventory records. **Technology** now has Project List,
+Abilities and Technologies tabs. Research checks supported prerequisites; Core
+cards for the selected cycle are always available in Abilities. Cards show both sides, full benefits and
+recipes using the ATCC teal design. See [Technology notes](docs/TECHNOLOGY.md).
+Map and Timeline are planned feature pages for later additions.
 [Stage 9 behavior and verification](docs/STAGE_9_CAMPAIGN.md) explain ownership,
 printed-copy limits and save compatibility.
 

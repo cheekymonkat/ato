@@ -6,8 +6,11 @@ export type CampaignCycle = typeof CAMPAIGN_CYCLES[number];
 export function isCampaignCycle(value: unknown): value is CampaignCycle {
   return CAMPAIGN_CYCLES.some(cycle => cycle === value);
 }
-/** Older saves retain their data and use Cycle 1 until edited on the campaign page. */
+/** Older saves retain their data and use Cycle 1 until advanced on the campaign page. */
 export function campaignCycle(party: Party): CampaignCycle { return party.campaignCycle ?? 1; }
+export function nextCampaignCycle(cycle: CampaignCycle): CampaignCycle | null {
+  return isCampaignCycle(cycle) ? CAMPAIGN_CYCLES[CAMPAIGN_CYCLES.indexOf(cycle) + 1] ?? null : null;
+}
 
 const romanCycles: Record<string, CampaignCycle> = { I: 1, II: 2, III: 3, IV: 4, V: 5 };
 /** Tutorial and Mnestis Theatre are not numbered campaign cycles. */

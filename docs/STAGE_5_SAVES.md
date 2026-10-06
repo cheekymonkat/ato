@@ -23,7 +23,7 @@ and backup actions.
 Open the top-right menu and choose **Campaigns & backups** to:
 
 - Create, name and switch between campaigns, each containing four Argonauts and a chosen Cycle 1–5 (default 1).
-- Rename the current party and edit its cycle with **Save campaign cycle**. Cycle changes update all card pickers and token visibility for that campaign, while preserving existing card assignments and token amounts.
+- Rename the current party or use **Advance cycle** to move to the next cycle. A warning and checked acknowledgement are required; campaigns cannot go backwards or skip cycles. Cycle 5 is final. Advancement updates card pickers, Core technologies and token visibility while preserving existing cards, inventory, stats and token amounts. New campaigns can start at any Cycle 1–5.
 - Export the complete current party as JSON. Web downloads a file; iOS and
   Android open the device share sheet so the player can choose its destination.
 - Import a JSON file, or paste JSON, validate it and review the four Argonauts

@@ -3,9 +3,11 @@ import { useRef, useState } from 'react';
 import { ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
-import { campaignCycle } from '../domain/campaign';
+import { campaignCycle, nextCampaignCycle } from '../domain/campaign';
 import type { CampaignCycle } from '../domain/campaign';
 import { CampaignCycleSelector } from './CampaignCycleSelector';
+import { AdvanceCycleConfirmation } from './AdvanceCycleConfirmation';
+import { InventorySettings } from './InventorySettings';
 import { Button } from '../components/Button';
 import { useParty } from '../state/PartyProvider';
 import { downloadBackup, pickBackup } from '../storage/files';
@@ -18,8 +20,10 @@ import { theme } from '../theme/tokens';
 export function PartyProfiles() {
   const state = useParty();
   const scroll = useRef<ScrollView>(null);
-  const [cycle, setCycle] = useState(campaignCycle(state.profile.party));
+  const cycle = campaignCycle(state.profile.party), nextCycle = nextCampaignCycle(cycle);
+  const [advance, setAdvance] = useState<{ partyId: string; argonautId: string; expectedCycle: CampaignCycle } | null>(null);
   const [newCycle, setNewCycle] = useState<CampaignCycle>(1);
+  const [newInventoryTracking, setNewInventoryTracking] = useState(false);
   const [name, setName] = useState(state.profile.name), [newName, setNewName] = useState('');
   const [error, setError] = useState<string | null>(null), [message, setMessage] = useState<string | null>(null);
   const [pending, setPending] = useState<ReturnType<typeof readBackup> | null>(null), [importName, setImportName] = useState('');
@@ -65,21 +69,27 @@ export function PartyProfiles() {
             <Text style={styles.detail}>Cycle {campaignCycle(profile.party)} · {profile.party.order.map(id => profile.party.argonauts.find(member => member.id === id)!.name).join(' · ')}</Text></View>
           <Button quiet label={`Open ${profile.name}`} disabled={busy} onPress={() => act(() => { state.switchProfile(profile.id); goToParty(profile.party.activeArgonautId); })}><Text style={styles.openLabel}>Open</Text></Button>
         </View>)}
+      </View>
+      <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Current campaign configuration</Text>
         <TextInput accessibilityLabel="Party name" value={name} onChangeText={setName} maxLength={80} style={styles.input} />
         <Button quiet label="Rename current party" disabled={busy || !name.trim() || state.preview} onPress={() => act(() => state.renameProfile(name))} />
-      </View>
-      <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Current campaign cycle</Text>
-        <Text style={styles.detail}>Applies to all four Argonauts. Cards from this cycle and earlier are available; token types follow this cycle too. Existing assignments and token counts are retained when changing it.</Text>
-        <CampaignCycleSelector label="Current campaign" value={cycle} onChange={setCycle} disabled={busy || state.preview} />
-        <Button label="Save campaign cycle" disabled={busy || state.preview || cycle === campaignCycle(state.profile.party)} onPress={() => act(() => {
-          state.dispatch({ type: 'campaign-cycle', argonautId: state.profile.party.activeArgonautId, cycle }); setMessage(`Campaign cycle saved: Cycle ${cycle}.`);
-        })} />
+        <Text style={styles.text}>Current Cycle: {cycle}</Text>
+        <Text style={styles.detail}>Applies to all four Argonauts. Cards from this cycle and earlier are available; token types follow this cycle too. You can advance one cycle at a time and cannot go back.</Text>
+        <Button label="Advance cycle" disabled={busy || state.preview || nextCycle === null} onPress={() => setAdvance({ partyId: state.profile.id, argonautId: state.profile.party.activeArgonautId, expectedCycle: cycle })} />
+        {nextCycle === null && <Text style={styles.detail}>Cycle 5 is the final cycle.</Text>}
+        <InventorySettings label="Current campaign" enabled={state.profile.party.inventory?.enforce === true} disabled={busy || state.preview}
+          onChange={enabled => act(() => {
+            state.dispatch({ type: 'inventory-mode', partyId: state.profile.id, argonautId: state.profile.party.activeArgonautId, enabled });
+            setMessage(`Campaign inventory tracking ${enabled ? 'enabled' : 'disabled'}.`);
+          })} />
+        <Text style={styles.detail}>Changing inventory tracking saves automatically and keeps your acquired records and existing loadouts.</Text>
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>New campaign</Text>
         <TextInput accessibilityLabel="New party name" placeholder="Expedition name" value={newName} onChangeText={setNewName} maxLength={80} style={styles.input} />
         <Text style={styles.text}>Campaign cycle</Text>
         <CampaignCycleSelector label="New campaign" value={newCycle} onChange={setNewCycle} disabled={busy} />
-        <Button label="Create campaign" disabled={busy || !newName.trim()} onPress={() => act(() => goToParty(state.createProfile(newName, newCycle)))} />
+        <InventorySettings label="New campaign" enabled={newInventoryTracking} onChange={setNewInventoryTracking} disabled={busy} />
+        <Button label="Create campaign" disabled={busy || !newName.trim()} onPress={() => act(() => goToParty(state.createProfile(newName, newCycle, newInventoryTracking)))} />
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Portable backup</Text>
         <View style={styles.actions}><Button label="Export party JSON" disabled={busy || state.preview} onPress={() => void asyncAct(async () => {
@@ -112,6 +122,12 @@ export function PartyProfiles() {
             <Button quiet label="Keep current save" onPress={() => setPrevious(null)} /></View></View>}
       </View>
     </ScrollView>
+    {advance && advance.partyId === state.profile.id && advance.expectedCycle === cycle && <AdvanceCycleConfirmation key={`${advance.partyId}:${advance.expectedCycle}`}
+      campaignName={state.profile.name} cycle={advance.expectedCycle} disabled={busy || state.preview} onCancel={() => setAdvance(null)}
+      onConfirm={() => act(() => {
+        if (busy || state.preview || advance.partyId !== state.profile.id || advance.expectedCycle !== campaignCycle(state.profile.party)) return;
+        state.dispatch({ type: 'advance-cycle', ...advance, confirmed: true }); setAdvance(null); setMessage(`Campaign advanced to Cycle ${nextCycle}.`);
+      })} />}
   </SafeAreaView>;
 }
 const styles = StyleSheet.create({

@@ -14,6 +14,10 @@ backups and confirmed Tides of Fate.
 - **Cargo:** add acquired Gear through the existing full-card catalogue grid,
   search acquired Gear, and adjust acquired quantities. Each entry shows allocated
   and available copies, distinct printed supply and which Argonauts hold copies.
+  Both **Add acquired Gear** and **Browse catalogue** open Cargo's acquisition
+  dialog. Search, select a result, then use **Add one acquired copy** above the
+  preview; the count updates and a message confirms the addition. Secret cards
+  must be revealed first, and the action disables when all printed copies are recorded.
   Acquired cards remain readable even when secret-card filtering is on. The final
   copy requires checked removal confirmation and cannot be removed while allocated.
 - **Argo:** acquire/remove Argo-bred Titans, see current selections and the existing
@@ -22,12 +26,20 @@ backups and confirmed Tides of Fate.
   acquired record can be removed. Dreamwalker subtypes remain automatically
   available through the campaign cycle.
 - **Use campaign inventory for equipment and Titan selection:** optional campaign
-  setting on Argo and Cargo. Enable after reviewing acquired copies. Equipment
+  setting in **Campaigns & backups**, alongside the name and cycle in **Current
+  campaign configuration** and **New campaign**. New campaigns default to off;
+  enabling it at creation starts with an empty acquired inventory. Existing
+  campaigns save changes automatically and retain acquired records and loadouts.
+  Argo and Cargo manage the contents rather than the tracking preference. Equipment
   selection then offers only available copies (plus the edited copy); unavailable
   direct selections cannot save. Manual slot exceptions cannot bypass inventory.
   The Titan dropdown offers acquired Argo-bred Titans and cycle-valid Dreamwalkers.
-  Turning tracking off retains the acquired records.
-- **Map, Technology and Timeline:** explicit planned-feature pages. Their campaign
+  Turning tracking off retains the acquired records. Known printed Gear copy
+  limits remain enforced across all four Argonauts whether tracking is on or off.
+- **Technology:** Project List, researched Abilities and cumulative Technologies
+  catalogue, with prerequisite checks and automatic current-cycle Core cards. See
+  [Technology behavior and verification](TECHNOLOGY.md).
+- **Map and Timeline:** explicit planned-feature pages. Their campaign
   mechanics have not been implemented. Their navigation is available now for later
   features, rather than inventing counters, timelines or map data.
 
@@ -39,7 +51,8 @@ remain in place.
 
 `Party.inventory` is optional, versioned independently and contains `gear` quantities,
 `titans` definition IDs and an `enforce` preference. `Party.campaignNotes` is optional.
-The party save schema remains 2; absent fields retain the previous behavior. No
+The party save schema remains 2; absent inventory fields allow selections without
+recording acquired copies, subject to known printed Gear limits. No
 storage engine, database or new package is required.
 
 Inventory is seeded from current Gear instances and selected Titans at the first
@@ -57,19 +70,28 @@ unresolved assigned-card references do.
 Physical Gear supply is the number of distinct, nonblank printed IDs on its
 canonical definition, deduplicating front/back IDs. IDs reused by multiple Gear
 definitions in the same game make the limit ambiguous. Ambiguous or missing IDs
-require manual verification rather than an invented supply. New acquisitions cannot
-exceed a known limit or acquire a future-cycle card. Historical quantities above
+require manual verification rather than an invented supply. New Gear allocations
+cannot exceed a known printed limit even when acquired-inventory tracking is off;
+manual slot exceptions cannot create extra copies. The equipment review shows
+the shared printed supply and disables saving with an explanation when exhausted.
+New acquisitions cannot exceed a known limit or acquire a future-cycle card. Historical quantities above
 printed supply are retained with review notices and backup-import warnings. Counts
 cannot decrease below allocated copies. Acquisition/removal and campaign-note edits
 are guarded by campaign ID. Campaign views remount on profile changes, preventing
 old confirmation dialogs from applying to a newly selected campaign.
+
+Muck Virus (`BJ0943`) has one printed copy; Muck Armor (`BJ0919`, `BJ0920`) has
+two. Existing duplicate allocations are retained and flagged in Cargo's inventory
+review. They can be removed or reassigned without adding more copies. A replacement
+in the same occupied slot reuses the supply. Exhausted, discarded, reverse-face
+and pending Gear continue to count toward the shared physical limit.
 
 Inventory does not automate story unlocks, crafting, consumed physical cards, Titan
 production costs or encounter aftermath. Titan availability is a manual acquired
 list; the Argo-bred warning remains advisory and flags only duplicate types,
 not different Argo-bred Titans. One of each type can coexist; Dreamwalker
 variants can repeat. Each Argonaut selects one Titan at a time. Broader roster/history,
-technology, voyage maps and timelines are later Stage 9 increments.
+technology production/timing, voyage maps and timelines are later Stage 9 increments.
 
 ## Verification
 

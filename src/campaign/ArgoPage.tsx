@@ -13,7 +13,6 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { CampaignPage, campaignStyles as styles } from './CampaignPage';
 import { GrowingNotes } from './GrowingNotes';
-import { InventorySettings } from './InventorySettings';
 
 export function ArgoPage() {
   const { party } = useParty();
@@ -24,11 +23,10 @@ function ArgoBody() {
   const [removing, setRemoving] = useState<{ id: string; name: string } | null>(null);
   const inventory = inventoryFor(party, catalogue), cycle = campaignCycle(party);
   const cards = titanOptionCards(catalogue.search({ family: 'Titan' }), cycle);
-  // Keep selected and previously acquired Titans reviewable after lowering the campaign cycle.
+  // Keep historical imported Titans reviewable even if they are from a later cycle.
   for (const id of inventory.titans) { const card = catalogue.get(id); if (card && !cards.some(entry => entry.id === id) && !isDreamwalker(card.faces[0])) cards.push(card); }
   return <CampaignPage title="Argo" subtitle="Manage the expedition’s shared inventory, Titans and notes.">
     <View style={styles.row}><Button quiet label="Campaign settings & backups" onPress={() => router.push('/profiles')} /><Button quiet label="Open Cargo" onPress={() => router.replace('/cargo')} /></View>
-    <InventorySettings />
     <View style={styles.panel}><Text accessibilityRole="header" style={styles.heading}>Available Titans</Text>
       <Text style={styles.body}>Each Argonaut selects one Titan. Different Argo-bred types can coexist, with one of each type across the party. Dreamwalker variants may repeat and are available automatically through the campaign’s cycle. Mark Argo-bred Titans as acquired to make them selectable when inventory tracking is enabled.</Text>
       <ArgoBredWarning />

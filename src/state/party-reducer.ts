@@ -10,9 +10,9 @@ import { changeEquipmentFace, unlinkRemovedHost, planEquipment, removeEquipment 
 import type { EquipRequest } from '../domain/loadout.ts';
 import { argonautSkills, argonautSkillModifiers, SKILL_MAX, SKILL_MIN } from '../domain/argonaut-stats.ts';
 import { changeArgonautIdentity } from '../domain/argonaut-identity.ts';
-import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign.ts';
+import { campaignCycle, isFaceAvailableInCycle, nextCampaignCycle } from '../domain/campaign.ts';
 import { canDiscardCard, canExhaustCard } from '../domain/ability-costs.ts';
-import { changeToken, isCampaignCycle } from '../domain/tokens.ts';
+import { changeToken } from '../domain/tokens.ts';
 import type { CampaignCycle, TokenName } from '../domain/tokens.ts';
 import { conditionRecords, conditionReverse, removeCondition, setCondition, supportsCondition, validCondition } from '../domain/conditions.ts';
 import { clearAllArgonauts, refreshArgonautCards } from '../domain/battle-reset.ts';
@@ -20,15 +20,18 @@ import { AFFLICTIONS } from '../domain/afflictions.ts';
 import type { AfflictionId } from '../domain/afflictions.ts';
 import { setAbilityExhausted } from '../domain/ability-state.ts';
 import { titanLoadoutRules } from '../domain/hand-rules.ts';
+import { changeTechnology } from '../domain/technologies.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
+  | { type: 'technology-research'; argonautId: string; partyId: string; definitionId: string }
+  | { type: 'technology-remove'; argonautId: string; partyId: string; definitionId: string; confirmed: boolean }
   | { type: 'inventory-mode'; argonautId: string; partyId: string; enabled: boolean }
   | { type: 'inventory-quantity'; argonautId: string; partyId: string; definitionId: string; delta: -1 | 1; confirmed?: boolean }
   | { type: 'inventory-titan'; argonautId: string; partyId: string; definitionId: string; acquired: boolean; confirmed?: boolean }
   | { type: 'campaign-notes'; argonautId: string; partyId: string; text: string }
   | { type: 'select'; argonautId: string }
-  | { type: 'campaign-cycle'; argonautId: string; cycle: CampaignCycle }
+  | { type: 'advance-cycle'; argonautId: string; partyId: string; expectedCycle: CampaignCycle; confirmed: boolean }
   | { type: 'rules-assistance'; argonautId: string; partyId: string; enabled: boolean }
   | { type: 'token'; argonautId: string; token: TokenName; delta: -1 | 1 }
   | { type: 'combat-modifier'; argonautId: string; modifier: 'precision' | 'speed'; delta: -1 | 1 }
@@ -72,6 +75,10 @@ export type PartyAction =
 /** Every edit names its owner explicitly, including callbacks opened before navigation. */
 export function partyReducer(party: Party, action: PartyAction, catalogue?: CatalogueRepository): Party {
   if (!party.order.includes(action.argonautId)) return party;
+  if (action.type === 'technology-research' || action.type === 'technology-remove') {
+    if (!catalogue || action.partyId !== party.id || action.type === 'technology-remove' && action.confirmed !== true) return party;
+    return changeTechnology(party, action.definitionId, action.type === 'technology-research' ? 'research' : 'remove', catalogue);
+  }
   if (action.type === 'campaign-notes') return action.partyId === party.id && typeof action.text === 'string' && action.text !== (party.campaignNotes ?? '') ? { ...party, campaignNotes: action.text } : party;
   if (action.type === 'inventory-mode') return catalogue && action.partyId === party.id && typeof action.enabled === 'boolean'
     ? { ...party, inventory: { ...inventoryFor(party, catalogue), enforce: action.enabled } } : party;
@@ -100,7 +107,11 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
     ? { ...party, rulesAssistance: action.enabled } : party;
   if (action.type === 'clear-all') return action.confirmed === true && action.partyId === party.id ? clearAllArgonauts(party) : party;
   if (action.type === 'select') return party.activeArgonautId === action.argonautId ? party : { ...party, activeArgonautId: action.argonautId };
-  if (action.type === 'campaign-cycle') return isCampaignCycle(action.cycle) && party.campaignCycle !== action.cycle ? { ...party, campaignCycle: action.cycle } : party;
+  if (action.type === 'advance-cycle') {
+    if (action.confirmed !== true || action.partyId !== party.id || action.expectedCycle !== campaignCycle(party)) return party;
+    const next = nextCampaignCycle(campaignCycle(party));
+    return next === null ? party : { ...party, campaignCycle: next };
+  }
   if (action.type === 'resource') {
     const name = action.name.trim(), value = (Object.hasOwn(party.resources, name) ? party.resources[name] : 0) + action.delta;
     return name && name.length <= 80 && [-1, 1].includes(action.delta) && Number.isSafeInteger(value) && value >= 0

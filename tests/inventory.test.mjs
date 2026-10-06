@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
 import { createParty, parseParty } from '../src/domain/party.ts';
-import { allocatedGear, gearStock, inventoryFor, inventoryNotices, physicalGearLimit, inventoryAllowsTitan } from '../src/domain/inventory.ts';
+import { allocatedGear, equipmentSupplyIssue, gearStock, inventoryFor, inventoryNotices, physicalGearLimit, inventoryAllowsTitan } from '../src/domain/inventory.ts';
 import { isDreamwalker, dreamwalkerVariants } from '../src/domain/titan-selection.ts';
 import { loadoutState } from '../src/domain/loadout.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
@@ -12,7 +12,7 @@ import { activeDestination, destinationPath, DESTINATIONS } from '../src/navigat
 const input = JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json', import.meta.url)));
 const catalogue = createCatalogueRepository(input);
 const named = name => catalogue.byName(name)[0];
-const initial = () => createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
+const initial = (campaignCycle = 1) => ({ ...createParty('p', ['a', 'b', 'c', 'd'], catalogue.version), campaignCycle });
 const reduce = (party, action) => partyReducer(party, { argonautId: 'a', partyId: party.id, ...action }, catalogue);
 const equip = (party, card, positionId, instanceId, argonautId = 'a', extra = {}) => reduce(party, { type: 'equip', argonautId, request: { definitionId: card.id, faceId: 'front', positionId, instanceId, ...extra } });
 const acquire = (party, card) => reduce(party, { type: 'inventory-quantity', definitionId: card.id, delta: 1 });
@@ -20,7 +20,7 @@ const track = party => reduce(party, { type: 'inventory-mode', enabled: true });
 const yarn = named('Yarn Talisman'), hammer = named('Hammer-Sword'), armor = named('Trireme Breastplate');
 const titanInstance = (id, card) => ({ id: `${id}:titan`, definitionId: card.id, faceId: card.faces[0].id, exhausted: false, enabledEffectIds: [], counters: {} });
 
-test('old saves are unrestricted, seed assigned copies on tracking, and do not mutate or lose loadouts', () => {
+test('old saves need no acquired inventory, seed assigned copies on tracking, and do not mutate or lose loadouts', () => {
   let party = equip(initial(), hammer, 'base:hand:0', 'hammer');
   party = equip(party, yarn, 'base:attachment:0', 'yarn', 'b');
   const before = structuredClone(party);
@@ -32,6 +32,57 @@ test('old saves are unrestricted, seed assigned copies on tracking, and do not m
   assert.deepEqual(tracked.argonauts, party.argonauts);
   assert.equal(gearStock(tracked, hammer.id, catalogue).allocated, 1);
   assert.deepEqual(parseParty(JSON.parse(JSON.stringify(tracked))), tracked);
+});
+
+test('Muck Virus has one party-wide copy even without acquired inventory tracking', () => {
+  const muck = named('Muck Virus');
+  assert.deepEqual(muck.printedIds, ['BJ0943']);
+  assert.equal(physicalGearLimit(muck, catalogue), 1);
+  for (const inventory of [undefined, { version: 1, enforce: false, gear: { [muck.id]: 4 }, titans: [] },
+    { version: 1, enforce: true, gear: { [muck.id]: 4 }, titans: [] }]) {
+    let party = { ...initial(2), ...(inventory ? { inventory } : {}) };
+    party = equip(party, muck, 'base:attachment:0', 'muck');
+    assert.equal(allocatedGear(party, catalogue)[muck.id], 1);
+    for (const id of ['a', 'b', 'c', 'd']) {
+      assert.equal(equip(party, muck, 'base:attachment:1', `second-${id}`, id), party);
+      assert.equal(equip(party, muck, 'base:attachment:1', `override-${id}`, id, { overrideReason: 'Manual slot exception' }), party);
+    }
+    const after = structuredClone(party.argonauts[1]);
+    after.instances.push({ ...party.argonauts[0].instances[0], id: 'extra' });
+    assert.equal(equipmentSupplyIssue(party, party.argonauts[1], after, catalogue).kind, 'printed-supply');
+    assert.match(equipmentSupplyIssue(party, party.argonauts[1], after, catalogue).message, /Only 1 printed copy/);
+    const replacement = equip(party, muck, 'base:attachment:0', 'replacement');
+    assert.equal(replacement.argonauts[0].instances[0].id, 'replacement');
+    party = reduce(party, { type: 'remove-equipment', instanceId: 'muck' });
+    party = equip(party, muck, 'base:attachment:0', 'moved', 'b');
+    assert.equal(party.argonauts[1].instances[0].id, 'moved');
+  }
+});
+
+test('exhausted, discarded, pending and reverse-face Gear keep their physical copy allocated', () => {
+  const virus = named('Necrotic Virus');
+  let party = equip(initial(), virus, 'base:attachment:0', 'virus');
+  party = reduce(party, { type: 'equipment-exhausted', instanceId: 'virus', exhausted: true });
+  party = reduce(party, { type: 'equipment-discarded', instanceId: 'virus', discarded: true });
+  assert.equal(equip(party, virus, 'base:attachment:0', 'duplicate', 'b'), party);
+  party = reduce(party, { type: 'equipment-face', instanceId: 'virus', faceId: 'back' });
+  assert.equal(party.argonauts[0].instances[0].faceId, 'back');
+  assert.equal(allocatedGear(party, catalogue)[virus.id], 1);
+  assert.equal(equip(party, virus, 'base:attachment:0', 'duplicate', 'b'), party);
+  party.argonauts[0].equipment[0].positionIds = ['unassigned:virus'];
+  assert.equal(equip(party, virus, 'base:attachment:0', 'duplicate', 'b'), party);
+  party = equip(party, virus, 'base:attachment:0', 'virus', 'a', { reuse: true });
+  assert.deepEqual(party.argonauts[0].equipment[0].positionIds, ['base:attachment:0']);
+  assert.equal(allocatedGear(party, catalogue)[virus.id], 1);
+});
+
+test('multiple printed copies can be allocated, while a third Muck Armor is rejected without tracking', () => {
+  const armor = named('Muck Armor');
+  assert.equal(physicalGearLimit(armor, catalogue), 2);
+  let party = equip(initial(), armor, 'base:armor:0', 'first');
+  party = equip(party, armor, 'base:armor:0', 'second', 'b');
+  assert.equal(allocatedGear(party, catalogue)[armor.id], 2);
+  assert.equal(equip(party, armor, 'base:armor:0', 'third', 'c'), party);
 });
 
 test('inventory rejects over-allocation across Argonauts and releases a copy on removal', () => {
@@ -56,7 +107,7 @@ test('replacement with the same definition uses the existing acquired copy; manu
 });
 
 test('two-hand cards, reverse faces, exhaustion, discard and Tides of Fate keep the same supply', () => {
-  let party = track(acquire(reduce(initial(), { type: 'campaign-cycle', cycle: 3 }), hammer));
+  let party = track(acquire(initial(3), hammer));
   party = equip(party, hammer, 'base:hand:0', 'hammer');
   assert.equal(party.argonauts[0].equipment[0].positionIds.length, 2);
   party = reduce(party, { type: 'equipment-face', instanceId: 'hammer', faceId: 'back' });
@@ -103,7 +154,17 @@ test('physical limits deduplicate printed IDs and flag ambiguous or absent IDs',
 
 test('legacy overages are preserved for review and can be reduced without acquiring more', () => {
   let party = initial();
-  for (const [index, id] of ['a', 'b', 'c', 'd'].entries()) party = equip(party, yarn, 'base:attachment:0', `copy-${index}`, id);
+  // Model an older save; the reducer no longer creates these overages.
+  for (const [index, member] of party.argonauts.entries()) {
+    const id = `copy-${index}`;
+    member.instances.push({ id, definitionId: yarn.id, faceId: 'front', exhausted: false, enabledEffectIds: [], counters: {} });
+    member.equipment.push({ instanceId: id, positionIds: ['base:attachment:0'], attachmentHostId: null });
+  }
+  assert.deepEqual(parseParty(structuredClone(party)), party);
+  assert.ok(inventoryNotices(party, catalogue).some(notice => notice.includes('4 allocated exceeds the 1 printed copy')));
+  assert.equal(equip(party, yarn, 'base:attachment:1', 'another'), party);
+  const repaired = equip(party, yarn, 'base:attachment:0', 'copy-0', 'a', { reuse: true });
+  assert.equal(allocatedGear(repaired, catalogue)[yarn.id], 4);
   party = track(party);
   assert.equal(gearStock(party, yarn.id, catalogue).owned, 4);
   assert.ok(inventoryNotices(party, catalogue).some(notice => notice.includes('exceeds')));
@@ -123,12 +184,13 @@ test('quantity removal requires confirmation at zero and stale or malformed call
   assert.deepEqual(party.inventory.gear, {});
 });
 
-test('future-cycle acquisitions are blocked while owned older selections are retained on cycle changes', () => {
+test('future-cycle acquisitions are blocked and backwards cycle edits preserve owned supply', () => {
   const later = catalogue.search({ family: 'Gear' }).find(card => card.faces.every(face => face.cycle === 'Cycle V'));
   assert.equal(acquire(initial(), later).inventory, undefined);
-  let party = reduce(initial(), { type: 'campaign-cycle', cycle: 5 });
+  let party = initial(5);
   party = acquire(party, later);
   party = reduce(party, { type: 'campaign-cycle', cycle: 1 });
+  assert.equal(party.campaignCycle, 5, 'Backwards cycle changes are rejected');
   assert.equal(party.inventory.gear[later.id], 1);
 });
 
@@ -191,8 +253,8 @@ test('six header destinations keep active Argonaut IDs and map editor screens to
 });
 
 test('saved over-allocation warns on import, disabling tracking preserves stock, and late-cycle supply cannot bypass the current cycle', () => {
-  let party = track(acquire(reduce(initial(), { type: 'campaign-cycle', cycle: 3 }), hammer));
-  party = reduce(party, { type: 'campaign-cycle', cycle: 1 });
+  // Compatibility with imported older saves containing later-cycle Gear.
+  let party = { ...track(acquire(initial(3), hammer)), campaignCycle: 1 };
   assert.equal(equip(party, hammer, 'base:hand:0', 'late'), party);
   const inventory = party.inventory;
   party = reduce(party, { type: 'inventory-mode', enabled: false });

@@ -6,21 +6,31 @@ import { getCatalogue } from '../catalogue';
 import { keywordRepository } from '../catalogue/keywords';
 import { Button } from '../components/Button';
 import { GearCard } from '../components/cards/GearCard';
+import { GearRecipeLink } from '../components/cards/GearRecipeLink';
 import { RichParagraph } from '../components/cards/RichParagraph';
 import { SecretCard } from '../components/cards/SecretCard';
+import { TechnologyCard } from '../components/cards/TechnologyCard';
+import { coreTechnologyWidth } from '../components/cards/technology-layout';
 import { PatternTable } from '../components/PatternTable';
 import { Sheet } from '../components/Sheet';
 import { cardLinks, displayValue, faceForReference, isSecretCard, objects, strings } from '../domain/card-presentation';
 import type { CardDefinition, FaceId } from '../domain/cards';
+import { technologyName, technologyResearchStatus, technologyType } from '../domain/technologies';
+import type { TechnologySide } from '../domain/technologies';
 import { useSpoilers } from '../state/SpoilerProvider';
+import { useParty } from '../state/PartyProvider';
 import { theme } from '../theme/tokens';
 
 export function CardInspection({ card, faceId }: { card: CardDefinition; faceId: FaceId }) {
   const face = card.faces.find(entry => entry.id === faceId) || card.faces[0];
   const { width } = useWindowDimensions(), spoilers = useSpoilers(), hidden = spoilers.hidden(card);
   const [keyword, setKeyword] = useState<string | null>(null), [reference, setReference] = useState<string | null>(null);
+  const [technologySide, setTechnologySide] = useState<TechnologySide>('technology');
+  const technology = technologyType(card) !== null;
+  const { party } = useParty();
+  const requirementStatus = technology ? technologyResearchStatus(card, party, getCatalogue()).requirements : undefined;
   const definition = keyword && keywordRepository.resolve(keyword), links = cardLinks(face);
-  const inspectionWidth = Math.min(450, width - 32);
+  const inspectionWidth = technologyType(card) === 'Core' ? coreTechnologyWidth(width - 32, width) : Math.min(450, width - 32);
   function openReference(id: string) {
     const result = getCatalogue().resolveReference(id);
     if (result.status === 'resolved') {
@@ -33,13 +43,15 @@ export function CardInspection({ card, faceId }: { card: CardDefinition; faceId:
     <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.page}>
       <View style={styles.header}><Button quiet label="Back" onPress={() => router.canGoBack() ? router.back() : router.replace('/gear')} />
         <Text style={styles.eyebrow}>CARD INSPECTION</Text></View>
-      <View style={styles.toolbar}><View style={{ flex: 1 }}><Text accessibilityRole="header" style={styles.title}>{hidden ? 'Unrevealed card' : face.name}</Text>
-        <Text style={styles.subtitle}>{face.family} · {face.cycle}{card.faces.length > 1 && !hidden ? ` · ${face.id === 'front' ? 'Front' : 'Back'}` : ''}</Text></View>
-        {!hidden && card.faces.length > 1 && <Button quiet label={`Flip to ${face.id === 'front' ? 'back' : 'front'}`} onPress={() => router.setParams({ face: face.id === 'front' ? 'back' : 'front' })} />}
+      <View style={styles.toolbar}><View style={{ flex: 1 }}><Text accessibilityRole="header" style={styles.title}>{hidden ? 'Unrevealed card' : technology ? technologyName(card, technologySide) : face.name}</Text>
+        <Text style={styles.subtitle}>{face.family} · {face.cycle}{technology && !hidden ? ` · ${technologySide === 'project' ? 'Project' : technologyName(card, 'technology')}` : card.faces.length > 1 && !hidden ? ` · ${face.id === 'front' ? 'Front' : 'Back'}` : ''}</Text></View>
+        {!hidden && technology && <Button quiet label={technologySide === 'project' ? 'View technology' : 'View project'} onPress={() => setTechnologySide(technologySide === 'project' ? 'technology' : 'project')} />}
+        {!hidden && !technology && card.faces.length > 1 && <Button quiet label={`Flip to ${face.id === 'front' ? 'back' : 'front'}`} onPress={() => router.setParams({ face: face.id === 'front' ? 'back' : 'front' })} />}
         {!hidden && isSecretCard(card) && spoilers.hideSecrets && <Button quiet label="Hide this card" onPress={() => spoilers.conceal(card.id)} />}
       </View>
       <View style={styles.presentation}>
-        <View style={{ width: inspectionWidth, maxWidth: '100%' }}>{hidden ? <SecretCard card={card} onReveal={() => spoilers.reveal(card.id)} /> : face.kind === 'gear' ? <GearCard face={face} width={inspectionWidth} {...textActions} /> : <View style={styles.referenceCard}>
+        <View style={{ width: inspectionWidth, maxWidth: '100%' }}>{hidden ? <SecretCard card={card} onReveal={() => spoilers.reveal(card.id)} /> : technology ? <TechnologyCard card={card} side={technologySide} width={inspectionWidth} requirementStatus={requirementStatus} {...textActions}
+          renderRecipeLink={(id, label) => <GearRecipeLink id={id} label={label} {...textActions} />} /> : face.kind === 'gear' ? <GearCard face={face} width={inspectionWidth} {...textActions} /> : <View style={styles.referenceCard}>
           <Text accessibilityRole="header" style={styles.referenceTitle}>{face.name}</Text>
           {strings(face.data.traits).length > 0 && <Text style={styles.details}>{strings(face.data.traits).join(' · ')}</Text>}
           {strings(face.data.keywords).length > 0 && <Text style={styles.details}>{strings(face.data.keywords).join(' · ')}</Text>}

@@ -141,7 +141,7 @@ The app entry point is now `expo-router/entry`. Routes live under `src/app`; oth
 - Trauma and Kratos table links are in the Titan abilities section. With a visible Titan, they sit after the name, power dice and speed, wrapping within the header when necessary. They are separate from the Titan edit press targets. The links remain available without a Titan or with a concealed Titan, allowing Pattern overrides to be accessed.
 - Counters start in the 0–9 range. Increasing beyond 9 opens a manual-value confirmation. The reducer refuses unconfirmed increases beyond 9; lowering an accepted manual value remains possible. No death or campaign consequence is automated.
 - The colour picker offers a continuous wheel for hue/saturation, a brightness slider and fine-adjustment buttons. Previously saved custom colours initialise the picker exactly. A 4 px separator immediately above the equipment area shows the active colour, while the Triskelion boxes use its pale tint. Names and page numbers remain visible. Tab-number and colour-preview text contrast adapt to the chosen colour.
-- The Titan picker searches the catalogue within the campaign cycle and earlier cycles. Choose or edit the campaign cycle on the campaign page. Selecting a Titan enables its Trauma and Kratos reference tables.
+- The Titan picker searches the catalogue within the campaign cycle and earlier cycles. Choose a starting cycle when creating a campaign, then use confirmed **Advance cycle** on the campaign page. Selecting a Titan enables its Trauma and Kratos reference tables.
 - Both reference tables now use the extracted ATCC Pattern styling, preserving ranges, symbols and Kratos alternatives/combined effects. [Design and verification](PATTERN_TABLES.md)
 - The layout includes two Weapon positions, Armor, two base Supports, three Attachments, two Mnemos and two Fated Mnemos areas, plus Tokens and Conditions reference areas.
 - Support and other capacities are derived from active equipment effects. Grants cannot activate themselves from their own bonus position. Occupied positions that disappear remain visible under Needs reassignment.
@@ -250,7 +250,7 @@ The selected skill comes from each portrait's local `stat` field. No numeric
 stat array is supplied in these records. The source catalogue is unchanged.
 
 The existing save-schema field stores identity without a schema migration.
-Backups/restarts retain it, and lowering the campaign cycle does not remove an
+Backups/restarts retain it, and advancing the campaign cycle does not remove an
 already selected portrait or its bonus. Manual +/− controls still change the
 displayed stat by one, within −9 to 9, including with portrait and memory bonuses.
 

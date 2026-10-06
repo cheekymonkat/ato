@@ -9,6 +9,7 @@ import { CardIcon, iconKey } from './CardIcon';
 import { useCardColours } from './CardColours';
 import { useGateCheck } from './GateAssistance';
 import { GATE_STATUS_LABELS } from '../../domain/rules-assistance';
+import { GateStatusDot } from './GateStatusDot';
 
 function GateIcon({ name, size }: { name: string; size: number }) {
   return gearIcons[iconKey(name, undefined, true)] ? <CardIcon name={name} size={size} invert />
@@ -55,9 +56,7 @@ export function GateBadge({ gate, height = 15, stat = false, filled = false }: {
         <SvgText x={size * 1.75} y={22} fontSize={26} fontWeight="bold" fill="#FFFFFF" textAnchor="middle">{gate.value2}</SvgText>
       </G>}
     </Svg>
-    {check && <Text accessible={false} style={{ position: 'absolute', right: -3, top: -3, width: 12, height: 12,
-      borderRadius: 6, borderWidth: 1, borderColor: '#FFFFFF', backgroundColor: paint.colour(check.status === 'met' ? '#276B49' : check.status === 'unmet' ? '#8A3835' : '#72571D'),
-      color: '#FFFFFF', fontSize: 9, lineHeight: 10, fontWeight: '700', textAlign: 'center' }}>{check.status === 'met' ? '✓' : check.status === 'unmet' ? '−' : '?'}</Text>}
+    {check && <GateStatusDot status={check.status} />}
   </View>;
 }
 

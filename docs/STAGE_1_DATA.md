@@ -136,7 +136,7 @@ Save validation rejects malformed colours, repeated IDs/order, overlapping assig
 
 Do not repair the original exports by guessing missing references. The report gives file and JSON pointer for review. Fifteen domain/import tests cover preservation, IDs, aliases, faces, supported/unsupported effects, runtime validation, independent Argonauts, dynamic capacity and occupied-slot recovery.
 
-## Physical-copy interpretation for future supply tracking
+## Physical-copy interpretation
 
 On 2 October 2026 the user confirmed printed card IDs as the physical-copy
 identifiers for quantity limits. Count distinct nonblank IDs per definition, not
@@ -146,5 +146,7 @@ face change does not create another copy. Five IDs are reused across different
 families (BR0800, AR0483, AR0601, CX1679, DV2539), one record repeats an alias,
 and Hyperborean Ruins has no printed ID. Those exceptions prevent treating IDs
 as globally unique. Preserve registry identities and explicitly review missing
-quantity cases. General supply tracking is planned; the current implementation
-enforces unique Mnemos/Fated assignments per party.
+quantity cases. The current implementation enforces unique Mnemos/Fated
+assignments and known physical Gear limits per party. Optional acquired inventory
+can further restrict selection; disabling it does not bypass printed Gear limits.
+See [campaign inventory](STAGE_9_CAMPAIGN.md).

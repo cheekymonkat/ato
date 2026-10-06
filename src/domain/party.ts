@@ -67,6 +67,8 @@ export interface Party {
   /** Optional acquired stock; older saves keep unrestricted equipment selection until enabled. */
   inventory?: CampaignInventory;
   campaignNotes?: string;
+  /** Campaign-wide researched Technology deck. Available projects are derived from prerequisites. */
+  technologies?: { version: 1; researched: string[] };
 }
 
 export function isColour(value: unknown): value is string {
@@ -133,6 +135,9 @@ export function parseParty(value: unknown): Party {
   assert(typeof value.id === 'string' && value.id.trim() && typeof value.catalogueVersion === 'string' && value.catalogueVersion.trim(), 'Invalid party identity/version');
   assert(value.campaignCycle === undefined || isCampaignCycle(value.campaignCycle), 'Invalid campaign cycle');
   assert(value.campaignNotes === undefined || typeof value.campaignNotes === 'string', 'Invalid campaign notes');
+  const technologies = value.technologies;
+  assert(technologies === undefined || isRecord(technologies) && technologies.version === 1 && strings(technologies.researched)
+    && new Set(technologies.researched).size === technologies.researched.length, 'Invalid or duplicate campaign technologies');
   const inventory = value.inventory;
   assert(inventory === undefined || isRecord(inventory) && inventory.version === 1 && typeof inventory.enforce === 'boolean' && dictionary(inventory.gear) && Object.entries(inventory.gear).every(([id, count]) => id.trim() && count >= 0) && strings(inventory.titans) && new Set(inventory.titans).size === inventory.titans.length, 'Invalid campaign inventory');
   assert(value.rulesAssistance === undefined || typeof value.rulesAssistance === 'boolean', 'Invalid rules assistance setting');

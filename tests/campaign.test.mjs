@@ -69,21 +69,65 @@ test('new campaigns validate and store their chosen cycle with four independent 
   for (const cycle of [0, 6, 2.5, null, '3']) assert.throws(() => newProfile('invalid', 'Invalid', catalogue.version, cycle), /campaign cycle/);
 });
 
-test('editing a campaign cycle retains all saved cards, counts and other campaigns', () => {
-  const one = newProfile('one', 'First campaign', catalogue.version, 5);
+test('campaign creation persists optional inventory tracking independently and enforces the chosen mode immediately', () => {
+  const tracked = newProfile('tracked', 'Tracked expedition', catalogue.version, 2, true);
+  const untracked = newProfile('untracked', 'Untracked expedition', catalogue.version, 2, false);
+  const defaultProfile = newProfile('default', 'Default expedition', catalogue.version);
+  assert.deepEqual(tracked.party.inventory, { version: 1, enforce: true, gear: {}, titans: [] });
+  assert.equal(untracked.party.inventory, undefined);
+  assert.equal(defaultProfile.party.inventory, undefined);
+  const card = catalogue.byName('Muck Virus')[0];
+  const equip = profile => partyReducer(profile.party, { type: 'equip', argonautId: 'arg-1', request: {
+    definitionId: card.id, faceId: 'front', positionId: 'base:attachment:0', instanceId: 'muck',
+  } }, catalogue);
+  assert.equal(equip(tracked), tracked.party);
+  assert.equal(equip(untracked).argonauts[0].instances[0].definitionId, card.id);
+  const workspace = { format: 'ato-workspace', schemaVersion: 1, activeProfileId: tracked.id, profiles: [tracked, untracked] };
+  assert.deepEqual(parseWorkspace(JSON.parse(JSON.stringify(workspace))), workspace);
+  assert.deepEqual(readBackup(exportProfile(tracked), catalogue).profile, tracked);
+  const updated = partyReducer(tracked.party, { type: 'inventory-mode', argonautId: 'arg-1', partyId: tracked.id, enabled: false }, catalogue);
+  assert.equal(updated.inventory.enforce, false);
+  assert.deepEqual(tracked.party.inventory, { version: 1, enforce: true, gear: {}, titans: [] });
+  assert.equal(untracked.party.inventory, undefined);
+  for (const enabled of [null, 0, 'true']) assert.throws(() => newProfile('invalid', 'Invalid', catalogue.version, 1, enabled), /inventory tracking/);
+});
+
+test('advancing a campaign cycle retains all saved cards, counts and other campaigns', () => {
+  const one = newProfile('one', 'First campaign', catalogue.version, 4);
   const two = newProfile('two', 'Second campaign', catalogue.version, 2);
   const later = catalogue.search({ family: 'Gear', cycle: 'Cycle V' })[0];
   one.party.argonauts[0].instances.push({ id: 'saved-later-card', definitionId: later.id, faceId: 'front', exhausted: true, enabledEffectIds: [], counters: {} });
   one.party.argonauts[0].tokens.Oxygen = 4;
   const original = structuredClone(one.party), untouched = structuredClone(two);
-  const updated = partyReducer(one.party, { type: 'campaign-cycle', argonautId: one.party.argonauts[2].id, cycle: 3 }, catalogue);
-  assert.equal(campaignCycle(updated), 3);
+  const updated = partyReducer(one.party, { type: 'advance-cycle', partyId: one.id, argonautId: one.party.argonauts[2].id, expectedCycle: 4, confirmed: true }, catalogue);
+  assert.equal(campaignCycle(updated), 5);
+  assert.deepEqual(updated, { ...original, campaignCycle: 5 });
   assert.deepEqual(updated.argonauts, original.argonauts);
   assert.deepEqual(one.party, original);
   assert.deepEqual(two, untouched);
   const workspace = { format: 'ato-workspace', schemaVersion: 1, activeProfileId: one.id, profiles: [{ ...one, party: updated }, two] };
   const restored = parseWorkspace(JSON.parse(JSON.stringify(workspace)));
-  assert.equal(campaignCycle(restored.profiles[0].party), 3);
+  assert.equal(campaignCycle(restored.profiles[0].party), 5);
   assert.equal(campaignCycle(restored.profiles[1].party), 2);
   assert.deepEqual(restored.profiles[0].party.argonauts, original.argonauts);
+});
+
+test('cycle advancement requires confirmation and the captured campaign/cycle, and stops at Cycle 5', () => {
+  for (const cycle of [1, 2, 3, 4, 5]) {
+    const party = newProfile('advance', 'Voyage', catalogue.version, cycle).party;
+    const action = { type: 'advance-cycle', partyId: party.id, argonautId: party.activeArgonautId, expectedCycle: cycle, confirmed: true };
+    for (const invalid of [{ confirmed: false }, { confirmed: undefined }, { confirmed: 'yes' }, { partyId: 'other' }, { argonautId: 'missing' }, { expectedCycle: cycle - 1 }, { expectedCycle: cycle + 1 }, { expectedCycle: String(cycle) }]) {
+      assert.equal(partyReducer(party, { ...action, ...invalid }, catalogue), party);
+    }
+    const next = partyReducer(party, action, catalogue);
+    assert.equal(campaignCycle(next), Math.min(5, cycle + 1));
+    assert.equal(partyReducer(next, action, catalogue), next, 'Repeated confirmation cannot advance twice');
+    if (cycle === 5) assert.equal(next, party);
+    for (const destination of [cycle - 1, cycle, cycle + 2]) {
+      assert.equal(partyReducer(party, { ...action, type: 'campaign-cycle', cycle: destination }, catalogue), party, 'Old arbitrary cycle edits are rejected');
+    }
+  }
+  const legacy = newProfile('legacy', 'Older save', catalogue.version).party; delete legacy.campaignCycle;
+  const advanced = partyReducer(legacy, { type: 'advance-cycle', partyId: legacy.id, argonautId: legacy.activeArgonautId, expectedCycle: 1, confirmed: true });
+  assert.equal(campaignCycle(advanced), 2);
 });

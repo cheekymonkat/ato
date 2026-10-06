@@ -54,8 +54,8 @@ the complete condition cards and controls remain in the Conditions section.
 The same row shows icon-and-count notifications for any recorded positive
 Ambrosia, Despair, Bleeding, Midas, Pain, Oxygen or Aether count. Token names
 remain in accessibility labels, without visible word labels. Zero counts hide
-their notification. Existing positive counts remain visible even if the campaign
-cycle is lowered; the token editing section retains its cycle-specific controls.
+their notification. Existing positive counts from historical imported saves
+remain visible even if their token type is from a later cycle; editing controls follow the campaign cycle.
 
 Notes appears below the equipment and attachment area.
 Its multiline field starts at one line and grows with the content, including
@@ -68,7 +68,7 @@ descriptions supplied by the user for Cycles I–V. Add affliction offers the
 current and earlier cycles, excluding existing selections. Each Argonaut can
 hold multiple afflictions, once each. Selected names join the purple status
 badges beside the Titan selector; full descriptions and confirmed removal are
-in the section below. Choices survive autosave and backups. Lowering the cycle,
+in the section below. Choices survive autosave and backups. Advancing the cycle,
 Refresh Gear and Tides of Fate preserve existing afflictions. Narrative and
 gameplay penalties are resolved manually.
 

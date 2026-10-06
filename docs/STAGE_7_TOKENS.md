@@ -7,8 +7,11 @@ local restart and JSON export/import. They never go negative. Counts can exceed
 the gameplay limits because adjustments and resolution remain manual.
 
 A campaign-wide cycle setting controls visibility, independently of the chosen
-Titan's printed cycle. Choose it when creating a campaign; edit it under
-**Campaigns & backups** and press **Save campaign cycle**. The dashboard shows
+Titan's printed cycle. Choose any Cycle 1–5 when creating a campaign; use
+**Advance cycle** under **Campaigns & backups** thereafter. A warning and checked
+acknowledgement precede each single-cycle advance; going backwards or skipping
+cycles is prohibited, and Cycle 5 is final. Advancement applies immediately to
+the entire campaign and requires no Timeline milestone in the app. The dashboard shows
 the current cycle without an editable selector. Gear browsing and every card
 picker (Titans, memories, Patterns and conditions) include the selected cycle
 and all earlier cycles. Cycle 3 therefore offers Cycles I, II and III. Tutorial
@@ -16,8 +19,8 @@ and Mnestis Theatre are non-numbered categories and remain available. A later
 cycle card cannot be newly selected via the Gear manual-exception option or a
 preselected equipment URL; existing assignments remain readable/removable.
 This limits available choices; it does not certify acquisition or combat legality. Cycles 1–2 show Ambrosia and Despair; Cycle 3 adds Bleeding; Cycle 4 also shows
-Midas and Pain; Cycle 5 adds Oxygen and Aether. Lowering the cycle hides later
-types without removing their counts. The selector is shared by all four
+Midas and Pain; Cycle 5 adds Oxygen and Aether. Advancing retains all counts.
+The cycle is shared by all four
 Argonauts within one profile; amounts belong to each Argonaut. Other historical
 token dictionary entries remain preserved and visible as text. Party resources
 remain separate from these tokens.

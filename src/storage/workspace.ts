@@ -26,9 +26,11 @@ export function profileName(name: string): string {
   return name.trim();
 }
 
-export function newProfile(id: string, name: string, catalogueVersion: string, cycle: CampaignCycle = 1): PartyProfile {
+export function newProfile(id: string, name: string, catalogueVersion: string, cycle: CampaignCycle = 1, inventoryTracking = false): PartyProfile {
   assert(isCampaignCycle(cycle), 'Choose a campaign cycle from 1 to 5.');
-  return { id, name: profileName(name), party: { ...createParty(id, ['arg-1', 'arg-2', 'arg-3', 'arg-4'], catalogueVersion), campaignCycle: cycle } };
+  assert(typeof inventoryTracking === 'boolean', 'Choose whether campaign inventory tracking is enabled.');
+  return { id, name: profileName(name), party: { ...createParty(id, ['arg-1', 'arg-2', 'arg-3', 'arg-4'], catalogueVersion), campaignCycle: cycle,
+    ...(inventoryTracking ? { inventory: { version: 1 as const, enforce: true, gear: {}, titans: [] } } : {}) } };
 }
 
 function parseProfile(value: unknown): PartyProfile {
@@ -55,6 +57,7 @@ export function parseWorkspace(value: unknown): Workspace {
 
 export function referenceProblems(party: Party, catalogue: CatalogueRepository): string[] {
   const problems: string[] = duplicateMemories(party).map(assignment => `${assignment.argonautName} / ${assignment.instance.id}: duplicate unique memory ${assignment.instance.definitionId}`);
+  for (const id of party.technologies?.researched ?? []) if (catalogue.get(id)?.family !== 'Technology') problems.push(`Campaign technologies: unavailable Technology ${id}`);
   for (const [family, ids] of [['Gear', Object.keys(party.inventory?.gear ?? {})], ['Titan', party.inventory?.titans ?? []]] as const) {
     for (const id of ids) if (catalogue.get(id)?.family !== family) problems.push(`Campaign inventory: unavailable ${family} ${id}`);
   }

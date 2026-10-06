@@ -36,16 +36,27 @@ export function physicalGearLimit(card: CardDefinition, catalogue: CatalogueRepo
   if (ids.some(id => catalogue.byPrintedId(id).some(other => other.id !== card.id && other.family === 'Gear' && other.faces.some(face => games.has(face.game))))) return null;
   return ids.length;
 }
-/** Only increased allocations are constrained, so old overages can always be repaired or removed. */
-export function inventoryAllowsEquipment(party: Party, before: Argonaut, after: Argonaut, catalogue: CatalogueRepository): boolean {
-  if (!party.inventory?.enforce) return true;
+export interface EquipmentSupplyIssue { kind: 'printed-supply' | 'inventory' | 'cycle'; message: string }
+/** Printed supply always applies; acquired supply is optional. Existing overages can still be repaired. */
+export function equipmentSupplyIssue(party: Party, before: Argonaut, after: Argonaut, catalogue: CatalogueRepository): EquipmentSupplyIssue | null {
   const previous = allocatedGear(party, catalogue);
   const proposed = allocatedGear({ argonauts: party.argonauts.map(member => member.id === before.id ? after : member) }, catalogue);
-  return Object.entries(proposed).every(([id, count]) => {
-    if (count <= (Object.hasOwn(previous, id) ? previous[id] : 0)) return true;
-    return count <= ownedGear(party, id, catalogue) && after.instances.filter(instance => instance.definitionId === id)
-      .every(instance => isFaceAvailableInCycle(catalogue.getFace(id, instance.faceId), campaignCycle(party)));
-  });
+  for (const [id, count] of Object.entries(proposed)) {
+    if (count <= (Object.hasOwn(previous, id) ? previous[id] : 0)) continue;
+    const card = catalogue.get(id), limit = card && physicalGearLimit(card, catalogue);
+    if (limit != null && count > limit) return { kind: 'printed-supply',
+      message: `Only ${limit} printed ${limit === 1 ? 'copy is' : 'copies are'} available across all Argonauts. Remove a copy from another slot or Argonaut before equipping it here.` };
+    if (!party.inventory?.enforce) continue;
+    if (count > ownedGear(party, id, catalogue)) return { kind: 'inventory',
+      message: 'No acquired copy is available. Add acquired Gear in Cargo or free a copy from another Argonaut.' };
+    if (after.instances.filter(instance => instance.definitionId === id)
+      .some(instance => !isFaceAvailableInCycle(catalogue.getFace(id, instance.faceId), campaignCycle(party))))
+      return { kind: 'cycle', message: 'This card is unavailable in the current campaign cycle.' };
+  }
+  return null;
+}
+export function inventoryAllowsEquipment(party: Party, before: Argonaut, after: Argonaut, catalogue: CatalogueRepository): boolean {
+  return equipmentSupplyIssue(party, before, after, catalogue) === null;
 }
 export function inventoryAllowsTitan(party: Party, id: string, faceId: string, catalogue: CatalogueRepository): boolean {
   const face = catalogue.getFace(id, faceId);
@@ -58,6 +69,7 @@ export function inventoryNotices(party: Party, catalogue: CatalogueRepository): 
     const card = catalogue.get(id), owned = ownedGear(party, id, catalogue), count = Object.hasOwn(assigned, id) ? assigned[id] : 0;
     if (!card || card.family !== 'Gear') { notices.push(`Unavailable inventory Gear: ${id}. Keep this record until the catalogue is corrected.`); continue; }
     const limit = physicalGearLimit(card, catalogue);
+    if (limit !== null && count > limit) notices.push(`${card.faces[0].name}: ${count} allocated exceeds the ${limit} printed ${limit === 1 ? 'copy' : 'copies'}. Remove extra copies from the loadouts.`);
     if (count > owned) notices.push(`${card.faces[0].name}: ${count} allocated, but only ${owned} acquired. Review the loadouts or acquired count.`);
     if (limit === null && owned > 0) notices.push(`${card.faces[0].name}: printed supply is unknown or ambiguous; verify the acquired copies manually.`);
     if (limit !== null && owned > limit) notices.push(`${card.faces[0].name}: ${owned} acquired exceeds the ${limit} distinct printed IDs. Existing copies have been preserved.`);

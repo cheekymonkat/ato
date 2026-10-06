@@ -114,7 +114,7 @@ test('loadout review explains bonus sources, duplicate Support and pending place
   let party = fresh();
   const equip = (card, positionId, id) => { party = reduce(party, { type: 'equip', request: { definitionId: card.id, faceId: 'front', positionId, instanceId: id } }); };
   equip(named('Trireme Breastplate'), 'base:armor:0', 'armor');
-  const support = catalogue.search({ family: 'Gear', slot: 'Support' }).find(card => !card.faces[0].slotEffects.length);
+  const support = named('Amphoras Belt'); // Three printed copies; per-Titan Support duplication still needs review.
   equip(support, 'base:support:0', 'one'); equip(support, 'base:support:1', 'two');
   const bonus = loadoutState(party.argonauts[0], catalogue).positions.find(position => position.kind === 'support' && position.source);
   equip(support, bonus.id, 'three');

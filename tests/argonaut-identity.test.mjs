@@ -98,7 +98,7 @@ test('portrait and memory bonuses stack and stat controls continue to adjust by 
   assert.equal(stats(party).Wisdom, -8);
 });
 
-test('selected portrait and its derived stats survive backup/restart and lowering the campaign cycle', async () => {
+test('selected portrait and its derived stats survive backup/restart and advancing the campaign cycle', async () => {
   const party = select(fresh(), 'Oleander');
   const profile = { id: party.id, name: 'Portrait campaign', party };
   const backup = readBackup(exportProfile(profile), catalogue);
@@ -109,9 +109,10 @@ test('selected portrait and its derived stats survive backup/restart and lowerin
   await store.save({ format: 'ato-workspace', schemaVersion: 1, activeProfileId: profile.id, profiles: [profile] });
   const loaded = await new SnapshotStore(storage).load(); assert.equal(loaded.kind, 'ready');
   assert.deepEqual(loaded.workspace.profiles[0], profile);
-  const earlier = partyReducer(party, { type: 'campaign-cycle', argonautId: 'b', cycle: 1 }, catalogue);
-  assert.deepEqual(stats(earlier), { ...zero, Wisdom: 1 });
-  assert.deepEqual(earlier.argonauts, party.argonauts);
+  const advanced = partyReducer(party, { type: 'advance-cycle', partyId: party.id, argonautId: 'b', expectedCycle: 4, confirmed: true }, catalogue);
+  assert.equal(advanced.campaignCycle, 5);
+  assert.deepEqual(stats(advanced), { ...zero, Wisdom: 1 });
+  assert.deepEqual(advanced.argonauts, party.argonauts);
 });
 
 function progressedParty() {

@@ -17,8 +17,8 @@ test('cycle availability uses campaign cycle independently of Titans and retains
   assert.deepEqual(tokenTypesForCycle(3).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding']);
   assert.deepEqual(tokenTypesForCycle(4).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding', 'Midas', 'Pain']);
   assert.deepEqual(tokenTypesForCycle(5).map(t => t.name), ['Ambrosia', 'Despair', 'Bleeding', 'Midas', 'Pain', 'Oxygen', 'Aether']);
-  let party = change(fresh(), 'a', 'Oxygen', 1);
-  party = partyReducer(party, { type: 'campaign-cycle', argonautId: 'a', cycle: 5 });
+  let party = change({ ...fresh(), campaignCycle: 4 }, 'a', 'Oxygen', 1);
+  party = partyReducer(party, { type: 'advance-cycle', partyId: party.id, argonautId: 'a', expectedCycle: 4, confirmed: true });
   assert.equal(campaignCycle(party), 5);
   party = partyReducer(party, { type: 'campaign-cycle', argonautId: 'b', cycle: 1 });
   assert.equal(tokenCount(party.argonauts[0], 'Oxygen'), 1);
@@ -68,7 +68,7 @@ test('older saves retain unknown token records and default to cycle one without 
 });
 
 test('campaign cycle and independent token counts survive restart, backup and profile import', async () => {
-  let party = partyReducer(fresh(), { type: 'campaign-cycle', argonautId: 'a', cycle: 5 });
+  let party = { ...fresh(), campaignCycle: 5 };
   for (const [index, member] of party.argonauts.entries()) {
     for (const token of tokenTypesForCycle(5)) for (let n = 0; n <= index; n++) party = change(party, member.id, token.name, 1);
   }
