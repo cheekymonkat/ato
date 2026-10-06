@@ -1,0 +1,618 @@
+{
+  "batch": "epson-185936",
+  "source": "../ato_docs/ato-gear/Epson_05102026185936.jpg",
+  "sourceSha256": "a29bf261c03e5c2f3ed26a535d548b15ae8c262301c81130b02225ff4aa56d29",
+  "configurationSha256": "1397b1616b4890264989f025d77e18609796f03f8ab25534ff5b98fe90d47645",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Nail Spear",
+      "definitionId": "def_29c7896602864388351ceb18",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0273"
+      ],
+      "filename": "nail-spear.png",
+      "crop": [
+        0,
+        0,
+        511,
+        728
+      ],
+      "width": 511,
+      "height": 728,
+      "preservedPixelCount": 121345,
+      "sha256": "fd7fe40c5ff80c837d6dd3f86af6e7465d70228fcd59409234e2b39c26c877be",
+      "sourcePrintedIds": [
+        "AJ0273"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/nail-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/nail-spear.png",
+        "width": 511,
+        "height": 728,
+        "artBottom": 502
+      }
+    },
+    {
+      "name": "Medusalem",
+      "definitionId": "def_42a3c8341115ecf7a4507114",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0270"
+      ],
+      "filename": "medusalem.png",
+      "crop": [
+        511,
+        0,
+        479,
+        728
+      ],
+      "width": 479,
+      "height": 728,
+      "preservedPixelCount": 81130,
+      "sha256": "cd1ee01a44d820238107b4e66ef4039c70dc9fa75ce2cd55b8e113b869dec398",
+      "sourcePrintedIds": [
+        "AJ0270"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/medusalem.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/medusalem.png",
+        "width": 479,
+        "height": 728,
+        "artBottom": 411
+      }
+    },
+    {
+      "name": "Minohead",
+      "definitionId": "def_352b91fe59bba1131fbf8cc4",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0269"
+      ],
+      "filename": "minohead.png",
+      "crop": [
+        990,
+        0,
+        477,
+        728
+      ],
+      "width": 477,
+      "height": 728,
+      "preservedPixelCount": 90353,
+      "sha256": "51bea6ea83dff455825a109a6252c3e5fe48abb37cd9261b3807dcaf1bd41acd",
+      "sourcePrintedIds": [
+        "AJ0269"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/minohead.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/minohead.png",
+        "width": 477,
+        "height": 728,
+        "artBottom": 423
+      }
+    },
+    {
+      "name": "Theseus's Razor",
+      "definitionId": "def_836beb266bdf6399d38072e3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0268"
+      ],
+      "filename": "theseus-s-razor.png",
+      "crop": [
+        1467,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 93882,
+      "sha256": "7bca735bce7860a5c9ea205b8980a08ddf8f7a108a884e163767fc7fdceee8c3",
+      "sourcePrintedIds": [
+        "AJ0268"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/theseus-s-razor.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/theseus-s-razor.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 407
+      }
+    },
+    {
+      "name": "Leg Spear",
+      "definitionId": "def_b24030357b6872ed3f5ae1f5",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0945"
+      ],
+      "filename": "leg-spear.png",
+      "crop": [
+        1953,
+        0,
+        481,
+        728
+      ],
+      "width": 481,
+      "height": 728,
+      "preservedPixelCount": 103538,
+      "sha256": "39bfb744c47900ae83178fb7ed522ff8f5a29269c290abfa029a98b5a7a2f1bc",
+      "sourcePrintedIds": [
+        "BJ0945"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/leg-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/leg-spear.png",
+        "width": 481,
+        "height": 728,
+        "artBottom": 554
+      }
+    },
+    {
+      "name": "Fumeblade (Hidden)",
+      "definitionId": "def_b361796bcae5527f1c4f391b",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0958"
+      ],
+      "filename": "fumeblade-hidden.png",
+      "crop": [
+        2434,
+        0,
+        484,
+        728
+      ],
+      "width": 484,
+      "height": 728,
+      "preservedPixelCount": 39103,
+      "sha256": "a862b7380e957800d13e23b8d2e9e6186f28b963b411c2fb521033b34b13248b",
+      "sourcePrintedIds": [
+        "BJ0958"
+      ],
+      "reviewNote": "The rules overlap the lower-left edge of the blade; visible pixels beside them remain.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/fumeblade-hidden.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/fumeblade-hidden.png",
+        "width": 484,
+        "height": 728,
+        "artBottom": 495
+      }
+    },
+    {
+      "name": "Necroxiphos",
+      "definitionId": "def_9de365ee0910607a459485a4",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0957"
+      ],
+      "filename": "necroxiphos.png",
+      "crop": [
+        2918,
+        0,
+        472,
+        728
+      ],
+      "width": 472,
+      "height": 728,
+      "preservedPixelCount": 20002,
+      "sha256": "7582da102ae9cb1f4b6f7fd2e5c6c3124eeb4fd659472f32911aa88aac21b889",
+      "sourcePrintedIds": [
+        "BJ0957"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/necroxiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/necroxiphos.png",
+        "width": 472,
+        "height": 728,
+        "artBottom": 386
+      }
+    },
+    {
+      "name": "Muck Virus",
+      "definitionId": "def_20611bd46d2f4780f81fc0db",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0943"
+      ],
+      "filename": "muck-virus.png",
+      "crop": [
+        0,
+        728,
+        511,
+        743
+      ],
+      "width": 511,
+      "height": 743,
+      "preservedPixelCount": 107900,
+      "sha256": "908b7deb0a99405746a71575ff70d7c7bd3f661f56129ddcf0bb6eb5dcb151ef",
+      "sourcePrintedIds": [
+        "BJ0943"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/muck-virus.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/muck-virus.png",
+        "width": 511,
+        "height": 743,
+        "artBottom": 470
+      }
+    },
+    {
+      "name": "Unseen Scar",
+      "definitionId": "def_94484f10d318031603efc335",
+      "faceId": "front",
+      "printedIds": [
+        "AJ1998"
+      ],
+      "filename": "unseen-scar.png",
+      "crop": [
+        511,
+        728,
+        479,
+        743
+      ],
+      "width": 479,
+      "height": 743,
+      "preservedPixelCount": 64498,
+      "sha256": "dc1ed3f0972e705ba148a2bace2e4548d2d019bf5a7b69d8760f5e9bf83338bd",
+      "sourcePrintedIds": [
+        "AJ1998"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/unseen-scar.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/unseen-scar.png",
+        "width": 479,
+        "height": 743,
+        "artBottom": 355
+      }
+    },
+    {
+      "name": "Archon Pauldron",
+      "definitionId": "def_328b720fc85197630dea83bb",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0969"
+      ],
+      "filename": "archon-pauldron.png",
+      "crop": [
+        990,
+        728,
+        477,
+        743
+      ],
+      "width": 477,
+      "height": 743,
+      "preservedPixelCount": 86352,
+      "sha256": "cb06855f441dd20ffc6d868969110275718cb29284eb9d3bed9fed5f3a080318",
+      "sourcePrintedIds": [
+        "BJ0969"
+      ],
+      "reviewNote": "Printed rules and stat boxes cover portions of the faded Titan projection.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/archon-pauldron.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/archon-pauldron.png",
+        "width": 477,
+        "height": 743,
+        "artBottom": 483
+      }
+    },
+    {
+      "name": "Mazey, the Labyrinthian Dog",
+      "definitionId": "def_8af6234f733defcb3f48aa1a",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0282"
+      ],
+      "filename": "mazey-the-labyrinthian-dog.png",
+      "crop": [
+        1953,
+        728,
+        481,
+        743
+      ],
+      "width": 481,
+      "height": 743,
+      "preservedPixelCount": 33304,
+      "sha256": "75183ac40cc6dff5e45f394f4cb337c4b36c27a54c69c2b09eed2849d1b0fee8",
+      "sourcePrintedIds": [
+        "AJ0282"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/mazey-the-labyrinthian-dog.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/mazey-the-labyrinthian-dog.png",
+        "width": 481,
+        "height": 743,
+        "artBottom": 321
+      }
+    },
+    {
+      "name": "Unsolved Enigma",
+      "definitionId": "def_465127c698264ea196c30937",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0274"
+      ],
+      "filename": "unsolved-enigma.png",
+      "crop": [
+        2434,
+        728,
+        484,
+        743
+      ],
+      "width": 484,
+      "height": 743,
+      "preservedPixelCount": 44704,
+      "sha256": "f86305dd69171645c550c6f7ef4c35b9df1328eaee5ff4849ca73ac71f420681",
+      "observedPrintedIds": [
+        "AJ0280"
+      ],
+      "reviewNote": "The scan prints AJ0280; the imported catalogue uses AJ0274. Artwork is matched by the unambiguous title; existing card identities are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/unsolved-enigma.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/unsolved-enigma.png",
+        "width": 484,
+        "height": 743,
+        "artBottom": 327
+      }
+    },
+    {
+      "name": "Manos Discus",
+      "definitionId": "def_786b1249d8ce53789bb24b89",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0280"
+      ],
+      "filename": "manos-discus.png",
+      "crop": [
+        2918,
+        728,
+        472,
+        743
+      ],
+      "width": 472,
+      "height": 743,
+      "preservedPixelCount": 137974,
+      "sha256": "e7ae173cf965f431d48619e05104738f25dff537a5dfe2266ef688c8c1f83606",
+      "observedPrintedIds": [
+        "AJ0279"
+      ],
+      "reviewNote": "The scan prints AJ0279; the imported catalogue uses AJ0280. Matched by its unambiguous title without changing card identities. The left stat panel covers the wheel edge; only exposed illustration is retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/manos-discus.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/manos-discus.png",
+        "width": 472,
+        "height": 743,
+        "artBottom": 520
+      }
+    },
+    {
+      "name": "Icarus Lot",
+      "definitionId": "def_2b43196e87b4a1aa864c2cb9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1527"
+      ],
+      "filename": "icarus-lot.png",
+      "crop": [
+        0,
+        1471,
+        511,
+        760
+      ],
+      "width": 511,
+      "height": 760,
+      "preservedPixelCount": 168905,
+      "sha256": "6c5300eec5d3366f33cd43e5765116c41f9b452e7c394a72d5b8118282fbb52b",
+      "sourcePrintedIds": [
+        "CJ1527"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/icarus-lot.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/icarus-lot.png",
+        "width": 511,
+        "height": 760,
+        "artBottom": 529
+      }
+    },
+    {
+      "name": "Spherecast",
+      "definitionId": "def_cce73c5823bf1f5389c40c78",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1517"
+      ],
+      "filename": "spherecast.png",
+      "crop": [
+        511,
+        1471,
+        479,
+        760
+      ],
+      "width": 479,
+      "height": 760,
+      "preservedPixelCount": 49494,
+      "sha256": "586517d5f302c87a4c3b31d79f601c509401427bad8d47d1931701e29c5e60a9",
+      "sourcePrintedIds": [
+        "CJ1517"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/spherecast.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/spherecast.png",
+        "width": 479,
+        "height": 760,
+        "artBottom": 407
+      }
+    },
+    {
+      "name": "Right Talon of Doom",
+      "definitionId": "def_9b1af92a9ccefb117c9cd7d4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1516"
+      ],
+      "filename": "right-talon-of-doom.png",
+      "crop": [
+        990,
+        1471,
+        477,
+        760
+      ],
+      "width": 477,
+      "height": 760,
+      "preservedPixelCount": 100475,
+      "sha256": "b5f7d2994b18d4f473a073ab823fd122f25ce19ae9b13ca89a3b39ebd3099f6e",
+      "sourcePrintedIds": [
+        "CJ1516"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/right-talon-of-doom.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/right-talon-of-doom.png",
+        "width": 477,
+        "height": 760,
+        "artBottom": 531
+      }
+    },
+    {
+      "name": "Paradox",
+      "definitionId": "def_e3c7b8da2ae35687dba0ceab",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1503"
+      ],
+      "filename": "paradox.png",
+      "crop": [
+        1467,
+        1471,
+        486,
+        760
+      ],
+      "width": 486,
+      "height": 760,
+      "preservedPixelCount": 19615,
+      "sha256": "0a84d48ff4b7bbe52215e97340e0ce1120fb812579d1c1b5cf7816537652cc91",
+      "sourcePrintedIds": [
+        "CJ1503"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/paradox.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/paradox.png",
+        "width": 486,
+        "height": 760,
+        "artBottom": 531
+      }
+    },
+    {
+      "name": "Eye of the Watcher",
+      "definitionId": "def_dd5546747028e5bf67dbe2c8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1502"
+      ],
+      "filename": "eye-of-the-watcher.png",
+      "crop": [
+        1953,
+        1471,
+        481,
+        760
+      ],
+      "width": 481,
+      "height": 760,
+      "preservedPixelCount": 115569,
+      "sha256": "1180473730bd49d9c56be37bad891276d9ca47e8688b7b460c54117458b4bc3c",
+      "sourcePrintedIds": [
+        "CJ1502"
+      ],
+      "reviewNote": " The first rule line overlaps the lower feathers; only exposed pixels are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/eye-of-the-watcher.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/eye-of-the-watcher.png",
+        "width": 481,
+        "height": 760,
+        "artBottom": 479
+      }
+    },
+    {
+      "name": "Ambramat Armor",
+      "definitionId": "def_c327d4f5260c6a18037bfdb9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0917",
+        "BJ0918"
+      ],
+      "filename": "ambramat-armor.png",
+      "crop": [
+        2434,
+        1471,
+        484,
+        760
+      ],
+      "width": 484,
+      "height": 760,
+      "preservedPixelCount": 102468,
+      "sha256": "38e6625b3b22e89574bfa5c926ef968515f2b2ee823dc574debb58d884d45e36",
+      "sourcePrintedIds": [
+        "BJ0918"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/ambramat-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/ambramat-armor.png",
+        "width": 484,
+        "height": 760,
+        "artBottom": 495
+      }
+    },
+    {
+      "name": "Umbral Virus",
+      "definitionId": "def_0e707a0bab686ce29c601ba1",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0954"
+      ],
+      "filename": "umbral-virus.png",
+      "crop": [
+        2918,
+        1471,
+        472,
+        760
+      ],
+      "width": 472,
+      "height": 760,
+      "preservedPixelCount": 134797,
+      "sha256": "60430f5b3ad7427a2375e5b69c275957fae185630e2165b5867a6113924b2759",
+      "sourcePrintedIds": [
+        "BJ0954"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185936/umbral-virus.png",
+        "grayscaleImage": "assets/gear-art/epson-185936/grayscale/umbral-virus.png",
+        "width": 472,
+        "height": 760,
+        "artBottom": 486
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Eschaton Stones",
+      "definitionId": "def_fe06f847c18e2a818d840f71",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0283"
+      ],
+      "filename": "eschaton-stones.png",
+      "crop": [
+        1467,
+        728,
+        486,
+        743
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "AJ0283"
+      ],
+      "reason": "This face contains only printed text and icons, with no illustration to retain. The live card layout supplies its content; no blank background asset is linked."
+    }
+  ]
+}

@@ -1,0 +1,1761 @@
+{
+  "batch": "epson-212452",
+  "source": "../ato_docs/ato-gear/Epson_05102026212452.jpg",
+  "sourceSha256": "2e80f4576c9ac4bb41fe3939ac2b9af487e0b4df04c0c038af7c95366eb51622",
+  "sourceSize": [
+    3408,
+    2244
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    1418,
+    120,
+    27,
+    305
+  ],
+  "cards": [
+    {
+      "name": "Phoenixiphos",
+      "definitionId": "def_3b781cfb15a15d0e87b2720e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1532"
+      ],
+      "filename": "phoenixiphos.png",
+      "crop": [
+        0,
+        0,
+        495,
+        727
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1532"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            127,
+            77
+          ],
+          [
+            143,
+            116
+          ],
+          [
+            159,
+            159
+          ],
+          [
+            264,
+            279
+          ],
+          [
+            284,
+            311
+          ],
+          [
+            320,
+            332
+          ],
+          [
+            318,
+            350
+          ],
+          [
+            459,
+            507
+          ],
+          [
+            470,
+            532
+          ],
+          [
+            441,
+            507
+          ],
+          [
+            291,
+            359
+          ],
+          [
+            273,
+            364
+          ],
+          [
+            266,
+            343
+          ],
+          [
+            195,
+            304
+          ],
+          [
+            145,
+            223
+          ],
+          [
+            130,
+            148
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Atlantean Oscillator",
+      "definitionId": "def_1f7474895f1381644f9d239c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1531"
+      ],
+      "filename": "atlantean-oscillator.png",
+      "crop": [
+        495,
+        0,
+        498,
+        727
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1531"
+      ],
+      "artRects": [
+        [
+          132,
+          105,
+          414,
+          502
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Future Cryptex",
+      "definitionId": "def_cec2d1eb9712d9fb037fdf15",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1530"
+      ],
+      "filename": "future-cryptex.png",
+      "crop": [
+        993,
+        0,
+        488,
+        727
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1530"
+      ],
+      "artRects": [
+        [
+          111,
+          105,
+          382,
+          450
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Icarus's Fall",
+      "definitionId": "def_b8b1fc32093676aebe89eb51",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1528"
+      ],
+      "filename": "icarus-s-fall.png",
+      "crop": [
+        1481,
+        0,
+        489,
+        727
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1528"
+      ],
+      "artRects": [
+        [
+          107,
+          91,
+          477,
+          600
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          -9,
+          548,
+          357,
+          613
+        ],
+        [
+          -9,
+          586,
+          391,
+          648
+        ],
+        [
+          398,
+          0,
+          489,
+          114
+        ]
+      ]
+    },
+    {
+      "name": "Searing Pillar",
+      "definitionId": "def_cce73c5823bf1f5389c40c78",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1517"
+      ],
+      "filename": "searing-pillar.png",
+      "crop": [
+        1970,
+        0,
+        479,
+        727
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1517"
+      ],
+      "artRects": [
+        [
+          77,
+          55,
+          463,
+          457
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          166,
+          0,
+          395,
+          107
+        ],
+        [
+          379,
+          0,
+          479,
+          107
+        ],
+        [
+          -7,
+          125,
+          111,
+          459
+        ],
+        [
+          161,
+          22,
+          312,
+          57
+        ],
+        [
+          0,
+          0,
+          85,
+          89
+        ]
+      ],
+      "reviewNote": " The top-left hand icon overlaps the end of the handle; only exposed handle pixels are retained."
+    },
+    {
+      "name": "Icarian Katar",
+      "definitionId": "def_9b1af92a9ccefb117c9cd7d4",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1516"
+      ],
+      "filename": "icarian-katar.png",
+      "crop": [
+        2449,
+        0,
+        489,
+        727
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1516"
+      ],
+      "artRects": [
+        [
+          148,
+          70,
+          427,
+          416
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          375,
+          64,
+          459,
+          100
+        ],
+        [
+          148,
+          70,
+          427,
+          82
+        ]
+      ]
+    },
+    {
+      "name": "Umbral Carapace",
+      "definitionId": "def_0e707a0bab686ce29c601ba1",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0954"
+      ],
+      "filename": "umbral-carapace.png",
+      "crop": [
+        2938,
+        0,
+        470,
+        727
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0954"
+      ],
+      "artRects": [
+        [
+          25,
+          105,
+          445,
+          434
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          375,
+          261,
+          470,
+          336
+        ]
+      ],
+      "reviewNote": "The right stat panel overlays the arm; only exposed armour pixels are retained."
+    },
+    {
+      "name": "Abyssal Watchers",
+      "definitionId": "def_4c53e8f8e46a93b767245fd3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1393",
+        "CJ1394"
+      ],
+      "filename": "abyssal-watchers.png",
+      "crop": [
+        0,
+        727,
+        495,
+        745
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1394"
+      ],
+      "artRects": [
+        [
+          154,
+          120,
+          477,
+          295
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          328,
+          293,
+          391,
+          322
+        ]
+      ]
+    },
+    {
+      "name": "Smoldering Mace",
+      "definitionId": "def_c25b96d5744e5e884080bcc4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1391",
+        "CJ1392"
+      ],
+      "filename": "smoldering-mace.png",
+      "crop": [
+        495,
+        727,
+        498,
+        745
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1392"
+      ],
+      "artRects": [
+        [
+          114,
+          107,
+          448,
+          550
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          450,
+          343,
+          559
+        ],
+        [
+          196,
+          72,
+          307,
+          110
+        ],
+        [
+          196,
+          439,
+          269,
+          465
+        ],
+        [
+          313,
+          504,
+          370,
+          530
+        ],
+        [
+          280,
+          535,
+          356,
+          560
+        ],
+        [
+          324,
+          474,
+          354,
+          500
+        ],
+        [
+          267,
+          436,
+          283,
+          460
+        ],
+        [
+          105,
+          100,
+          120,
+          430
+        ]
+      ]
+    },
+    {
+      "name": "Hardened Cestus",
+      "definitionId": "def_8899c629558eace84e5fcf72",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1395",
+        "CJ1396"
+      ],
+      "filename": "hardened-cestus.png",
+      "crop": [
+        993,
+        727,
+        488,
+        745
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1396"
+      ],
+      "artRects": [
+        [
+          120,
+          123,
+          393,
+          482
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          263,
+          427,
+          484,
+          486
+        ]
+      ]
+    },
+    {
+      "name": "Theogonias",
+      "definitionId": "def_b0cc0e8bbaaa7d34e26aeb4a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1546"
+      ],
+      "filename": "theogonias.png",
+      "crop": [
+        1481,
+        727,
+        489,
+        745
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1546"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            105,
+            105
+          ],
+          [
+            137,
+            118
+          ],
+          [
+            184,
+            164
+          ],
+          [
+            432,
+            459
+          ],
+          [
+            443,
+            491
+          ],
+          [
+            414,
+            475
+          ],
+          [
+            150,
+            193
+          ],
+          [
+            114,
+            184
+          ],
+          [
+            121,
+            159
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Shellusalem",
+      "definitionId": "def_fcb5c672cef6353b17f45528",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1535"
+      ],
+      "filename": "shellusalem.png",
+      "crop": [
+        1970,
+        727,
+        479,
+        745
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1535"
+      ],
+      "artRects": [
+        [
+          120,
+          107,
+          361,
+          427
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "reviewNote": "The bottom rules cover the faded Titan projection behind the shield."
+    },
+    {
+      "name": "Grandfather's",
+      "definitionId": "def_fff4d98806e9d8bf51f70e1a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1534"
+      ],
+      "filename": "grandfather-s.png",
+      "crop": [
+        2449,
+        727,
+        489,
+        745
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1534"
+      ],
+      "artRects": [
+        [
+          57,
+          245,
+          427,
+          539
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          361,
+          202,
+          489,
+          293
+        ],
+        [
+          155,
+          532,
+          280,
+          552
+        ],
+        [
+          202,
+          531,
+          284,
+          559
+        ]
+      ]
+    },
+    {
+      "name": "Cyclopean Hand Mirror",
+      "definitionId": "def_38e068613d0931bb390a1619",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1533"
+      ],
+      "filename": "cyclopean-hand-mirror.png",
+      "crop": [
+        2938,
+        727,
+        470,
+        745
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1533"
+      ],
+      "artRects": [
+        [
+          75,
+          132,
+          409,
+          464
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Abyss Mirror",
+      "definitionId": "def_d7d57d360572c4ee19f849c8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1407",
+        "CJ1408"
+      ],
+      "filename": "abyss-mirror.png",
+      "crop": [
+        0,
+        1472,
+        495,
+        757
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1408"
+      ],
+      "artRects": [
+        [
+          102,
+          116,
+          409,
+          459
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          382,
+          287,
+          495,
+          352
+        ],
+        [
+          0,
+          0,
+          123,
+          473
+        ]
+      ]
+    },
+    {
+      "name": "Abyss Linothorax",
+      "definitionId": "def_0af9860267539b8220cd24e9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1403",
+        "CJ1404"
+      ],
+      "filename": "abyss-linothorax.png",
+      "crop": [
+        495,
+        1472,
+        498,
+        757
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1404"
+      ],
+      "artRects": [
+        [
+          103,
+          121,
+          389,
+          548
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          125,
+          459,
+          364,
+          507
+        ],
+        [
+          5,
+          455,
+          393,
+          564
+        ]
+      ],
+      "reviewNote": "Lower rules overlap the faded figure; exposed arms are retained."
+    },
+    {
+      "name": "Abyss Thorax",
+      "definitionId": "def_0fbd571567855b09d2529aab",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1405",
+        "CJ1406"
+      ],
+      "filename": "abyss-thorax.png",
+      "crop": [
+        993,
+        1472,
+        488,
+        757
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1406"
+      ],
+      "artRects": [
+        [
+          77,
+          107,
+          395,
+          475
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          363,
+          291,
+          488,
+          364
+        ]
+      ]
+    },
+    {
+      "name": "Black Xiphos",
+      "definitionId": "def_71b87cdfb2d096a8abbd60c2",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1389",
+        "CJ1390"
+      ],
+      "filename": "black-xiphos.png",
+      "crop": [
+        1481,
+        1472,
+        489,
+        757
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1389"
+      ],
+      "artRects": [
+        [
+          127,
+          93,
+          434,
+          563
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          183,
+          410,
+          287,
+          440
+        ],
+        [
+          169,
+          441,
+          309,
+          470
+        ],
+        [
+          155,
+          472,
+          320,
+          500
+        ],
+        [
+          143,
+          502,
+          352,
+          530
+        ],
+        [
+          95,
+          535,
+          383,
+          563
+        ],
+        [
+          170,
+          441,
+          276,
+          474
+        ],
+        [
+          157,
+          472,
+          288,
+          505
+        ],
+        [
+          94,
+          533,
+          151,
+          559
+        ],
+        [
+          178,
+          534,
+          297,
+          560
+        ],
+        [
+          403,
+          0,
+          489,
+          118
+        ]
+      ]
+    },
+    {
+      "name": "Black Javelin",
+      "definitionId": "def_8d9d75a640ed49b5801392ec",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1399",
+        "CJ1400"
+      ],
+      "filename": "black-javelin.png",
+      "crop": [
+        1970,
+        1472,
+        479,
+        757
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1399"
+      ],
+      "artRects": [
+        [
+          149,
+          95,
+          333,
+          419
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            310,
+            397
+          ],
+          [
+            338,
+            423
+          ],
+          [
+            355,
+            459
+          ],
+          [
+            391,
+            525
+          ],
+          [
+            420,
+            550
+          ],
+          [
+            424,
+            576
+          ],
+          [
+            445,
+            603
+          ],
+          [
+            467,
+            645
+          ],
+          [
+            478,
+            664
+          ],
+          [
+            478,
+            695
+          ],
+          [
+            462,
+            679
+          ],
+          [
+            443,
+            644
+          ],
+          [
+            428,
+            626
+          ],
+          [
+            414,
+            605
+          ],
+          [
+            396,
+            585
+          ],
+          [
+            393,
+            570
+          ],
+          [
+            377,
+            547
+          ],
+          [
+            355,
+            516
+          ],
+          [
+            345,
+            496
+          ],
+          [
+            330,
+            475
+          ],
+          [
+            318,
+            446
+          ],
+          [
+            300,
+            413
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          0,
+          375,
+          287,
+          402
+        ],
+        [
+          0,
+          405,
+          297,
+          435
+        ],
+        [
+          0,
+          436,
+          237,
+          463
+        ],
+        [
+          0,
+          464,
+          236,
+          489
+        ],
+        [
+          0,
+          490,
+          275,
+          515
+        ],
+        [
+          15,
+          404,
+          162,
+          427
+        ],
+        [
+          364,
+          528,
+          367,
+          529
+        ],
+        [
+          370,
+          528,
+          374,
+          530
+        ],
+        [
+          365,
+          529,
+          368,
+          531
+        ],
+        [
+          369,
+          530,
+          370,
+          531
+        ],
+        [
+          371,
+          530,
+          373,
+          531
+        ],
+        [
+          366,
+          531,
+          373,
+          532
+        ],
+        [
+          368,
+          532,
+          370,
+          533
+        ],
+        [
+          371,
+          532,
+          375,
+          533
+        ],
+        [
+          367,
+          533,
+          370,
+          534
+        ],
+        [
+          371,
+          533,
+          373,
+          534
+        ],
+        [
+          374,
+          533,
+          375,
+          534
+        ],
+        [
+          370,
+          534,
+          374,
+          535
+        ],
+        [
+          369,
+          535,
+          374,
+          536
+        ],
+        [
+          375,
+          535,
+          376,
+          536
+        ],
+        [
+          370,
+          536,
+          372,
+          537
+        ],
+        [
+          373,
+          536,
+          376,
+          537
+        ],
+        [
+          378,
+          536,
+          379,
+          537
+        ],
+        [
+          403,
+          536,
+          404,
+          537
+        ],
+        [
+          370,
+          537,
+          378,
+          538
+        ],
+        [
+          371,
+          538,
+          378,
+          539
+        ],
+        [
+          372,
+          539,
+          374,
+          541
+        ],
+        [
+          376,
+          539,
+          378,
+          540
+        ],
+        [
+          376,
+          540,
+          379,
+          541
+        ],
+        [
+          373,
+          541,
+          374,
+          542
+        ],
+        [
+          376,
+          541,
+          382,
+          542
+        ],
+        [
+          378,
+          542,
+          382,
+          544
+        ],
+        [
+          379,
+          544,
+          382,
+          545
+        ],
+        [
+          377,
+          545,
+          382,
+          548
+        ],
+        [
+          416,
+          547,
+          417,
+          548
+        ],
+        [
+          379,
+          548,
+          384,
+          549
+        ],
+        [
+          379,
+          549,
+          380,
+          550
+        ],
+        [
+          381,
+          549,
+          384,
+          550
+        ],
+        [
+          379,
+          550,
+          381,
+          551
+        ],
+        [
+          382,
+          550,
+          384,
+          551
+        ],
+        [
+          380,
+          551,
+          382,
+          552
+        ],
+        [
+          383,
+          551,
+          384,
+          552
+        ],
+        [
+          386,
+          551,
+          387,
+          552
+        ],
+        [
+          383,
+          552,
+          386,
+          554
+        ],
+        [
+          382,
+          554,
+          383,
+          555
+        ],
+        [
+          383,
+          555,
+          386,
+          556
+        ],
+        [
+          384,
+          556,
+          387,
+          557
+        ],
+        [
+          384,
+          557,
+          388,
+          558
+        ],
+        [
+          385,
+          558,
+          388,
+          559
+        ],
+        [
+          386,
+          559,
+          388,
+          561
+        ],
+        [
+          417,
+          560,
+          418,
+          561
+        ],
+        [
+          388,
+          562,
+          390,
+          564
+        ],
+        [
+          411,
+          563,
+          412,
+          564
+        ],
+        [
+          389,
+          564,
+          390,
+          565
+        ],
+        [
+          396,
+          568,
+          397,
+          569
+        ],
+        [
+          421,
+          570,
+          422,
+          571
+        ],
+        [
+          394,
+          575,
+          395,
+          577
+        ],
+        [
+          394,
+          577,
+          396,
+          578
+        ],
+        [
+          395,
+          578,
+          396,
+          579
+        ],
+        [
+          396,
+          585,
+          398,
+          586
+        ],
+        [
+          397,
+          586,
+          398,
+          587
+        ],
+        [
+          399,
+          586,
+          400,
+          587
+        ],
+        [
+          398,
+          587,
+          400,
+          588
+        ],
+        [
+          399,
+          588,
+          401,
+          589
+        ],
+        [
+          400,
+          589,
+          402,
+          590
+        ],
+        [
+          401,
+          590,
+          404,
+          591
+        ],
+        [
+          402,
+          591,
+          404,
+          592
+        ],
+        [
+          404,
+          593,
+          405,
+          594
+        ],
+        [
+          405,
+          594,
+          406,
+          595
+        ],
+        [
+          405,
+          595,
+          407,
+          596
+        ],
+        [
+          406,
+          596,
+          408,
+          597
+        ],
+        [
+          433,
+          604,
+          434,
+          605
+        ],
+        [
+          433,
+          605,
+          435,
+          606
+        ],
+        [
+          433,
+          606,
+          434,
+          607
+        ],
+        [
+          442,
+          611,
+          443,
+          613
+        ],
+        [
+          453,
+          619,
+          454,
+          620
+        ],
+        [
+          440,
+          620,
+          442,
+          621
+        ],
+        [
+          426,
+          623,
+          427,
+          624
+        ],
+        [
+          428,
+          625,
+          429,
+          626
+        ],
+        [
+          429,
+          626,
+          431,
+          627
+        ],
+        [
+          429,
+          627,
+          432,
+          628
+        ],
+        [
+          431,
+          628,
+          433,
+          629
+        ],
+        [
+          432,
+          629,
+          434,
+          630
+        ],
+        [
+          433,
+          630,
+          434,
+          631
+        ],
+        [
+          435,
+          632,
+          436,
+          633
+        ],
+        [
+          434,
+          633,
+          436,
+          634
+        ],
+        [
+          435,
+          634,
+          436,
+          635
+        ],
+        [
+          436,
+          635,
+          438,
+          636
+        ],
+        [
+          437,
+          636,
+          438,
+          637
+        ],
+        [
+          438,
+          637,
+          439,
+          638
+        ],
+        [
+          462,
+          637,
+          463,
+          638
+        ],
+        [
+          440,
+          640,
+          441,
+          641
+        ],
+        [
+          464,
+          640,
+          465,
+          641
+        ],
+        [
+          451,
+          659,
+          452,
+          660
+        ],
+        [
+          454,
+          664,
+          455,
+          665
+        ],
+        [
+          457,
+          669,
+          458,
+          670
+        ],
+        [
+          458,
+          671,
+          459,
+          673
+        ],
+        [
+          460,
+          674,
+          462,
+          675
+        ],
+        [
+          461,
+          675,
+          462,
+          676
+        ],
+        [
+          461,
+          677,
+          462,
+          678
+        ],
+        [
+          462,
+          678,
+          464,
+          679
+        ]
+      ],
+      "reviewNote": " Printed purple/red gate-strip fringe around the shaft is erased with explicit source-pixel runs; the uncovered dark shaft is retained."
+    },
+    {
+      "name": "Abyssal Spear",
+      "definitionId": "def_1c3548cd86755c5577b88f7a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1397",
+        "CJ1398"
+      ],
+      "filename": "abyssal-spear.png",
+      "crop": [
+        2449,
+        1472,
+        489,
+        757
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1398"
+      ],
+      "artRects": [
+        [
+          125,
+          116,
+          214,
+          432
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            364,
+            132
+          ],
+          [
+            393,
+            141
+          ],
+          [
+            311,
+            250
+          ],
+          [
+            266,
+            316
+          ],
+          [
+            205,
+            402
+          ],
+          [
+            189,
+            402
+          ],
+          [
+            318,
+            191
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          192,
+          431,
+          268,
+          457
+        ]
+      ],
+      "reviewNote": "Rules cover the bottom of the faint spear projection."
+    },
+    {
+      "name": "Excavated",
+      "definitionId": "def_7d73f5942afea8ddd9dea916",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1170",
+        "CJ1171",
+        "CJ1401",
+        "CJ1402"
+      ],
+      "filename": "excavated.png",
+      "crop": [
+        2938,
+        1472,
+        470,
+        757
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1401"
+      ],
+      "artRects": [
+        [
+          7,
+          109,
+          386,
+          273
+        ],
+        [
+          63,
+          284,
+          470,
+          418
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          72,
+          143
+        ],
+        [
+          0,
+          0,
+          100,
+          119
+        ]
+      ]
+    }
+  ],
+  "skippedCards": [],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}

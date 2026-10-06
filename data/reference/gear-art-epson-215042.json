@@ -1,0 +1,1270 @@
+{
+  "batch": "epson-215042",
+  "source": "../ato_docs/ato-gear/Epson_05102026215042.jpg",
+  "sourceSha256": "52643f9f0041ec51ddd97c2d32a19bb0639e5b4cddbfd5bdd35a6516736717de",
+  "sourceSize": [
+    3396,
+    2250
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    937,
+    149,
+    23,
+    317
+  ],
+  "cards": [
+    {
+      "name": "Beholder Fists",
+      "definitionId": "def_0903c389f83fe3c4100ed06a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1500",
+        "CJ1501"
+      ],
+      "filename": "beholder-fists.png",
+      "crop": [
+        0,
+        0,
+        489,
+        731
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1501"
+      ],
+      "artRects": [
+        [
+          125,
+          102,
+          383,
+          435
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "reviewNote": "The printed title is 'Beholder Fist'; the existing catalogue name 'Beholder Fists' is retained for the filename and saved-card mapping."
+    },
+    {
+      "name": "Paradont",
+      "definitionId": "def_5ee04e0a2134a065aba93d0f",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1504"
+      ],
+      "filename": "paradont.png",
+      "crop": [
+        489,
+        0,
+        487,
+        731
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1504"
+      ],
+      "artRects": [
+        [
+          88,
+          70,
+          432,
+          514
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          143,
+          0,
+          396,
+          82
+        ],
+        [
+          0,
+          0,
+          84,
+          115
+        ],
+        [
+          0,
+          125,
+          120,
+          494
+        ],
+        [
+          137,
+          41,
+          345,
+          77
+        ],
+        [
+          122,
+          459,
+          203,
+          488
+        ],
+        [
+          207,
+          460,
+          330,
+          483
+        ],
+        [
+          124,
+          489,
+          183,
+          511
+        ],
+        [
+          212,
+          489,
+          326,
+          518
+        ],
+        [
+          390,
+          0,
+          487,
+          125
+        ],
+        [
+          331,
+          459,
+          355,
+          487
+        ],
+        [
+          326,
+          489,
+          358,
+          514
+        ],
+        [
+          183,
+          488,
+          210,
+          514
+        ]
+      ]
+    },
+    {
+      "name": "Echo Eaters",
+      "definitionId": "def_60aff897c46c3d865731ba13",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1498",
+        "CJ1499"
+      ],
+      "filename": "echo-eaters.png",
+      "crop": [
+        976,
+        0,
+        491,
+        731
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1499"
+      ],
+      "artRects": [
+        [
+          113,
+          75,
+          342,
+          430
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          29,
+          429,
+          121,
+          458
+        ],
+        [
+          145,
+          429,
+          186,
+          452
+        ]
+      ]
+    },
+    {
+      "name": "Kakos Implant",
+      "definitionId": "def_87adbb9094b35a544fd46368",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1479"
+      ],
+      "filename": "kakos-implant.png",
+      "crop": [
+        1467,
+        0,
+        485,
+        731
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1479"
+      ],
+      "artRects": [
+        [
+          23,
+          111,
+          455,
+          484
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Argocryptex Beta",
+      "definitionId": "def_feefe2b44d5db716d996ad80",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1537"
+      ],
+      "filename": "argocryptex-beta.png",
+      "crop": [
+        1952,
+        0,
+        482,
+        731
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1537"
+      ],
+      "artRects": [
+        [
+          95,
+          100,
+          369,
+          457
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          200,
+          456,
+          305,
+          479
+        ],
+        [
+          307,
+          456,
+          360,
+          478
+        ]
+      ]
+    },
+    {
+      "name": "Argocryptex Alpha",
+      "definitionId": "def_3f13448a0a2860ab13007fc7",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1536"
+      ],
+      "filename": "argocryptex-alpha.png",
+      "crop": [
+        2434,
+        0,
+        487,
+        731
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1536"
+      ],
+      "artRects": [
+        [
+          115,
+          77,
+          401,
+          417
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          192,
+          61,
+          351,
+          97
+        ],
+        [
+          0,
+          403,
+          487,
+          441
+        ],
+        [
+          419,
+          0,
+          487,
+          111
+        ],
+        [
+          112,
+          385,
+          194,
+          414
+        ],
+        [
+          198,
+          385,
+          308,
+          408
+        ],
+        [
+          312,
+          385,
+          368,
+          408
+        ],
+        [
+          176,
+          73,
+          200,
+          98
+        ],
+        [
+          383,
+          0,
+          487,
+          104
+        ]
+      ]
+    },
+    {
+      "name": "Argocryptex Gamma",
+      "definitionId": "def_933a6812cfbd8cc6fef10cb1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1538"
+      ],
+      "filename": "argocryptex-gamma.png",
+      "crop": [
+        2921,
+        0,
+        475,
+        731
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1538"
+      ],
+      "artRects": [
+        [
+          92,
+          97,
+          466,
+          496
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          340,
+          129,
+          396
+        ],
+        [
+          0,
+          398,
+          129,
+          446
+        ],
+        [
+          396,
+          0,
+          475,
+          113
+        ],
+        [
+          79,
+          387,
+          117,
+          410
+        ]
+      ],
+      "reviewNote": "The gate/modifier panel overlaps the left edge of the helmet. Only exposed illustration is retained."
+    },
+    {
+      "name": "Voice of the People",
+      "definitionId": "def_7cbe160edf7d870de4b74f16",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0963"
+      ],
+      "filename": "voice-of-the-people.png",
+      "crop": [
+        0,
+        731,
+        489,
+        752
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "BJ0963"
+      ],
+      "artRects": [
+        [
+          109,
+          120,
+          484,
+          541
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          163,
+          120,
+          401
+        ],
+        [
+          0,
+          480,
+          380,
+          555
+        ],
+        [
+          172,
+          89,
+          307,
+          126
+        ],
+        [
+          329,
+          538,
+          419,
+          561
+        ]
+      ]
+    },
+    {
+      "name": "Skyfall",
+      "definitionId": "def_afc36c422445c38c24b3547c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1505"
+      ],
+      "filename": "skyfall.png",
+      "crop": [
+        489,
+        731,
+        487,
+        752
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1505"
+      ],
+      "artRects": [
+        [
+          118,
+          118,
+          451,
+          469
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          138,
+          120,
+          487
+        ],
+        [
+          388,
+          0,
+          487,
+          140
+        ]
+      ]
+    },
+    {
+      "name": "Sunreach",
+      "definitionId": "def_addbb52520d9c36f5b3df9b1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1518"
+      ],
+      "filename": "sunreach.png",
+      "crop": [
+        976,
+        731,
+        491,
+        752
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1518"
+      ],
+      "artRects": [
+        [
+          172,
+          120,
+          405,
+          451
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          386,
+          0,
+          491,
+          133
+        ]
+      ]
+    },
+    {
+      "name": "Daedalus's Flight",
+      "definitionId": "def_f7e4a0ddd3d4611d27f4dc36",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1529"
+      ],
+      "filename": "daedalus-s-flight.png",
+      "crop": [
+        1467,
+        731,
+        485,
+        752
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1529"
+      ],
+      "artRects": [
+        [
+          54,
+          129,
+          326,
+          612
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          138,
+          118,
+          360
+        ],
+        [
+          148,
+          610,
+          243,
+          642
+        ],
+        [
+          249,
+          609,
+          315,
+          641
+        ]
+      ]
+    },
+    {
+      "name": "Black Ice Sword",
+      "definitionId": "def_3c848a2992b92fc45d4a700d",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1525",
+        "CJ1526"
+      ],
+      "filename": "black-ice-sword.png",
+      "crop": [
+        1952,
+        731,
+        482,
+        752
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1526"
+      ],
+      "artRects": [
+        [
+          108,
+          93,
+          470,
+          489
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          176,
+          0,
+          382,
+          116
+        ],
+        [
+          389,
+          0,
+          482,
+          113
+        ],
+        [
+          161,
+          457,
+          236,
+          480
+        ],
+        [
+          240,
+          456,
+          303,
+          485
+        ],
+        [
+          130,
+          486,
+          189,
+          509
+        ],
+        [
+          216,
+          485,
+          336,
+          508
+        ],
+        [
+          166,
+          86,
+          185,
+          116
+        ],
+        [
+          315,
+          452,
+          343,
+          482
+        ],
+        [
+          111,
+          138,
+          130,
+          443
+        ],
+        [
+          303,
+          452,
+          344,
+          483
+        ],
+        [
+          105,
+          145,
+          113,
+          443
+        ],
+        [
+          385,
+          0,
+          482,
+          130
+        ]
+      ]
+    },
+    {
+      "name": "Extinction Cestus",
+      "definitionId": "def_6fcc66c4e447083bcecf6367",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1523",
+        "CJ1524"
+      ],
+      "filename": "extinction-cestus.png",
+      "crop": [
+        2434,
+        731,
+        487,
+        752
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1524"
+      ],
+      "artRects": [
+        [
+          113,
+          138,
+          337,
+          521
+        ],
+        [
+          330,
+          281,
+          455,
+          566
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          156,
+          510,
+          326,
+          573
+        ],
+        [
+          0,
+          521,
+          378,
+          573
+        ]
+      ]
+    },
+    {
+      "name": "Time's Arrow",
+      "definitionId": "def_fd708ac12f2f8229709f5df4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1496",
+        "CJ1497"
+      ],
+      "filename": "time-s-arrow.png",
+      "crop": [
+        2921,
+        731,
+        475,
+        752
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1497"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            52,
+            141
+          ],
+          [
+            174,
+            206
+          ],
+          [
+            199,
+            249
+          ],
+          [
+            271,
+            313
+          ],
+          [
+            391,
+            417
+          ],
+          [
+            421,
+            426
+          ],
+          [
+            418,
+            455
+          ],
+          [
+            403,
+            453
+          ],
+          [
+            398,
+            433
+          ],
+          [
+            242,
+            304
+          ],
+          [
+            156,
+            254
+          ],
+          [
+            95,
+            190
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Exoaegis",
+      "definitionId": "def_3100c6d44764814c51121f6a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1423",
+        "CJ1424"
+      ],
+      "filename": "exoaegis.png",
+      "crop": [
+        0,
+        1483,
+        489,
+        756
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1423"
+      ],
+      "artRects": [
+        [
+          115,
+          122,
+          478,
+          507
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          394,
+          0,
+          489,
+          136
+        ],
+        [
+          0,
+          387,
+          288,
+          419
+        ],
+        [
+          0,
+          419,
+          389,
+          453
+        ],
+        [
+          0,
+          453,
+          217,
+          505
+        ],
+        [
+          0,
+          500,
+          489,
+          524
+        ]
+      ],
+      "reviewNote": "Printed rules overlap the left/lower shield edge. Exposed spikes and the right edge are retained; covered pixels are not reconstructed."
+    },
+    {
+      "name": "Razorbow",
+      "definitionId": "def_3100c6d44764814c51121f6a",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1423",
+        "CJ1424"
+      ],
+      "filename": "razorbow.png",
+      "crop": [
+        489,
+        1483,
+        487,
+        756
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1423"
+      ],
+      "artRects": [
+        [
+          179,
+          95,
+          430,
+          478
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          362,
+          124
+        ],
+        [
+          360,
+          0,
+          487,
+          140
+        ],
+        [
+          43,
+          432,
+          281,
+          466
+        ],
+        [
+          151,
+          412,
+          265,
+          440
+        ],
+        [
+          267,
+          408,
+          290,
+          438
+        ]
+      ]
+    },
+    {
+      "name": "Sun Spear",
+      "definitionId": "def_4c2fe5f96b7d68e3dfc616d7",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1425",
+        "CJ1426"
+      ],
+      "filename": "sun-spear.png",
+      "crop": [
+        976,
+        1483,
+        491,
+        756
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1425"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            154,
+            111
+          ],
+          [
+            192,
+            109
+          ],
+          [
+            258,
+            172
+          ],
+          [
+            258,
+            206
+          ],
+          [
+            228,
+            213
+          ],
+          [
+            387,
+            480
+          ],
+          [
+            437,
+            548
+          ],
+          [
+            441,
+            564
+          ],
+          [
+            421,
+            575
+          ],
+          [
+            391,
+            546
+          ],
+          [
+            269,
+            319
+          ],
+          [
+            206,
+            215
+          ],
+          [
+            176,
+            217
+          ],
+          [
+            149,
+            172
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Sun Axe",
+      "definitionId": "def_4c2fe5f96b7d68e3dfc616d7",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1425",
+        "CJ1426"
+      ],
+      "filename": "sun-axe.png",
+      "crop": [
+        1467,
+        1483,
+        485,
+        756
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1425"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            251,
+            122
+          ],
+          [
+            272,
+            127
+          ],
+          [
+            288,
+            179
+          ],
+          [
+            331,
+            208
+          ],
+          [
+            333,
+            267
+          ],
+          [
+            322,
+            308
+          ],
+          [
+            303,
+            301
+          ],
+          [
+            423,
+            518
+          ],
+          [
+            448,
+            546
+          ],
+          [
+            446,
+            557
+          ],
+          [
+            430,
+            568
+          ],
+          [
+            401,
+            548
+          ],
+          [
+            292,
+            312
+          ],
+          [
+            240,
+            303
+          ],
+          [
+            181,
+            260
+          ],
+          [
+            172,
+            197
+          ],
+          [
+            197,
+            181
+          ],
+          [
+            231,
+            172
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Sun Cutter",
+      "definitionId": "def_b91831aeeb3824119b5a2f6e",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1427",
+        "CJ1428"
+      ],
+      "filename": "sun-cutter.png",
+      "crop": [
+        1952,
+        1483,
+        482,
+        756
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1428"
+      ],
+      "artRects": [
+        [
+          142,
+          109,
+          452,
+          435
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          389,
+          0,
+          482,
+          136
+        ]
+      ]
+    },
+    {
+      "name": "Sun Disc",
+      "definitionId": "def_b91831aeeb3824119b5a2f6e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1427",
+        "CJ1428"
+      ],
+      "filename": "sun-disc.png",
+      "crop": [
+        2434,
+        1483,
+        487,
+        756
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1428"
+      ],
+      "artRects": [
+        [
+          124,
+          124,
+          464,
+          453
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Red Polis",
+      "definitionId": "def_f36ef41cb0988b77754364a4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0960"
+      ],
+      "filename": "red-polis.png",
+      "crop": [
+        2921,
+        1483,
+        475,
+        756
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0960"
+      ],
+      "artRects": [
+        [
+          124,
+          104,
+          475,
+          317
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          113,
+          154,
+          226,
+          197
+        ],
+        [
+          113,
+          186,
+          217,
+          222
+        ],
+        [
+          113,
+          217,
+          303,
+          258
+        ],
+        [
+          113,
+          251,
+          314,
+          290
+        ],
+        [
+          113,
+          287,
+          350,
+          340
+        ],
+        [
+          348,
+          303,
+          398,
+          329
+        ],
+        [
+          385,
+          0,
+          475,
+          119
+        ]
+      ],
+      "reviewNote": "The densely printed rules overlap the sword near its guard. Only exposed illustration pixels are retained."
+    }
+  ],
+  "skippedCards": [],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}

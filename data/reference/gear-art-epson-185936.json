@@ -1,0 +1,1105 @@
+{
+  "batch": "epson-185936",
+  "source": "../ato_docs/ato-gear/Epson_05102026185936.jpg",
+  "sourceSha256": "a29bf261c03e5c2f3ed26a535d548b15ae8c262301c81130b02225ff4aa56d29",
+  "sourceSize": [
+    3390,
+    2238
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    922,
+    341,
+    34,
+    136
+  ],
+  "cards": [
+    {
+      "name": "Nail Spear",
+      "definitionId": "def_29c7896602864388351ceb18",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0273"
+      ],
+      "filename": "nail-spear.png",
+      "crop": [
+        0,
+        0,
+        511,
+        728
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "AJ0273"
+      ],
+      "artRects": [
+        [
+          108,
+          81,
+          427,
+          502
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          122,
+          120,
+          411
+        ],
+        [
+          122,
+          470,
+          377,
+          506
+        ],
+        [
+          231,
+          468,
+          361,
+          495
+        ],
+        [
+          323,
+          500,
+          420,
+          532
+        ],
+        [
+          392,
+          0,
+          511,
+          109
+        ]
+      ]
+    },
+    {
+      "name": "Medusalem",
+      "definitionId": "def_42a3c8341115ecf7a4507114",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0270"
+      ],
+      "filename": "medusalem.png",
+      "crop": [
+        511,
+        0,
+        479,
+        728
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "AJ0270"
+      ],
+      "artRects": [
+        [
+          95,
+          106,
+          361,
+          411
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Minohead",
+      "definitionId": "def_352b91fe59bba1131fbf8cc4",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0269"
+      ],
+      "filename": "minohead.png",
+      "crop": [
+        990,
+        0,
+        477,
+        728
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "AJ0269"
+      ],
+      "artRects": [
+        [
+          88,
+          77,
+          357,
+          423
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          16,
+          391,
+          154,
+          434
+        ],
+        [
+          132,
+          416,
+          241,
+          459
+        ]
+      ]
+    },
+    {
+      "name": "Theseus's Razor",
+      "definitionId": "def_836beb266bdf6399d38072e3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0268"
+      ],
+      "filename": "theseus-s-razor.png",
+      "crop": [
+        1467,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "AJ0268"
+      ],
+      "artRects": [
+        [
+          99,
+          63,
+          431,
+          407
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          174,
+          0,
+          404,
+          99
+        ],
+        [
+          407,
+          0,
+          486,
+          108
+        ],
+        [
+          165,
+          364,
+          316,
+          402
+        ],
+        [
+          0,
+          398,
+          377,
+          414
+        ],
+        [
+          173,
+          59,
+          302,
+          95
+        ],
+        [
+          198,
+          362,
+          280,
+          391
+        ],
+        [
+          97,
+          392,
+          182,
+          421
+        ],
+        [
+          282,
+          390,
+          356,
+          413
+        ],
+        [
+          399,
+          0,
+          486,
+          118
+        ],
+        [
+          353,
+          389,
+          375,
+          408
+        ],
+        [
+          95,
+          120,
+          107,
+          338
+        ]
+      ]
+    },
+    {
+      "name": "Leg Spear",
+      "definitionId": "def_b24030357b6872ed3f5ae1f5",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0945"
+      ],
+      "filename": "leg-spear.png",
+      "crop": [
+        1953,
+        0,
+        481,
+        728
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "BJ0945"
+      ],
+      "artRects": [
+        [
+          36,
+          63,
+          386,
+          554
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          63,
+          110,
+          407
+        ],
+        [
+          153,
+          389,
+          386,
+          554
+        ],
+        [
+          0,
+          545,
+          153,
+          560
+        ],
+        [
+          143,
+          38,
+          209,
+          74
+        ],
+        [
+          216,
+          38,
+          327,
+          74
+        ],
+        [
+          220,
+          386,
+          315,
+          419
+        ],
+        [
+          145,
+          479,
+          221,
+          505
+        ],
+        [
+          126,
+          511,
+          325,
+          545
+        ],
+        [
+          386,
+          0,
+          482,
+          112
+        ]
+      ]
+    },
+    {
+      "name": "Fumeblade (Hidden)",
+      "definitionId": "def_b361796bcae5527f1c4f391b",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0958"
+      ],
+      "filename": "fumeblade-hidden.png",
+      "crop": [
+        2434,
+        0,
+        484,
+        728
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "BJ0958"
+      ],
+      "artRects": [
+        [
+          142,
+          90,
+          334,
+          215
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            221,
+            158
+          ],
+          [
+            276,
+            188
+          ],
+          [
+            375,
+            332
+          ],
+          [
+            443,
+            454
+          ],
+          [
+            438,
+            486
+          ],
+          [
+            418,
+            495
+          ],
+          [
+            391,
+            486
+          ],
+          [
+            389,
+            470
+          ],
+          [
+            396,
+            459
+          ],
+          [
+            330,
+            377
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          386,
+          416,
+          405,
+          441
+        ],
+        [
+          116,
+          209,
+          192,
+          238
+        ],
+        [
+          223,
+          414,
+          380,
+          444
+        ]
+      ],
+      "reviewNote": "The rules overlap the lower-left edge of the blade; visible pixels beside them remain."
+    },
+    {
+      "name": "Necroxiphos",
+      "definitionId": "def_9de365ee0910607a459485a4",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0957"
+      ],
+      "filename": "necroxiphos.png",
+      "crop": [
+        2918,
+        0,
+        472,
+        728
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0957"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            110,
+            99
+          ],
+          [
+            151,
+            115
+          ],
+          [
+            377,
+            267
+          ],
+          [
+            427,
+            312
+          ],
+          [
+            429,
+            357
+          ],
+          [
+            404,
+            386
+          ],
+          [
+            359,
+            348
+          ],
+          [
+            364,
+            325
+          ],
+          [
+            171,
+            185
+          ],
+          [
+            110,
+            131
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          368,
+          362,
+          393,
+          389
+        ],
+        [
+          375,
+          377,
+          412,
+          389
+        ],
+        [
+          390,
+          370,
+          402,
+          382
+        ]
+      ]
+    },
+    {
+      "name": "Muck Virus",
+      "definitionId": "def_20611bd46d2f4780f81fc0db",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0943"
+      ],
+      "filename": "muck-virus.png",
+      "crop": [
+        0,
+        728,
+        511,
+        743
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "BJ0943"
+      ],
+      "artRects": [
+        [
+          118,
+          138,
+          443,
+          470
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Unseen Scar",
+      "definitionId": "def_94484f10d318031603efc335",
+      "faceId": "front",
+      "printedIds": [
+        "AJ1998"
+      ],
+      "filename": "unseen-scar.png",
+      "crop": [
+        511,
+        728,
+        479,
+        743
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "AJ1998"
+      ],
+      "artRects": [
+        [
+          140,
+          117,
+          411,
+          355
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Archon Pauldron",
+      "definitionId": "def_328b720fc85197630dea83bb",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0969"
+      ],
+      "filename": "archon-pauldron.png",
+      "crop": [
+        990,
+        728,
+        477,
+        743
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "BJ0969"
+      ],
+      "artRects": [
+        [
+          79,
+          122,
+          386,
+          483
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          355,
+          208,
+          477,
+          373
+        ],
+        [
+          90,
+          402,
+          291,
+          454
+        ],
+        [
+          0,
+          443,
+          343,
+          508
+        ],
+        [
+          308,
+          466,
+          373,
+          496
+        ],
+        [
+          379,
+          476,
+          403,
+          487
+        ]
+      ],
+      "reviewNote": "Printed rules and stat boxes cover portions of the faded Titan projection."
+    },
+    {
+      "name": "Mazey, the Labyrinthian Dog",
+      "definitionId": "def_8af6234f733defcb3f48aa1a",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0282"
+      ],
+      "filename": "mazey-the-labyrinthian-dog.png",
+      "crop": [
+        1953,
+        728,
+        481,
+        743
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "AJ0282"
+      ],
+      "artRects": [
+        [
+          137,
+          140,
+          321,
+          321
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Unsolved Enigma",
+      "definitionId": "def_465127c698264ea196c30937",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0274"
+      ],
+      "filename": "unsolved-enigma.png",
+      "crop": [
+        2434,
+        728,
+        484,
+        743
+      ],
+      "row": 2,
+      "column": 6,
+      "observedPrintedIds": [
+        "AJ0280"
+      ],
+      "artRects": [
+        [
+          120,
+          119,
+          337,
+          327
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          176,
+          323,
+          210,
+          334
+        ],
+        [
+          189,
+          323,
+          284,
+          349
+        ]
+      ],
+      "reviewNote": "The scan prints AJ0280; the imported catalogue uses AJ0274. Artwork is matched by the unambiguous title; existing card identities are retained."
+    },
+    {
+      "name": "Manos Discus",
+      "definitionId": "def_786b1249d8ce53789bb24b89",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0280"
+      ],
+      "filename": "manos-discus.png",
+      "crop": [
+        2918,
+        728,
+        472,
+        743
+      ],
+      "row": 2,
+      "column": 7,
+      "observedPrintedIds": [
+        "AJ0279"
+      ],
+      "artRects": [
+        [
+          63,
+          140,
+          458,
+          520
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          140,
+          106,
+          422
+        ]
+      ],
+      "reviewNote": "The scan prints AJ0279; the imported catalogue uses AJ0280. Matched by its unambiguous title without changing card identities. The left stat panel covers the wheel edge; only exposed illustration is retained."
+    },
+    {
+      "name": "Icarus Lot",
+      "definitionId": "def_2b43196e87b4a1aa864c2cb9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1527"
+      ],
+      "filename": "icarus-lot.png",
+      "crop": [
+        0,
+        1471,
+        511,
+        760
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1527"
+      ],
+      "artRects": [
+        [
+          52,
+          116,
+          486,
+          529
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          149,
+          488,
+          298,
+          531
+        ],
+        [
+          380,
+          0,
+          511,
+          131
+        ],
+        [
+          90,
+          495,
+          298,
+          547
+        ],
+        [
+          211,
+          488,
+          306,
+          521
+        ],
+        [
+          290,
+          510,
+          322,
+          531
+        ]
+      ]
+    },
+    {
+      "name": "Spherecast",
+      "definitionId": "def_cce73c5823bf1f5389c40c78",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1517"
+      ],
+      "filename": "spherecast.png",
+      "crop": [
+        511,
+        1471,
+        479,
+        760
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1517"
+      ],
+      "artRects": [
+        [
+          124,
+          181,
+          343,
+          407
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Right Talon of Doom",
+      "definitionId": "def_9b1af92a9ccefb117c9cd7d4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1516"
+      ],
+      "filename": "right-talon-of-doom.png",
+      "crop": [
+        990,
+        1471,
+        477,
+        760
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1516"
+      ],
+      "artRects": [
+        [
+          147,
+          136,
+          409,
+          531
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          70,
+          516,
+          348,
+          538
+        ]
+      ]
+    },
+    {
+      "name": "Paradox",
+      "definitionId": "def_e3c7b8da2ae35687dba0ceab",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1503"
+      ],
+      "filename": "paradox.png",
+      "crop": [
+        1467,
+        1471,
+        486,
+        760
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1503"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            108,
+            113
+          ],
+          [
+            167,
+            136
+          ],
+          [
+            284,
+            226
+          ],
+          [
+            368,
+            337
+          ],
+          [
+            413,
+            455
+          ],
+          [
+            445,
+            516
+          ],
+          [
+            429,
+            531
+          ],
+          [
+            400,
+            468
+          ],
+          [
+            343,
+            371
+          ],
+          [
+            260,
+            285
+          ],
+          [
+            110,
+            127
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Eye of the Watcher",
+      "definitionId": "def_dd5546747028e5bf67dbe2c8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1502"
+      ],
+      "filename": "eye-of-the-watcher.png",
+      "crop": [
+        1953,
+        1471,
+        481,
+        760
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1502"
+      ],
+      "artRects": [
+        [
+          27,
+          120,
+          370,
+          479
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          180,
+          443,
+          375,
+          491
+        ],
+        [
+          127,
+          478,
+          221,
+          501
+        ],
+        [
+          153,
+          449,
+          239,
+          474
+        ]
+      ],
+      "reviewNote": " The first rule line overlaps the lower feathers; only exposed pixels are retained."
+    },
+    {
+      "name": "Ambramat Armor",
+      "definitionId": "def_c327d4f5260c6a18037bfdb9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0917",
+        "BJ0918"
+      ],
+      "filename": "ambramat-armor.png",
+      "crop": [
+        2434,
+        1471,
+        484,
+        760
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "BJ0918"
+      ],
+      "artRects": [
+        [
+          113,
+          113,
+          382,
+          495
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          183,
+          79,
+          328,
+          115
+        ]
+      ]
+    },
+    {
+      "name": "Umbral Virus",
+      "definitionId": "def_0e707a0bab686ce29c601ba1",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0954"
+      ],
+      "filename": "umbral-virus.png",
+      "crop": [
+        2918,
+        1471,
+        472,
+        760
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0954"
+      ],
+      "artRects": [
+        [
+          43,
+          116,
+          422,
+          486
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          400,
+          285,
+          472,
+          373
+        ],
+        [
+          379,
+          283,
+          472,
+          382
+        ],
+        [
+          0,
+          0,
+          92,
+          140
+        ]
+      ]
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Eschaton Stones",
+      "definitionId": "def_fe06f847c18e2a818d840f71",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0283"
+      ],
+      "filename": "eschaton-stones.png",
+      "crop": [
+        1467,
+        728,
+        486,
+        743
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "AJ0283"
+      ],
+      "reason": "This face contains only printed text and icons, with no illustration to retain. The live card layout supplies its content; no blank background asset is linked."
+    }
+  ],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}

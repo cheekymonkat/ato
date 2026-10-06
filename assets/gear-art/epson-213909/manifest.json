@@ -1,0 +1,632 @@
+{
+  "batch": "epson-213909",
+  "source": "../ato_docs/ato-gear/Epson_05102026213909.jpg",
+  "sourceSha256": "ff5a6dfbf909a305d94e7bb1b27c98b849c5ed9a03cf4d7fe4a55a3f72f5e5f8",
+  "configurationSha256": "afdf3b85ac50a822864d7c08dc47e3a16bdf5f57ef32f232635de227dac753d3",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Lightsword",
+      "definitionId": "def_969a315c1a3301b46f8894b7",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1481"
+      ],
+      "filename": "lightsword.png",
+      "crop": [
+        0,
+        0,
+        498,
+        729
+      ],
+      "width": 498,
+      "height": 729,
+      "preservedPixelCount": 97101,
+      "sha256": "ea838b423e39db145d60076c5e6abb6463dbca37fc6f581f47c3703b4c997384",
+      "sourcePrintedIds": [
+        "CJ1481"
+      ],
+      "reviewNote": "The printed title overlaps the top of the light beam. Visible artwork below the title is retained; the covered portion is not reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/lightsword.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/lightsword.png",
+        "width": 498,
+        "height": 729,
+        "artBottom": 462
+      }
+    },
+    {
+      "name": "Believer Vestment",
+      "definitionId": "def_9080d968cc2fade2355442e8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1485"
+      ],
+      "filename": "believer-vestment.png",
+      "crop": [
+        498,
+        0,
+        485,
+        729
+      ],
+      "width": 485,
+      "height": 729,
+      "preservedPixelCount": 101888,
+      "sha256": "9b52b4fd42168dc5a4652f9a13c026c864db3f0be7755628d7fe08812e626306",
+      "sourcePrintedIds": [
+        "CJ1485"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/believer-vestment.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/believer-vestment.png",
+        "width": 485,
+        "height": 729,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Erratic Insignator",
+      "definitionId": "def_f0aea36032ce5b12a08f9bd4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1482"
+      ],
+      "filename": "erratic-insignator.png",
+      "crop": [
+        983,
+        0,
+        486,
+        729
+      ],
+      "width": 486,
+      "height": 729,
+      "preservedPixelCount": 117135,
+      "sha256": "5d306b2ef81675c93d05db0ad38513582fd161ee7fb236f5b2949cfd2fd3673e",
+      "sourcePrintedIds": [
+        "CJ1482"
+      ],
+      "reviewNote": "The printed title is 'Erratic Insignitor'; the existing catalogue name 'Erratic Insignator' is retained for the filename and saved-card mapping.",
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/erratic-insignator.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/erratic-insignator.png",
+        "width": 486,
+        "height": 729,
+        "artBottom": 539
+      }
+    },
+    {
+      "name": "Exiles Garb",
+      "definitionId": "def_d8fb45bdf9402ee81419e01d",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1490"
+      ],
+      "filename": "exiles-garb.png",
+      "crop": [
+        1469,
+        0,
+        492,
+        729
+      ],
+      "width": 492,
+      "height": 729,
+      "preservedPixelCount": 129827,
+      "sha256": "efff7a1918a8c3ca579e86894922b3319e48dd67e8e8ddee263a673872ec70b7",
+      "sourcePrintedIds": [
+        "CJ1490"
+      ],
+      "reviewNote": "The printed title is \"Exile's Garb\"; the existing catalogue name 'Exiles Garb' is retained for the filename and saved-card mapping.",
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/exiles-garb.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/exiles-garb.png",
+        "width": 492,
+        "height": 729,
+        "artBottom": 548
+      }
+    },
+    {
+      "name": "Shade Shield",
+      "definitionId": "def_1eff12e231445eee3785d952",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1491"
+      ],
+      "filename": "shade-shield.png",
+      "crop": [
+        1961,
+        0,
+        482,
+        729
+      ],
+      "width": 482,
+      "height": 729,
+      "preservedPixelCount": 95388,
+      "sha256": "d2d71e5a16a5d035297f454baa11d710dafa38520e845cce5b70e53cf9e72af5",
+      "sourcePrintedIds": [
+        "CJ1491"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/shade-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/shade-shield.png",
+        "width": 482,
+        "height": 729,
+        "artBottom": 419
+      }
+    },
+    {
+      "name": "Shade Armor",
+      "definitionId": "def_7e3242b61eac61b1ff162965",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1488"
+      ],
+      "filename": "shade-armor.png",
+      "crop": [
+        2443,
+        0,
+        489,
+        729
+      ],
+      "width": 489,
+      "height": 729,
+      "preservedPixelCount": 138775,
+      "sha256": "fbe7be1d4e4b61ee18cef99345f5ca8a883a939f24a6e059701c082822c466be",
+      "sourcePrintedIds": [
+        "CJ1488"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/shade-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/shade-armor.png",
+        "width": 489,
+        "height": 729,
+        "artBottom": 516
+      }
+    },
+    {
+      "name": "Right Maulfist",
+      "definitionId": "def_7b20acc485efbc6451cd3dd9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0940"
+      ],
+      "filename": "right-maulfist.png",
+      "crop": [
+        2932,
+        0,
+        464,
+        729
+      ],
+      "width": 464,
+      "height": 729,
+      "preservedPixelCount": 73424,
+      "sha256": "46fa581a159fff55b5cd64ba937ad3963f397ee0bcb261458c0f0f4972d4d164",
+      "sourcePrintedIds": [
+        "BJ0940"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/right-maulfist.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/right-maulfist.png",
+        "width": 464,
+        "height": 729,
+        "artBottom": 471
+      }
+    },
+    {
+      "name": "Spiral Whip",
+      "definitionId": "def_4d3cd0d995827be79213e43b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1510",
+        "CJ1511"
+      ],
+      "filename": "spiral-whip.png",
+      "crop": [
+        0,
+        729,
+        498,
+        745
+      ],
+      "width": 498,
+      "height": 745,
+      "preservedPixelCount": 117687,
+      "sha256": "c2f9cfea9c7549a04a288a0a2d960264e8e2b056df40bde58cce018d050910cd",
+      "sourcePrintedIds": [
+        "CJ1510"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/spiral-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/spiral-whip.png",
+        "width": 498,
+        "height": 745,
+        "artBottom": 541
+      }
+    },
+    {
+      "name": "Descender",
+      "definitionId": "def_56f78fce352833b7a83f5d5c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1514",
+        "CJ1515"
+      ],
+      "filename": "descender.png",
+      "crop": [
+        498,
+        729,
+        485,
+        745
+      ],
+      "width": 485,
+      "height": 745,
+      "preservedPixelCount": 35782,
+      "sha256": "4c5466d04cadfe27729cd1eb934ad6ff9f86e497697de822bd909044f9bf81dd",
+      "sourcePrintedIds": [
+        "CJ1514"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/descender.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/descender.png",
+        "width": 485,
+        "height": 745,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Devolver",
+      "definitionId": "def_56f78fce352833b7a83f5d5c",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1514",
+        "CJ1515"
+      ],
+      "filename": "devolver.png",
+      "crop": [
+        983,
+        729,
+        486,
+        745
+      ],
+      "width": 486,
+      "height": 745,
+      "preservedPixelCount": 146431,
+      "sha256": "733c08f7fed13d2bda74960d2e96d7c72943078c761db214e6d0427940f0b03a",
+      "sourcePrintedIds": [
+        "CJ1514"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/devolver.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/devolver.png",
+        "width": 486,
+        "height": 745,
+        "artBottom": 614
+      }
+    },
+    {
+      "name": "Probability Blade",
+      "definitionId": "def_0507b9dec88a470082d25778",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1486"
+      ],
+      "filename": "probability-blade.png",
+      "crop": [
+        1469,
+        729,
+        492,
+        745
+      ],
+      "width": 492,
+      "height": 745,
+      "preservedPixelCount": 100584,
+      "sha256": "59869ca894877886db2a9001e21b8eb7cb692cadfcd1035a4fef370eac9a6403",
+      "sourcePrintedIds": [
+        "CJ1486"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/probability-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/probability-blade.png",
+        "width": 492,
+        "height": 745,
+        "artBottom": 455
+      }
+    },
+    {
+      "name": "Shade Mace",
+      "definitionId": "def_0d2bbe2219fff1c11f55af6e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1487"
+      ],
+      "filename": "shade-mace.png",
+      "crop": [
+        1961,
+        729,
+        482,
+        745
+      ],
+      "width": 482,
+      "height": 745,
+      "preservedPixelCount": 14449,
+      "sha256": "11593128d2637cd3ba43ae0ae7027fa6b3ad6802329e4569645959f3ba111adf",
+      "sourcePrintedIds": [
+        "CJ1487"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/shade-mace.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/shade-mace.png",
+        "width": 482,
+        "height": 745,
+        "artBottom": 530
+      }
+    },
+    {
+      "name": "Sunlight Gun",
+      "definitionId": "def_c857e04acdd64b0fb7737a71",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1484"
+      ],
+      "filename": "sunlight-gun.png",
+      "crop": [
+        2443,
+        729,
+        489,
+        745
+      ],
+      "width": 489,
+      "height": 745,
+      "preservedPixelCount": 80360,
+      "sha256": "df6265ec7301cb1064723f7f25210b9862a0ee69fb730c3a13cef51bf5999097",
+      "sourcePrintedIds": [
+        "CJ1484"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/sunlight-gun.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/sunlight-gun.png",
+        "width": 489,
+        "height": 745,
+        "artBottom": 421
+      }
+    },
+    {
+      "name": "Arc Light Thrower",
+      "definitionId": "def_83e19602bbcd09eb4b95b6d5",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1483"
+      ],
+      "filename": "arc-light-thrower.png",
+      "crop": [
+        2932,
+        729,
+        464,
+        745
+      ],
+      "width": 464,
+      "height": 745,
+      "preservedPixelCount": 101434,
+      "sha256": "a5c4638dbacf4e536f34c6ddd6f1a170ce90c85508528ab758f6afa0f0e5aeb0",
+      "sourcePrintedIds": [
+        "CJ1483"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/arc-light-thrower.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/arc-light-thrower.png",
+        "width": 464,
+        "height": 745,
+        "artBottom": 473
+      }
+    },
+    {
+      "name": "Icebreakers",
+      "definitionId": "def_a3c380de040386aae3778c96",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1540",
+        "CJ1541"
+      ],
+      "filename": "icebreakers.png",
+      "crop": [
+        0,
+        1474,
+        498,
+        749
+      ],
+      "width": 498,
+      "height": 749,
+      "preservedPixelCount": 107238,
+      "sha256": "ac4b677475a758aa27f39b19c202fca40431a5e07f8bb0acdf0668a0ea083fb6",
+      "sourcePrintedIds": [
+        "CJ1541"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/icebreakers.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/icebreakers.png",
+        "width": 498,
+        "height": 749,
+        "artBottom": 480
+      }
+    },
+    {
+      "name": "Pithos Linothorax",
+      "definitionId": "def_de56e5c155b5d772b0784004",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1542",
+        "CJ1543"
+      ],
+      "filename": "pithos-linothorax.png",
+      "crop": [
+        498,
+        1474,
+        485,
+        749
+      ],
+      "width": 485,
+      "height": 749,
+      "preservedPixelCount": 70838,
+      "sha256": "81f2660692acd486eb8a59c6b6e99f6b4a69badd595223a72319c781a8f73666",
+      "sourcePrintedIds": [
+        "CJ1543"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/pithos-linothorax.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/pithos-linothorax.png",
+        "width": 485,
+        "height": 749,
+        "artBottom": 473
+      }
+    },
+    {
+      "name": "Spherical Armor",
+      "definitionId": "def_638154b93c9283bfd7be823b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1544",
+        "CJ1545"
+      ],
+      "filename": "spherical-armor.png",
+      "crop": [
+        983,
+        1474,
+        486,
+        749
+      ],
+      "width": 486,
+      "height": 749,
+      "preservedPixelCount": 89711,
+      "sha256": "18feeb3e5f6df8c3e9c266273b750ada81eb94a4fbcf8619f5581588ee59d08b",
+      "sourcePrintedIds": [
+        "CJ1545"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/spherical-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/spherical-armor.png",
+        "width": 486,
+        "height": 749,
+        "artBottom": 450
+      }
+    },
+    {
+      "name": "Visage",
+      "definitionId": "def_935725822ec6b2af3d2f450a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1539"
+      ],
+      "filename": "visage.png",
+      "crop": [
+        1469,
+        1474,
+        492,
+        749
+      ],
+      "width": 492,
+      "height": 749,
+      "preservedPixelCount": 90963,
+      "sha256": "100a2944b60785d24df9e76ccf22c0b4109c1111e5e01a7c9915e9b59dac5e71",
+      "sourcePrintedIds": [
+        "CJ1539"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/visage.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/visage.png",
+        "width": 492,
+        "height": 749,
+        "artBottom": 428
+      }
+    },
+    {
+      "name": "Spiral Mace",
+      "definitionId": "def_22eb3c48f9015d4213a5f2b4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1512",
+        "CJ1513"
+      ],
+      "filename": "spiral-mace.png",
+      "crop": [
+        1961,
+        1474,
+        482,
+        749
+      ],
+      "width": 482,
+      "height": 749,
+      "preservedPixelCount": 55272,
+      "sha256": "96f680f8d02a94ad60ef517fef01cf7263444bd91ba3b13036a14e4783dc8226",
+      "sourcePrintedIds": [
+        "CJ1512"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/spiral-mace.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/spiral-mace.png",
+        "width": 482,
+        "height": 749,
+        "artBottom": 496
+      }
+    },
+    {
+      "name": "Spiral Spear",
+      "definitionId": "def_22eb3c48f9015d4213a5f2b4",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1512",
+        "CJ1513"
+      ],
+      "filename": "spiral-spear.png",
+      "crop": [
+        2443,
+        1474,
+        489,
+        749
+      ],
+      "width": 489,
+      "height": 749,
+      "preservedPixelCount": 84320,
+      "sha256": "0fb5d023732b654850947301195c4d3ae756e2fea7d6df577127e21c61174daa",
+      "sourcePrintedIds": [
+        "CJ1512"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/spiral-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/spiral-spear.png",
+        "width": 489,
+        "height": 749,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Spiral Buckler",
+      "definitionId": "def_4d3cd0d995827be79213e43b",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1510",
+        "CJ1511"
+      ],
+      "filename": "spiral-buckler.png",
+      "crop": [
+        2932,
+        1474,
+        464,
+        749
+      ],
+      "width": 464,
+      "height": 749,
+      "preservedPixelCount": 84511,
+      "sha256": "22615cc04c7010ac96b6bb91e4e9389a14557119236d30438f9242412c3406d7",
+      "sourcePrintedIds": [
+        "CJ1510"
+      ],
+      "reviewNote": "Rules cover the lower part of the faint whip projection. Exposed edges and its tip are retained; covered pixels are not reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-213909/spiral-buckler.png",
+        "grayscaleImage": "assets/gear-art/epson-213909/grayscale/spiral-buckler.png",
+        "width": 464,
+        "height": 749,
+        "artBottom": 512
+      }
+    }
+  ],
+  "skippedCards": []
+}

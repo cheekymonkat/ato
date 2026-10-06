@@ -1,6 +1,6 @@
 # Gear image assets
 
-The seven supplied scans provide 130 Gear faces, split into individual rounded
+The fifteen supplied scans provide 278 Gear faces, split into individual rounded
 PNGs. Filenames follow the Gear names, using lowercase and hyphens:
 `puzzle-axe.png`, `temenos-scale-umbrella.png`, and so on.
 
@@ -77,6 +77,14 @@ titles are not retained in final images.
 | `epson-105748` | `ato-gear/cycle 1/Epson_05102026105748.jpg` | 3,396 × 2,238 | 21 |
 | `epson-110215` | `ato-gear/cycle 1/Epson_05102026110215.jpg` | 3,396 × 2,232 | 21 |
 | `epson-110738` | `ato-gear/cycle 1/Epson_05102026110738.jpg` | 3,402 × 1,494 | 13 |
+| `epson-185551` | `ato-gear/Epson_05102026185551.jpg` | 3,390 × 2,232 | 21 |
+| `epson-185936` | `ato-gear/Epson_05102026185936.jpg` | 3,390 × 2,238 | 20 |
+| `epson-212452` | `ato-gear/Epson_05102026212452.jpg` | 3,408 × 2,244 | 21 |
+| `epson-213909` | `ato-gear/Epson_05102026213909.jpg` | 3,396 × 2,262 | 21 |
+| `epson-214451` | `ato-gear/Epson_05102026214451.jpg` | 3,390 × 2,250 | 21 |
+| `epson-215042` | `ato-gear/Epson_05102026215042.jpg` | 3,396 × 2,250 | 21 |
+| `epson-215411` | `ato-gear/Epson_05102026215411.jpg` | 3,396 × 2,232 | 21 |
+| `epson-215757` | `ato-gear/Epson_05102026215757.jpg` | 3,390 × 1,482 | 2 |
 
 The three Epson scans were added on 4 October 2026 using the same deterministic
 artwork-only extraction. Their 55 physical faces yield 54 new artwork links:
@@ -91,6 +99,63 @@ Observed footer IDs are recorded in `sourcePrintedIds` where visible. This
 selects the Cycle II Chain Whip (BJ0874), independently of the other Chain Whip
 definition (BR0729). Metasword/Metabow, Ladder Buckler/Ladder Mode and Boom
 Spear/Boom Pole keep separate images on their existing front/back faces.
+
+## Conversion record: Root-level Epson scans
+
+Added on 6 October 2026 from the eight `Epson_*.jpg` files directly inside
+`../ato_docs/ato-gear/`. Subfolders were excluded. Seven sheets contain 21
+physical faces each; the final sheet contains 12 faces and two empty positions.
+The 159 photographed faces supply 148 new artwork links (296 ready/grayscale
+PNGs). The ten repeated faces on the last sheet retain the corresponding
+`epson-212452` artwork. Eschaton Stones contains text/icons without an
+illustration, so it retains its live card layout without a blank image asset.
+All 159 cards, including skipped copies and the text-only face, have rounded
+original crops under `../ato_docs/gear-art/<batch>/original/` for comparison.
+
+Each configuration records the unchanged JPEG's SHA-256, native dimensions,
+individual crop bounds, 30-pixel corner radius, clean paper sample, artwork
+rectangles/polygons and printed-content erase rectangles. Tesseract assisted
+some printed-word bounds during review; the final coordinates are explicit,
+and regeneration still requires only Python 3 and `djpeg`. Artwork RGB pixels
+are copied directly from the decoded source. Paper fills remove the scanned
+title, statistics, icons, rules, gates and footer. No hidden illustration is
+redrawn. The native scan resolution and card aspect ratio are retained.
+
+The new links use the existing definition/face IDs. Reversible cards—including
+Leg Khopesh/Leg Spear, Necrotic Virus/Necroxiphos, Fumeblade, Umbral Virus,
+Spherecast/Searing Pillar, Descender/Devolver and the transforming Cycle III
+weapons—have independent front/back backgrounds. No new card definitions,
+printed-ID aliases or player instances are created. Existing catalogue naming
+is used for filenames, including its spelling differences from some scanned
+titles; those differences are recorded in individual `reviewNote` entries.
+
+Two source footer discrepancies are recorded separately as `observedPrintedIds`:
+Unsolved Enigma prints AJ0280 whereas its imported definition has AJ0274;
+Manos Discus prints AJ0279 whereas its imported definition has AJ0280.
+Both images match unambiguous titles. Their existing IDs and instance counts
+are preserved; the discrepancies are not silently made into catalogue aliases.
+`sourcePrintedIds` continues to identify verified aliases already in the data.
+
+Some illustrations are substantially covered by printing. Sisyphus's Triumph
+and Sisyphus's Burden retain only exposed parts of their hammer/rock artwork.
+The title overlaps Lightsword's upper beam. Several stat panels cover armour
+or faint Titan projections. These omissions and other relevant overlaps are
+recorded in the configurations/manifests; no covered pixels are reconstructed.
+
+Reproduce only these root-level batches, while retaining all prior batches:
+
+```sh
+python3 scripts/extract-gear-art.py --batch epson-185551 --batch epson-185936 --batch epson-212452 --batch epson-213909 --batch epson-214451 --batch epson-215042 --batch epson-215411 --batch epson-215757
+npm run catalogue:import
+```
+
+Validation: all 249 domain tests, catalogue reproducibility, lint and type
+checking passed. Expo exported web, iOS and Android bundles to
+`/private/tmp/ato-epson-new-gear-export`. A comparison with the prior catalogue
+confirmed that all 3,014 definitions, 3,217 faces and their rules/identities are
+unchanged, all 130 prior artwork links are retained, and exactly 148 new face
+links were added. Every extracted face was visually reviewed at native
+resolution. The original scans remain unchanged.
 
 ## Conversion record: Cycle I scans
 
@@ -204,6 +269,7 @@ Coordinate conventions in the configuration:
 | `batch` | Unique scan/output directory name; use lowercase letters, numbers and hyphens |
 | `definitionId`, `faceId` | Existing catalogue identity and `front` or `back` |
 | `sourcePrintedIds` | IDs visibly printed on this photographed face, checked against its catalogue aliases |
+| `observedPrintedIds` | Documented source/footer discrepancies; evidence only, never new aliases |
 | `skippedCards` | Duplicate physical crops excluded from artwork links, with identity/location and reason |
 | `filename` | Lowercase Gear-name slug with hyphens and `.png`; verify uniqueness within the batch |
 
@@ -225,8 +291,8 @@ npm run typecheck
 npx expo export --platform all --output-dir /private/tmp/ato-gear-art-export
 ```
 
-[`gear-art.test.mjs`](../tests/gear-art.test.mjs) checks all seven batches'
-130 mappings, filenames, retained-source/image hashes, dimensions, transparent corners, grayscale
+[`gear-art.test.mjs`](../tests/gear-art.test.mjs) checks all fifteen batches'
+278 mappings, filenames, retained-source/image hashes, dimensions, transparent corners, grayscale
 channels/alpha, separate reverse-face artwork and invalid catalogue metadata.
 It also verifies duplicate handling and the two Chain Whip definitions.
 Extend its expected batches/counts when more images are added. Also confirm that

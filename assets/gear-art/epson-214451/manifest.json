@@ -1,0 +1,637 @@
+{
+  "batch": "epson-214451",
+  "source": "../ato_docs/ato-gear/Epson_05102026214451.jpg",
+  "sourceSha256": "ffc0a2900696e82a40011ac41f04907d2e1458aeaeb6b15a6b18ef6bdcb8fcf9",
+  "configurationSha256": "8177acafd292652580ec728d9c91e9d4dea28207673edb69a6af767f5724c4d4",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Feather Shield",
+      "definitionId": "def_4f268f7293c5f6b6e9844a8b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1494",
+        "CJ1495"
+      ],
+      "filename": "feather-shield.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "width": 488,
+      "height": 728,
+      "preservedPixelCount": 90362,
+      "sha256": "b793f0cec18e2891819b29de7d35a3c16acb19aaede72ab32db3acb72cbd38a5",
+      "sourcePrintedIds": [
+        "CJ1495"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/feather-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/feather-shield.png",
+        "width": 488,
+        "height": 728,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "Looper Guard",
+      "definitionId": "def_f02e4d558a1f1aac55f01f3d",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1443",
+        "CJ1444"
+      ],
+      "filename": "looper-guard.png",
+      "crop": [
+        488,
+        0,
+        484,
+        728
+      ],
+      "width": 484,
+      "height": 728,
+      "preservedPixelCount": 121347,
+      "sha256": "2ae481b55ab1a84e9c99743d7bf1edba7ba2f0a551c263b9b45a46855ad9bff5",
+      "sourcePrintedIds": [
+        "CJ1443"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/looper-guard.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/looper-guard.png",
+        "width": 484,
+        "height": 728,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Fatesafer",
+      "definitionId": "def_64c823b6638ceec5f6177db9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1441",
+        "CJ1442"
+      ],
+      "filename": "fatesafer.png",
+      "crop": [
+        972,
+        0,
+        490,
+        728
+      ],
+      "width": 490,
+      "height": 728,
+      "preservedPixelCount": 107164,
+      "sha256": "ecc4fb05e0393f73c75cc292b139312497959e32f6cb96b0b994c69ebf63cb92",
+      "sourcePrintedIds": [
+        "CJ1441"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/fatesafer.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/fatesafer.png",
+        "width": 490,
+        "height": 728,
+        "artBottom": 522
+      }
+    },
+    {
+      "name": "Ontological Module",
+      "definitionId": "def_dac9f33d463d79ea2f8e2041",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1445",
+        "CJ1446"
+      ],
+      "filename": "ontological-module.png",
+      "crop": [
+        1462,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 122331,
+      "sha256": "e4f559b2bd5e4fa30d63315f1c78a8ade04a322112b69f55992f2d2f2eb9d187",
+      "sourcePrintedIds": [
+        "CJ1446"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/ontological-module.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/ontological-module.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 436
+      }
+    },
+    {
+      "name": "Black Ice Kothornos",
+      "definitionId": "def_31a4cc2d6f0c6765fc4118c1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1464",
+        "CJ1465"
+      ],
+      "filename": "black-ice-kothornos.png",
+      "crop": [
+        1948,
+        0,
+        484,
+        728
+      ],
+      "width": 484,
+      "height": 728,
+      "preservedPixelCount": 71491,
+      "sha256": "5fd3f724fa430f95da429c52b23d2101a9329804be117f48af8af597517f2fb3",
+      "sourcePrintedIds": [
+        "CJ1464"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/black-ice-kothornos.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/black-ice-kothornos.png",
+        "width": 484,
+        "height": 728,
+        "artBottom": 344
+      }
+    },
+    {
+      "name": "Iceblock Armor",
+      "definitionId": "def_a140ff12e43756acf0c58d68",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1466",
+        "CJ1467"
+      ],
+      "filename": "iceblock-armor.png",
+      "crop": [
+        2432,
+        0,
+        483,
+        728
+      ],
+      "width": 483,
+      "height": 728,
+      "preservedPixelCount": 138954,
+      "sha256": "cf92c777d257b3d6b9d1deb7a15eb460d09eb95bacebb5b168c3b69342762e4b",
+      "sourcePrintedIds": [
+        "CJ1466"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/iceblock-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/iceblock-armor.png",
+        "width": 483,
+        "height": 728,
+        "artBottom": 499
+      }
+    },
+    {
+      "name": "Polished Ice Shield",
+      "definitionId": "def_dc08986eb76a27a20925d7ef",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1468",
+        "CJ1469"
+      ],
+      "filename": "polished-ice-shield.png",
+      "crop": [
+        2915,
+        0,
+        475,
+        728
+      ],
+      "width": 475,
+      "height": 728,
+      "preservedPixelCount": 77748,
+      "sha256": "8afa6279b3c7b8b898cfa26f59abac5cb8961680d34d7b9d322031f86df2d2dd",
+      "sourcePrintedIds": [
+        "CJ1469"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/polished-ice-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/polished-ice-shield.png",
+        "width": 475,
+        "height": 728,
+        "artBottom": 472
+      }
+    },
+    {
+      "name": "Scaling Gear Prototype",
+      "definitionId": "def_b7df32375b0d054a8af88f78",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1476"
+      ],
+      "filename": "scaling-gear-prototype.png",
+      "crop": [
+        0,
+        728,
+        488,
+        743
+      ],
+      "width": 488,
+      "height": 743,
+      "preservedPixelCount": 138492,
+      "sha256": "7a8fd500b8e79ef1f34d2123cec35d98d234ac697531c5b815b08ba6371152c5",
+      "sourcePrintedIds": [
+        "CJ1476"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/scaling-gear-prototype.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/scaling-gear-prototype.png",
+        "width": 488,
+        "height": 743,
+        "artBottom": 461
+      }
+    },
+    {
+      "name": "Ignition Spear",
+      "definitionId": "def_15987b3264c7ec06b165f828",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1470",
+        "CJ1471"
+      ],
+      "filename": "ignition-spear.png",
+      "crop": [
+        488,
+        728,
+        484,
+        743
+      ],
+      "width": 484,
+      "height": 743,
+      "preservedPixelCount": 102510,
+      "sha256": "15879ab8c0efcc2eb0808b18793dd26bcb116b97a70f17e1e4c5eb3eb40c308d",
+      "sourcePrintedIds": [
+        "CJ1471"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/ignition-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/ignition-spear.png",
+        "width": 484,
+        "height": 743,
+        "artBottom": 517
+      }
+    },
+    {
+      "name": "Hidden Xiphos",
+      "definitionId": "def_d66c30fb5cabcf2a13f1e898",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1472",
+        "CJ1473"
+      ],
+      "filename": "hidden-xiphos.png",
+      "crop": [
+        972,
+        728,
+        490,
+        743
+      ],
+      "width": 490,
+      "height": 743,
+      "preservedPixelCount": 14403,
+      "sha256": "c16c6327d4c6a0c750316992b839ed91d461c3afb44c7dbd36c4ab885dfdffcd",
+      "sourcePrintedIds": [
+        "CJ1473"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/hidden-xiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/hidden-xiphos.png",
+        "width": 490,
+        "height": 743,
+        "artBottom": 461
+      }
+    },
+    {
+      "name": "Hammer-Sword",
+      "definitionId": "def_d66c30fb5cabcf2a13f1e898",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1472",
+        "CJ1473"
+      ],
+      "filename": "hammer-sword.png",
+      "crop": [
+        1462,
+        728,
+        486,
+        743
+      ],
+      "width": 486,
+      "height": 743,
+      "preservedPixelCount": 78800,
+      "sha256": "dae81a42b7f85bb6b2e2f65da80f9f465671c144d74637fb902f056d1876006e",
+      "sourcePrintedIds": [
+        "CJ1473"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/hammer-sword.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/hammer-sword.png",
+        "width": 486,
+        "height": 743,
+        "artBottom": 538
+      }
+    },
+    {
+      "name": "Barbed Blade",
+      "definitionId": "def_332976754f4b76ddc75396b8",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1474",
+        "CJ1475"
+      ],
+      "filename": "barbed-blade.png",
+      "crop": [
+        1948,
+        728,
+        484,
+        743
+      ],
+      "width": 484,
+      "height": 743,
+      "preservedPixelCount": 129803,
+      "sha256": "067d50e9d999e83d308d65599a79622ae73b5e59372bc27f59fdff8394a1b4b8",
+      "sourcePrintedIds": [
+        "CJ1474"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/barbed-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/barbed-blade.png",
+        "width": 484,
+        "height": 743,
+        "artBottom": 506
+      }
+    },
+    {
+      "name": "Barbed Saw",
+      "definitionId": "def_332976754f4b76ddc75396b8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1474",
+        "CJ1475"
+      ],
+      "filename": "barbed-saw.png",
+      "crop": [
+        2432,
+        728,
+        483,
+        743
+      ],
+      "width": 483,
+      "height": 743,
+      "preservedPixelCount": 106059,
+      "sha256": "7c36c301de574ad05d370c752378841c6438aa94cb5a7107589088b36bbaf33b",
+      "sourcePrintedIds": [
+        "CJ1474"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/barbed-saw.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/barbed-saw.png",
+        "width": 483,
+        "height": 743,
+        "artBottom": 508
+      }
+    },
+    {
+      "name": "Oracowl",
+      "definitionId": "def_88ccb387e0672eccdf4a7aa3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1492",
+        "CJ1493"
+      ],
+      "filename": "oracowl.png",
+      "crop": [
+        2915,
+        728,
+        475,
+        743
+      ],
+      "width": 475,
+      "height": 743,
+      "preservedPixelCount": 73292,
+      "sha256": "4c9e48d1be8d1374be873f2067b41006e797f7e240940eec29aba2673cdeb8b7",
+      "sourcePrintedIds": [
+        "CJ1493"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/oracowl.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/oracowl.png",
+        "width": 475,
+        "height": 743,
+        "artBottom": 411
+      }
+    },
+    {
+      "name": "Agathos Agitator",
+      "definitionId": "def_78f23828883f8bef2338dcc0",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1478"
+      ],
+      "filename": "agathos-agitator.png",
+      "crop": [
+        0,
+        1471,
+        488,
+        769
+      ],
+      "width": 488,
+      "height": 769,
+      "preservedPixelCount": 121448,
+      "sha256": "562bf3c4a6c71e221a8f505858c56265fb1fb2f1c1d45ce91035395bcd07fa8d",
+      "sourcePrintedIds": [
+        "CJ1478"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/agathos-agitator.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/agathos-agitator.png",
+        "width": 488,
+        "height": 769,
+        "artBottom": 461
+      }
+    },
+    {
+      "name": "Aristeia Inducer",
+      "definitionId": "def_52f7a1d7f814dae33f555168",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1480"
+      ],
+      "filename": "aristeia-inducer.png",
+      "crop": [
+        488,
+        1471,
+        484,
+        769
+      ],
+      "width": 484,
+      "height": 769,
+      "preservedPixelCount": 87495,
+      "sha256": "0ec7852e5b8806536db294a65979db01c2fa7c04093481431142d7b3e778ff52",
+      "sourcePrintedIds": [
+        "CJ1480"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/aristeia-inducer.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/aristeia-inducer.png",
+        "width": 484,
+        "height": 769,
+        "artBottom": 421
+      }
+    },
+    {
+      "name": "Homeric Engine",
+      "definitionId": "def_1f7d02b48fa733a9c120286b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1477"
+      ],
+      "filename": "homeric-engine.png",
+      "crop": [
+        972,
+        1471,
+        490,
+        769
+      ],
+      "width": 490,
+      "height": 769,
+      "preservedPixelCount": 137082,
+      "sha256": "0c0d8a1731c3b19594b4d6609a0befb35eff085781f85ef82ad82e2c46bd076e",
+      "sourcePrintedIds": [
+        "CJ1477"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/homeric-engine.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/homeric-engine.png",
+        "width": 490,
+        "height": 769,
+        "artBottom": 477
+      }
+    },
+    {
+      "name": "Exobone Armor",
+      "definitionId": "def_27d3b23ad760f9044348c2fe",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1506",
+        "CJ1507"
+      ],
+      "filename": "exobone-armor.png",
+      "crop": [
+        1462,
+        1471,
+        486,
+        769
+      ],
+      "width": 486,
+      "height": 769,
+      "preservedPixelCount": 82880,
+      "sha256": "a9c525cf9a38b83e70d3367f78ba02c47583f4834197733cf485e1da10e95d04",
+      "sourcePrintedIds": [
+        "CJ1507"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/exobone-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/exobone-armor.png",
+        "width": 486,
+        "height": 769,
+        "artBottom": 518
+      }
+    },
+    {
+      "name": "Feather Linothorax",
+      "definitionId": "def_514949213076ea4f7c573375",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1508",
+        "CJ1509"
+      ],
+      "filename": "feather-linothorax.png",
+      "crop": [
+        1948,
+        1471,
+        484,
+        769
+      ],
+      "width": 484,
+      "height": 769,
+      "preservedPixelCount": 112252,
+      "sha256": "530f7e1c1a065973846b234a2a5abb42145e5d07765047234f789c61ea3234bf",
+      "sourcePrintedIds": [
+        "CJ1508"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/feather-linothorax.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/feather-linothorax.png",
+        "width": 484,
+        "height": 769,
+        "artBottom": 547
+      }
+    },
+    {
+      "name": "Enigma Of Transformation",
+      "definitionId": "def_80e8d27819a5d68e4e736abb",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1519",
+        "CJ1520"
+      ],
+      "filename": "enigma-of-transformation.png",
+      "crop": [
+        2432,
+        1471,
+        483,
+        769
+      ],
+      "width": 483,
+      "height": 769,
+      "preservedPixelCount": 84156,
+      "sha256": "5b97af7bcbd6b95a1ece87d2d2758913aec05ad18d7e5c709cee90463ba2eaf9",
+      "sourcePrintedIds": [
+        "CJ1520"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/enigma-of-transformation.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/enigma-of-transformation.png",
+        "width": 483,
+        "height": 769,
+        "artBottom": 407
+      }
+    },
+    {
+      "name": "Horseskull Pauldron",
+      "definitionId": "def_6d9c33195eae660f7abe9536",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1521",
+        "CJ1522"
+      ],
+      "filename": "horseskull-pauldron.png",
+      "crop": [
+        2915,
+        1471,
+        475,
+        769
+      ],
+      "width": 475,
+      "height": 769,
+      "preservedPixelCount": 96411,
+      "sha256": "12dd6c71bdac72ccb50b9311275b9b4eb1b6ad25e3b074d6311b3abdd91a4aa7",
+      "sourcePrintedIds": [
+        "CJ1522"
+      ],
+      "reviewNote": "The printed title is 'Horeskull Pauldron'; the existing catalogue name 'Horseskull Pauldron' is retained for the filename and saved-card mapping.",
+      "artwork": {
+        "image": "assets/gear-art/epson-214451/horseskull-pauldron.png",
+        "grayscaleImage": "assets/gear-art/epson-214451/grayscale/horseskull-pauldron.png",
+        "width": 475,
+        "height": 769,
+        "artBottom": 443
+      }
+    }
+  ],
+  "skippedCards": []
+}

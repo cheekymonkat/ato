@@ -1,0 +1,637 @@
+{
+  "batch": "epson-212452",
+  "source": "../ato_docs/ato-gear/Epson_05102026212452.jpg",
+  "sourceSha256": "2e80f4576c9ac4bb41fe3939ac2b9af487e0b4df04c0c038af7c95366eb51622",
+  "configurationSha256": "5f0ad6c5f1ce044ea4233df116a086cb82f86018be5947601a945f89c726bf4a",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Phoenixiphos",
+      "definitionId": "def_3b781cfb15a15d0e87b2720e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1532"
+      ],
+      "filename": "phoenixiphos.png",
+      "crop": [
+        0,
+        0,
+        495,
+        727
+      ],
+      "width": 495,
+      "height": 727,
+      "preservedPixelCount": 18607,
+      "sha256": "1fc3fe80f576df40e18beef0a45af1788e15035337ada53c87f9e44630ae6f16",
+      "sourcePrintedIds": [
+        "CJ1532"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/phoenixiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/phoenixiphos.png",
+        "width": 495,
+        "height": 727,
+        "artBottom": 532
+      }
+    },
+    {
+      "name": "Atlantean Oscillator",
+      "definitionId": "def_1f7474895f1381644f9d239c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1531"
+      ],
+      "filename": "atlantean-oscillator.png",
+      "crop": [
+        495,
+        0,
+        498,
+        727
+      ],
+      "width": 498,
+      "height": 727,
+      "preservedPixelCount": 111954,
+      "sha256": "021ab58a3f7346a1c10a0b6d4fd7112a9fb478ee5b57aeaa0b7b136a64d08a5b",
+      "sourcePrintedIds": [
+        "CJ1531"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/atlantean-oscillator.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/atlantean-oscillator.png",
+        "width": 498,
+        "height": 727,
+        "artBottom": 502
+      }
+    },
+    {
+      "name": "Future Cryptex",
+      "definitionId": "def_cec2d1eb9712d9fb037fdf15",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1530"
+      ],
+      "filename": "future-cryptex.png",
+      "crop": [
+        993,
+        0,
+        488,
+        727
+      ],
+      "width": 488,
+      "height": 727,
+      "preservedPixelCount": 93495,
+      "sha256": "1a673b4bf953b4a765199c2611eef5174ae9a9c5c665ebf07a9620fc17dc4829",
+      "sourcePrintedIds": [
+        "CJ1530"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/future-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/future-cryptex.png",
+        "width": 488,
+        "height": 727,
+        "artBottom": 450
+      }
+    },
+    {
+      "name": "Icarus's Fall",
+      "definitionId": "def_b8b1fc32093676aebe89eb51",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1528"
+      ],
+      "filename": "icarus-s-fall.png",
+      "crop": [
+        1481,
+        0,
+        489,
+        727
+      ],
+      "width": 489,
+      "height": 727,
+      "preservedPixelCount": 173037,
+      "sha256": "0c81813042faa4600edcac31f27f44476b6418283fb8bb1b8a51e54578d84dce",
+      "sourcePrintedIds": [
+        "CJ1528"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/icarus-s-fall.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/icarus-s-fall.png",
+        "width": 489,
+        "height": 727,
+        "artBottom": 600
+      }
+    },
+    {
+      "name": "Searing Pillar",
+      "definitionId": "def_cce73c5823bf1f5389c40c78",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1517"
+      ],
+      "filename": "searing-pillar.png",
+      "crop": [
+        1970,
+        0,
+        479,
+        727
+      ],
+      "width": 479,
+      "height": 727,
+      "preservedPixelCount": 128158,
+      "sha256": "9c2c2328024a76f4cab0d8a78391f4a961b114971cfaaafbac8caa267863e73c",
+      "sourcePrintedIds": [
+        "CJ1517"
+      ],
+      "reviewNote": " The top-left hand icon overlaps the end of the handle; only exposed handle pixels are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/searing-pillar.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/searing-pillar.png",
+        "width": 479,
+        "height": 727,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Icarian Katar",
+      "definitionId": "def_9b1af92a9ccefb117c9cd7d4",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1516"
+      ],
+      "filename": "icarian-katar.png",
+      "crop": [
+        2449,
+        0,
+        489,
+        727
+      ],
+      "width": 489,
+      "height": 727,
+      "preservedPixelCount": 92250,
+      "sha256": "5bdc34674703fd653bfd5ce27a70e1df72d9d7dccb2c3fb0736a4e38fe53f787",
+      "sourcePrintedIds": [
+        "CJ1516"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/icarian-katar.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/icarian-katar.png",
+        "width": 489,
+        "height": 727,
+        "artBottom": 416
+      }
+    },
+    {
+      "name": "Umbral Carapace",
+      "definitionId": "def_0e707a0bab686ce29c601ba1",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0954"
+      ],
+      "filename": "umbral-carapace.png",
+      "crop": [
+        2938,
+        0,
+        470,
+        727
+      ],
+      "width": 470,
+      "height": 727,
+      "preservedPixelCount": 132930,
+      "sha256": "907d3828f7d49afc7666d38a4c380d28e3b9bf60fc870f2ffa80be787ba8d05c",
+      "sourcePrintedIds": [
+        "BJ0954"
+      ],
+      "reviewNote": "The right stat panel overlays the arm; only exposed armour pixels are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/umbral-carapace.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/umbral-carapace.png",
+        "width": 470,
+        "height": 727,
+        "artBottom": 434
+      }
+    },
+    {
+      "name": "Abyssal Watchers",
+      "definitionId": "def_4c53e8f8e46a93b767245fd3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1393",
+        "CJ1394"
+      ],
+      "filename": "abyssal-watchers.png",
+      "crop": [
+        0,
+        727,
+        495,
+        745
+      ],
+      "width": 495,
+      "height": 745,
+      "preservedPixelCount": 56399,
+      "sha256": "8a85cd4b79a363e9979a349b98a30382dfa593f7bb9b8bff14b23f1fdd4fbb6b",
+      "sourcePrintedIds": [
+        "CJ1394"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/abyssal-watchers.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/abyssal-watchers.png",
+        "width": 495,
+        "height": 745,
+        "artBottom": 295
+      }
+    },
+    {
+      "name": "Smoldering Mace",
+      "definitionId": "def_c25b96d5744e5e884080bcc4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1391",
+        "CJ1392"
+      ],
+      "filename": "smoldering-mace.png",
+      "crop": [
+        495,
+        727,
+        498,
+        745
+      ],
+      "width": 498,
+      "height": 745,
+      "preservedPixelCount": 120603,
+      "sha256": "448e41e9a63dd022848919a0ea529de8f9578e1536424f06238066013a200d77",
+      "sourcePrintedIds": [
+        "CJ1392"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/smoldering-mace.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/smoldering-mace.png",
+        "width": 498,
+        "height": 745,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Hardened Cestus",
+      "definitionId": "def_8899c629558eace84e5fcf72",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1395",
+        "CJ1396"
+      ],
+      "filename": "hardened-cestus.png",
+      "crop": [
+        993,
+        727,
+        488,
+        745
+      ],
+      "width": 488,
+      "height": 745,
+      "preservedPixelCount": 90857,
+      "sha256": "892edd0cf6fed896b780ef38fd766d5af6d930b96cab92e329a2ac89beb542ad",
+      "sourcePrintedIds": [
+        "CJ1396"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/hardened-cestus.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/hardened-cestus.png",
+        "width": 488,
+        "height": 745,
+        "artBottom": 482
+      }
+    },
+    {
+      "name": "Theogonias",
+      "definitionId": "def_b0cc0e8bbaaa7d34e26aeb4a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1546"
+      ],
+      "filename": "theogonias.png",
+      "crop": [
+        1481,
+        727,
+        489,
+        745
+      ],
+      "width": 489,
+      "height": 745,
+      "preservedPixelCount": 17209,
+      "sha256": "548fc68435bf8300b237f2227807649bc773b440b133329d4dca5642e7fa99d2",
+      "sourcePrintedIds": [
+        "CJ1546"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/theogonias.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/theogonias.png",
+        "width": 489,
+        "height": 745,
+        "artBottom": 491
+      }
+    },
+    {
+      "name": "Shellusalem",
+      "definitionId": "def_fcb5c672cef6353b17f45528",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1535"
+      ],
+      "filename": "shellusalem.png",
+      "crop": [
+        1970,
+        727,
+        479,
+        745
+      ],
+      "width": 479,
+      "height": 745,
+      "preservedPixelCount": 77120,
+      "sha256": "e6e00421024b38ef2a9cbbe5b36b32a7332fb3cfa6b891463446d6bd099e6337",
+      "sourcePrintedIds": [
+        "CJ1535"
+      ],
+      "reviewNote": "The bottom rules cover the faded Titan projection behind the shield.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/shellusalem.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/shellusalem.png",
+        "width": 479,
+        "height": 745,
+        "artBottom": 427
+      }
+    },
+    {
+      "name": "Grandfather's",
+      "definitionId": "def_fff4d98806e9d8bf51f70e1a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1534"
+      ],
+      "filename": "grandfather-s.png",
+      "crop": [
+        2449,
+        727,
+        489,
+        745
+      ],
+      "width": 489,
+      "height": 745,
+      "preservedPixelCount": 104627,
+      "sha256": "012d82d46dbad6fca1478b13f8e19b7665522ca03f8707b9da111da56863eb59",
+      "sourcePrintedIds": [
+        "CJ1534"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/grandfather-s.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/grandfather-s.png",
+        "width": 489,
+        "height": 745,
+        "artBottom": 539
+      }
+    },
+    {
+      "name": "Cyclopean Hand Mirror",
+      "definitionId": "def_38e068613d0931bb390a1619",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1533"
+      ],
+      "filename": "cyclopean-hand-mirror.png",
+      "crop": [
+        2938,
+        727,
+        470,
+        745
+      ],
+      "width": 470,
+      "height": 745,
+      "preservedPixelCount": 110888,
+      "sha256": "782c5c9d3fa6e3fbbacf61e360f58914440a2c3c21295f86e8a3f161375265fe",
+      "sourcePrintedIds": [
+        "CJ1533"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/cyclopean-hand-mirror.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/cyclopean-hand-mirror.png",
+        "width": 470,
+        "height": 745,
+        "artBottom": 464
+      }
+    },
+    {
+      "name": "Abyss Mirror",
+      "definitionId": "def_d7d57d360572c4ee19f849c8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1407",
+        "CJ1408"
+      ],
+      "filename": "abyss-mirror.png",
+      "crop": [
+        0,
+        1472,
+        495,
+        757
+      ],
+      "width": 495,
+      "height": 757,
+      "preservedPixelCount": 96343,
+      "sha256": "dc3958a1040f1a29699ef2a75706ffc7a83852078ecef8a18a7155fb515db4d3",
+      "sourcePrintedIds": [
+        "CJ1408"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/abyss-mirror.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/abyss-mirror.png",
+        "width": 495,
+        "height": 757,
+        "artBottom": 459
+      }
+    },
+    {
+      "name": "Abyss Linothorax",
+      "definitionId": "def_0af9860267539b8220cd24e9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1403",
+        "CJ1404"
+      ],
+      "filename": "abyss-linothorax.png",
+      "crop": [
+        495,
+        1472,
+        498,
+        757
+      ],
+      "width": 498,
+      "height": 757,
+      "preservedPixelCount": 95524,
+      "sha256": "b3a3e1979a79c074b5c89f6c413c61d0380e4d73a7f30b258a91c3c2d58923d4",
+      "sourcePrintedIds": [
+        "CJ1404"
+      ],
+      "reviewNote": "Lower rules overlap the faded figure; exposed arms are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/abyss-linothorax.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/abyss-linothorax.png",
+        "width": 498,
+        "height": 757,
+        "artBottom": 548
+      }
+    },
+    {
+      "name": "Abyss Thorax",
+      "definitionId": "def_0fbd571567855b09d2529aab",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1405",
+        "CJ1406"
+      ],
+      "filename": "abyss-thorax.png",
+      "crop": [
+        993,
+        1472,
+        488,
+        757
+      ],
+      "width": 488,
+      "height": 757,
+      "preservedPixelCount": 114688,
+      "sha256": "b37b41ac723123297f55f4e049fb6ff2d16a803e536b5cbfc9a895fe11f89cca",
+      "sourcePrintedIds": [
+        "CJ1406"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/abyss-thorax.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/abyss-thorax.png",
+        "width": 488,
+        "height": 757,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Black Xiphos",
+      "definitionId": "def_71b87cdfb2d096a8abbd60c2",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1389",
+        "CJ1390"
+      ],
+      "filename": "black-xiphos.png",
+      "crop": [
+        1481,
+        1472,
+        489,
+        757
+      ],
+      "width": 489,
+      "height": 757,
+      "preservedPixelCount": 118054,
+      "sha256": "7a7931ee7395a848945900c81fa41d7ae3e314cdecf1c8bbdfd2e7b47770ef12",
+      "sourcePrintedIds": [
+        "CJ1389"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/black-xiphos.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/black-xiphos.png",
+        "width": 489,
+        "height": 757,
+        "artBottom": 563
+      }
+    },
+    {
+      "name": "Black Javelin",
+      "definitionId": "def_8d9d75a640ed49b5801392ec",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1399",
+        "CJ1400"
+      ],
+      "filename": "black-javelin.png",
+      "crop": [
+        1970,
+        1472,
+        479,
+        757
+      ],
+      "width": 479,
+      "height": 757,
+      "preservedPixelCount": 61675,
+      "sha256": "43b0411620c92ed5a6054d7513ef424d6b7127c7caf3eaa2adbd46c46db44d35",
+      "sourcePrintedIds": [
+        "CJ1399"
+      ],
+      "reviewNote": " Printed purple/red gate-strip fringe around the shaft is erased with explicit source-pixel runs; the uncovered dark shaft is retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/black-javelin.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/black-javelin.png",
+        "width": 479,
+        "height": 757,
+        "artBottom": 695
+      }
+    },
+    {
+      "name": "Abyssal Spear",
+      "definitionId": "def_1c3548cd86755c5577b88f7a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1397",
+        "CJ1398"
+      ],
+      "filename": "abyssal-spear.png",
+      "crop": [
+        2449,
+        1472,
+        489,
+        757
+      ],
+      "width": 489,
+      "height": 757,
+      "preservedPixelCount": 35110,
+      "sha256": "9a434e4dc45662c8b8a3e2ae44925d2794d6bce95fe49b09698aba65e7a9ff59",
+      "sourcePrintedIds": [
+        "CJ1398"
+      ],
+      "reviewNote": "Rules cover the bottom of the faint spear projection.",
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/abyssal-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/abyssal-spear.png",
+        "width": 489,
+        "height": 757,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "Excavated",
+      "definitionId": "def_7d73f5942afea8ddd9dea916",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1170",
+        "CJ1171",
+        "CJ1401",
+        "CJ1402"
+      ],
+      "filename": "excavated.png",
+      "crop": [
+        2938,
+        1472,
+        470,
+        757
+      ],
+      "width": 470,
+      "height": 757,
+      "preservedPixelCount": 114204,
+      "sha256": "fa91fc9836ca6b50be33e49b31cd1919e0bbff562fb0ea53376f66c6520c71e2",
+      "sourcePrintedIds": [
+        "CJ1401"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-212452/excavated.png",
+        "grayscaleImage": "assets/gear-art/epson-212452/grayscale/excavated.png",
+        "width": 470,
+        "height": 757,
+        "artBottom": 418
+      }
+    }
+  ],
+  "skippedCards": []
+}

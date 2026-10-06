@@ -1,0 +1,898 @@
+{
+  "batch": "epson-214451",
+  "source": "../ato_docs/ato-gear/Epson_05102026214451.jpg",
+  "sourceSha256": "ffc0a2900696e82a40011ac41f04907d2e1458aeaeb6b15a6b18ef6bdcb8fcf9",
+  "sourceSize": [
+    3390,
+    2250
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    915,
+    136,
+    27,
+    311
+  ],
+  "cards": [
+    {
+      "name": "Feather Shield",
+      "definitionId": "def_4f268f7293c5f6b6e9844a8b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1494",
+        "CJ1495"
+      ],
+      "filename": "feather-shield.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1495"
+      ],
+      "artRects": [
+        [
+          97,
+          99,
+          395,
+          432
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          122,
+          120,
+          418
+        ],
+        [
+          371,
+          199,
+          488,
+          285
+        ]
+      ]
+    },
+    {
+      "name": "Looper Guard",
+      "definitionId": "def_f02e4d558a1f1aac55f01f3d",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1443",
+        "CJ1444"
+      ],
+      "filename": "looper-guard.png",
+      "crop": [
+        488,
+        0,
+        484,
+        728
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1443"
+      ],
+      "artRects": [
+        [
+          36,
+          72,
+          369,
+          457
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          131,
+          0,
+          337,
+          93
+        ],
+        [
+          0,
+          0,
+          102,
+          104
+        ],
+        [
+          169,
+          60,
+          309,
+          96
+        ]
+      ]
+    },
+    {
+      "name": "Fatesafer",
+      "definitionId": "def_64c823b6638ceec5f6177db9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1441",
+        "CJ1442"
+      ],
+      "filename": "fatesafer.png",
+      "crop": [
+        972,
+        0,
+        490,
+        728
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1441"
+      ],
+      "artRects": [
+        [
+          108,
+          118,
+          377,
+          522
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          359,
+          183,
+          490,
+          267
+        ]
+      ]
+    },
+    {
+      "name": "Ontological Module",
+      "definitionId": "def_dac9f33d463d79ea2f8e2041",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1445",
+        "CJ1446"
+      ],
+      "filename": "ontological-module.png",
+      "crop": [
+        1462,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1446"
+      ],
+      "artRects": [
+        [
+          73,
+          99,
+          436,
+          436
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Black Ice Kothornos",
+      "definitionId": "def_31a4cc2d6f0c6765fc4118c1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1464",
+        "CJ1465"
+      ],
+      "filename": "black-ice-kothornos.png",
+      "crop": [
+        1948,
+        0,
+        484,
+        728
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1464"
+      ],
+      "artRects": [
+        [
+          77,
+          86,
+          371,
+          344
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          484,
+          99
+        ],
+        [
+          221,
+          337,
+          298,
+          374
+        ]
+      ]
+    },
+    {
+      "name": "Iceblock Armor",
+      "definitionId": "def_a140ff12e43756acf0c58d68",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1466",
+        "CJ1467"
+      ],
+      "filename": "iceblock-armor.png",
+      "crop": [
+        2432,
+        0,
+        483,
+        728
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1466"
+      ],
+      "artRects": [
+        [
+          49,
+          120,
+          436,
+          499
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          343,
+          258,
+          483,
+          341
+        ]
+      ]
+    },
+    {
+      "name": "Polished Ice Shield",
+      "definitionId": "def_dc08986eb76a27a20925d7ef",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1468",
+        "CJ1469"
+      ],
+      "filename": "polished-ice-shield.png",
+      "crop": [
+        2915,
+        0,
+        475,
+        728
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1469"
+      ],
+      "artRects": [
+        [
+          172,
+          131,
+          400,
+          472
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Scaling Gear Prototype",
+      "definitionId": "def_b7df32375b0d054a8af88f78",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1476"
+      ],
+      "filename": "scaling-gear-prototype.png",
+      "crop": [
+        0,
+        728,
+        488,
+        743
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1476"
+      ],
+      "artRects": [
+        [
+          14,
+          119,
+          436,
+          461
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          355,
+          212,
+          488,
+          284
+        ]
+      ]
+    },
+    {
+      "name": "Ignition Spear",
+      "definitionId": "def_15987b3264c7ec06b165f828",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1470",
+        "CJ1471"
+      ],
+      "filename": "ignition-spear.png",
+      "crop": [
+        488,
+        728,
+        484,
+        743
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1471"
+      ],
+      "artRects": [
+        [
+          120,
+          122,
+          407,
+          517
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          366,
+          205,
+          484,
+          284
+        ],
+        [
+          7,
+          483,
+          344,
+          571
+        ]
+      ]
+    },
+    {
+      "name": "Hidden Xiphos",
+      "definitionId": "def_d66c30fb5cabcf2a13f1e898",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1472",
+        "CJ1473"
+      ],
+      "filename": "hidden-xiphos.png",
+      "crop": [
+        972,
+        728,
+        490,
+        743
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1473"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            366,
+            61
+          ],
+          [
+            389,
+            65
+          ],
+          [
+            260,
+            312
+          ],
+          [
+            237,
+            366
+          ],
+          [
+            196,
+            461
+          ],
+          [
+            176,
+            452
+          ],
+          [
+            201,
+            375
+          ],
+          [
+            174,
+            382
+          ],
+          [
+            163,
+            375
+          ],
+          [
+            208,
+            325
+          ],
+          [
+            251,
+            255
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Hammer-Sword",
+      "definitionId": "def_d66c30fb5cabcf2a13f1e898",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1472",
+        "CJ1473"
+      ],
+      "filename": "hammer-sword.png",
+      "crop": [
+        1462,
+        728,
+        486,
+        743
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1473"
+      ],
+      "artRects": [
+        [
+          181,
+          138,
+          378,
+          538
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Barbed Blade",
+      "definitionId": "def_332976754f4b76ddc75396b8",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1474",
+        "CJ1475"
+      ],
+      "filename": "barbed-blade.png",
+      "crop": [
+        1948,
+        728,
+        484,
+        743
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1474"
+      ],
+      "artRects": [
+        [
+          100,
+          113,
+          466,
+          506
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          119,
+          113,
+          436
+        ],
+        [
+          0,
+          479,
+          391,
+          549
+        ],
+        [
+          372,
+          484,
+          432,
+          507
+        ],
+        [
+          389,
+          0,
+          484,
+          128
+        ]
+      ]
+    },
+    {
+      "name": "Barbed Saw",
+      "definitionId": "def_332976754f4b76ddc75396b8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1474",
+        "CJ1475"
+      ],
+      "filename": "barbed-saw.png",
+      "crop": [
+        2432,
+        728,
+        483,
+        743
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1474"
+      ],
+      "artRects": [
+        [
+          135,
+          106,
+          411,
+          508
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          488,
+          350,
+          567
+        ],
+        [
+          135,
+          487,
+          227,
+          516
+        ],
+        [
+          256,
+          486,
+          319,
+          509
+        ],
+        [
+          386,
+          0,
+          483,
+          121
+        ]
+      ]
+    },
+    {
+      "name": "Oracowl",
+      "definitionId": "def_88ccb387e0672eccdf4a7aa3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1492",
+        "CJ1493"
+      ],
+      "filename": "oracowl.png",
+      "crop": [
+        2915,
+        728,
+        475,
+        743
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1493"
+      ],
+      "artRects": [
+        [
+          120,
+          110,
+          371,
+          411
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          23,
+          402,
+          407,
+          431
+        ]
+      ]
+    },
+    {
+      "name": "Agathos Agitator",
+      "definitionId": "def_78f23828883f8bef2338dcc0",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1478"
+      ],
+      "filename": "agathos-agitator.png",
+      "crop": [
+        0,
+        1471,
+        488,
+        769
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1478"
+      ],
+      "artRects": [
+        [
+          99,
+          131,
+          475,
+          461
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          488,
+          138
+        ]
+      ]
+    },
+    {
+      "name": "Aristeia Inducer",
+      "definitionId": "def_52f7a1d7f814dae33f555168",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1480"
+      ],
+      "filename": "aristeia-inducer.png",
+      "crop": [
+        488,
+        1471,
+        484,
+        769
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1480"
+      ],
+      "artRects": [
+        [
+          127,
+          136,
+          434,
+          421
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Homeric Engine",
+      "definitionId": "def_1f7d02b48fa733a9c120286b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1477"
+      ],
+      "filename": "homeric-engine.png",
+      "crop": [
+        972,
+        1471,
+        490,
+        769
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1477"
+      ],
+      "artRects": [
+        [
+          61,
+          122,
+          463,
+          477
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          490,
+          136
+        ]
+      ]
+    },
+    {
+      "name": "Exobone Armor",
+      "definitionId": "def_27d3b23ad760f9044348c2fe",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1506",
+        "CJ1507"
+      ],
+      "filename": "exobone-armor.png",
+      "crop": [
+        1462,
+        1471,
+        486,
+        769
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1507"
+      ],
+      "artRects": [
+        [
+          129,
+          136,
+          353,
+          518
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          97,
+          506,
+          380,
+          527
+        ]
+      ]
+    },
+    {
+      "name": "Feather Linothorax",
+      "definitionId": "def_514949213076ea4f7c573375",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1508",
+        "CJ1509"
+      ],
+      "filename": "feather-linothorax.png",
+      "crop": [
+        1948,
+        1471,
+        484,
+        769
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1508"
+      ],
+      "artRects": [
+        [
+          95,
+          138,
+          375,
+          547
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          371,
+          287,
+          484,
+          364
+        ],
+        [
+          18,
+          540,
+          384,
+          561
+        ]
+      ]
+    },
+    {
+      "name": "Enigma Of Transformation",
+      "definitionId": "def_80e8d27819a5d68e4e736abb",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1519",
+        "CJ1520"
+      ],
+      "filename": "enigma-of-transformation.png",
+      "crop": [
+        2432,
+        1471,
+        483,
+        769
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1520"
+      ],
+      "artRects": [
+        [
+          88,
+          120,
+          382,
+          407
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          192,
+          404,
+          266,
+          432
+        ]
+      ]
+    },
+    {
+      "name": "Horseskull Pauldron",
+      "definitionId": "def_6d9c33195eae660f7abe9536",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1521",
+        "CJ1522"
+      ],
+      "filename": "horseskull-pauldron.png",
+      "crop": [
+        2915,
+        1471,
+        475,
+        769
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1522"
+      ],
+      "artRects": [
+        [
+          73,
+          122,
+          394,
+          443
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          122,
+          418,
+          362,
+          450
+        ],
+        [
+          385,
+          296,
+          475,
+          366
+        ]
+      ],
+      "reviewNote": "The printed title is 'Horeskull Pauldron'; the existing catalogue name 'Horseskull Pauldron' is retained for the filename and saved-card mapping."
+    }
+  ],
+  "skippedCards": [],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}

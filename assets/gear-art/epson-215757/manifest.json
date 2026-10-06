@@ -1,0 +1,315 @@
+{
+  "batch": "epson-215757",
+  "source": "../ato_docs/ato-gear/Epson_05102026215757.jpg",
+  "sourceSha256": "65a244028e3d8f13b84a7af5cd754b946677139e900ad434174d593c8f1a56b8",
+  "configurationSha256": "d934328f5e93524f2f0fb91d544ed78e106f0675c20186bf853bfe8d9aff6b1a",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Paradox Scanner",
+      "definitionId": "def_473eaefddada5f90a9ed51c0",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1413",
+        "CJ1414"
+      ],
+      "filename": "paradox-scanner.png",
+      "crop": [
+        2427,
+        0,
+        484,
+        728
+      ],
+      "width": 484,
+      "height": 728,
+      "preservedPixelCount": 104040,
+      "sha256": "c863b2927f95eccf67ce335871790b01b0943be4d493d102cad1fe5f0f6c3f4b",
+      "sourcePrintedIds": [
+        "CJ1413"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215757/paradox-scanner.png",
+        "grayscaleImage": "assets/gear-art/epson-215757/grayscale/paradox-scanner.png",
+        "width": 484,
+        "height": 728,
+        "artBottom": 511
+      }
+    },
+    {
+      "name": "Fatesafe",
+      "definitionId": "def_fe83e3d4fe5a53792196f7c3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1415",
+        "CJ1416"
+      ],
+      "filename": "fatesafe.png",
+      "crop": [
+        2911,
+        0,
+        479,
+        728
+      ],
+      "width": 479,
+      "height": 728,
+      "preservedPixelCount": 145490,
+      "sha256": "f4472ca3c37cb9cff1644e90e0ff1f99173afe509cdf497b6eca44002c80338a",
+      "sourcePrintedIds": [
+        "CJ1416"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215757/fatesafe.png",
+        "grayscaleImage": "assets/gear-art/epson-215757/grayscale/fatesafe.png",
+        "width": 479,
+        "height": 728,
+        "artBottom": 524
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Excavated",
+      "definitionId": "def_7d73f5942afea8ddd9dea916",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1170",
+        "CJ1171",
+        "CJ1401",
+        "CJ1402"
+      ],
+      "filename": "excavated.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1401"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Abyssal Spear",
+      "definitionId": "def_1c3548cd86755c5577b88f7a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1397",
+        "CJ1398"
+      ],
+      "filename": "abyssal-spear.png",
+      "crop": [
+        488,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1398"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Abyssal Watchers",
+      "definitionId": "def_4c53e8f8e46a93b767245fd3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1393",
+        "CJ1394"
+      ],
+      "filename": "abyssal-watchers.png",
+      "crop": [
+        974,
+        0,
+        488,
+        728
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1394"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Smoldering Mace",
+      "definitionId": "def_c25b96d5744e5e884080bcc4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1391",
+        "CJ1392"
+      ],
+      "filename": "smoldering-mace.png",
+      "crop": [
+        1462,
+        0,
+        484,
+        728
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1392"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Hardened Cestus",
+      "definitionId": "def_8899c629558eace84e5fcf72",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1395",
+        "CJ1396"
+      ],
+      "filename": "hardened-cestus.png",
+      "crop": [
+        1946,
+        0,
+        481,
+        728
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1396"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "crop": [
+        0,
+        728,
+        488,
+        743
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "crop": [
+        488,
+        728,
+        486,
+        743
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "name": "Abyss Mirror",
+      "definitionId": "def_d7d57d360572c4ee19f849c8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1407",
+        "CJ1408"
+      ],
+      "filename": "abyss-mirror.png",
+      "crop": [
+        974,
+        728,
+        488,
+        743
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1408"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Abyss Linothorax",
+      "definitionId": "def_0af9860267539b8220cd24e9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1403",
+        "CJ1404"
+      ],
+      "filename": "abyss-linothorax.png",
+      "crop": [
+        1462,
+        728,
+        484,
+        743
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1404"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Abyss Thorax",
+      "definitionId": "def_0fbd571567855b09d2529aab",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1405",
+        "CJ1406"
+      ],
+      "filename": "abyss-thorax.png",
+      "crop": [
+        1946,
+        728,
+        481,
+        743
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1406"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Black Xiphos",
+      "definitionId": "def_71b87cdfb2d096a8abbd60c2",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1389",
+        "CJ1390"
+      ],
+      "filename": "black-xiphos.png",
+      "crop": [
+        2427,
+        728,
+        484,
+        743
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1389"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    },
+    {
+      "name": "Black Javelin",
+      "definitionId": "def_8d9d75a640ed49b5801392ec",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1399",
+        "CJ1400"
+      ],
+      "filename": "black-javelin.png",
+      "crop": [
+        2911,
+        728,
+        479,
+        743
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1399"
+      ],
+      "reason": "Duplicate physical face; artwork already supplied by epson-212452."
+    }
+  ]
+}

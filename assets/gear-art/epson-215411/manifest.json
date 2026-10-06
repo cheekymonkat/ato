@@ -1,0 +1,639 @@
+{
+  "batch": "epson-215411",
+  "source": "../ato_docs/ato-gear/Epson_05102026215411.jpg",
+  "sourceSha256": "0f83dd5a6fbb6b13a7bcb307a858dd08951680a86cea3588ffb6867216122453",
+  "configurationSha256": "77f61a9876a798f8acda5df943f1a056049a8d6b185d9613dcc593ae4186c1d2",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Regression Agent",
+      "definitionId": "def_ade9a7db1df2d1a0b10643e1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1462",
+        "CJ1463"
+      ],
+      "filename": "regression-agent.png",
+      "crop": [
+        0,
+        0,
+        498,
+        724
+      ],
+      "width": 498,
+      "height": 724,
+      "preservedPixelCount": 142889,
+      "sha256": "b0e7e8b05be20a51e6d8ce18f683925c78fe0d4983936dec3355ab0fba2c1041",
+      "sourcePrintedIds": [
+        "CJ1463"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/regression-agent.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/regression-agent.png",
+        "width": 498,
+        "height": 724,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Icelixir",
+      "definitionId": "def_855cc5a141894bc31c0b9a8b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1458",
+        "CJ1459"
+      ],
+      "filename": "icelixir.png",
+      "crop": [
+        498,
+        0,
+        491,
+        724
+      ],
+      "width": 491,
+      "height": 724,
+      "preservedPixelCount": 97282,
+      "sha256": "1c72861d7326d9eff12f81a93aea4b5d44c662d51d0b6ae56ca1791b96bbfe11",
+      "sourcePrintedIds": [
+        "CJ1458"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/icelixir.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/icelixir.png",
+        "width": 491,
+        "height": 724,
+        "artBottom": 480
+      }
+    },
+    {
+      "name": "Spike Breakers",
+      "definitionId": "def_fc1b58ddaa0b7cdc782d5d79",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1460",
+        "CJ1461"
+      ],
+      "filename": "spike-breakers.png",
+      "crop": [
+        989,
+        0,
+        483,
+        724
+      ],
+      "width": 483,
+      "height": 724,
+      "preservedPixelCount": 84019,
+      "sha256": "6793c387730e5ccea8df8c0e2877bbe803f6b8baed72c8f7aa692fbffcfe6d23",
+      "sourcePrintedIds": [
+        "CJ1461"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/spike-breakers.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/spike-breakers.png",
+        "width": 483,
+        "height": 724,
+        "artBottom": 403
+      }
+    },
+    {
+      "name": "Prototype Trespass Device",
+      "definitionId": "def_3206ed0a84962172af05acd5",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1447"
+      ],
+      "filename": "prototype-trespass-device.png",
+      "crop": [
+        1472,
+        0,
+        484,
+        724
+      ],
+      "width": 484,
+      "height": 724,
+      "preservedPixelCount": 129888,
+      "sha256": "b52b0851a9a63dd00bde2d96545e18a333b069a7a335bd1b614ca7a029f190e6",
+      "sourcePrintedIds": [
+        "CJ1447"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/prototype-trespass-device.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/prototype-trespass-device.png",
+        "width": 484,
+        "height": 724,
+        "artBottom": 489
+      }
+    },
+    {
+      "name": "Time Booster",
+      "definitionId": "def_8723666db5ec62c34a0a45c3",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1448",
+        "CJ1449"
+      ],
+      "filename": "time-booster.png",
+      "crop": [
+        1956,
+        0,
+        485,
+        724
+      ],
+      "width": 485,
+      "height": 724,
+      "preservedPixelCount": 147312,
+      "sha256": "58e24afe2d298e489f78e9f6e9763b7edb501163a15cc620d187f361e9de52b7",
+      "sourcePrintedIds": [
+        "CJ1449"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/time-booster.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/time-booster.png",
+        "width": 485,
+        "height": 724,
+        "artBottom": 469
+      }
+    },
+    {
+      "name": "Sun Guard",
+      "definitionId": "def_e6eff6534d52cad8c0b107a6",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1450",
+        "CJ1451"
+      ],
+      "filename": "sun-guard.png",
+      "crop": [
+        2441,
+        0,
+        484,
+        724
+      ],
+      "width": 484,
+      "height": 724,
+      "preservedPixelCount": 122502,
+      "sha256": "64253cdfa6d7b96840f63744417da0c6c0c516e59448daaee81a2c9135705451",
+      "sourcePrintedIds": [
+        "CJ1450"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/sun-guard.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/sun-guard.png",
+        "width": 484,
+        "height": 724,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Peaceful Transition",
+      "definitionId": "def_7cbe160edf7d870de4b74f16",
+      "faceId": "back",
+      "printedIds": [
+        "BJ0963"
+      ],
+      "filename": "peaceful-transition.png",
+      "crop": [
+        2925,
+        0,
+        471,
+        724
+      ],
+      "width": 471,
+      "height": 724,
+      "preservedPixelCount": 65360,
+      "sha256": "11d671784875252ca2bc225067ad15d5ee390ff1644a7836cdb470b94fdd371d",
+      "sourcePrintedIds": [
+        "BJ0963"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/peaceful-transition.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/peaceful-transition.png",
+        "width": 471,
+        "height": 724,
+        "artBottom": 387
+      }
+    },
+    {
+      "name": "Spiral Shield",
+      "definitionId": "def_2b40b95f33472d2c3b6130c6",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1421",
+        "CJ1422"
+      ],
+      "filename": "spiral-shield.png",
+      "crop": [
+        0,
+        724,
+        498,
+        748
+      ],
+      "width": 498,
+      "height": 748,
+      "preservedPixelCount": 70473,
+      "sha256": "9e04cae761179d4bcd453b28ef8e8fcd7ea388fd23dd0af76e1adb29fe1e0e51",
+      "sourcePrintedIds": [
+        "CJ1422"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/spiral-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/spiral-shield.png",
+        "width": 498,
+        "height": 748,
+        "artBottom": 471
+      }
+    },
+    {
+      "name": "Siren Cataphract",
+      "definitionId": "def_48e5f295e335375eed03ba1c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1419",
+        "CJ1420"
+      ],
+      "filename": "siren-cataphract.png",
+      "crop": [
+        498,
+        724,
+        491,
+        748
+      ],
+      "width": 491,
+      "height": 748,
+      "preservedPixelCount": 107145,
+      "sha256": "f55d4ce945ad848d00df8012b40307d7fafc4c0d2a92618fe596e3d34c4b4fa4",
+      "sourcePrintedIds": [
+        "CJ1420"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/siren-cataphract.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/siren-cataphract.png",
+        "width": 491,
+        "height": 748,
+        "artBottom": 483
+      }
+    },
+    {
+      "name": "Siren Coral Panoply",
+      "definitionId": "def_b9405136f1c7c983c6375720",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1417",
+        "CJ1418"
+      ],
+      "filename": "siren-coral-panoply.png",
+      "crop": [
+        989,
+        724,
+        483,
+        748
+      ],
+      "width": 483,
+      "height": 748,
+      "preservedPixelCount": 149543,
+      "sha256": "d149900be4ab73890aac08a163c8fb148beb7cab65256145358aa57a631245cc",
+      "sourcePrintedIds": [
+        "CJ1418"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/siren-coral-panoply.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/siren-coral-panoply.png",
+        "width": 483,
+        "height": 748,
+        "artBottom": 526
+      }
+    },
+    {
+      "name": "Sirentusks",
+      "definitionId": "def_d773534f129d232e8b5e60c9",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1431",
+        "CJ1432"
+      ],
+      "filename": "sirentusks.png",
+      "crop": [
+        1472,
+        724,
+        484,
+        748
+      ],
+      "width": 484,
+      "height": 748,
+      "preservedPixelCount": 117451,
+      "sha256": "c27656f92edace906d0ad9713ddc7302a45cf47bccc847c2a340b4f3b4637e0d",
+      "sourcePrintedIds": [
+        "CJ1431"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/sirentusks.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/sirentusks.png",
+        "width": 484,
+        "height": 748,
+        "artBottom": 555
+      }
+    },
+    {
+      "name": "Spiradiscus",
+      "definitionId": "def_eb9f835643337e388a186303",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1433",
+        "CJ1434"
+      ],
+      "filename": "spiradiscus.png",
+      "crop": [
+        1956,
+        724,
+        485,
+        748
+      ],
+      "width": 485,
+      "height": 748,
+      "preservedPixelCount": 122801,
+      "sha256": "d38e35c32cb75e3da06d5db1fdf539e9a6a13d28e0aececf1a3fdf3ba039b75c",
+      "sourcePrintedIds": [
+        "CJ1433"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/spiradiscus.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/spiradiscus.png",
+        "width": 485,
+        "height": 748,
+        "artBottom": 528
+      }
+    },
+    {
+      "name": "Spiral Spada",
+      "definitionId": "def_fd59bce1febd1a96706116f0",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1429",
+        "CJ1430"
+      ],
+      "filename": "spiral-spada.png",
+      "crop": [
+        2441,
+        724,
+        484,
+        748
+      ],
+      "width": 484,
+      "height": 748,
+      "preservedPixelCount": 14217,
+      "sha256": "c5cbf67294890945bac635f6a5f01c7f54893a04fdae150a54076d5dc2d6a7e4",
+      "sourcePrintedIds": [
+        "CJ1430"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/spiral-spada.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/spiral-spada.png",
+        "width": 484,
+        "height": 748,
+        "artBottom": 576
+      }
+    },
+    {
+      "name": "True Sirenblade",
+      "definitionId": "def_a81b90444ed48020e904a5ce",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1435",
+        "CJ1436"
+      ],
+      "filename": "true-sirenblade.png",
+      "crop": [
+        2925,
+        724,
+        471,
+        748
+      ],
+      "width": 471,
+      "height": 748,
+      "preservedPixelCount": 13920,
+      "sha256": "e039383e65290645ccafcfb555a662a24e57aec8e732cce5ba8c96d5385b2f6b",
+      "sourcePrintedIds": [
+        "CJ1436"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/true-sirenblade.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/true-sirenblade.png",
+        "width": 471,
+        "height": 748,
+        "artBottom": 514
+      }
+    },
+    {
+      "name": "Paradox Guard",
+      "definitionId": "def_ed248ffa0176c6bf2eca0fdb",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1411",
+        "CJ1412"
+      ],
+      "filename": "paradox-guard.png",
+      "crop": [
+        0,
+        1472,
+        498,
+        756
+      ],
+      "width": 498,
+      "height": 756,
+      "preservedPixelCount": 87840,
+      "sha256": "1c97c44a5363349fca0550e3b8ab62f998a6553b8f63bde3e668faff47b0686c",
+      "sourcePrintedIds": [
+        "CJ1412"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/paradox-guard.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/paradox-guard.png",
+        "width": 498,
+        "height": 756,
+        "artBottom": 364
+      }
+    },
+    {
+      "name": "Hourglass Necklace",
+      "definitionId": "def_eec969b9ba4d2275660d0968",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1409",
+        "CJ1410"
+      ],
+      "filename": "hourglass-necklace.png",
+      "crop": [
+        498,
+        1472,
+        491,
+        756
+      ],
+      "width": 491,
+      "height": 756,
+      "preservedPixelCount": 88028,
+      "sha256": "9d3b6e6cf9259f76650cd92f82d73c974aacea325ffe12081273604b167acfc1",
+      "sourcePrintedIds": [
+        "CJ1409"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/hourglass-necklace.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/hourglass-necklace.png",
+        "width": 491,
+        "height": 756,
+        "artBottom": 486
+      }
+    },
+    {
+      "name": "Parallel Anchor",
+      "definitionId": "def_67d7096c6e93243f00be05a5",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1456",
+        "CJ1457"
+      ],
+      "filename": "parallel-anchor.png",
+      "crop": [
+        989,
+        1472,
+        483,
+        756
+      ],
+      "width": 483,
+      "height": 756,
+      "preservedPixelCount": 134608,
+      "sha256": "38693e38fa0d7265012d86d1b50f8eb78f7289266c481d00bcc2b62f70f76583",
+      "sourcePrintedIds": [
+        "CJ1456"
+      ],
+      "reviewNote": "Lower rules overlap the faded Titan figures.",
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/parallel-anchor.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/parallel-anchor.png",
+        "width": 483,
+        "height": 756,
+        "artBottom": 500
+      }
+    },
+    {
+      "name": "Glacial Fabric",
+      "definitionId": "def_db9e38fae3a1db798e95011e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1452",
+        "CJ1453"
+      ],
+      "filename": "glacial-fabric.png",
+      "crop": [
+        1472,
+        1472,
+        484,
+        756
+      ],
+      "width": 484,
+      "height": 756,
+      "preservedPixelCount": 84322,
+      "sha256": "4e33e48a1e00ebf9187e518b0030a86ccab273c9710835ce3b815ec228099605",
+      "sourcePrintedIds": [
+        "CJ1452"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/glacial-fabric.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/glacial-fabric.png",
+        "width": 484,
+        "height": 756,
+        "artBottom": 547
+      }
+    },
+    {
+      "name": "Timeline Synchronizer",
+      "definitionId": "def_b6cfef07345c8354898539e1",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1454",
+        "CJ1455"
+      ],
+      "filename": "timeline-synchronizer.png",
+      "crop": [
+        1956,
+        1472,
+        485,
+        756
+      ],
+      "width": 485,
+      "height": 756,
+      "preservedPixelCount": 159119,
+      "sha256": "2ea3376fc176bb1c1302a9aa5954eddf0724912deb5b8d84c3658c14805c1344",
+      "sourcePrintedIds": [
+        "CJ1455"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/timeline-synchronizer.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/timeline-synchronizer.png",
+        "width": 485,
+        "height": 756,
+        "artBottom": 511
+      }
+    },
+    {
+      "name": "Recall Shell",
+      "definitionId": "def_b96bca4a05047b99eb999aee",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1439",
+        "CJ1440"
+      ],
+      "filename": "recall-shell.png",
+      "crop": [
+        2441,
+        1472,
+        484,
+        756
+      ],
+      "width": 484,
+      "height": 756,
+      "preservedPixelCount": 87450,
+      "sha256": "2f04b148bc7110eccac525600e7ac77b369a0846050691207df7fc373e59cccc",
+      "sourcePrintedIds": [
+        "CJ1440"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/recall-shell.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/recall-shell.png",
+        "width": 484,
+        "height": 756,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Siren Mask",
+      "definitionId": "def_750f26d255f1f0da09f4de20",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1437",
+        "CJ1438"
+      ],
+      "filename": "siren-mask.png",
+      "crop": [
+        2925,
+        1472,
+        471,
+        756
+      ],
+      "width": 471,
+      "height": 756,
+      "preservedPixelCount": 84219,
+      "sha256": "6515a9c3ba07f8eae361d394eb1a59a1108a911272309baf5062274f4f454021",
+      "sourcePrintedIds": [
+        "CJ1437"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-215411/siren-mask.png",
+        "grayscaleImage": "assets/gear-art/epson-215411/grayscale/siren-mask.png",
+        "width": 471,
+        "height": 756,
+        "artBottom": 412
+      }
+    }
+  ],
+  "skippedCards": []
+}

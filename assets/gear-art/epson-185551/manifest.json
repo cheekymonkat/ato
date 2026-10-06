@@ -1,0 +1,627 @@
+{
+  "batch": "epson-185551",
+  "source": "../ato_docs/ato-gear/Epson_05102026185551.jpg",
+  "sourceSha256": "d346b78bf420d9d39805404572b01072807e974194828fc5d3de8c2708e1fb24",
+  "configurationSha256": "ca7be5c5856030b58ce4e751edf18dd8b50594365ec67dc9097232c3b3ca698f",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "The End",
+      "definitionId": "def_7593d0b4bf8110c1ad5f3b1b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0959"
+      ],
+      "filename": "the-end.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "width": 488,
+      "height": 728,
+      "preservedPixelCount": 16937,
+      "sha256": "5219135d5cc25b911bee3174a3f5d217470793315fa87f93b1d5501d8c9a1bfa",
+      "sourcePrintedIds": [
+        "BJ0959"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/the-end.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/the-end.png",
+        "width": 488,
+        "height": 728,
+        "artBottom": 416
+      }
+    },
+    {
+      "name": "Cowl of Char",
+      "definitionId": "def_cbbaea3d406ef2ad2bca117e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0956"
+      ],
+      "filename": "cowl-of-char.png",
+      "crop": [
+        488,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 110521,
+      "sha256": "3b38153f30ec00962f77ac7e2600339ef96d03c0e3a3890b433f637499c2fdb7",
+      "sourcePrintedIds": [
+        "BJ0956"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/cowl-of-char.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/cowl-of-char.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Leg Khopesh",
+      "definitionId": "def_b24030357b6872ed3f5ae1f5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0945"
+      ],
+      "filename": "leg-khopesh.png",
+      "crop": [
+        974,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 118270,
+      "sha256": "807c514ab9651417e7973c48abb0adfb70db85b87e46aec1ba33039539683434",
+      "sourcePrintedIds": [
+        "BJ0945"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/leg-khopesh.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/leg-khopesh.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 551
+      }
+    },
+    {
+      "name": "Jaws of the Lion",
+      "definitionId": "def_1b2072d55810e190a414d824",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0944"
+      ],
+      "filename": "jaws-of-the-lion.png",
+      "crop": [
+        1460,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 87191,
+      "sha256": "0cef2670a65b1a5519747a5ca6752c597c5c69fa2259cdcb10444e1e706f4a64",
+      "sourcePrintedIds": [
+        "BJ0944"
+      ],
+      "reviewNote": "Rules cover the lower faded Titan projection; exposed pixels are retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/jaws-of-the-lion.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/jaws-of-the-lion.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Rememberance",
+      "definitionId": "def_218341bb73ce6cac590b0ed3",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0942"
+      ],
+      "filename": "rememberance.png",
+      "crop": [
+        1946,
+        0,
+        488,
+        728
+      ],
+      "width": 488,
+      "height": 728,
+      "preservedPixelCount": 79923,
+      "sha256": "49c1f393697982971acf7f0961d9e9bad42d352724fbd82c2b7317743dcf210c",
+      "sourcePrintedIds": [
+        "BJ0942"
+      ],
+      "reviewNote": "The printed title is 'Remembrance'; the existing catalogue name 'Rememberance' is retained. Rules overlap the lower-left illustration; only exposed pixels are copied.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/rememberance.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/rememberance.png",
+        "width": 488,
+        "height": 728,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Left Maulfist",
+      "definitionId": "def_08a2a8b6f7480d2577f618ec",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0941"
+      ],
+      "filename": "left-maulfist.png",
+      "crop": [
+        2434,
+        0,
+        486,
+        728
+      ],
+      "width": 486,
+      "height": 728,
+      "preservedPixelCount": 76336,
+      "sha256": "2500c535663cb4e51236fd19e721321f896ebe6940b0fd397b447e97309b3407",
+      "sourcePrintedIds": [
+        "BJ0941"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/left-maulfist.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/left-maulfist.png",
+        "width": 486,
+        "height": 728,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Pyramidion",
+      "definitionId": "def_a04ac642d0912d68abfcb027",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0858"
+      ],
+      "filename": "pyramidion.png",
+      "crop": [
+        2920,
+        0,
+        470,
+        728
+      ],
+      "width": 470,
+      "height": 728,
+      "preservedPixelCount": 70579,
+      "sha256": "242e1e82b45209d9063b50f4374961fee7843ae92714ee3379e4134dac166692",
+      "sourcePrintedIds": [
+        "BJ0858"
+      ],
+      "reviewNote": "Rules cover the lower edge of the weapon; no covered pixels are reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/pyramidion.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/pyramidion.png",
+        "width": 470,
+        "height": 728,
+        "artBottom": 346
+      }
+    },
+    {
+      "name": "Pyrasklepios",
+      "definitionId": "def_16c33caeee4dade6154a0fb0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0859"
+      ],
+      "filename": "pyrasklepios.png",
+      "crop": [
+        0,
+        728,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 53154,
+      "sha256": "c01f40f0b47455ee5a841658a890d7dffe80a2bc6ebc165960f8f99c4ad37647",
+      "sourcePrintedIds": [
+        "BJ0859"
+      ],
+      "reviewNote": "Rules overlap the lower weapon head and shaft; only visible illustration is retained.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/pyrasklepios.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/pyrasklepios.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 368
+      }
+    },
+    {
+      "name": "Bellerophon",
+      "definitionId": "def_0bc0501138e81f84c4e7145b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0939"
+      ],
+      "filename": "bellerophon.png",
+      "crop": [
+        488,
+        728,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 22958,
+      "sha256": "4fb7973bcba315eeeccd011a024c99ad461aef2c277705e6f4daf7418b8efcea",
+      "sourcePrintedIds": [
+        "BJ0939"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/bellerophon.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/bellerophon.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 587
+      }
+    },
+    {
+      "name": "Sisyphus's Triumph",
+      "definitionId": "def_941d85e059c6332f98740e47",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0971"
+      ],
+      "filename": "sisyphus-s-triumph.png",
+      "crop": [
+        974,
+        728,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 7246,
+      "sha256": "d7c9104fb3050c2d3d4e869869390a26d2c65b38db81d7663636ab7c27c3b04b",
+      "sourcePrintedIds": [
+        "BJ0971"
+      ],
+      "reviewNote": "The hammer and rock illustration is mostly covered by dense rules. Its exposed handle and rock edges are retained; covered artwork is not reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/sisyphus-s-triumph.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/sisyphus-s-triumph.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 568
+      }
+    },
+    {
+      "name": "Sisyphus's Burden",
+      "definitionId": "def_2501a268bf79dd0be63f027c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0970"
+      ],
+      "filename": "sisyphus-s-burden.png",
+      "crop": [
+        1460,
+        728,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 19947,
+      "sha256": "74d62ea6aeec6cc3176661af315289e86b1bd8e268111253cf302abfd21fc08d",
+      "sourcePrintedIds": [
+        "BJ0970"
+      ],
+      "reviewNote": "Dense rules cover much of the rock illustration. Only exposed rock pixels around the printed lines are retained; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/sisyphus-s-burden.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/sisyphus-s-burden.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 410
+      }
+    },
+    {
+      "name": "Maw of Byzantion",
+      "definitionId": "def_77ef5c3cc042bba35cef073f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0964"
+      ],
+      "filename": "maw-of-byzantion.png",
+      "crop": [
+        1946,
+        728,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 74733,
+      "sha256": "e98a7bb04a9d59dd3e4d7089adf05584b5f229b1e13e84e95737a9c038da45d7",
+      "sourcePrintedIds": [
+        "BJ0964"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/maw-of-byzantion.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/maw-of-byzantion.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 425
+      }
+    },
+    {
+      "name": "Immeasurable Weight",
+      "definitionId": "def_55a4e6576f3ad53a9bc2cc39",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0962"
+      ],
+      "filename": "immeasurable-weight.png",
+      "crop": [
+        2434,
+        728,
+        486,
+        746
+      ],
+      "width": 486,
+      "height": 746,
+      "preservedPixelCount": 27734,
+      "sha256": "7c75df158306ca86298404b1a3fbac601efb83ab723d14872a4af248ea2a05c2",
+      "sourcePrintedIds": [
+        "BJ0962"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/immeasurable-weight.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/immeasurable-weight.png",
+        "width": 486,
+        "height": 746,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Context",
+      "definitionId": "def_7f7dfe080fad17e2e7cc123a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0961"
+      ],
+      "filename": "context.png",
+      "crop": [
+        2920,
+        728,
+        470,
+        746
+      ],
+      "width": 470,
+      "height": 746,
+      "preservedPixelCount": 89494,
+      "sha256": "2bd7aaf5a563c074050c171f9975c38993af7d7ce487f7eca49c827a0479aef8",
+      "sourcePrintedIds": [
+        "BJ0961"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/context.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/context.png",
+        "width": 470,
+        "height": 746,
+        "artBottom": 364
+      }
+    },
+    {
+      "name": "Glimmer Shroud",
+      "definitionId": "def_6f22dd77ba6af3a1cbf8c33e",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0260"
+      ],
+      "filename": "glimmer-shroud.png",
+      "crop": [
+        0,
+        1474,
+        488,
+        752
+      ],
+      "width": 488,
+      "height": 752,
+      "preservedPixelCount": 117932,
+      "sha256": "8b3b1da7f9a294a415c336913873185f7b7b04f09ac42393f7d345807f72825f",
+      "sourcePrintedIds": [
+        "AJ0260"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/glimmer-shroud.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/glimmer-shroud.png",
+        "width": 488,
+        "height": 752,
+        "artBottom": 470
+      }
+    },
+    {
+      "name": "Mazemace",
+      "definitionId": "def_77d387867a0e509a62b4f111",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0259"
+      ],
+      "filename": "mazemace.png",
+      "crop": [
+        488,
+        1474,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 117739,
+      "sha256": "8184ff74756a7f7dcd72c3473f3a54714a433a21895c8de376344608695c11f8",
+      "sourcePrintedIds": [
+        "AJ0259"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/mazemace.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/mazemace.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 546
+      }
+    },
+    {
+      "name": "The Promise",
+      "definitionId": "def_c63619973a9013610ed7cd28",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0258"
+      ],
+      "filename": "the-promise.png",
+      "crop": [
+        974,
+        1474,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 34248,
+      "sha256": "e620156b89f69e67ed511d3ed6abccec5950e57b154178de5f4c3eb4eb3b50bb",
+      "sourcePrintedIds": [
+        "AJ0258"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/the-promise.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/the-promise.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 524
+      }
+    },
+    {
+      "name": "Shieldblade",
+      "definitionId": "def_f6a3fe4054b8ea729ab55e70",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0257"
+      ],
+      "filename": "shieldblade.png",
+      "crop": [
+        1460,
+        1474,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 56304,
+      "sha256": "d003331825ed7fd3469c38f2f6ee44f8e6d849e1d22bdcbdd3ea05dad3a09da3",
+      "sourcePrintedIds": [
+        "AJ0257"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/shieldblade.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/shieldblade.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 476
+      }
+    },
+    {
+      "name": "Fumeblade (Barred)",
+      "definitionId": "def_b361796bcae5527f1c4f391b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0958"
+      ],
+      "filename": "fumeblade-barred.png",
+      "crop": [
+        1946,
+        1474,
+        488,
+        752
+      ],
+      "width": 488,
+      "height": 752,
+      "preservedPixelCount": 75069,
+      "sha256": "cc9ab29c3a596255bd7b5926f548a2e8fbd88daf22f3967b94a80dfd460d477c",
+      "sourcePrintedIds": [
+        "BJ0958"
+      ],
+      "reviewNote": "The printed title is 'Fumeblade (Bared)'; the existing catalogue name 'Fumeblade (Barred)' is retained for the filename and saved-card mapping.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/fumeblade-barred.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/fumeblade-barred.png",
+        "width": 488,
+        "height": 752,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Necrotic Virus",
+      "definitionId": "def_9de365ee0910607a459485a4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0957"
+      ],
+      "filename": "necrotic-virus.png",
+      "crop": [
+        2434,
+        1474,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 87577,
+      "sha256": "298bea77b1250c3cada6fb3f41ff9e24dce67f90ff5aaaa589c01598d27d2c31",
+      "sourcePrintedIds": [
+        "BJ0957"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/necrotic-virus.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/necrotic-virus.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 409
+      }
+    },
+    {
+      "name": "Elephantine Armor",
+      "definitionId": "def_f3ab1e8e5ef3faf8b284e5fd",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0955"
+      ],
+      "filename": "elephantine-armor.png",
+      "crop": [
+        2920,
+        1474,
+        470,
+        752
+      ],
+      "width": 470,
+      "height": 752,
+      "preservedPixelCount": 91907,
+      "sha256": "80782c250d1322df798f68bb8b14524a09d37ce29ac140991456d059af17cd31",
+      "sourcePrintedIds": [
+        "BJ0955"
+      ],
+      "reviewNote": "The right stat boxes and lower rules obscure the sleeve/torso edges.",
+      "artwork": {
+        "image": "assets/gear-art/epson-185551/elephantine-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-185551/grayscale/elephantine-armor.png",
+        "width": 470,
+        "height": 752,
+        "artBottom": 404
+      }
+    }
+  ],
+  "skippedCards": []
+}

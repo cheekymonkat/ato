@@ -1,0 +1,1050 @@
+{
+  "batch": "epson-213909",
+  "source": "../ato_docs/ato-gear/Epson_05102026213909.jpg",
+  "sourceSha256": "ff5a6dfbf909a305d94e7bb1b27c98b849c5ed9a03cf4d7fe4a55a3f72f5e5f8",
+  "sourceSize": [
+    3396,
+    2262
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    1895,
+    351,
+    27,
+    147
+  ],
+  "cards": [
+    {
+      "name": "Lightsword",
+      "definitionId": "def_969a315c1a3301b46f8894b7",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1481"
+      ],
+      "filename": "lightsword.png",
+      "crop": [
+        0,
+        0,
+        498,
+        729
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1481"
+      ],
+      "artRects": [
+        [
+          113,
+          86,
+          389,
+          462
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          197,
+          421,
+          328,
+          457
+        ],
+        [
+          168,
+          454,
+          209,
+          477
+        ],
+        [
+          238,
+          455,
+          297,
+          477
+        ],
+        [
+          209,
+          452,
+          231,
+          465
+        ],
+        [
+          298,
+          451,
+          320,
+          466
+        ],
+        [
+          373,
+          192,
+          498,
+          264
+        ]
+      ],
+      "reviewNote": "The printed title overlaps the top of the light beam. Visible artwork below the title is retained; the covered portion is not reconstructed."
+    },
+    {
+      "name": "Believer Vestment",
+      "definitionId": "def_9080d968cc2fade2355442e8",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1485"
+      ],
+      "filename": "believer-vestment.png",
+      "crop": [
+        498,
+        0,
+        485,
+        729
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1485"
+      ],
+      "artRects": [
+        [
+          88,
+          102,
+          385,
+          457
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          362,
+          199,
+          485,
+          342
+        ],
+        [
+          130,
+          455,
+          213,
+          484
+        ],
+        [
+          217,
+          455,
+          263,
+          478
+        ]
+      ]
+    },
+    {
+      "name": "Erratic Insignator",
+      "definitionId": "def_f0aea36032ce5b12a08f9bd4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1482"
+      ],
+      "filename": "erratic-insignator.png",
+      "crop": [
+        983,
+        0,
+        486,
+        729
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1482"
+      ],
+      "artRects": [
+        [
+          108,
+          127,
+          405,
+          539
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          362,
+          195,
+          486,
+          265
+        ],
+        [
+          76,
+          537,
+          158,
+          575
+        ],
+        [
+          162,
+          527,
+          279,
+          570
+        ],
+        [
+          306,
+          528,
+          371,
+          564
+        ]
+      ],
+      "reviewNote": "The printed title is 'Erratic Insignitor'; the existing catalogue name 'Erratic Insignator' is retained for the filename and saved-card mapping."
+    },
+    {
+      "name": "Exiles Garb",
+      "definitionId": "def_d8fb45bdf9402ee81419e01d",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1490"
+      ],
+      "filename": "exiles-garb.png",
+      "crop": [
+        1469,
+        0,
+        492,
+        729
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1490"
+      ],
+      "artRects": [
+        [
+          57,
+          75,
+          342,
+          548
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          95,
+          106
+        ],
+        [
+          0,
+          537,
+          363,
+          557
+        ],
+        [
+          74,
+          530,
+          169,
+          572
+        ]
+      ],
+      "reviewNote": "The printed title is \"Exile's Garb\"; the existing catalogue name 'Exiles Garb' is retained for the filename and saved-card mapping."
+    },
+    {
+      "name": "Shade Shield",
+      "definitionId": "def_1eff12e231445eee3785d952",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1491"
+      ],
+      "filename": "shade-shield.png",
+      "crop": [
+        1961,
+        0,
+        482,
+        729
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1491"
+      ],
+      "artRects": [
+        [
+          104,
+          79,
+          385,
+          419
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          254,
+          417,
+          330,
+          445
+        ]
+      ]
+    },
+    {
+      "name": "Shade Armor",
+      "definitionId": "def_7e3242b61eac61b1ff162965",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1488"
+      ],
+      "filename": "shade-armor.png",
+      "crop": [
+        2443,
+        0,
+        489,
+        729
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1488"
+      ],
+      "artRects": [
+        [
+          77,
+          100,
+          423,
+          516
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          358,
+          269,
+          489,
+          342
+        ],
+        [
+          181,
+          512,
+          285,
+          539
+        ]
+      ]
+    },
+    {
+      "name": "Right Maulfist",
+      "definitionId": "def_7b20acc485efbc6451cd3dd9",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0940"
+      ],
+      "filename": "right-maulfist.png",
+      "crop": [
+        2932,
+        0,
+        464,
+        729
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0940"
+      ],
+      "artRects": [
+        [
+          127,
+          118,
+          335,
+          471
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Spiral Whip",
+      "definitionId": "def_4d3cd0d995827be79213e43b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1510",
+        "CJ1511"
+      ],
+      "filename": "spiral-whip.png",
+      "crop": [
+        0,
+        729,
+        498,
+        745
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1510"
+      ],
+      "artRects": [
+        [
+          145,
+          118,
+          426,
+          541
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          361,
+          0,
+          410,
+          142
+        ]
+      ]
+    },
+    {
+      "name": "Descender",
+      "definitionId": "def_56f78fce352833b7a83f5d5c",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1514",
+        "CJ1515"
+      ],
+      "filename": "descender.png",
+      "crop": [
+        498,
+        729,
+        485,
+        745
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1514"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            134,
+            120
+          ],
+          [
+            168,
+            140
+          ],
+          [
+            231,
+            247
+          ],
+          [
+            335,
+            378
+          ],
+          [
+            383,
+            401
+          ],
+          [
+            383,
+            430
+          ],
+          [
+            360,
+            439
+          ],
+          [
+            435,
+            521
+          ],
+          [
+            435,
+            541
+          ],
+          [
+            410,
+            550
+          ],
+          [
+            326,
+            453
+          ],
+          [
+            297,
+            466
+          ],
+          [
+            269,
+            441
+          ],
+          [
+            267,
+            421
+          ],
+          [
+            190,
+            335
+          ],
+          [
+            127,
+            235
+          ],
+          [
+            109,
+            208
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Devolver",
+      "definitionId": "def_56f78fce352833b7a83f5d5c",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1514",
+        "CJ1515"
+      ],
+      "filename": "devolver.png",
+      "crop": [
+        983,
+        729,
+        486,
+        745
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1514"
+      ],
+      "artRects": [
+        [
+          92,
+          118,
+          466,
+          505
+        ],
+        [
+          305,
+          441,
+          466,
+          614
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          152,
+          124,
+          487
+        ],
+        [
+          0,
+          507,
+          353,
+          679
+        ]
+      ]
+    },
+    {
+      "name": "Probability Blade",
+      "definitionId": "def_0507b9dec88a470082d25778",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1486"
+      ],
+      "filename": "probability-blade.png",
+      "crop": [
+        1469,
+        729,
+        492,
+        745
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1486"
+      ],
+      "artRects": [
+        [
+          104,
+          136,
+          428,
+          455
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          193,
+          432,
+          297,
+          462
+        ],
+        [
+          198,
+          427,
+          274,
+          458
+        ]
+      ]
+    },
+    {
+      "name": "Shade Mace",
+      "definitionId": "def_0d2bbe2219fff1c11f55af6e",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1487"
+      ],
+      "filename": "shade-mace.png",
+      "crop": [
+        1961,
+        729,
+        482,
+        745
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1487"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            339,
+            106
+          ],
+          [
+            364,
+            91
+          ],
+          [
+            353,
+            156
+          ],
+          [
+            298,
+            217
+          ],
+          [
+            131,
+            500
+          ],
+          [
+            120,
+            530
+          ],
+          [
+            99,
+            521
+          ],
+          [
+            99,
+            498
+          ],
+          [
+            251,
+            242
+          ],
+          [
+            292,
+            172
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          126,
+          504,
+          198,
+          537
+        ]
+      ]
+    },
+    {
+      "name": "Sunlight Gun",
+      "definitionId": "def_c857e04acdd64b0fb7737a71",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1484"
+      ],
+      "filename": "sunlight-gun.png",
+      "crop": [
+        2443,
+        729,
+        489,
+        745
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1484"
+      ],
+      "artRects": [
+        [
+          124,
+          125,
+          405,
+          421
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          369,
+          215,
+          489,
+          283
+        ],
+        [
+          367,
+          208,
+          414,
+          266
+        ]
+      ]
+    },
+    {
+      "name": "Arc Light Thrower",
+      "definitionId": "def_83e19602bbcd09eb4b95b6d5",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1483"
+      ],
+      "filename": "arc-light-thrower.png",
+      "crop": [
+        2932,
+        729,
+        464,
+        745
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1483"
+      ],
+      "artRects": [
+        [
+          84,
+          109,
+          401,
+          473
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          355,
+          204,
+          464,
+          276
+        ],
+        [
+          0,
+          134,
+          113,
+          498
+        ],
+        [
+          174,
+          466,
+          253,
+          482
+        ],
+        [
+          131,
+          74,
+          326,
+          110
+        ],
+        [
+          186,
+          466,
+          262,
+          495
+        ]
+      ]
+    },
+    {
+      "name": "Icebreakers",
+      "definitionId": "def_a3c380de040386aae3778c96",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1540",
+        "CJ1541"
+      ],
+      "filename": "icebreakers.png",
+      "crop": [
+        0,
+        1474,
+        498,
+        749
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "CJ1541"
+      ],
+      "artRects": [
+        [
+          91,
+          131,
+          405,
+          480
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          198,
+          460,
+          310,
+          504
+        ],
+        [
+          0,
+          0,
+          100,
+          143
+        ]
+      ]
+    },
+    {
+      "name": "Pithos Linothorax",
+      "definitionId": "def_de56e5c155b5d772b0784004",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1542",
+        "CJ1543"
+      ],
+      "filename": "pithos-linothorax.png",
+      "crop": [
+        498,
+        1474,
+        485,
+        749
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "CJ1543"
+      ],
+      "artRects": [
+        [
+          118,
+          174,
+          356,
+          473
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          178,
+          470,
+          286,
+          501
+        ]
+      ]
+    },
+    {
+      "name": "Spherical Armor",
+      "definitionId": "def_638154b93c9283bfd7be823b",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1544",
+        "CJ1545"
+      ],
+      "filename": "spherical-armor.png",
+      "crop": [
+        983,
+        1474,
+        486,
+        749
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "CJ1545"
+      ],
+      "artRects": [
+        [
+          104,
+          133,
+          387,
+          450
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Visage",
+      "definitionId": "def_935725822ec6b2af3d2f450a",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1539"
+      ],
+      "filename": "visage.png",
+      "crop": [
+        1469,
+        1474,
+        492,
+        749
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "CJ1539"
+      ],
+      "artRects": [
+        [
+          111,
+          104,
+          397,
+          428
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          376,
+          283,
+          492,
+          364
+        ]
+      ]
+    },
+    {
+      "name": "Spiral Mace",
+      "definitionId": "def_22eb3c48f9015d4213a5f2b4",
+      "faceId": "front",
+      "printedIds": [
+        "CJ1512",
+        "CJ1513"
+      ],
+      "filename": "spiral-mace.png",
+      "crop": [
+        1961,
+        1474,
+        482,
+        749
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "CJ1512"
+      ],
+      "artRects": [
+        [
+          174,
+          120,
+          321,
+          496
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Spiral Spear",
+      "definitionId": "def_22eb3c48f9015d4213a5f2b4",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1512",
+        "CJ1513"
+      ],
+      "filename": "spiral-spear.png",
+      "crop": [
+        2443,
+        1474,
+        489,
+        749
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "CJ1512"
+      ],
+      "artRects": [
+        [
+          120,
+          102,
+          376,
+          543
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          88,
+          423,
+          373,
+          457
+        ],
+        [
+          106,
+          457,
+          373,
+          491
+        ],
+        [
+          124,
+          489,
+          373,
+          516
+        ],
+        [
+          152,
+          516,
+          342,
+          550
+        ],
+        [
+          123,
+          485,
+          200,
+          508
+        ]
+      ]
+    },
+    {
+      "name": "Spiral Buckler",
+      "definitionId": "def_4d3cd0d995827be79213e43b",
+      "faceId": "back",
+      "printedIds": [
+        "CJ1510",
+        "CJ1511"
+      ],
+      "filename": "spiral-buckler.png",
+      "crop": [
+        2932,
+        1474,
+        464,
+        749
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "CJ1510"
+      ],
+      "artRects": [
+        [
+          154,
+          113,
+          464,
+          367
+        ],
+        [
+          396,
+          358,
+          457,
+          512
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          226,
+          131
+        ],
+        [
+          457,
+          0,
+          464,
+          749
+        ]
+      ],
+      "reviewNote": "Rules cover the lower part of the faint whip projection. Exposed edges and its tip are retained; covered pixels are not reconstructed."
+    }
+  ],
+  "skippedCards": [],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}

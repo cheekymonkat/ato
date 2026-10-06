@@ -113,8 +113,9 @@ def extract(config_path):
         result = {key: card[key] for key in ('name', 'definitionId', 'faceId', 'printedIds', 'filename', 'crop')}
         result.update(width=cw, height=ch, preservedPixelCount=preserved,
                       sha256=hashlib.sha256((out / card['filename']).read_bytes()).hexdigest())
-        if 'sourcePrintedIds' in card:
-            result['sourcePrintedIds'] = card['sourcePrintedIds']
+        for field in ('sourcePrintedIds', 'observedPrintedIds'):
+            if field in card:
+                result[field] = card[field]
         if 'reviewNote' in card:
             result['reviewNote'] = card['reviewNote']
         art_bottom = max([rect[3] for rect in card['artRects']] + [point[1] for polygon in card['artPolygons'] for point in polygon])
@@ -123,6 +124,20 @@ def extract(config_path):
                 'width': cw, 'height': ch, 'artBottom': art_bottom}
         result['artwork'] = link
         results.append(result)
+    # Preserve rounded original crops for skipped copies and text-only faces too.
+    # They are review evidence only and never create artwork links.
+    for card in config.get('skippedCards', []):
+        if 'filename' not in card or 'crop' not in card:
+            continue
+        left, top, cw, ch = card['crop']
+        assert 0 <= left < left + cw <= width and 0 <= top < top + ch <= height
+        original = bytearray(cw * ch * 4)
+        for y in range(ch):
+            for x in range(cw):
+                si = ((top + y) * width + left + x) * 3
+                i = (y * cw + x) * 4
+                original[i:i + 4] = rgb[si:si + 3] + bytes([alpha_at(x, y, cw, ch, config['cornerRadius'])])
+        png(docs / 'original' / card['filename'], cw, ch, original)
     manifest = {'batch': batch, 'source': config['source'], 'sourceSha256': config['sourceSha256'],
                 'configurationSha256': hashlib.sha256(config_path.read_bytes()).hexdigest(),
                 'method': 'Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.', 'cards': results,

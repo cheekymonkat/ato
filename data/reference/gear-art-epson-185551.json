@@ -1,0 +1,1319 @@
+{
+  "batch": "epson-185551",
+  "source": "../ato_docs/ato-gear/Epson_05102026185551.jpg",
+  "sourceSha256": "d346b78bf420d9d39805404572b01072807e974194828fc5d3de8c2708e1fb24",
+  "sourceSize": [
+    3390,
+    2232
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    915,
+    124,
+    34,
+    283
+  ],
+  "cards": [
+    {
+      "name": "The End",
+      "definitionId": "def_7593d0b4bf8110c1ad5f3b1b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0959"
+      ],
+      "filename": "the-end.png",
+      "crop": [
+        0,
+        0,
+        488,
+        728
+      ],
+      "row": 1,
+      "column": 1,
+      "sourcePrintedIds": [
+        "BJ0959"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            102,
+            45
+          ],
+          [
+            136,
+            50
+          ],
+          [
+            210,
+            163
+          ],
+          [
+            450,
+            393
+          ],
+          [
+            436,
+            416
+          ],
+          [
+            181,
+            185
+          ],
+          [
+            106,
+            97
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Cowl of Char",
+      "definitionId": "def_cbbaea3d406ef2ad2bca117e",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0956"
+      ],
+      "filename": "cowl-of-char.png",
+      "crop": [
+        488,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 2,
+      "sourcePrintedIds": [
+        "BJ0956"
+      ],
+      "artRects": [
+        [
+          93,
+          99,
+          409,
+          452
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          330,
+          439,
+          428,
+          475
+        ]
+      ]
+    },
+    {
+      "name": "Leg Khopesh",
+      "definitionId": "def_b24030357b6872ed3f5ae1f5",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0945"
+      ],
+      "filename": "leg-khopesh.png",
+      "crop": [
+        974,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 3,
+      "sourcePrintedIds": [
+        "BJ0945"
+      ],
+      "artRects": [
+        [
+          115,
+          84,
+          377,
+          551
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          111,
+          545,
+          380,
+          554
+        ],
+        [
+          234,
+          542,
+          362,
+          583
+        ],
+        [
+          98,
+          198,
+          110,
+          411
+        ],
+        [
+          111,
+          110,
+          122,
+          414
+        ]
+      ]
+    },
+    {
+      "name": "Jaws of the Lion",
+      "definitionId": "def_1b2072d55810e190a414d824",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0944"
+      ],
+      "filename": "jaws-of-the-lion.png",
+      "crop": [
+        1460,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 4,
+      "sourcePrintedIds": [
+        "BJ0944"
+      ],
+      "artRects": [
+        [
+          124,
+          99,
+          371,
+          452
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "reviewNote": "Rules cover the lower faded Titan projection; exposed pixels are retained."
+    },
+    {
+      "name": "Rememberance",
+      "definitionId": "def_218341bb73ce6cac590b0ed3",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0942"
+      ],
+      "filename": "rememberance.png",
+      "crop": [
+        1946,
+        0,
+        488,
+        728
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "BJ0942"
+      ],
+      "artRects": [
+        [
+          142,
+          111,
+          435,
+          441
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          117,
+          344,
+          302,
+          373
+        ],
+        [
+          117,
+          378,
+          310,
+          400
+        ],
+        [
+          117,
+          403,
+          372,
+          426
+        ],
+        [
+          200,
+          343,
+          275,
+          372
+        ],
+        [
+          165,
+          373,
+          253,
+          401
+        ],
+        [
+          255,
+          372,
+          310,
+          394
+        ],
+        [
+          128,
+          402,
+          187,
+          425
+        ],
+        [
+          210,
+          401,
+          347,
+          424
+        ],
+        [
+          126,
+          433,
+          170,
+          456
+        ],
+        [
+          173,
+          433,
+          233,
+          455
+        ],
+        [
+          236,
+          432,
+          282,
+          455
+        ],
+        [
+          279,
+          428,
+          329,
+          450
+        ],
+        [
+          320,
+          428,
+          344,
+          450
+        ]
+      ],
+      "reviewNote": "The printed title is 'Remembrance'; the existing catalogue name 'Rememberance' is retained. Rules overlap the lower-left illustration; only exposed pixels are copied."
+    },
+    {
+      "name": "Left Maulfist",
+      "definitionId": "def_08a2a8b6f7480d2577f618ec",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0941"
+      ],
+      "filename": "left-maulfist.png",
+      "crop": [
+        2434,
+        0,
+        486,
+        728
+      ],
+      "row": 1,
+      "column": 6,
+      "sourcePrintedIds": [
+        "BJ0941"
+      ],
+      "artRects": [
+        [
+          160,
+          108,
+          368,
+          475
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Pyramidion",
+      "definitionId": "def_a04ac642d0912d68abfcb027",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0858"
+      ],
+      "filename": "pyramidion.png",
+      "crop": [
+        2920,
+        0,
+        470,
+        728
+      ],
+      "row": 1,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0858"
+      ],
+      "artRects": [
+        [
+          122,
+          81,
+          395,
+          346
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          221,
+          337,
+          398,
+          355
+        ],
+        [
+          145,
+          338,
+          170,
+          348
+        ]
+      ],
+      "reviewNote": "Rules cover the lower edge of the weapon; no covered pixels are reconstructed."
+    },
+    {
+      "name": "Pyrasklepios",
+      "definitionId": "def_16c33caeee4dade6154a0fb0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0859"
+      ],
+      "filename": "pyrasklepios.png",
+      "crop": [
+        0,
+        728,
+        488,
+        746
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "BJ0859"
+      ],
+      "artRects": [
+        [
+          113,
+          95,
+          495,
+          235
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            402,
+            226
+          ],
+          [
+            488,
+            336
+          ],
+          [
+            486,
+            368
+          ],
+          [
+            366,
+            230
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          400,
+          0,
+          499,
+          119
+        ],
+        [
+          486,
+          0,
+          499,
+          743
+        ],
+        [
+          303,
+          230,
+          409,
+          246
+        ]
+      ],
+      "reviewNote": "Rules overlap the lower weapon head and shaft; only visible illustration is retained."
+    },
+    {
+      "name": "Bellerophon",
+      "definitionId": "def_0bc0501138e81f84c4e7145b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0939"
+      ],
+      "filename": "bellerophon.png",
+      "crop": [
+        488,
+        728,
+        486,
+        746
+      ],
+      "row": 2,
+      "column": 2,
+      "sourcePrintedIds": [
+        "BJ0939"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            115,
+            97
+          ],
+          [
+            147,
+            101
+          ],
+          [
+            364,
+            465
+          ],
+          [
+            421,
+            578
+          ],
+          [
+            393,
+            587
+          ],
+          [
+            274,
+            386
+          ],
+          [
+            149,
+            203
+          ],
+          [
+            118,
+            181
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          251,
+          578,
+          408,
+          606
+        ]
+      ]
+    },
+    {
+      "name": "Sisyphus's Triumph",
+      "definitionId": "def_941d85e059c6332f98740e47",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0971"
+      ],
+      "filename": "sisyphus-s-triumph.png",
+      "crop": [
+        974,
+        728,
+        486,
+        746
+      ],
+      "row": 2,
+      "column": 3,
+      "sourcePrintedIds": [
+        "BJ0971"
+      ],
+      "artRects": [
+        [
+          101,
+          27,
+          144,
+          161
+        ],
+        [
+          373,
+          425,
+          399,
+          568
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          360,
+          435,
+          377,
+          461
+        ],
+        [
+          370,
+          463,
+          398,
+          487
+        ],
+        [
+          360,
+          489,
+          404,
+          514
+        ],
+        [
+          360,
+          515,
+          405,
+          541
+        ],
+        [
+          360,
+          547,
+          379,
+          574
+        ],
+        [
+          344,
+          403,
+          416,
+          428
+        ]
+      ],
+      "reviewNote": "The hammer and rock illustration is mostly covered by dense rules. Its exposed handle and rock edges are retained; covered artwork is not reconstructed."
+    },
+    {
+      "name": "Sisyphus's Burden",
+      "definitionId": "def_2501a268bf79dd0be63f027c",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0970"
+      ],
+      "filename": "sisyphus-s-burden.png",
+      "crop": [
+        1460,
+        728,
+        486,
+        746
+      ],
+      "row": 2,
+      "column": 4,
+      "sourcePrintedIds": [
+        "BJ0970"
+      ],
+      "artRects": [
+        [
+          114,
+          153,
+          390,
+          410
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          112,
+          190,
+          329,
+          215
+        ],
+        [
+          113,
+          218,
+          427,
+          242
+        ],
+        [
+          113,
+          243,
+          413,
+          269
+        ],
+        [
+          112,
+          272,
+          275,
+          295
+        ],
+        [
+          114,
+          298,
+          433,
+          321
+        ],
+        [
+          113,
+          326,
+          454,
+          350
+        ],
+        [
+          113,
+          351,
+          394,
+          378
+        ],
+        [
+          114,
+          380,
+          306,
+          405
+        ],
+        [
+          178,
+          213,
+          255,
+          237
+        ],
+        [
+          187,
+          242,
+          264,
+          274
+        ],
+        [
+          364,
+          240,
+          391,
+          282
+        ],
+        [
+          206,
+          269,
+          263,
+          291
+        ],
+        [
+          222,
+          296,
+          292,
+          324
+        ],
+        [
+          293,
+          295,
+          328,
+          318
+        ],
+        [
+          306,
+          326,
+          350,
+          351
+        ],
+        [
+          351,
+          316,
+          396,
+          351
+        ],
+        [
+          334,
+          349,
+          403,
+          372
+        ],
+        [
+          153,
+          377,
+          220,
+          400
+        ],
+        [
+          184,
+          402,
+          297,
+          437
+        ],
+        [
+          301,
+          407,
+          405,
+          430
+        ],
+        [
+          110,
+          403,
+          170,
+          414
+        ]
+      ],
+      "reviewNote": "Dense rules cover much of the rock illustration. Only exposed rock pixels around the printed lines are retained; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Maw of Byzantion",
+      "definitionId": "def_77ef5c3cc042bba35cef073f",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0964"
+      ],
+      "filename": "maw-of-byzantion.png",
+      "crop": [
+        1946,
+        728,
+        488,
+        746
+      ],
+      "row": 2,
+      "column": 5,
+      "sourcePrintedIds": [
+        "BJ0964"
+      ],
+      "artRects": [
+        [
+          106,
+          119,
+          380,
+          382
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            350,
+            334
+          ],
+          [
+            463,
+            395
+          ],
+          [
+            456,
+            425
+          ],
+          [
+            368,
+            377
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Immeasurable Weight",
+      "definitionId": "def_55a4e6576f3ad53a9bc2cc39",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0962"
+      ],
+      "filename": "immeasurable-weight.png",
+      "crop": [
+        2434,
+        728,
+        486,
+        746
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "BJ0962"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            92,
+            86
+          ],
+          [
+            123,
+            79
+          ],
+          [
+            168,
+            125
+          ],
+          [
+            225,
+            185
+          ],
+          [
+            255,
+            194
+          ],
+          [
+            258,
+            217
+          ],
+          [
+            397,
+            345
+          ],
+          [
+            431,
+            384
+          ],
+          [
+            435,
+            405
+          ],
+          [
+            415,
+            441
+          ],
+          [
+            379,
+            424
+          ],
+          [
+            314,
+            354
+          ],
+          [
+            230,
+            268
+          ],
+          [
+            215,
+            249
+          ],
+          [
+            194,
+            247
+          ],
+          [
+            179,
+            215
+          ],
+          [
+            162,
+            185
+          ],
+          [
+            115,
+            138
+          ],
+          [
+            129,
+            160
+          ],
+          [
+            122,
+            179
+          ],
+          [
+            106,
+            175
+          ],
+          [
+            106,
+            161
+          ],
+          [
+            95,
+            160
+          ],
+          [
+            100,
+            146
+          ],
+          [
+            95,
+            129
+          ],
+          [
+            89,
+            112
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Context",
+      "definitionId": "def_7f7dfe080fad17e2e7cc123a",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0961"
+      ],
+      "filename": "context.png",
+      "crop": [
+        2920,
+        728,
+        470,
+        746
+      ],
+      "row": 2,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0961"
+      ],
+      "artRects": [
+        [
+          113,
+          101,
+          465,
+          364
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          398,
+          350,
+          470,
+          382
+        ],
+        [
+          398,
+          0,
+          470,
+          133
+        ]
+      ]
+    },
+    {
+      "name": "Glimmer Shroud",
+      "definitionId": "def_6f22dd77ba6af3a1cbf8c33e",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0260"
+      ],
+      "filename": "glimmer-shroud.png",
+      "crop": [
+        0,
+        1474,
+        488,
+        752
+      ],
+      "row": 3,
+      "column": 1,
+      "sourcePrintedIds": [
+        "AJ0260"
+      ],
+      "artRects": [
+        [
+          56,
+          142,
+          434,
+          470
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          366,
+          207,
+          488,
+          296
+        ]
+      ]
+    },
+    {
+      "name": "Mazemace",
+      "definitionId": "def_77d387867a0e509a62b4f111",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0259"
+      ],
+      "filename": "mazemace.png",
+      "crop": [
+        488,
+        1474,
+        486,
+        752
+      ],
+      "row": 3,
+      "column": 2,
+      "sourcePrintedIds": [
+        "AJ0259"
+      ],
+      "artRects": [
+        [
+          109,
+          131,
+          402,
+          546
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          9,
+          0,
+          113,
+          748
+        ],
+        [
+          158,
+          537,
+          405,
+          555
+        ]
+      ]
+    },
+    {
+      "name": "The Promise",
+      "definitionId": "def_c63619973a9013610ed7cd28",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0258"
+      ],
+      "filename": "the-promise.png",
+      "crop": [
+        974,
+        1474,
+        486,
+        752
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "AJ0258"
+      ],
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            118,
+            110
+          ],
+          [
+            156,
+            108
+          ],
+          [
+            201,
+            183
+          ],
+          [
+            267,
+            185
+          ],
+          [
+            307,
+            255
+          ],
+          [
+            425,
+            503
+          ],
+          [
+            414,
+            524
+          ],
+          [
+            389,
+            519
+          ],
+          [
+            235,
+            309
+          ],
+          [
+            156,
+            237
+          ]
+        ]
+      ],
+      "eraseRects": []
+    },
+    {
+      "name": "Shieldblade",
+      "definitionId": "def_f6a3fe4054b8ea729ab55e70",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0257"
+      ],
+      "filename": "shieldblade.png",
+      "crop": [
+        1460,
+        1474,
+        486,
+        752
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "AJ0257"
+      ],
+      "artRects": [
+        [
+          172,
+          108,
+          325,
+          476
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Fumeblade (Barred)",
+      "definitionId": "def_b361796bcae5527f1c4f391b",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0958"
+      ],
+      "filename": "fumeblade-barred.png",
+      "crop": [
+        1946,
+        1474,
+        488,
+        752
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "BJ0958"
+      ],
+      "artRects": [
+        [
+          113,
+          110,
+          393,
+          363
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            334,
+            329
+          ],
+          [
+            382,
+            363
+          ],
+          [
+            459,
+            422
+          ],
+          [
+            450,
+            458
+          ],
+          [
+            425,
+            456
+          ],
+          [
+            418,
+            431
+          ],
+          [
+            337,
+            372
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          53,
+          362,
+          129,
+          391
+        ],
+        [
+          131,
+          362,
+          170,
+          384
+        ],
+        [
+          193,
+          361,
+          279,
+          390
+        ]
+      ],
+      "reviewNote": "The printed title is 'Fumeblade (Bared)'; the existing catalogue name 'Fumeblade (Barred)' is retained for the filename and saved-card mapping."
+    },
+    {
+      "name": "Necrotic Virus",
+      "definitionId": "def_9de365ee0910607a459485a4",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0957"
+      ],
+      "filename": "necrotic-virus.png",
+      "crop": [
+        2434,
+        1474,
+        486,
+        752
+      ],
+      "row": 3,
+      "column": 6,
+      "sourcePrintedIds": [
+        "BJ0957"
+      ],
+      "artRects": [
+        [
+          97,
+          113,
+          402,
+          409
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          86,
+          395,
+          260,
+          420
+        ],
+        [
+          183,
+          78,
+          292,
+          114
+        ],
+        [
+          196,
+          397,
+          286,
+          423
+        ]
+      ]
+    },
+    {
+      "name": "Elephantine Armor",
+      "definitionId": "def_f3ab1e8e5ef3faf8b284e5fd",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0955"
+      ],
+      "filename": "elephantine-armor.png",
+      "crop": [
+        2920,
+        1474,
+        470,
+        752
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "BJ0955"
+      ],
+      "artRects": [
+        [
+          72,
+          117,
+          398,
+          404
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          393,
+          212,
+          470,
+          354
+        ],
+        [
+          146,
+          395,
+          251,
+          428
+        ]
+      ],
+      "reviewNote": "The right stat boxes and lower rules obscure the sleeve/torso edges."
+    }
+  ],
+  "skippedCards": [],
+  "reviewMethod": "Native-resolution visual inspection, with Tesseract-assisted printed-word bounds recorded as explicit erase rectangles; no OCR is required for regeneration."
+}
