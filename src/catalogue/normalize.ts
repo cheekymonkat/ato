@@ -4,6 +4,9 @@ import { escapePointer, visitJson } from '../domain/json.ts';
 import type { JsonObject } from '../domain/json.ts';
 import { extractSlotEffects } from './effects.ts';
 import { gearArtwork } from './gear-art.ts';
+import { deriveTechnologyRules } from '../domain/technology-rules.ts';
+import { deriveMilestoneRules } from '../domain/milestone-rules.ts';
+import { deriveInwardOdysseyRules } from '../domain/inward-odyssey.ts';
 
 export interface SourceInput { file: string; sha256: string; page: SourcePage }
 export interface QualityIssue { category: string; definitionId: string; file: string; pointer: string; message: string }
@@ -68,6 +71,12 @@ export function normalizeCatalogue(inputs: SourceInput[], resolveId: (card: Sour
         const artwork = face.kind === 'gear' ? gearArtwork[id]?.[f.id] : undefined;
         return artwork ? { ...face, artwork } : face;
       }) };
+    const technologyRules = deriveTechnologyRules(card);
+    if (technologyRules) card.technologyRules = technologyRules;
+    const milestoneRules = deriveMilestoneRules(card);
+    if (milestoneRules) card.milestoneRules = milestoneRules;
+    const inwardOdysseyRules = deriveInwardOdysseyRules(card);
+    if (inwardOdysseyRules) card.inwardOdysseyRules = inwardOdysseyRules;
     const issue = (category: string, pointer: string, message: string): void => { report.issues.push({ category, definitionId: id, file: input.file, pointer, message }); };
     if (card.printedIds.length === 0) issue('missing-printed-id', card.source.pointer, 'Kept with a registry-backed unprinted identity.');
     const rawAliases = splitFaces(source).flatMap(f => f.data.cardIDs);

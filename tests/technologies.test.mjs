@@ -3,7 +3,7 @@ import test from 'node:test';
 import fs from 'node:fs';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
 import { createParty, parseParty } from '../src/domain/party.ts';
-import { activeTechnologyIds, argoAbilityLimit, changeTechnology, currentCoreTechnologies, parseTechnologyRequirement, projectList, researchedTechnologyIds, resolveTechnologyName, technologyLeadsTo, technologyName, technologyRequirementStatus, technologyResearchStatus, technologyType } from '../src/domain/technologies.ts';
+import { activeTechnologyIds, argoAbilityLimit, changeTechnology, currentCoreTechnologies, parseTechnologyRequirement, projectList, researchedTechnologyIds, resolveTechnologyName, technologyLeadsTo, technologyName, technologyRequirementStatus, technologyResearchStatus, technologyType, technologyCycle } from '../src/domain/technologies.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 import { exportProfile, readBackup, referenceProblems, parseWorkspace } from '../src/storage/workspace.ts';
 
@@ -74,8 +74,8 @@ test('AND/EITHER/OR retain tracked requirements and ignore unsupported game chec
   assert.equal(status(expression, ids(['Advanced Trireme Weapons', 'Teleresuscitation'])).met, true);
   assert.equal(status(expression, ids(['Advanced Trireme Weapons', 'Trireme Reach Weapons'])).met, true);
   const other = 'Calculate Statistical Certainty AND EITHER Dragon of Phobos Live Study OR Meduketos Live Study';
-  assert.equal(status(other, ids(['Calculate Statistical Certainty'])).met, false);
-  assert.equal(status(other, ids(['Calculate Statistical Certainty', 'Meduketos Live Study'])).met, true);
+  assert.equal(status(other, { ...ids(['Calculate Statistical Certainty']), campaignCycle: 5 }).met, false);
+  assert.equal(status(other, { ...ids(['Calculate Statistical Certainty', 'Meduketos Live Study']), campaignCycle: 5 }).met, true);
   assert.deepEqual(status('45+ explored tiles'), { text: '45+ explored tiles', tracked: false, met: true });
   assert.equal(status('Temenos LVL 1 Battle and either: Labyrinthauros Live Study OR Hekaton Live Study').met, false);
   assert.equal(status('Temenos LVL 1 Battle and either: Labyrinthauros Live Study OR Hekaton Live Study', ids(['Hekaton Live Study'])).met, true);
@@ -135,9 +135,11 @@ test('confirmed removal retains successors while recalculating future project ga
 test('AA limit includes automatic Propylon and updates when a researched upgrade is removed', () => {
   const party = fresh();
   assert.equal(argoAbilityLimit(party, catalogue), 2);
-  const later = { ...party, technologies: { version: 1, researched: [...researchedTechnologyIds(party), card('War Propylon').id] } };
+  const future = { ...party, technologies: { version: 1, researched: [card('War Propylon').id] } };
+  assert.equal(argoAbilityLimit(future, catalogue), 2, 'Future records cannot raise current limits');
+  const later = { ...future, campaignCycle: 2 };
   assert.equal(argoAbilityLimit(later, catalogue), 4);
-  assert.equal(argoAbilityLimit(changeTechnology(later, card('War Propylon').id, 'remove', catalogue), catalogue), 2);
+  assert.equal(argoAbilityLimit(changeTechnology(later, card('War Propylon').id, 'remove', catalogue), catalogue), 3);
 });
 
 test('technology records persist through saves/backups and invalid lists are rejected', () => {
@@ -154,14 +156,14 @@ test('technology records persist through saves/backups and invalid lists are rej
   assert.throws(() => readBackup(exportProfile({ ...profile, party: broken }), catalogue), /unresolved references/);
 });
 
-test('all five Core cards follow the exact campaign cycle without needing saved acquisitions', () => {
+test('Core cards accumulate through every campaign cycle without needing saved acquisitions', () => {
   const original = fresh();
   for (const cycle of [1, 2, 3, 4, 5]) {
     const party = { ...original, campaignCycle: cycle };
     const cores = currentCoreTechnologies(party, catalogue);
-    assert.equal(cores.length, 5);
-    assert.ok(cores.every(card => card.faces[0].cycle === ['Cycle I', 'Cycle II', 'Cycle III', 'Cycle IV', 'Cycle V'][cycle - 1]));
-    assert.deepEqual(activeTechnologyIds(party, catalogue), cores.map(card => card.id));
+    assert.equal(cores.length, 5 * cycle);
+    assert.ok(cores.every(card => technologyCycle(card) <= cycle));
+    assert.ok(cores.every(card => activeTechnologyIds(party, catalogue).includes(card.id)));
     for (const core of cores) {
       assert.equal(status(core.faces[0].name, party).met, true);
       assert.equal(technologyResearchStatus(core, party, catalogue).canResearch, false);
@@ -184,5 +186,6 @@ test('legacy recorded Core IDs are preserved and current-cycle Core cards remain
   let changed = party;
   for (const expectedCycle of [1, 2, 3]) changed = partyReducer(changed, { type: 'advance-cycle', partyId: party.id, argonautId: 'a', expectedCycle, confirmed: true }, catalogue);
   assert.deepEqual(researchedTechnologyIds(changed), [core.id]);
-  assert.ok(currentCoreTechnologies(changed, catalogue).every(card => card.faces[0].cycle === 'Cycle IV'));
+  assert.equal(currentCoreTechnologies(changed, catalogue).length, 20);
+  assert.ok(activeTechnologyIds(changed, catalogue).includes(core.id));
 });

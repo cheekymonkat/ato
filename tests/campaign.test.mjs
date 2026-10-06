@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import { buildIndexes } from '../src/catalogue/normalize.ts';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
 import { campaignCycle, isFaceAvailableInCycle } from '../src/domain/campaign.ts';
+import { technologyResourceValue } from '../src/domain/technologies.ts';
 import { newProfile, parseWorkspace, exportProfile, readBackup } from '../src/storage/workspace.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 
@@ -11,10 +12,10 @@ const raw = JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json
 const catalogue = createCatalogueRepository(raw);
 const numbered = { 'Cycle I': 1, 'Cycle II': 2, 'Cycle III': 3, 'Cycle IV': 4, 'Cycle V': 5 };
 
-test('campaign card availability is cumulative across every catalogue family', () => {
+test('campaign card availability is cumulative except retired technologies', () => {
   for (const cycle of [1, 2, 3, 4, 5]) {
     for (const family of Object.keys(raw.indexes.family)) {
-      const expected = raw.cards.filter(card => card.faces.some(face => face.family === family && (!numbered[face.cycle] || numbered[face.cycle] <= cycle)));
+      const expected = raw.cards.filter(card => (card.family !== 'Technology' || card.technologyRules.availableCycles.includes(cycle)) && card.faces.some(face => face.family === family && (!numbered[face.cycle] || numbered[face.cycle] <= cycle)));
       const found = catalogue.search({ family, campaignCycle: cycle });
       assert.deepEqual(found.map(card => card.id).sort(), expected.map(card => card.id).sort(), `${family}: Cycle ${cycle}`);
     }
@@ -63,10 +64,28 @@ test('new campaigns validate and store their chosen cycle with four independent 
     const profile = newProfile(`campaign-${cycle}`, 'Expedition', catalogue.version, cycle);
     assert.equal(campaignCycle(profile.party), cycle);
     assert.equal(profile.party.argonauts.length, 4);
+    assert.equal(technologyResourceValue(profile.party, 'Argo Knowledge'), (cycle - 1) * 20);
     assert.deepEqual(readBackup(exportProfile(profile), catalogue).profile, profile);
   }
   assert.equal(campaignCycle(newProfile('default', 'Default', catalogue.version).party), 1);
   for (const cycle of [0, 6, 2.5, null, '3']) assert.throws(() => newProfile('invalid', 'Invalid', catalogue.version, cycle), /campaign cycle/);
+});
+
+test('advancement starts Knowledge at the previous cycle maximum, consolidates aliases and preserves other resources', () => {
+  for (const cycle of [1, 2, 3, 4]) for (const knowledge of [0, cycle * 20 - 1, cycle * 20, cycle * 20 + 5]) {
+    const original = { ...newProfile('knowledge', 'Odyssey', catalogue.version, cycle).party,
+      resources: { '@ArgoKnowledge': knowledge, 'Argo Knowledge': knowledge, Ore: 7, 'Argo Fate': 3 } };
+    const advanced = partyReducer(original, { type: 'advance-cycle', partyId: original.id, argonautId: original.activeArgonautId, expectedCycle: cycle, confirmed: true }, catalogue);
+    assert.equal(advanced.campaignCycle, cycle + 1);
+    assert.deepEqual(advanced.resources, { 'Argo Knowledge': cycle * 20, Ore: 7, 'Argo Fate': 3 });
+    assert.equal(advanced.argonauts, original.argonauts);
+    const profile = { id: advanced.id, name: 'Advanced', party: advanced };
+    assert.deepEqual(readBackup(exportProfile(profile), catalogue).profile, profile);
+    assert.equal(original.resources['@ArgoKnowledge'], knowledge);
+  }
+  const existing = { ...newProfile('saved', 'Existing', catalogue.version, 3).party, resources: { 'Argo Knowledge': 47 } };
+  const profile = { id: existing.id, name: 'Existing', party: existing };
+  assert.equal(readBackup(exportProfile(profile), catalogue).profile.party.resources['Argo Knowledge'], 47, 'Restoring does not reset current-cycle progress');
 });
 
 test('campaign creation persists optional inventory tracking independently and enforces the chosen mode immediately', () => {
@@ -101,7 +120,10 @@ test('advancing a campaign cycle retains all saved cards, counts and other campa
   const original = structuredClone(one.party), untouched = structuredClone(two);
   const updated = partyReducer(one.party, { type: 'advance-cycle', partyId: one.id, argonautId: one.party.argonauts[2].id, expectedCycle: 4, confirmed: true }, catalogue);
   assert.equal(campaignCycle(updated), 5);
-  assert.deepEqual(updated, { ...original, campaignCycle: 5 });
+  const { titanRoster, ...rest } = updated;
+  assert.equal(titanRoster.titans.length, 10, 'Advancement replenishes a legacy campaign with ten current-cycle Dreamwalkers');
+  assert.ok(titanRoster.titans.every(titan => catalogue.getFace(titan.definitionId, titan.faceId).data.subtitle === 'Cycladean Dreamwalker'));
+  assert.deepEqual(rest, { ...original, campaignCycle: 5, resources: { ...original.resources, 'Argo Knowledge': 80 } });
   assert.deepEqual(updated.argonauts, original.argonauts);
   assert.deepEqual(one.party, original);
   assert.deepEqual(two, untouched);

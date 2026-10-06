@@ -2,6 +2,9 @@ import type { Catalogue, CardDefinition, CardFace, SlotCapacityEffect } from '..
 import { makeFace, parseSourceCard } from '../domain/cards.ts';
 import { assert, isRecord, isJsonValue } from '../domain/json.ts';
 import { buildIndexes } from './normalize.ts';
+import { deriveTechnologyRules } from '../domain/technology-rules.ts';
+import { deriveMilestoneRules } from '../domain/milestone-rules.ts';
+import { deriveInwardOdysseyRules } from '../domain/inward-odyssey.ts';
 
 function validateEffect(value: unknown, card: CardDefinition, face: CardFace): asserts value is SlotCapacityEffect {
   assert(isRecord(value) && value.type === 'slot-capacity' && typeof value.id === 'string' && value.id.trim(), 'Invalid slot effect');
@@ -57,6 +60,12 @@ export function parseCatalogue(value: unknown): Catalogue {
     }
     assert(faceIds.has('front') && candidate.family === (candidate.faces[0] as Record<string, unknown>).family, 'Missing front or inconsistent family');
     assert(JSON.stringify(candidate.printedIds) === JSON.stringify([...aliases].sort()), 'Inconsistent definition aliases');
+    if (candidate.technologyRules !== undefined) assert(candidate.family === 'Technology' &&
+      JSON.stringify(candidate.technologyRules) === JSON.stringify(deriveTechnologyRules(candidate as unknown as CardDefinition)), 'Inconsistent technology rules');
+    if (candidate.milestoneRules !== undefined) assert(['Story', 'Doom'].includes(candidate.family as string) &&
+      JSON.stringify(candidate.milestoneRules) === JSON.stringify(deriveMilestoneRules(candidate as unknown as CardDefinition)), 'Inconsistent milestone rules');
+    if (candidate.inwardOdysseyRules !== undefined) assert(candidate.family === 'Story' &&
+      JSON.stringify(candidate.inwardOdysseyRules) === JSON.stringify(deriveInwardOdysseyRules(candidate as unknown as CardDefinition)), 'Inconsistent Inward Odyssey rules');
   }
   const catalogue = value as unknown as Catalogue;
   const expected = buildIndexes(catalogue.cards);

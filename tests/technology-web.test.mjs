@@ -89,14 +89,14 @@ test('every technology renders both logical sides, preserving benefits and recip
 
 test('technology tabs automatically show cycle Core, research eligible projects and confirm removal', () => {
   let party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version), cursor = 0, confirmation, viewport = 390;
-  const state = [], buttons = new Map(), tabs = new Map(), inputs = new Map(), tiles = [], hidden = new Set();
+  const state = [], buttons = new Map(), tabs = new Map(), inputs = new Map(), tiles = [], hidden = new Set(), cycleToggles = new Map();
   const filename = path.join(sourceRoot, 'technology/TechnologyPage.tsx'), load = Module._load;
   const Button = props => { buttons.set(props.label, props); return React.createElement('button', { disabled: props.disabled }, props.label); };
   Module._load = function(request, parent, ...args) {
     if (parent?.filename === filename) {
       const mocks = {
-        react: { useState: initial => { const index = cursor++; if (!(index in state)) state[index] = initial; return [state[index], value => { state[index] = value; }]; } },
-        'react-native': { ...web, useWindowDimensions: () => ({ width: viewport }), TextInput: props => { inputs.set(props.accessibilityLabel, props); return React.createElement('input', { value: props.value, readOnly: true }); } },
+        react: { useState: initial => { const index = cursor++; if (!(index in state)) state[index] = initial; return [state[index], value => { state[index] = typeof value === 'function' ? value(state[index]) : value; }]; } },
+        'react-native': { ...web, Pressable: props => { cycleToggles.set(props.accessibilityLabel, props); return React.createElement(web.Pressable, props); }, useWindowDimensions: () => ({ width: viewport }), TextInput: props => { inputs.set(props.accessibilityLabel, props); return React.createElement('input', { value: props.value, readOnly: true }); } },
         'expo-router': { router: { push: () => {} } },
         '../catalogue': { getCatalogue: () => catalogue },
         '../campaign/CampaignPage': { CampaignPage: ({ children }) => React.createElement('main', null, children), campaignStyles: {} },
@@ -121,10 +121,10 @@ test('technology tabs automatically show cycle Core, research eligible projects 
   };
   try {
     const { TechnologyPage } = compile(filename);
-    const render = () => { cursor = 0; buttons.clear(); tabs.clear(); inputs.clear(); tiles.length = 0; confirmation = undefined; return renderToStaticMarkup(React.createElement(TechnologyPage)); };
+    const render = () => { cursor = 0; buttons.clear(); tabs.clear(); inputs.clear(); tiles.length = 0; cycleToggles.clear(); confirmation = undefined; return renderToStaticMarkup(React.createElement(TechnologyPage)); };
     // React remounts tile state when its tab/card key changes; mirror that in this hook harness.
-    const search = text => { state.splice(10); inputs.get('Search technologies').onChangeText(text); return render(); };
-    const select = (label, id) => { state.splice(10); tabs.get(label).onSelect(id); return render(); };
+    const search = text => { state.splice(12); inputs.get('Search technologies').onChangeText(text); return render(); };
+    const select = (label, id) => { state.splice(12); tabs.get(label).onSelect(id); return render(); };
     render();
     assert.equal(tabs.get('Technology pages').selected, 'projects');
     assert.ok(tiles.every(tile => technologies.technologyType(tile.card) !== 'Core'));
@@ -139,12 +139,20 @@ test('technology tabs automatically show cycle Core, research eligible projects 
     assert.equal(buttons.has('Remove technology'), false);
     assert.deepEqual(technologies.researchedTechnologyIds(party), []);
     for (const expectedCycle of [1, 2]) party = partyReducer(party, { type: 'advance-cycle', partyId: party.id, argonautId: 'a', expectedCycle, confirmed: true }, catalogue);
-    state.splice(10); render();
-    assert.equal(tiles.length, 5);
+    state.splice(12); render();
+    assert.equal(tiles.length, 5, 'Only current-cycle Core cards start visible');
     assert.ok(tiles.every(tile => tile.card.faces[0].cycle === 'Cycle III'));
+    assert.equal(cycleToggles.get('Cycle II Core technologies').accessibilityState.expanded, false);
+    assert.equal(cycleToggles.get('Cycle I Core technologies').accessibilityState.expanded, false);
+    assert.equal(cycleToggles.has('Cycle III Core technologies'), false, 'Current cycle stays open');
+    cycleToggles.get('Cycle II Core technologies').onPress(); render();
+    assert.equal(tiles.length, 10);
+    assert.equal(cycleToggles.get('Cycle II Core technologies').accessibilityState.expanded, true);
+    cycleToggles.get('Cycle II Core technologies').onPress(); render();
+    assert.equal(tiles.length, 5);
     // Switching to a separately created Cycle 1 campaign remains supported.
     party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
-    state.splice(10); render();
+    state.splice(12); render();
     select('Technology pages', 'projects'); select('Project types', 'Combat');
     select('Combat project types', 'Production Facility');
     assert.deepEqual(tiles.map(tile => tile.card.faces[0].name), ['Trireme Armor', 'Trireme Weapons']);
@@ -179,7 +187,7 @@ test('technology tabs automatically show cycle Core, research eligible projects 
     const ordered = [];
     for (let page = 0; page < pageCount; page++) {
       ordered.push(...tiles.map(tile => tile.card));
-      if (page < pageCount - 1) { state.splice(10); buttons.get('Next page').onPress(); markup = render(); }
+      if (page < pageCount - 1) { state.splice(12); buttons.get('Next page').onPress(); markup = render(); }
     }
     assert.deepEqual(ordered.map(card => card.id).sort(), expected.map(card => card.id).sort());
     assert.deepEqual([...new Set(ordered.map(card => card.faces[0].cycle))], ['Cycle V', 'Cycle IV', 'Cycle III', 'Cycle II', 'Cycle I']);
@@ -188,5 +196,53 @@ test('technology tabs automatically show cycle Core, research eligible projects 
       assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)), `${label} is alphabetically ordered across pagination`);
     }
     assert.match(markup, /role="heading"[^>]*>Cycle I</);
+    select('Technology pages', 'abilities'); select('Active technology types', 'Structural');
+    assert.match(search('DA2216'), /Inherited from Cycle IV/);
+    assert.equal(tiles[0].card.faces[0].name, 'Argo Cloud Operations');
+    assert.equal(buttons.has('Remove technology'), false, 'Inherited cards cannot be removed');
+    assert.equal(buttons.has('Research project'), false);
+    select('Technology pages', 'projects'); search('DA2216');
+    assert.equal(tiles.length, 0, 'Inherited cards do not need research');
+    for (const page of ['catalogue', 'abilities', 'projects']) {
+      select('Technology pages', page); search('AA0034');
+      assert.equal(tiles.length, 0, `Retired Diplomatic Relations is absent from ${page}`);
+    }
+    select('Technology pages', 'abilities');
+    for (const type of ['Structural', 'Production Facility', 'Core']) {
+      select('Active technology types', type); search('');
+      const current = tiles.length;
+      assert.ok(tiles.every(tile => technologies.technologyCycle(tile.card) === 5));
+      assert.ok(cycleToggles.size > 0, type);
+      assert.ok([...cycleToggles.values()].every(toggle => toggle.accessibilityState.expanded === false));
+      assert.equal(buttons.has('Next page'), false, 'Collapsed cards never consume global pages');
+      const key = `Cycle I ${type} technologies`;
+      cycleToggles.get(key).onPress(); state.splice(12); render();
+      const expected = technologies.activeTechnologyIds(party, catalogue).map(id => catalogue.get(id))
+        .filter(card => technologies.technologyType(card) === type && technologies.technologyCycle(card) === 1)
+        .sort((a, b) => technologies.technologyName(a, 'technology').localeCompare(technologies.technologyName(b, 'technology')) || a.id.localeCompare(b.id));
+      assert.equal(tiles.length, current + Math.min(12, expected.length));
+      assert.equal(cycleToggles.get(key).accessibilityState.expanded, true);
+      const shown = [];
+      for (let page = 0; page < Math.ceil(expected.length / 12); page++) {
+        shown.push(...tiles.filter(tile => technologies.technologyCycle(tile.card) === 1).map(tile => tile.card.id));
+        if (page < Math.ceil(expected.length / 12) - 1) {
+          buttons.get('Cycle I next page').onPress(); state.splice(12); render();
+        }
+      }
+      assert.deepEqual(shown, expected.map(card => card.id), `${type} expands with complete alphabetical per-cycle pagination`);
+      cycleToggles.get(key).onPress(); state.splice(12); render();
+      assert.equal(tiles.length, current);
+      search(expected[0].printedIds[0]);
+      assert.equal(tiles.length, 1, 'Search opens the matching older group');
+      assert.equal(tiles[0].card.id, expected[0].id);
+      cycleToggles.get(key).onPress(); state.splice(12); render();
+      assert.equal(tiles.length, 0, 'Search groups can still be collapsed explicitly');
+      search('');
+      assert.equal(tiles.length, current, 'Clearing search restores collapsed defaults');
+    }
+    select('Active technology types', 'Argo Ability');
+    assert.equal(cycleToggles.size, 0, 'Argo Abilities retain their existing open layout');
+    assert.ok(tiles.length > 0);
+
   } finally { Module._load = load; }
 });

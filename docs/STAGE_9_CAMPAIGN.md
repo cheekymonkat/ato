@@ -20,11 +20,12 @@ backups and confirmed Tides of Fate.
   must be revealed first, and the action disables when all printed copies are recorded.
   Acquired cards remain readable even when secret-card filtering is on. The final
   copy requires checked removal confirmation and cannot be removed while allocated.
-- **Argo:** acquire/remove Argo-bred Titans, see current selections and the existing
-  duplicate-Argo-bred-type warning, manage shared resources, and write growing multiline
-  campaign notes. Selected Titans must be removed from their Argonaut before their
-  acquired record can be removed. Dreamwalker subtypes remain automatically
-  available through the campaign cycle.
+- **Argo:** compact ship/cycle counters and milestone progress above ten campaign
+  reference shortcuts; shared resources and notes stay at the bottom. See
+  [Argo overview](ARGO.md). The **Titans** shortcut opens the
+  [individual roster](TITAN_ROSTER.md), including counted Alive/Crippled/Dead tabs,
+  technology capacity, scarce Pattern assignments and confirmed deletion.
+  Selecting a Titan on an Argonaut now uses an unassigned Alive roster entry.
 - **Use campaign inventory for equipment and Titan selection:** optional campaign
   setting in **Campaigns & backups**, alongside the name and cycle in **Current
   campaign configuration** and **New campaign**. New campaigns default to off;
@@ -33,11 +34,11 @@ backups and confirmed Tides of Fate.
   Argo and Cargo manage the contents rather than the tracking preference. Equipment
   selection then offers only available copies (plus the edited copy); unavailable
   direct selections cannot save. Manual slot exceptions cannot bypass inventory.
-  The Titan dropdown offers acquired Argo-bred Titans and cycle-valid Dreamwalkers.
+  Titan roster availability applies independently of optional Gear inventory tracking.
   Turning tracking off retains the acquired records. Known printed Gear copy
   limits remain enforced across all four Argonauts whether tracking is on or off.
 - **Technology:** Project List, researched Abilities and cumulative Technologies
-  catalogue, with prerequisite checks and automatic current-cycle Core cards. See
+  catalogue, with prerequisite checks and automatic cumulative Core cards, inherited prior-cycle technologies and cycle-only retirement rules. See
   [Technology behavior and verification](TECHNOLOGY.md).
 - **Map and Timeline:** explicit planned-feature pages. Their campaign
   mechanics have not been implemented. Their navigation is available now for later
@@ -87,11 +88,12 @@ in the same occupied slot reuses the supply. Exhausted, discarded, reverse-face
 and pending Gear continue to count toward the shared physical limit.
 
 Inventory does not automate story unlocks, crafting, consumed physical cards, Titan
-production costs or encounter aftermath. Titan availability is a manual acquired
-list; the Argo-bred warning remains advisory and flags only duplicate types,
+production costs or encounter aftermath. The individual Titan roster now tracks
+health, headcount and Pattern allocation; the Argo-bred warning remains advisory and flags only duplicate types,
 not different Argo-bred Titans. One of each type can coexist; Dreamwalker
-variants can repeat. Each Argonaut selects one Titan at a time. Broader roster/history,
-technology production/timing, voyage maps and timelines are later Stage 9 increments.
+variants can repeat across distinct Alive individuals. Each Argonaut selects one
+Titan at a time. Technology production/timing, voyage maps and timelines remain
+later Stage 9 increments.
 
 ## Verification
 

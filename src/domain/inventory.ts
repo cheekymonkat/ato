@@ -59,6 +59,7 @@ export function inventoryAllowsEquipment(party: Party, before: Argonaut, after: 
   return equipmentSupplyIssue(party, before, after, catalogue) === null;
 }
 export function inventoryAllowsTitan(party: Party, id: string, faceId: string, catalogue: CatalogueRepository): boolean {
+  if (party.titanRoster) return party.titanRoster.titans.some(titan => titan.status === 'alive' && titan.definitionId === id && titan.faceId === faceId);
   const face = catalogue.getFace(id, faceId);
   return face?.kind === 'titan' && isFaceAvailableInCycle(face, campaignCycle(party)) &&
     (!party.inventory?.enforce || isDreamwalker(face) || party.inventory.titans.includes(id));

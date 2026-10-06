@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-6ea1ab708880839e",
+  "catalogueVersion": "atcc-v2-832793de8deb1439",
   "family": "Doom",
   "part": 1,
   "cards": [
@@ -915,7 +915,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_4bec4fa3d909f59f88a2d37e",
@@ -1292,7 +1326,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_5a3fe3fd45c34cb633831ea3",
@@ -1749,7 +1817,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 3,
+                "checkpoints": [
+                  3
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_6ec9af9019e98d8a8d839573",
@@ -2032,7 +2152,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_70dc51df08aaac0650ffcdf8",
@@ -2517,7 +2671,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_7f086f4bce7bc32298070ae3",
@@ -2710,7 +2898,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_84712ca03f1ed5705df52db5",
@@ -3214,7 +3436,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_8d020f7cfb8087f89a482248",
@@ -3451,7 +3707,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_92027e6d266be5dbd757e617",
@@ -3781,7 +4071,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  1,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_a95359cc04a0524478a94913",
@@ -4707,7 +5031,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_aecc07f8b9b9f1c23900cd6a",
@@ -4972,7 +5330,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_b60a24c0ab67655d6b25830f",
@@ -5448,7 +5840,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c57e6c7ba0436ec85d63e04c",
@@ -6003,7 +6429,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c7dd687f4f4d39a8c802308a",
@@ -6436,7 +6914,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 8,
+                "checkpoints": [
+                  8
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_f3fd0a316ee465e88e587242",
@@ -7410,7 +7940,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     }
   ]
 }

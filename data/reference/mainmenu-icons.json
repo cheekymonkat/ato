@@ -1,0 +1,38 @@
+{
+  "source": "../ato_docs/argo/mainmenu.png",
+  "sourceSha256": "eaa1f75d9a23ed59575a33eb47c15a51c05e21057f5f0a67f2198a676b9bb2ec",
+  "sourceSize": [1179, 2556],
+  "foregroundThreshold": 154,
+  "padding": 2,
+  "tracing": {
+    "tool": "Potrace 1.16",
+    "turdsize": 0,
+    "alphamax": 1,
+    "opttolerance": 0.2,
+    "unit": 10
+  },
+  "icons": [
+    { "name": "Timeline", "label": "Timeline", "crop": [113, 176, 198, 145] },
+    { "name": "Map", "label": "Map", "crop": [366, 176, 198, 145] },
+    { "name": "Adventures", "label": "Adventures", "crop": [619, 176, 198, 145] },
+    { "name": "Argonauts", "label": "Argonauts", "crop": [872, 176, 198, 145] },
+    { "name": "Diplomacy", "label": "Diplomacy", "crop": [113, 429, 198, 145] },
+    { "name": "Titans", "label": "Titans", "crop": [366, 429, 198, 145] },
+    { "name": "GodformsAndSummons", "label": "Godforms & Summons", "crop": [619, 429, 198, 145] },
+    { "name": "Evolution", "label": "Evolution", "crop": [872, 429, 198, 145] },
+    { "name": "ChoiceMatrix", "label": "Choice Matrix", "crop": [113, 683, 198, 145] },
+    { "name": "CargoHold", "label": "Cargo hold", "crop": [366, 683, 198, 145] },
+    { "name": "CampaignNotes", "label": "Campaign notes", "crop": [619, 683, 198, 145] },
+    { "name": "Argo", "label": "Argo", "crop": [872, 683, 198, 145] },
+    { "name": "MnestisTheatre", "label": "Mnestis Theatre", "crop": [113, 936, 198, 145] },
+    { "name": "FatedEvents", "label": "Fated Events", "crop": [366, 936, 198, 145] },
+    { "name": "CrypticLanguages", "label": "Cryptic Languages", "crop": [619, 936, 198, 145] },
+    { "name": "Armory", "label": "Armory", "crop": [113, 1304, 198, 145] },
+    { "name": "Technology", "label": "Technology", "crop": [366, 1304, 198, 145] },
+    { "name": "Save", "label": "Save", "crop": [872, 1304, 198, 145] },
+    { "name": "Story", "label": "Story", "crop": [113, 1557, 198, 145] },
+    { "name": "BinderAudio", "label": "Binder Audio", "crop": [366, 1557, 198, 145] },
+    { "name": "Glossary", "label": "Glossary", "crop": [619, 1557, 198, 145] },
+    { "name": "Settings", "label": "Settings", "crop": [872, 1557, 198, 145] }
+  ]
+}

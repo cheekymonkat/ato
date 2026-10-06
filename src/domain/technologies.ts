@@ -1,8 +1,10 @@
 import type { CatalogueRepository } from '../catalogue/repository.ts';
 import { CAMPAIGN_CYCLES, campaignCycle, isFaceAvailableInCycle } from './campaign.ts';
-import { displayValue, objects, strings } from './card-presentation.ts';
+import { strings } from './card-presentation.ts';
 import type { CardDefinition } from './cards.ts';
 import type { Party } from './party.ts';
+import { technologyAvailableInCycle, technologyRules } from './technology-rules.ts';
+import type { TechnologyLimit } from './technology-rules.ts';
 
 export const TECHNOLOGY_TYPES = ['Structural', 'Argo Ability', 'Production Facility', 'Core'] as const;
 export type TechnologyType = typeof TECHNOLOGY_TYPES[number];
@@ -27,7 +29,7 @@ export function technologyCycle(card: CardDefinition): number {
   return CAMPAIGN_CYCLES.find(value => isFaceAvailableInCycle(card.faces[0], value)) ?? 0;
 }
 const coreCache = new WeakMap<CatalogueRepository, Map<number, CardDefinition[]>>();
-/** Core facilities are supplied automatically by the selected campaign cycle. */
+/** Core facilities are cumulative and never need saved acquisitions. */
 export function currentCoreTechnologies(party: Party, catalogue: CatalogueRepository): CardDefinition[] {
   let cycles = coreCache.get(catalogue);
   if (!cycles) { cycles = new Map(); coreCache.set(catalogue, cycles); }
@@ -35,17 +37,31 @@ export function currentCoreTechnologies(party: Party, catalogue: CatalogueReposi
   let cards = cycles.get(cycle);
   if (!cards) {
     cards = catalogue.search({ family: 'Technology' }).filter(card => technologyType(card) === 'Core' &&
-      technologyCycle(card) === cycle);
+      technologyAvailableInCycle(card, cycle));
     cycles.set(cycle, cards);
   }
   return [...cards];
 }
-/** Keep historical recorded IDs intact; automatic Core cards never need save entries. */
+export function technologyAutomatic(card: CardDefinition, party: Party): boolean {
+  return technologyAvailable(card, party) && (technologyType(card) === 'Core' || technologyCycle(card) < campaignCycle(party));
+}
+/** All applicable earlier-cycle technologies are granted automatically. Retired records stay in the save. */
 export function activeTechnologyIds(party: Party, catalogue: CatalogueRepository): string[] {
-  return [...new Set([...researchedTechnologyIds(party), ...currentCoreTechnologies(party, catalogue).map(card => card.id)])];
+  const recorded = researchedTechnologyIds(party).filter(id => {
+    const card = catalogue.get(id); return card && technologyAvailable(card, party);
+  });
+  const automatic = catalogue.search({ family: 'Technology', campaignCycle: campaignCycle(party) })
+    .filter(card => technologyAutomatic(card, party)).map(card => card.id);
+  return [...new Set([...recorded, ...automatic])];
 }
 export function technologyAvailable(card: CardDefinition, party: Party) {
-  return technologyType(card) !== null && isFaceAvailableInCycle(card.faces[0], campaignCycle(party));
+  return technologyType(card) !== null && technologyAvailableInCycle(card, campaignCycle(party));
+}
+/** Retirement ends benefits, but does not erase completed prerequisite research. */
+function technologyKnown(id: string, party: Party, catalogue: CatalogueRepository): boolean {
+  const card = catalogue.get(id);
+  if (!card || technologyType(card) === null || !isFaceAvailableInCycle(card.faces[0], campaignCycle(party))) return false;
+  return technologyCycle(card) < campaignCycle(party) || technologyType(card) === 'Core' || researchedTechnologyIds(party).includes(id);
 }
 function normalise(value: string) {
   return value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[’‘]/g, "'").trim().toLowerCase().replace(/\s+/g, ' ');
@@ -124,7 +140,7 @@ export function technologyResourceValue(party: Party, resource: string): number 
 export interface RequirementStatus { met: boolean; tracked: boolean; text: string; operator?: 'and' | 'or'; children?: RequirementStatus[] }
 export function technologyRequirementStatus(requirement: TechnologyRequirement, party: Party, catalogue: CatalogueRepository): RequirementStatus {
   if (requirement.kind === 'technology') return { text: requirement.text, tracked: true,
-    met: requirement.definitionIds.some(id => activeTechnologyIds(party, catalogue).includes(id)) };
+    met: requirement.definitionIds.some(id => technologyKnown(id, party, catalogue)) };
   if (requirement.kind === 'threshold') return { text: requirement.text, tracked: true,
     met: technologyResourceValue(party, requirement.resource) >= requirement.minimum };
   if (requirement.kind === 'manual') return { text: requirement.text, tracked: false, met: true };
@@ -136,8 +152,9 @@ export function technologyRequirementStatus(requirement: TechnologyRequirement, 
 }
 export function technologyResearchStatus(card: CardDefinition, party: Party, catalogue: CatalogueRepository) {
   const requirements = technologyRequirementStatus(technologyRequirements(card, catalogue), party, catalogue);
-  const researched = researchedTechnologyIds(party).includes(card.id), core = technologyType(card) === 'Core';
-  return { requirements, researched, core, available: technologyAvailable(card, party),
+  const automatic = technologyAutomatic(card, party);
+  const researched = researchedTechnologyIds(party).includes(card.id) || automatic, core = technologyType(card) === 'Core';
+  return { requirements, researched, core, automatic, available: technologyAvailable(card, party),
     canResearch: !researched && !core && technologyAvailable(card, party) && requirements.met };
 }
 export function projectList(party: Party, catalogue: CatalogueRepository): CardDefinition[] {
@@ -147,18 +164,19 @@ export function technologyLeadsTo(card: CardDefinition, catalogue: CatalogueRepo
   return [...new Map(strings(technologyData(card).leadsTo).flatMap(name => resolveTechnologyName(name, card, catalogue)).map(next => [next.id, next])).values()];
 }
 export function argoAbilityLimit(party: Party, catalogue: CatalogueRepository): number | null {
+  return technologyLimit(party, catalogue, 'argoAbilities');
+}
+export function technologyLimit(party: Party, catalogue: CatalogueRepository, key: TechnologyLimit): number | null {
   const limits = activeTechnologyIds(party, catalogue).flatMap(id => {
-    const card = catalogue.get(id); if (!card || technologyType(card) === null) return [];
-    const text = objects(technologyData(card).abilities).flatMap(ability => objects(ability.effects))
-      .flatMap(effect => objects(effect.abilityText).map(token => displayValue(token.value))).join(' ');
-    return [...text.matchAll(/Argo Ability(?:\s*\(AA\))?\s+Limit:\s*(\d+)/gi)].map(match => Number(match[1]));
+    const card = catalogue.get(id), value = card && technologyRules(card)?.limits[key];
+    return value === undefined ? [] : [value];
   });
   return limits.length ? Math.max(...limits) : null;
 }
 
 export function changeTechnology(party: Party, id: string, operation: 'research' | 'remove', catalogue: CatalogueRepository): Party {
   const ids = researchedTechnologyIds(party), card = catalogue.get(id);
-  if (card && technologyType(card) === 'Core') return party;
+  if (card && (technologyType(card) === 'Core' || technologyAutomatic(card, party))) return party;
   if (operation === 'remove') return ids.includes(id) ? { ...party, technologies: { version: 1, researched: ids.filter(value => value !== id) } } : party;
   if (!card || ids.includes(id) || !technologyAvailable(card, party)) return party;
   if (!technologyResearchStatus(card, party, catalogue).canResearch) return party;

@@ -10,7 +10,7 @@ import { changeEquipmentFace, unlinkRemovedHost, planEquipment, removeEquipment 
 import type { EquipRequest } from '../domain/loadout.ts';
 import { argonautSkills, argonautSkillModifiers, SKILL_MAX, SKILL_MIN } from '../domain/argonaut-stats.ts';
 import { changeArgonautIdentity } from '../domain/argonaut-identity.ts';
-import { campaignCycle, isFaceAvailableInCycle, nextCampaignCycle } from '../domain/campaign.ts';
+import { campaignCycle, isFaceAvailableInCycle, nextCampaignCycle, startCampaignCycle } from '../domain/campaign.ts';
 import { canDiscardCard, canExhaustCard } from '../domain/ability-costs.ts';
 import { changeToken } from '../domain/tokens.ts';
 import type { CampaignCycle, TokenName } from '../domain/tokens.ts';
@@ -21,9 +21,24 @@ import type { AfflictionId } from '../domain/afflictions.ts';
 import { setAbilityExhausted } from '../domain/ability-state.ts';
 import { titanLoadoutRules } from '../domain/hand-rules.ts';
 import { changeTechnology } from '../domain/technologies.ts';
+import { ARGO_RECORD_IDS, argoResourceDefinition, argoTrack, argoTrackDefinition, changeArgoTrack } from '../domain/argo.ts';
+import type { ArgoRecordId } from '../domain/argo.ts';
+import { changeMilestoneToken, currentMilestone, selectMilestone } from '../domain/milestones.ts';
+import type { MilestoneKind } from '../domain/milestones.ts';
+import type { MilestoneToken } from '../domain/milestone-rules.ts';
+import { milestoneTokenMaximum } from '../domain/milestone-rules.ts';
+import { advanceTitanRoster, editTitanRoster, emptyTitanPatterns, patternIssue } from '../domain/titan-roster.ts';
+import type { RosterEdit } from '../domain/titan-roster.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
+  | { type: 'titan-roster'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; edit: RosterEdit }
+  | { type: 'milestone-select'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; reference: CardReference; expectedReference: CardReference | null }
+  | { type: 'milestone-token'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; token: MilestoneToken; delta: -1 | 1; expectedReference: CardReference | null }
+  | { type: 'milestone-token-edit'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; token: MilestoneToken; value: number; expectedReference: CardReference | null }
+  | { type: 'argo-track'; argonautId: string; partyId: string; expectedCycle: CampaignCycle; id: string; delta: -1 | 1 }
+  | { type: 'argo-track-edit'; argonautId: string; partyId: string; expectedCycle: CampaignCycle; id: string; value: number; limit: number | null; reference: string }
+  | { type: 'argo-record'; argonautId: string; partyId: string; id: ArgoRecordId; text: string }
   | { type: 'technology-research'; argonautId: string; partyId: string; definitionId: string }
   | { type: 'technology-remove'; argonautId: string; partyId: string; definitionId: string; confirmed: boolean }
   | { type: 'inventory-mode'; argonautId: string; partyId: string; enabled: boolean }
@@ -53,7 +68,7 @@ export type PartyAction =
   | { type: 'remove-affliction'; argonautId: string; partyId: string; id: AfflictionId; confirmed: boolean }
   | { type: 'skill'; argonautId: string; skill: SkillName; delta: -1 | 1 }
   | { type: 'counter'; argonautId: string; counter: CounterName; value: number; confirmOverflow?: boolean }
-  | { type: 'titan'; argonautId: string; titan: CardInstance | null }
+  | { type: 'titan'; argonautId: string; titan: CardInstance | null; partyId?: string; expectedCycle?: CampaignCycle }
   | { type: 'titan-loadout-mode'; argonautId: string; instanceId: string; mode: 'weapons' | 'support' }
   | { type: 'titan-face'; argonautId: string; faceId: 'front' | 'back' }
   | { type: 'titan-exhausted'; argonautId: string; exhausted: boolean }
@@ -75,6 +90,37 @@ export type PartyAction =
 /** Every edit names its owner explicitly, including callbacks opened before navigation. */
 export function partyReducer(party: Party, action: PartyAction, catalogue?: CatalogueRepository): Party {
   if (!party.order.includes(action.argonautId)) return party;
+  if (action.type === 'titan-roster') return catalogue && action.partyId === party.id && action.expectedCycle === campaignCycle(party)
+    ? editTitanRoster(party, action.edit, catalogue) : party;
+  if (action.type === 'milestone-select' || action.type === 'milestone-token' || action.type === 'milestone-token-edit') {
+    if (!catalogue || action.partyId !== party.id || action.expectedCycle !== campaignCycle(party) || !['story', 'doom'].includes(action.kind)) return party;
+    if (action.type === 'milestone-select') return selectMilestone(party, action.kind, action.reference, action.expectedReference, catalogue);
+    if (action.type === 'milestone-token' && ![-1, 1].includes(action.delta)) return party;
+    const current = currentMilestone(party, action.kind, catalogue);
+    const rule = current.side?.tokens.find(rule => rule.token === action.token);
+    const maximum = rule && milestoneTokenMaximum(rule);
+    const requested = action.type === 'milestone-token-edit' ? action.value : (current.tokens[action.token] ?? 0) + action.delta;
+    const value = action.type === 'milestone-token' && action.delta < 0 && maximum !== undefined ? Math.min(requested, maximum) : requested;
+    return changeMilestoneToken(party, action.kind, action.token, value, action.expectedReference, catalogue);
+  }
+  if (action.type === 'argo-track' || action.type === 'argo-track-edit') {
+    if (!catalogue || action.partyId !== party.id || action.expectedCycle !== campaignCycle(party)) return party;
+    const track = argoTrackDefinition(action.id, action.expectedCycle);
+    if (!track) return party;
+    if (action.type === 'argo-track') {
+      if (![-1, 1].includes(action.delta)) return party;
+      const current = argoTrack(party, track, catalogue);
+      // A legacy over-limit total can be corrected with minus without creating another invalid total.
+      const next = action.delta < 0 && current.limit != null ? Math.min(current.value + action.delta, current.limit) : current.value + action.delta;
+      return changeArgoTrack(party, action.id, next, action.expectedCycle, catalogue);
+    }
+    return changeArgoTrack(party, action.id, action.value, action.expectedCycle, catalogue, { limit: action.limit, reference: action.reference });
+  }
+  if (action.type === 'argo-record') {
+    if (action.partyId !== party.id || !ARGO_RECORD_IDS.includes(action.id) || typeof action.text !== 'string') return party;
+    const argo = party.argo ?? { version: 1 as const, tracks: {}, limits: {}, records: {} };
+    return { ...party, argo: { ...argo, records: { ...argo.records, [action.id]: action.text } } };
+  }
   if (action.type === 'technology-research' || action.type === 'technology-remove') {
     if (!catalogue || action.partyId !== party.id || action.type === 'technology-remove' && action.confirmed !== true) return party;
     return changeTechnology(party, action.definitionId, action.type === 'technology-research' ? 'research' : 'remove', catalogue);
@@ -95,6 +141,7 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
     return { ...party, inventory: { ...inventory, gear } };
   }
   if (action.type === 'inventory-titan') {
+    if (party.titanRoster) return party;
     if (!catalogue || action.partyId !== party.id || typeof action.acquired !== 'boolean') return party;
     const inventory = inventoryFor(party, catalogue), card = catalogue.get(action.definitionId);
     if (action.acquired && (!card || card.family !== 'Titan' || !card.faces.some(face => isFaceAvailableInCycle(face, campaignCycle(party))))
@@ -110,10 +157,17 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
   if (action.type === 'advance-cycle') {
     if (action.confirmed !== true || action.partyId !== party.id || action.expectedCycle !== campaignCycle(party)) return party;
     const next = nextCampaignCycle(campaignCycle(party));
-    return next === null ? party : { ...party, campaignCycle: next };
+    return next === null ? party : startCampaignCycle(catalogue ? advanceTitanRoster(party, next, catalogue) : party, next);
   }
   if (action.type === 'resource') {
     const name = action.name.trim(), value = (Object.hasOwn(party.resources, name) ? party.resources[name] : 0) + action.delta;
+    const track = argoResourceDefinition(name);
+    if (track) {
+      if (!catalogue || ![-1, 1].includes(action.delta)) return party;
+      const current = argoTrack(party, track, catalogue);
+      const next = action.delta < 0 && current.limit != null ? Math.min(current.value + action.delta, current.limit) : current.value + action.delta;
+      return changeArgoTrack(party, track.id, next, campaignCycle(party), catalogue);
+    }
     return name && name.length <= 80 && [-1, 1].includes(action.delta) && Number.isSafeInteger(value) && value >= 0
       ? { ...party, resources: { ...party.resources, [name]: value } } : party;
   }
@@ -122,8 +176,8 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
     const resources = { ...party.resources }; delete resources[action.name];
     return { ...party, resources };
   }
-  if (action.type === 'reset-resources') return Object.values(party.resources).some(value => value !== 0)
-    ? { ...party, resources: Object.fromEntries(Object.keys(party.resources).map(name => [name, 0])) } : party;
+  if (action.type === 'reset-resources') return Object.entries(party.resources).some(([name, value]) => argoResourceDefinition(name)?.id !== 'knowledge' && value !== 0)
+    ? { ...party, resources: Object.fromEntries(Object.entries(party.resources).map(([name, value]) => [name, argoResourceDefinition(name)?.id === 'knowledge' ? value : 0])) } : party;
   const current = party.argonauts.find(argonaut => argonaut.id === action.argonautId)!;
   let updated = current;
   switch (action.type) {
@@ -186,6 +240,14 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
     case 'memory-state': if (catalogue) updated = updateMemory(current, action.instanceId, action, catalogue); break;
     case 'memory-node': if (catalogue) updated = changeMemoryNodes(current, action.instanceId, action.delta, catalogue); break;
     case 'table-override':
+      if (party.titanRoster && !current.titan?.rosterId && action.reference !== null) break;
+      if (catalogue && current.titan?.rosterId && party.titanRoster) {
+        const record = party.titanRoster.titans.find(titan => titan.id === current.titan!.rosterId);
+        if (!record || !['Trauma', 'Kratos'].includes(action.kind)) break;
+        const patterns = { ...record.patterns, [overrideKey(action.kind)]: action.reference };
+        if (patternIssue(party, record.id, patterns, catalogue)) break;
+        return editTitanRoster(party, { operation: 'patterns', id: record.id, patterns, expected: record }, catalogue);
+      }
       if (['Trauma', 'Kratos'].includes(action.kind) && (action.reference === null || catalogue && supportsPattern(catalogue.getFace(action.reference.definitionId, action.reference.faceId), action.kind))) updated = { ...current, tableOverrides: { ...current.tableOverrides, [overrideKey(action.kind)]: action.reference } };
       break;
     case 'titan-face':
@@ -231,9 +293,17 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       break;
     }
     case 'titan': {
+      if (action.partyId !== undefined && action.partyId !== party.id || action.expectedCycle !== undefined && action.expectedCycle !== campaignCycle(party)) break;
+      if (party.titanRoster && action.titan) {
+        const record = party.titanRoster.titans.find(titan => titan.id === action.titan!.rosterId);
+        if (!record || record.status !== 'alive' || record.definitionId !== action.titan.definitionId || record.faceId !== action.titan.faceId
+          || party.argonauts.some(member => member.id !== current.id && member.titan?.rosterId === record.id)) break;
+        const detached = current.titan && current.titan.rosterId !== record.id ? unlinkRemovedHost(current, current.titan.id) : current;
+        updated = { ...detached, titan: action.titan, tableOverrides: record.patterns }; break;
+      }
       if (party.inventory?.enforce && action.titan && action.titan.definitionId !== current.titan?.definitionId && (!catalogue || !inventoryAllowsTitan(party, action.titan.definitionId, action.titan.faceId, catalogue))) break;
       const detached = current.titan && (current.titan.definitionId !== action.titan?.definitionId || current.titan.id !== action.titan?.id) ? unlinkRemovedHost(current, current.titan.id) : current;
-      updated = { ...detached, titan: action.titan }; break;
+      updated = { ...detached, titan: action.titan, ...(party.titanRoster ? { tableOverrides: emptyTitanPatterns() } : {}) }; break;
     }
     case 'equip': {
       if (!catalogue) break;

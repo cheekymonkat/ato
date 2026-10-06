@@ -6,6 +6,8 @@ import type { CampaignCycle } from './tokens.ts';
 import { validConditionRecords } from './conditions.ts';
 import { isAfflictionId } from './afflictions.ts';
 import type { AfflictionId } from './afflictions.ts';
+import { validArgoState } from './argo.ts';
+import type { ArgoState } from './argo.ts';
 
 export const ARGONAUT_COLOURS = ['#B54A48', '#416EAA', '#547E59', '#B38A35'] as const;
 export const SKILL_NAMES = ['Courage', 'Cunning', 'Endurance', 'Fury', 'Will', 'Wisdom'] as const;
@@ -18,6 +20,8 @@ export interface ConditionRecord {
 export interface MemoryProgress { node: number | null; growthUnlocked: boolean; breakthroughs?: [boolean, boolean] }
 export interface CardInstance {
   id: string; definitionId: DefinitionId; faceId: FaceId; exhausted: boolean;
+  /** Physical Titan in the campaign roster; absent in older saves. */
+  rosterId?: string;
   /** Reversible discard marker; absent in older saves means false. */
   discarded?: boolean;
   /** Six-Armed loadout choice. Missing means the Titan's default weapon capacity. */
@@ -56,6 +60,11 @@ export interface Argonaut {
 export interface CampaignInventory {
   version: 1; enforce: boolean; gear: Record<string, number>; titans: string[];
 }
+export type TitanStatus = 'alive' | 'crippled' | 'dead';
+export interface TitanRecord extends CardReference {
+  id: string; status: TitanStatus;
+  patterns: { trauma: CardReference | null; kratos: CardReference | null };
+}
 export interface Party {
   saveSchemaVersion: 2; id: string; catalogueVersion: string;
   /** Optional for compatibility with existing saves; missing means Cycle 1. */
@@ -66,7 +75,10 @@ export interface Party {
   resources: Record<string, number>;
   /** Optional acquired stock; older saves keep unrestricted equipment selection until enabled. */
   inventory?: CampaignInventory;
+  titanRoster?: { version: 1; titans: TitanRecord[] };
   campaignNotes?: string;
+  /** Ship tracks, per-cycle progression and campaign reference notebooks. Missing in older saves. */
+  argo?: ArgoState;
   /** Campaign-wide researched Technology deck. Available projects are derived from prerequisites. */
   technologies?: { version: 1; researched: string[] };
 }
@@ -117,6 +129,7 @@ function migrateParty(value: unknown): unknown {
 function checkInstance(value: unknown, path: string): asserts value is CardInstance {
   assert(isRecord(value) && typeof value.id === 'string' && value.id.trim() && typeof value.definitionId === 'string' && value.definitionId.trim(), `${path}: invalid instance identity`);
   assert(value.faceId === 'front' || value.faceId === 'back', `${path}: invalid face`);
+  assert(value.rosterId === undefined || typeof value.rosterId === 'string' && !!value.rosterId.trim(), `${path}: invalid Titan roster identity`);
   assert(typeof value.exhausted === 'boolean' && strings(value.enabledEffectIds) && dictionary(value.counters), `${path}: invalid instance state`);
   assert(value.discarded === undefined || typeof value.discarded === 'boolean', `${path}: invalid discarded state`);
   assert(value.loadoutMode === undefined || value.loadoutMode === 'weapons' || value.loadoutMode === 'support', `${path}: invalid Titan loadout mode`);
@@ -135,6 +148,13 @@ export function parseParty(value: unknown): Party {
   assert(typeof value.id === 'string' && value.id.trim() && typeof value.catalogueVersion === 'string' && value.catalogueVersion.trim(), 'Invalid party identity/version');
   assert(value.campaignCycle === undefined || isCampaignCycle(value.campaignCycle), 'Invalid campaign cycle');
   assert(value.campaignNotes === undefined || typeof value.campaignNotes === 'string', 'Invalid campaign notes');
+  assert(value.argo === undefined || validArgoState(value.argo), 'Invalid Argo campaign records');
+  const roster = value.titanRoster;
+  assert(roster === undefined || isRecord(roster) && roster.version === 1 && Array.isArray(roster.titans)
+    && roster.titans.every(titan => isRecord(titan) && typeof titan.id === 'string' && !!titan.id.trim() && checkReference(titan)
+      && ['alive', 'crippled', 'dead'].includes(String(titan.status)) && isRecord(titan.patterns)
+      && checkReference(titan.patterns.trauma) && checkReference(titan.patterns.kratos))
+    && new Set(roster.titans.map(titan => (titan as Record<string, unknown>).id)).size === roster.titans.length, 'Invalid Titan roster');
   const technologies = value.technologies;
   assert(technologies === undefined || isRecord(technologies) && technologies.version === 1 && strings(technologies.researched)
     && new Set(technologies.researched).size === technologies.researched.length, 'Invalid or duplicate campaign technologies');
@@ -143,6 +163,7 @@ export function parseParty(value: unknown): Party {
   assert(value.rulesAssistance === undefined || typeof value.rulesAssistance === 'boolean', 'Invalid rules assistance setting');
   assert(Array.isArray(value.argonauts) && value.argonauts.length === 4, 'Party must contain four Argonauts');
   const allInstanceIds = new Set<string>();
+  const assignedTitans = new Set<string>();
   for (const [index, argonaut] of value.argonauts.entries()) {
     const path = `argonauts/${index}`;
     assert(isRecord(argonaut) && typeof argonaut.id === 'string' && argonaut.id.trim() && typeof argonaut.name === 'string', `${path}: invalid identity`);
@@ -171,6 +192,17 @@ export function parseParty(value: unknown): Party {
       checkInstance(argonaut.titan, `${path}/titan`);
       assert(!allInstanceIds.has(argonaut.titan.id), `${path}: duplicate Titan instance ID`);
       allInstanceIds.add(argonaut.titan.id);
+      if (argonaut.titan.rosterId !== undefined) {
+        const rosterId = argonaut.titan.rosterId;
+        const record = isRecord(roster) && Array.isArray(roster.titans) && roster.titans.find(titan => isRecord(titan) && titan.id === rosterId);
+        assert(isRecord(record) && record.status === 'alive' && record.definitionId === argonaut.titan.definitionId && record.faceId === argonaut.titan.faceId
+          && !assignedTitans.has(argonaut.titan.rosterId), `${path}: unavailable or duplicate assigned roster Titan`);
+        assignedTitans.add(argonaut.titan.rosterId);
+        assert(isRecord(record.patterns) && ['trauma', 'kratos'].every(key => {
+          const pattern = (record.patterns as Record<string, unknown>)[key], override = (argonaut.tableOverrides as Record<string, unknown>)[key];
+          return pattern === null && override === null || isRecord(pattern) && isRecord(override) && pattern.definitionId === override.definitionId && pattern.faceId === override.faceId;
+        }), `${path}: Titan patterns must match the roster`);
+      }
     }
     const equipped = new Set<string>(), occupied = new Set<string>();
     for (const assignment of argonaut.equipment) {

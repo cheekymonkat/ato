@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Pressable, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Button } from '../components/Button';
-import { Emblem } from '../components/Icon';
+import { MenuIcon } from '../components/Icon';
 import { DashboardMenu } from '../dashboard/DashboardMenu';
 import { TidesOfFateDialog } from '../dashboard/TidesOfFateDialog';
 import { useParty } from '../state/PartyProvider';
@@ -20,7 +20,7 @@ export function AppHeader() {
   const [menu, setMenu] = useState(false), [clearing, setClearing] = useState<{ partyId: string; argonautId: string; name: string } | null>(null);
   return <SafeAreaView edges={['left', 'right']} style={styles.header}>
     <View onLayout={event => { if (event.nativeEvent.layout.width > 0) setContainerWidth(event.nativeEvent.layout.width); }} style={[styles.row, compact && styles.wrap]}>
-      <View style={styles.brand}><Emblem /><View><Text style={styles.title}>AEON TRESPASS</Text><Text style={styles.subtitle}>O D Y S S E Y</Text></View></View>
+      <View style={styles.brand}><MenuIcon name="Argonauts" size={40} colour={theme.gold} /><View><Text style={styles.title}>AEON TRESPASS</Text><Text style={styles.subtitle}>O D Y S S E Y</Text></View></View>
       {compact && <Button quiet label="Open menu" onPress={() => setMenu(true)} style={[styles.menu, compact && styles.compactMenu]}>
         <View style={{ gap: 4 }}>{[0, 1, 2].map(key => <View key={key} style={styles.line} />)}</View>
       </Button>}

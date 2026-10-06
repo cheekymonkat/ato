@@ -2,6 +2,9 @@ import { assert, isJsonValue, isRecord } from './json.ts';
 import type { JsonObject, JsonValue } from './json.ts';
 import { deriveTitanWeaponRules } from './titan-loadout-rules.ts';
 import type { TitanWeaponRules } from './titan-loadout-rules.ts';
+import type { TechnologyRules } from './technology-rules.ts';
+import type { MilestoneRules } from './milestone-rules.ts';
+import type { InwardOdysseyRules } from './inward-odyssey.ts';
 
 export const CARD_FAMILIES = ['AI | BP', 'Argonaut', 'Attack', 'BP', 'Clue', 'Condition', 'Doom',
   'Exploration', 'Fated Mnemos', 'Gear', 'Godform', 'Kratos', 'Map', 'Mnemos', 'Moiros', 'Nymph',
@@ -59,6 +62,9 @@ export type CardFace =
   | (FaceBase & { kind: 'other'; data: SourceCard });
 export interface CardDefinition {
   id: DefinitionId; family: string; printedIds: string[]; faces: CardFace[];
+  technologyRules?: TechnologyRules;
+  milestoneRules?: MilestoneRules;
+  inwardOdysseyRules?: InwardOdysseyRules;
   source: { file: string; page: number; recordIndex: number; pointer: string };
 }
 export type CatalogueIndex = Record<string, DefinitionId[]>;

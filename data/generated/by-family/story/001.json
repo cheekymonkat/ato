@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-6ea1ab708880839e",
+  "catalogueVersion": "atcc-v2-832793de8deb1439",
   "family": "Story",
   "part": 1,
   "cards": [
@@ -480,7 +480,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_1ac29cbf02a0de8fed63a941",
@@ -906,7 +929,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_271a3f75bf28ee7e2d7b15a5",
@@ -1410,7 +1445,44 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 10,
+                "checkpoints": [
+                  10,
+                  15,
+                  20
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "comparison": "at-least",
+                "counterMaximum": 50
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_31bbb8173e501983b274fb8a",
@@ -1823,7 +1895,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_320e6660d37524bd648b10e4",
@@ -2207,7 +2304,42 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  1,
+                  3,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_395e3ec4bd7e4808ad42123f",
@@ -2633,7 +2765,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  2,
+                  4,
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_41cdaeade6d3ff96798ca076",
@@ -3203,7 +3360,42 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  2,
+                  5,
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_4700bc71a65dd406aecd209c",
@@ -3422,7 +3614,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_552d2f0250114da3c4a09203",
@@ -3867,7 +4082,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 12,
+                "checkpoints": [
+                  5,
+                  12
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_65a7d588e7a4a43ce34f354e",
@@ -4341,7 +4590,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_65d440e2ef9a15d82c038117",
@@ -4820,7 +5081,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_6b16d2e0a36b73193eff27b6",
@@ -5208,7 +5492,40 @@
             "cardSize": "Full-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 5,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_74fc5f956abe5ef60e9cf18d",
@@ -5898,7 +6215,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 10,
+                "checkpoints": [
+                  10
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all",
+                "comparison": "at-least",
+                "counterMaximum": 50
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_876809487816469e8b6e6de5",
@@ -6614,7 +6956,44 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_92f673568809dcbb6e31c18e",
@@ -6974,7 +7353,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  2,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_9ba806dc77193ae7cb8f4919",
@@ -7239,7 +7652,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_9dfb9390c3f231249530a85a",
@@ -7740,7 +8176,31 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  3,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_a82a44ad61f0ff0272f51994",
@@ -8222,7 +8682,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 0,
+                "checkpoints": [
+                  0
+                ],
+                "direction": "decrease",
+                "initial": 4,
+                "maximum": 4
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 0,
+                "checkpoints": [
+                  0
+                ],
+                "direction": "decrease",
+                "initial": 3,
+                "maximum": 3
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_b4455d7e7959e9f8f136f18e",
@@ -8753,7 +9247,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 1,
+                "title": "Endless Decks"
+              },
+              {
+                "knowledge": 2,
+                "title": "Phos Dance"
+              },
+              {
+                "knowledge": 3,
+                "title": "Glitch in the Engine"
+              },
+              {
+                "knowledge": 4,
+                "title": "A Distant Thunder"
+              },
+              {
+                "knowledge": 5,
+                "title": "Mark of the Maker"
+              },
+              {
+                "knowledge": 6,
+                "title": "Of Dreams and Memories"
+              },
+              {
+                "knowledge": 7,
+                "title": "Blood of the Mother"
+              },
+              {
+                "knowledge": 8,
+                "title": "See the Forest"
+              },
+              {
+                "knowledge": 9,
+                "title": "Days of Meaninglessness"
+              },
+              {
+                "knowledge": 10,
+                "title": "Memory of a Distant Shore"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 11,
+                "title": "Garden of Solitude"
+              },
+              {
+                "knowledge": 12,
+                "title": "The Argonites"
+              },
+              {
+                "knowledge": 13,
+                "title": "Children of the Earth"
+              },
+              {
+                "knowledge": 14,
+                "title": "Remembrance"
+              },
+              {
+                "knowledge": 15,
+                "title": "A Spy Among Us"
+              },
+              {
+                "knowledge": 16,
+                "title": "Fire in the Depths"
+              },
+              {
+                "knowledge": 17,
+                "title": "United"
+              },
+              {
+                "knowledge": 18,
+                "title": "The Final Deterrent"
+              },
+              {
+                "knowledge": 19,
+                "title": "Black Blood Cryptex"
+              },
+              {
+                "knowledge": 20,
+                "title": "Echoes of Long-Lost Battles"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_b5485d0ba0df3faefcae94fe",
@@ -9116,7 +9705,31 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 2,
+                "checkpoints": [
+                  2
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "maximum": 9,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_c066f6efaf9b87cb72ff4021",
@@ -9646,7 +10259,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 41,
+                "title": "Throne of Heavens"
+              },
+              {
+                "knowledge": 42,
+                "title": "Burden of Proof"
+              },
+              {
+                "knowledge": 43,
+                "title": "In God's Name"
+              },
+              {
+                "knowledge": 44,
+                "title": "Crisis of Faith"
+              },
+              {
+                "knowledge": 45,
+                "title": "A Day Under the Sun"
+              },
+              {
+                "knowledge": 46,
+                "title": "Mother Dark"
+              },
+              {
+                "knowledge": 47,
+                "title": "To Grasp the Stars"
+              },
+              {
+                "knowledge": 48,
+                "title": "Inherintence"
+              },
+              {
+                "knowledge": 49,
+                "title": "Holy Murder"
+              },
+              {
+                "knowledge": 50,
+                "title": "Unto Dawn"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 51,
+                "title": "The First Junction"
+              },
+              {
+                "knowledge": 52,
+                "title": "Shadow of the Mountain"
+              },
+              {
+                "knowledge": 53,
+                "title": "Machina Ex Deus"
+              },
+              {
+                "knowledge": 54,
+                "title": "The Iron Extinction"
+              },
+              {
+                "knowledge": 55,
+                "title": "Sacred Weapons"
+              },
+              {
+                "knowledge": 56,
+                "title": "The Typhon Comes"
+              },
+              {
+                "knowledge": 57,
+                "title": "How the World Was Born"
+              },
+              {
+                "knowledge": 58,
+                "title": "Trespassing Aeons"
+              },
+              {
+                "knowledge": 59,
+                "title": "How the World Was Murdered"
+              },
+              {
+                "knowledge": 60,
+                "title": "Perpetual Motion"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c2180d865f697f7a52466a03",
@@ -10176,7 +10884,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 61,
+                "title": "Daybreak"
+              },
+              {
+                "knowledge": 62,
+                "title": "Polyphemos"
+              },
+              {
+                "knowledge": 63,
+                "title": "The Glassblower"
+              },
+              {
+                "knowledge": 64,
+                "title": "The Glorious Climb"
+              },
+              {
+                "knowledge": 65,
+                "title": "The King and the Philosopher"
+              },
+              {
+                "knowledge": 66,
+                "title": "The Great Crime"
+              },
+              {
+                "knowledge": 67,
+                "title": "The Last Lotus Eater"
+              },
+              {
+                "knowledge": 68,
+                "title": "Cast to the Four"
+              },
+              {
+                "knowledge": 69,
+                "title": "Long Voyage Home"
+              },
+              {
+                "knowledge": 70,
+                "title": "Titanaktisos"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 71,
+                "title": "The Island of Pigs"
+              },
+              {
+                "knowledge": 72,
+                "title": "A Girl from Uruk"
+              },
+              {
+                "knowledge": 73,
+                "title": "Smoke and Mirrors"
+              },
+              {
+                "knowledge": 74,
+                "title": "The Sun Endures"
+              },
+              {
+                "knowledge": 75,
+                "title": "Due Time"
+              },
+              {
+                "knowledge": 76,
+                "title": "Gardens of the Moon"
+              },
+              {
+                "knowledge": 77,
+                "title": "The Laestrygonian"
+              },
+              {
+                "knowledge": 78,
+                "title": "Jason"
+              },
+              {
+                "knowledge": 79,
+                "title": "Kiss of Mnemosyne"
+              },
+              {
+                "knowledge": 80,
+                "title": "Nostos"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_cee8a99d10d3378858140c4d",
@@ -10706,7 +11509,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 21,
+                "title": "Land of the Strong and Free"
+              },
+              {
+                "knowledge": 22,
+                "title": "The Price of Difference"
+              },
+              {
+                "knowledge": 23,
+                "title": "Scorned Smith"
+              },
+              {
+                "knowledge": 24,
+                "title": "Chimeric War"
+              },
+              {
+                "knowledge": 25,
+                "title": "The Nymph and the Engine"
+              },
+              {
+                "knowledge": 26,
+                "title": "The Means the End"
+              },
+              {
+                "knowledge": 27,
+                "title": "The Muse Kids"
+              },
+              {
+                "knowledge": 28,
+                "title": "Way of Strength"
+              },
+              {
+                "knowledge": 29,
+                "title": "A Titan's View"
+              },
+              {
+                "knowledge": 30,
+                "title": "The Rule of the Blade"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 31,
+                "title": "Blood of the Earth"
+              },
+              {
+                "knowledge": 32,
+                "title": "The Fourth"
+              },
+              {
+                "knowledge": 33,
+                "title": "As Above, So Below"
+              },
+              {
+                "knowledge": 34,
+                "title": "Shadow Play"
+              },
+              {
+                "knowledge": 35,
+                "title": "Argo-bred"
+              },
+              {
+                "knowledge": 36,
+                "title": "Forsaken Aeons"
+              },
+              {
+                "knowledge": 37,
+                "title": "Unyielding"
+              },
+              {
+                "knowledge": 38,
+                "title": "Days of Aeons Past"
+              },
+              {
+                "knowledge": 39,
+                "title": "Gen 1"
+              },
+              {
+                "knowledge": 40,
+                "title": "Song of Life"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_e214c4e81c3cae4e40e2e4fd",
@@ -10983,7 +11881,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_e45ff8689c2e2668151489fe",
@@ -11528,7 +12438,106 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 81,
+                "title": "My Ship"
+              },
+              {
+                "knowledge": 82,
+                "title": "All Great Truths"
+              },
+              {
+                "knowledge": 83,
+                "title": "A Life Unfinished"
+              },
+              {
+                "knowledge": 84,
+                "title": "I Am the Message"
+              },
+              {
+                "knowledge": 85,
+                "title": "The Great Hierei"
+              },
+              {
+                "knowledge": 86,
+                "title": "Dark"
+              },
+              {
+                "knowledge": 87,
+                "title": "Favorite Son"
+              },
+              {
+                "knowledge": 88,
+                "title": "Lies of Trismegistus"
+              },
+              {
+                "knowledge": 89,
+                "title": "Creatures of Habit"
+              },
+              {
+                "knowledge": 90,
+                "title": "The Silver Age"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 91,
+                "title": "A Heel Turn"
+              },
+              {
+                "knowledge": 92,
+                "title": "The Cult of Telemachus"
+              },
+              {
+                "knowledge": 93,
+                "title": "The Tortoise and the Hare"
+              },
+              {
+                "knowledge": 94,
+                "title": "Speak Not of Ilion"
+              },
+              {
+                "knowledge": 95,
+                "title": "Music of the Spheres"
+              },
+              {
+                "knowledge": 96,
+                "title": "The Trojan"
+              },
+              {
+                "knowledge": 97,
+                "title": "Worldcarers"
+              },
+              {
+                "knowledge": 98,
+                "title": "Genesis"
+              },
+              {
+                "knowledge": 99,
+                "title": "A Ship Named Argo"
+              },
+              {
+                "knowledge": 100,
+                "title": "Kathairein"
+              },
+              {
+                "knowledge": 101,
+                "title": "My Penelope"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_fba4f7e667885d453ece5697",
@@ -11780,7 +12789,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     }
   ]
 }

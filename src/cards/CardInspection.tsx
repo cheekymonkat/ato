@@ -57,6 +57,16 @@ export function CardInspection({ card, faceId }: { card: CardDefinition; faceId:
           {strings(face.data.keywords).length > 0 && <Text style={styles.details}>{strings(face.data.keywords).join(' · ')}</Text>}
           {objects(face.data.tiles).map((tile, index) => <Text key={index} style={styles.details}>{displayValue(tile.count)} × {displayValue(tile.type)} tile</Text>)}
           {face.kind === 'titan' && <Text style={styles.details}>Speed {face.data.speed} · Titan power {face.data.titanPower}</Text>}
+          {['Story', 'Doom'].includes(face.family) && <>
+            <Text style={styles.subtitle}>Card {displayValue(face.data.cardNumber ?? card.faces[0].data.cardNumber)}{face.id === 'front' ? 'A' : 'B'}</Text>
+            {strings(face.data.flavor).map((text, index) => <Text key={index} style={styles.details}>{text}</Text>)}
+            {face.data.rulesTitle != null && <Text style={styles.groupTitle}>{displayValue(face.data.rulesTitle)}</Text>}
+            {(Array.isArray(face.data.rules) ? face.data.rules : []).map((rules, index) => <RichParagraph key={index} paragraph={rules} size={16} align="left" {...textActions} />)}
+          </>}
+          {['Exploration', 'Nymph'].includes(face.family) && <>
+            {face.data.requirements != null && <RichParagraph paragraph={face.data.requirements} prefix="Requirements: " size={16} align="left" {...textActions} />}
+            {['effects', 'effects2', 'removeEffect', 'acclimation'].map(field => face.data[field] != null && <RichParagraph key={field} paragraph={face.data[field]} size={16} align="left" {...textActions} />)}
+          </>}
           <RichParagraph paragraph={face.data.abilities} size={16} align="left" {...textActions} />
           {face.data.effect != null && <RichParagraph paragraph={face.data.effect} size={16} align="left" {...textActions} />}
           {Array.isArray(face.data.traumaTable) && face.data.traumaTable.length > 0 && <PatternTable kind="Trauma" table={face.data.traumaTable} />}

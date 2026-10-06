@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-6ea1ab708880839e",
+  "catalogueVersion": "atcc-v2-832793de8deb1439",
   "cards": [
     {
       "id": "def_0003f07224deddf7f702e53f",
@@ -117,7 +117,17 @@
             "trireme": "TRUE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0042d77d0afae7ae0eb0f2db",
@@ -293,7 +303,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_004f91541775fbe9ef1fcd55",
@@ -2028,7 +2045,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_019161e905eb0a23ea24a87a",
@@ -3425,7 +3453,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_030a1c0115f45ae96d1e5ff3",
@@ -3779,7 +3817,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_035f52f97c850e35677dfbd9",
@@ -4277,7 +4325,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_03ae72306758b24f5af9e502",
@@ -5041,7 +5096,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_04483859d86b1689ef1692a6",
@@ -7075,7 +7138,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_05f8cb3173a66be43e1a5eb7",
@@ -9187,7 +9259,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_080bc233b13483eefa6c6e7b",
@@ -11138,7 +11217,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_09178e597eb97d4087200701",
@@ -12263,7 +12349,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_09777c6d9ab87c2e67b13ce6",
@@ -12638,7 +12733,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_09af70b05b730ae7f295b569",
@@ -13128,7 +13231,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0a4fd8cc98041c6d6acfb714",
@@ -14952,7 +15062,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0aea346846779d32f6222e5e",
@@ -15517,7 +15636,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0b227f70fbff8926157671d9",
@@ -16715,7 +16842,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0b77e557059f0b55bc25801d",
@@ -18849,7 +18986,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0c990c8e929bd04e7462bb0c",
@@ -19358,7 +19506,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0d04ba9e8498e5668729a432",
@@ -21638,7 +21794,15 @@
             "trireme": "TRUE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0e4e08e0da0937c54560974d",
@@ -23099,7 +23263,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0f2cdeea569b1c901a91eb10",
@@ -23670,7 +23844,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_0fb30ba28e0e2fc2aa0a0da4",
@@ -24584,7 +24768,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_10355f6c6b30f29c18beb295",
@@ -24759,7 +24966,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_109f31c2dc0802bc4f6ee466",
@@ -25279,7 +25493,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_10e17fc7e9000f26203dd43f",
@@ -27128,7 +27349,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_12335dae435762a79c38372b",
@@ -27246,7 +27478,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_126db925a4d0cb213b22014b",
@@ -28177,7 +28420,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_133b24070b87d84c90a0d64c",
@@ -28427,7 +28677,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_13c590e09517468e3168772f",
@@ -30884,7 +31141,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_15426f2c773a73f3f8490d81",
@@ -35044,7 +35308,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1894b1b37b6fe34678f5ad79",
@@ -35204,7 +35476,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_18b877438a0f89485038edb4",
@@ -35538,7 +35817,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_18d96aa65a9191ac179b0642",
@@ -35959,7 +36248,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_191aedcede5b8953f33925c1",
@@ -37023,7 +37320,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_197fc4a34176d1b3da39fe01",
@@ -37480,7 +37784,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_19e024408b7d19f89a7ec4e9",
@@ -38876,7 +39187,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_1ac4e34a8d928ffaf651d92d",
@@ -39123,7 +39446,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1af81da808c271a58bf12b4c",
@@ -41812,7 +42145,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1cd003e7755070302bd693e5",
@@ -44345,7 +44685,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1e96a92c7288054dc7cdb7d0",
@@ -45515,7 +45862,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1efd8d297142af4ca7164324",
@@ -45999,7 +46357,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_1f25d3bb1cfadc952378052e",
@@ -46291,7 +46656,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "argoOxygen": 2
+        }
+      }
     },
     {
       "id": "def_1f7474895f1381644f9d239c",
@@ -49363,7 +49737,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_20ceca645065dfece77771a7",
@@ -50699,7 +51080,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_218341bb73ce6cac590b0ed3",
@@ -51440,7 +51830,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_21f4a1ed567e95678ebf00a0",
@@ -51844,7 +52242,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_22347320c6a420a52ef60f9f",
@@ -52322,7 +52727,19 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "argoAbilities": 4
+        }
+      }
     },
     {
       "id": "def_2286aa880a6d313c13c826b2",
@@ -52454,7 +52871,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_22bc297bb3b9b7ba66552e92",
@@ -53378,7 +53806,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_23366f290a4a8a31161fb4a8",
@@ -53606,7 +54041,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2349b1ea9f36ca02a325bb7a",
@@ -53674,7 +54116,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_23586622bc00189906c43f2a",
@@ -53886,7 +54335,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2370fe197491b6f9c27bcc47",
@@ -55066,7 +55524,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2415714d6344b31d887670ec",
@@ -55268,7 +55736,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_241caec1b63497a48ec9aa3b",
@@ -55848,7 +56323,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_24a05e6ded4b023282afc254",
@@ -57955,7 +58439,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2623264bb158c80bd932fadf",
@@ -58978,7 +59471,44 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 10,
+                "checkpoints": [
+                  10,
+                  15,
+                  20
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "comparison": "at-least",
+                "counterMaximum": 50
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_2763f4a6afe73168132c1be5",
@@ -60848,7 +61378,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_28553b343253f86deb9e0558",
@@ -61596,7 +62160,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_29218d00abdbc8924022d387",
@@ -61781,7 +62355,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2957eda05d5811dffcefe37a",
@@ -61963,7 +62546,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "hull": 6,
+          "crew": 6
+        }
+      }
     },
     {
       "id": "def_297f3edb84a49a564196fe82",
@@ -62695,7 +63288,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "argoOxygen": 3
+        }
+      }
     },
     {
       "id": "def_29f9b60e2c5cede8e077f97b",
@@ -62958,7 +63560,14 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_29fc308fcac677eef9069fdb",
@@ -63535,7 +64144,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2a22b7cc49bb494cddf8d37c",
@@ -64763,7 +65382,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2b380786deaa6829b5262b42",
@@ -68561,7 +69187,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2d70da2f4922cc3b4377707d",
@@ -68680,7 +69313,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_2d822170fb36b8ad297c90ce",
@@ -73729,7 +74369,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3074c9600518edd70457803c",
@@ -76743,7 +77391,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_317a1bb7ef2ed8980808dabf",
@@ -77953,7 +78612,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_31c4c6887c1d5733dcfe8c7e",
@@ -78892,7 +79576,42 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  1,
+                  3,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_32164ab043fbca6927f8ea6c",
@@ -79086,7 +79805,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_32272b4c298fffbc003cfb7f",
@@ -79851,7 +80580,20 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "argoAbilities": 3
+        }
+      }
     },
     {
       "id": "def_328b720fc85197630dea83bb",
@@ -80373,7 +81115,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3300cd2386a3739d1d3e7abf",
@@ -81416,7 +82165,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3392289e5dd859b72423295b",
@@ -81898,7 +82654,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_33c6fbe9d86ba0ebd7c5ad66",
@@ -82335,7 +83099,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3430398e4adb72a16b2e21e3",
@@ -83453,7 +84226,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_349ba39aae8f67225d17d96a",
@@ -85175,7 +85957,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_356797211ca8ba7cdd54d61f",
@@ -87438,7 +88231,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_36c1a81dfd1279085fce9d37",
@@ -91794,7 +92596,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  2,
+                  4,
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_396382f1b53d84a1fe1fcc5b",
@@ -92244,7 +93071,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "titans": 20
+        }
+      }
     },
     {
       "id": "def_397c741f9950dc2cf7a6c1af",
@@ -92362,7 +93198,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_398bd4a5742c8c6bdda8145f",
@@ -92609,7 +93454,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_39df25703948cf89797599dd",
@@ -93278,7 +94130,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3a1bd1887969704c8a4b1c42",
@@ -93567,7 +94426,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3a294bae9c4c8afcf0e36bf1",
@@ -94084,7 +94950,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3aad962e773a90f4a865b5d5",
@@ -94193,7 +95068,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3ab30173c4dd470226ca2caf",
@@ -96692,7 +97575,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3bceb59223fcc53ab4ff60d0",
@@ -97295,7 +98188,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3c014172da91bf78d6cfb2e8",
@@ -99050,7 +99954,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3d302b453b99e6345f33c8f1",
@@ -99228,7 +100141,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3d5aea96f313461ad2c51851",
@@ -101874,7 +102798,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3f0f721c24356d41a5838dbf",
@@ -102763,7 +103696,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_3f5f3191f528d11137f26ef5",
@@ -105880,7 +106822,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_41875e8eae241ca47e626d20",
@@ -106848,7 +107797,42 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  2,
+                  5,
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_41d2f0be3d84cdf946992634",
@@ -107030,7 +108014,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_41d4733d7c70cc172e05e13a",
@@ -107268,7 +108259,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_41f0593788dd9d58abbeb285",
@@ -110628,7 +111626,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_43b49afc441cfd15d52308b3",
@@ -110959,7 +111964,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_43fc54018975333e4320fa28",
@@ -112188,7 +113203,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_44bbf39f0e2e5ab922bfa57c",
@@ -112291,7 +113313,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_44c6ab6918cdf5686ae8c0a0",
@@ -113204,7 +114233,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4566848276e4b8f9a1607562",
@@ -113805,7 +114841,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_45bab941d4cd99c509b9c081",
@@ -116695,7 +117738,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_473bc64d42f1106cc60d6528",
@@ -117057,7 +118123,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_475cfc086e2ac7443d80d10a",
@@ -118212,7 +119289,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_481b5e87f444f7fee4024017",
@@ -119080,7 +120164,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_48f807f2148df3671be81864",
@@ -120192,7 +121283,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4a394c69f1af39e8f68d657b",
@@ -122131,7 +123233,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_4c150926c5dc992cbbf56f85",
@@ -123228,7 +124364,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4c7f9f9be1b59094b84e81ae",
@@ -123747,7 +124890,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4cd73af23118e6acc432db7d",
@@ -126695,7 +127845,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4f1eac6996ffa94a2b2bfc16",
@@ -128088,7 +129245,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4fd867d220ea31d10aca53bf",
@@ -129268,7 +130433,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5067745df9df586f71f31615",
@@ -129844,7 +131016,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_50941c3df45902d2320dd92b",
@@ -130153,7 +131332,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_50b9e94eeec0bc5643fe8142",
@@ -130482,7 +131668,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_50bfb7052a7c9f071061f821",
@@ -132087,7 +133280,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_51d60a016d1ea197167b4d7f",
@@ -133728,7 +134931,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5277fb612d3e28a1b1ea2c74",
@@ -134027,7 +135239,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5279021969013d4634cfb3e1",
@@ -136697,7 +137919,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 12,
+                "checkpoints": [
+                  5,
+                  12
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_5535bd59a315dc0ec5971fbd",
@@ -139186,7 +140442,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_561dfa4d4cc849e198cef34e",
@@ -139634,7 +140900,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_565980ba3dd68ac1a19f6ba0",
@@ -140258,7 +141531,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_56cb208ba2545c9ab9d46286",
@@ -141953,7 +143235,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_57e74db45529dfda1b3a9e74",
@@ -142326,7 +143615,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5805dc007962204ca1999153",
@@ -143120,7 +144416,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_586d75437a53378b696191a2",
@@ -143516,7 +144821,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_58d4e15da67005442f4a9531",
@@ -143755,7 +145067,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_590410584924c524d8de05d9",
@@ -144171,7 +145493,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_59af38a49d8ae354e73f9898",
@@ -146201,7 +147534,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 3,
+                "checkpoints": [
+                  3
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_5a7a3a4fec9ddd8cdeddadb6",
@@ -146643,7 +148028,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5aa6d7105f89af9acd5f961d",
@@ -150507,7 +151903,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 20
+        }
+      }
     },
     {
       "id": "def_5d4d076ff66fd9b0d16b99f8",
@@ -151712,7 +153119,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5e115e06935b9461816336ab",
@@ -152487,7 +153905,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5eac735d7de1e3db0448d7a8",
@@ -153481,7 +154906,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5f9d2d306bfe605717156b71",
@@ -153636,7 +155072,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5fad0dce0bd280b83bce1fef",
@@ -154969,7 +156415,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_61091d2a4518ef9a68102dce",
@@ -156390,7 +157843,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_62466fc3caf687ff037fa823",
@@ -157419,7 +158879,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_62a3e0517a2a4d9785a77317",
@@ -159165,7 +160633,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 5,
+          "crew": 6
+        }
+      }
     },
     {
       "id": "def_6382a3a06dc3bfd1f1f586cd",
@@ -159405,7 +160884,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_638c1e0031219748eb9f2305",
@@ -160181,7 +161668,17 @@
             "trireme": "TRUE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_63c882e7147a9783f4f96708",
@@ -160527,7 +162024,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_64099c5fce284b805a96ce82",
@@ -160767,7 +162275,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_642f965c46e2b78eebf9c9fb",
@@ -160978,7 +162496,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_644b70dbc32ef4e49b2aefcd",
@@ -161845,7 +163370,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_652658e91fcd8cec518d9f1a",
@@ -163633,7 +165169,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_65aebbde05afc2edf8ea92c0",
@@ -163735,7 +165283,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_65b33feb776138429033b30a",
@@ -164501,7 +166056,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_65f269f3e24349a8ceb48734",
@@ -164816,7 +166394,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_65f807c91dc17a3d31a9923c",
@@ -165579,7 +167164,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_667a978df28d6f3f16eacba2",
@@ -166435,7 +168027,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6735d9446c775dc2de614030",
@@ -168451,7 +170050,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6913e52c2054ca0b30903362",
@@ -170209,7 +171817,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6a789d0dae249bf6370b07e8",
@@ -171204,7 +172820,40 @@
             "cardSize": "Full-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 5,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_6b27d228c3e65c56c8f7b022",
@@ -171696,7 +173345,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6bb3197ea5122d4c5d021728",
@@ -172231,7 +173887,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6c15866ceb763c28056fb43a",
@@ -172496,7 +174162,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6c4b1c0d1b99cd177a9e1553",
@@ -173326,7 +174999,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "summons": 3
+        }
+      }
     },
     {
       "id": "def_6d2a8dc40d2f89b8a4eb838b",
@@ -174028,7 +175710,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6d6d2721c10181fda7f99298",
@@ -176984,7 +178676,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_6eca4613f0174bb6fa95eb7a",
@@ -177800,7 +179526,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6f7cd6f4a87372f6e20f6264",
@@ -179547,7 +181284,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_70a51b172da5b410ca097369",
@@ -180096,7 +181840,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_70fa4ca6912646e9802f7c6b",
@@ -183373,7 +185151,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_734d6f45095dc6b3d7c93894",
@@ -184765,7 +186550,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_73cfba1de72eb281fcb741e0",
@@ -187988,7 +189784,32 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 4,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 10,
+                "checkpoints": [
+                  10
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all",
+                "comparison": "at-least",
+                "counterMaximum": 50
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_750f26d255f1f0da09f4de20",
@@ -188201,7 +190022,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7569509f0bd5c700cfb77dc3",
@@ -189893,7 +191721,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_76cd97d0b1d7043fdf741f0c",
@@ -192101,7 +193937,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_78a93dd8bfd9d90a7a5c3b41",
@@ -192884,7 +194727,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_79053031703ee534d6d081fb",
@@ -193000,7 +194852,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7908fd6219ee9f9c5e5872e1",
@@ -193299,7 +195158,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7953a7a5a42900ca3b7ebce9",
@@ -195432,7 +197302,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7af8717f9759922530171520",
@@ -195539,7 +197417,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7b20acc485efbc6451cd3dd9",
@@ -196565,7 +198450,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {
+          "argoAbilities": 5
+        }
+      }
     },
     {
       "id": "def_7b751622b9824906c3ae6749",
@@ -196963,7 +198858,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7bf0d29ad193d3a9f8fd1b67",
@@ -198267,7 +200173,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7c86624a68cdc86cd51a6d6d",
@@ -198375,7 +200288,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7cbe160edf7d870de4b74f16",
@@ -200983,7 +202906,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7e09bd8e9a667cedcb7861b3",
@@ -202619,7 +204551,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7ed3d08604db18f343c885e3",
@@ -202847,7 +204790,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7f02592590884af776289bfd",
@@ -203130,7 +205083,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_7f12346bdc4190cdf7eec13b",
@@ -204905,7 +206892,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7fee225c6ae78076f1c7b324",
@@ -205043,7 +207037,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7ff4f1a52b27b6b6fc8992f8",
@@ -206026,7 +208029,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_80cfd518cc460a94453e0aca",
@@ -206377,7 +208388,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_80f3945edb2798471ff2133a",
@@ -206962,7 +208983,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8161ccf8741e00a1d7ca7ad5",
@@ -209933,7 +211963,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8335f3a9e5ed2d972c1a1f5b",
@@ -212113,7 +214152,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "timeSilo": 5
+        }
+      }
     },
     {
       "id": "def_84493f5b70caf97062d45e6c",
@@ -213378,7 +215426,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_8479e4f6cd030a07e5be3d05",
@@ -214311,7 +216393,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_853315a280496e4b15d10d6b",
@@ -214449,7 +216538,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_85498f55369df20315e72c8b",
@@ -217280,7 +219376,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8764d54bab0ba3731ea2045f",
@@ -218208,7 +220311,44 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 9,
+                "checkpoints": [
+                  2,
+                  5,
+                  9
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_876a48c102c2e327b7bca5ff",
@@ -218403,7 +220543,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8785ffe9b51a1209e1151f47",
@@ -218927,7 +221075,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8827d91e4d37d92568d05cec",
@@ -219555,7 +221710,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8899c629558eace84e5fcf72",
@@ -223202,7 +225367,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8aa3125325c8ae0220bc0237",
@@ -223310,7 +225482,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8aa3bb15fbc05f1070a9e865",
@@ -223599,7 +225781,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8af6234f733defcb3f48aa1a",
@@ -224341,7 +226532,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8b2d8f88f112b82a59a2b6da",
@@ -224947,7 +227148,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8bad4b16fea1a7ee7f8798e1",
@@ -226766,7 +228974,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_8d04db67d63261871683e999",
@@ -227295,7 +229537,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "argoOxygen": 1
+        }
+      }
     },
     {
       "id": "def_8d23e1cabdf1256d01f920a3",
@@ -228218,7 +230469,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8e326cb39d2c1c60a3d08c26",
@@ -229949,7 +232207,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f27bbbe2c5e7e4c8773b12d",
@@ -230428,7 +232693,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f9127a42d3bd39c7b414c4c",
@@ -230693,7 +232965,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f997a462c10907119ee1ba0",
@@ -231635,7 +233918,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_903c62caa43ed025bd97b27f",
@@ -232868,7 +235158,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  1,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_9224874e8265bfb96ba0a675",
@@ -233945,7 +236269,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_92eed6deac345c609caa7f1a",
@@ -234393,7 +236726,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  2,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_93023dc51b9adff409f503f0",
@@ -235816,7 +238183,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9364f947284a22315ef8b86f",
@@ -237333,7 +239707,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_949dd91f405127e5a2d4438d",
@@ -238050,7 +240431,15 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9526c947cb52521b919bd8fc",
@@ -241208,7 +243597,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_96e89e4d94b241193b63cfec",
@@ -241611,7 +244008,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_976f30e6aa18e890975f42a1",
@@ -242256,7 +244660,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9856771f6756e645395eb6b0",
@@ -242818,7 +245229,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_98dd4a0879022ac6c406e8a5",
@@ -244555,7 +246974,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9a61d55cf59a62fd03e81d6f",
@@ -244884,7 +247310,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9a753a11ae56c480e4cf3463",
@@ -245610,7 +248046,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9af523105b99b515b5187146",
@@ -245891,7 +248336,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9b125db48f5c1285034421fd",
@@ -246487,7 +248940,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9b4522e694d02b6294afb22d",
@@ -247335,7 +249795,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9ba806dc77193ae7cb8f4919",
@@ -247600,7 +250071,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_9bb3ff447990877466f026a7",
@@ -247825,7 +250319,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9be23b1d587f2dbb54e929c3",
@@ -250316,7 +252820,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9de365ee0910607a459485a4",
@@ -251113,7 +253627,31 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  3,
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_9e15d69a4041341733816d7a",
@@ -253892,7 +256430,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a009f72b1871037d78464fd4",
@@ -254737,7 +257282,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a05da16fd0f40df38adbb7b1",
@@ -254823,7 +257378,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a0685230d785da3ca3d54555",
@@ -254908,7 +257470,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a096c5b6276e5a6474701718",
@@ -257039,7 +259609,20 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "summons": 1
+        }
+      }
     },
     {
       "id": "def_a1b0d08f339a402a8d29afde",
@@ -257142,7 +259725,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a1b26fba4fea50bb4bedb199",
@@ -257377,7 +259967,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a22c6df9f2be77410810722f",
@@ -257723,7 +260321,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a249146014b2b1ee3b561bf5",
@@ -258231,7 +260840,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a284ba025e3795771e4fd867",
@@ -258438,7 +261054,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 20
+        }
+      }
     },
     {
       "id": "def_a292443cc4f50f974d67d61b",
@@ -259907,7 +262533,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a350ecc6e543583bdaf87bc1",
@@ -261157,7 +263790,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a4755f86bb0fe1a73d8082a2",
@@ -263195,7 +265839,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a598a07534f347d26655087f",
@@ -264012,7 +266665,19 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 6,
+          "crew": 9
+        }
+      }
     },
     {
       "id": "def_a60fed359bf2bffc0d89caed",
@@ -264099,7 +266764,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a631d2b6a9e20fa0a6aaecfd",
@@ -265110,7 +267782,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a6c18fb0f31a93d17e69465d",
@@ -265388,7 +268069,15 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a6e29234440bf462b08d9b64",
@@ -266374,7 +269063,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a7794d6b2ee9fb6290ac3b0a",
@@ -266710,7 +269406,19 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 20
+        }
+      }
     },
     {
       "id": "def_a7930c763378923899a23136",
@@ -267326,7 +270034,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a7ee6ca0842bf38607e3889b",
@@ -268476,7 +271191,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 0,
+                "checkpoints": [
+                  0
+                ],
+                "direction": "decrease",
+                "initial": 4,
+                "maximum": 4
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 0,
+                "checkpoints": [
+                  0
+                ],
+                "direction": "decrease",
+                "initial": 3,
+                "maximum": 3
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_a83389c67e201e262ad074b4",
@@ -268579,7 +271328,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a834e0a4a8e2b0226a26a64c",
@@ -269061,7 +271817,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_a88660af85d40df1ea55d67a",
@@ -270681,7 +273445,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_a96b49cd43debef1a88dd5f4",
@@ -271660,7 +274458,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_aa9e71ea769e4788b639bdc2",
@@ -272575,7 +275380,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ab87739c38981d5f1d933569",
@@ -273270,7 +276084,20 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 6,
+          "crew": 9
+        }
+      }
     },
     {
       "id": "def_abc77d9408d36705be4d1df7",
@@ -273730,7 +276557,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ac327a2e314b02246fc6489b",
@@ -276859,7 +279694,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ad96a52326892d5098cd937b",
@@ -277883,7 +280726,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ae33bc12a53c7225a83378bc",
@@ -279137,7 +281989,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_aed157d8a59bbad75ec8351b",
@@ -279381,7 +282267,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_aee60b569ff039060b68fec6",
@@ -282051,7 +284948,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b1846d413cc85d650e899753",
@@ -282383,7 +285287,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b1d88ab9c68677082cf6bf80",
@@ -283629,7 +286540,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b2d23cb14cdabfc3556cd4e2",
@@ -285080,7 +287998,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b37b4cd30c8bf03a390b0aee",
@@ -286242,7 +289170,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b4455d7e7959e9f8f136f18e",
@@ -286773,7 +289708,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 1,
+                "title": "Endless Decks"
+              },
+              {
+                "knowledge": 2,
+                "title": "Phos Dance"
+              },
+              {
+                "knowledge": 3,
+                "title": "Glitch in the Engine"
+              },
+              {
+                "knowledge": 4,
+                "title": "A Distant Thunder"
+              },
+              {
+                "knowledge": 5,
+                "title": "Mark of the Maker"
+              },
+              {
+                "knowledge": 6,
+                "title": "Of Dreams and Memories"
+              },
+              {
+                "knowledge": 7,
+                "title": "Blood of the Mother"
+              },
+              {
+                "knowledge": 8,
+                "title": "See the Forest"
+              },
+              {
+                "knowledge": 9,
+                "title": "Days of Meaninglessness"
+              },
+              {
+                "knowledge": 10,
+                "title": "Memory of a Distant Shore"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 11,
+                "title": "Garden of Solitude"
+              },
+              {
+                "knowledge": 12,
+                "title": "The Argonites"
+              },
+              {
+                "knowledge": 13,
+                "title": "Children of the Earth"
+              },
+              {
+                "knowledge": 14,
+                "title": "Remembrance"
+              },
+              {
+                "knowledge": 15,
+                "title": "A Spy Among Us"
+              },
+              {
+                "knowledge": 16,
+                "title": "Fire in the Depths"
+              },
+              {
+                "knowledge": 17,
+                "title": "United"
+              },
+              {
+                "knowledge": 18,
+                "title": "The Final Deterrent"
+              },
+              {
+                "knowledge": 19,
+                "title": "Black Blood Cryptex"
+              },
+              {
+                "knowledge": 20,
+                "title": "Echoes of Long-Lost Battles"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_b4524a3c648747801c33568b",
@@ -287869,7 +290899,31 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 2,
+                "checkpoints": [
+                  2
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "maximum": 9,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_b583c3a4091c17d797128c67",
@@ -287970,7 +291024,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b58410a977cf1aad7029be8c",
@@ -289037,7 +292101,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 1,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_b60a4216a4ce19a72abf4cd0",
@@ -292309,7 +295407,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b7d1942537db5474a561491b",
@@ -294101,7 +297206,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b8957a092c2c3350354ac51b",
@@ -294961,7 +298076,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b91831aeeb3824119b5a2f6e",
@@ -295985,7 +299109,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b988a184d7c3f73121d50131",
@@ -296547,7 +299680,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_b9dea2f7aa3d0ffdfb72cf20",
@@ -297533,7 +300676,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ba2e9674c4e916c887374afa",
@@ -298978,7 +302128,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_bb656f4b8216911a4c37ea4e",
@@ -299092,7 +302253,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_bb78238cc64724d94a58e5d8",
@@ -299566,7 +302738,20 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 5,
+          "crew": 8
+        }
+      }
     },
     {
       "id": "def_bbd11004a8ff57d062e43e06",
@@ -299787,7 +302972,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_bc128cc29bd93a373ce0d9cc",
@@ -301609,7 +304801,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_bd00e0cc63fda714a353ee8b",
@@ -303009,7 +306208,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_be7cec5b3e54cc7093e4d5c3",
@@ -305959,7 +309165,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 41,
+                "title": "Throne of Heavens"
+              },
+              {
+                "knowledge": 42,
+                "title": "Burden of Proof"
+              },
+              {
+                "knowledge": 43,
+                "title": "In God's Name"
+              },
+              {
+                "knowledge": 44,
+                "title": "Crisis of Faith"
+              },
+              {
+                "knowledge": 45,
+                "title": "A Day Under the Sun"
+              },
+              {
+                "knowledge": 46,
+                "title": "Mother Dark"
+              },
+              {
+                "knowledge": 47,
+                "title": "To Grasp the Stars"
+              },
+              {
+                "knowledge": 48,
+                "title": "Inherintence"
+              },
+              {
+                "knowledge": 49,
+                "title": "Holy Murder"
+              },
+              {
+                "knowledge": 50,
+                "title": "Unto Dawn"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 51,
+                "title": "The First Junction"
+              },
+              {
+                "knowledge": 52,
+                "title": "Shadow of the Mountain"
+              },
+              {
+                "knowledge": 53,
+                "title": "Machina Ex Deus"
+              },
+              {
+                "knowledge": 54,
+                "title": "The Iron Extinction"
+              },
+              {
+                "knowledge": 55,
+                "title": "Sacred Weapons"
+              },
+              {
+                "knowledge": 56,
+                "title": "The Typhon Comes"
+              },
+              {
+                "knowledge": 57,
+                "title": "How the World Was Born"
+              },
+              {
+                "knowledge": 58,
+                "title": "Trespassing Aeons"
+              },
+              {
+                "knowledge": 59,
+                "title": "How the World Was Murdered"
+              },
+              {
+                "knowledge": 60,
+                "title": "Perpetual Motion"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c08206651b7b6b5796edb533",
@@ -308782,7 +312083,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 61,
+                "title": "Daybreak"
+              },
+              {
+                "knowledge": 62,
+                "title": "Polyphemos"
+              },
+              {
+                "knowledge": 63,
+                "title": "The Glassblower"
+              },
+              {
+                "knowledge": 64,
+                "title": "The Glorious Climb"
+              },
+              {
+                "knowledge": 65,
+                "title": "The King and the Philosopher"
+              },
+              {
+                "knowledge": 66,
+                "title": "The Great Crime"
+              },
+              {
+                "knowledge": 67,
+                "title": "The Last Lotus Eater"
+              },
+              {
+                "knowledge": 68,
+                "title": "Cast to the Four"
+              },
+              {
+                "knowledge": 69,
+                "title": "Long Voyage Home"
+              },
+              {
+                "knowledge": 70,
+                "title": "Titanaktisos"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 71,
+                "title": "The Island of Pigs"
+              },
+              {
+                "knowledge": 72,
+                "title": "A Girl from Uruk"
+              },
+              {
+                "knowledge": 73,
+                "title": "Smoke and Mirrors"
+              },
+              {
+                "knowledge": 74,
+                "title": "The Sun Endures"
+              },
+              {
+                "knowledge": 75,
+                "title": "Due Time"
+              },
+              {
+                "knowledge": 76,
+                "title": "Gardens of the Moon"
+              },
+              {
+                "knowledge": 77,
+                "title": "The Laestrygonian"
+              },
+              {
+                "knowledge": 78,
+                "title": "Jason"
+              },
+              {
+                "knowledge": 79,
+                "title": "Kiss of Mnemosyne"
+              },
+              {
+                "knowledge": 80,
+                "title": "Nostos"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c2475a164bf1966b59b4b24d",
@@ -310867,7 +314263,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_c39f34e4bb1847d62e2370d4",
@@ -313911,7 +317314,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_c4e5e3ac25f7696559dfc1af",
@@ -315071,7 +318484,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c5915ff579e8d3b056c862dd",
@@ -315766,7 +319231,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_c5f40c37c8abd0f63325448f",
@@ -317289,7 +320762,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_c7106ea1cf55eacfd06177e8",
@@ -318939,7 +322419,59 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 6,
+                "checkpoints": [
+                  6
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 7,
+                "checkpoints": [
+                  7
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              },
+              {
+                "token": "Progress",
+                "target": 8,
+                "checkpoints": [
+                  8
+                ],
+                "direction": "increase",
+                "initial": 0
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_c7de8fea12aba3b3541c7cb0",
@@ -319350,7 +322882,20 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 15
+        }
+      }
     },
     {
       "id": "def_c7f57aca9f6787e86a379eee",
@@ -321168,7 +324713,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_c9d3b9e64d51d28d5e5daf4c",
@@ -324014,7 +327566,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_cbf4f1ddcb469beb3b2175a1",
@@ -324090,7 +327651,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_cc080357584863f97eb38702",
@@ -324426,7 +327996,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_cc0c3fa35ab546d648b0271c",
@@ -326026,7 +329606,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_cce73c5823bf1f5389c40c78",
@@ -330711,7 +334299,102 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 21,
+                "title": "Land of the Strong and Free"
+              },
+              {
+                "knowledge": 22,
+                "title": "The Price of Difference"
+              },
+              {
+                "knowledge": 23,
+                "title": "Scorned Smith"
+              },
+              {
+                "knowledge": 24,
+                "title": "Chimeric War"
+              },
+              {
+                "knowledge": 25,
+                "title": "The Nymph and the Engine"
+              },
+              {
+                "knowledge": 26,
+                "title": "The Means the End"
+              },
+              {
+                "knowledge": 27,
+                "title": "The Muse Kids"
+              },
+              {
+                "knowledge": 28,
+                "title": "Way of Strength"
+              },
+              {
+                "knowledge": 29,
+                "title": "A Titan's View"
+              },
+              {
+                "knowledge": 30,
+                "title": "The Rule of the Blade"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 31,
+                "title": "Blood of the Earth"
+              },
+              {
+                "knowledge": 32,
+                "title": "The Fourth"
+              },
+              {
+                "knowledge": 33,
+                "title": "As Above, So Below"
+              },
+              {
+                "knowledge": 34,
+                "title": "Shadow Play"
+              },
+              {
+                "knowledge": 35,
+                "title": "Argo-bred"
+              },
+              {
+                "knowledge": 36,
+                "title": "Forsaken Aeons"
+              },
+              {
+                "knowledge": 37,
+                "title": "Unyielding"
+              },
+              {
+                "knowledge": 38,
+                "title": "Days of Aeons Past"
+              },
+              {
+                "knowledge": 39,
+                "title": "Gen 1"
+              },
+              {
+                "knowledge": 40,
+                "title": "Song of Life"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_cf018a1d5900ea664c605e48",
@@ -330946,7 +334629,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_cf0f523828cc55960a49ef24",
@@ -332035,7 +335726,19 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 15
+        }
+      }
     },
     {
       "id": "def_d037296fa8afd82ba1328de4",
@@ -333199,7 +336902,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d0ec8d9541fc6dadb8c1b363",
@@ -333318,7 +337031,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d13ee8ebf67ae6ba80e1e7a8",
@@ -334424,7 +338148,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d239c996c46e2a64f938cbed",
@@ -335883,7 +339614,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d37dbc8fdc104b4cbaa96fc0",
@@ -337312,7 +341050,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d4644f278421df6e3857d156",
@@ -343529,7 +347276,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d81d702cf4c85c6da210aa80",
@@ -345390,7 +349144,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d966511910382f847de3c906",
@@ -345594,7 +349355,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d97d4512c063807a5bb31533",
@@ -345886,7 +349657,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d9a0e13f569631123aadace7",
@@ -346594,7 +350372,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_d9d98068cf6a3c92f824b5a5",
@@ -348020,7 +351806,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_da709458230ea51dcf35cbe9",
@@ -351715,7 +355510,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_dbb19a86cf0bc8c638594cd5",
@@ -354921,7 +358723,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_dcb81aac82bd2123a7bce292",
@@ -355899,7 +359710,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_dd548407bb96d8eaf02dcbb6",
@@ -357550,7 +361368,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ddf9047f74af78837a7d5002",
@@ -358259,7 +362084,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_de50e923327636a2c8bd50ad",
@@ -359061,7 +362894,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_de94df871b92e7f4fa5dfbfa",
@@ -359602,7 +363446,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_dec8f7bb68a71c0bb79091b2",
@@ -360269,7 +364124,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_df4b5af55faadb6ecea1e55d",
@@ -360414,7 +364276,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_df56ff82137d924386e16c47",
@@ -360516,7 +364386,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_df69c1d9ca386f55a3614302",
@@ -363229,7 +367107,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e106ff652cdcb0079bce1f43",
@@ -363516,7 +367401,14 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e1ffeec746c0df5a813e4b6a",
@@ -363953,7 +367845,19 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 3,
+        "faces": {
+          "front": {
+            "tokens": []
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_e21502e190c115d31b226211",
@@ -364059,7 +367963,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e21602effdb80d06e1a78419",
@@ -364889,7 +368803,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e2c97d43e01c8588e1c80a96",
@@ -367775,7 +371700,106 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "inwardOdysseyRules": {
+        "version": 1,
+        "progressPerKnowledge": 2,
+        "knowledgePerCompletion": 1,
+        "faces": {
+          "front": {
+            "adventures": [
+              {
+                "knowledge": 81,
+                "title": "My Ship"
+              },
+              {
+                "knowledge": 82,
+                "title": "All Great Truths"
+              },
+              {
+                "knowledge": 83,
+                "title": "A Life Unfinished"
+              },
+              {
+                "knowledge": 84,
+                "title": "I Am the Message"
+              },
+              {
+                "knowledge": 85,
+                "title": "The Great Hierei"
+              },
+              {
+                "knowledge": 86,
+                "title": "Dark"
+              },
+              {
+                "knowledge": 87,
+                "title": "Favorite Son"
+              },
+              {
+                "knowledge": 88,
+                "title": "Lies of Trismegistus"
+              },
+              {
+                "knowledge": 89,
+                "title": "Creatures of Habit"
+              },
+              {
+                "knowledge": 90,
+                "title": "The Silver Age"
+              }
+            ]
+          },
+          "back": {
+            "adventures": [
+              {
+                "knowledge": 91,
+                "title": "A Heel Turn"
+              },
+              {
+                "knowledge": 92,
+                "title": "The Cult of Telemachus"
+              },
+              {
+                "knowledge": 93,
+                "title": "The Tortoise and the Hare"
+              },
+              {
+                "knowledge": 94,
+                "title": "Speak Not of Ilion"
+              },
+              {
+                "knowledge": 95,
+                "title": "Music of the Spheres"
+              },
+              {
+                "knowledge": 96,
+                "title": "The Trojan"
+              },
+              {
+                "knowledge": 97,
+                "title": "Worldcarers"
+              },
+              {
+                "knowledge": 98,
+                "title": "Genesis"
+              },
+              {
+                "knowledge": 99,
+                "title": "A Ship Named Argo"
+              },
+              {
+                "knowledge": 100,
+                "title": "Kathairein"
+              },
+              {
+                "knowledge": 101,
+                "title": "My Penelope"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_e47dbd19d3da6d7eaf15852b",
@@ -368688,7 +372712,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e565ea43256b0ffa3fb36564",
@@ -369237,7 +373268,14 @@
             "trireme": "TRUE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e5ede1a2222b7cf45af30830",
@@ -372840,7 +376878,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e886e10e9cb60b9474d73af6",
@@ -373469,7 +377515,20 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "argoAbilities": 2
+        }
+      }
     },
     {
       "id": "def_e8e3395cf2d54330b07a526a",
@@ -373778,7 +377837,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e8f80557fc504f05fef1f0da",
@@ -374710,7 +378776,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_e975236904d97af23031f3c3",
@@ -377456,7 +381530,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_eb285959cb1caf3c3ef7e5d7",
@@ -379808,7 +383891,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ecf0d2a1bc69facb5f518aa9",
@@ -380649,7 +384741,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_eda1332dbff50ed0634dfbe6",
@@ -381894,7 +385994,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_eea8c394422356c999c54ea6",
@@ -382232,7 +386340,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_eec7d8dad0699d65d9f07bad",
@@ -383296,7 +387411,15 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ef2db6d621b454507dbb6016",
@@ -388355,7 +392478,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f1d5934b7d6def82db395ccd",
@@ -392253,7 +396386,20 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 10
+        }
+      }
     },
     {
       "id": "def_f3d3733593e85ec9e063ee91",
@@ -392745,7 +396891,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f3fd0a316ee465e88e587242",
@@ -393719,7 +397876,41 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 5,
+                "checkpoints": [
+                  5
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          },
+          "back": {
+            "tokens": [
+              {
+                "token": "Doom",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "excess"
+              }
+            ]
+          }
+        }
+      }
     },
     {
       "id": "def_f40631c1543f917ead493ef3",
@@ -393878,7 +398069,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f43a1144b1f9a3e08f8bc6c3",
@@ -394479,7 +398677,20 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 7,
+          "crew": 10,
+          "timeSilo": 6
+        }
+      }
     },
     {
       "id": "def_f4d44be03e9073ed49693c08",
@@ -395026,7 +399237,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f4fac013f36b7594df81618e",
@@ -395128,7 +399348,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f50dfbc2cd430e6552121682",
@@ -399080,7 +403307,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f7e4a0ddd3d4611d27f4dc36",
@@ -399354,7 +403589,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f82d1fc4b9d1d452c676e6a5",
@@ -400753,7 +404997,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f9178bfbf5e91fd1eaab5505",
@@ -401981,7 +406235,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fa1e2795d064922154b38eb9",
@@ -403773,7 +408038,30 @@
             "cardSize": "Half-Page"
           }
         }
-      ]
+      ],
+      "milestoneRules": {
+        "version": 1,
+        "cardNumber": 2,
+        "faces": {
+          "front": {
+            "tokens": [
+              {
+                "token": "Progress",
+                "target": 4,
+                "checkpoints": [
+                  4
+                ],
+                "direction": "increase",
+                "initial": 0,
+                "carryToNext": "all"
+              }
+            ]
+          },
+          "back": {
+            "tokens": []
+          }
+        }
+      }
     },
     {
       "id": "def_fba65e967d6e56a4ef6dfd93",
@@ -404005,7 +408293,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fbd4d5731a434519829be703",
@@ -404433,7 +408728,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fbda7c7df53a66a11fdefb3b",
@@ -405047,7 +409352,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fc4faf0898cd754a9059607b",
@@ -406950,7 +411262,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "timeSilo": 3
+        }
+      }
     },
     {
       "id": "def_fce1a404c02828a87e2255ef",
@@ -407216,7 +411537,19 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "summons": 2
+        }
+      }
     },
     {
       "id": "def_fcf9e450d3ad5763906ba438",
@@ -409104,7 +413437,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fe450e1014acc29f0549865d",

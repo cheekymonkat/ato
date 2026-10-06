@@ -2,6 +2,7 @@ import type { Catalogue, CardDefinition, CardFace } from '../domain/cards.ts';
 import { isFaceAvailableInCycle } from '../domain/campaign.ts';
 import type { CampaignCycle } from '../domain/campaign.ts';
 import { parseCatalogue } from './validate.ts';
+import { technologyAvailableInCycle } from '../domain/technology-rules.ts';
 
 function freezeDefinitionData(value: unknown): void {
   if (!value || typeof value !== 'object' || Object.isFrozen(value)) return;
@@ -40,6 +41,7 @@ export function createCatalogueRepository(input: unknown) {
     search: ({ query = '', family, cycle, campaignCycle, slot }: CatalogueSearch = {}): CardDefinition[] => {
       const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
       return catalogue.cards.filter(card => terms.every(term => searchText.get(card.id)!.includes(term)) &&
+        (campaignCycle === undefined || card.family !== 'Technology' || technologyAvailableInCycle(card, campaignCycle)) &&
         card.faces.some(face => (campaignCycle === undefined || isFaceAvailableInCycle(face, campaignCycle)) && (!family || face.family === family) && (!cycle || face.cycle === cycle) && (!slot || (face.kind === 'gear' && face.data.slot === slot))))
         .sort((a, b) => a.faces[0].name.localeCompare(b.faces[0].name) || a.id.localeCompare(b.id));
     },

@@ -101,7 +101,7 @@ test('selected Dreamwalker variants preserve their printed tables and saved IDs 
   for (const copy of dreamwalkers) {
     const before = structuredClone(copy);
     let party = createParty('p', ['a', 'b', 'c', 'd'], catalogue.version);
-    for (const expectedCycle of [1, 2, 3, 4]) party = partyReducer(party, { type: 'advance-cycle', argonautId: 'a', partyId: 'p', expectedCycle, confirmed: true }, catalogue);
+    party = { ...party, campaignCycle: 5 }; // Legacy saved variants remain readable until roster conversion.
     party = partyReducer(party, { type: 'titan', argonautId: 'a', titan: { id: 'a:titan', ...reference(copy), exhausted: false, enabledEffectIds: [], counters: {} } }, catalogue);
     assert.equal(party.argonauts[0].titan.definitionId, copy.id);
     for (const kind of ['Trauma', 'Kratos']) assert.deepEqual(resolveTable(party.argonauts[0], kind, catalogue).table, copy.faces[0].data[kind === 'Trauma' ? 'traumaTable' : 'kratosTable']);

@@ -1,0 +1,415 @@
+{
+  "source": "../ato_docs/argo/mainmenu.png",
+  "sourceSha256": "eaa1f75d9a23ed59575a33eb47c15a51c05e21057f5f0a67f2198a676b9bb2ec",
+  "sourceSize": [
+    1179,
+    2556
+  ],
+  "tracing": {
+    "tool": "Potrace 1.16",
+    "turdsize": 0,
+    "alphamax": 1,
+    "opttolerance": 0.2,
+    "unit": 10
+  },
+  "foregroundThreshold": 154,
+  "padding": 2,
+  "icons": [
+    {
+      "name": "Timeline",
+      "label": "Timeline",
+      "crop": [
+        113,
+        176,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        166,
+        196,
+        91,
+        95
+      ],
+      "asset": "assets/menu-icons/Timeline.svg",
+      "sha256": "578153d940e5f19675fdca1f4478ed0f8109595121f5d6f61026bd734c975e55"
+    },
+    {
+      "name": "Map",
+      "label": "Map",
+      "crop": [
+        366,
+        176,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        416,
+        195,
+        97,
+        97
+      ],
+      "asset": "assets/menu-icons/Map.svg",
+      "sha256": "56ecd5a3f7f14843dda243bb0d804f84f8d0834c8768b1c69c03a735a7836418"
+    },
+    {
+      "name": "Adventures",
+      "label": "Adventures",
+      "crop": [
+        619,
+        176,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        666,
+        200,
+        104,
+        88
+      ],
+      "asset": "assets/menu-icons/Adventures.svg",
+      "sha256": "c6ab7899bc99778cf3c43967ca459c42b2eac909fa0a77c5a9309591a87ba5ed"
+    },
+    {
+      "name": "Argonauts",
+      "label": "Argonauts",
+      "crop": [
+        872,
+        176,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        930,
+        196,
+        83,
+        95
+      ],
+      "asset": "assets/menu-icons/Argonauts.svg",
+      "sha256": "95c0e171d0e286484e23fbea6627bd5eca01ef704df2d465462b42c39e368ccb"
+    },
+    {
+      "name": "Diplomacy",
+      "label": "Diplomacy",
+      "crop": [
+        113,
+        429,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        155,
+        436,
+        113,
+        113
+      ],
+      "asset": "assets/menu-icons/Diplomacy.svg",
+      "sha256": "a99fd26b6a0bcb59c669ae90e5d750bfdb70f887d657d36710f496c5dd6a94cf"
+    },
+    {
+      "name": "Titans",
+      "label": "Titans",
+      "crop": [
+        366,
+        429,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        422,
+        443,
+        86,
+        107
+      ],
+      "asset": "assets/menu-icons/Titans.svg",
+      "sha256": "00cef1150bb3698a8b8dbce7e57a3a27f244bc7a4449e1b0cf8fc0017db2c5c8"
+    },
+    {
+      "name": "GodformsAndSummons",
+      "label": "Godforms & Summons",
+      "crop": [
+        619,
+        429,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        661,
+        441,
+        114,
+        113
+      ],
+      "asset": "assets/menu-icons/GodformsAndSummons.svg",
+      "sha256": "90188a5210020762b6e668cde19bc70a52e8a22a4071f9e4228f3f42c0cd68ed"
+    },
+    {
+      "name": "Evolution",
+      "label": "Evolution",
+      "crop": [
+        872,
+        429,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        926,
+        450,
+        90,
+        95
+      ],
+      "asset": "assets/menu-icons/Evolution.svg",
+      "sha256": "a8d4ca0a4ec09d991ad7771f976ddc1b3ffd6b277dd2c296e7990079e96f38e1"
+    },
+    {
+      "name": "ChoiceMatrix",
+      "label": "Choice Matrix",
+      "crop": [
+        113,
+        683,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        166,
+        705,
+        91,
+        91
+      ],
+      "asset": "assets/menu-icons/ChoiceMatrix.svg",
+      "sha256": "d82e0ed66f965599f2818bdd1511f9866f84e985eaafce21b0d5e27f6bbe0a5e"
+    },
+    {
+      "name": "CargoHold",
+      "label": "Cargo hold",
+      "crop": [
+        366,
+        683,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        426,
+        713,
+        78,
+        74
+      ],
+      "asset": "assets/menu-icons/CargoHold.svg",
+      "sha256": "d861184520e12fe64b6b491245ef268c93bc4798878a5188c94ab63df36b4980"
+    },
+    {
+      "name": "CampaignNotes",
+      "label": "Campaign notes",
+      "crop": [
+        619,
+        683,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        687,
+        703,
+        62,
+        113
+      ],
+      "asset": "assets/menu-icons/CampaignNotes.svg",
+      "sha256": "76e6fd0eb9e8f21ed1bf1b03a48b5d9546fc46418f21e0949e3a055535f3dddc"
+    },
+    {
+      "name": "Argo",
+      "label": "Argo",
+      "crop": [
+        872,
+        683,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        913,
+        711,
+        116,
+        78
+      ],
+      "asset": "assets/menu-icons/Argo.svg",
+      "sha256": "219d6adb47af325bf0893e697b00b1456932d45e12374a9d0ca2c7f86e006507"
+    },
+    {
+      "name": "MnestisTheatre",
+      "label": "Mnestis Theatre",
+      "crop": [
+        113,
+        936,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        163,
+        947,
+        99,
+        116
+      ],
+      "asset": "assets/menu-icons/MnestisTheatre.svg",
+      "sha256": "4ca4fb88c3749bfcb3e36925ce018a88e973fa5e5dbc80ab92a02dbcdb64c788"
+    },
+    {
+      "name": "FatedEvents",
+      "label": "Fated Events",
+      "crop": [
+        366,
+        936,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        410,
+        945,
+        112,
+        110
+      ],
+      "asset": "assets/menu-icons/FatedEvents.svg",
+      "sha256": "e37934572378a39dac2fa186270cf5a4de771ac6697e58a3bd20fce463b80538"
+    },
+    {
+      "name": "CrypticLanguages",
+      "label": "Cryptic Languages",
+      "crop": [
+        619,
+        936,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        659,
+        945,
+        117,
+        117
+      ],
+      "asset": "assets/menu-icons/CrypticLanguages.svg",
+      "sha256": "e8f5e5c9cddae6d4c17f40b3144f35e2d0b959bb19f8f4cf0c01cf8d206e43d0"
+    },
+    {
+      "name": "Armory",
+      "label": "Armory",
+      "crop": [
+        113,
+        1304,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        157,
+        1318,
+        109,
+        106
+      ],
+      "asset": "assets/menu-icons/Armory.svg",
+      "sha256": "a89e98148b52bb809b5a0b48399d9023f8e8c335caea88ea7098b29b2b4e910c"
+    },
+    {
+      "name": "Technology",
+      "label": "Technology",
+      "crop": [
+        366,
+        1304,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        417,
+        1308,
+        92,
+        119
+      ],
+      "asset": "assets/menu-icons/Technology.svg",
+      "sha256": "861590afcdbcee7703d2071a3dcf29c7bf4282696b75027cc5f5fa24bac2662a"
+    },
+    {
+      "name": "Save",
+      "label": "Save",
+      "crop": [
+        872,
+        1304,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        930,
+        1330,
+        83,
+        83
+      ],
+      "asset": "assets/menu-icons/Save.svg",
+      "sha256": "e27342920b3e418b2bd5f112f3c123cc3c06bd9328159db0676dfb5ec2818f1f"
+    },
+    {
+      "name": "Story",
+      "label": "Story",
+      "crop": [
+        113,
+        1557,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        163,
+        1576,
+        98,
+        99
+      ],
+      "asset": "assets/menu-icons/Story.svg",
+      "sha256": "34f9d9b5b363f86776aebca25e9bb0e0c66bb176bfc875200e6046304146abec"
+    },
+    {
+      "name": "BinderAudio",
+      "label": "Binder Audio",
+      "crop": [
+        366,
+        1557,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        415,
+        1577,
+        99,
+        97
+      ],
+      "asset": "assets/menu-icons/BinderAudio.svg",
+      "sha256": "882f49fadcaaab4d38d2453f81cbc5300c6ee5e103fa39802f983fea91e3e710"
+    },
+    {
+      "name": "Glossary",
+      "label": "Glossary",
+      "crop": [
+        619,
+        1557,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        663,
+        1577,
+        109,
+        108
+      ],
+      "asset": "assets/menu-icons/Glossary.svg",
+      "sha256": "3f0738475b194594a99951bd33c29e1342696c558a98e1cea94e3b0501e97736"
+    },
+    {
+      "name": "Settings",
+      "label": "Settings",
+      "crop": [
+        872,
+        1557,
+        198,
+        145
+      ],
+      "glyphBounds": [
+        923,
+        1573,
+        95,
+        102
+      ],
+      "asset": "assets/menu-icons/Settings.svg",
+      "sha256": "883218b423534760e8b563807ef8a63bca4e752dc024ed230e3bebea4a18b335"
+    }
+  ]
+}

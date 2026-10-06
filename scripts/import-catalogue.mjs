@@ -10,6 +10,9 @@ import { gearArtwork } from '../src/catalogue/gear-art.ts';
 import { catalogueReviewFiles } from './catalogue-review-files.mjs';
 import { TITAN_LOADOUT_RULES_VERSION } from '../src/domain/titan-loadout-rules.ts';
 import { SLOT_EFFECTS_VERSION } from '../src/catalogue/effects.ts';
+import { TECHNOLOGY_RULES_VERSION, TECHNOLOGY_CYCLE_POLICY } from '../src/domain/technology-rules.ts';
+import { MILESTONE_RULES_VERSION, MILESTONE_POLICY } from '../src/domain/milestone-rules.ts';
+import { INWARD_ODYSSEY_RULES_VERSION } from '../src/domain/inward-odyssey.ts';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const allowed = new Set(['source', 'out', 'registry', 'check']);
@@ -42,7 +45,10 @@ const identity = createIdentityResolver(registry);
 const result = normalizeCatalogue(inputs, card => identity.resolve(card), 'pending');
 const digest = createHash('sha256').update(JSON.stringify({ importerVersion: 2,
   files: inputs.map(input => [input.file, input.sha256]), registry: identity.snapshot(), artwork: gearArtwork,
-  titanLoadoutRulesVersion: TITAN_LOADOUT_RULES_VERSION, slotEffectsVersion: SLOT_EFFECTS_VERSION })).digest('hex');
+  titanLoadoutRulesVersion: TITAN_LOADOUT_RULES_VERSION, slotEffectsVersion: SLOT_EFFECTS_VERSION,
+  technologyRulesVersion: TECHNOLOGY_RULES_VERSION, technologyCyclePolicy: TECHNOLOGY_CYCLE_POLICY,
+  milestoneRulesVersion: MILESTONE_RULES_VERSION, milestonePolicy: MILESTONE_POLICY,
+  inwardOdysseyRulesVersion: INWARD_ODYSSEY_RULES_VERSION })).digest('hex');
 const version = `atcc-v2-${digest.slice(0, 16)}`;
 result.catalogue.catalogueVersion = version;
 parseCatalogue(result.catalogue);

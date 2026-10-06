@@ -12,6 +12,10 @@ exhausted or discarded cards use matching grayscale images. See
 The main catalogue is formatted with two-space indentation. Smaller generated
 copies under `data/generated/by-family/` group cards by type, capped at 100 cards
 or 512 KiB per file. See [data notes](docs/STAGE_1_DATA.md) for regeneration.
+
+The 22 labelled main-menu icons are available as named SVGs in `assets/menu-icons`
+and through the reusable `MenuIcon` component. See the [icon preview](docs/menu-icons-preview.svg)
+and [conversion notes](docs/MENU_ICONS.md) for naming, provenance and regeneration.
 Memory slots now support ATCC-style cards, saved −/+ node trackers (ten nodes for
 Mnemos, three for Fated Mnemos) and red gateways. Assigned Mnemos hide locked
 abilities until their three/seven-node gateways are reached.
@@ -125,7 +129,10 @@ groups use measured widths so complete rows remain together as the page widens.
 Stage 9 adds persistent header icons for **Argo, Map, Cargo, Technology, Argonauts
 and Timeline**, reflowing beneath the brand on narrow screens. **Cargo** records
 acquired Gear and shows allocated/available copies across all four Argonauts.
-**Argo** manages acquired Titans, shared resources and campaign notes. Each
+**Argo** shows editable ship totals, cycle-specific voyage tracks, ordered Story/Doom
+card-side selectors with catalogue-defined token counters, and ten campaign-reference shortcuts. Shared resources and campaign
+notes stay at the bottom; Titan acquisition is behind the **Titans** shortcut.
+See [Argo layout and tracker behavior](docs/ARGO.md). Each
 Argonaut selects one Titan. Different Argo-bred types can coexist; repeated
 selections of the same Argo-bred type trigger a warning. Dreamwalker variants
 can repeat across Argonauts. Enable
@@ -133,7 +140,7 @@ can repeat across Argonauts. Enable
 acquired copies; existing loadouts seed the inventory and remain intact. Turning
 tracking off keeps inventory records. **Technology** now has Project List,
 Abilities and Technologies tabs. Research checks supported prerequisites; Core
-cards for the selected cycle are always available in Abilities. Cards show both sides, full benefits and
+cards through the selected cycle are always available in Abilities. Applicable earlier-cycle technologies are inherited automatically; cycle-only cards retire and limit upgrades use the highest active value. Cards show both sides, full benefits and
 recipes using the ATCC teal design. See [Technology notes](docs/TECHNOLOGY.md).
 Map and Timeline are planned feature pages for later additions.
 [Stage 9 behavior and verification](docs/STAGE_9_CAMPAIGN.md) explain ownership,

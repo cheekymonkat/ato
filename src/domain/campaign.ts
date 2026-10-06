@@ -8,6 +8,15 @@ export function isCampaignCycle(value: unknown): value is CampaignCycle {
 }
 /** Older saves retain their data and use Cycle 1 until advanced on the campaign page. */
 export function campaignCycle(party: Party): CampaignCycle { return party.campaignCycle ?? 1; }
+export const argoKnowledgeLimit = (cycle: CampaignCycle): number => cycle * 20;
+export const startingArgoKnowledge = (cycle: CampaignCycle): number => (cycle - 1) * 20;
+/** Creation/advancement initializes Knowledge; loading an existing cycle never changes it. */
+export function startCampaignCycle(party: Party, cycle: CampaignCycle): Party {
+  const resources = Object.fromEntries(Object.entries(party.resources).filter(([name]) =>
+    name.trim().toLowerCase().replace(/^@/, '').replace(/\s/g, '') !== 'argoknowledge'));
+  if (cycle > 1) resources['Argo Knowledge'] = startingArgoKnowledge(cycle);
+  return { ...party, campaignCycle: cycle, resources };
+}
 export function nextCampaignCycle(cycle: CampaignCycle): CampaignCycle | null {
   return isCampaignCycle(cycle) ? CAMPAIGN_CYCLES[CAMPAIGN_CYCLES.indexOf(cycle) + 1] ?? null : null;
 }

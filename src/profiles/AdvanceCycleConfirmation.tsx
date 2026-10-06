@@ -13,7 +13,8 @@ export function AdvanceCycleConfirmation({ campaignName, cycle, disabled = false
   if (next === null) return null;
   return <Sheet visible title="Advance cycle" subtitle={`${campaignName} · Cycle ${cycle} → Cycle ${next}`} onClose={onCancel}>
     <Text accessibilityRole="alert" style={styles.text}>Advancing moves the whole campaign to Cycle {next}. You cannot return to an earlier cycle or skip a cycle.</Text>
-    <Text style={styles.text}>Cards and token types for the next cycle become available. Your current cards, inventory, stats and token counts are kept.</Text>
+    <Text style={styles.text}>Cards and token types for the next cycle become available. Gear, stats and token counts are kept.</Text>
+    <Text style={styles.text}>Dead and Crippled Titans are removed. Living Argo-bred Titans and their Patterns are retained. Dreamwalkers become the next cycle’s type with its printed tables, and the occupied roster is reset to 10. If more than 10 living Argo-bred Titans remain, they are all kept.</Text>
     <Button quiet role="checkbox" label="I understand that advancing the cycle cannot be undone" selected={accepted} disabled={disabled}
       onPress={() => setAccepted(value => !value)} style={styles.checkRow}>
       <View style={[styles.check, accepted && styles.accepted]}><Text style={styles.tick}>{accepted ? '✓' : ''}</Text></View>

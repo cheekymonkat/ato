@@ -8,6 +8,15 @@ review; browser and device interaction checks remain pending.
 
 ## Using the new areas
 
+Argonaut tab headings show Least Likely (blue) and Most Likely (gold) badges.
+Compare the number of assigned standard Mnemos first, then their total marked
+nodes. Fated Mnemos, Trauma and unassigned instances are excluded. Exhausted or
+discarded memories still count while assigned; unset node progress counts as zero.
+Every exact tie is marked “tied”, allowing a random choice when the story needs it.
+These are read-only indicators and update with memory assignments or node edits.
+They remain visible in compact numbered tabs, with space reserved below the
+heading so switching Argonauts does not move the board.
+
 Select a memory card or empty position on the main board. The memory editor
 opens for that Argonaut and position. **Choose card** / **Change card** opens
 a searchable catalogue with complete card details, limited to the campaign cycle and earlier cycles. Choose a starting cycle at campaign creation; advance one cycle at a time on the campaign page after confirmation. Select a

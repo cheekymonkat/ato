@@ -2,12 +2,15 @@ import { inventoryNotices } from '../domain/inventory.ts';
 import type { CatalogueRepository } from '../catalogue/repository.ts';
 import { assert, isJsonValue, isRecord } from '../domain/json.ts';
 import { createParty, parseParty } from '../domain/party.ts';
-import { isCampaignCycle } from '../domain/campaign.ts';
+import { isCampaignCycle, startCampaignCycle } from '../domain/campaign.ts';
 import type { CampaignCycle } from '../domain/campaign.ts';
 import type { Party } from '../domain/party.ts';
 import { supportsPattern } from '../domain/references.ts';
 import { duplicateMemories, memoryFamily } from '../domain/memories.ts';
 import { conditionConflict, conditionRecords, supportsCondition } from '../domain/conditions.ts';
+import { milestoneSequence } from '../domain/milestones.ts';
+import { milestoneTokenMaximum } from '../domain/milestone-rules.ts';
+import { initializeTitanRoster, patternCopies } from '../domain/titan-roster.ts';
 
 export interface PartyProfile { id: string; name: string; party: Party }
 export interface Workspace { format: 'ato-workspace'; schemaVersion: 1; activeProfileId: string; profiles: PartyProfile[] }
@@ -26,11 +29,12 @@ export function profileName(name: string): string {
   return name.trim();
 }
 
-export function newProfile(id: string, name: string, catalogueVersion: string, cycle: CampaignCycle = 1, inventoryTracking = false): PartyProfile {
+export function newProfile(id: string, name: string, catalogueVersion: string, cycle: CampaignCycle = 1, inventoryTracking = false, catalogue?: CatalogueRepository): PartyProfile {
   assert(isCampaignCycle(cycle), 'Choose a campaign cycle from 1 to 5.');
   assert(typeof inventoryTracking === 'boolean', 'Choose whether campaign inventory tracking is enabled.');
-  return { id, name: profileName(name), party: { ...createParty(id, ['arg-1', 'arg-2', 'arg-3', 'arg-4'], catalogueVersion), campaignCycle: cycle,
-    ...(inventoryTracking ? { inventory: { version: 1 as const, enforce: true, gear: {}, titans: [] } } : {}) } };
+  const party: Party = { ...startCampaignCycle(createParty(id, ['arg-1', 'arg-2', 'arg-3', 'arg-4'], catalogueVersion), cycle),
+    ...(inventoryTracking ? { inventory: { version: 1 as const, enforce: true, gear: {}, titans: [] } } : {}) };
+  return { id, name: profileName(name), party: catalogue ? initializeTitanRoster(party, catalogue) : party };
 }
 
 function parseProfile(value: unknown): PartyProfile {
@@ -57,6 +61,31 @@ export function parseWorkspace(value: unknown): Workspace {
 
 export function referenceProblems(party: Party, catalogue: CatalogueRepository): string[] {
   const problems: string[] = duplicateMemories(party).map(assignment => `${assignment.argonautName} / ${assignment.instance.id}: duplicate unique memory ${assignment.instance.definitionId}`);
+  const patternUses = new Map<string, number>();
+  for (const titan of party.titanRoster?.titans ?? []) {
+    if (catalogue.getFace(titan.definitionId, titan.faceId)?.kind !== 'titan') problems.push(`Titan roster: unavailable Titan ${titan.definitionId}`);
+    for (const kind of ['Trauma', 'Kratos'] as const) {
+      const ref = titan.patterns[kind === 'Trauma' ? 'trauma' : 'kratos'];
+      if (ref && !supportsPattern(catalogue.getFace(ref.definitionId, ref.faceId), kind)) problems.push(`Titan roster: unavailable ${kind} Pattern ${ref.definitionId}`);
+    }
+    for (const id of new Set(Object.values(titan.patterns).flatMap(ref => ref ? [ref.definitionId] : []))) patternUses.set(id, (patternUses.get(id) ?? 0) + 1);
+  }
+  for (const [id, count] of patternUses) {
+    const card = catalogue.get(id);
+    if (card && count > patternCopies(card)) problems.push(`Titan roster: ${card.faces[0].name} exceeds its ${patternCopies(card)} printed Pattern copies`);
+  }
+  for (const [key, state] of Object.entries(party.argo?.milestones ?? {})) {
+    const kind = key.endsWith(':story') ? 'story' : 'doom';
+    const side = milestoneSequence(kind, Number(key[0]) as CampaignCycle, catalogue).find(side => side.reference.definitionId === state.definitionId && side.reference.faceId === state.faceId);
+    if (!side) {
+      problems.push(`Campaign ${key}: unavailable ${kind} card ${state.definitionId} / ${state.faceId}`);
+    }
+    for (const rule of side?.tokens ?? []) {
+      const maximum = milestoneTokenMaximum(rule);
+      if (maximum !== undefined && (state.tokens[rule.token] ?? rule.initial) > maximum)
+        problems.push(`Campaign ${key}: ${rule.token} exceeds the ${rule.maximum === undefined ? 'counter limit' : 'printed maximum'} of ${maximum}`);
+    }
+  }
   for (const id of party.technologies?.researched ?? []) if (catalogue.get(id)?.family !== 'Technology') problems.push(`Campaign technologies: unavailable Technology ${id}`);
   for (const [family, ids] of [['Gear', Object.keys(party.inventory?.gear ?? {})], ['Titan', party.inventory?.titans ?? []]] as const) {
     for (const id of ids) if (catalogue.get(id)?.family !== family) problems.push(`Campaign inventory: unavailable ${family} ${id}`);

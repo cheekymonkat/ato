@@ -1,10 +1,16 @@
 import Svg, { Circle, Path, SvgXml } from 'react-native-svg';
 import { gameIcons } from '../theme/game-icons';
+import { menuIcons } from '../theme/menu-icons';
 import { theme } from '../theme/tokens';
 
 export type GameIconName = keyof typeof gameIcons;
 export function GameIcon({ name, size = 24 }: { name: GameIconName; size?: number }) {
   return <SvgXml xml={gameIcons[name]} width={size} height={size} />;
+}
+
+export type MenuIconName = keyof typeof menuIcons;
+export function MenuIcon({ name, size = 24, colour = theme.ink }: { name: MenuIconName; size?: number; colour?: string }) {
+  return <SvgXml xml={menuIcons[name].replaceAll('#000000', colour)} width={size} height={size} aria-hidden />;
 }
 
 export function Chevron({ direction = 'right', colour = theme.ink }: { direction?: 'left' | 'right' | 'down'; colour?: string }) {

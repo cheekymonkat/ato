@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-6ea1ab708880839e",
+  "catalogueVersion": "atcc-v2-832793de8deb1439",
   "family": "Technology",
   "part": 4,
   "cards": [
@@ -126,7 +126,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_ef2c4e22b3a3915731737868",
@@ -387,7 +394,15 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f1d1b2cbadf43067c0b75ce5",
@@ -564,7 +579,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f3ca7b8716124ca33b0b3653",
@@ -687,7 +712,20 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 10
+        }
+      }
     },
     {
       "id": "def_f3fce20b962d277e9c41d7c6",
@@ -795,7 +833,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f40cbc3f125e9d3695b88395",
@@ -880,7 +929,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f4c93a189227928f35aa9416",
@@ -990,7 +1046,20 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 7,
+          "crew": 10,
+          "timeSilo": 6
+        }
+      }
     },
     {
       "id": "def_f4eb402988ec66971ef0c089",
@@ -1123,7 +1192,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f4fac013f36b7594df81618e",
@@ -1225,7 +1303,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f7e3cb1763a6193d7a246f7a",
@@ -1357,7 +1442,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f803da313e7d42995b9fbcec",
@@ -1436,7 +1529,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_f911e7b58f158bab345f87f3",
@@ -1520,7 +1622,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fa0e439a78d8b94abcb158e7",
@@ -1671,7 +1783,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fbaf30f3ed7c389726442a5e",
@@ -1772,7 +1895,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fbd7a3cbd74c20fa6288d451",
@@ -2037,7 +2167,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fc4dfc58d9950bb6ec16b776",
@@ -2240,7 +2380,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_fcc2e8718c58af9f1b793dd0",
@@ -2345,7 +2492,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "timeSilo": 3
+        }
+      }
     },
     {
       "id": "def_fcf6360d5e7104e5b22fce93",
@@ -2414,7 +2570,19 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "summons": 2
+        }
+      }
     },
     {
       "id": "def_fe2187e55434193dc36079d0",
@@ -2502,7 +2670,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     }
   ]
 }

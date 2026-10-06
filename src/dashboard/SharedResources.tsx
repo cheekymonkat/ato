@@ -6,11 +6,20 @@ import { Sheet } from '../components/Sheet';
 import { RemovalConfirmation } from '../components/RemovalConfirmation';
 import { useParty } from '../state/PartyProvider';
 import { theme } from '../theme/tokens';
+import { getCatalogue } from '../catalogue';
+import { argoResourceDefinition, argoTrack } from '../domain/argo';
 
 export function SharedResources({ owner }: { owner: string }) {
   const { party, dispatch } = useParty(), [open, setOpen] = useState(false), [name, setName] = useState('');
   const [removing, setRemoving] = useState<string | null>(null);
-  const entries = Object.entries(party.resources), clean = name.trim();
+  const entries = Object.entries(party.resources).filter(([label]) => argoResourceDefinition(label)?.id !== 'knowledge'), clean = name.trim();
+  function resourceTrack(label: string) {
+    const definition = argoResourceDefinition(label);
+    return definition ? argoTrack(party, definition, getCatalogue()) : undefined;
+  }
+  const adding = resourceTrack(clean), atLimit = adding?.limit != null && adding.value >= adding.limit;
+  const knowledge = argoResourceDefinition(clean)?.id === 'knowledge';
+  const canAdd = Boolean(clean && !Object.hasOwn(party.resources, clean) && !atLimit && !knowledge);
   return <View style={styles.panel}>
     <Text accessibilityRole="header" style={styles.title}>Shared resources</Text>
     <Text style={styles.meta}>{entries.map(([label, amount]) => `${label} ${amount}`).join(' · ') || 'No shared resources'}</Text>
@@ -19,15 +28,19 @@ export function SharedResources({ owner }: { owner: string }) {
       detail="This removes the resource and its amount from the shared campaign pool." onCancel={() => setRemoving(null)}
       onConfirm={() => { dispatch({ type: 'remove-resource', argonautId: owner, name: removing }); setRemoving(null); }} />
       : <Sheet visible title="Shared resources" subtitle="One party-wide pool, shared by all four Argonauts." onClose={() => setOpen(false)}>
-      {entries.map(([label, amount]) => <View key={label} style={styles.resource}>
-        <View style={{ flexDirection: 'row' }}><Counter compact name={label} value={amount} max={Number.MAX_SAFE_INTEGER}
-          onDecrease={() => dispatch({ type: 'resource', argonautId: owner, name: label, delta: -1 })}
-          onIncrease={() => dispatch({ type: 'resource', argonautId: owner, name: label, delta: 1 })} /></View>
-        <Button quiet label={`Remove shared resource ${label}`} onPress={() => setRemoving(label)} />
-      </View>)}
+      {entries.map(([label, amount]) => {
+        const track = resourceTrack(label);
+        return <View key={label} style={styles.resource}>
+          <View style={{ flexDirection: 'row' }}><Counter compact name={label} value={track?.value ?? amount} max={track?.limit ?? Number.MAX_SAFE_INTEGER}
+            onDecrease={() => dispatch({ type: 'resource', argonautId: owner, name: label, delta: -1 })}
+            onIncrease={() => dispatch({ type: 'resource', argonautId: owner, name: label, delta: 1 })} /></View>
+          <Button quiet label={`Remove shared resource ${label}`} onPress={() => setRemoving(label)} />
+        </View>;
+      })}
       <TextInput accessibilityLabel="Shared resource name" placeholder="Resource name" value={name} onChangeText={setName} maxLength={80} style={styles.input} />
-      <Button label="Add shared resource" disabled={!clean || Object.hasOwn(party.resources, clean)} onPress={() => {
-        dispatch({ type: 'resource', argonautId: owner, name: clean, delta: 1 }); setName('');
+      {knowledge && <Text style={styles.meta}>Argo Knowledge is managed on the Argo page.</Text>}
+      <Button label="Add shared resource" disabled={!canAdd} onPress={() => {
+        if (canAdd) { dispatch({ type: 'resource', argonautId: owner, name: clean, delta: 1 }); setName(''); }
       }} />
       <Button quiet label="Reset shared resource amounts"
         disabled={!entries.some(([, value]) => value !== 0)} onPress={() => dispatch({ type: 'reset-resources', argonautId: owner })} />

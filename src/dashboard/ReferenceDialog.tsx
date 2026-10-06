@@ -14,9 +14,10 @@ import { ReferencePicker } from '../references/ReferencePicker';
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
+import { patternIssue } from '../domain/titan-roster';
 
 export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind; argonaut: Argonaut; onClose: () => void }) {
-  const [choosing, setChoosing] = useState(false), { dispatch } = useParty(), catalogue = getCatalogue(), spoilers = useSpoilers();
+  const [choosing, setChoosing] = useState(false), { party, dispatch } = useParty(), catalogue = getCatalogue(), spoilers = useSpoilers();
   const [removing, setRemoving] = useState(false);
   const resolved = resolveTable(argonaut, kind, catalogue), override = argonaut.tableOverrides[overrideKey(kind)];
   const card = resolved.face && catalogue.get((override || argonaut.titan)!.definitionId);
@@ -24,7 +25,8 @@ export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind
   if (removing && override) return <RemovalConfirmation subject={hidden ? 'the unrevealed Pattern override' : resolved.face?.name || 'the Pattern override'}
     detail="This removes the Pattern override and uses the Titan default." onCancel={() => setRemoving(false)}
     onConfirm={() => { dispatch({ type: 'table-override', argonautId: argonaut.id, kind, reference: null }); setRemoving(false); }} />;
-  if (choosing) return <ReferencePicker family="Pattern" tableKind={kind} selected={override} onClose={() => setChoosing(false)} onSelect={reference => {
+  if (choosing) return <ReferencePicker family="Pattern" tableKind={kind} selected={override} onClose={() => setChoosing(false)}
+    unavailable={ref => argonaut.titan?.rosterId ? patternIssue(party, argonaut.titan.rosterId, { ...argonaut.tableOverrides, [overrideKey(kind)]: ref }, catalogue) : undefined} onSelect={reference => {
     dispatch({ type: 'table-override', argonautId: argonaut.id, kind, reference }); setChoosing(false);
   }} />;
   return <Sheet visible maxWidth={420} title={`${kind} reference`} subtitle={hidden ? 'Unrevealed card' : resolved.face ? titanDisplayName(resolved.face) : 'Reference unavailable'} onClose={onClose}>
@@ -32,7 +34,8 @@ export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind
     {resolved.message ? <Text style={{ color: theme.danger, lineHeight: 22 }}>{resolved.message}</Text>
       : resolved.source === 'pattern' || hidden ? card && resolved.face && <ReferenceCard card={card} face={resolved.face} />
         : <PatternTable kind={kind} table={resolved.table} />}
-    <Button label={override ? 'Change Pattern override' : 'Choose Pattern override'} onPress={() => setChoosing(true)} />
+    {party.titanRoster && !argonaut.titan?.rosterId && <Text style={{ color: theme.muted, fontSize: 13 }}>Choose an Alive Titan before assigning its Patterns.</Text>}
+    <Button label={override ? 'Change Pattern override' : 'Choose Pattern override'} disabled={Boolean(party.titanRoster && !argonaut.titan?.rosterId)} onPress={() => setChoosing(true)} />
     {override && <Button quiet label="Use Titan default" onPress={() => setRemoving(true)} />}
   </Sheet>;
 }

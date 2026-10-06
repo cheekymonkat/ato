@@ -8,13 +8,13 @@ tabs using the same outlined selection treatment as the Argonaut selectors.
 - **Project List** has Structural and Combat tabs. Combat includes Argo Abilities
   and Production Facilities, with **All Combat / Argo Abilities / Production
   Facilities** filters to find either subtype directly. It shows only unresearched cards from the campaign
-  cycle and earlier whose supported requirements are met. Core never appears here.
+  cycle whose supported requirements are met; applicable earlier-cycle cards are inherited automatically. Core never appears here.
   **Research project** adds the researched technology to campaign Abilities and
   recalculates project availability immediately.
-- **Abilities** shows recorded technologies under Structural, Argo Ability,
-  Production Facility and Core tabs. Core always shows the five Core cards for
-  the selected campaign cycle automatically, with no acquisition or removal
-  controls. Advancing the cycle updates this set immediately. The Argo Ability tab
+- **Abilities** shows researched current-cycle and automatically inherited earlier-cycle technologies under Structural, Argo Ability,
+  Production Facility and Core tabs. Core shows all Core cards through the
+  selected campaign cycle automatically, with no acquisition or removal
+  controls. Inherited technologies also cannot be removed. Advancing the cycle updates these sets immediately. The Argo Ability tab
   reports the maximum printed AA limit among automatic and recorded Propylons.
   All printed abilities, timings,
   charges, facility names, recipes and ingredients are visible. Removal requires
@@ -23,7 +23,7 @@ tabs using the same outlined selection treatment as the Argonaut selectors.
 - **Technologies** is the cumulative cycle catalogue, with search by either name
   or printed ID and an optional type filter. Unavailable projects remain inspectable
   here with their unmet supported requirements. Its type filters and results
-  exclude Core; the current cycle's Core cards are automatically available in
+  exclude Core; all applicable Core cards are automatically available in
   Abilities instead.
 
 Each card has **View project / View technology** controls even if the source
@@ -51,7 +51,14 @@ craft Gear or change inventory.
 All three pages group results under cycle-title dividers, ordered from the highest
 cycle to the lowest. Within each cycle, cards are alphabetical by project name
 on Project List and researched name on Abilities/Technologies. Sorting applies
-before pagination; a cycle continuing onto another page receives its divider again.
+before pagination; a cycle continuing onto another page receives its divider again. In
+Abilities → Structural, Production Facility and Core, older-cycle headings are
+collapsible and start closed; the current cycle stays open. Each heading shows
+its card count. Expanded groups paginate independently, so hidden inherited cards
+do not fill pages or hide other cycle headings. Search automatically opens matching
+older groups; clearing search restores the collapsed defaults. Expansion is local
+view state, separate for each ability type and campaign cycle. Argo Abilities,
+Project List and Technologies retain their existing open groups and pagination.
 
 On project sides, each prerequisite has the same compact circular status treatment
 as Gear gates: a green tick for met requirements, red cross for unmet requirements,
@@ -98,27 +105,71 @@ matches.
 
 ## State and compatibility
 
-`Party.technologies = { version: 1, researched: string[] }` stores canonical
-researched definition IDs campaign-wide. The current cycle's Core cards are
-derived from the catalogue rather than added to this list; they satisfy technology
-prerequisites and contribute their printed AA limit automatically. No per-Argonaut
-technology copies are created. Legacy explicitly recorded Core IDs remain intact
-for compatibility and historical prerequisites, but the Core tab displays only
-the selected cycle's Core set, deduplicated. Core cards cannot be manually removed.
-Available projects are derived, so researching or removing a card, editing the
-campaign cycle or changing shared resources recomputes availability. Repeated
-research/acquisition cannot duplicate IDs. Campaign advancement proceeds one
-cycle at a time after confirmation. Legacy imported saves containing later-cycle
-technologies retain those records for recovery while restricting new additions
-to the selected cycle.
+`Party.technologies = { version: 1, researched: string[] }` stores explicit
+researched definition IDs campaign-wide. All applicable earlier-cycle technologies,
+including Core, are granted automatically in later cycles, even for a campaign
+created directly in that cycle. Current-cycle Core cards are automatic too.
+Current-cycle non-Core projects still require research. Automatic cards are
+derived, deduplicated and cannot be removed; no inherited IDs need to be written
+into the save. Existing explicit records remain intact.
 
-Older schema-2 saves without the optional field have no researched projects;
-their current cycle's Core cards are available immediately.
+Retired cycle-only technologies are excluded from Project List, Abilities and
+Technologies. Their old records remain in saves and backups; historical research
+still satisfies technology prerequisites. Earlier-cycle prerequisites count as
+completed even when their benefits have retired. Imported future-cycle IDs remain
+recorded but grant no benefits or prerequisite credit until their cycle is reached.
+Advancement proceeds one cycle at a time after confirmation.
+
+Older schema-2 saves without the optional field gain the same automatic Core and
+inherited technologies immediately. No save or catalogue schema bump is needed.
 Autosave, independent campaign profiles and portable backups preserve the record.
 Malformed/duplicate technology lists are rejected; missing catalogue references
 appear in saved-card notices and block backup import. Unavailable local records
 can be removed with confirmation. Reducer actions check campaign and Argonaut IDs,
 eligibility, catalogue availability and removal confirmation against current state.
+
+## Catalogue cycle and limit rules
+
+Every generated Technology definition has an optional `technologyRules` block:
+
+```json
+{
+  "version": 1,
+  "availableCycles": [3, 4, 5],
+  "limits": { "crew": 10, "hull": 7, "timeSilo": 6 }
+}
+```
+
+This is derived metadata alongside the unchanged source faces. Authored retirement
+rules live in `src/domain/technology-rules.ts`, keyed by printed ID to distinguish
+cards with repeated names. `npm run catalogue:import` applies them reproducibly to
+the runtime catalogue and its split review files. The policy and rule version are
+included in the catalogue digest. Older catalogues without metadata use the same
+policy at runtime. Invalid/inconsistent metadata is rejected during validation.
+
+- Cycle I only: Advanced Crew Expansion, Advanced Trading Solutions, Superior
+  Trading Solutions, Peace, Shallows Navigation, Diplomatic Relations, Deeply
+  Embedded Spies, Rhetoric, Minoan Investigations, Intelligence Gathering (AA0031),
+  Crew Expansion.
+- Cycle II only: Spartan Investigations, Theseus Method, War Recruitment, Refugee
+  Integration, Recruitment Programs, Up-stream Navigation, Argo Security,
+  Counterintelligence, Political Protection, Refugee Relief Effort, Grassroot
+  Support, Mobile Trade Fleet Dock, Sluice Gate System Integration, Ambrosia Spill
+  Solution, Argo Maintenance.
+- Cycle III Structural cards retire after III, except Titan Care, Extinction
+  Protocols, Awakening Studies, Advanced Titan Breeding and Quantum Propylon.
+- Cycle IV Structural cards retire after IV, except Salvage Operations, Superior
+  Titan Breeding and Argo Cloud Operations.
+- Combat cards and Core cards are cumulative unless specifically restricted.
+  All Cycle V technologies apply in V.
+
+Absolute printed limits are extracted for Hull, Crew, Titans, Argo Abilities
+(including `AA Limit`), Argo Oxygen, Summons and Time Silo. Active upgrades combine
+by taking the maximum, not adding values or replacing them with a lower later
+edition. Argo capacities and the AA display use this same calculation. Explicit
+manual capacity edits remain per-cycle overrides for campaign effects. Immediate
+resource gains and other effects are still resolved in the game, not replayed
+when inheritance is calculated.
 
 ## Later rules automation
 
@@ -133,7 +184,10 @@ actions. Those engines can be added without changing the researched deck model.
 
 - Real-data research chain: Propylon → Trireme Weapons and Armor → Ranged Weapons
   → Arrow Barrage → Crisis Protocol / Basic Support Equipment.
-- Automatic Core availability in every cycle, exact-cycle switching, unremovable
+- `technology-inheritance.test.mjs` checks every retirement entry and Structural
+  exception, automatic inheritance, highest limits, historical prerequisites,
+  future-record filtering, old catalogues and backup preservation.
+- Automatic Core availability in every cycle, cumulative Core and automatic prior-cycle inheritance, unremovable
   Core cards, preserved legacy records, renamed prerequisites, AND/OR branches, resource
   thresholds, typo aliases, duplicate prevention, cycle limits, stale actions,
   confirmed removal, retained successors, AA limit and backup compatibility.

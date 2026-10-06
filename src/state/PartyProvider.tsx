@@ -28,7 +28,7 @@ interface PartyContextValue {
 const PartyContext = createContext<PartyContextValue | null>(null);
 const uniqueId = () => `party-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 const freshWorkspace = (): Workspace => {
-  const profile = newProfile(uniqueId(), 'My expedition', getCatalogue().version);
+  const profile = newProfile(uniqueId(), 'My expedition', getCatalogue().version, 1, false, getCatalogue());
   return { format: 'ato-workspace', schemaVersion: 1, activeProfileId: profile.id, profiles: [profile] };
 };
 
@@ -112,7 +112,7 @@ export function PartyProvider({ children }: { children: ReactNode }) {
     exitPreview(); update({ ...current, activeProfileId: id });
   }, [exitPreview, update]);
   const createProfile = useCallback((name: string, cycle: CampaignCycle, inventoryTracking = false) => {
-    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version, cycle, inventoryTracking);
+    const current = workspaceRef.current!, profile = newProfile(uniqueId(), name, getCatalogue().version, cycle, inventoryTracking, getCatalogue());
     exitPreview(); update({ ...current, activeProfileId: profile.id, profiles: [...current.profiles, profile] });
     return profile.party.activeArgonautId;
   }, [exitPreview, update]);

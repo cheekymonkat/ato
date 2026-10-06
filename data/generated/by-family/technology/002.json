@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-6ea1ab708880839e",
+  "catalogueVersion": "atcc-v2-832793de8deb1439",
   "family": "Technology",
   "part": 2,
   "cards": [
@@ -162,7 +162,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4cb80027dafc1f80d1ef776a",
@@ -247,7 +254,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4ef34a6876dafe0f0b14321a",
@@ -342,7 +356,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_4fd2d73f48f0ac36c061cbef",
@@ -456,7 +477,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5057f095b5fe055f83acc94d",
@@ -556,7 +585,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_507d79403fcd29bd22534c81",
@@ -690,7 +726,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_50b2eb4ed15b3a48e65a6eb5",
@@ -775,7 +818,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_50bc73151dd9a6a21c4e0c82",
@@ -878,7 +928,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5185737f99a1a04e235d6eb8",
@@ -962,7 +1019,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5261ee5c30d604c34f972fcd",
@@ -1064,7 +1131,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_52789d0d2072a2cb20e1421d",
@@ -1176,7 +1252,17 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_561b662ab9a0942f960481b7",
@@ -1276,7 +1362,17 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5647b5765c976b6e0134f392",
@@ -1382,7 +1478,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_56caf23ce9556490851ecec0",
@@ -1483,7 +1586,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_57c39e892b54e9082c9adec4",
@@ -1568,7 +1680,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_57fe7e7472318968ea009123",
@@ -1731,7 +1850,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5829ec61e816a811f2c31b19",
@@ -1801,7 +1927,16 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_58d4460a182486699de82012",
@@ -1886,7 +2021,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_58e4eda3486b3b1b43c3c62d",
@@ -2004,7 +2146,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_594a55d6408432b2681c4547",
@@ -2088,7 +2240,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5aa0df9659234a94f7fd4ad8",
@@ -2249,7 +2412,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5d48206958f58d2d77732f52",
@@ -2458,7 +2632,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {
+          "titans": 20
+        }
+      }
     },
     {
       "id": "def_5de14c3ee3b348a04875cd0e",
@@ -2568,7 +2753,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5e91a2f3a22fef3eb586b763",
@@ -2749,7 +2945,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5f8c32ed22626702924fe3bd",
@@ -2833,7 +3036,18 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_5fa23679acbe64e9add21306",
@@ -2904,7 +3118,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_60c110725f2f4ebfd7f2cd08",
@@ -3065,7 +3289,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6240ca3e3dc2dfeb83400896",
@@ -3152,7 +3383,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_629bfcee188f67b598c1a8bf",
@@ -3268,7 +3506,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_63824adcd7e946e7280b5eac",
@@ -3447,7 +3693,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {
+          "hull": 5,
+          "crew": 6
+        }
+      }
     },
     {
       "id": "def_638872d430e21e80c89de131",
@@ -3583,7 +3840,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_63bbaa6b8b56b24928c0c283",
@@ -3677,7 +3942,17 @@
             "trireme": "TRUE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6406cefdfc02839584956ec8",
@@ -3847,7 +4122,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_64099c5fce284b805a96ce82",
@@ -4087,7 +4373,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6444ff9d60a2e05175682e56",
@@ -4226,7 +4522,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6505e4578e31c7cc0f61186f",
@@ -4377,7 +4680,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_65aebbde05afc2edf8ea92c0",
@@ -4479,7 +4793,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_65f6e506738fcc1e10a26478",
@@ -4645,7 +4966,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6675ba64c9ef0517c510bbd0",
@@ -4775,7 +5103,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_673421ee5cc04e0abc8e905a",
@@ -4875,7 +5210,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_690ba306e0bac9d120bfab09",
@@ -5014,7 +5356,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6a460bdf95398c32d2bbd7b4",
@@ -5160,7 +5511,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6b9409d63000a03a87aef265",
@@ -5236,7 +5595,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6bdca25820c293355f331cb8",
@@ -5379,7 +5745,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6c23ba7c3a712a2b05fcf28a",
@@ -5561,7 +5937,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6d1abad9b3a7e03033f5159b",
@@ -5645,7 +6028,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "summons": 3
+        }
+      }
     },
     {
       "id": "def_6d6ae8e95e40d6fb6e272b89",
@@ -5797,7 +6189,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_6f303f7a5755af6cdf74b6bc",
@@ -5916,7 +6318,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_70992e5f94d831e1b6cf5685",
@@ -6034,7 +6447,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7345715e3df51cc25d4d2c10",
@@ -6120,7 +6540,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_73a84703531225bdcc9c95d4",
@@ -6235,7 +6662,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_753f914eb3bfa4847b918e45",
@@ -6304,7 +6742,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_76c1569d7a6976290e0b0850",
@@ -6388,7 +6833,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_789e92e7235b8540177372da",
@@ -6541,7 +6994,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_78ff84c3c4e0f6e57035d3a4",
@@ -6776,7 +7236,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_79053031703ee534d6d081fb",
@@ -6892,7 +7361,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_791110acb4adf58efaed8390",
@@ -7023,7 +7499,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7adc69f7f52a4f54973d4b0a",
@@ -7144,7 +7631,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7af8717f9759922530171520",
@@ -7251,7 +7746,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7b6ceefceea6c442c74dc132",
@@ -7321,7 +7823,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {
+          "argoAbilities": 5
+        }
+      }
     },
     {
       "id": "def_7bd0e778b637427e1030d3f3",
@@ -7485,7 +7997,18 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7c845586f16e1293aa8efc8e",
@@ -7639,7 +8162,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7c86624a68cdc86cd51a6d6d",
@@ -7747,7 +8277,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7db49e70c7110fa9457f4684",
@@ -7912,7 +8452,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7ec3e854a2414bde69d5a43b",
@@ -8034,7 +8583,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7ee4b9044c18c4d32ca95d33",
@@ -8151,7 +8711,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7fed39bc0955c1d47d96ff93",
@@ -8285,7 +8855,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_7fee225c6ae78076f1c7b324",
@@ -8423,7 +9000,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_80ad51c415febd3620defbd6",
@@ -8546,7 +9132,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_80ec3da01d0b3cb8636826f8",
@@ -8662,7 +9256,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8140b15f9f39843eebee0aeb",
@@ -8762,7 +9366,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_83234e5943d9c75ea11c0f2c",
@@ -8941,7 +9554,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_843b896652334fb271c9677f",
@@ -9062,7 +9684,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {
+          "timeSilo": 5
+        }
+      }
     },
     {
       "id": "def_84fc31c62fdd590d5d37ba03",
@@ -9235,7 +9866,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_85430ee876daea022cc5a22f",
@@ -9304,7 +9942,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_875b7e33b150284daf01c659",
@@ -9510,7 +10155,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8775659ccda0d160db62b709",
@@ -9603,7 +10255,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_880415ed5e57d9b46a5af989",
@@ -9706,7 +10366,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_888afa2e9d8b3e779391c4c6",
@@ -9814,7 +10481,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8a9e87248636edc5de0a2490",
@@ -9909,7 +10586,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8aa3125325c8ae0220bc0237",
@@ -10017,7 +10701,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8ae8cd4050dd6543b53226e3",
@@ -10185,7 +10879,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8b1a0ba2a368b10d619a0180",
@@ -10330,7 +11033,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8b97dda64fd9770bd534da69",
@@ -10464,7 +11177,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8d1524adcf7c8ded51626c46",
@@ -10707,7 +11427,16 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {
+          "argoOxygen": 1
+        }
+      }
     },
     {
       "id": "def_8df63a55719b6fc205d59f05",
@@ -10863,7 +11592,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f24c389b34a3b0dbea67c79",
@@ -10962,7 +11698,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f4af0f5a5bac3caaf833731",
@@ -11134,7 +11877,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8f92486df3f81a44c03d8931",
@@ -11280,7 +12030,18 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_8ff6ed3ec7d4d46c3d113457",
@@ -11350,7 +12111,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_92bbae77307a60aa19c4351f",
@@ -11476,7 +12244,16 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9358fe97af03daad882d5e36",
@@ -11674,7 +12451,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_947c8ee0689b382471ac852a",
@@ -11753,7 +12537,14 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_95066875dcd1cee25236c20e",
@@ -11851,7 +12642,15 @@
             "cardSize": "Tarot"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_96cc807e662d02487857d33b",
@@ -11996,7 +12795,15 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_972bd7d25e81a5a46e6e31b7",
@@ -12119,7 +12926,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_97de7576258e7db4c4f6e3dc",
@@ -12221,7 +13035,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_98d89bd29dad9dbc8c41f2e8",
@@ -12297,7 +13118,15 @@
             "trireme": "FALSE"
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          4,
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9a4b9f24d5cc6d484ab8b268",
@@ -12423,7 +13252,14 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          5
+        ],
+        "limits": {}
+      }
     },
     {
       "id": "def_9a6b33ddbd7e022cef8c2499",
@@ -12531,7 +13367,17 @@
             ]
           }
         }
-      ]
+      ],
+      "technologyRules": {
+        "version": 1,
+        "availableCycles": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "limits": {}
+      }
     }
   ]
 }

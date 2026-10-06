@@ -1,5 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
-import { Image, Pressable, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
 import type { LayoutChangeEvent } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getCatalogue } from '../catalogue';
@@ -17,7 +17,7 @@ import { useParty } from '../state/PartyProvider';
 import { SaveNotice } from '../storage/SaveNotice';
 import { AssignedCardVisibility, useSpoilers } from '../state/SpoilerProvider';
 import { MemoryArea } from '../memories/MemoryArea';
-import { textOnColour, theme } from '../theme/tokens';
+import { theme } from '../theme/tokens';
 import { ArgonautName } from './ArgonautName';
 import { ColourPicker } from './ColourPicker';
 import { EquipmentArea, SectionHeading } from './EquipmentArea';
@@ -34,6 +34,7 @@ import { TitanSelectionMenu } from './TitanSelectionMenu';
 import { titanArtwork } from '../theme/titan-art';
 import { ArgoBredWarning } from './ArgoBredWarning';
 import { TitanLoadoutChoice } from './TitanLoadoutChoice';
+import { ArgonautTabs } from './ArgonautTabs';
 
 export function Dashboard({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (id: string) => void }) {
   return <AssignedCardVisibility argonaut={argonaut}><DashboardBody argonaut={argonaut} onSelect={onSelect} /></AssignedCardVisibility>;
@@ -87,17 +88,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
             </Button>
           </View>
           <ArgoBredWarning />
-          <View style={styles.navigation}>
-            <View style={styles.tabs}>{party.order.map((id, tabIndex) => {
-              const member = party.argonauts.find(entry => entry.id === id)!;
-              return <View key={id} style={{ flex: 1 }}><SwipeGuard><Pressable accessibilityRole="tab"
-                accessibilityLabel={`Argonaut ${tabIndex + 1}: ${member.name || `Argonaut ${tabIndex + 1}`}`} accessibilityState={{ selected: id === argonaut.id }}
-                onPress={() => onSelect(id)} style={({ pressed }) => [styles.tab, small && styles.smallTab, id === argonaut.id && styles.selectedTab, pressed && { opacity: 0.65 }]}>
-                <View style={[styles.tabBadge, { backgroundColor: member.colour }]}><Text style={[styles.tabNumber, { color: textOnColour(member.colour) }]}>{tabIndex + 1}</Text></View>
-                {!small && <Text numberOfLines={1} style={[styles.tabLabel, id === argonaut.id && styles.selectedLabel]}>{member.name || `Argonaut ${tabIndex + 1}`}</Text>}
-              </Pressable></SwipeGuard></View>;
-            })}</View>
-          </View>
+          <ArgonautTabs party={party} activeId={argonaut.id} compact={small} onSelect={onSelect} />
 
         </View>
 
@@ -164,11 +155,6 @@ const styles = StyleSheet.create({
   content: { width: '100%', paddingHorizontal: 32 },
   chapter: { marginTop: 26, marginBottom: 16, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   eyebrow: { color: theme.muted, fontSize: 10, fontWeight: '700', letterSpacing: 1.6 },
-  navigation: { flexDirection: 'row', alignItems: 'center', marginBottom: 24 },
-  tabs: { flex: 1, flexDirection: 'row', borderBottomWidth: 1, borderBottomColor: theme.line },
-  tab: { minHeight: 60, paddingVertical: 12, paddingHorizontal: 12, flexDirection: 'row', alignItems: 'center', gap: 10, borderBottomWidth: 2, borderBottomColor: 'transparent' },
-  selectedTab: { borderBottomColor: theme.ink }, tabBadge: { width: 26, height: 26, borderRadius: 13, alignItems: 'center', justifyContent: 'center' }, tabNumber: { color: theme.white, fontSize: 11, fontWeight: '600' }, tabLabel: { flex: 1, color: theme.muted, fontSize: 13 }, selectedLabel: { color: theme.ink, fontWeight: '600' },
-  smallTab: { paddingHorizontal: 0, justifyContent: 'center' },
   optionsButton: { flexDirection: 'row', gap: 10, backgroundColor: theme.paper, paddingHorizontal: 10, maxWidth: 180 },
   optionsIcon: { gap: 4 }, optionsLine: { width: 16, height: 1, backgroundColor: theme.ink }, optionsLabel: { color: theme.ink, fontSize: 12, flexShrink: 1 },
   campaignHeading: { flex: 1, gap: 8 }, refreshGear: { backgroundColor: theme.paper, paddingHorizontal: 10 },
