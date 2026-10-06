@@ -10,6 +10,7 @@ import { Button } from '../components/Button';
 import { Chevron } from '../components/Icon';
 import { SwipeGuard, SwipeSurface } from '../components/SwipeSurface';
 import { canDiscardCard } from '../domain/ability-costs';
+import { rosterTitanName } from '../domain/titan-roster';
 import type { Argonaut } from '../domain/party';
 import { adjacentArgonautId } from '../state/party-reducer';
 import type { CounterName } from '../state/party-reducer';
@@ -58,6 +59,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
   const index = party.order.indexOf(argonaut.id);
   const positions = useMemo(() => dashboardPositions(argonaut, getCatalogue()), [argonaut]);
   const titan = argonaut.titan && getCatalogue().getFace(argonaut.titan.definitionId, argonaut.titan.faceId);
+  const rosterTitan = party.titanRoster?.titans.find(titan => titan.id === argonaut.titan?.rosterId);
   const titanCard = argonaut.titan && getCatalogue().get(argonaut.titan.definitionId), spoilers = useSpoilers();
   const hiddenTitan = titanCard && spoilers.hidden(titanCard);
   const artwork = !hiddenTitan && titanArtwork(titan);
@@ -117,6 +119,7 @@ function DashboardBody({ argonaut, onSelect }: { argonaut: Argonaut; onSelect: (
             <View style={{ gap: 12 }}><SectionHeading title="Titan abilities" />
               {(!titan || hiddenTitan) && referenceLinks}
               {titan && titanCard ? <ReferenceCard card={titanCard} face={titan} exhausted={Boolean(argonaut.titan?.discarded)} showTables={false} revealable={false}
+                titanName={rosterTitan ? rosterTitanName(rosterTitan, getCatalogue()) : undefined}
                 titanHeaderActions={referenceLinks} onSelectTitan={() => setChoosingTitan(true)} titanBackdrop={Boolean(artwork)}
                 instance={argonaut.titan || undefined} rage={argonaut.counters.rage}
                 onAbilityExhausted={(abilityId, exhausted) => { if (argonaut.titan) dispatch({ type: 'ability-exhausted', argonautId: argonaut.id,

@@ -12,6 +12,7 @@ import * as roster from '../src/domain/titan-roster.ts';
 import * as selection from '../src/domain/titan-selection.ts';
 import * as references from '../src/domain/references.ts';
 import * as inventory from '../src/domain/inventory.ts';
+import * as partyDomain from '../src/domain/party.ts';
 const require = createRequire(import.meta.url), React = require('react'), web = require('react-native-web'), ts = require('typescript');
 const { renderToStaticMarkup } = require('react-dom/server');
 const root = fileURLToPath(new URL('../src/campaign/', import.meta.url));
@@ -27,14 +28,15 @@ function compile(name, mocks) {
 }
 function harness(cycle, withRoster = true) {
   let party = newProfile('p', 'Expedition', catalogue.version, cycle, false, withRoster ? catalogue : undefined).party, cursor = 0;
-  const slots = [], buttons = new Map(), dropdowns = new Map(), statusMenus = new Map(); let confirmation, statusConfirmation, editor, route;
+  const slots = [], buttons = new Map(), dropdowns = new Map(), statusMenus = new Map(), inputs = new Map(); let confirmation, statusConfirmation, editor, route;
   const useState = initial => {
     const index = cursor++; if (!(index in slots)) slots[index] = typeof initial === 'function' ? initial() : initial;
     return [slots[index], value => { slots[index] = typeof value === 'function' ? value(slots[index]) : value; }];
   };
   const dispatch = action => { party = partyReducer(party, action, catalogue); };
   const Button = props => { buttons.set(props.label, props); return React.createElement('button', { disabled: props.disabled, 'aria-label': props.label }, props.children ?? props.label); };
-  const mocks = { react: { useState, useEffect() {} }, 'react-native': web,
+  const TextInput = props => { inputs.set(props.accessibilityLabel, props); return React.createElement('input', { 'aria-label': props.accessibilityLabel, value: props.value, readOnly: true }); };
+  const mocks = { react: { useState, useEffect() {} }, 'react-native': { ...web, TextInput },
     'expo-router': { router: { push: value => route = value } },
     '../components/Button': { Button }, '../components/cards/CardIcon': { CardIcon: () => null },
     '../components/Sheet': { Sheet: ({ children, title, subtitle }) => React.createElement('section', null, title, subtitle, children) },
@@ -54,11 +56,11 @@ function harness(cycle, withRoster = true) {
     './CampaignPage': { campaignStyles: {} }, '../theme/tokens': { theme: {} }, '../theme/titan-art': { titanArtwork: () => undefined },
     './ArgoBredWarning': { ArgoBredWarning: () => null }, '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
     '../state/PartyProvider': { useParty: () => ({ party, dispatch }) }, '../catalogue': { getCatalogue: () => catalogue },
-    '../domain/campaign': campaign, '../domain/titan-roster': roster, '../domain/titan-selection': selection, '../domain/references': references, '../domain/inventory': inventory,
+    '../domain/campaign': campaign, '../domain/titan-roster': roster, '../domain/titan-selection': selection, '../domain/references': references, '../domain/inventory': inventory, '../domain/party': partyDomain,
   };
-  return { mocks, buttons, dropdowns, statusMenus, dispatch, party: () => party, confirmation: () => confirmation, statusConfirmation: () => statusConfirmation, editor: () => editor, route: () => route,
+  return { mocks, buttons, dropdowns, statusMenus, inputs, dispatch, party: () => party, confirmation: () => confirmation, statusConfirmation: () => statusConfirmation, editor: () => editor, route: () => route,
     resetState: () => { slots.length = 0; },
-    render: (component, props = { onClose() {} }) => { cursor = 0; buttons.clear(); dropdowns.clear(); statusMenus.clear(); confirmation = statusConfirmation = editor = null; return renderToStaticMarkup(React.createElement(component, props)); } };
+    render: (component, props = { onClose() {} }) => { cursor = 0; buttons.clear(); dropdowns.clear(); statusMenus.clear(); inputs.clear(); confirmation = statusConfirmation = editor = null; return renderToStaticMarkup(React.createElement(component, props)); } };
 }
 
 test('Titan management shows the cycle-specific counted tabs, sorts types first, and moves individual cards between health tabs', () => {
@@ -94,7 +96,7 @@ test('Titan management shows the cycle-specific counted tabs, sorts types first,
 
 test('Titan deletion goes through confirmation and editing opens the correct individual', () => {
   const h = harness(2), { ArgoTitans } = compile('ArgoTitans.tsx', h.mocks), render = () => h.render(ArgoTitans);
-  render(); h.buttons.get('Edit Earthshaker Patterns').onPress(); render();
+  render(); h.buttons.get('Edit Earthshaker').onPress(); render();
   assert.equal(roster.rosterTitanName(h.editor().record, catalogue), 'Earthshaker');
   h.editor().onClose(); render(); h.statusMenus.get('Earthshaker').onDelete(); render();
   assert.equal(h.party().titanRoster.titans.length, 10); assert.equal(h.confirmation().subject, 'Earthshaker');
@@ -216,6 +218,14 @@ test('status badge dropdown offers alternative states, dismisses outside and kee
   h.buttons.get('Mark Earthshaker Alive').onPress(); assert.deepEqual(changes, ['crippled']);
   presses.get('Dismiss Titan status menu').onPress(); render();
 
+  props = { ...props, full: false, revivalIssue: 'An Alive or Crippled Earthshaker is already in the roster.' };
+  presses.get('Change Earthshaker status').onPress(); html = render();
+  assert.equal(h.buttons.get('Mark Earthshaker Alive').disabled, true);
+  assert.equal(h.buttons.get('Mark Earthshaker Crippled').disabled, true);
+  assert.match(html, /Alive or Crippled Earthshaker is already/);
+  h.buttons.get('Mark Earthshaker Alive').onPress(); assert.deepEqual(changes, ['crippled']);
+  presses.get('Dismiss Titan status menu').onPress(); render();
+
   props = { ...props, status: 'alive', statuses: ['alive', 'dead'], full: false };
   presses.get('Change Earthshaker status').onPress(); render();
   assert.deepEqual([...h.buttons.keys()], ['Mark Earthshaker Dead', 'Delete Earthshaker']);
@@ -223,11 +233,12 @@ test('status badge dropdown offers alternative states, dismisses outside and kee
 
 test('Titan editor uses three dropdowns and disables scarce Pattern copies before saving the new individual', () => {
   const h = harness(2), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks), props = { record: null, onClose() {} }, render = () => h.render(TitanRosterEditor, props);
-  const html = render(); assert.equal(h.buttons.get('Add Titan').disabled, true);
+  const html = render(); assert.equal(h.buttons.get('Add Titan').disabled, false);
   assert.equal((html.match(/<select /g) ?? []).length, 3);
   assert.doesNotMatch(html, /Select a card to review/);
   const card = catalogue.byName('Firestarter')[0];
   const types = h.dropdowns.get('Titan type');
+  assert.equal(types.value, roster.cycleDreamwalker(2, catalogue).id);
   assert.ok(types.options.some(option => option.value === card.id && option.label === 'Firestarter'));
   assert.ok(types.options.some(option => option.label === 'Spartan Dreamwalker'));
   assert.equal(types.options.some(option => option.label === 'Persian Dreamwalker'), false);
@@ -250,4 +261,163 @@ test('Titan editor uses three dropdowns and disables scarce Pattern copies befor
   assert.equal(h.party().titanRoster.titans.length, 11);
   assert.equal(roster.rosterTitanName(h.party().titanRoster.titans.at(-1), catalogue), 'Firestarter');
   assert.deepEqual(h.party().titanRoster.titans.at(-1).patterns, { trauma: null, kratos: null });
+});
+
+test('Add Titan defaults to the campaign Dreamwalker in every cycle and saves that exact subtype', () => {
+  const labels = ['Dreamwalker', 'Spartan Dreamwalker', 'Delphian Dreamwalker', 'Persian Dreamwalker', 'Cycladean Dreamwalker'];
+  for (const cycle of [1, 2, 3, 4, 5]) {
+    const h = harness(cycle), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks);
+    const render = () => h.render(TitanRosterEditor, { record: null, onClose() {} });
+    render();
+    const dropdown = h.dropdowns.get('Titan type'), expected = roster.cycleDreamwalker(cycle, catalogue);
+    assert.equal(dropdown.value, expected.id);
+    assert.equal(dropdown.options.find(option => option.value === dropdown.value).label, labels[cycle - 1]);
+    assert.equal(h.inputs.get('Titan name').value, labels[cycle - 1]);
+    assert.equal(dropdown.options.find(option => option.value === dropdown.value).disabled, false);
+    if (h.buttons.get('Add Titan').disabled) {
+      const first = h.party().titanRoster.titans[0];
+      h.dispatch({ type: 'titan-roster', partyId: 'p', argonautId: 'arg-1', expectedCycle: cycle,
+        edit: { operation: 'status', id: first.id, expected: first, status: 'dead' } });
+      render();
+    }
+    assert.equal(h.buttons.get('Add Titan').disabled, false);
+    h.buttons.get('Add Titan').onPress();
+    assert.equal(h.party().titanRoster.titans.at(-1).definitionId, expected.id);
+  }
+  const h = harness(3), record = h.party().titanRoster.titans[0], { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks);
+  const html = h.render(TitanRosterEditor, { record, onClose() {} });
+  assert.equal(h.dropdowns.has('Titan type'), false);
+  assert.match(html, /Abysswatcher/);
+  h.buttons.get('Save Titan').onPress();
+  assert.equal(h.party().titanRoster.titans[0].definitionId, record.definitionId, 'Editing retains the existing type');
+});
+
+test('Titan dropdown blocks living/crippled types, releases them on death and updates the Dead status menu after replacement', () => {
+  const h = harness(3), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks), firestarter = catalogue.byName('Firestarter')[0];
+  const render = () => h.render(TitanRosterEditor, { record: null, onClose() {} });
+  let current = h.party().titanRoster.titans.find(titan => titan.definitionId === firestarter.id);
+  const change = status => {
+    h.dispatch({ type: 'titan-roster', partyId: 'p', argonautId: 'arg-1', expectedCycle: 3,
+      edit: { operation: 'status', id: current.id, expected: current, status } });
+    current = h.party().titanRoster.titans.find(titan => titan.id === current.id);
+  };
+  for (const status of ['alive', 'crippled']) {
+    if (status === 'crippled') change(status);
+    render();
+    const dropdown = h.dropdowns.get('Titan type'), option = dropdown.options.find(option => option.value === firestarter.id);
+    assert.equal(option.disabled, true); assert.match(option.detail, /Alive or Crippled/);
+    dropdown.onChange(firestarter.id); render();
+    assert.equal(h.dropdowns.get('Titan type').value, roster.cycleDreamwalker(3, catalogue).id);
+  }
+  change('dead'); render();
+  assert.equal(h.dropdowns.get('Titan type').options.find(option => option.value === firestarter.id).disabled, false);
+  h.dropdowns.get('Titan type').onChange(firestarter.id); render();
+  h.buttons.get('Add Titan').onPress();
+  assert.equal(h.party().titanRoster.titans.filter(titan => titan.definitionId === firestarter.id && titan.status !== 'dead').length, 1);
+
+  h.resetState(); const { ArgoTitans } = compile('ArgoTitans.tsx', h.mocks);
+  h.render(ArgoTitans); h.buttons.get('Dead · 1').onPress(); h.render(ArgoTitans);
+  assert.match(h.statusMenus.get('Firestarter').revivalIssue, /Alive or Crippled Firestarter/);
+  h.statusMenus.get('Firestarter').onChange('alive'); h.render(ArgoTitans);
+  assert.equal(h.party().titanRoster.titans.find(titan => titan.id === current.id).status, 'dead', 'Reducer also blocks a direct revival callback');
+});
+
+test('An open Titan editor prevents a duplicate after another action adds the selected type', () => {
+  const h = harness(2), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks), card = catalogue.byName('Firestarter')[0];
+  const render = () => h.render(TitanRosterEditor, { record: null, onClose() {} });
+  render(); h.dropdowns.get('Titan type').onChange(card.id); render();
+  const staleAdd = h.buttons.get('Add Titan');
+  assert.equal(staleAdd.disabled, false);
+  h.dispatch({ type: 'titan-roster', partyId: 'p', argonautId: 'arg-1', expectedCycle: 2,
+    edit: { operation: 'add', record: { id: 'other', definitionId: card.id, faceId: 'front', status: 'alive', patterns: roster.emptyTitanPatterns() } } });
+  const before = h.party(), html = render();
+  assert.equal(h.buttons.get('Add Titan').disabled, true);
+  assert.match(html, /Alive or Crippled Firestarter is already/);
+  staleAdd.onPress(); assert.equal(h.party(), before);
+});
+
+test('Titans can be named when added and edited, with name and type shown in the roster and Argonaut picker', () => {
+  const h = harness(2), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks);
+  const card = catalogue.byName('Firestarter')[0]; let closed = 0;
+  let props = { record: null, onClose: () => closed++ };
+  const render = () => h.render(TitanRosterEditor, props);
+  render(); assert.equal(h.inputs.get('Titan name').value, 'Spartan Dreamwalker');
+  h.dropdowns.get('Titan type').onChange(card.id); render();
+  assert.equal(h.inputs.get('Titan name').value, 'Firestarter', 'The default follows type selection');
+  h.inputs.get('Titan name').onChangeText('  Boreas  '); render(); h.buttons.get('Add Titan').onPress();
+  let titan = h.party().titanRoster.titans.at(-1);
+  assert.equal(titan.name, 'Boreas'); assert.equal(closed, 1);
+  h.resetState(); props = { ...props, record: titan }; render();
+  assert.equal(h.inputs.get('Titan name').value, 'Boreas');
+  h.inputs.get('Titan name').onChangeText('The Burning One'); render(); h.buttons.get('Save Titan').onPress();
+  titan = h.party().titanRoster.titans.at(-1);
+  assert.equal(titan.name, 'The Burning One'); assert.equal(titan.definitionId, card.id);
+  h.resetState(); const { ArgoTitans } = compile('ArgoTitans.tsx', h.mocks);
+  const html = h.render(ArgoTitans);
+  assert.match(html, /The Burning One/); assert.match(html, /Firestarter/);
+  assert.ok(h.buttons.has('Edit The Burning One'));
+  assert.equal(h.statusMenus.get('The Burning One').status, 'alive');
+  h.buttons.get('Edit The Burning One').onPress(); h.render(ArgoTitans);
+  assert.equal(h.editor().record.name, 'The Burning One');
+
+  h.dispatch({ type: 'titan', argonautId: 'arg-1', titan: { id: 'arg-1:titan', rosterId: titan.id,
+    definitionId: titan.definitionId, faceId: titan.faceId, exhausted: false, enabledEffectIds: [], counters: {} } });
+  h.resetState(); const { TitanSelectionMenu } = compile('../dashboard/TitanSelectionMenu.tsx', h.mocks);
+  const picker = () => h.render(TitanSelectionMenu, { argonaut: h.party().argonauts[0], onClose() {} });
+  const choices = picker(); assert.match(choices, /The Burning One/); assert.match(choices, /Firestarter/);
+  assert.ok([...h.buttons.keys()].some(label => label.startsWith('The Burning One · Titan')));
+  h.buttons.get('Remove Titan').onPress(); picker(); assert.equal(h.confirmation().subject, 'The Burning One');
+  h.confirmation().onCancel(); picker(); h.buttons.get('Mark Titan Dead').onPress(); picker();
+  assert.equal(h.statusConfirmation().name, 'The Burning One');
+});
+
+test('Changing type preserves a custom name; cancelling edits preserves it, and clearing it restores automatic naming', () => {
+  const h = harness(2), { TitanRosterEditor } = compile('TitanRosterEditor.tsx', h.mocks);
+  const card = catalogue.byName('Firestarter')[0]; let props = { record: null, onClose() {} };
+  const render = () => h.render(TitanRosterEditor, props);
+  render(); h.inputs.get('Titan name').onChangeText('Boreas'); render();
+  h.dropdowns.get('Titan type').onChange(card.id); render();
+  assert.equal(h.inputs.get('Titan name').value, 'Boreas');
+  h.buttons.get('Add Titan').onPress();
+  const titan = h.party().titanRoster.titans.at(-1), before = h.party();
+  h.resetState(); props = { ...props, record: titan }; render();
+  h.inputs.get('Titan name').onChangeText('Cancelled name'); render(); h.buttons.get('Cancel').onPress();
+  assert.equal(h.party(), before);
+  h.resetState(); render(); assert.equal(h.inputs.get('Titan name').value, 'Boreas');
+  h.inputs.get('Titan name').onChangeText(''); render(); h.buttons.get('Save Titan').onPress();
+  assert.equal(h.party().titanRoster.titans.at(-1).name, undefined);
+  assert.equal(roster.rosterTitanName(h.party().titanRoster.titans.at(-1), catalogue), 'Firestarter');
+});
+
+test('The Titan card shows its individual name with the type still visible, while catalogue cards keep their printed type', () => {
+  const h = harness(2), colour = { colour: value => value, svg: value => value };
+  const wrap = ({ children }) => React.createElement(React.Fragment, null, children);
+  const mocks = { ...h.mocks, 'react-native-svg': { SvgXml: () => null },
+    '../../catalogue/keywords': { keywordRepository: {} }, '../../domain/card-presentation': { displayValue: String, strings: value => Array.isArray(value) ? value : [] },
+    '../../domain/json': { isRecord: value => value && typeof value === 'object' && !Array.isArray(value) },
+    '../../domain/titan-presentation': { titanAbilityRows: () => [], titanDiceModifiers: () => [], titanSymbolAbility: () => undefined },
+    '../../domain/titan-selection': selection, '../../theme/gear-tokens': { gearTheme: {}, cycleColour: () => '#000000' },
+    '../../theme/pattern-icons': { patternIcons: {} }, '../../theme/tokens': { theme: {} },
+    '../Button': h.mocks['../components/Button'], '../Icon': { Chevron: () => null }, '../KeywordHelpContext': { useKeywordHelp: () => null },
+    './AbilityState': { AbilityState: wrap, AbilityPanel: wrap, AbilityCostIcon: () => null },
+    './CardColours': { CardColours: wrap, useCardColours: () => colour }, './CardIcon': { CardIcon: () => null },
+    './GearCard': { DiceStack: () => null }, './RichParagraph': { RichParagraph: () => null },
+    '../../domain/combat-modifiers': { adjustedStat: () => ({ label: '3', text: '3', changed: false }), MODIFIED_STAT_COLOUR: '#AA0000' },
+    './CombatStats': { useCombatAdjustment: () => 0 },
+  };
+  const { TitanCardBody } = compile('../components/cards/TitanCard.tsx', mocks);
+  const { ReferenceCard } = compile('../components/cards/ReferenceCard.tsx', { ...mocks,
+    '../../domain/references': { faceTable: () => null, flattenAbilities: value => value },
+    '../../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
+    '../PatternTable': { PatternTable: () => null }, './SecretCard': { SecretCard: () => null }, './MemoryCard': { MemoryCard: () => null },
+    './TitanCard': { TitanCardBody }, './ConditionCard': { ConditionCard: () => null },
+    '../../domain/conditions': { conditionEffects: () => null, supportsCondition: () => false },
+  });
+  const card = roster.cycleDreamwalker(2, catalogue), face = card.faces[0];
+  let html = h.render(ReferenceCard, { card, face, showTables: false, titanName: 'Asterion', onSelectTitan() {} });
+  assert.match(html, /Asterion/); assert.match(html, /Spartan Dreamwalker/);
+  assert.ok(h.buttons.has('Choose Titan: Asterion'));
+  html = h.render(ReferenceCard, { card, face, showTables: false });
+  assert.doesNotMatch(html, /Asterion/); assert.match(html, /Spartan Dreamwalker/);
+  assert.equal(catalogue.get(card.id).faces[0], face, 'Rendering does not alter catalogue data');
 });

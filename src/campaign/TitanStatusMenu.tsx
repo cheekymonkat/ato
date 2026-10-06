@@ -7,15 +7,16 @@ import { titanStatusLabel } from '../domain/titan-roster';
 import { theme } from '../theme/tokens';
 
 /** The status badge anchors a small action list, with deletion last. */
-export function TitanStatusMenu({ name, status, statuses, full, onChange, onDelete }: {
-  name: string; status: TitanStatus; statuses: TitanStatus[]; full: boolean;
+export function TitanStatusMenu({ name, status, statuses, full, revivalIssue, onChange, onDelete }: {
+  name: string; status: TitanStatus; statuses: TitanStatus[]; full: boolean; revivalIssue?: string;
   onChange: (status: TitanStatus) => void; onDelete: () => void;
 }) {
   const trigger = useRef<View>(null), { width, height } = useWindowDimensions(), insets = useSafeAreaInsets();
   const [anchor, setAnchor] = useState<{ top: number; right: number } | null>(null);
   const alternatives = statuses.filter(next => next !== status);
+  const blocked = status === 'dead' && (full || Boolean(revivalIssue));
   const menuWidth = Math.min(200, width - 32), availableHeight = height - insets.top - insets.bottom - 32;
-  const menuHeight = Math.min(44 * (alternatives.length + 1) + 10 + (status === 'dead' && full ? 26 : 0), availableHeight);
+  const menuHeight = Math.min(44 * (alternatives.length + 1) + 10 + (blocked ? 44 : 0), availableHeight);
   const top = anchor ? Math.max(insets.top + 16, Math.min(anchor.top, height - insets.bottom - 16 - menuHeight)) : 0;
   const close = () => setAnchor(null);
   return <>
@@ -33,13 +34,13 @@ export function TitanStatusMenu({ name, status, statuses, full, onChange, onDele
           right: Math.max(16, Math.min(anchor?.right ?? 16, width - menuWidth - 16)) }]}>
           <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.options}>
             {alternatives.map(next => {
-              const disabled = status === 'dead' && full;
+              const disabled = blocked;
               return <Button key={next} quiet label={`Mark ${name} ${titanStatusLabel(next)}`} disabled={disabled} style={styles.option}
                 onPress={() => { if (!disabled) { close(); onChange(next); } }}>
                 <Text style={styles.optionText}>{titanStatusLabel(next)}</Text>
               </Button>;
             })}
-            {status === 'dead' && full && <Text style={styles.hint}>Titan roster full</Text>}
+            {blocked && <Text style={styles.hint}>{full ? 'Titan roster full' : revivalIssue}</Text>}
             <View style={styles.delete}><Button quiet label={`Delete ${name}`} style={styles.option} onPress={() => { close(); onDelete(); }}>
               <Text style={styles.deleteText}>Delete</Text>
             </Button></View>

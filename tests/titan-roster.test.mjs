@@ -8,7 +8,8 @@ import { partyReducer } from '../src/state/party-reducer.ts';
 import { argoTrack, argoTrackDefinition } from '../src/domain/argo.ts';
 import { resolveTable } from '../src/domain/references.ts';
 import { isDreamwalker } from '../src/domain/titan-selection.ts';
-import { TITAN_STARTS, availableRosterTitans, cycleDreamwalker, emptyTitanPatterns, livingTitanCount, materializeTitanRoster, patternIssue, rosterTitanName, sortRoster, titanCapacity } from '../src/domain/titan-roster.ts';
+import { isFaceAvailableInCycle } from '../src/domain/campaign.ts';
+import { TITAN_STARTS, availableRosterTitans, cycleDreamwalker, emptyTitanPatterns, livingTitanCount, materializeTitanRoster, patternIssue, rosterTitanName, rosterTypeIssue, sortRoster, titanCapacity } from '../src/domain/titan-roster.ts';
 const catalogue = createCatalogueRepository(JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json', import.meta.url))));
 const fresh = (cycle = 1, tracking = false) => newProfile('roster', 'Titans', catalogue.version, cycle, tracking, catalogue).party;
 const records = party => party.titanRoster.titans;
@@ -18,6 +19,7 @@ const ref = name => ({ definitionId: named(name).id, faceId: 'front' });
 const mark = (party, titan, status) => edit(party, { operation: 'status', id: titan.id, expected: titan, status });
 const add = (party, name, id, patterns = emptyTitanPatterns()) => edit(party, { operation: 'add', record: { id, ...ref(name), status: 'alive', patterns } });
 const pattern = (party, titan, patterns) => edit(party, { operation: 'patterns', id: titan.id, expected: titan, patterns });
+const rename = (party, titan, name) => edit(party, { operation: 'update', id: titan.id, expected: titan, name, patterns: titan.patterns });
 const select = (party, titan, argonautId = 'arg-1') => partyReducer(party, { type: 'titan', argonautId, titan: {
   id: `${argonautId}:titan`, rosterId: titan.id, definitionId: titan.definitionId, faceId: titan.faceId, exhausted: false, enabledEffectIds: [], counters: {},
 } }, catalogue);
@@ -57,6 +59,59 @@ test('Alive and Crippled share the technology cap; Dead frees a place but cannot
   two = add(two, 'Firestarter', 'new');
   assert.equal(livingTitanCount(records(two)), 15);
   assert.equal(mark(two, records(two).find(titan => titan.status === 'dead'), 'crippled'), two);
+});
+
+test('Argo-bred types are unique across Alive and Crippled; Dead permits a replacement but not a duplicate revival', () => {
+  let party = fresh(3), firestarter = records(party).find(titan => rosterTitanName(titan, catalogue) === 'Firestarter');
+  const initial = party, before = structuredClone(party);
+  assert.match(rosterTypeIssue(party, 'new', firestarter, catalogue), /Alive or Crippled Firestarter/);
+  assert.equal(rosterTypeIssue(party, firestarter.id, firestarter, catalogue), undefined);
+  assert.equal(add(party, 'Firestarter', 'new'), party, 'An unassigned Alive Titan still occupies its type');
+  party = mark(party, firestarter, 'crippled');
+  assert.equal(add(party, 'Firestarter', 'new'), party, 'Crippled still occupies its type');
+  firestarter = records(party).find(titan => titan.id === firestarter.id);
+  party = mark(party, firestarter, 'dead');
+  const dead = records(party).find(titan => titan.id === firestarter.id);
+  assert.equal(rosterTypeIssue(party, 'new', dead, catalogue), undefined);
+  party = add(party, 'Firestarter', 'new');
+  assert.equal(records(party).at(-1).id, 'new');
+  for (const status of ['alive', 'crippled']) assert.equal(mark(party, dead, status), party);
+  party = mark(party, records(party).at(-1), 'crippled');
+  assert.equal(mark(party, dead, 'alive'), party, 'A Crippled replacement also blocks revival');
+  party = mark(party, records(party).at(-1), 'dead');
+  party = mark(party, dead, 'alive');
+  assert.equal(records(party).find(titan => titan.id === dead.id).status, 'alive');
+  assert.equal(add(party, 'Firestarter', 'late-add'), party, 'Reducer rejects additions based on stale availability');
+  assert.deepEqual(readBackup(exportProfile({ id: party.id, name: 'Titans', party }), catalogue).profile.party, party);
+  assert.deepEqual(initial, before, 'The original roster is not mutated');
+});
+
+test('every living Argo-bred type blocks another copy; all Dreamwalker subtypes may repeat', () => {
+  for (const cycle of [2, 3, 4, 5]) {
+    const party = fresh(cycle);
+    for (const titan of records(party).filter(titan => !isDreamwalker(catalogue.getFace(titan.definitionId, titan.faceId)))) {
+      const duplicate = { ...titan, id: `copy:${titan.id}` };
+      assert.ok(rosterTypeIssue(party, duplicate.id, duplicate, catalogue));
+      assert.equal(edit(party, { operation: 'add', record: duplicate }), party);
+    }
+    for (const card of catalogue.search({ family: 'Titan' }).filter(card => isDreamwalker(card.faces[0]) && isFaceAvailableInCycle(card.faces[0], cycle))) {
+      const walker = { id: `copy:${card.id}`, definitionId: card.id, faceId: card.faces[0].id, status: 'alive', patterns: emptyTitanPatterns() };
+      assert.equal(rosterTypeIssue(party, walker.id, walker, catalogue), undefined);
+      assert.equal(records(edit(party, { operation: 'add', record: walker })).at(-1).id, walker.id);
+    }
+  }
+});
+
+test('Argo-bred uniqueness uses the full normalized type name across catalogue copies and legacy records', () => {
+  const party = fresh(3), original = records(party).find(titan => rosterTitanName(titan, catalogue) === 'Firestarter');
+  const copyCatalogue = { ...catalogue, getFace: (id, faceId) => id === 'copy' ? { ...catalogue.getFace(original.definitionId, faceId), name: '  FIRESTARTER  ' } : catalogue.getFace(id, faceId) };
+  assert.ok(rosterTypeIssue(party, 'new', { definitionId: 'copy', faceId: 'front' }, copyCatalogue));
+  const distinctCatalogue = { ...copyCatalogue, getFace: (id, faceId) => id === 'copy' ? { ...catalogue.getFace(original.definitionId, faceId), name: 'Immortal Firestarter' } : catalogue.getFace(id, faceId) };
+  assert.equal(rosterTypeIssue(party, 'new', { definitionId: 'copy', faceId: 'front' }, distinctCatalogue), undefined);
+  const legacy = { ...createParty('old', ['a', 'b', 'c', 'd'], catalogue.version), campaignCycle: 3,
+    inventory: { version: 1, enforce: false, gear: {}, titans: [original.definitionId] } };
+  assert.ok(rosterTypeIssue(legacy, 'new', original, catalogue));
+  assert.equal(edit(legacy, { operation: 'add', record: { ...original, id: 'new' } }), legacy);
 });
 
 test('individual selection shares physical Titans and their Patterns; changing status releases the Argonaut only', () => {
@@ -180,4 +235,62 @@ test('roster backup validation catches malformed identities, duplicate assignmen
 test('sorting keeps every Argo-bred type above Dreamwalkers, alphabetically within each group', () => {
   const sorted = sortRoster(records(fresh(4)), catalogue), names = sorted.map(titan => rosterTitanName(titan, catalogue));
   assert.deepEqual(names.slice(0, -1), [...TITAN_STARTS[4].bred].sort()); assert.equal(names.at(-1), 'Persian Dreamwalker');
+});
+
+test('individual names default to type, persist across assignments and backups, and never alter type restrictions', () => {
+  let party = fresh(2), walker = records(party)[3];
+  assert.equal(rosterTitanName(walker, catalogue), 'Spartan Dreamwalker');
+  party = rename(party, walker, '  Asterion  '); walker = records(party)[3];
+  assert.equal(walker.name, 'Asterion'); assert.equal(rosterTitanName(walker, catalogue), 'Asterion');
+  party = select(party, walker); const instance = party.argonauts[0].titan;
+  party = rename(party, walker, 'The Wanderer'); walker = records(party)[3];
+  assert.equal(party.argonauts[0].titan, instance, 'Renaming preserves the assigned instance and gameplay state');
+  assert.equal(rosterTitanName(availableRosterTitans(party, catalogue, 'arg-1').find(titan => titan.id === walker.id), catalogue), 'The Wanderer');
+  party = edit(party, { operation: 'add', record: { id: 'named-firestarter', ...ref('Firestarter'), status: 'alive', patterns: emptyTitanPatterns(), name: '  Spartan Dreamwalker  ' } });
+  const firestarter = records(party).at(-1);
+  assert.equal(firestarter.name, 'Spartan Dreamwalker');
+  assert.equal(add(party, 'Firestarter', 'duplicate'), party, 'A Dreamwalker nickname cannot bypass the Argo-bred type limit');
+  assert.deepEqual(readBackup(exportProfile({ id: party.id, name: 'Named Titans', party }), catalogue).profile.party, party);
+  const ordered = sortRoster(records(party), catalogue);
+  assert.ok(ordered.indexOf(firestarter) < ordered.indexOf(walker), 'Ordering retains Argo-bred types before renamed Dreamwalkers');
+  party = rename(party, walker, '  ');
+  assert.equal(records(party)[3].name, undefined); assert.equal(rosterTitanName(records(party)[3], catalogue), 'Spartan Dreamwalker');
+});
+
+test('custom names survive health changes and advancement while default Dreamwalker names follow their new subtype', () => {
+  let party = fresh(2);
+  party = rename(party, records(party)[0], 'Atlas');
+  party = rename(party, records(party)[3], 'Asterion');
+  party = rename(party, records(party)[4], 'Spartan Dreamwalker');
+  assert.equal(records(party)[4].name, undefined, 'An explicit type name keeps automatic naming');
+  party = mark(party, records(party)[0], 'crippled');
+  assert.equal(records(party)[0].name, 'Atlas');
+  party = rename(party, records(party)[0], 'Scarred Atlas');
+  party = mark(party, records(party)[0], 'dead');
+  party = rename(party, records(party)[0], 'Remembered Atlas');
+  assert.equal(records(party)[0].name, 'Remembered Atlas');
+  party = mark(party, records(party)[0], 'alive');
+  const advanced = advance(party);
+  assert.equal(rosterTitanName(records(advanced)[0], catalogue), 'Remembered Atlas');
+  const namedWalker = records(advanced).find(titan => titan.id === records(party)[3].id);
+  assert.equal(namedWalker.name, 'Asterion');
+  assert.equal(namedWalker.definitionId, cycleDreamwalker(3, catalogue).id);
+  const defaultWalker = records(advanced).find(titan => titan.id === records(party)[4].id);
+  assert.equal(rosterTitanName(defaultWalker, catalogue), 'Delphian Dreamwalker');
+});
+
+test('name edits validate input and reject stale record actions without losing newer names or Patterns', () => {
+  const party = fresh(2), titan = records(party)[0], namedParty = rename(party, titan, 'Atlas');
+  assert.equal(rename(namedParty, titan, 'Late edit'), namedParty);
+  assert.equal(mark(namedParty, titan, 'dead'), namedParty);
+  assert.equal(pattern(namedParty, titan, { trauma: null, kratos: ref('Mazewalker') }), namedParty);
+  assert.equal(edit(namedParty, { operation: 'delete', id: titan.id, expected: titan, confirmed: true }), namedParty);
+  for (const invalid of [null, 7, 'x'.repeat(61)]) {
+    assert.equal(rename(party, titan, invalid), party);
+    assert.equal(edit(party, { operation: 'add', record: { id: 'bad', ...ref('Firestarter'), status: 'alive', patterns: emptyTitanPatterns(), name: invalid } }), party);
+    const malformed = structuredClone(party); records(malformed)[0].name = invalid;
+    assert.throws(() => parseParty(malformed), /Titan roster/);
+  }
+  assert.equal(records(rename(party, titan, 'x'.repeat(60)))[0].name.length, 60);
+  assert.deepEqual(parseParty(party), party, 'Earlier saves with no name remain valid');
 });

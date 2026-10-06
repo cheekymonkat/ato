@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Text, View } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
 import { Button } from '../components/Button';
 import { Sheet } from '../components/Sheet';
@@ -8,22 +8,31 @@ import { campaignCycle, isFaceAvailableInCycle } from '../domain/campaign';
 import { supportsPattern } from '../domain/references';
 import { titanOptionCards, titanVariantDisplayName } from '../domain/titan-selection';
 import type { CardReference, TitanRecord } from '../domain/party';
-import { emptyTitanPatterns, livingTitanCount, patternIssue, rosterPatternName, rosterTitanName, titanCapacity } from '../domain/titan-roster';
+import { TITAN_NAME_LIMIT } from '../domain/party';
+import { cycleDreamwalker, emptyTitanPatterns, livingTitanCount, patternIssue, rosterPatternName, rosterTitanType, rosterTypeIssue, titanCapacity } from '../domain/titan-roster';
 import { useParty } from '../state/PartyProvider';
 import { campaignStyles as styles } from './CampaignPage';
 
 export function TitanRosterEditor({ record, onClose }: { record: TitanRecord | null; onClose: () => void }) {
   const { party, dispatch } = useParty(), catalogue = getCatalogue(), cycle = campaignCycle(party);
   const [id] = useState(() => record?.id ?? `titan:${Date.now().toString(36)}:${Math.random().toString(36).slice(2, 10)}`);
-  const [selected, setSelected] = useState<CardReference | null>(record);
+  const [selected, setSelected] = useState<CardReference | null>(() => {
+    const defaultTitan = cycleDreamwalker(cycle, catalogue);
+    return record ?? (defaultTitan ? { definitionId: defaultTitan.id, faceId: defaultTitan.faces[0].id } : null);
+  });
   const [patterns, setPatterns] = useState(record?.patterns ?? emptyTitanPatterns());
+  const [name, setName] = useState<string | null>(record?.name ?? null);
   const [choosing, setChoosing] = useState<'titan' | 'trauma' | 'kratos' | null>(null);
   const face = selected ? catalogue.getFace(selected.definitionId, selected.faceId) : undefined;
-  const issue = patternIssue(party, id, patterns, catalogue);
+  const typeName = selected ? rosterTitanType(selected, catalogue) : 'Titan';
+  const issue = (!record && selected ? rosterTypeIssue(party, id, selected, catalogue) : undefined) ?? patternIssue(party, id, patterns, catalogue);
   const full = !record && livingTitanCount(party.titanRoster?.titans ?? []) >= titanCapacity(party, catalogue);
-  const titanCards = titanOptionCards(catalogue.search({ family: 'Titan' }), cycle);
-  const titanOptions = [{ value: '', label: 'Choose a Titan type', disabled: true }, ...titanCards.map(card => ({ value: card.id,
-    label: titanVariantDisplayName(card.faces[0]) }))];
+  const titanCards = titanOptionCards(catalogue.search({ family: 'Titan' }), cycle, selected);
+  const titanOptions = [{ value: '', label: 'Choose a Titan type', disabled: true }, ...titanCards.map(card => {
+    const unavailable = rosterTypeIssue(party, id, { definitionId: card.id, faceId: card.faces[0].id }, catalogue);
+    return { value: card.id, label: titanVariantDisplayName(card.faces[0]), disabled: Boolean(unavailable),
+      detail: unavailable ? 'Already Alive or Crippled' : undefined };
+  })];
   const optionsFor = (kind: 'trauma' | 'kratos') => {
     const options = catalogue.search({ family: 'Pattern', campaignCycle: cycle })
       .flatMap(card => card.faces.filter(face => isFaceAvailableInCycle(face, cycle) && supportsPattern(face, kind === 'trauma' ? 'Trauma' : 'Kratos'))
@@ -38,12 +47,24 @@ export function TitanRosterEditor({ record, onClose }: { record: TitanRecord | n
     return [{ value: '', label: 'Titan default' }, ...options];
   };
   const toggle = (field: 'titan' | 'trauma' | 'kratos') => setChoosing(current => current === field ? null : field);
-  return <Sheet visible title={record ? 'Edit Titan Patterns' : 'Add Titan'} subtitle="Patterns belong to this individual Titan, including while unassigned." onClose={onClose}>
-    {record ? <Text style={styles.heading}>{rosterTitanName(record, catalogue)}</Text> : <View style={{ gap: 6 }}>
+  return <Sheet visible title={record ? 'Edit Titan' : 'Add Titan'} subtitle="Names and Patterns belong to this individual Titan, including while unassigned." onClose={onClose}>
+    {record ? <Text style={styles.heading}>{typeName}</Text> : <View style={{ gap: 6 }}>
       <Text style={styles.body}>Titan type</Text>
       <CompactDropdown label="Titan type" value={selected?.definitionId ?? ''} options={titanOptions} expanded={choosing === 'titan'} onToggle={() => toggle('titan')}
-        onChange={value => { const card = catalogue.get(value); if (card) setSelected({ definitionId: value, faceId: card.faces[0].id }); setChoosing(null); }} />
+        onChange={value => {
+          const card = titanCards.find(card => card.id === value), option = titanOptions.find(option => option.value === value);
+          if (card && !option?.disabled) {
+            if (name === typeName) setName(null);
+            setSelected({ definitionId: value, faceId: card.faces[0].id });
+          }
+          setChoosing(null);
+        }} />
     </View>}
+    <View style={{ gap: 6 }}><Text style={styles.body}>Titan name</Text>
+      <TextInput accessibilityLabel="Titan name" value={name ?? typeName} placeholder={typeName} onChangeText={setName}
+        maxLength={TITAN_NAME_LIMIT} selectTextOnFocus autoCorrect={false} style={styles.input} />
+      <Text style={styles.meta}>Leave blank to use the Titan type.</Text>
+    </View>
     <Text style={styles.meta}>Titan default uses its printed table. Unavailable Pattern copies are disabled.</Text>
     {(['trauma', 'kratos'] as const).map(kind => <View key={kind} style={{ gap: 6 }}>
       <Text style={styles.body}>{kind === 'trauma' ? 'Trauma' : 'Kratos'} Pattern</Text>
@@ -56,10 +77,11 @@ export function TitanRosterEditor({ record, onClose }: { record: TitanRecord | n
     </View>)}
     {(issue || full) && <Text accessibilityRole="alert" style={styles.warning}>{issue ?? 'The Titan roster is full. Free a place before adding a Titan.'}</Text>}
     <View style={[styles.row, { justifyContent: 'flex-end' }]}><Button quiet label="Cancel" onPress={onClose} />
-      <Button label={record ? 'Save Patterns' : 'Add Titan'} disabled={!selected || Boolean(issue) || full} onPress={() => {
+      <Button label={record ? 'Save Titan' : 'Add Titan'} disabled={!selected || Boolean(issue) || full} onPress={() => {
         if (!selected || issue || full) return;
         dispatch({ type: 'titan-roster', partyId: party.id, argonautId: party.activeArgonautId, expectedCycle: cycle,
-          edit: record ? { operation: 'patterns', id, patterns, expected: record } : { operation: 'add', record: { id, ...selected, status: 'alive', patterns } } });
+          edit: record ? { operation: 'update', id, name: name ?? '', patterns, expected: record }
+            : { operation: 'add', record: { id, ...selected, name: name ?? '', status: 'alive', patterns } } });
         onClose();
       }} />
     </View>

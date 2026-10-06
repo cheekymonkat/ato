@@ -22,18 +22,19 @@ import { adjustedStat, MODIFIED_STAT_COLOUR } from '../../domain/combat-modifier
 import { useCombatAdjustment } from './CombatStats';
 
 /** The title opens Titan selection; keywords and individual ability controls remain independent. */
-export function TitanCardBody({ face, ink, headerActions, onSelect, rage = 0 }: {
-  face: Extract<CardFace, { kind: 'titan' }>; ink: string; headerActions?: ReactNode; onSelect?: () => void; rage?: number;
+export function TitanCardBody({ face, ink, headerActions, onSelect, name, rage = 0 }: {
+  face: Extract<CardFace, { kind: 'titan' }>; ink: string; headerActions?: ReactNode; onSelect?: () => void; name?: string; rage?: number;
 }) {
   const paint = useCardColours(), help = useKeywordHelp();
+  const typeName = titanDisplayName(face), title = name?.trim() || typeName;
   const speed = adjustedStat(face.data.speed, useCombatAdjustment(face, 'speed'));
   const rows = titanAbilityRows(face, keywordRepository);
   const limits = rows.flatMap(row => { const symbol = titanSymbolAbility(row.heading); return symbol?.kind === 'limit' ? [symbol] : []; });
   return <>
-    <Text style={[styles.meta, { color: ink }]}>{face.family} · {face.cycle}</Text>
-    {onSelect ? <Button quiet label={`Choose Titan: ${titanDisplayName(face)}`} onPress={onSelect} style={styles.selector}>
-      <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{titanDisplayName(face)}</Text><Chevron direction="down" />
-    </Button> : <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{titanDisplayName(face)}</Text>}
+    <Text style={[styles.meta, { color: ink }]}>{title !== typeName ? `${typeName} · ` : ''}{face.family} · {face.cycle}</Text>
+    {onSelect ? <Button quiet label={`Choose Titan: ${title}`} onPress={onSelect} style={styles.selector}>
+      <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{title}</Text><Chevron direction="down" />
+    </Button> : <Text accessibilityRole="header" style={[styles.name, { color: ink }]}>{title}</Text>}
     <View style={styles.stats}>
       <View accessible accessibilityLabel={`Movement ${speed.label}`} style={styles.speed}>
         <CardIcon name="Speed" size={24} /><Text style={[styles.statText, { color: paint.colour(speed.changed ? MODIFIED_STAT_COLOUR : '#000000') }]}>{speed.text}</Text>
@@ -57,7 +58,7 @@ export function TitanCardBody({ face, ink, headerActions, onSelect, rage = 0 }: 
     {Boolean(face.data.flavor) && <Text style={styles.flavor}>{displayValue(face.data.flavor)}</Text>}
     <View style={styles.abilities}>{rows.filter(row => !titanSymbolAbility(row.heading)).map((row, index) => <View key={row.id}
       style={[styles.ability, index > 0 && { borderTopWidth: 1, borderTopColor: paint.colour(g.papyrusDark), paddingTop: 10 }]}>
-      <AbilityPanel id={row.id} heading={row.heading} label={`${titanDisplayName(face)} ${row.details.map(detail => detail.name).join(', ') || `ability ${index + 1}`}`}>
+      <AbilityPanel id={row.id} heading={row.heading} label={`${title} ${row.details.map(detail => detail.name).join(', ') || `ability ${index + 1}`}`}>
         <View style={styles.abilityHeading}>
           <RichParagraph paragraph={isRecord(row.heading) ? { ...row.heading, costs: undefined } : row.heading} inlineGates boldKeywords size={14} align="left" />
           {isRecord(row.heading) && Array.isArray(row.heading.costs) && <View style={styles.costs}>{strings(row.heading.costs).map((cost, i) =>

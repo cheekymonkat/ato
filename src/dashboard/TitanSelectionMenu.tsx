@@ -15,7 +15,7 @@ import type { PartyAction } from '../state/party-reducer';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { ArgoBredWarning } from './ArgoBredWarning';
-import { availableRosterTitans, legacyTitanRoster, rosterTitanName, sameReference } from '../domain/titan-roster';
+import { availableRosterTitans, legacyTitanRoster, rosterTitanName, rosterTitanType, sameReference } from '../domain/titan-roster';
 
 type HealthChangeRequest = (titan: TitanRecord, status: 'crippled' | 'dead') => void;
 
@@ -65,7 +65,8 @@ function RosterTitanSelection({ argonaut, onClose, onRequestStatus }: { argonaut
   const { party, dispatch } = useParty(), catalogue = getCatalogue();
   const [removing, setRemoving] = useState(false);
   const titans = availableRosterTitans(party, catalogue, argonaut.id);
-  if (removing) return <RemovalConfirmation subject={argonaut.titan ? rosterTitanName(argonaut.titan, catalogue) : 'the selected Titan'}
+  const selected = titans.find(titan => titan.id === argonaut.titan?.rosterId) ?? argonaut.titan;
+  if (removing) return <RemovalConfirmation subject={selected ? rosterTitanName(selected, catalogue) : 'the selected Titan'}
     detail="This releases the Titan for another Argonaut. It remains Alive in the campaign roster with its Patterns."
     onCancel={() => setRemoving(false)} onConfirm={() => { dispatch({ type: 'titan', partyId: party.id, expectedCycle: campaignCycle(party), argonautId: argonaut.id, titan: null }); onClose(); }} />;
   return <Sheet visible title="Choose Titan" onClose={onClose}>
@@ -73,6 +74,7 @@ function RosterTitanSelection({ argonaut, onClose, onRequestStatus }: { argonaut
     <ArgoBredWarning />
     {titans.map((record, index) => {
       const active = record.id === argonaut.titan?.rosterId, name = rosterTitanName(record, catalogue);
+      const typeName = rosterTitanType(record, catalogue);
       const trauma = record.patterns.trauma && catalogue.getFace(record.patterns.trauma.definitionId, record.patterns.trauma.faceId)?.name;
       const kratos = record.patterns.kratos && catalogue.getFace(record.patterns.kratos.definitionId, record.patterns.kratos.faceId)?.name;
       return <Button key={record.id} quiet role="radio" selected={active} label={`${name} · Titan ${index + 1}`} style={[styles.choice, active && styles.active]}
@@ -82,6 +84,7 @@ function RosterTitanSelection({ argonaut, onClose, onRequestStatus }: { argonaut
           } }); onClose();
         }}>
         <View style={{ flex: 1, gap: 5 }}><Text style={[styles.name, active && styles.activeText]}>{name}</Text>
+          {name !== typeName && <Text style={[styles.cycle, active && styles.activeText]}>{typeName}</Text>}
           <Text style={[styles.cycle, active && styles.activeText]}>{trauma || kratos ? `Trauma: ${trauma || 'Default'} · Kratos: ${kratos || 'Default'}` : 'Printed Titan tables'}</Text></View>
         <Text style={[styles.cycle, active && styles.activeText]}>#{index + 1}</Text>
       </Button>;

@@ -8,7 +8,7 @@ import { RemovalConfirmation } from '../components/RemovalConfirmation';
 import { Sheet } from '../components/Sheet';
 import { campaignCycle } from '../domain/campaign';
 import type { TitanRecord, TitanStatus } from '../domain/party';
-import { availableRosterTitans, legacyTitanRoster, livingTitanCount, rosterPatternName, rosterTitanName, sortRoster, titanCapacity, titanStatusLabel } from '../domain/titan-roster';
+import { availableRosterTitans, legacyTitanRoster, livingTitanCount, rosterPatternName, rosterTitanName, rosterTitanType, rosterTypeIssue, sortRoster, titanCapacity, titanStatusLabel } from '../domain/titan-roster';
 import { isDreamwalker } from '../domain/titan-selection';
 import { useParty } from '../state/PartyProvider';
 import type { PartyAction } from '../state/party-reducer';
@@ -45,12 +45,15 @@ export function ArgoTitans({ onClose }: { onClose: () => void }) {
     <Text accessibilityRole="header" style={styles.groupTitle}>{title} · {records.length}</Text>
     <View style={styles.grid}>{records.map((titan, index) => {
       const face = catalogue.getFace(titan.definitionId, titan.faceId), art = titanArtwork(face);
-      const name = rosterTitanName(titan, catalogue), assigned = party.argonauts.find(member => member.titan?.rosterId === titan.id);
+      const name = rosterTitanName(titan, catalogue), typeName = rosterTitanType(titan, catalogue), assigned = party.argonauts.find(member => member.titan?.rosterId === titan.id);
       return <View key={titan.id} style={styles.card}>
         <View style={[styles.cardHeader, tab === 'crippled' && styles.crippled, tab === 'dead' && styles.dead]}>
           {art && <Image source={art} resizeMode="cover" accessible={false} style={styles.art} />}
-          <View style={styles.cardHeading}><Text style={styles.number}>TITAN {index + 1}</Text><Text style={styles.name}>{name}</Text></View>
+          <View style={styles.cardHeading}><Text style={styles.number}>TITAN {index + 1}</Text><Text style={styles.name}>{name}</Text>
+            {name !== typeName && <Text style={styles.type}>{typeName}</Text>}
+          </View>
           <TitanStatusMenu name={name} status={titan.status} statuses={statuses} full={occupied >= capacity}
+            revivalIssue={titan.status === 'dead' ? rosterTypeIssue(party, titan.id, titan, catalogue) : undefined}
             onChange={status => {
               const action: Extract<PartyAction, { type: 'titan-roster' }> = { type: 'titan-roster', ...owner, edit: { operation: 'status', id: titan.id, status, expected: titan } };
               if (status === 'alive') dispatch(action);
@@ -71,7 +74,7 @@ export function ArgoTitans({ onClose }: { onClose: () => void }) {
                 <Text style={styles.patternName}>{rosterPatternName(ref, face, catalogue)}</Text></View>
             </Button>;
           })}
-          <Button quiet label={`Edit ${name} Patterns`} onPress={() => setEditing(titan)}><Text style={styles.actionText}>Edit Patterns</Text></Button>
+          <Button quiet label={`Edit ${name}`} onPress={() => setEditing(titan)}><Text style={styles.actionText}>Edit Titan</Text></Button>
         </View>
       </View>;
     })}</View>
@@ -103,6 +106,7 @@ const styles = StyleSheet.create({
   cardHeader: { minHeight: 96, flexDirection: 'row', alignItems: 'center', gap: 8, padding: 14, backgroundColor: '#263C3F', overflow: 'hidden' },
   crippled: { backgroundColor: '#735536' }, dead: { backgroundColor: '#4D4545' }, art: { position: 'absolute', top: 0, right: 0, width: '55%', height: '100%', opacity: 0.22 },
   cardHeading: { flex: 1 }, number: { color: '#D5DBD8', fontSize: 9, letterSpacing: 1.5, marginBottom: 5 }, name: { fontFamily: theme.serif, fontSize: 22, color: theme.white },
+  type: { color: '#D5DBD8', fontSize: 12, marginTop: 4 },
   details: { padding: 12, gap: 9 }, assignment: { fontSize: 12, color: theme.muted },
   pattern: { flexDirection: 'row', gap: 9, justifyContent: 'flex-start', backgroundColor: theme.paper, padding: 8 }, patternTitle: { fontSize: 10, color: theme.muted }, patternName: { fontSize: 13, color: theme.ink },
   actionText: { color: theme.ink, fontSize: 12 }, empty: { padding: 24, alignItems: 'center', gap: 6 }, emptyTitle: { color: theme.ink, fontFamily: theme.serif, fontSize: 22 },

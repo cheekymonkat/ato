@@ -61,8 +61,11 @@ export interface CampaignInventory {
   version: 1; enforce: boolean; gear: Record<string, number>; titans: string[];
 }
 export type TitanStatus = 'alive' | 'crippled' | 'dead';
+export const TITAN_NAME_LIMIT = 60;
 export interface TitanRecord extends CardReference {
   id: string; status: TitanStatus;
+  /** Optional individual name; absent means use the current Titan type. */
+  name?: string;
   patterns: { trauma: CardReference | null; kratos: CardReference | null };
 }
 export interface Party {
@@ -152,6 +155,7 @@ export function parseParty(value: unknown): Party {
   const roster = value.titanRoster;
   assert(roster === undefined || isRecord(roster) && roster.version === 1 && Array.isArray(roster.titans)
     && roster.titans.every(titan => isRecord(titan) && typeof titan.id === 'string' && !!titan.id.trim() && checkReference(titan)
+      && (titan.name === undefined || typeof titan.name === 'string' && titan.name.length <= TITAN_NAME_LIMIT)
       && ['alive', 'crippled', 'dead'].includes(String(titan.status)) && isRecord(titan.patterns)
       && checkReference(titan.patterns.trauma) && checkReference(titan.patterns.kratos))
     && new Set(roster.titans.map(titan => (titan as Record<string, unknown>).id)).size === roster.titans.length, 'Invalid Titan roster');

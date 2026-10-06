@@ -2,7 +2,7 @@
 
 Manage Titans opens from the Argo Titan total or the Titans campaign reference.
 It presents individual cards in an adaptive grid, with artwork, assigned Argonaut,
-Trauma/Kratos reference links, Pattern editing and health actions. Argo-bred types
+Trauma/Kratos reference links, name/Pattern editing and health actions. Argo-bred types
 appear first alphabetically, followed by Dreamwalkers. Counted tabs are Alive and
 Dead in Cycle I; Crippled is also available from Cycle II. Deleting a Titan requires
 the shared removal confirmation.
@@ -22,10 +22,25 @@ short scrollable inline list. Choices follow the campaign cycle, unavailable
 Pattern copies are disabled, and “Titan default” restores the printed table when
 the editor is saved.
 
+The Add Titan dropdown defaults to the current campaign's Dreamwalker: Dreamwalker,
+Spartan, Delphian, Persian or Cycladean Dreamwalker in Cycles I–V respectively.
+Other eligible Dreamwalker subtypes remain selectable. Argo-bred types already
+Alive or Crippled are disabled with an explanation.
+
+**Titan name** is editable on Add Titan and through each roster card's **Edit Titan**
+button. It starts with the type name; clearing it restores automatic naming.
+Custom names are trimmed, limited to 60 characters and saved on the individual
+roster record. The roster, Argonaut picker, selected Titan card and confirmations
+show this name, with the printed type still visible. Renaming does not change the
+Titan's rules, type restriction, Patterns or assignment. Sorting stays by type,
+then individual name. Names survive health changes and cycle advancement; unnamed
+Dreamwalkers automatically use their new subtype's name. Cancel leaves the saved
+name and Patterns unchanged.
+
 ## State and capacity
 
 `Party.titanRoster` is an optional version-1 record containing individual
-`TitanRecord`s. Each has a stable ID, catalogue definition/face, status and optional
+`TitanRecord`s. Each has a stable ID, optional custom name, catalogue definition/face, status and optional
 Trauma/Kratos Pattern references. The catalogue's named Dreamwalker copies define
 the shared cycle subtype; they do not restrict Titan headcount.
 
@@ -35,6 +50,15 @@ deleted or removed on cycle advancement. Additions and revival from Dead are
 validated in the reducer, as well as disabled in the interface. Capacity changes
 never silently delete existing Titans; an over-capacity roster blocks additions
 and revivals until corrected.
+
+Only one individual of each Argo-bred type may be Alive or Crippled across the
+campaign roster, whether assigned to an Argonaut or not. Different printed copies
+of the same named type share this restriction. Dead records do not block adding
+a replacement, but cannot be restored Alive/Crippled while a living replacement
+exists. All Dreamwalker subtypes are exempt; the total technology capacity still
+applies. The reducer enforces the same rules as the dropdowns, including late
+actions. Existing saves retain their records so old duplicates can be corrected
+through normal status/deletion actions.
 
 Argonaut Titan instances use `rosterId` to identify the selected individual. Only
 Alive, unassigned individuals can be selected. Existing Argo-bred duplicate-type
