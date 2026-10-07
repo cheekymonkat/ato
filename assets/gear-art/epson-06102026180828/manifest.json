@@ -1,0 +1,651 @@
+{
+  "batch": "epson-06102026180828",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026180828.jpg",
+  "sourceSha256": "cea7b2ef085f6ec753e7f50c247da652e4468414fc4a9ba522c30cee510b010f",
+  "configurationSha256": "8a79aeca2102d5c19452c88bd8c7c7d4a196d409d94244b31156bd7f431fa985",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Eclipse Shield",
+      "definitionId": "def_33d01c2d9f601b7f3836734f",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2253",
+        "DJ2254"
+      ],
+      "filename": "eclipse-shield.png",
+      "crop": [
+        0,
+        0,
+        495,
+        739
+      ],
+      "width": 495,
+      "height": 739,
+      "preservedPixelCount": 128644,
+      "sha256": "3ceca03c5e685a5b38c8a4e7879ad77b99e0bff667757347cc87ae14253366af",
+      "sourcePrintedIds": [
+        "DJ2254"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/eclipse-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/eclipse-shield.png",
+        "width": 495,
+        "height": 739,
+        "artBottom": 547
+      }
+    },
+    {
+      "name": "Feather Cataphract",
+      "definitionId": "def_79d2938e675763942fdd52ce",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2251",
+        "DJ2252"
+      ],
+      "filename": "feather-cataphract.png",
+      "crop": [
+        495,
+        0,
+        488,
+        739
+      ],
+      "width": 488,
+      "height": 739,
+      "preservedPixelCount": 84683,
+      "sha256": "ff104979346513b8b3f9fb966d8b1ca89a8dd1d7f33d38d078c2dc88cc085cc3",
+      "sourcePrintedIds": [
+        "DJ2252"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/feather-cataphract.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/feather-cataphract.png",
+        "width": 488,
+        "height": 739,
+        "artBottom": 479
+      }
+    },
+    {
+      "name": "Descentaxe",
+      "definitionId": "def_a1a0c48ed41e8671d333656f",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2235",
+        "DJ2236"
+      ],
+      "filename": "descentaxe.png",
+      "crop": [
+        983,
+        0,
+        484,
+        739
+      ],
+      "width": 484,
+      "height": 739,
+      "preservedPixelCount": 145556,
+      "sha256": "362dbf7f2e8c81942f2cab7278db03d3e0f448127608f8a87ec18f3d019349b0",
+      "sourcePrintedIds": [
+        "DJ2236"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/descentaxe.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/descentaxe.png",
+        "width": 484,
+        "height": 739,
+        "artBottom": 565
+      }
+    },
+    {
+      "name": "Feathermace",
+      "definitionId": "def_81ba12aaa9894bd1ca457feb",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2231",
+        "DJ2232"
+      ],
+      "filename": "feathermace.png",
+      "crop": [
+        1467,
+        0,
+        483,
+        739
+      ],
+      "width": 483,
+      "height": 739,
+      "preservedPixelCount": 161276,
+      "sha256": "d5ce1d362acd3b73358658cf9ccbcf9c19ba2133e47418c98cba44b85a949fc5",
+      "sourcePrintedIds": [
+        "DJ2232"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/feathermace.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/feathermace.png",
+        "width": 483,
+        "height": 739,
+        "artBottom": 576
+      }
+    },
+    {
+      "name": "Eclipse Sword",
+      "definitionId": "def_35cd148eaa3e5be57b503524",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2229",
+        "DJ2230"
+      ],
+      "filename": "eclipse-sword.png",
+      "crop": [
+        1950,
+        0,
+        486,
+        739
+      ],
+      "width": 486,
+      "height": 739,
+      "preservedPixelCount": 144359,
+      "sha256": "92fd8c2a4f8a2a5f51efee10b0411b84efb52cd132182bc54a975ee1bd07f73f",
+      "sourcePrintedIds": [
+        "DJ2229"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/eclipse-sword.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/eclipse-sword.png",
+        "width": 486,
+        "height": 739,
+        "artBottom": 581
+      }
+    },
+    {
+      "name": "Burnout Whip",
+      "definitionId": "def_8a23587c8c59ef0c5900f556",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2233",
+        "DJ2234"
+      ],
+      "filename": "burnout-whip.png",
+      "crop": [
+        2436,
+        0,
+        482,
+        739
+      ],
+      "width": 482,
+      "height": 739,
+      "preservedPixelCount": 120913,
+      "sha256": "b0ac5b11762f2f4b148af269c4ea6f64f928b1223150e32765e11940dc67e39a",
+      "sourcePrintedIds": [
+        "DJ2234"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/burnout-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/burnout-whip.png",
+        "width": 482,
+        "height": 739,
+        "artBottom": 597
+      }
+    },
+    {
+      "name": "Phantom Spear (Strikeback)",
+      "definitionId": "def_59af38a49d8ae354e73f9898",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2298"
+      ],
+      "filename": "phantom-spear-strikeback.png",
+      "crop": [
+        2918,
+        0,
+        472,
+        739
+      ],
+      "width": 472,
+      "height": 739,
+      "preservedPixelCount": 84539,
+      "sha256": "c1ddcc5f06efc87b3cd6fbb6844834e026a3e6e93382c6430fec450eb7b221f2",
+      "sourcePrintedIds": [
+        "DJ2298"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/phantom-spear-strikeback.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/phantom-spear-strikeback.png",
+        "width": 472,
+        "height": 739,
+        "artBottom": 346
+      }
+    },
+    {
+      "name": "Pandoran Cryptex",
+      "definitionId": "def_936d93ae2520a4abd8227122",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2347"
+      ],
+      "filename": "pandoran-cryptex.png",
+      "crop": [
+        0,
+        739,
+        495,
+        746
+      ],
+      "width": 495,
+      "height": 746,
+      "preservedPixelCount": 109123,
+      "sha256": "8203718f4fc8704495f0e73db3ba4f60258ffc5779728513d113594c30bca7db",
+      "sourcePrintedIds": [
+        "DJ2347"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/pandoran-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/pandoran-cryptex.png",
+        "width": 495,
+        "height": 746,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Garden Activator",
+      "definitionId": "def_2a3777b724eb71058994d599",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2341",
+        "DJ2342"
+      ],
+      "filename": "garden-activator.png",
+      "crop": [
+        495,
+        739,
+        488,
+        746
+      ],
+      "width": 488,
+      "height": 746,
+      "preservedPixelCount": 124217,
+      "sha256": "917e9ae8b7a8aa3f1b283a074ab0d76a66e72f82ef5f83e30b44fb1813e58f2d",
+      "sourcePrintedIds": [
+        "DJ2341"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/garden-activator.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/garden-activator.png",
+        "width": 488,
+        "height": 746,
+        "artBottom": 531
+      }
+    },
+    {
+      "name": "Cursebreaker",
+      "definitionId": "def_9f9ef2bbdc944b0223d3759c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2379"
+      ],
+      "filename": "cursebreaker.png",
+      "crop": [
+        983,
+        739,
+        484,
+        746
+      ],
+      "width": 484,
+      "height": 746,
+      "preservedPixelCount": 120951,
+      "sha256": "bcb20d83eaec665b20063fa5a36988d914c0198b7cc6e8712a6594971ca5c516",
+      "sourcePrintedIds": [
+        "DJ2379"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/cursebreaker.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/cursebreaker.png",
+        "width": 484,
+        "height": 746,
+        "artBottom": 490
+      }
+    },
+    {
+      "name": "Willblade",
+      "definitionId": "def_23a8a31e1af76d35ccb57e6b",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2378"
+      ],
+      "filename": "willblade.png",
+      "crop": [
+        1467,
+        739,
+        483,
+        746
+      ],
+      "width": 483,
+      "height": 746,
+      "preservedPixelCount": 134756,
+      "sha256": "cb2e6f036716862b5cb88fa1c15ac1bd7bb7a767bfc265b98fd42822410753ce",
+      "sourcePrintedIds": [
+        "DJ2378"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/willblade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/willblade.png",
+        "width": 483,
+        "height": 746,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Sunkissed Kalasiris",
+      "definitionId": "def_dab134e71158de52cb35079c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2249",
+        "DJ2250"
+      ],
+      "filename": "sunkissed-kalasiris.png",
+      "crop": [
+        2436,
+        739,
+        482,
+        746
+      ],
+      "width": 482,
+      "height": 746,
+      "preservedPixelCount": 110484,
+      "sha256": "ed390b14377b9650e3a8c070465e01608668aefdaaf1fc35126b7e5049cc2ca0",
+      "sourcePrintedIds": [
+        "DJ2250"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/sunkissed-kalasiris.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/sunkissed-kalasiris.png",
+        "width": 482,
+        "height": 746,
+        "artBottom": 520
+      }
+    },
+    {
+      "name": "Accursed",
+      "definitionId": "def_dc65e0a9c4841eab8588d327",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2245",
+        "DJ2246",
+        "DJ2247",
+        "DJ2248"
+      ],
+      "filename": "accursed.png",
+      "crop": [
+        2918,
+        739,
+        472,
+        746
+      ],
+      "width": 472,
+      "height": 746,
+      "preservedPixelCount": 112455,
+      "sha256": "1c09a87e9fa0cdc2080d39fdf11507f3edf4f66343e04bee4045007329364d7b",
+      "sourcePrintedIds": [
+        "DJ2247"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/accursed.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/accursed.png",
+        "width": 472,
+        "height": 746,
+        "artBottom": 389
+      }
+    },
+    {
+      "name": "Withered Javelin",
+      "definitionId": "def_dea3c9478d7aa08ca519b7cb",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2241",
+        "DJ2242"
+      ],
+      "filename": "withered-javelin.png",
+      "crop": [
+        0,
+        1485,
+        495,
+        752
+      ],
+      "width": 495,
+      "height": 752,
+      "preservedPixelCount": 139746,
+      "sha256": "16adc9ae9cc708b91d046bfff1a2807d9aebffbcdf0d5e0a10bdb782dc84047c",
+      "sourcePrintedIds": [
+        "DJ2241"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/withered-javelin.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/withered-javelin.png",
+        "width": 495,
+        "height": 752,
+        "artBottom": 488
+      }
+    },
+    {
+      "name": "Refracted Light Elixir",
+      "definitionId": "def_a6c18fb0f31a93d17e69465d",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2255",
+        "DJ2256"
+      ],
+      "filename": "refracted-light-elixir.png",
+      "crop": [
+        495,
+        1485,
+        488,
+        752
+      ],
+      "width": 488,
+      "height": 752,
+      "preservedPixelCount": 55712,
+      "sha256": "31ccdb9f88453ea790a5e58df54e09d926ba0e4ee775d37857c9fb9cab342a0e",
+      "sourcePrintedIds": [
+        "DJ2255"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/refracted-light-elixir.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/refracted-light-elixir.png",
+        "width": 488,
+        "height": 752,
+        "artBottom": 438
+      }
+    },
+    {
+      "name": "Hermes Grappling Hook",
+      "definitionId": "def_0aea346846779d32f6222e5e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2261",
+        "DJ2262",
+        "DJ2263",
+        "DJ2264"
+      ],
+      "filename": "hermes-grappling-hook.png",
+      "crop": [
+        983,
+        1485,
+        484,
+        752
+      ],
+      "width": 484,
+      "height": 752,
+      "preservedPixelCount": 168774,
+      "sha256": "213915d1e5db4cebe88cf38a28f34b930a9065228912c950669537e6c67cee7a",
+      "sourcePrintedIds": [
+        "DJ2262"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/hermes-grappling-hook.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/hermes-grappling-hook.png",
+        "width": 484,
+        "height": 752,
+        "artBottom": 515
+      }
+    },
+    {
+      "name": "Kaleidoscope Module",
+      "definitionId": "def_5f09a538945b7eb2a8b6779e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2259",
+        "DJ2260"
+      ],
+      "filename": "kaleidoscope-module.png",
+      "crop": [
+        1467,
+        1485,
+        483,
+        752
+      ],
+      "width": 483,
+      "height": 752,
+      "preservedPixelCount": 145464,
+      "sha256": "a6710bb02551500e265af16ba6a48c807f0fa36a367aaba9947c720ceb2e5566",
+      "sourcePrintedIds": [
+        "DJ2259"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/kaleidoscope-module.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/kaleidoscope-module.png",
+        "width": 483,
+        "height": 752,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Hermes Guard",
+      "definitionId": "def_3e2ec5015ae98fb17a3e9090",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2257",
+        "DJ2258"
+      ],
+      "filename": "hermes-guard.png",
+      "crop": [
+        1950,
+        1485,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 193856,
+      "sha256": "bca701c51a01efab7f76dcd9be3ef12a22350a930d651c46db3c834f5520a407",
+      "sourcePrintedIds": [
+        "DJ2258"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/hermes-guard.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/hermes-guard.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 581
+      }
+    },
+    {
+      "name": "Seeds of Tomorrow",
+      "definitionId": "def_8a0d289cdcf74af5b286fec3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2345",
+        "DJ2346"
+      ],
+      "filename": "seeds-of-tomorrow.png",
+      "crop": [
+        2436,
+        1485,
+        482,
+        752
+      ],
+      "width": 482,
+      "height": 752,
+      "preservedPixelCount": 85639,
+      "sha256": "2602b76f6eb0f1b0c3e81f7730c5c8af9e7f9c4aeb026ecf184e14818e4434c3",
+      "sourcePrintedIds": [
+        "DJ2346"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/seeds-of-tomorrow.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/seeds-of-tomorrow.png",
+        "width": 482,
+        "height": 752,
+        "artBottom": 599
+      }
+    },
+    {
+      "name": "Hermes Gear Mk. II",
+      "definitionId": "def_76a068c943ef72851633b905",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2343",
+        "DJ2344"
+      ],
+      "filename": "hermes-gear-mk-ii.png",
+      "crop": [
+        2918,
+        1485,
+        472,
+        752
+      ],
+      "width": 472,
+      "height": 752,
+      "preservedPixelCount": 153558,
+      "sha256": "a702676e4ab95e8bf154f9ab8749552a511a630d683894957821ba6b6094041b",
+      "sourcePrintedIds": [
+        "DJ2344"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026180828/hermes-gear-mk-ii.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026180828/grayscale/hermes-gear-mk-ii.png",
+        "width": 472,
+        "height": 752,
+        "artBottom": 524
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Garden Activator",
+      "definitionId": "def_2a3777b724eb71058994d599",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2341",
+        "DJ2342"
+      ],
+      "filename": "garden-activator.png",
+      "crop": [
+        1950,
+        739,
+        486,
+        746
+      ],
+      "row": 2,
+      "column": 5,
+      "reason": "Duplicate physical face; retain the existing artwork from epson-06102026180828.",
+      "sourcePrintedIds": [
+        "DJ2342"
+      ]
+    }
+  ]
+}

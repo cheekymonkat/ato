@@ -1,0 +1,634 @@
+{
+  "batch": "epson-06102026194506",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026194506.jpg",
+  "sourceSha256": "1e3ef824ba8cb19602bfbc1b398be125a329aedf71d0712074e1dd9f374c77bf",
+  "configurationSha256": "e12c48caf2973dfe9e5df7153157bae5b3b0a20df56804fd0d6120c3649984c6",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Abdicates",
+      "definitionId": "def_c755494c770a1ae3dd42bc31",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1839"
+      ],
+      "filename": "abdicates.png",
+      "crop": [
+        0,
+        0,
+        498,
+        735
+      ],
+      "width": 498,
+      "height": 735,
+      "preservedPixelCount": 77542,
+      "sha256": "dbb76fb233799da5a67cc94dfdfdf5c128dcbb8ca628e3606c85672aa6ec556d",
+      "sourcePrintedIds": [
+        "ZJ1839"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/abdicates.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/abdicates.png",
+        "width": 498,
+        "height": 735,
+        "artBottom": 359
+      }
+    },
+    {
+      "name": "Slushbane",
+      "definitionId": "def_f1c5b53864716c1985d94d3e",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1833"
+      ],
+      "filename": "slushbane.png",
+      "crop": [
+        498,
+        0,
+        491,
+        735
+      ],
+      "width": 491,
+      "height": 735,
+      "preservedPixelCount": 27612,
+      "sha256": "6293685a547c95e733c403714d2f17fef65ef2f1896b0ec9e4b1cdbc6528c691",
+      "sourcePrintedIds": [
+        "ZJ1833"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/slushbane.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/slushbane.png",
+        "width": 491,
+        "height": 735,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Promise Fulfilled",
+      "definitionId": "def_ea9feea74f93ea87a4ebbbfd",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1827"
+      ],
+      "filename": "promise-fulfilled.png",
+      "crop": [
+        989,
+        0,
+        489,
+        735
+      ],
+      "width": 489,
+      "height": 735,
+      "preservedPixelCount": 68277,
+      "sha256": "21215ce639a99710ab3a26d6a201223f235c1d90f2625c2352d0e10eb7a280f2",
+      "sourcePrintedIds": [
+        "ZJ1827"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/promise-fulfilled.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/promise-fulfilled.png",
+        "width": 489,
+        "height": 735,
+        "artBottom": 523
+      }
+    },
+    {
+      "name": "Out of Context",
+      "definitionId": "def_93c4268a351dd45e8e801f4b",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1836"
+      ],
+      "filename": "out-of-context.png",
+      "crop": [
+        1478,
+        0,
+        489,
+        735
+      ],
+      "width": 489,
+      "height": 735,
+      "preservedPixelCount": 117013,
+      "sha256": "265aaf522dc88ff8b02965f93503a1030b6cca1aaaa7615e25d5daf0a73f98ba",
+      "sourcePrintedIds": [
+        "ZJ1836"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/out-of-context.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/out-of-context.png",
+        "width": 489,
+        "height": 735,
+        "artBottom": 585
+      }
+    },
+    {
+      "name": "Ariadne's Reunion",
+      "definitionId": "def_5448daf11d3f439747fe8d97",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1826"
+      ],
+      "filename": "ariadne-s-reunion.png",
+      "crop": [
+        1967,
+        0,
+        481,
+        735
+      ],
+      "width": 481,
+      "height": 735,
+      "preservedPixelCount": 48993,
+      "sha256": "9b939e0a08c4782cf25e32ead16b286716c5b55bce7cbaf30fa79c31656ff27c",
+      "sourcePrintedIds": [
+        "ZJ1826"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/ariadne-s-reunion.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/ariadne-s-reunion.png",
+        "width": 481,
+        "height": 735,
+        "artBottom": 256
+      }
+    },
+    {
+      "name": "Gigantas",
+      "definitionId": "def_fdff403582c8c53245e3adc9",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1825"
+      ],
+      "filename": "gigantas.png",
+      "crop": [
+        2448,
+        0,
+        492,
+        735
+      ],
+      "width": 492,
+      "height": 735,
+      "preservedPixelCount": 75509,
+      "sha256": "ac1b82163b15b25e34a41cda83c87f33f96cb5f81b4f16864ecdd8821b6523de",
+      "sourcePrintedIds": [
+        "ZJ1825"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/gigantas.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/gigantas.png",
+        "width": 492,
+        "height": 735,
+        "artBottom": 402
+      }
+    },
+    {
+      "name": "Atlantean Lance",
+      "definitionId": "def_c711a05cab8623084ceb4057",
+      "faceId": "back",
+      "printedIds": [
+        "ZJ1840"
+      ],
+      "filename": "atlantean-lance.png",
+      "crop": [
+        2940,
+        0,
+        486,
+        735
+      ],
+      "width": 486,
+      "height": 735,
+      "preservedPixelCount": 80166,
+      "sha256": "3ce3bac50dc52f220ba039d3724378534368eea4a0cd85b9c3129025febe00de",
+      "sourcePrintedIds": [
+        "ZJ1840"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/atlantean-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/atlantean-lance.png",
+        "width": 486,
+        "height": 735,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Pantheon",
+      "definitionId": "def_30ad15b48dae561dfe9f6f1f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ0692",
+        "ZJ1845"
+      ],
+      "filename": "pantheon.png",
+      "crop": [
+        0,
+        735,
+        498,
+        756
+      ],
+      "width": 498,
+      "height": 756,
+      "preservedPixelCount": 129701,
+      "sha256": "a9bf7b5b42aa46d27bd2bf025ed2873c385871cde04fc659d540c7b7ddab8d3c",
+      "sourcePrintedIds": [
+        "ZJ1845"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/pantheon.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/pantheon.png",
+        "width": 498,
+        "height": 756,
+        "artBottom": 751
+      }
+    },
+    {
+      "name": "Feint Spear",
+      "definitionId": "def_84bc33e2efe71d244e9bb653",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1835"
+      ],
+      "filename": "feint-spear.png",
+      "crop": [
+        498,
+        735,
+        491,
+        756
+      ],
+      "width": 491,
+      "height": 756,
+      "preservedPixelCount": 120390,
+      "sha256": "7c2a323f0ce2625a0181e1e0f1d93ba03de743d5fe1d4734e9eacda638de7272",
+      "sourcePrintedIds": [
+        "ZJ1835"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/feint-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/feint-spear.png",
+        "width": 491,
+        "height": 756,
+        "artBottom": 667
+      }
+    },
+    {
+      "name": "Fortress Shield",
+      "definitionId": "def_0a6db728cd5971e21b78ba4e",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1838"
+      ],
+      "filename": "fortress-shield.png",
+      "crop": [
+        989,
+        735,
+        489,
+        756
+      ],
+      "width": 489,
+      "height": 756,
+      "preservedPixelCount": 19981,
+      "sha256": "1aa70fce51dd2529172b8ed928b92bbbef0689ab45c1b722a050f68840d45e40",
+      "sourcePrintedIds": [
+        "ZJ1838"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/fortress-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/fortress-shield.png",
+        "width": 489,
+        "height": 756,
+        "artBottom": 548
+      }
+    },
+    {
+      "name": "Midashield",
+      "definitionId": "def_eafb77a40b26a243354884db",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1844"
+      ],
+      "filename": "midashield.png",
+      "crop": [
+        1478,
+        735,
+        489,
+        756
+      ],
+      "width": 489,
+      "height": 756,
+      "preservedPixelCount": 65980,
+      "sha256": "5599aafbe2673d97bbedb7b73f346a099e682f8d1b9a77e9a52062c07dbda453",
+      "sourcePrintedIds": [
+        "ZJ1844"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/midashield.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/midashield.png",
+        "width": 489,
+        "height": 756,
+        "artBottom": 445
+      }
+    },
+    {
+      "name": "Voice of the Silenced",
+      "definitionId": "def_88daea73814e4ab42c3de516",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1846"
+      ],
+      "filename": "voice-of-the-silenced.png",
+      "crop": [
+        1967,
+        735,
+        481,
+        756
+      ],
+      "width": 481,
+      "height": 756,
+      "preservedPixelCount": 25408,
+      "sha256": "558713767d603c397802e80f5ef294924a34851f7cc624ccb4db2a289d41ca05",
+      "sourcePrintedIds": [
+        "ZJ1846"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/voice-of-the-silenced.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/voice-of-the-silenced.png",
+        "width": 481,
+        "height": 756,
+        "artBottom": 514
+      }
+    },
+    {
+      "name": "Blue State",
+      "definitionId": "def_1d1219d3d24c1f4ff1037cde",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1830"
+      ],
+      "filename": "blue-state.png",
+      "crop": [
+        2448,
+        735,
+        492,
+        756
+      ],
+      "width": 492,
+      "height": 756,
+      "preservedPixelCount": 26840,
+      "sha256": "ec0a1470487000180bd3d38bc98429e820594b403fd7e4fc7e83ee7b0986a35f",
+      "sourcePrintedIds": [
+        "ZJ1830"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/blue-state.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/blue-state.png",
+        "width": 492,
+        "height": 756,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Ship of Theseus",
+      "definitionId": "def_fc7dee7dd23838eebf82350b",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1841"
+      ],
+      "filename": "ship-of-theseus.png",
+      "crop": [
+        2940,
+        735,
+        486,
+        756
+      ],
+      "width": 486,
+      "height": 756,
+      "preservedPixelCount": 18918,
+      "sha256": "bd153f76cfa1d31c0fc8d09fc45782e9d092a1443b37b73006419eda1c3fa6f1",
+      "sourcePrintedIds": [
+        "ZJ1841"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/ship-of-theseus.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/ship-of-theseus.png",
+        "width": 486,
+        "height": 756,
+        "artBottom": 247
+      }
+    },
+    {
+      "name": "Bow of Artemis",
+      "definitionId": "def_32668aba6250f32a2fbb39d1",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1828"
+      ],
+      "filename": "bow-of-artemis.png",
+      "crop": [
+        0,
+        1491,
+        498,
+        747
+      ],
+      "width": 498,
+      "height": 747,
+      "preservedPixelCount": 95225,
+      "sha256": "19f62368abbea9ab6490b65b31a0929f1c94ec3654f6b5af5fbba954b0539a40",
+      "sourcePrintedIds": [
+        "ZJ1828"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/bow-of-artemis.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/bow-of-artemis.png",
+        "width": 498,
+        "height": 747,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Poseidonis",
+      "definitionId": "def_1f78fc93cf59980a4a17986c",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1842"
+      ],
+      "filename": "poseidonis.png",
+      "crop": [
+        498,
+        1491,
+        491,
+        747
+      ],
+      "width": 491,
+      "height": 747,
+      "preservedPixelCount": 78232,
+      "sha256": "22adcf7fed3a7642964837ae18b5d898b93693fdbc44d36a13861347f9097635",
+      "sourcePrintedIds": [
+        "ZJ1842"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/poseidonis.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/poseidonis.png",
+        "width": 491,
+        "height": 747,
+        "artBottom": 489
+      }
+    },
+    {
+      "name": "Rod of Pharos",
+      "definitionId": "def_38bbb53e03a89ceab593563c",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1831"
+      ],
+      "filename": "rod-of-pharos.png",
+      "crop": [
+        989,
+        1491,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 129236,
+      "sha256": "d920d054cd6eaf6c848d651ce93b872204e31e790218acaca4f1e7ecaf845d8f",
+      "sourcePrintedIds": [
+        "ZJ1831"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/rod-of-pharos.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/rod-of-pharos.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 619
+      }
+    },
+    {
+      "name": "Helm of Hermes",
+      "definitionId": "def_a81e587fc17b366db2efd6cf",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1824"
+      ],
+      "filename": "helm-of-hermes.png",
+      "crop": [
+        1478,
+        1491,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 98724,
+      "sha256": "c78113fc0445335d95b3204956f51b1dbc34740e5162fd6d06d1fbb788938d4b",
+      "sourcePrintedIds": [
+        "ZJ1824"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/helm-of-hermes.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/helm-of-hermes.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Lightbringer",
+      "definitionId": "def_e032b29446903fdbd8c588bb",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1849"
+      ],
+      "filename": "lightbringer.png",
+      "crop": [
+        1967,
+        1491,
+        481,
+        747
+      ],
+      "width": 481,
+      "height": 747,
+      "preservedPixelCount": 48532,
+      "sha256": "aaf30af6996cce80d719b4620b3369fb67c92929ae2c5c8aa4d46670b30b79f8",
+      "sourcePrintedIds": [
+        "ZJ1849"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/lightbringer.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/lightbringer.png",
+        "width": 481,
+        "height": 747,
+        "artBottom": 610
+      }
+    },
+    {
+      "name": "Gaia's Root",
+      "definitionId": "def_dccfb9d62c815c20ddf248fd",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1843"
+      ],
+      "filename": "gaia-s-root.png",
+      "crop": [
+        2448,
+        1491,
+        492,
+        747
+      ],
+      "width": 492,
+      "height": 747,
+      "preservedPixelCount": 18137,
+      "sha256": "3be4ee5612e70d5c4d04f4a16c8565e66bc0eaea190ae04620a2f723e09dae75",
+      "sourcePrintedIds": [
+        "ZJ1843"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194506/gaia-s-root.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194506/grayscale/gaia-s-root.png",
+        "width": 492,
+        "height": 747,
+        "artBottom": 336
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Pantheon",
+      "definitionId": "def_30ad15b48dae561dfe9f6f1f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ0692",
+        "ZJ1845"
+      ],
+      "filename": "pantheon-continuation.png",
+      "crop": [
+        2940,
+        1491,
+        486,
+        747
+      ],
+      "row": 3,
+      "column": 7,
+      "reason": "Separate physical continuation card for Pantheon. The imported catalogue groups its printed ID with the primary face rather than defining a back. Retain the primary illustration and record this crop without inventing another face.",
+      "sourcePrintedIds": [
+        "ZJ0692"
+      ]
+    }
+  ]
+}

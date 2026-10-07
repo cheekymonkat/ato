@@ -1,0 +1,1336 @@
+{
+  "batch": "epson-06102026192724",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026192724.jpg",
+  "sourceSha256": "cac6c05195cbaf3bb45b96cae01603a80ff459f148fca94485a7915a88be6a68",
+  "sourceSize": [
+    3396,
+    2244
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    40,
+    1991,
+    32,
+    64
+  ],
+  "cards": [
+    {
+      "name": "Heir Apparent",
+      "definitionId": "def_175a4e70cba13e10928aab35",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2534"
+      ],
+      "filename": "heir-apparent.png",
+      "crop": [
+        0,
+        0,
+        489,
+        734
+      ],
+      "row": 1,
+      "column": 1,
+      "artRects": [
+        [
+          77,
+          91,
+          398,
+          480
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          113
+        ],
+        [
+          380,
+          0,
+          489,
+          113
+        ]
+      ],
+      "sourcePrintedIds": [
+        "EJ2534"
+      ]
+    },
+    {
+      "name": "Hunter Killer",
+      "definitionId": "def_989a9b4e7e0a65c5ff6889a8",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2994"
+      ],
+      "filename": "hunter-killer.png",
+      "crop": [
+        489,
+        0,
+        489,
+        734
+      ],
+      "row": 1,
+      "column": 2,
+      "artRects": [
+        [
+          23,
+          125,
+          444,
+          557
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          408
+        ],
+        [
+          161,
+          513,
+          249,
+          547
+        ],
+        [
+          248,
+          512,
+          283,
+          540
+        ],
+        [
+          280,
+          504,
+          325,
+          545
+        ],
+        [
+          119,
+          542,
+          205,
+          577
+        ],
+        [
+          204,
+          541,
+          260,
+          570
+        ],
+        [
+          259,
+          540,
+          368,
+          575
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2994"
+      ]
+    },
+    {
+      "name": "Dodona Cryptex",
+      "definitionId": "def_719fc10a8661ef33708a76a7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2993"
+      ],
+      "filename": "dodona-cryptex.png",
+      "crop": [
+        978,
+        0,
+        487,
+        734
+      ],
+      "row": 1,
+      "column": 3,
+      "artRects": [
+        [
+          127,
+          120,
+          285,
+          414
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "EJ2993"
+      ]
+    },
+    {
+      "name": "Typhonic Cryptex",
+      "definitionId": "def_ab13f26ffa9759b77c6d5ce4",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2992"
+      ],
+      "filename": "typhonic-cryptex.png",
+      "crop": [
+        1465,
+        0,
+        489,
+        734
+      ],
+      "row": 1,
+      "column": 4,
+      "artRects": [
+        [
+          140,
+          131,
+          331,
+          408
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          95,
+          398,
+          183,
+          441
+        ],
+        [
+          181,
+          387,
+          244,
+          430
+        ],
+        [
+          242,
+          401,
+          381,
+          430
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2992"
+      ]
+    },
+    {
+      "name": "Headdress of the Deep",
+      "definitionId": "def_cf018a1d5900ea664c605e48",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2977"
+      ],
+      "filename": "headdress-of-the-deep.png",
+      "crop": [
+        1954,
+        0,
+        484,
+        734
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "EJ2977"
+      ],
+      "artRects": [
+        [
+          66,
+          97,
+          403,
+          489
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          113
+        ],
+        [
+          376,
+          0,
+          484,
+          113
+        ],
+        [
+          115,
+          62,
+          175,
+          104
+        ],
+        [
+          175,
+          62,
+          250,
+          103
+        ],
+        [
+          252,
+          61,
+          351,
+          103
+        ],
+        [
+          186,
+          478,
+          287,
+          509
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Strungstring",
+      "definitionId": "def_06379eeb66c86fc0981951ca",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2976"
+      ],
+      "filename": "strungstring.png",
+      "crop": [
+        2438,
+        0,
+        480,
+        734
+      ],
+      "row": 1,
+      "column": 6,
+      "artRects": [
+        [
+          48,
+          138,
+          464,
+          398
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          335
+        ]
+      ],
+      "sourcePrintedIds": [
+        "EJ2976"
+      ]
+    },
+    {
+      "name": "Flame-Hardened Plate",
+      "definitionId": "def_83c12264edf95cc32d7e9850",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2975"
+      ],
+      "filename": "flame-hardened-plate.png",
+      "crop": [
+        2918,
+        0,
+        478,
+        734
+      ],
+      "row": 1,
+      "column": 7,
+      "artRects": [
+        [
+          77,
+          118,
+          410,
+          500
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          353,
+          186,
+          478,
+          437
+        ]
+      ],
+      "sourcePrintedIds": [
+        "EJ2975"
+      ]
+    },
+    {
+      "name": "Pantheon (Generated)",
+      "definitionId": "def_3f5f3191f528d11137f26ef5",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3000",
+        "ZJ3122"
+      ],
+      "filename": "pantheon-generated.png",
+      "crop": [
+        0,
+        734,
+        489,
+        747
+      ],
+      "row": 2,
+      "column": 1,
+      "artRects": [
+        [
+          283,
+          125,
+          475,
+          747
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          216,
+          516,
+          305,
+          551
+        ],
+        [
+          274,
+          512,
+          310,
+          555
+        ],
+        [
+          307,
+          506,
+          341,
+          538
+        ],
+        [
+          141,
+          603,
+          289,
+          632
+        ],
+        [
+          435,
+          0,
+          482,
+          747
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Pantheon' maps to catalogue name 'Pantheon (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3000"
+      ]
+    },
+    {
+      "name": "Poseidonis (Generated)",
+      "definitionId": "def_8665093a6d38f637a285a590",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2999"
+      ],
+      "filename": "poseidonis-generated.png",
+      "crop": [
+        489,
+        734,
+        489,
+        747
+      ],
+      "row": 2,
+      "column": 2,
+      "artRects": [
+        [
+          127,
+          131,
+          451,
+          496
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          142,
+          395,
+          345,
+          429
+        ],
+        [
+          65,
+          426,
+          150,
+          459
+        ],
+        [
+          148,
+          425,
+          232,
+          459
+        ],
+        [
+          232,
+          424,
+          284,
+          452
+        ],
+        [
+          282,
+          424,
+          399,
+          457
+        ],
+        [
+          398,
+          424,
+          423,
+          451
+        ],
+        [
+          58,
+          454,
+          178,
+          483
+        ],
+        [
+          176,
+          455,
+          201,
+          482
+        ],
+        [
+          199,
+          454,
+          276,
+          481
+        ],
+        [
+          274,
+          453,
+          300,
+          481
+        ],
+        [
+          298,
+          453,
+          362,
+          481
+        ],
+        [
+          360,
+          452,
+          406,
+          480
+        ],
+        [
+          406,
+          453,
+          430,
+          480
+        ],
+        [
+          116,
+          489,
+          172,
+          517
+        ],
+        [
+          167,
+          485,
+          224,
+          511
+        ],
+        [
+          221,
+          483,
+          273,
+          511
+        ],
+        [
+          272,
+          483,
+          288,
+          510
+        ],
+        [
+          287,
+          482,
+          388,
+          510
+        ],
+        [
+          385,
+          482,
+          452,
+          509
+        ],
+        [
+          0,
+          469,
+          487,
+          543
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Poseidonis' maps to catalogue name 'Poseidonis (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2999"
+      ]
+    },
+    {
+      "name": "Atlantean Gun (Generated)",
+      "definitionId": "def_ea5bc0a90a5e78195c989396",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2998"
+      ],
+      "filename": "atlantean-gun-generated.png",
+      "crop": [
+        978,
+        734,
+        487,
+        747
+      ],
+      "row": 2,
+      "column": 3,
+      "artRects": [
+        [
+          72,
+          127,
+          432,
+          505
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          480
+        ],
+        [
+          168,
+          78,
+          286,
+          135
+        ],
+        [
+          68,
+          494,
+          313,
+          533
+        ],
+        [
+          313,
+          494,
+          414,
+          533
+        ],
+        [
+          365,
+          281,
+          478,
+          408
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Atlantean Gun' maps to catalogue name 'Atlantean Gun (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2998"
+      ]
+    },
+    {
+      "name": "Damocles Crown (Generated)",
+      "definitionId": "def_df9a0ad33c1b03a0a9879b5d",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2997"
+      ],
+      "filename": "damocles-crown-generated.png",
+      "crop": [
+        1465,
+        734,
+        489,
+        747
+      ],
+      "row": 2,
+      "column": 4,
+      "artRects": [
+        [
+          79,
+          125,
+          392,
+          328
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          365,
+          186,
+          489,
+          437
+        ],
+        [
+          47,
+          320,
+          241,
+          353
+        ],
+        [
+          239,
+          321,
+          320,
+          353
+        ],
+        [
+          318,
+          321,
+          411,
+          348
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Damocles Crown' maps to catalogue name 'Damocles Crown (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2997"
+      ]
+    },
+    {
+      "name": "Bow of Artemis (Generated)",
+      "definitionId": "def_bb36fbc4c76dcfdbd153ac30",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2996"
+      ],
+      "filename": "bow-of-artemis-generated.png",
+      "crop": [
+        1954,
+        734,
+        484,
+        747
+      ],
+      "row": 2,
+      "column": 5,
+      "artRects": [
+        [
+          68,
+          120,
+          392,
+          473
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          408
+        ],
+        [
+          26,
+          465,
+          179,
+          494
+        ],
+        [
+          178,
+          465,
+          250,
+          500
+        ],
+        [
+          249,
+          465,
+          305,
+          494
+        ],
+        [
+          303,
+          465,
+          423,
+          500
+        ],
+        [
+          0,
+          430,
+          125,
+          514
+        ],
+        [
+          0,
+          469,
+          487,
+          541
+        ],
+        [
+          47,
+          423,
+          424,
+          479
+        ],
+        [
+          49,
+          383,
+          127,
+          424
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Bow of Artemis' maps to catalogue name 'Bow of Artemis (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2996"
+      ]
+    },
+    {
+      "name": "Oxygen Destroyer",
+      "definitionId": "def_7e09bd8e9a667cedcb7861b3",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2391"
+      ],
+      "filename": "oxygen-destroyer.png",
+      "crop": [
+        2438,
+        734,
+        480,
+        747
+      ],
+      "row": 2,
+      "column": 6,
+      "artRects": [
+        [
+          183,
+          11,
+          403,
+          475
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          371,
+          0,
+          480,
+          113
+        ],
+        [
+          157,
+          32,
+          317,
+          74
+        ],
+        [
+          198,
+          471,
+          252,
+          502
+        ],
+        [
+          252,
+          470,
+          281,
+          501
+        ],
+        [
+          102,
+          0,
+          342,
+          120
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2391"
+      ]
+    },
+    {
+      "name": "Big Boy Mazey",
+      "definitionId": "def_0ce835178e7b48db260deba7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2995"
+      ],
+      "filename": "big-boy-mazey.png",
+      "crop": [
+        2918,
+        734,
+        478,
+        747
+      ],
+      "row": 2,
+      "column": 7,
+      "artRects": [
+        [
+          118,
+          127,
+          444,
+          446
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          152,
+          85,
+          305,
+          147
+        ],
+        [
+          89,
+          444,
+          224,
+          476
+        ],
+        [
+          224,
+          444,
+          325,
+          483
+        ],
+        [
+          324,
+          444,
+          396,
+          475
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2995"
+      ]
+    },
+    {
+      "name": "Hermes Multitool",
+      "definitionId": "def_5b405ea2f438916a45af8615",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3006"
+      ],
+      "filename": "hermes-multitool.png",
+      "crop": [
+        0,
+        1481,
+        489,
+        763
+      ],
+      "row": 3,
+      "column": 1,
+      "artRects": [
+        [
+          75,
+          156,
+          367,
+          398
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          365,
+          186,
+          489,
+          437
+        ],
+        [
+          60,
+          395,
+          155,
+          424
+        ],
+        [
+          153,
+          394,
+          241,
+          429
+        ],
+        [
+          239,
+          393,
+          436,
+          423
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3006"
+      ]
+    },
+    {
+      "name": "Panopticon",
+      "definitionId": "def_59c002cd8d6c35e67656c62e",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3005"
+      ],
+      "filename": "panopticon.png",
+      "crop": [
+        489,
+        1481,
+        489,
+        763
+      ],
+      "row": 3,
+      "column": 2,
+      "artRects": [
+        [
+          57,
+          111,
+          192,
+          571
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          113
+        ],
+        [
+          188,
+          125,
+          284,
+          153
+        ],
+        [
+          180,
+          271,
+          243,
+          300
+        ],
+        [
+          152,
+          329,
+          215,
+          358
+        ],
+        [
+          155,
+          359,
+          229,
+          387
+        ],
+        [
+          161,
+          388,
+          233,
+          416
+        ],
+        [
+          159,
+          446,
+          206,
+          474
+        ],
+        [
+          172,
+          475,
+          245,
+          509
+        ],
+        [
+          0,
+          561,
+          482,
+          634
+        ],
+        [
+          0,
+          539,
+          487,
+          636
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3005"
+      ]
+    },
+    {
+      "name": "Midas Catcher",
+      "definitionId": "def_84493f5b70caf97062d45e6c",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3004"
+      ],
+      "filename": "midas-catcher.png",
+      "crop": [
+        978,
+        1481,
+        487,
+        763
+      ],
+      "row": 3,
+      "column": 3,
+      "artRects": [
+        [
+          120,
+          100,
+          376,
+          288
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          408
+        ],
+        [
+          362,
+          186,
+          487,
+          437
+        ],
+        [
+          128,
+          94,
+          142,
+          109
+        ],
+        [
+          150,
+          81,
+          330,
+          122
+        ],
+        [
+          118,
+          254,
+          189,
+          283
+        ],
+        [
+          193,
+          256,
+          280,
+          283
+        ],
+        [
+          116,
+          280,
+          182,
+          310
+        ],
+        [
+          199,
+          281,
+          300,
+          316
+        ],
+        [
+          340,
+          113,
+          478,
+          335
+        ],
+        [
+          0,
+          251,
+          408,
+          312
+        ],
+        [
+          0,
+          188,
+          374,
+          254
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3004"
+      ]
+    },
+    {
+      "name": "The Manticore",
+      "definitionId": "def_dd548407bb96d8eaf02dcbb6",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3003"
+      ],
+      "filename": "the-manticore.png",
+      "crop": [
+        1465,
+        1481,
+        489,
+        763
+      ],
+      "row": 3,
+      "column": 4,
+      "artRects": [
+        [
+          82,
+          97,
+          263,
+          229
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          113
+        ],
+        [
+          0,
+          113,
+          122,
+          552
+        ],
+        [
+          122,
+          74,
+          352,
+          115
+        ],
+        [
+          115,
+          207,
+          202,
+          236
+        ],
+        [
+          204,
+          208,
+          260,
+          243
+        ],
+        [
+          113,
+          195,
+          369,
+          274
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3003"
+      ]
+    },
+    {
+      "name": "Carpet of the Anemoi",
+      "definitionId": "def_bbb457f9456b790e58f631cc",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3002"
+      ],
+      "filename": "carpet-of-the-anemoi.png",
+      "crop": [
+        1954,
+        1481,
+        484,
+        763
+      ],
+      "row": 3,
+      "column": 5,
+      "artRects": [
+        [
+          48,
+          145,
+          446,
+          310
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "ZJ3002"
+      ]
+    },
+    {
+      "name": "Recycled Wishhoard",
+      "definitionId": "def_d0a0bcb9c239f813bb6c63ed",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3001"
+      ],
+      "filename": "recycled-wishhoard.png",
+      "crop": [
+        2438,
+        1481,
+        480,
+        763
+      ],
+      "row": 3,
+      "column": 6,
+      "artRects": [
+        [
+          152,
+          120,
+          408,
+          362
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          355,
+          186,
+          480,
+          437
+        ],
+        [
+          117,
+          74,
+          357,
+          142
+        ],
+        [
+          141,
+          314,
+          239,
+          371
+        ],
+        [
+          211,
+          346,
+          426,
+          541
+        ],
+        [
+          337,
+          170,
+          480,
+          539
+        ],
+        [
+          328,
+          88,
+          482,
+          448
+        ],
+        [
+          0,
+          317,
+          480,
+          374
+        ]
+      ],
+      "reviewNote": "The printed title/variant 'Recycled Wishoard' maps to catalogue name 'Recycled Wishhoard'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ3001"
+      ]
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Pantheon (Generated)",
+      "definitionId": "def_3f5f3191f528d11137f26ef5",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3000",
+        "ZJ3122"
+      ],
+      "filename": "pantheon-generated-continuation.png",
+      "crop": [
+        2918,
+        1481,
+        478,
+        763
+      ],
+      "row": 3,
+      "column": 7,
+      "reason": "Separate physical continuation card for Pantheon. The imported catalogue groups its printed ID with the primary face rather than defining a back. Retain the primary illustration and record this crop without inventing another face.",
+      "sourcePrintedIds": [
+        "ZJ3122"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,373 @@
+{
+  "batch": "epson-06102026194705",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026194705.jpg",
+  "sourceSha256": "e703f9fef1fc63e334fca411c75a87c0c8fe511c69a4b03cb5eaa5790ad631c5",
+  "sourceSize": [
+    3510,
+    2550
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    3070,
+    490,
+    32,
+    64
+  ],
+  "cards": [
+    {
+      "name": "Hammer Origin",
+      "definitionId": "def_85d2517e20426b7f0e49a74f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1832"
+      ],
+      "filename": "hammer-origin.png",
+      "crop": [
+        2551,
+        0,
+        479,
+        737
+      ],
+      "row": 1,
+      "column": 6,
+      "artRects": [
+        [
+          133,
+          119,
+          480,
+          543
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          116,
+          340,
+          213,
+          375
+        ],
+        [
+          211,
+          340,
+          238,
+          369
+        ],
+        [
+          236,
+          341,
+          306,
+          370
+        ],
+        [
+          303,
+          341,
+          329,
+          369
+        ],
+        [
+          116,
+          369,
+          239,
+          398
+        ],
+        [
+          235,
+          370,
+          263,
+          398
+        ],
+        [
+          261,
+          370,
+          325,
+          399
+        ],
+        [
+          115,
+          399,
+          292,
+          434
+        ],
+        [
+          68,
+          428,
+          152,
+          456
+        ],
+        [
+          150,
+          428,
+          250,
+          457
+        ],
+        [
+          247,
+          428,
+          269,
+          457
+        ],
+        [
+          267,
+          434,
+          351,
+          463
+        ],
+        [
+          68,
+          457,
+          144,
+          486
+        ],
+        [
+          141,
+          457,
+          223,
+          486
+        ],
+        [
+          220,
+          457,
+          269,
+          486
+        ],
+        [
+          267,
+          458,
+          385,
+          487
+        ],
+        [
+          383,
+          458,
+          445,
+          487
+        ],
+        [
+          32,
+          486,
+          158,
+          521
+        ],
+        [
+          119,
+          516,
+          187,
+          550
+        ],
+        [
+          185,
+          516,
+          308,
+          551
+        ],
+        [
+          305,
+          516,
+          336,
+          545
+        ],
+        [
+          332,
+          508,
+          380,
+          551
+        ],
+        [
+          378,
+          517,
+          401,
+          545
+        ],
+        [
+          397,
+          522,
+          445,
+          551
+        ],
+        [
+          175,
+          541,
+          191,
+          584
+        ],
+        [
+          82,
+          311,
+          316,
+          431
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ1832"
+      ]
+    },
+    {
+      "name": "Gaiaegis",
+      "definitionId": "def_f0d82943e17c1c7c7afbff76",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1847"
+      ],
+      "filename": "gaiaegis.png",
+      "crop": [
+        3030,
+        0,
+        480,
+        737
+      ],
+      "row": 1,
+      "column": 7,
+      "artRects": [
+        [
+          220,
+          82,
+          440,
+          456
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          367,
+          0,
+          480,
+          117
+        ],
+        [
+          351,
+          192,
+          480,
+          452
+        ],
+        [
+          166,
+          41,
+          338,
+          83
+        ],
+        [
+          123,
+          253,
+          221,
+          289
+        ],
+        [
+          218,
+          254,
+          240,
+          283
+        ],
+        [
+          244,
+          254,
+          308,
+          289
+        ],
+        [
+          122,
+          283,
+          232,
+          311
+        ],
+        [
+          230,
+          283,
+          291,
+          311
+        ],
+        [
+          289,
+          286,
+          312,
+          309
+        ],
+        [
+          217,
+          312,
+          297,
+          341
+        ],
+        [
+          160,
+          428,
+          252,
+          457
+        ],
+        [
+          0,
+          309,
+          349,
+          569
+        ],
+        [
+          275,
+          250,
+          357,
+          352
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ1847"
+      ]
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 1,
+      "column": 1,
+      "crop": [
+        0,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "crop": [
+        510,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "crop": [
+        1020,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "crop": [
+        1530,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "crop": [
+        2040,
+        0,
+        511,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

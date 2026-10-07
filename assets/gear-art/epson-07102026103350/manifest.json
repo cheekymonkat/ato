@@ -1,0 +1,107 @@
+{
+  "batch": "epson-07102026103350",
+  "source": "../ato_docs/ato-gear/gear/Epson_07102026103350.jpg",
+  "sourceSha256": "a7fcc809c483ab123b76b735648d3baa544034ac3de73f05037074b235d58dad",
+  "configurationSha256": "0d152713cfb7bebc55f3c6bd11303ef7697f29079e27776d0513b2c19828ebab",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Executioner Helm",
+      "definitionId": "def_96115375c1e548ba1c24a0ed",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2988",
+        "EJ2989"
+      ],
+      "filename": "executioner-helm.png",
+      "crop": [
+        3035,
+        0,
+        475,
+        737
+      ],
+      "width": 475,
+      "height": 737,
+      "preservedPixelCount": 155488,
+      "sha256": "38b3183acdd9faa16f8cca8ad6a64461c2439ab5649152f62752e54e988b0d63",
+      "sourcePrintedIds": [
+        "EJ2989"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103350/executioner-helm.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103350/grayscale/executioner-helm.png",
+        "width": 475,
+        "height": 737,
+        "artBottom": 468
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 1,
+      "column": 1,
+      "crop": [
+        0,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "crop": [
+        510,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "crop": [
+        1020,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "crop": [
+        1530,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "crop": [
+        2040,
+        0,
+        511,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "crop": [
+        2551,
+        0,
+        484,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

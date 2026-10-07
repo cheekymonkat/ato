@@ -1,0 +1,117 @@
+{
+  "batch": "epson-07102026103350",
+  "source": "../ato_docs/ato-gear/gear/Epson_07102026103350.jpg",
+  "sourceSha256": "a7fcc809c483ab123b76b735648d3baa544034ac3de73f05037074b235d58dad",
+  "sourceSize": [
+    3510,
+    2550
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    3075,
+    510,
+    16,
+    40
+  ],
+  "cards": [
+    {
+      "name": "Executioner Helm",
+      "definitionId": "def_96115375c1e548ba1c24a0ed",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2988",
+        "EJ2989"
+      ],
+      "filename": "executioner-helm.png",
+      "crop": [
+        3035,
+        0,
+        475,
+        737
+      ],
+      "row": 1,
+      "column": 7,
+      "artRects": [
+        [
+          23,
+          124,
+          475,
+          468
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [],
+      "sourcePrintedIds": [
+        "EJ2989"
+      ]
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 1,
+      "column": 1,
+      "crop": [
+        0,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "crop": [
+        510,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "crop": [
+        1020,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "crop": [
+        1530,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "crop": [
+        2040,
+        0,
+        511,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "crop": [
+        2551,
+        0,
+        484,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

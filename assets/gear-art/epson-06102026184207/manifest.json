@@ -1,0 +1,612 @@
+{
+  "batch": "epson-06102026184207",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026184207.jpg",
+  "sourceSha256": "79c47826daace0cdf72891ca9cd8dbae8c45be095e30b641da512b5533fc424f",
+  "configurationSha256": "e7f86de1a227027b5f4de5a376bfdb88f8e2f7a29f8c0da0e4a5c3c6c4f20a98",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Imperial Bow",
+      "definitionId": "def_03631ac0e6a219bd19272364",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2272",
+        "DJ2273"
+      ],
+      "filename": "imperial-bow.png",
+      "crop": [
+        0,
+        0,
+        494,
+        743
+      ],
+      "width": 494,
+      "height": 743,
+      "preservedPixelCount": 150694,
+      "sha256": "03f1d3be502d06f70cdbff81678fd922190fb920e94d06746dfb1154eeac31bd",
+      "sourcePrintedIds": [
+        "DJ2273"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/imperial-bow.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/imperial-bow.png",
+        "width": 494,
+        "height": 743,
+        "artBottom": 518
+      }
+    },
+    {
+      "name": "Persian Pillarmace",
+      "definitionId": "def_aca9dde0f8ae959b13034b37",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2269",
+        "DJ2270"
+      ],
+      "filename": "persian-pillarmace.png",
+      "crop": [
+        494,
+        0,
+        489,
+        743
+      ],
+      "width": 489,
+      "height": 743,
+      "preservedPixelCount": 139391,
+      "sha256": "08dc0af399c71bcc5a5d01d7d93088abd6221c4eb8e169a41cfc2d8cd368491e",
+      "sourcePrintedIds": [
+        "DJ2270"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/persian-pillarmace.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/persian-pillarmace.png",
+        "width": 489,
+        "height": 743,
+        "artBottom": 625
+      }
+    },
+    {
+      "name": "Auric Bank",
+      "definitionId": "def_74609088dfd8733d39d43278",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2290",
+        "DJ2291"
+      ],
+      "filename": "auric-bank.png",
+      "crop": [
+        983,
+        0,
+        486,
+        743
+      ],
+      "width": 486,
+      "height": 743,
+      "preservedPixelCount": 86674,
+      "sha256": "228babda3980f68c7ba7b997dd0ba8d2b6a533c1afd67ec472e124123e00213d",
+      "sourcePrintedIds": [
+        "DJ2291"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/auric-bank.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/auric-bank.png",
+        "width": 486,
+        "height": 743,
+        "artBottom": 469
+      }
+    },
+    {
+      "name": "Hermes Gear Prototype",
+      "definitionId": "def_8265c337d6d6a7e27d59bdc9",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2288",
+        "DJ2289"
+      ],
+      "filename": "hermes-gear-prototype.png",
+      "crop": [
+        1469,
+        0,
+        485,
+        743
+      ],
+      "width": 485,
+      "height": 743,
+      "preservedPixelCount": 103382,
+      "sha256": "5650c3a4feb8e0e0f5e6e7d6b5630e20c3095ff1c0a6bd1b51236359721950cb",
+      "sourcePrintedIds": [
+        "DJ2288"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/hermes-gear-prototype.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/hermes-gear-prototype.png",
+        "width": 485,
+        "height": 743,
+        "artBottom": 514
+      }
+    },
+    {
+      "name": "Statue Anchor",
+      "definitionId": "def_17b155a398aff1040201ac52",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2286",
+        "DJ2287"
+      ],
+      "filename": "statue-anchor.png",
+      "crop": [
+        1954,
+        0,
+        487,
+        743
+      ],
+      "width": 487,
+      "height": 743,
+      "preservedPixelCount": 65272,
+      "sha256": "eb1cb7a6aa5c085355881c0fdf7dd36adca34dcb00c3bb0042b735f6edc3d46f",
+      "sourcePrintedIds": [
+        "DJ2286"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/statue-anchor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/statue-anchor.png",
+        "width": 487,
+        "height": 743,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "Strikeback Dagger",
+      "definitionId": "def_e89b6eefc23abe958151463c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2267",
+        "DJ2268"
+      ],
+      "filename": "strikeback-dagger.png",
+      "crop": [
+        2441,
+        0,
+        482,
+        743
+      ],
+      "width": 482,
+      "height": 743,
+      "preservedPixelCount": 102316,
+      "sha256": "e7c81cb4a9fda8bbbd8711915959af0694f3f0d26e4b02dd97df03fe4e877fc3",
+      "sourcePrintedIds": [
+        "DJ2268"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/strikeback-dagger.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/strikeback-dagger.png",
+        "width": 482,
+        "height": 743,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Lamellar Preemptive Armor",
+      "definitionId": "def_35547db4b55f5affbcadb4fd",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2265",
+        "DJ2266"
+      ],
+      "filename": "lamellar-preemptive-armor.png",
+      "crop": [
+        2923,
+        0,
+        473,
+        743
+      ],
+      "width": 473,
+      "height": 743,
+      "preservedPixelCount": 93220,
+      "sha256": "e39c428fa58e492ce6901343e3bbf709bb8e13c3d79a26683dc2324f720005d4",
+      "sourcePrintedIds": [
+        "DJ2265"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/lamellar-preemptive-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/lamellar-preemptive-armor.png",
+        "width": 473,
+        "height": 743,
+        "artBottom": 428
+      }
+    },
+    {
+      "name": "Djinn Exoskeleton",
+      "definitionId": "def_5d19ba6dd90854e53f4f97f3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2373"
+      ],
+      "filename": "djinn-exoskeleton.png",
+      "crop": [
+        0,
+        743,
+        494,
+        747
+      ],
+      "width": 494,
+      "height": 747,
+      "preservedPixelCount": 125698,
+      "sha256": "4370a983983f3448184cb76abad934f3d1c26c6f44b17b2eabc3edb9dc769d8e",
+      "sourcePrintedIds": [
+        "DJ2373"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/djinn-exoskeleton.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/djinn-exoskeleton.png",
+        "width": 494,
+        "height": 747,
+        "artBottom": 586
+      }
+    },
+    {
+      "name": "Anticurse Armor",
+      "definitionId": "def_1cd003e7755070302bd693e5",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2353",
+        "DJ2354"
+      ],
+      "filename": "anticurse-armor.png",
+      "crop": [
+        494,
+        743,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 72454,
+      "sha256": "5d2e7fcaacc32f26f005f2178997542560dc263989a497f90da218cce289d431",
+      "sourcePrintedIds": [
+        "DJ2354"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/anticurse-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/anticurse-armor.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 460
+      }
+    },
+    {
+      "name": "Jarmor",
+      "definitionId": "def_19e024408b7d19f89a7ec4e9",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2351",
+        "DJ2352"
+      ],
+      "filename": "jarmor.png",
+      "crop": [
+        983,
+        743,
+        486,
+        747
+      ],
+      "width": 486,
+      "height": 747,
+      "preservedPixelCount": 92370,
+      "sha256": "9e463ba09593826c51639bd9c50f37b9a2a5ba63e5d9bd0e5c10513a806c8eb4",
+      "sourcePrintedIds": [
+        "DJ2352"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/jarmor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/jarmor.png",
+        "width": 486,
+        "height": 747,
+        "artBottom": 451
+      }
+    },
+    {
+      "name": "Basilisk Belcher",
+      "definitionId": "def_dc61842d7e205c36c1bb18c3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2335"
+      ],
+      "filename": "basilisk-belcher.png",
+      "crop": [
+        1469,
+        743,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 75990,
+      "sha256": "4bc3ee82aa1be76f7376572ed6ce6d946a01ef181c9378abd538ef350a965b07",
+      "sourcePrintedIds": [
+        "DJ2335"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/basilisk-belcher.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/basilisk-belcher.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 369
+      }
+    },
+    {
+      "name": "Bahamut Blade",
+      "definitionId": "def_d363edd310558f6e88ff16b2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2336"
+      ],
+      "filename": "bahamut-blade.png",
+      "crop": [
+        1954,
+        743,
+        487,
+        747
+      ],
+      "width": 487,
+      "height": 747,
+      "preservedPixelCount": 130414,
+      "sha256": "703a78f362ec58b198d9e8ec43cc5fb568aae28838b7c86bfaadb27a0ec1c519",
+      "sourcePrintedIds": [
+        "DJ2336"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/bahamut-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/bahamut-blade.png",
+        "width": 487,
+        "height": 747,
+        "artBottom": 525
+      }
+    },
+    {
+      "name": "Sarcophagus Greatrod",
+      "definitionId": "def_cd6b5389d7716450974abdb9",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2337"
+      ],
+      "filename": "sarcophagus-greatrod.png",
+      "crop": [
+        2441,
+        743,
+        482,
+        747
+      ],
+      "width": 482,
+      "height": 747,
+      "preservedPixelCount": 97553,
+      "sha256": "ab06ab7cf8716e93ab58a7d4f40e84c81d3c5625df3ec316e08a78aebde3dedb",
+      "sourcePrintedIds": [
+        "DJ2337"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/sarcophagus-greatrod.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/sarcophagus-greatrod.png",
+        "width": 482,
+        "height": 747,
+        "artBottom": 457
+      }
+    },
+    {
+      "name": "Hunger Longknives",
+      "definitionId": "def_0bd5bdaa5668da672deedcaa",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2271"
+      ],
+      "filename": "hunger-longknives.png",
+      "crop": [
+        2923,
+        743,
+        473,
+        747
+      ],
+      "width": 473,
+      "height": 747,
+      "preservedPixelCount": 120375,
+      "sha256": "72f62c4068306771517e565f43cd3a36e8a5a3d4768b27f4d469c539a5e0fa51",
+      "sourcePrintedIds": [
+        "DJ2271"
+      ],
+      "reviewNote": "The printed title/variant 'Huncer Longknives' maps to catalogue name 'Hunger Longknives'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/hunger-longknives.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/hunger-longknives.png",
+        "width": 473,
+        "height": 747,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Curse Mediator",
+      "definitionId": "def_208c57dafa95be0f37944730",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2296",
+        "DJ2297"
+      ],
+      "filename": "curse-mediator.png",
+      "crop": [
+        983,
+        1490,
+        486,
+        754
+      ],
+      "width": 486,
+      "height": 754,
+      "preservedPixelCount": 144379,
+      "sha256": "031bdf35e4f20efbc2e5aedcdb5ee3a6397623d416a6b4f3874dc7c647c8871d",
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/curse-mediator.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/curse-mediator.png",
+        "width": 486,
+        "height": 754,
+        "artBottom": 512
+      }
+    },
+    {
+      "name": "Wish Dampener",
+      "definitionId": "def_f5c1a381da9ba04b01214068",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2294",
+        "DJ2295"
+      ],
+      "filename": "wish-dampener.png",
+      "crop": [
+        1469,
+        1490,
+        485,
+        754
+      ],
+      "width": 485,
+      "height": 754,
+      "preservedPixelCount": 136738,
+      "sha256": "f2434c0b8550eaad009db2171220778ed55fe20a91cd3af7ebcd88cb9b4129ed",
+      "sourcePrintedIds": [
+        "DJ2294"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/wish-dampener.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/wish-dampener.png",
+        "width": 485,
+        "height": 754,
+        "artBottom": 455
+      }
+    },
+    {
+      "name": "Lampward",
+      "definitionId": "def_6a9ef89a74a90a14cb0c744c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2292",
+        "DJ2293"
+      ],
+      "filename": "lampward.png",
+      "crop": [
+        1954,
+        1490,
+        487,
+        754
+      ],
+      "width": 487,
+      "height": 754,
+      "preservedPixelCount": 100226,
+      "sha256": "62d178967f58a068b59a882086172cfb12945d1cfeb559dd417092ba45adf1bf",
+      "sourcePrintedIds": [
+        "DJ2292"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/lampward.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/lampward.png",
+        "width": 487,
+        "height": 754,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Tornado Cape",
+      "definitionId": "def_7a86f831e5686121b0c988ff",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2333",
+        "DJ2334"
+      ],
+      "filename": "tornado-cape.png",
+      "crop": [
+        2441,
+        1490,
+        482,
+        754
+      ],
+      "width": 482,
+      "height": 754,
+      "preservedPixelCount": 106556,
+      "sha256": "1ba4761ec6d9ca0461449d6eb6b40ebb5a706817b3f971e009568c342c3a0683",
+      "sourcePrintedIds": [
+        "DJ2334"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/tornado-cape.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/tornado-cape.png",
+        "width": 482,
+        "height": 754,
+        "artBottom": 410
+      }
+    },
+    {
+      "name": "Antiwish Armor",
+      "definitionId": "def_69c012d93d0d0ff2c9b42bef",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2331",
+        "DJ2332"
+      ],
+      "filename": "antiwish-armor.png",
+      "crop": [
+        2923,
+        1490,
+        473,
+        754
+      ],
+      "width": 473,
+      "height": 754,
+      "preservedPixelCount": 81755,
+      "sha256": "6b7b0116ef650d30f687d3d74776172c9ac76b95db2b80787e4b9c5f32729a20",
+      "sourcePrintedIds": [
+        "DJ2332"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026184207/antiwish-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026184207/grayscale/antiwish-armor.png",
+        "width": 473,
+        "height": 754,
+        "artBottom": 446
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 3,
+      "column": 1,
+      "crop": [
+        0,
+        1490,
+        494,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "crop": [
+        494,
+        1490,
+        489,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

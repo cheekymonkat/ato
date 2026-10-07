@@ -1,0 +1,646 @@
+{
+  "batch": "epson-06102026175715",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026175715.jpg",
+  "sourceSha256": "c71006365da52d541d6553a82f72d93ca062a51044e3ffcb9e1e8cd60cb9b9a8",
+  "configurationSha256": "661c2b920441eca1dc211b2bdbd5af3cd3cdc8ebcd6fcc16c8da078f47d45fef",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Debtguard",
+      "definitionId": "def_c216afd028a535649cdc49bb",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2323"
+      ],
+      "filename": "debtguard.png",
+      "crop": [
+        0,
+        0,
+        500,
+        738
+      ],
+      "width": 500,
+      "height": 738,
+      "preservedPixelCount": 91310,
+      "sha256": "7c43b072923944c29cd403a1d6c1915e1362728c1f019bade72dd01baa798306",
+      "sourcePrintedIds": [
+        "DJ2323"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/debtguard.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/debtguard.png",
+        "width": 500,
+        "height": 738,
+        "artBottom": 477
+      }
+    },
+    {
+      "name": "Walking Tools",
+      "definitionId": "def_e0d0966e76825760ab4a191f",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2324"
+      ],
+      "filename": "walking-tools.png",
+      "crop": [
+        500,
+        0,
+        495,
+        738
+      ],
+      "width": 495,
+      "height": 738,
+      "preservedPixelCount": 122511,
+      "sha256": "9491cd32844d2e2afa907ac67cb37371a88e4da9686d110969cdeb44c2148179",
+      "sourcePrintedIds": [
+        "DJ2324"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/walking-tools.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/walking-tools.png",
+        "width": 495,
+        "height": 738,
+        "artBottom": 491
+      }
+    },
+    {
+      "name": "Liability Flail",
+      "definitionId": "def_211297ff1d6ba126228d4d19",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2322"
+      ],
+      "filename": "liability-flail.png",
+      "crop": [
+        995,
+        0,
+        486,
+        738
+      ],
+      "width": 486,
+      "height": 738,
+      "preservedPixelCount": 36130,
+      "sha256": "e89cbecba64fe93e9b764aa24d4ed71f09079879830d94f2c24e643f39c88997",
+      "sourcePrintedIds": [
+        "DJ2322"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/liability-flail.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/liability-flail.png",
+        "width": 486,
+        "height": 738,
+        "artBottom": 600
+      }
+    },
+    {
+      "name": "Igniter Sling",
+      "definitionId": "def_83c0cd3f997816b5d69ffa95",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2299"
+      ],
+      "filename": "igniter-sling.png",
+      "crop": [
+        1481,
+        0,
+        484,
+        738
+      ],
+      "width": 484,
+      "height": 738,
+      "preservedPixelCount": 111019,
+      "sha256": "5314b222b632703d5ab1984e34f84ec9ea5abd9b9ef405b04a289b278bde16d1",
+      "sourcePrintedIds": [
+        "DJ2299"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/igniter-sling.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/igniter-sling.png",
+        "width": 484,
+        "height": 738,
+        "artBottom": 575
+      }
+    },
+    {
+      "name": "Solidifier",
+      "definitionId": "def_fa83570551f4189b9d0874b8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2302",
+        "DJ2303"
+      ],
+      "filename": "solidifier.png",
+      "crop": [
+        1965,
+        0,
+        489,
+        738
+      ],
+      "width": 489,
+      "height": 738,
+      "preservedPixelCount": 117660,
+      "sha256": "b0e87ed2c723d7ddbd6dab4d66c94857728769a915feff0b04e0e71f93ae08c4",
+      "sourcePrintedIds": [
+        "DJ2303"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/solidifier.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/solidifier.png",
+        "width": 489,
+        "height": 738,
+        "artBottom": 470
+      }
+    },
+    {
+      "name": "Stillsuit",
+      "definitionId": "def_1d7e0a98dead2fd607dec6b0",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2300",
+        "DJ2301"
+      ],
+      "filename": "stillsuit.png",
+      "crop": [
+        2454,
+        0,
+        479,
+        738
+      ],
+      "width": 479,
+      "height": 738,
+      "preservedPixelCount": 87083,
+      "sha256": "fd0cac6c9bcab6c2e3443f3fb8c621cd8cd4a98f73bcc7af92b41c32bd5c4c8b",
+      "sourcePrintedIds": [
+        "DJ2300"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/stillsuit.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/stillsuit.png",
+        "width": 479,
+        "height": 738,
+        "artBottom": 404
+      }
+    },
+    {
+      "name": "Phantom Spear",
+      "definitionId": "def_59af38a49d8ae354e73f9898",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2298"
+      ],
+      "filename": "phantom-spear.png",
+      "crop": [
+        2933,
+        0,
+        475,
+        738
+      ],
+      "width": 475,
+      "height": 738,
+      "preservedPixelCount": 132781,
+      "sha256": "fcb23f47d4ffa4adff5f905f6845b5176e4665bd612a268f8b97f03588c0d4dc",
+      "sourcePrintedIds": [
+        "DJ2298"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/phantom-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/phantom-spear.png",
+        "width": 475,
+        "height": 738,
+        "artBottom": 491
+      }
+    },
+    {
+      "name": "Hermes Ballista Gun",
+      "definitionId": "def_3d7184662ce85cc86f6a516d",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2309",
+        "DJ2310"
+      ],
+      "filename": "hermes-ballista-gun.png",
+      "crop": [
+        0,
+        738,
+        500,
+        755
+      ],
+      "width": 500,
+      "height": 755,
+      "preservedPixelCount": 93868,
+      "sha256": "538e56609b2f9f9e2c6712d9e67a80acf6bdf09f8ed84e48ecec5cfd2c6bae3a",
+      "sourcePrintedIds": [
+        "DJ2310"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/hermes-ballista-gun.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/hermes-ballista-gun.png",
+        "width": 500,
+        "height": 755,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Scales Great Bow",
+      "definitionId": "def_c1b4dc70b027d49d2447d155",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2330"
+      ],
+      "filename": "scales-great-bow.png",
+      "crop": [
+        500,
+        738,
+        495,
+        755
+      ],
+      "width": 495,
+      "height": 755,
+      "preservedPixelCount": 137810,
+      "sha256": "93f10aeac1a9589bf4ae5019c7b7bb81eaaa8f9dd05ca2e5e6394a16882f406c",
+      "sourcePrintedIds": [
+        "DJ2330"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/scales-great-bow.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/scales-great-bow.png",
+        "width": 495,
+        "height": 755,
+        "artBottom": 613
+      }
+    },
+    {
+      "name": "Nabuchobulldozer",
+      "definitionId": "def_82c3d702464a2d91e9a05ac2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2328"
+      ],
+      "filename": "nabuchobulldozer.png",
+      "crop": [
+        995,
+        738,
+        486,
+        755
+      ],
+      "width": 486,
+      "height": 755,
+      "preservedPixelCount": 129916,
+      "sha256": "7b4168f90bb66bf590c8625229d4b762fd556d71a010e282b2023b52ac618225",
+      "sourcePrintedIds": [
+        "DJ2328"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/nabuchobulldozer.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/nabuchobulldozer.png",
+        "width": 486,
+        "height": 755,
+        "artBottom": 577
+      }
+    },
+    {
+      "name": "Sword of Molten Wealth",
+      "definitionId": "def_0ee6910d8b0b863dc8dfcdcd",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2329"
+      ],
+      "filename": "sword-of-molten-wealth.png",
+      "crop": [
+        1481,
+        738,
+        484,
+        755
+      ],
+      "width": 484,
+      "height": 755,
+      "preservedPixelCount": 88611,
+      "sha256": "ca2540ce52689c856f788400ae562a7fba79fa1b27e8752dfc0772d159d5a97c",
+      "sourcePrintedIds": [
+        "DJ2329"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/sword-of-molten-wealth.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/sword-of-molten-wealth.png",
+        "width": 484,
+        "height": 755,
+        "artBottom": 448
+      }
+    },
+    {
+      "name": "Golden Armor",
+      "definitionId": "def_4d862b41d60b00208857d8f5",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2282",
+        "DJ2283"
+      ],
+      "filename": "golden-armor.png",
+      "crop": [
+        1965,
+        738,
+        489,
+        755
+      ],
+      "width": 489,
+      "height": 755,
+      "preservedPixelCount": 137594,
+      "sha256": "e53c79ef5cd1cc523c40e34fea0e3bee6a41173a9766d9b4bb61754136cae8d4",
+      "sourcePrintedIds": [
+        "DJ2282"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/golden-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/golden-armor.png",
+        "width": 489,
+        "height": 755,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Glass Armor",
+      "definitionId": "def_c4720b911601bac3959b59d4",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2280",
+        "DJ2281"
+      ],
+      "filename": "glass-armor.png",
+      "crop": [
+        2454,
+        738,
+        479,
+        755
+      ],
+      "width": 479,
+      "height": 755,
+      "preservedPixelCount": 134284,
+      "sha256": "5453475a23d86dc0a9bf759f90e6e7fa73dc800d5e085a5f60ed21b44ebb1996",
+      "sourcePrintedIds": [
+        "DJ2281"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/glass-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/glass-armor.png",
+        "width": 479,
+        "height": 755,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Golden Discus Buckler",
+      "definitionId": "def_55deab832789ae765ac988af",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2284",
+        "DJ2285"
+      ],
+      "filename": "golden-discus-buckler.png",
+      "crop": [
+        2933,
+        738,
+        475,
+        755
+      ],
+      "width": 475,
+      "height": 755,
+      "preservedPixelCount": 78628,
+      "sha256": "8fc8a5c3320243a75fa886fa2599ad45750a6b635678879217dc77afc3cff135",
+      "sourcePrintedIds": [
+        "DJ2285"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/golden-discus-buckler.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/golden-discus-buckler.png",
+        "width": 475,
+        "height": 755,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "Bloatpack",
+      "definitionId": "def_cc2cdba981f90bac6e877948",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2317",
+        "DJ2318"
+      ],
+      "filename": "bloatpack.png",
+      "crop": [
+        0,
+        1493,
+        500,
+        756
+      ],
+      "width": 500,
+      "height": 756,
+      "preservedPixelCount": 86179,
+      "sha256": "338b0eff1312aa4818ce78c4fca945478b72f20ff750923d47acac339c1abc71",
+      "sourcePrintedIds": [
+        "DJ2317"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/bloatpack.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/bloatpack.png",
+        "width": 500,
+        "height": 756,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Hermes Gear Mk. I",
+      "definitionId": "def_07fbe2577e1cfbf2bac6eee3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2319",
+        "DJ2320"
+      ],
+      "filename": "hermes-gear-mk-i.png",
+      "crop": [
+        500,
+        1493,
+        495,
+        756
+      ],
+      "width": 495,
+      "height": 756,
+      "preservedPixelCount": 149508,
+      "sha256": "bd6e8fa3694c16fe4874baeeb2accceff630f6a65b8139541c883484a2880fd0",
+      "sourcePrintedIds": [
+        "DJ2320"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/hermes-gear-mk-i.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/hermes-gear-mk-i.png",
+        "width": 495,
+        "height": 756,
+        "artBottom": 516
+      }
+    },
+    {
+      "name": "Djinn Cryptex",
+      "definitionId": "def_705a2b9484e8619586069715",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2321"
+      ],
+      "filename": "djinn-cryptex.png",
+      "crop": [
+        995,
+        1493,
+        486,
+        756
+      ],
+      "width": 486,
+      "height": 756,
+      "preservedPixelCount": 119918,
+      "sha256": "17f59ba8a68efec089f62d3216ed20af25856670e9520c7b04c4863dadeda2f6",
+      "sourcePrintedIds": [
+        "DJ2321"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/djinn-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/djinn-cryptex.png",
+        "width": 486,
+        "height": 756,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "Curse Translation Module",
+      "definitionId": "def_c4f37341f63846148b85e1d2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2315",
+        "DJ2316"
+      ],
+      "filename": "curse-translation-module.png",
+      "crop": [
+        1481,
+        1493,
+        484,
+        756
+      ],
+      "width": 484,
+      "height": 756,
+      "preservedPixelCount": 142473,
+      "sha256": "ab3bedb66a16be3e2e4c7cca04c578516beb5f1f8b9b9edd2f3edcbf0a0c33a5",
+      "sourcePrintedIds": [
+        "DJ2316"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/curse-translation-module.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/curse-translation-module.png",
+        "width": 484,
+        "height": 756,
+        "artBottom": 604
+      }
+    },
+    {
+      "name": "Glassword",
+      "definitionId": "def_2f22af762b39ada599ead4b8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2304",
+        "DJ2305"
+      ],
+      "filename": "glassword.png",
+      "crop": [
+        1965,
+        1493,
+        489,
+        756
+      ],
+      "width": 489,
+      "height": 756,
+      "preservedPixelCount": 168258,
+      "sha256": "dbd2773ff0dce1abb81d59c851796fa5f92d3b0c3226051d40074ed0c4535e6a",
+      "sourcePrintedIds": [
+        "DJ2304"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/glassword.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/glassword.png",
+        "width": 489,
+        "height": 756,
+        "artBottom": 641
+      }
+    },
+    {
+      "name": "Gilded Axe",
+      "definitionId": "def_ee3c330734442e9718cc660a",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2308"
+      ],
+      "filename": "gilded-axe.png",
+      "crop": [
+        2454,
+        1493,
+        479,
+        756
+      ],
+      "width": 479,
+      "height": 756,
+      "preservedPixelCount": 73293,
+      "sha256": "acfcabf9392ca54844008fe28ce2d29161c9fbbb782d85b95b0b60b12cb77e3c",
+      "sourcePrintedIds": [
+        "DJ2308"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/gilded-axe.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/gilded-axe.png",
+        "width": 479,
+        "height": 756,
+        "artBottom": 554
+      }
+    },
+    {
+      "name": "Golden Sword",
+      "definitionId": "def_bc999513112cfa5d24859b6c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2306",
+        "DJ2307"
+      ],
+      "filename": "golden-sword.png",
+      "crop": [
+        2933,
+        1493,
+        475,
+        756
+      ],
+      "width": 475,
+      "height": 756,
+      "preservedPixelCount": 136076,
+      "sha256": "6ea9206a2a49a0976352f30cd33dc4b0bd3b67ab128bd5a6490ddd117c6ea536",
+      "sourcePrintedIds": [
+        "DJ2306"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026175715/golden-sword.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026175715/grayscale/golden-sword.png",
+        "width": 475,
+        "height": 756,
+        "artBottom": 563
+      }
+    }
+  ],
+  "skippedCards": []
+}

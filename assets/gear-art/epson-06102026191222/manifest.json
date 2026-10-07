@@ -1,0 +1,638 @@
+{
+  "batch": "epson-06102026191222",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026191222.jpg",
+  "sourceSha256": "b125e6207c8c7407b47f24b2134a5fea258a1b87c23bca759c6e110b428960fa",
+  "configurationSha256": "d22b0792624b0a24b4af0fb5b97dd5a616c4ce9be8ef9dec3e5713cf0baaf06c",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Wishblade",
+      "definitionId": "def_152158638f09135c80895c03",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2361"
+      ],
+      "filename": "wishblade.png",
+      "crop": [
+        0,
+        0,
+        494,
+        734
+      ],
+      "width": 494,
+      "height": 734,
+      "preservedPixelCount": 105247,
+      "sha256": "0a6f68f121b24b8ba0347e7759c4e963df16163ffbe25b45b4132c125db7046f",
+      "sourcePrintedIds": [
+        "DJ2361"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/wishblade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/wishblade.png",
+        "width": 494,
+        "height": 734,
+        "artBottom": 494
+      }
+    },
+    {
+      "name": "Bihorn Lance",
+      "definitionId": "def_c2e0303b76b25e35327831c7",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2360"
+      ],
+      "filename": "bihorn-lance.png",
+      "crop": [
+        494,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 120198,
+      "sha256": "3fc97400c3b56a43409ed0e8f76d21aa7cefdc0d4b9513f8f137c7cc0ba4f953",
+      "sourcePrintedIds": [
+        "DJ2360"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/bihorn-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/bihorn-lance.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 487
+      }
+    },
+    {
+      "name": "Golden Harp",
+      "definitionId": "def_69785d51f43f0e9b2d457695",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2359"
+      ],
+      "filename": "golden-harp.png",
+      "crop": [
+        980,
+        0,
+        489,
+        734
+      ],
+      "width": 489,
+      "height": 734,
+      "preservedPixelCount": 87429,
+      "sha256": "efe4515c1415cc487947958e81a0c3118954def86548fbf9987549a7d03f4daf",
+      "sourcePrintedIds": [
+        "DJ2359"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/golden-harp.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/golden-harp.png",
+        "width": 489,
+        "height": 734,
+        "artBottom": 430
+      }
+    },
+    {
+      "name": "Auric Cloak",
+      "definitionId": "def_d0bbe6181700ed739ccce243",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2358"
+      ],
+      "filename": "auric-cloak.png",
+      "crop": [
+        1469,
+        0,
+        487,
+        734
+      ],
+      "width": 487,
+      "height": 734,
+      "preservedPixelCount": 91813,
+      "sha256": "5cc1555c14453d038f7f9d876c22327000d81859cf951e2860980d283d4b1260",
+      "sourcePrintedIds": [
+        "DJ2358"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/auric-cloak.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/auric-cloak.png",
+        "width": 487,
+        "height": 734,
+        "artBottom": 509
+      }
+    },
+    {
+      "name": "Babelian Lance",
+      "definitionId": "def_31c4c6887c1d5733dcfe8c7e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2357"
+      ],
+      "filename": "babelian-lance.png",
+      "crop": [
+        1956,
+        0,
+        487,
+        734
+      ],
+      "width": 487,
+      "height": 734,
+      "preservedPixelCount": 114352,
+      "sha256": "2c6c139a0da27529594cfcfb0e7fc11c58b41e5f5ea7654bb0d72c7aaa02f299",
+      "sourcePrintedIds": [
+        "DJ2357"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/babelian-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/babelian-lance.png",
+        "width": 487,
+        "height": 734,
+        "artBottom": 582
+      }
+    },
+    {
+      "name": "The Open Wound",
+      "definitionId": "def_fb45b3b4171a9efe88c46794",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2356"
+      ],
+      "filename": "the-open-wound.png",
+      "crop": [
+        2443,
+        0,
+        480,
+        734
+      ],
+      "width": 480,
+      "height": 734,
+      "preservedPixelCount": 124625,
+      "sha256": "d982af79db3ffc4be045003d7a3cfa3faa419051d229d8c3876e4a200f2da779",
+      "sourcePrintedIds": [
+        "DJ2356"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/the-open-wound.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/the-open-wound.png",
+        "width": 480,
+        "height": 734,
+        "artBottom": 548
+      }
+    },
+    {
+      "name": "Salt Blade",
+      "definitionId": "def_5f0a42b25508bcb509403a87",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2355"
+      ],
+      "filename": "salt-blade.png",
+      "crop": [
+        2923,
+        0,
+        473,
+        734
+      ],
+      "width": 473,
+      "height": 734,
+      "preservedPixelCount": 91302,
+      "sha256": "04e67b77dc22e3cf43acc70c6f38805c1c24b1b5dcacd7ed976f00617daa2286",
+      "sourcePrintedIds": [
+        "DJ2355"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/salt-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/salt-blade.png",
+        "width": 473,
+        "height": 734,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Outrigger Bodysuit",
+      "definitionId": "def_0c0e40b7417743029239526b",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2368"
+      ],
+      "filename": "outrigger-bodysuit.png",
+      "crop": [
+        0,
+        734,
+        494,
+        751
+      ],
+      "width": 494,
+      "height": 751,
+      "preservedPixelCount": 137450,
+      "sha256": "7d109a25557faa21862cb2e5660e013958fc21118840f3561893f5a007db1c3b",
+      "sourcePrintedIds": [
+        "DJ2368"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/outrigger-bodysuit.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/outrigger-bodysuit.png",
+        "width": 494,
+        "height": 751,
+        "artBottom": 602
+      }
+    },
+    {
+      "name": "Molten Gold Kalasiris",
+      "definitionId": "def_7f3e37cc61fb6f305807166b",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2367"
+      ],
+      "filename": "molten-gold-kalasiris.png",
+      "crop": [
+        494,
+        734,
+        486,
+        751
+      ],
+      "width": 486,
+      "height": 751,
+      "preservedPixelCount": 61676,
+      "sha256": "e5e273d8de71b1683362fad4f8908f929a02d1155b5921dc2b6c8dbd71ae79ed",
+      "sourcePrintedIds": [
+        "DJ2367"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/molten-gold-kalasiris.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/molten-gold-kalasiris.png",
+        "width": 486,
+        "height": 751,
+        "artBottom": 444
+      }
+    },
+    {
+      "name": "Shadowcleaver",
+      "definitionId": "def_4c16ceb9d2a3ecd134f669e8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2366"
+      ],
+      "filename": "shadowcleaver.png",
+      "crop": [
+        980,
+        734,
+        489,
+        751
+      ],
+      "width": 489,
+      "height": 751,
+      "preservedPixelCount": 89475,
+      "sha256": "dace8a13c52711804fe7df51137f098b01b5c702d87353e352dc1023d13f68f6",
+      "sourcePrintedIds": [
+        "DJ2366"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/shadowcleaver.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/shadowcleaver.png",
+        "width": 489,
+        "height": 751,
+        "artBottom": 417
+      }
+    },
+    {
+      "name": "Dahaka Mask",
+      "definitionId": "def_ecadb284f4a4cf59640e523e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2365"
+      ],
+      "filename": "dahaka-mask.png",
+      "crop": [
+        1469,
+        734,
+        487,
+        751
+      ],
+      "width": 487,
+      "height": 751,
+      "preservedPixelCount": 115672,
+      "sha256": "e21389c96db1769755b23d9969e13ef5ea487ed093714fcc1255efce2b33d2cc",
+      "sourcePrintedIds": [
+        "DJ2365"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/dahaka-mask.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/dahaka-mask.png",
+        "width": 487,
+        "height": 751,
+        "artBottom": 385
+      }
+    },
+    {
+      "name": "Dahaka Blade",
+      "definitionId": "def_b9afc3d064b2bd7a9e5cc86e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2364"
+      ],
+      "filename": "dahaka-blade.png",
+      "crop": [
+        1956,
+        734,
+        487,
+        751
+      ],
+      "width": 487,
+      "height": 751,
+      "preservedPixelCount": 66374,
+      "sha256": "140ca560e3e0a17959f8f71bd77d183fd81e1c794069e16a75dd935522f5051b",
+      "sourcePrintedIds": [
+        "DJ2364"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/dahaka-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/dahaka-blade.png",
+        "width": 487,
+        "height": 751,
+        "artBottom": 541
+      }
+    },
+    {
+      "name": "Pocket Wishlamp",
+      "definitionId": "def_cf9a6873aedddd670d11249a",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2363"
+      ],
+      "filename": "pocket-wishlamp.png",
+      "crop": [
+        2443,
+        734,
+        480,
+        751
+      ],
+      "width": 480,
+      "height": 751,
+      "preservedPixelCount": 104808,
+      "sha256": "6a3815aad052f78bc58088219cc233493eae2548f11fa392307921226bde42c5",
+      "sourcePrintedIds": [
+        "DJ2363"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/pocket-wishlamp.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/pocket-wishlamp.png",
+        "width": 480,
+        "height": 751,
+        "artBottom": 437
+      }
+    },
+    {
+      "name": "Djinn Cloak",
+      "definitionId": "def_d6f8bd535cc0f7108d54e853",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2362"
+      ],
+      "filename": "djinn-cloak.png",
+      "crop": [
+        2923,
+        734,
+        473,
+        751
+      ],
+      "width": 473,
+      "height": 751,
+      "preservedPixelCount": 112316,
+      "sha256": "a994b4d64cf20235c8ec825d245c96afdc1eb41e238e7ec69134a3866b80315a",
+      "sourcePrintedIds": [
+        "DJ2362"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/djinn-cloak.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/djinn-cloak.png",
+        "width": 473,
+        "height": 751,
+        "artBottom": 417
+      }
+    },
+    {
+      "name": "Lesser Saphos",
+      "definitionId": "def_ca825a078bbcb6f68be772ba",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2386"
+      ],
+      "filename": "lesser-saphos.png",
+      "crop": [
+        0,
+        1485,
+        494,
+        747
+      ],
+      "width": 494,
+      "height": 747,
+      "preservedPixelCount": 69627,
+      "sha256": "75df294622fa1b7a59b7ede3cf1c4c4d34c1cc472f228097ead26fed2594b23a",
+      "sourcePrintedIds": [
+        "DJ2386"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/lesser-saphos.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/lesser-saphos.png",
+        "width": 494,
+        "height": 747,
+        "artBottom": 340
+      }
+    },
+    {
+      "name": "Divine Lure",
+      "definitionId": "def_3683678c16e4f719a3dab528",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2384"
+      ],
+      "filename": "divine-lure.png",
+      "crop": [
+        494,
+        1485,
+        486,
+        747
+      ],
+      "width": 486,
+      "height": 747,
+      "preservedPixelCount": 90897,
+      "sha256": "b69c1304c14b1339b8245893a59b1c086eab7857fcb06552ed241a36f10e60d3",
+      "sourcePrintedIds": [
+        "DJ2384"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/divine-lure.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/divine-lure.png",
+        "width": 486,
+        "height": 747,
+        "artBottom": 448
+      }
+    },
+    {
+      "name": "Luminous Beacon",
+      "definitionId": "def_4d9aed6c5e400d3916d88829",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2383"
+      ],
+      "filename": "luminous-beacon.png",
+      "crop": [
+        980,
+        1485,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 120294,
+      "sha256": "599c68475606693fd8bede7af6422e02cf120841e8318ec6e135f3d7321cb0fe",
+      "sourcePrintedIds": [
+        "DJ2383"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/luminous-beacon.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/luminous-beacon.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 503
+      }
+    },
+    {
+      "name": "Godhand",
+      "definitionId": "def_f09fe864feb2774cbad35160",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2382"
+      ],
+      "filename": "godhand.png",
+      "crop": [
+        1469,
+        1485,
+        487,
+        747
+      ],
+      "width": 487,
+      "height": 747,
+      "preservedPixelCount": 78137,
+      "sha256": "6dc7281ef6e5577d8dc78be1e895d81d789fb604832c0daacc6e4fdfd10f12bc",
+      "sourcePrintedIds": [
+        "DJ2382"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/godhand.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/godhand.png",
+        "width": 487,
+        "height": 747,
+        "artBottom": 432
+      }
+    },
+    {
+      "name": "The Capital",
+      "definitionId": "def_b678525453d211109690a449",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2381"
+      ],
+      "filename": "the-capital.png",
+      "crop": [
+        1956,
+        1485,
+        487,
+        747
+      ],
+      "width": 487,
+      "height": 747,
+      "preservedPixelCount": 111216,
+      "sha256": "077760da0a7f66d3fd46e8a465227478083e4bbccc292ea86decdb36b51560d0",
+      "sourcePrintedIds": [
+        "DJ2381"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/the-capital.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/the-capital.png",
+        "width": 487,
+        "height": 747,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Regret",
+      "definitionId": "def_4419514caac7227c0af0270e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2380"
+      ],
+      "filename": "regret.png",
+      "crop": [
+        2443,
+        1485,
+        480,
+        747
+      ],
+      "width": 480,
+      "height": 747,
+      "preservedPixelCount": 137267,
+      "sha256": "68c18f002d2f9c0d447b0bd54106945f168bcbe71b8a876aff4c41c674681d5f",
+      "sourcePrintedIds": [
+        "DJ2380"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/regret.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/regret.png",
+        "width": 480,
+        "height": 747,
+        "artBottom": 548
+      }
+    },
+    {
+      "name": "Bailout",
+      "definitionId": "def_40a25c38f4f865954d35bd25",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2369"
+      ],
+      "filename": "bailout.png",
+      "crop": [
+        2923,
+        1485,
+        473,
+        747
+      ],
+      "width": 473,
+      "height": 747,
+      "preservedPixelCount": 110520,
+      "sha256": "a502d4632d92ebbd656671fda5ef348347e5e7f68e441849f35d6eb8d79ced2a",
+      "sourcePrintedIds": [
+        "DJ2369"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191222/bailout.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191222/grayscale/bailout.png",
+        "width": 473,
+        "height": 747,
+        "artBottom": 546
+      }
+    }
+  ],
+  "skippedCards": []
+}

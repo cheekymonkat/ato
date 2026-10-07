@@ -1,0 +1,642 @@
+{
+  "batch": "epson-06102026183814",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026183814.jpg",
+  "sourceSha256": "0ab23ae61c7d1594a3cf5ade87c43596b82a4a30998c0dcc81173b14f7c55a04",
+  "configurationSha256": "6e9ddc3c8b86e02ac78a8e2cdea7893af93d5dbc1f32400ce724dc4a44d2af91",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Wingblade",
+      "definitionId": "def_2efa7e786ace47cb9fe981b3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2338"
+      ],
+      "filename": "wingblade.png",
+      "crop": [
+        0,
+        0,
+        485,
+        733
+      ],
+      "width": 485,
+      "height": 733,
+      "preservedPixelCount": 129946,
+      "sha256": "c0430f33cf29fe7d256536e10002fad6e4ac9705a9d924cd55b2b7b266f24553",
+      "sourcePrintedIds": [
+        "DJ2338"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/wingblade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/wingblade.png",
+        "width": 485,
+        "height": 733,
+        "artBottom": 492
+      }
+    },
+    {
+      "name": "Alchemic Lance",
+      "definitionId": "def_6bcfb795ea5c858fd8992c40",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2339"
+      ],
+      "filename": "alchemic-lance.png",
+      "crop": [
+        485,
+        0,
+        483,
+        733
+      ],
+      "width": 483,
+      "height": 733,
+      "preservedPixelCount": 100866,
+      "sha256": "731b6729d3907b7cb86fe46ec23e590ff5aa7324515de0babce598eca15777fd",
+      "sourcePrintedIds": [
+        "DJ2339"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/alchemic-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/alchemic-lance.png",
+        "width": 483,
+        "height": 733,
+        "artBottom": 415
+      }
+    },
+    {
+      "name": "Trihorn Lance",
+      "definitionId": "def_cc080357584863f97eb38702",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2371"
+      ],
+      "filename": "trihorn-lance.png",
+      "crop": [
+        968,
+        0,
+        483,
+        733
+      ],
+      "width": 483,
+      "height": 733,
+      "preservedPixelCount": 115494,
+      "sha256": "93a96f84a3de11a204e1325056b6365fd0432da25b4aee28c307031d3e273457",
+      "sourcePrintedIds": [
+        "DJ2371"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/trihorn-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/trihorn-lance.png",
+        "width": 483,
+        "height": 733,
+        "artBottom": 469
+      }
+    },
+    {
+      "name": "Midagun",
+      "definitionId": "def_85498f55369df20315e72c8b",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2340"
+      ],
+      "filename": "midagun.png",
+      "crop": [
+        1451,
+        0,
+        487,
+        733
+      ],
+      "width": 487,
+      "height": 733,
+      "preservedPixelCount": 113439,
+      "sha256": "9737c6b41cf8bf6b0d618b246436ddf0a013cdca54673365066a3a06da888c20",
+      "sourcePrintedIds": [
+        "DJ2340"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/midagun.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/midagun.png",
+        "width": 487,
+        "height": 733,
+        "artBottom": 440
+      }
+    },
+    {
+      "name": "Ember Spear",
+      "definitionId": "def_8c5edc75325fcbca7e3daf55",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2239",
+        "DJ2240"
+      ],
+      "filename": "ember-spear.png",
+      "crop": [
+        1938,
+        0,
+        485,
+        733
+      ],
+      "width": 485,
+      "height": 733,
+      "preservedPixelCount": 128089,
+      "sha256": "b904b8fc8366abae8f70aa8afdbc2dd7810667b8d795ea24d2df9b614161d06d",
+      "sourcePrintedIds": [
+        "DJ2240"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/ember-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/ember-spear.png",
+        "width": 485,
+        "height": 733,
+        "artBottom": 618
+      }
+    },
+    {
+      "name": "Corona Discus",
+      "definitionId": "def_8fa94da11d7cbbc140bcdc55",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2243",
+        "DJ2244"
+      ],
+      "filename": "corona-discus.png",
+      "crop": [
+        2423,
+        0,
+        485,
+        733
+      ],
+      "width": 485,
+      "height": 733,
+      "preservedPixelCount": 118965,
+      "sha256": "2446837983ee40f314d2391e8d34196889c31b5cf218efe83fe2cb5eb27011e5",
+      "sourcePrintedIds": [
+        "DJ2243"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/corona-discus.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/corona-discus.png",
+        "width": 485,
+        "height": 733,
+        "artBottom": 460
+      }
+    },
+    {
+      "name": "Duskedges",
+      "definitionId": "def_77046ecbe50a35cbcfffd9f2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2237",
+        "DJ2238"
+      ],
+      "filename": "duskedges.png",
+      "crop": [
+        2908,
+        0,
+        476,
+        733
+      ],
+      "width": 476,
+      "height": 733,
+      "preservedPixelCount": 135767,
+      "sha256": "0c6f3e7eeb2228fceea712e36685186868c8cb7262ceaddadfb761934504f469",
+      "sourcePrintedIds": [
+        "DJ2238"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/duskedges.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/duskedges.png",
+        "width": 476,
+        "height": 733,
+        "artBottom": 492
+      }
+    },
+    {
+      "name": "Everchanging Whip",
+      "definitionId": "def_2a0b11eedc1fee1cad25c856",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2348"
+      ],
+      "filename": "everchanging-whip.png",
+      "crop": [
+        0,
+        733,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 113043,
+      "sha256": "a7f546c386f9b918add7e66e2861f77892a9d3442d2a134c5d974ce2e736df54",
+      "sourcePrintedIds": [
+        "DJ2348"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/everchanging-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/everchanging-whip.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 476
+      }
+    },
+    {
+      "name": "Wondertide Gauntlets",
+      "definitionId": "def_c3bdd2182c3275de24ec017d",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2349"
+      ],
+      "filename": "wondertide-gauntlets.png",
+      "crop": [
+        485,
+        733,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 91020,
+      "sha256": "003af7111a4e65bb1c57970d78401ec90cfbaafc5f6a2eb1df0146d2ca285fe9",
+      "sourcePrintedIds": [
+        "DJ2349"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/wondertide-gauntlets.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/wondertide-gauntlets.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 399
+      }
+    },
+    {
+      "name": "Curseblade",
+      "definitionId": "def_5fad0dce0bd280b83bce1fef",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2372"
+      ],
+      "filename": "curseblade.png",
+      "crop": [
+        968,
+        733,
+        483,
+        747
+      ],
+      "width": 483,
+      "height": 747,
+      "preservedPixelCount": 119952,
+      "sha256": "a07681b9d5572a485f919c8399bd08549ab0a016d25d01d5a7a1d6956b1ea4fc",
+      "sourcePrintedIds": [
+        "DJ2372"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/curseblade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/curseblade.png",
+        "width": 483,
+        "height": 747,
+        "artBottom": 528
+      }
+    },
+    {
+      "name": "Dahaka Predestinator",
+      "definitionId": "def_a020509c6e46cfa8ecc95927",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2377"
+      ],
+      "filename": "dahaka-predestinator.png",
+      "crop": [
+        1451,
+        733,
+        487,
+        747
+      ],
+      "width": 487,
+      "height": 747,
+      "preservedPixelCount": 153816,
+      "sha256": "0f948e070d044eb1f36b828bd9d4edfd9d82f18c79af5e1bd8330cd0070ad551",
+      "sourcePrintedIds": [
+        "DJ2377"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/dahaka-predestinator.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/dahaka-predestinator.png",
+        "width": 487,
+        "height": 747,
+        "artBottom": 528
+      }
+    },
+    {
+      "name": "Dahakandys",
+      "definitionId": "def_f4dc51db498ed747185a3984",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2374"
+      ],
+      "filename": "dahakandys.png",
+      "crop": [
+        1938,
+        733,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 122956,
+      "sha256": "5cbe5e6ca0cd822d84f972ecd469c9486a99aed5090d3bc498de8b6d6693177f",
+      "sourcePrintedIds": [
+        "DJ2374"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/dahakandys.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/dahakandys.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 537
+      }
+    },
+    {
+      "name": "Immortal Armor",
+      "definitionId": "def_47eb91001c6972235a47198d",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2375"
+      ],
+      "filename": "immortal-armor.png",
+      "crop": [
+        2423,
+        733,
+        485,
+        747
+      ],
+      "width": 485,
+      "height": 747,
+      "preservedPixelCount": 131730,
+      "sha256": "4f08a4a8b5a93710beb8350a6e00fd1690e7f6e6ae4de5372d9dabaa084b55f0",
+      "sourcePrintedIds": [
+        "DJ2375"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/immortal-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/immortal-armor.png",
+        "width": 485,
+        "height": 747,
+        "artBottom": 587
+      }
+    },
+    {
+      "name": "Immortal Cestus",
+      "definitionId": "def_d3e8282566e61ad5fe34ffb8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2376"
+      ],
+      "filename": "immortal-cestus.png",
+      "crop": [
+        2908,
+        733,
+        476,
+        747
+      ],
+      "width": 476,
+      "height": 747,
+      "preservedPixelCount": 114383,
+      "sha256": "5c7c1dafd32eda97408a3c46698fe67b186a7814e45a5a5bff676f0761653261",
+      "sourcePrintedIds": [
+        "DJ2376"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/immortal-cestus.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/immortal-cestus.png",
+        "width": 476,
+        "height": 747,
+        "artBottom": 467
+      }
+    },
+    {
+      "name": "Paraguard",
+      "definitionId": "def_193cb60db56c97ebb59f5fd4",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2274",
+        "DJ2275"
+      ],
+      "filename": "paraguard.png",
+      "crop": [
+        0,
+        1480,
+        485,
+        752
+      ],
+      "width": 485,
+      "height": 752,
+      "preservedPixelCount": 157290,
+      "sha256": "d1f5556d8a46e2cc80e785e4975acc1a25b1bf7dc3ce4011fb23f368c3fff84b",
+      "sourcePrintedIds": [
+        "DJ2274"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/paraguard.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/paraguard.png",
+        "width": 485,
+        "height": 752,
+        "artBottom": 519
+      }
+    },
+    {
+      "name": "Alchemic Catalyst",
+      "definitionId": "def_13d06a11016b195dbc27a956",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2276",
+        "DJ2277"
+      ],
+      "filename": "alchemic-catalyst.png",
+      "crop": [
+        485,
+        1480,
+        483,
+        752
+      ],
+      "width": 483,
+      "height": 752,
+      "preservedPixelCount": 178628,
+      "sha256": "b460e596fecd61bf03154fb204b3a8e2d589fd0aea99c61d83b11b4e6f4d1720",
+      "sourcePrintedIds": [
+        "DJ2277"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/alchemic-catalyst.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/alchemic-catalyst.png",
+        "width": 483,
+        "height": 752,
+        "artBottom": 564
+      }
+    },
+    {
+      "name": "Greed Limiter",
+      "definitionId": "def_2ff7a4376fe375eaf9ab2730",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2278",
+        "DJ2279"
+      ],
+      "filename": "greed-limiter.png",
+      "crop": [
+        968,
+        1480,
+        483,
+        752
+      ],
+      "width": 483,
+      "height": 752,
+      "preservedPixelCount": 146790,
+      "sha256": "8a5f11d34a51550dd19f01cec028328abe3e15dbb8a8b058a3c61af1d787e89c",
+      "sourcePrintedIds": [
+        "DJ2279"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/greed-limiter.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/greed-limiter.png",
+        "width": 483,
+        "height": 752,
+        "artBottom": 453
+      }
+    },
+    {
+      "name": "Golden Dawn",
+      "definitionId": "def_3b1c81576e9886b3e0fc1b71",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2325"
+      ],
+      "filename": "golden-dawn.png",
+      "crop": [
+        1451,
+        1480,
+        487,
+        752
+      ],
+      "width": 487,
+      "height": 752,
+      "preservedPixelCount": 110033,
+      "sha256": "f14d99c255580578b87b82aed7ab1c484ee07859064d62726c89523d435fd3a5",
+      "sourcePrintedIds": [
+        "DJ2325"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/golden-dawn.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/golden-dawn.png",
+        "width": 487,
+        "height": 752,
+        "artBottom": 539
+      }
+    },
+    {
+      "name": "Anemoi Bladeshield",
+      "definitionId": "def_50b9e94eeec0bc5643fe8142",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2327"
+      ],
+      "filename": "anemoi-bladeshield.png",
+      "crop": [
+        1938,
+        1480,
+        485,
+        752
+      ],
+      "width": 485,
+      "height": 752,
+      "preservedPixelCount": 68010,
+      "sha256": "2be8ce891f28c102e5a7dc18b51472bc15fe6db62e306986e31e5ef93ab9966b",
+      "sourcePrintedIds": [
+        "DJ2327"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/anemoi-bladeshield.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/anemoi-bladeshield.png",
+        "width": 485,
+        "height": 752,
+        "artBottom": 402
+      }
+    },
+    {
+      "name": "Gnostic Pneumas",
+      "definitionId": "def_2c78ccce297388a30cbf5e71",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2326"
+      ],
+      "filename": "gnostic-pneumas.png",
+      "crop": [
+        2423,
+        1480,
+        485,
+        752
+      ],
+      "width": 485,
+      "height": 752,
+      "preservedPixelCount": 96758,
+      "sha256": "bc1332bec2f7af868073a6c44742cd7d8ee39def34b4be2a4f4e213ad8ae438d",
+      "sourcePrintedIds": [
+        "DJ2326"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/gnostic-pneumas.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/gnostic-pneumas.png",
+        "width": 485,
+        "height": 752,
+        "artBottom": 535
+      }
+    },
+    {
+      "name": "Neverending Spear",
+      "definitionId": "def_1515ead0f72f3a82c86817fb",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2350"
+      ],
+      "filename": "neverending-spear.png",
+      "crop": [
+        2908,
+        1480,
+        476,
+        752
+      ],
+      "width": 476,
+      "height": 752,
+      "preservedPixelCount": 109025,
+      "sha256": "588c7bb93d048694bc0f2815a21eca158a64f8dfbc4261b008761801bac0c837",
+      "sourcePrintedIds": [
+        "DJ2350"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026183814/neverending-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026183814/grayscale/neverending-spear.png",
+        "width": 476,
+        "height": 752,
+        "artBottom": 564
+      }
+    }
+  ],
+  "skippedCards": []
+}

@@ -1,0 +1,126 @@
+{
+  "batch": "epson-06102026194705",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026194705.jpg",
+  "sourceSha256": "e703f9fef1fc63e334fca411c75a87c0c8fe511c69a4b03cb5eaa5790ad631c5",
+  "configurationSha256": "1012fe5e4bac3dc5be022f7ab6cd2442cf343ece3e9f34eb8c02a4d0fdd6086e",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Hammer Origin",
+      "definitionId": "def_85d2517e20426b7f0e49a74f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1832"
+      ],
+      "filename": "hammer-origin.png",
+      "crop": [
+        2551,
+        0,
+        479,
+        737
+      ],
+      "width": 479,
+      "height": 737,
+      "preservedPixelCount": 100240,
+      "sha256": "38fa16e4c0515a3aa25b4ae2b99e98ee88053b150b0ed7cdce7313198b4e94d2",
+      "sourcePrintedIds": [
+        "ZJ1832"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194705/hammer-origin.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194705/grayscale/hammer-origin.png",
+        "width": 479,
+        "height": 737,
+        "artBottom": 543
+      }
+    },
+    {
+      "name": "Gaiaegis",
+      "definitionId": "def_f0d82943e17c1c7c7afbff76",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ1847"
+      ],
+      "filename": "gaiaegis.png",
+      "crop": [
+        3030,
+        0,
+        480,
+        737
+      ],
+      "width": 480,
+      "height": 737,
+      "preservedPixelCount": 30024,
+      "sha256": "c3e74482bc99ab939eae66c8d46882295df1b5d1c2d116339de3b39d2e8eb148",
+      "sourcePrintedIds": [
+        "ZJ1847"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026194705/gaiaegis.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026194705/grayscale/gaiaegis.png",
+        "width": 480,
+        "height": 737,
+        "artBottom": 456
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 1,
+      "column": 1,
+      "crop": [
+        0,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "crop": [
+        510,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "crop": [
+        1020,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "crop": [
+        1530,
+        0,
+        510,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "crop": [
+        2040,
+        0,
+        511,
+        737
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

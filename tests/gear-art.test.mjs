@@ -36,10 +36,15 @@ function decodePng(bytes) {
 
 test('all reviewed Gear batches have named, hashed, rounded artwork and matching grayscale pixels', async () => {
   assert.deepEqual(Object.fromEntries(manifests.map(manifest => [manifest.batch ?? 'cycle2-a', manifest.cards.length])),
-    { 'cycle2-a': 21, 'epson-105748': 21, 'epson-110215': 21, 'epson-110738': 13, 'epson-185551': 21, 'epson-185936': 20,
+    { 'cycle2-a': 21,
+      'epson-06102026175715': 21, 'epson-06102026180828': 20, 'epson-06102026183814': 21, 'epson-06102026184207': 19,
+      'epson-06102026191222': 21, 'epson-06102026191619': 21, 'epson-06102026192724': 20, 'epson-06102026193136': 20,
+      'epson-06102026194506': 20, 'epson-06102026194705': 2, 'epson-07102026101950': 21, 'epson-07102026102316': 21,
+      'epson-07102026102736': 21, 'epson-07102026103125': 21, 'epson-07102026103350': 1, 'epson-07102026103838': 9,
+      'epson-105748': 21, 'epson-110215': 21, 'epson-110738': 13, 'epson-185551': 21, 'epson-185936': 20,
       'epson-210624': 21, 'epson-211018': 20, 'epson-211609': 13, 'epson-212452': 21, 'epson-213909': 21,
       'epson-214451': 21, 'epson-215042': 21, 'epson-215411': 21, 'epson-215757': 2 });
-  assert.equal(artwork.length, 278);
+  assert.equal(artwork.length, 557);
   const linked = catalogue.cards.flatMap(card => card.faces.filter(face => face.artwork));
   assert.equal(linked.length, artwork.length);
   for (const entry of artwork) {
@@ -92,7 +97,7 @@ test('new scans preserve original artwork links, disambiguate copies and link re
       for (const alias of card.sourcePrintedIds ?? []) assert.ok(card.printedIds.includes(alias));
     }
   }
-  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 278);
+  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 557);
   const chainWhips = catalogue.cards.filter(card => card.faces[0].name === 'Chain Whip');
   assert.equal(chainWhips.length, 2);
   assert.ok(chainWhips.find(card => card.printedIds.includes('BJ0874')).faces[0].artwork);
@@ -103,7 +108,8 @@ test('new scans preserve original artwork links, disambiguate copies and link re
   assert.equal(manifests.find(manifest => manifest.batch === 'epson-211018').skippedCards[0].sourcePrintedIds[0], 'BJ0920');
   for (const name of ['Metasword', 'Ladder Buckler', 'Boom Spear', 'Leg Khopesh', 'Fumeblade (Barred)',
     'Necrotic Virus', 'Umbral Virus', 'Spherecast', 'Right Talon of Doom', 'Descender',
-    'Spiral Whip', 'Spiral Mace', 'Hammer-Sword', 'Barbed Saw', 'Exoaegis', 'Sun Spear', 'Sun Disc', 'Voice of the People']) {
+    'Spiral Whip', 'Spiral Mace', 'Hammer-Sword', 'Barbed Saw', 'Exoaegis', 'Sun Spear', 'Sun Disc', 'Voice of the People',
+    'Phantom Spear', 'Lesser Saphos', 'Dahaka Blade', 'Atlantean Gun', 'Atlantean Gun (Generated)']) {
     const faces = catalogue.cards.find(card => card.faces[0].name === name).faces;
     assert.ok(faces[0].artwork); assert.ok(faces[1].artwork);
     assert.notEqual(faces[0].artwork.image, faces[1].artwork.image);
@@ -133,6 +139,22 @@ test('new scans preserve original artwork links, disambiguate copies and link re
     const cards = names.map(name => catalogue.cards.find(card => card.faces[0].name === name));
     assert.notEqual(cards[0].id, cards[1].id);
     assert.notEqual(cards[0].faces[0].artwork.image, cards[1].faces[0].artwork.image);
+  }
+});
+
+test('later-cycle scans distinguish variants and preserve duplicate and continuation evidence', () => {
+  for (const name of ['First Blade', 'Gaiaegis', 'Midashield', 'Blades of Rage', 'Slushbane']) {
+    const cards = catalogue.cards.filter(card => card.faces[0].name === name);
+    assert.equal(cards.length, 2, name);
+    assert.ok(cards.every(card => card.faces[0].artwork), name);
+    assert.notEqual(cards[0].faces[0].artwork.image, cards[1].faces[0].artwork.image);
+  }
+  const recent = manifests.filter(manifest => /^epson-0/.test(manifest.batch));
+  assert.equal(recent.flatMap(manifest => manifest.cards).length, 279);
+  const copies = recent.flatMap(manifest => manifest.skippedCards).filter(card => card.definitionId);
+  assert.equal(copies.length, 3);
+  for (const copy of copies) {
+    assert.equal(artwork.filter(card => card.definitionId === copy.definitionId && card.faceId === copy.faceId).length, 1);
   }
 });
 

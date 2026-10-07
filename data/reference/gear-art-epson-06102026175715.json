@@ -1,0 +1,1922 @@
+{
+  "batch": "epson-06102026175715",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026175715.jpg",
+  "sourceSha256": "c71006365da52d541d6553a82f72d93ca062a51044e3ffcb9e1e8cd60cb9b9a8",
+  "sourceSize": [
+    3408,
+    2250
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    2814,
+    1703,
+    32,
+    64
+  ],
+  "cards": [
+    {
+      "name": "Debtguard",
+      "definitionId": "def_c216afd028a535649cdc49bb",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2323"
+      ],
+      "filename": "debtguard.png",
+      "crop": [
+        0,
+        0,
+        500,
+        738
+      ],
+      "row": 1,
+      "column": 1,
+      "artRects": [
+        [
+          132,
+          82,
+          395,
+          477
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          391,
+          0,
+          500,
+          114
+        ],
+        [
+          375,
+          186,
+          500,
+          438
+        ],
+        [
+          96,
+          458,
+          135,
+          481
+        ],
+        [
+          133,
+          452,
+          197,
+          487
+        ],
+        [
+          195,
+          453,
+          221,
+          481
+        ],
+        [
+          220,
+          453,
+          306,
+          488
+        ],
+        [
+          304,
+          453,
+          330,
+          481
+        ],
+        [
+          328,
+          453,
+          400,
+          482
+        ],
+        [
+          109,
+          0,
+          402,
+          86
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2323"
+      ]
+    },
+    {
+      "name": "Walking Tools",
+      "definitionId": "def_e0d0966e76825760ab4a191f",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2324"
+      ],
+      "filename": "walking-tools.png",
+      "crop": [
+        500,
+        0,
+        495,
+        738
+      ],
+      "row": 1,
+      "column": 2,
+      "artRects": [
+        [
+          132,
+          98,
+          475,
+          491
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          386,
+          0,
+          495,
+          114
+        ],
+        [
+          178,
+          59,
+          308,
+          101
+        ],
+        [
+          88,
+          390,
+          187,
+          419
+        ],
+        [
+          123,
+          419,
+          194,
+          448
+        ],
+        [
+          192,
+          419,
+          218,
+          447
+        ],
+        [
+          93,
+          449,
+          136,
+          476
+        ],
+        [
+          134,
+          448,
+          232,
+          483
+        ],
+        [
+          232,
+          448,
+          256,
+          476
+        ],
+        [
+          93,
+          478,
+          137,
+          506
+        ],
+        [
+          134,
+          478,
+          215,
+          506
+        ],
+        [
+          213,
+          477,
+          286,
+          505
+        ],
+        [
+          285,
+          479,
+          306,
+          502
+        ],
+        [
+          302,
+          476,
+          335,
+          505
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2324"
+      ]
+    },
+    {
+      "name": "Liability Flail",
+      "definitionId": "def_211297ff1d6ba126228d4d19",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2322"
+      ],
+      "filename": "liability-flail.png",
+      "crop": [
+        995,
+        0,
+        486,
+        738
+      ],
+      "row": 1,
+      "column": 3,
+      "artRects": [
+        [
+          216,
+          82,
+          359,
+          418
+        ]
+      ],
+      "artPolygons": [
+        [
+          [
+            361,
+            109
+          ],
+          [
+            384,
+            109
+          ],
+          [
+            407,
+            343
+          ],
+          [
+            434,
+            582
+          ],
+          [
+            411,
+            600
+          ],
+          [
+            395,
+            454
+          ],
+          [
+            375,
+            268
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          377,
+          0,
+          486,
+          114
+        ],
+        [
+          361,
+          186,
+          486,
+          438
+        ],
+        [
+          200,
+          347,
+          222,
+          379
+        ],
+        [
+          121,
+          377,
+          226,
+          421
+        ],
+        [
+          225,
+          370,
+          287,
+          423
+        ],
+        [
+          195,
+          316,
+          348,
+          423
+        ],
+        [
+          343,
+          398,
+          479,
+          623
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2322"
+      ]
+    },
+    {
+      "name": "Igniter Sling",
+      "definitionId": "def_83c0cd3f997816b5d69ffa95",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2299"
+      ],
+      "filename": "igniter-sling.png",
+      "crop": [
+        1481,
+        0,
+        484,
+        738
+      ],
+      "row": 1,
+      "column": 4,
+      "artRects": [
+        [
+          105,
+          89,
+          432,
+          575
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          375,
+          0,
+          484,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          409
+        ],
+        [
+          359,
+          186,
+          484,
+          438
+        ],
+        [
+          150,
+          487,
+          210,
+          542
+        ],
+        [
+          209,
+          502,
+          309,
+          541
+        ],
+        [
+          309,
+          502,
+          372,
+          534
+        ],
+        [
+          60,
+          535,
+          114,
+          566
+        ],
+        [
+          114,
+          534,
+          143,
+          566
+        ],
+        [
+          143,
+          534,
+          253,
+          566
+        ],
+        [
+          252,
+          533,
+          356,
+          566
+        ],
+        [
+          355,
+          526,
+          421,
+          570
+        ],
+        [
+          67,
+          566,
+          171,
+          598
+        ],
+        [
+          170,
+          560,
+          239,
+          603
+        ],
+        [
+          239,
+          565,
+          415,
+          597
+        ],
+        [
+          98,
+          504,
+          168,
+          552
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2299"
+      ]
+    },
+    {
+      "name": "Solidifier",
+      "definitionId": "def_fa83570551f4189b9d0874b8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2302",
+        "DJ2303"
+      ],
+      "filename": "solidifier.png",
+      "crop": [
+        1965,
+        0,
+        489,
+        738
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "DJ2303"
+      ],
+      "artRects": [
+        [
+          105,
+          77,
+          423,
+          470
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          379,
+          0,
+          488,
+          114
+        ],
+        [
+          172,
+          438,
+          245,
+          476
+        ],
+        [
+          218,
+          432,
+          325,
+          485
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Stillsuit",
+      "definitionId": "def_1d7e0a98dead2fd607dec6b0",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2300",
+        "DJ2301"
+      ],
+      "filename": "stillsuit.png",
+      "crop": [
+        2454,
+        0,
+        479,
+        738
+      ],
+      "row": 1,
+      "column": 6,
+      "artRects": [
+        [
+          80,
+          98,
+          423,
+          404
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          370,
+          0,
+          479,
+          114
+        ],
+        [
+          354,
+          186,
+          479,
+          438
+        ],
+        [
+          177,
+          391,
+          294,
+          420
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2300"
+      ]
+    },
+    {
+      "name": "Phantom Spear",
+      "definitionId": "def_59af38a49d8ae354e73f9898",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2298"
+      ],
+      "filename": "phantom-spear.png",
+      "crop": [
+        2933,
+        0,
+        475,
+        738
+      ],
+      "row": 1,
+      "column": 7,
+      "artRects": [
+        [
+          23,
+          118,
+          475,
+          491
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          114,
+          123,
+          336
+        ],
+        [
+          79,
+          447,
+          167,
+          482
+        ],
+        [
+          165,
+          446,
+          284,
+          475
+        ],
+        [
+          282,
+          446,
+          308,
+          475
+        ],
+        [
+          307,
+          446,
+          379,
+          475
+        ],
+        [
+          378,
+          446,
+          404,
+          474
+        ],
+        [
+          95,
+          476,
+          161,
+          504
+        ],
+        [
+          159,
+          476,
+          184,
+          504
+        ],
+        [
+          183,
+          476,
+          269,
+          511
+        ],
+        [
+          266,
+          475,
+          293,
+          504
+        ],
+        [
+          291,
+          475,
+          388,
+          504
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2298"
+      ]
+    },
+    {
+      "name": "Hermes Ballista Gun",
+      "definitionId": "def_3d7184662ce85cc86f6a516d",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2309",
+        "DJ2310"
+      ],
+      "filename": "hermes-ballista-gun.png",
+      "crop": [
+        0,
+        738,
+        500,
+        755
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "DJ2310"
+      ],
+      "artRects": [
+        [
+          116,
+          166,
+          427,
+          484
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          114,
+          123,
+          482
+        ],
+        [
+          0,
+          404,
+          123,
+          548
+        ],
+        [
+          0,
+          477,
+          477,
+          523
+        ],
+        [
+          98,
+          425,
+          136,
+          479
+        ]
+      ]
+    },
+    {
+      "name": "Scales Great Bow",
+      "definitionId": "def_c1b4dc70b027d49d2447d155",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2330"
+      ],
+      "filename": "scales-great-bow.png",
+      "crop": [
+        500,
+        738,
+        495,
+        755
+      ],
+      "row": 2,
+      "column": 2,
+      "artRects": [
+        [
+          75,
+          95,
+          463,
+          613
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          386,
+          0,
+          495,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          409
+        ],
+        [
+          35,
+          426,
+          130,
+          464
+        ],
+        [
+          135,
+          424,
+          235,
+          463
+        ],
+        [
+          235,
+          423,
+          292,
+          455
+        ],
+        [
+          35,
+          457,
+          89,
+          488
+        ],
+        [
+          89,
+          456,
+          112,
+          488
+        ],
+        [
+          118,
+          456,
+          217,
+          494
+        ],
+        [
+          218,
+          456,
+          235,
+          486
+        ],
+        [
+          245,
+          455,
+          350,
+          487
+        ],
+        [
+          35,
+          488,
+          206,
+          520
+        ],
+        [
+          35,
+          519,
+          132,
+          551
+        ],
+        [
+          138,
+          519,
+          181,
+          549
+        ],
+        [
+          179,
+          518,
+          301,
+          556
+        ],
+        [
+          36,
+          550,
+          152,
+          582
+        ],
+        [
+          153,
+          549,
+          172,
+          580
+        ],
+        [
+          181,
+          548,
+          294,
+          588
+        ],
+        [
+          293,
+          547,
+          315,
+          579
+        ],
+        [
+          36,
+          581,
+          153,
+          613
+        ],
+        [
+          151,
+          580,
+          175,
+          612
+        ],
+        [
+          181,
+          580,
+          294,
+          619
+        ],
+        [
+          293,
+          579,
+          316,
+          610
+        ],
+        [
+          109,
+          0,
+          418,
+          109
+        ],
+        [
+          0,
+          541,
+          339,
+          657
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2330"
+      ]
+    },
+    {
+      "name": "Nabuchobulldozer",
+      "definitionId": "def_82c3d702464a2d91e9a05ac2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2328"
+      ],
+      "filename": "nabuchobulldozer.png",
+      "crop": [
+        995,
+        738,
+        486,
+        755
+      ],
+      "row": 2,
+      "column": 3,
+      "artRects": [
+        [
+          114,
+          93,
+          463,
+          577
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          377,
+          0,
+          486,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          409
+        ],
+        [
+          106,
+          464,
+          170,
+          492
+        ],
+        [
+          166,
+          465,
+          191,
+          492
+        ],
+        [
+          188,
+          464,
+          247,
+          492
+        ],
+        [
+          244,
+          464,
+          344,
+          492
+        ],
+        [
+          339,
+          464,
+          364,
+          492
+        ],
+        [
+          73,
+          497,
+          118,
+          524
+        ],
+        [
+          116,
+          497,
+          189,
+          530
+        ],
+        [
+          186,
+          496,
+          266,
+          524
+        ],
+        [
+          263,
+          496,
+          383,
+          530
+        ],
+        [
+          73,
+          529,
+          137,
+          556
+        ],
+        [
+          135,
+          529,
+          202,
+          556
+        ],
+        [
+          199,
+          528,
+          225,
+          556
+        ],
+        [
+          0,
+          504,
+          475,
+          627
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2328"
+      ]
+    },
+    {
+      "name": "Sword of Molten Wealth",
+      "definitionId": "def_0ee6910d8b0b863dc8dfcdcd",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2329"
+      ],
+      "filename": "sword-of-molten-wealth.png",
+      "crop": [
+        1481,
+        738,
+        484,
+        755
+      ],
+      "row": 2,
+      "column": 4,
+      "artRects": [
+        [
+          73,
+          89,
+          470,
+          448
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          375,
+          0,
+          484,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          336
+        ],
+        [
+          359,
+          186,
+          484,
+          438
+        ],
+        [
+          116,
+          72,
+          239,
+          106
+        ],
+        [
+          238,
+          71,
+          357,
+          106
+        ],
+        [
+          34,
+          427,
+          118,
+          462
+        ],
+        [
+          114,
+          427,
+          160,
+          455
+        ],
+        [
+          157,
+          426,
+          182,
+          455
+        ],
+        [
+          179,
+          426,
+          260,
+          461
+        ],
+        [
+          256,
+          426,
+          282,
+          454
+        ],
+        [
+          279,
+          426,
+          351,
+          454
+        ],
+        [
+          347,
+          426,
+          381,
+          454
+        ],
+        [
+          381,
+          407,
+          422,
+          454
+        ],
+        [
+          420,
+          426,
+          445,
+          453
+        ],
+        [
+          95,
+          0,
+          377,
+          105
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2329"
+      ]
+    },
+    {
+      "name": "Golden Armor",
+      "definitionId": "def_4d862b41d60b00208857d8f5",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2282",
+        "DJ2283"
+      ],
+      "filename": "golden-armor.png",
+      "crop": [
+        1965,
+        738,
+        489,
+        755
+      ],
+      "row": 2,
+      "column": 5,
+      "artRects": [
+        [
+          73,
+          73,
+          389,
+          550
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          379,
+          0,
+          488,
+          114
+        ],
+        [
+          364,
+          186,
+          488,
+          438
+        ],
+        [
+          102,
+          0,
+          384,
+          89
+        ],
+        [
+          0,
+          548,
+          477,
+          579
+        ]
+      ],
+      "sourcePrintedIds": [
+        "DJ2282"
+      ]
+    },
+    {
+      "name": "Glass Armor",
+      "definitionId": "def_c4720b911601bac3959b59d4",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2280",
+        "DJ2281"
+      ],
+      "filename": "glass-armor.png",
+      "crop": [
+        2454,
+        738,
+        479,
+        755
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "DJ2281"
+      ],
+      "artRects": [
+        [
+          55,
+          102,
+          359,
+          550
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          354,
+          186,
+          479,
+          438
+        ]
+      ]
+    },
+    {
+      "name": "Golden Discus Buckler",
+      "definitionId": "def_55deab832789ae765ac988af",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2284",
+        "DJ2285"
+      ],
+      "filename": "golden-discus-buckler.png",
+      "crop": [
+        2933,
+        738,
+        475,
+        755
+      ],
+      "row": 2,
+      "column": 7,
+      "artRects": [
+        [
+          130,
+          109,
+          454,
+          432
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          366,
+          0,
+          475,
+          114
+        ],
+        [
+          350,
+          186,
+          475,
+          438
+        ]
+      ],
+      "sourcePrintedIds": [
+        "DJ2285"
+      ]
+    },
+    {
+      "name": "Bloatpack",
+      "definitionId": "def_cc2cdba981f90bac6e877948",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2317",
+        "DJ2318"
+      ],
+      "filename": "bloatpack.png",
+      "crop": [
+        0,
+        1493,
+        500,
+        756
+      ],
+      "row": 3,
+      "column": 1,
+      "artRects": [
+        [
+          75,
+          105,
+          336,
+          452
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          156,
+          128,
+          190,
+          185
+        ],
+        [
+          0,
+          448,
+          420,
+          495
+        ],
+        [
+          50,
+          423,
+          119,
+          474
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2317"
+      ]
+    },
+    {
+      "name": "Hermes Gear Mk. I",
+      "definitionId": "def_07fbe2577e1cfbf2bac6eee3",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2319",
+        "DJ2320"
+      ],
+      "filename": "hermes-gear-mk-i.png",
+      "crop": [
+        500,
+        1493,
+        495,
+        756
+      ],
+      "row": 3,
+      "column": 2,
+      "artRects": [
+        [
+          59,
+          136,
+          459,
+          516
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          123,
+          512,
+          195,
+          543
+        ],
+        [
+          193,
+          502,
+          351,
+          542
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2320"
+      ]
+    },
+    {
+      "name": "Djinn Cryptex",
+      "definitionId": "def_705a2b9484e8619586069715",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2321"
+      ],
+      "filename": "djinn-cryptex.png",
+      "crop": [
+        995,
+        1493,
+        486,
+        756
+      ],
+      "row": 3,
+      "column": 3,
+      "sourcePrintedIds": [
+        "DJ2321"
+      ],
+      "artRects": [
+        [
+          52,
+          118,
+          445,
+          432
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          64,
+          423,
+          165,
+          461
+        ],
+        [
+          164,
+          422,
+          236,
+          453
+        ],
+        [
+          234,
+          420,
+          391,
+          452
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Curse Translation Module",
+      "definitionId": "def_c4f37341f63846148b85e1d2",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2315",
+        "DJ2316"
+      ],
+      "filename": "curse-translation-module.png",
+      "crop": [
+        1481,
+        1493,
+        484,
+        756
+      ],
+      "row": 3,
+      "column": 4,
+      "artRects": [
+        [
+          25,
+          120,
+          370,
+          604
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          359,
+          186,
+          484,
+          438
+        ],
+        [
+          0,
+          600,
+          477,
+          643
+        ],
+        [
+          0,
+          541,
+          482,
+          641
+        ]
+      ],
+      "sourcePrintedIds": [
+        "DJ2316"
+      ]
+    },
+    {
+      "name": "Glassword",
+      "definitionId": "def_2f22af762b39ada599ead4b8",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2304",
+        "DJ2305"
+      ],
+      "filename": "glassword.png",
+      "crop": [
+        1965,
+        1493,
+        489,
+        756
+      ],
+      "row": 3,
+      "column": 5,
+      "artRects": [
+        [
+          18,
+          34,
+          463,
+          641
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          379,
+          0,
+          488,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          482
+        ],
+        [
+          117,
+          23,
+          357,
+          65
+        ],
+        [
+          182,
+          455,
+          320,
+          487
+        ],
+        [
+          319,
+          455,
+          348,
+          486
+        ],
+        [
+          347,
+          455,
+          420,
+          494
+        ],
+        [
+          420,
+          454,
+          449,
+          486
+        ],
+        [
+          252,
+          486,
+          351,
+          525
+        ],
+        [
+          351,
+          486,
+          380,
+          517
+        ],
+        [
+          204,
+          513,
+          271,
+          556
+        ],
+        [
+          269,
+          520,
+          338,
+          552
+        ],
+        [
+          336,
+          520,
+          427,
+          552
+        ],
+        [
+          189,
+          552,
+          246,
+          584
+        ],
+        [
+          244,
+          552,
+          320,
+          583
+        ],
+        [
+          318,
+          551,
+          390,
+          583
+        ],
+        [
+          388,
+          551,
+          436,
+          583
+        ],
+        [
+          174,
+          583,
+          267,
+          620
+        ],
+        [
+          266,
+          583,
+          363,
+          615
+        ],
+        [
+          362,
+          583,
+          415,
+          614
+        ],
+        [
+          413,
+          578,
+          450,
+          619
+        ],
+        [
+          0,
+          114,
+          123,
+          484
+        ],
+        [
+          114,
+          477,
+          220,
+          520
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2304"
+      ]
+    },
+    {
+      "name": "Gilded Axe",
+      "definitionId": "def_ee3c330734442e9718cc660a",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2308"
+      ],
+      "filename": "gilded-axe.png",
+      "crop": [
+        2454,
+        1493,
+        479,
+        756
+      ],
+      "row": 3,
+      "column": 6,
+      "artRects": [
+        [
+          73,
+          86,
+          304,
+          554
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          409
+        ],
+        [
+          25,
+          448,
+          123,
+          485
+        ],
+        [
+          122,
+          447,
+          228,
+          478
+        ],
+        [
+          25,
+          478,
+          121,
+          516
+        ],
+        [
+          120,
+          478,
+          148,
+          509
+        ],
+        [
+          148,
+          478,
+          200,
+          509
+        ],
+        [
+          200,
+          478,
+          228,
+          509
+        ],
+        [
+          26,
+          510,
+          78,
+          540
+        ],
+        [
+          77,
+          510,
+          149,
+          540
+        ],
+        [
+          148,
+          510,
+          201,
+          540
+        ],
+        [
+          201,
+          509,
+          229,
+          540
+        ],
+        [
+          26,
+          541,
+          78,
+          572
+        ],
+        [
+          75,
+          541,
+          144,
+          572
+        ],
+        [
+          141,
+          541,
+          200,
+          572
+        ],
+        [
+          199,
+          541,
+          217,
+          571
+        ],
+        [
+          217,
+          540,
+          293,
+          572
+        ],
+        [
+          289,
+          541,
+          366,
+          571
+        ],
+        [
+          0,
+          416,
+          125,
+          468
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2308"
+      ]
+    },
+    {
+      "name": "Golden Sword",
+      "definitionId": "def_bc999513112cfa5d24859b6c",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2306",
+        "DJ2307"
+      ],
+      "filename": "golden-sword.png",
+      "crop": [
+        2933,
+        1493,
+        475,
+        756
+      ],
+      "row": 3,
+      "column": 7,
+      "sourcePrintedIds": [
+        "DJ2306"
+      ],
+      "artRects": [
+        [
+          25,
+          66,
+          468,
+          563
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          109,
+          114
+        ],
+        [
+          366,
+          0,
+          475,
+          114
+        ],
+        [
+          0,
+          114,
+          123,
+          409
+        ],
+        [
+          350,
+          186,
+          475,
+          438
+        ],
+        [
+          163,
+          62,
+          318,
+          104
+        ],
+        [
+          35,
+          518,
+          88,
+          573
+        ],
+        [
+          88,
+          541,
+          116,
+          572
+        ],
+        [
+          115,
+          540,
+          226,
+          580
+        ],
+        [
+          226,
+          540,
+          253,
+          571
+        ],
+        [
+          252,
+          540,
+          337,
+          571
+        ],
+        [
+          335,
+          539,
+          425,
+          571
+        ],
+        [
+          426,
+          539,
+          444,
+          570
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    }
+  ],
+  "skippedCards": []
+}

@@ -1,0 +1,342 @@
+{
+  "batch": "epson-07102026103838",
+  "source": "../ato_docs/ato-gear/gear/Epson_07102026103838.jpg",
+  "sourceSha256": "75e3a2cb5b8656d3714259e3ffef098e777de49eca4d3102e58688a426118041",
+  "configurationSha256": "50cbe0132a4189130039c101ec1f1ffe5f01115b5adf0f385141934d9f421895",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Consecrated Lance",
+      "definitionId": "def_ced6f45bde9cc8af1cfdac0b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2918",
+        "EJ2919"
+      ],
+      "filename": "consecrated-lance.png",
+      "crop": [
+        0,
+        0,
+        491,
+        740
+      ],
+      "width": 491,
+      "height": 740,
+      "preservedPixelCount": 101696,
+      "sha256": "899e89181cfa7eb82a215e4d6966bb09a1b75d2516aa64a0537a006407d37af6",
+      "sourcePrintedIds": [
+        "EJ2919"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/consecrated-lance.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/consecrated-lance.png",
+        "width": 491,
+        "height": 740,
+        "artBottom": 559
+      }
+    },
+    {
+      "name": "Illuminating Blinder",
+      "definitionId": "def_f2ed082259d414e4bccbcd43",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2920",
+        "EJ2921"
+      ],
+      "filename": "illuminating-blinder.png",
+      "crop": [
+        491,
+        0,
+        494,
+        740
+      ],
+      "width": 494,
+      "height": 740,
+      "preservedPixelCount": 53952,
+      "sha256": "943d5e671c80e188ab8390d2e65745e188814b17028640cefff3ce6472ebdfa6",
+      "sourcePrintedIds": [
+        "EJ2921"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/illuminating-blinder.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/illuminating-blinder.png",
+        "width": 494,
+        "height": 740,
+        "artBottom": 378
+      }
+    },
+    {
+      "name": "Veristus",
+      "definitionId": "def_d9a0e13f569631123aadace7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2922",
+        "EJ2923"
+      ],
+      "filename": "veristus.png",
+      "crop": [
+        985,
+        0,
+        487,
+        740
+      ],
+      "width": 487,
+      "height": 740,
+      "preservedPixelCount": 91495,
+      "sha256": "d0db2ff4e5666433c19374132ecc901456f10cb84fa241c433566305ef7c6eae",
+      "sourcePrintedIds": [
+        "EJ2923"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/veristus.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/veristus.png",
+        "width": 487,
+        "height": 740,
+        "artBottom": 396
+      }
+    },
+    {
+      "name": "Olympian Harpoon",
+      "definitionId": "def_e8e3395cf2d54330b07a526a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2924",
+        "EJ2925"
+      ],
+      "filename": "olympian-harpoon.png",
+      "crop": [
+        1472,
+        0,
+        484,
+        740
+      ],
+      "width": 484,
+      "height": 740,
+      "preservedPixelCount": 92943,
+      "sha256": "7f36cd7cba9a4b8e8bf1c7ed5cfe8841e3cec53fc79cd411fda94b40b91a4309",
+      "sourcePrintedIds": [
+        "EJ2925"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/olympian-harpoon.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/olympian-harpoon.png",
+        "width": 484,
+        "height": 740,
+        "artBottom": 389
+      }
+    },
+    {
+      "name": "Transcendance Wreath",
+      "definitionId": "def_5d864831d7121e18170e5e73",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2910",
+        "EJ2911"
+      ],
+      "filename": "transcendance-wreath.png",
+      "crop": [
+        1956,
+        0,
+        485,
+        740
+      ],
+      "width": 485,
+      "height": 740,
+      "preservedPixelCount": 117480,
+      "sha256": "6004d2a835ed3fb399103e8c6622cd35492a4814342571db2a2ec59ac74ab5c7",
+      "sourcePrintedIds": [
+        "EJ2911"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/transcendance-wreath.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/transcendance-wreath.png",
+        "width": 485,
+        "height": 740,
+        "artBottom": 478
+      }
+    },
+    {
+      "name": "Chain Kusarigama",
+      "definitionId": "def_2d9d539d590bf71a41386ee2",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2908",
+        "EJ2909"
+      ],
+      "filename": "chain-kusarigama.png",
+      "crop": [
+        2441,
+        0,
+        482,
+        740
+      ],
+      "width": 482,
+      "height": 740,
+      "preservedPixelCount": 79095,
+      "sha256": "5a1a0d2f8b8c30597416d74b02b0610b02c082bfa2a1688f1b397b4cf5e48c91",
+      "sourcePrintedIds": [
+        "EJ2909"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/chain-kusarigama.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/chain-kusarigama.png",
+        "width": 482,
+        "height": 740,
+        "artBottom": 435
+      }
+    },
+    {
+      "name": "Penitent Whip",
+      "definitionId": "def_65f269f3e24349a8ceb48734",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2912",
+        "EJ2913"
+      ],
+      "filename": "penitent-whip.png",
+      "crop": [
+        2923,
+        0,
+        473,
+        740
+      ],
+      "width": 473,
+      "height": 740,
+      "preservedPixelCount": 74626,
+      "sha256": "d8b0aa5d39e9c7818b3f6dc9cee79abe05fb2b218cf806c5f178637e5a56f05f",
+      "sourcePrintedIds": [
+        "EJ2913"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/penitent-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/penitent-whip.png",
+        "width": 473,
+        "height": 740,
+        "artBottom": 439
+      }
+    },
+    {
+      "name": "Faith Kopis",
+      "definitionId": "def_18e18f8cccd4d3fe715047a9",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2914",
+        "EJ2915"
+      ],
+      "filename": "faith-kopis.png",
+      "crop": [
+        2441,
+        740,
+        482,
+        754
+      ],
+      "width": 482,
+      "height": 754,
+      "preservedPixelCount": 102638,
+      "sha256": "0fcb284fbbd070a70f613ce1fb5827e58087586cdbe1303795c9809ec43c5f4c",
+      "sourcePrintedIds": [
+        "EJ2915"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/faith-kopis.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/faith-kopis.png",
+        "width": 482,
+        "height": 754,
+        "artBottom": 448
+      }
+    },
+    {
+      "name": "Cowl of Shame",
+      "definitionId": "def_3ef0639865bca42c32b456d8",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2916",
+        "EJ2917"
+      ],
+      "filename": "cowl-of-shame.png",
+      "crop": [
+        2923,
+        740,
+        473,
+        754
+      ],
+      "width": 473,
+      "height": 754,
+      "preservedPixelCount": 61842,
+      "sha256": "003105332ddd5ea5ead3053984267e26f70806d4c95b6f13994e9bb135cb3a05",
+      "sourcePrintedIds": [
+        "EJ2916"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026103838/cowl-of-shame.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026103838/grayscale/cowl-of-shame.png",
+        "width": 473,
+        "height": 754,
+        "artBottom": 421
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 2,
+      "column": 1,
+      "crop": [
+        0,
+        740,
+        491,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "crop": [
+        491,
+        740,
+        494,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "crop": [
+        985,
+        740,
+        487,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "crop": [
+        1472,
+        740,
+        484,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "crop": [
+        1956,
+        740,
+        485,
+        754
+      ],
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

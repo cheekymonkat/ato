@@ -1,0 +1,656 @@
+{
+  "batch": "epson-07102026102736",
+  "source": "../ato_docs/ato-gear/gear/Epson_07102026102736.jpg",
+  "sourceSha256": "d17286044f68d98f7d6acc7830f569f77eaaf9e175cad16ccc773fa24ceef564",
+  "configurationSha256": "aacbd3e0ab505ff0f706a8c72ff1188d5bfccd835ae810a567348e941cb57393",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Portable Hardlight Generator",
+      "definitionId": "def_cf69db4afd3b2d9cc8305b28",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2894",
+        "EJ2895"
+      ],
+      "filename": "portable-hardlight-generator.png",
+      "crop": [
+        0,
+        0,
+        498,
+        704
+      ],
+      "width": 498,
+      "height": 704,
+      "preservedPixelCount": 99520,
+      "sha256": "f4caefcdd9df3644cf05c689766d5d97f1db13ca0e1d913210cf335e661b5fd8",
+      "sourcePrintedIds": [
+        "EJ2895"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/portable-hardlight-generator.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/portable-hardlight-generator.png",
+        "width": 498,
+        "height": 704,
+        "artBottom": 454
+      }
+    },
+    {
+      "name": "Lightwall Shield",
+      "definitionId": "def_0e489c9fefd672991c2b1bdb",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2880",
+        "EJ2881"
+      ],
+      "filename": "lightwall-shield.png",
+      "crop": [
+        498,
+        0,
+        490,
+        704
+      ],
+      "width": 490,
+      "height": 704,
+      "preservedPixelCount": 76383,
+      "sha256": "b4a902157c07614889ef3e7e5cbf322f565da0fa14af43a58e08eb51ae233aa4",
+      "sourcePrintedIds": [
+        "EJ2881"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/lightwall-shield.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/lightwall-shield.png",
+        "width": 490,
+        "height": 704,
+        "artBottom": 438
+      }
+    },
+    {
+      "name": "Oscillating Spear",
+      "definitionId": "def_9af523105b99b515b5187146",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2878",
+        "EJ2879"
+      ],
+      "filename": "oscillating-spear.png",
+      "crop": [
+        988,
+        0,
+        489,
+        704
+      ],
+      "width": 489,
+      "height": 704,
+      "preservedPixelCount": 97701,
+      "sha256": "96ad768c8092d08381dd633f438ad6fd8aa5b374511ea9eb751b0e13038a9778",
+      "sourcePrintedIds": [
+        "EJ2879"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/oscillating-spear.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/oscillating-spear.png",
+        "width": 489,
+        "height": 704,
+        "artBottom": 468
+      }
+    },
+    {
+      "name": "Subreme Harpoon",
+      "definitionId": "def_77cbba5ebacba4ab5089a46d",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2882",
+        "EJ2883"
+      ],
+      "filename": "subreme-harpoon.png",
+      "crop": [
+        1477,
+        0,
+        493,
+        704
+      ],
+      "width": 493,
+      "height": 704,
+      "preservedPixelCount": 136665,
+      "sha256": "170fedf08d403d7ff88b74cd181b165577e00aaf093440103b8a85f625a9e5cc",
+      "sourcePrintedIds": [
+        "EJ2883"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/subreme-harpoon.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/subreme-harpoon.png",
+        "width": 493,
+        "height": 704,
+        "artBottom": 529
+      }
+    },
+    {
+      "name": "Atlantean Spada",
+      "definitionId": "def_9a8cb16d63ebdc2bee3257d5",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2876",
+        "EJ2877"
+      ],
+      "filename": "atlantean-spada.png",
+      "crop": [
+        1970,
+        0,
+        493,
+        704
+      ],
+      "width": 493,
+      "height": 704,
+      "preservedPixelCount": 127859,
+      "sha256": "bfd657511f79f23d106971b2571af4e148c6294deb303cfeda803863594b4961",
+      "sourcePrintedIds": [
+        "EJ2877"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/atlantean-spada.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/atlantean-spada.png",
+        "width": 493,
+        "height": 704,
+        "artBottom": 550
+      }
+    },
+    {
+      "name": "Coral Armor",
+      "definitionId": "def_c2718fe1305e2c2a50246466",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2888",
+        "EJ2889"
+      ],
+      "filename": "coral-armor.png",
+      "crop": [
+        2463,
+        0,
+        486,
+        704
+      ],
+      "width": 486,
+      "height": 704,
+      "preservedPixelCount": 114756,
+      "sha256": "08a9e4c3a411eae3e164429cd0c059659fa8d57c34686afebc8585d0e6a93593",
+      "sourcePrintedIds": [
+        "EJ2889"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/coral-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/coral-armor.png",
+        "width": 486,
+        "height": 704,
+        "artBottom": 500
+      }
+    },
+    {
+      "name": "Black Vent Camouflage",
+      "definitionId": "def_1bc51f977aa00c1d26c662c2",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2886",
+        "EJ2887"
+      ],
+      "filename": "black-vent-camouflage.png",
+      "crop": [
+        2949,
+        0,
+        459,
+        704
+      ],
+      "width": 459,
+      "height": 704,
+      "preservedPixelCount": 101633,
+      "sha256": "01989a9146bd0e1fa6ce6cf2cf21f86140f1173b76a45abe119466135420947b",
+      "sourcePrintedIds": [
+        "EJ2887"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/black-vent-camouflage.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/black-vent-camouflage.png",
+        "width": 459,
+        "height": 704,
+        "artBottom": 536
+      }
+    },
+    {
+      "name": "Eys-Onmes",
+      "definitionId": "def_e31f4c5d9ce778238b4db8bf",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2906",
+        "EJ2907"
+      ],
+      "filename": "eys-onmes.png",
+      "crop": [
+        0,
+        704,
+        498,
+        752
+      ],
+      "width": 498,
+      "height": 752,
+      "preservedPixelCount": 82320,
+      "sha256": "597bd462dabb478a640d93d60b71a1463b48d6d5ba7ed2ac8a0ae2f96733993a",
+      "sourcePrintedIds": [
+        "EJ2907"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/eys-onmes.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/eys-onmes.png",
+        "width": 498,
+        "height": 752,
+        "artBottom": 484
+      }
+    },
+    {
+      "name": "Pearlstalk Mace",
+      "definitionId": "def_817a5f7d52f195daa4a56d4c",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2926",
+        "EJ2927"
+      ],
+      "filename": "pearlstalk-mace.png",
+      "crop": [
+        498,
+        704,
+        490,
+        752
+      ],
+      "width": 490,
+      "height": 752,
+      "preservedPixelCount": 130799,
+      "sha256": "18cc28442442f8ff6bf027b621b417ad62e888da71a710713b3c421b8a516500",
+      "sourcePrintedIds": [
+        "EJ2927"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/pearlstalk-mace.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/pearlstalk-mace.png",
+        "width": 490,
+        "height": 752,
+        "artBottom": 563
+      }
+    },
+    {
+      "name": "Squirming Knives",
+      "definitionId": "def_f50dfbc2cd430e6552121682",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2930",
+        "EJ2931"
+      ],
+      "filename": "squirming-knives.png",
+      "crop": [
+        988,
+        704,
+        489,
+        752
+      ],
+      "width": 489,
+      "height": 752,
+      "preservedPixelCount": 142466,
+      "sha256": "dafe4c8ba4e8d663824ec63925e8204fb3291dca67a6fdbd61c088cab490ffce",
+      "sourcePrintedIds": [
+        "EJ2931"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/squirming-knives.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/squirming-knives.png",
+        "width": 489,
+        "height": 752,
+        "artBottom": 536
+      }
+    },
+    {
+      "name": "Quicksilver Bow",
+      "definitionId": "def_d4c49fbdf7e7bcdaa6984159",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2928",
+        "EJ2929"
+      ],
+      "filename": "quicksilver-bow.png",
+      "crop": [
+        1477,
+        704,
+        493,
+        752
+      ],
+      "width": 493,
+      "height": 752,
+      "preservedPixelCount": 119444,
+      "sha256": "a9e33a394c05f682a00ce42664933132cf04007eff3924d79613fcdf45c7b7b6",
+      "sourcePrintedIds": [
+        "EJ2929"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/quicksilver-bow.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/quicksilver-bow.png",
+        "width": 493,
+        "height": 752,
+        "artBottom": 554
+      }
+    },
+    {
+      "name": "Darklight Wiring",
+      "definitionId": "def_2a9d164f304ffe28036a5bde",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2898",
+        "EJ2899"
+      ],
+      "filename": "darklight-wiring.png",
+      "crop": [
+        1970,
+        704,
+        493,
+        752
+      ],
+      "width": 493,
+      "height": 752,
+      "preservedPixelCount": 77172,
+      "sha256": "ef935b06edebb273590629c93646c3e5ccda481db880e92992e79b84d25dcc49",
+      "sourcePrintedIds": [
+        "EJ2899"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/darklight-wiring.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/darklight-wiring.png",
+        "width": 493,
+        "height": 752,
+        "artBottom": 411
+      }
+    },
+    {
+      "name": "Atlantean Rebreather",
+      "definitionId": "def_871a8fb29dcbfdc48ee8ee09",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2892",
+        "EJ2893"
+      ],
+      "filename": "atlantean-rebreather.png",
+      "crop": [
+        2463,
+        704,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 135427,
+      "sha256": "44260e5c25ea055e22e42a59a4738d2ecf589cb47d4c8c843781992c02657066",
+      "sourcePrintedIds": [
+        "EJ2893"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/atlantean-rebreather.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/atlantean-rebreather.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 552
+      }
+    },
+    {
+      "name": "Phos Helm",
+      "definitionId": "def_0c9dfe9e52ffbae9f095cdfe",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2896",
+        "EJ2897"
+      ],
+      "filename": "phos-helm.png",
+      "crop": [
+        2949,
+        704,
+        459,
+        752
+      ],
+      "width": 459,
+      "height": 752,
+      "preservedPixelCount": 108506,
+      "sha256": "a9de2414d45afd69266e4458fb96444e06646700e5ae62bfd3fd33039d8f92cd",
+      "sourcePrintedIds": [
+        "EJ2897"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/phos-helm.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/phos-helm.png",
+        "width": 459,
+        "height": 752,
+        "artBottom": 504
+      }
+    },
+    {
+      "name": "Phobos Urumi",
+      "definitionId": "def_ce2fd14cb6f6f8bdd9e283b3",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2979"
+      ],
+      "filename": "phobos-urumi.png",
+      "crop": [
+        0,
+        1456,
+        498,
+        788
+      ],
+      "width": 498,
+      "height": 788,
+      "preservedPixelCount": 85027,
+      "sha256": "034c5cdd5dfc6a276b7ecccd643444ccf8c10486d93718f003801065dec8cc65",
+      "sourcePrintedIds": [
+        "EJ2979"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/phobos-urumi.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/phobos-urumi.png",
+        "width": 498,
+        "height": 788,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Clawhorn Harpoon",
+      "definitionId": "def_e43d2ea7db4dab3fef629e63",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2936",
+        "EJ2937"
+      ],
+      "filename": "clawhorn-harpoon.png",
+      "crop": [
+        498,
+        1456,
+        490,
+        788
+      ],
+      "width": 490,
+      "height": 788,
+      "preservedPixelCount": 134939,
+      "sha256": "ce78a1888736c04cc21c2f6de655ad59fdfdc0dd65e8ceb44893cbf011a3675b",
+      "sourcePrintedIds": [
+        "EJ2937"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/clawhorn-harpoon.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/clawhorn-harpoon.png",
+        "width": 490,
+        "height": 788,
+        "artBottom": 552
+      }
+    },
+    {
+      "name": "Trench Khopesh",
+      "definitionId": "def_045aa113a60032e47469982a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2932",
+        "EJ2933"
+      ],
+      "filename": "trench-khopesh.png",
+      "crop": [
+        988,
+        1456,
+        489,
+        788
+      ],
+      "width": 489,
+      "height": 788,
+      "preservedPixelCount": 139008,
+      "sha256": "a8dd2fb4f9eaa8b761ae52bf86d2eb52eb292ad8fc69c567b35b504942cf9384",
+      "sourcePrintedIds": [
+        "EJ2933"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/trench-khopesh.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/trench-khopesh.png",
+        "width": 489,
+        "height": 788,
+        "artBottom": 536
+      }
+    },
+    {
+      "name": "Trench Kusarigama",
+      "definitionId": "def_2c8ba1892d325619e84857cf",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2934",
+        "EJ2935"
+      ],
+      "filename": "trench-kusarigama.png",
+      "crop": [
+        1477,
+        1456,
+        493,
+        788
+      ],
+      "width": 493,
+      "height": 788,
+      "preservedPixelCount": 98570,
+      "sha256": "5bbe36d338c1a710ff01010877b994b31eb715843080c84a66358899d3b6aec9",
+      "sourcePrintedIds": [
+        "EJ2935"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/trench-kusarigama.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/trench-kusarigama.png",
+        "width": 493,
+        "height": 788,
+        "artBottom": 495
+      }
+    },
+    {
+      "name": "Protomachus Diving Amphora",
+      "definitionId": "def_5c159578a88ddd4cb65c2df7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2902",
+        "EJ2903"
+      ],
+      "filename": "protomachus-diving-amphora.png",
+      "crop": [
+        1970,
+        1456,
+        493,
+        788
+      ],
+      "width": 493,
+      "height": 788,
+      "preservedPixelCount": 94178,
+      "sha256": "587f7ee1f3129d225512fed9d27f0626126d886ff4c2b6a94eee15f7e98cb02a",
+      "sourcePrintedIds": [
+        "EJ2903"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/protomachus-diving-amphora.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/protomachus-diving-amphora.png",
+        "width": 493,
+        "height": 788,
+        "artBottom": 493
+      }
+    },
+    {
+      "name": "Fire-Resistant Suit",
+      "definitionId": "def_2a60756adae32bd87b8cc4d7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2900",
+        "EJ2901"
+      ],
+      "filename": "fire-resistant-suit.png",
+      "crop": [
+        2463,
+        1456,
+        486,
+        788
+      ],
+      "width": 486,
+      "height": 788,
+      "preservedPixelCount": 102513,
+      "sha256": "07b17a0af2a98dc55bdf6d1a05bc8d3685951b19aae36cbf4b9dddba1bc62ca6",
+      "sourcePrintedIds": [
+        "EJ2901"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/fire-resistant-suit.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/fire-resistant-suit.png",
+        "width": 486,
+        "height": 788,
+        "artBottom": 566
+      }
+    },
+    {
+      "name": "Infrared Module",
+      "definitionId": "def_65597f52d209d9300b530a11",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2904",
+        "EJ2905"
+      ],
+      "filename": "infrared-module.png",
+      "crop": [
+        2949,
+        1456,
+        459,
+        788
+      ],
+      "width": 459,
+      "height": 788,
+      "preservedPixelCount": 136770,
+      "sha256": "465407dfe43a76c7f366e9dd6a8f03973131538a06559037fcc0a2c4baa51cf4",
+      "sourcePrintedIds": [
+        "EJ2905"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026102736/infrared-module.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026102736/grayscale/infrared-module.png",
+        "width": 459,
+        "height": 788,
+        "artBottom": 445
+      }
+    }
+  ],
+  "skippedCards": []
+}

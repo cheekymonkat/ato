@@ -1,0 +1,1800 @@
+{
+  "batch": "epson-06102026191619",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026191619.jpg",
+  "sourceSha256": "155edb78555bb9f0a1ced7713d2c58e1effddfb2a7f0701a925d8641b7acdb51",
+  "sourceSize": [
+    3378,
+    2238
+  ],
+  "cornerRadius": 30,
+  "paperSample": [
+    60,
+    450,
+    32,
+    64
+  ],
+  "cards": [
+    {
+      "name": "Gaiaegis",
+      "definitionId": "def_0460985b5c65e748abc9c292",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2573"
+      ],
+      "filename": "gaiaegis.png",
+      "crop": [
+        0,
+        0,
+        498,
+        734
+      ],
+      "row": 1,
+      "column": 1,
+      "artRects": [
+        [
+          212,
+          95,
+          408,
+          455
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          390,
+          0,
+          498,
+          113
+        ],
+        [
+          374,
+          185,
+          498,
+          435
+        ],
+        [
+          207,
+          257,
+          294,
+          286
+        ],
+        [
+          163,
+          287,
+          246,
+          321
+        ],
+        [
+          249,
+          287,
+          320,
+          315
+        ],
+        [
+          319,
+          287,
+          339,
+          314
+        ],
+        [
+          150,
+          316,
+          247,
+          350
+        ],
+        [
+          245,
+          315,
+          266,
+          344
+        ],
+        [
+          270,
+          315,
+          334,
+          350
+        ],
+        [
+          332,
+          315,
+          353,
+          343
+        ],
+        [
+          149,
+          345,
+          258,
+          373
+        ],
+        [
+          257,
+          345,
+          317,
+          373
+        ],
+        [
+          316,
+          345,
+          350,
+          372
+        ],
+        [
+          135,
+          374,
+          244,
+          403
+        ],
+        [
+          247,
+          374,
+          374,
+          406
+        ],
+        [
+          208,
+          403,
+          322,
+          432
+        ],
+        [
+          321,
+          403,
+          342,
+          431
+        ],
+        [
+          197,
+          430,
+          222,
+          463
+        ],
+        [
+          223,
+          432,
+          309,
+          461
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2573"
+      ]
+    },
+    {
+      "name": "Midashield",
+      "definitionId": "def_4b52ec2f16d7e6557a89b054",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2572"
+      ],
+      "filename": "midashield.png",
+      "crop": [
+        498,
+        0,
+        488,
+        734
+      ],
+      "row": 1,
+      "column": 2,
+      "artRects": [
+        [
+          99,
+          79,
+          475,
+          421
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          108,
+          113
+        ],
+        [
+          381,
+          0,
+          489,
+          113
+        ],
+        [
+          0,
+          113,
+          122,
+          333
+        ],
+        [
+          365,
+          185,
+          489,
+          435
+        ],
+        [
+          156,
+          409,
+          247,
+          438
+        ],
+        [
+          243,
+          402,
+          334,
+          444
+        ],
+        [
+          430,
+          83,
+          490,
+          169
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2572"
+      ]
+    },
+    {
+      "name": "Slushbane",
+      "definitionId": "def_ad3b94868c245e073e2c68b0",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2571"
+      ],
+      "filename": "slushbane.png",
+      "crop": [
+        986,
+        0,
+        485,
+        734
+      ],
+      "row": 1,
+      "column": 3,
+      "artRects": [
+        [
+          234,
+          16,
+          423,
+          473
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          376,
+          0,
+          484,
+          113
+        ],
+        [
+          144,
+          39,
+          349,
+          80
+        ],
+        [
+          220,
+          269,
+          285,
+          298
+        ],
+        [
+          282,
+          269,
+          302,
+          298
+        ],
+        [
+          218,
+          299,
+          243,
+          326
+        ],
+        [
+          241,
+          299,
+          321,
+          327
+        ],
+        [
+          320,
+          299,
+          346,
+          326
+        ],
+        [
+          215,
+          327,
+          298,
+          362
+        ],
+        [
+          294,
+          327,
+          382,
+          356
+        ],
+        [
+          133,
+          356,
+          242,
+          385
+        ],
+        [
+          240,
+          356,
+          300,
+          385
+        ],
+        [
+          298,
+          356,
+          324,
+          385
+        ],
+        [
+          323,
+          351,
+          398,
+          391
+        ],
+        [
+          174,
+          386,
+          243,
+          414
+        ],
+        [
+          240,
+          385,
+          348,
+          420
+        ],
+        [
+          344,
+          385,
+          407,
+          414
+        ],
+        [
+          261,
+          443,
+          376,
+          475
+        ],
+        [
+          0,
+          410,
+          473,
+          577
+        ],
+        [
+          369,
+          313,
+          414,
+          375
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2571"
+      ]
+    },
+    {
+      "name": "First Blade",
+      "definitionId": "def_5a9fa9297ef29136f725406f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2570"
+      ],
+      "filename": "first-blade.png",
+      "crop": [
+        1471,
+        0,
+        486,
+        734
+      ],
+      "row": 1,
+      "column": 4,
+      "artRects": [
+        [
+          345,
+          83,
+          455,
+          646
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          378,
+          0,
+          486,
+          113
+        ],
+        [
+          338,
+          193,
+          363,
+          221
+        ],
+        [
+          273,
+          254,
+          397,
+          294
+        ],
+        [
+          303,
+          373,
+          346,
+          399
+        ],
+        [
+          290,
+          400,
+          359,
+          435
+        ],
+        [
+          287,
+          429,
+          360,
+          457
+        ],
+        [
+          299,
+          460,
+          356,
+          487
+        ],
+        [
+          321,
+          489,
+          350,
+          516
+        ],
+        [
+          316,
+          516,
+          361,
+          545
+        ],
+        [
+          329,
+          555,
+          357,
+          581
+        ],
+        [
+          0,
+          592,
+          477,
+          651
+        ],
+        [
+          430,
+          80,
+          482,
+          155
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2570"
+      ]
+    },
+    {
+      "name": "Airsac Mine",
+      "definitionId": "def_a88660af85d40df1ea55d67a",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2385"
+      ],
+      "filename": "airsac-mine.png",
+      "crop": [
+        1957,
+        0,
+        484,
+        734
+      ],
+      "row": 1,
+      "column": 5,
+      "sourcePrintedIds": [
+        "DJ2385"
+      ],
+      "artRects": [
+        [
+          56,
+          92,
+          412,
+          462
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          108,
+          113
+        ],
+        [
+          376,
+          0,
+          484,
+          113
+        ],
+        [
+          122,
+          434,
+          222,
+          482
+        ],
+        [
+          221,
+          410,
+          356,
+          470
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Greater Saphos",
+      "definitionId": "def_ca825a078bbcb6f68be772ba",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2386"
+      ],
+      "filename": "greater-saphos.png",
+      "crop": [
+        2441,
+        0,
+        480,
+        734
+      ],
+      "row": 1,
+      "column": 6,
+      "artRects": [
+        [
+          126,
+          122,
+          482,
+          342
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          164,
+          264,
+          249,
+          310
+        ],
+        [
+          246,
+          250,
+          342,
+          311
+        ],
+        [
+          333,
+          265,
+          380,
+          292
+        ],
+        [
+          127,
+          299,
+          221,
+          333
+        ],
+        [
+          218,
+          300,
+          244,
+          327
+        ],
+        [
+          242,
+          300,
+          375,
+          329
+        ],
+        [
+          131,
+          328,
+          203,
+          362
+        ],
+        [
+          199,
+          329,
+          272,
+          357
+        ],
+        [
+          269,
+          330,
+          370,
+          364
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "DJ2386"
+      ]
+    },
+    {
+      "name": "Dahaka Blade (Blindspot/Cloud)",
+      "definitionId": "def_b9afc3d064b2bd7a9e5cc86e",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2364"
+      ],
+      "filename": "dahaka-blade-blindspot-cloud.png",
+      "crop": [
+        2921,
+        0,
+        457,
+        734
+      ],
+      "row": 1,
+      "column": 7,
+      "artRects": [],
+      "artPolygons": [
+        [
+          [
+            264,
+            112
+          ],
+          [
+            293,
+            120
+          ],
+          [
+            288,
+            145
+          ],
+          [
+            239,
+            227
+          ],
+          [
+            200,
+            292
+          ],
+          [
+            137,
+            325
+          ],
+          [
+            114,
+            355
+          ],
+          [
+            145,
+            388
+          ],
+          [
+            145,
+            412
+          ],
+          [
+            17,
+            516
+          ],
+          [
+            10,
+            512
+          ],
+          [
+            96,
+            400
+          ],
+          [
+            63,
+            343
+          ],
+          [
+            64,
+            323
+          ],
+          [
+            125,
+            275
+          ],
+          [
+            162,
+            276
+          ],
+          [
+            215,
+            185
+          ],
+          [
+            238,
+            146
+          ]
+        ]
+      ],
+      "eraseRects": [
+        [
+          0,
+          278,
+          93,
+          320
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed. The reverse illustration is isolated with a close polygon so printed stat panels do not erase the exposed blade.",
+      "sourcePrintedIds": [
+        "DJ2364"
+      ]
+    },
+    {
+      "name": "Phobos Whip",
+      "definitionId": "def_e35f775c7f40d400c29c0e89",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2967"
+      ],
+      "filename": "phobos-whip.png",
+      "crop": [
+        0,
+        734,
+        498,
+        748
+      ],
+      "row": 2,
+      "column": 1,
+      "sourcePrintedIds": [
+        "EJ2967"
+      ],
+      "artRects": [
+        [
+          122,
+          104,
+          462,
+          390
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          390,
+          0,
+          498,
+          113
+        ],
+        [
+          70,
+          385,
+          149,
+          419
+        ],
+        [
+          153,
+          385,
+          240,
+          413
+        ],
+        [
+          214,
+          381,
+          244,
+          424
+        ],
+        [
+          244,
+          385,
+          318,
+          419
+        ],
+        [
+          302,
+          381,
+          332,
+          424
+        ],
+        [
+          324,
+          386,
+          415,
+          413
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Claw Cracker",
+      "definitionId": "def_9fd636048a9fdf9437ce39e6",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2966"
+      ],
+      "filename": "claw-cracker.png",
+      "crop": [
+        498,
+        734,
+        488,
+        748
+      ],
+      "row": 2,
+      "column": 2,
+      "artRects": [
+        [
+          115,
+          128,
+          439,
+          441
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          405
+        ],
+        [
+          126,
+          437,
+          214,
+          471
+        ],
+        [
+          212,
+          436,
+          331,
+          465
+        ],
+        [
+          329,
+          436,
+          355,
+          465
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2966"
+      ]
+    },
+    {
+      "name": "Will Anthropos",
+      "definitionId": "def_9f49e92c688782cbd72e1eb5",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2965"
+      ],
+      "filename": "will-anthropos.png",
+      "crop": [
+        986,
+        734,
+        485,
+        748
+      ],
+      "row": 2,
+      "column": 3,
+      "artRects": [
+        [
+          122,
+          115,
+          468,
+          536
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          121,
+          75,
+          358,
+          116
+        ],
+        [
+          143,
+          432,
+          231,
+          467
+        ],
+        [
+          229,
+          432,
+          316,
+          467
+        ],
+        [
+          313,
+          432,
+          340,
+          460
+        ],
+        [
+          77,
+          461,
+          196,
+          490
+        ],
+        [
+          193,
+          461,
+          220,
+          490
+        ],
+        [
+          219,
+          461,
+          303,
+          495
+        ],
+        [
+          301,
+          461,
+          381,
+          489
+        ],
+        [
+          381,
+          461,
+          406,
+          489
+        ],
+        [
+          235,
+          490,
+          284,
+          519
+        ],
+        [
+          101,
+          524,
+          158,
+          551
+        ],
+        [
+          155,
+          522,
+          187,
+          550
+        ],
+        [
+          183,
+          522,
+          225,
+          550
+        ],
+        [
+          223,
+          522,
+          293,
+          550
+        ],
+        [
+          290,
+          522,
+          337,
+          550
+        ],
+        [
+          334,
+          522,
+          391,
+          550
+        ],
+        [
+          389,
+          524,
+          443,
+          550
+        ],
+        [
+          0,
+          513,
+          473,
+          581
+        ],
+        [
+          137,
+          459,
+          254,
+          572
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2965"
+      ]
+    },
+    {
+      "name": "Eternal Vow",
+      "definitionId": "def_78a93dd8bfd9d90a7a5c3b41",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2964"
+      ],
+      "filename": "eternal-vow.png",
+      "crop": [
+        1471,
+        734,
+        486,
+        748
+      ],
+      "row": 2,
+      "column": 4,
+      "artRects": [
+        [
+          131,
+          137,
+          450,
+          540
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          109,
+          439,
+          197,
+          474
+        ],
+        [
+          195,
+          436,
+          263,
+          472
+        ],
+        [
+          263,
+          437,
+          288,
+          464
+        ],
+        [
+          285,
+          435,
+          352,
+          464
+        ],
+        [
+          350,
+          434,
+          379,
+          462
+        ],
+        [
+          130,
+          468,
+          195,
+          497
+        ],
+        [
+          193,
+          467,
+          288,
+          496
+        ],
+        [
+          286,
+          464,
+          358,
+          493
+        ],
+        [
+          80,
+          498,
+          143,
+          527
+        ],
+        [
+          140,
+          497,
+          172,
+          526
+        ],
+        [
+          169,
+          496,
+          247,
+          525
+        ],
+        [
+          244,
+          495,
+          291,
+          523
+        ],
+        [
+          288,
+          499,
+          341,
+          528
+        ],
+        [
+          338,
+          494,
+          390,
+          528
+        ],
+        [
+          390,
+          492,
+          407,
+          520
+        ],
+        [
+          166,
+          526,
+          255,
+          559
+        ],
+        [
+          252,
+          523,
+          325,
+          552
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2964"
+      ]
+    },
+    {
+      "name": "Light of Eos",
+      "definitionId": "def_44c6ab6918cdf5686ae8c0a0",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2963"
+      ],
+      "filename": "light-of-eos.png",
+      "crop": [
+        1957,
+        734,
+        484,
+        748
+      ],
+      "row": 2,
+      "column": 5,
+      "artRects": [
+        [
+          117,
+          95,
+          401,
+          471
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          376,
+          0,
+          484,
+          113
+        ],
+        [
+          0,
+          113,
+          122,
+          333
+        ],
+        [
+          35,
+          459,
+          118,
+          493
+        ],
+        [
+          121,
+          457,
+          169,
+          485
+        ],
+        [
+          157,
+          438,
+          227,
+          494
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2963"
+      ]
+    },
+    {
+      "name": "Self-Inflicted",
+      "definitionId": "def_74928235cbd23c7a3e5ffa5a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2962"
+      ],
+      "filename": "self-inflicted.png",
+      "crop": [
+        2441,
+        734,
+        480,
+        748
+      ],
+      "row": 2,
+      "column": 6,
+      "sourcePrintedIds": [
+        "EJ2962"
+      ],
+      "artRects": [
+        [
+          133,
+          113,
+          405,
+          477
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          127,
+          393,
+          206,
+          428
+        ],
+        [
+          207,
+          393,
+          294,
+          429
+        ],
+        [
+          291,
+          394,
+          315,
+          422
+        ],
+        [
+          76,
+          422,
+          229,
+          451
+        ],
+        [
+          198,
+          413,
+          228,
+          461
+        ],
+        [
+          227,
+          423,
+          371,
+          452
+        ],
+        [
+          344,
+          413,
+          377,
+          461
+        ],
+        [
+          368,
+          417,
+          405,
+          454
+        ],
+        [
+          0,
+          466,
+          477,
+          549
+        ],
+        [
+          0,
+          441,
+          475,
+          552
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed."
+    },
+    {
+      "name": "Blades of Rage",
+      "definitionId": "def_9c0fffc414ca942a853a7c49",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2574"
+      ],
+      "filename": "blades-of-rage.png",
+      "crop": [
+        2921,
+        734,
+        457,
+        748
+      ],
+      "row": 2,
+      "column": 7,
+      "artRects": [
+        [
+          241,
+          104,
+          444,
+          579
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          349,
+          0,
+          457,
+          113
+        ],
+        [
+          207,
+          72,
+          311,
+          113
+        ],
+        [
+          189,
+          323,
+          283,
+          352
+        ],
+        [
+          184,
+          352,
+          257,
+          381
+        ],
+        [
+          230,
+          347,
+          260,
+          390
+        ],
+        [
+          197,
+          412,
+          249,
+          445
+        ],
+        [
+          248,
+          404,
+          321,
+          443
+        ],
+        [
+          319,
+          412,
+          408,
+          440
+        ],
+        [
+          240,
+          442,
+          302,
+          471
+        ],
+        [
+          299,
+          443,
+          372,
+          472
+        ],
+        [
+          206,
+          477,
+          253,
+          506
+        ],
+        [
+          251,
+          472,
+          291,
+          501
+        ],
+        [
+          0,
+          570,
+          477,
+          644
+        ],
+        [
+          0,
+          462,
+          356,
+          579
+        ],
+        [
+          436,
+          94,
+          492,
+          163
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "ZJ2574"
+      ]
+    },
+    {
+      "name": "Iapetus Helm",
+      "definitionId": "def_5ab3defc16ecf9d46c36c62b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2974"
+      ],
+      "filename": "iapetus-helm.png",
+      "crop": [
+        0,
+        1482,
+        498,
+        756
+      ],
+      "row": 3,
+      "column": 1,
+      "artRects": [
+        [
+          63,
+          117,
+          376,
+          516
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          203,
+          486,
+          305,
+          518
+        ],
+        [
+          297,
+          515,
+          383,
+          547
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2974"
+      ]
+    },
+    {
+      "name": "Synergic Armor",
+      "definitionId": "def_9a62cdb727a4fc923aeebe33",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2973"
+      ],
+      "filename": "synergic-armor.png",
+      "crop": [
+        498,
+        1482,
+        488,
+        756
+      ],
+      "row": 3,
+      "column": 2,
+      "artRects": [
+        [
+          119,
+          137,
+          378,
+          518
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          365,
+          185,
+          489,
+          435
+        ],
+        [
+          144,
+          483,
+          239,
+          521
+        ],
+        [
+          245,
+          482,
+          314,
+          521
+        ],
+        [
+          315,
+          482,
+          332,
+          513
+        ],
+        [
+          193,
+          514,
+          229,
+          552
+        ],
+        [
+          234,
+          514,
+          322,
+          552
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2973"
+      ]
+    },
+    {
+      "name": "Pilfered Blade",
+      "definitionId": "def_2109b861b60d0cec2662d9c4",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2972"
+      ],
+      "filename": "pilfered-blade.png",
+      "crop": [
+        986,
+        1482,
+        485,
+        756
+      ],
+      "row": 3,
+      "column": 3,
+      "artRects": [
+        [
+          99,
+          101,
+          466,
+          410
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          108,
+          113
+        ],
+        [
+          376,
+          0,
+          484,
+          113
+        ],
+        [
+          0,
+          113,
+          122,
+          333
+        ],
+        [
+          182,
+          71,
+          301,
+          113
+        ],
+        [
+          60,
+          404,
+          155,
+          443
+        ],
+        [
+          160,
+          403,
+          316,
+          435
+        ],
+        [
+          293,
+          399,
+          329,
+          447
+        ],
+        [
+          325,
+          403,
+          419,
+          442
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2972"
+      ]
+    },
+    {
+      "name": "Microwave Shieldscale",
+      "definitionId": "def_d961315123c3b6b4fc79e373",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2971"
+      ],
+      "filename": "microwave-shieldscale.png",
+      "crop": [
+        1471,
+        1482,
+        486,
+        756
+      ],
+      "row": 3,
+      "column": 4,
+      "sourcePrintedIds": [
+        "EJ2971"
+      ],
+      "artRects": [
+        [
+          86,
+          176,
+          448,
+          556
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          113,
+          122,
+          477
+        ],
+        [
+          363,
+          185,
+          486,
+          435
+        ]
+      ]
+    },
+    {
+      "name": "Veilwrappings",
+      "definitionId": "def_0b5a9c1c91a3b11ee86e2b28",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2970"
+      ],
+      "filename": "veilwrappings.png",
+      "crop": [
+        1957,
+        1482,
+        484,
+        756
+      ],
+      "row": 3,
+      "column": 5,
+      "sourcePrintedIds": [
+        "EJ2970"
+      ],
+      "artRects": [
+        [
+          101,
+          113,
+          354,
+          504
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": []
+    },
+    {
+      "name": "Oculus Headlamp",
+      "definitionId": "def_cb3b62d2068e61d7039dbcd3",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2969"
+      ],
+      "filename": "oculus-headlamp.png",
+      "crop": [
+        2441,
+        1482,
+        480,
+        756
+      ],
+      "row": 3,
+      "column": 6,
+      "artRects": [
+        [
+          79,
+          115,
+          372,
+          507
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          123,
+          488,
+          224,
+          527
+        ],
+        [
+          224,
+          488,
+          293,
+          527
+        ],
+        [
+          292,
+          488,
+          321,
+          520
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2969"
+      ]
+    },
+    {
+      "name": "Grinmask",
+      "definitionId": "def_e7532687a6c8b6bd5fc349da",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2968"
+      ],
+      "filename": "grinmask.png",
+      "crop": [
+        2921,
+        1482,
+        457,
+        756
+      ],
+      "row": 3,
+      "column": 7,
+      "artRects": [
+        [
+          61,
+          99,
+          403,
+          502
+        ]
+      ],
+      "artPolygons": [],
+      "eraseRects": [
+        [
+          0,
+          0,
+          108,
+          113
+        ],
+        [
+          349,
+          0,
+          457,
+          113
+        ],
+        [
+          333,
+          185,
+          457,
+          435
+        ],
+        [
+          120,
+          485,
+          220,
+          524
+        ],
+        [
+          220,
+          486,
+          333,
+          518
+        ]
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "sourcePrintedIds": [
+        "EJ2968"
+      ]
+    }
+  ],
+  "skippedCards": []
+}

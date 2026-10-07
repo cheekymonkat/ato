@@ -1,0 +1,638 @@
+{
+  "batch": "epson-06102026191619",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026191619.jpg",
+  "sourceSha256": "155edb78555bb9f0a1ced7713d2c58e1effddfb2a7f0701a925d8641b7acdb51",
+  "configurationSha256": "8617b248b8a6f6a6acd85d22e0cdcaa05161ca1667b132f295aa4b080a64fb82",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Gaiaegis",
+      "definitionId": "def_0460985b5c65e748abc9c292",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2573"
+      ],
+      "filename": "gaiaegis.png",
+      "crop": [
+        0,
+        0,
+        498,
+        734
+      ],
+      "width": 498,
+      "height": 734,
+      "preservedPixelCount": 37356,
+      "sha256": "5a6194eda30bcf8055615815b453204d832d88754fef9838986b6ab9bad70e4b",
+      "sourcePrintedIds": [
+        "ZJ2573"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/gaiaegis.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/gaiaegis.png",
+        "width": 498,
+        "height": 734,
+        "artBottom": 455
+      }
+    },
+    {
+      "name": "Midashield",
+      "definitionId": "def_4b52ec2f16d7e6557a89b054",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2572"
+      ],
+      "filename": "midashield.png",
+      "crop": [
+        498,
+        0,
+        488,
+        734
+      ],
+      "width": 488,
+      "height": 734,
+      "preservedPixelCount": 88777,
+      "sha256": "a8d1f011a955f21b552dd6266072728d786e5b1146091c1a7e51240498068bfe",
+      "sourcePrintedIds": [
+        "ZJ2572"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/midashield.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/midashield.png",
+        "width": 488,
+        "height": 734,
+        "artBottom": 421
+      }
+    },
+    {
+      "name": "Slushbane",
+      "definitionId": "def_ad3b94868c245e073e2c68b0",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2571"
+      ],
+      "filename": "slushbane.png",
+      "crop": [
+        986,
+        0,
+        485,
+        734
+      ],
+      "width": 485,
+      "height": 734,
+      "preservedPixelCount": 44887,
+      "sha256": "5de818737ffd6e4e5b942c212f72b207cce1bb9d2bad2211153b68c86cb83693",
+      "sourcePrintedIds": [
+        "ZJ2571"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/slushbane.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/slushbane.png",
+        "width": 485,
+        "height": 734,
+        "artBottom": 473
+      }
+    },
+    {
+      "name": "First Blade",
+      "definitionId": "def_5a9fa9297ef29136f725406f",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2570"
+      ],
+      "filename": "first-blade.png",
+      "crop": [
+        1471,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 47986,
+      "sha256": "34e9b1e9fc9ca6bc2704749018718678e4e095de378272977f6a608e73046790",
+      "sourcePrintedIds": [
+        "ZJ2570"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/first-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/first-blade.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 646
+      }
+    },
+    {
+      "name": "Airsac Mine",
+      "definitionId": "def_a88660af85d40df1ea55d67a",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2385"
+      ],
+      "filename": "airsac-mine.png",
+      "crop": [
+        1957,
+        0,
+        484,
+        734
+      ],
+      "width": 484,
+      "height": 734,
+      "preservedPixelCount": 120080,
+      "sha256": "250f9864b3ebae0e68d355e2ddbc8053ad2805677ae107c1e29b4c94bf967e8a",
+      "sourcePrintedIds": [
+        "DJ2385"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/airsac-mine.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/airsac-mine.png",
+        "width": 484,
+        "height": 734,
+        "artBottom": 462
+      }
+    },
+    {
+      "name": "Greater Saphos",
+      "definitionId": "def_ca825a078bbcb6f68be772ba",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2386"
+      ],
+      "filename": "greater-saphos.png",
+      "crop": [
+        2441,
+        0,
+        480,
+        734
+      ],
+      "width": 480,
+      "height": 734,
+      "preservedPixelCount": 58890,
+      "sha256": "45afcc60c452b93abc5526c952648b1d1ba1fd98123e8288addccdc088bac205",
+      "sourcePrintedIds": [
+        "DJ2386"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/greater-saphos.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/greater-saphos.png",
+        "width": 480,
+        "height": 734,
+        "artBottom": 342
+      }
+    },
+    {
+      "name": "Dahaka Blade (Blindspot/Cloud)",
+      "definitionId": "def_b9afc3d064b2bd7a9e5cc86e",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2364"
+      ],
+      "filename": "dahaka-blade-blindspot-cloud.png",
+      "crop": [
+        2921,
+        0,
+        457,
+        734
+      ],
+      "width": 457,
+      "height": 734,
+      "preservedPixelCount": 19906,
+      "sha256": "3de7ea88086c551585609ef6e263948ac646e0578290db974838f9dafdff9077",
+      "sourcePrintedIds": [
+        "DJ2364"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed. The reverse illustration is isolated with a close polygon so printed stat panels do not erase the exposed blade.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/dahaka-blade-blindspot-cloud.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/dahaka-blade-blindspot-cloud.png",
+        "width": 457,
+        "height": 734,
+        "artBottom": 516
+      }
+    },
+    {
+      "name": "Phobos Whip",
+      "definitionId": "def_e35f775c7f40d400c29c0e89",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2967"
+      ],
+      "filename": "phobos-whip.png",
+      "crop": [
+        0,
+        734,
+        498,
+        748
+      ],
+      "width": 498,
+      "height": 748,
+      "preservedPixelCount": 94990,
+      "sha256": "2606ddf0d8242521a9400f5ba01722846f49f465f6969b92d756bb4146ea13e4",
+      "sourcePrintedIds": [
+        "EJ2967"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/phobos-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/phobos-whip.png",
+        "width": 498,
+        "height": 748,
+        "artBottom": 390
+      }
+    },
+    {
+      "name": "Claw Cracker",
+      "definitionId": "def_9fd636048a9fdf9437ce39e6",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2966"
+      ],
+      "filename": "claw-cracker.png",
+      "crop": [
+        498,
+        734,
+        488,
+        748
+      ],
+      "width": 488,
+      "height": 748,
+      "preservedPixelCount": 98414,
+      "sha256": "285c4275c98c213d40c5e94906fefc7bf9cc035ffe7e2bed03fd5e65d4306cc5",
+      "sourcePrintedIds": [
+        "EJ2966"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/claw-cracker.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/claw-cracker.png",
+        "width": 488,
+        "height": 748,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Will Anthropos",
+      "definitionId": "def_9f49e92c688782cbd72e1eb5",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2965"
+      ],
+      "filename": "will-anthropos.png",
+      "crop": [
+        986,
+        734,
+        485,
+        748
+      ],
+      "width": 485,
+      "height": 748,
+      "preservedPixelCount": 120162,
+      "sha256": "d401c0f73e8fe028fa868e8e0ef13056d162d5c006a346b2b2e14e6dc66f7de5",
+      "sourcePrintedIds": [
+        "EJ2965"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/will-anthropos.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/will-anthropos.png",
+        "width": 485,
+        "height": 748,
+        "artBottom": 536
+      }
+    },
+    {
+      "name": "Eternal Vow",
+      "definitionId": "def_78a93dd8bfd9d90a7a5c3b41",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2964"
+      ],
+      "filename": "eternal-vow.png",
+      "crop": [
+        1471,
+        734,
+        486,
+        748
+      ],
+      "width": 486,
+      "height": 748,
+      "preservedPixelCount": 104292,
+      "sha256": "2dd1ca820a96c16aea2d7420ee16b812c5e1f79f318a4050b6beb72e633f66bd",
+      "sourcePrintedIds": [
+        "EJ2964"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/eternal-vow.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/eternal-vow.png",
+        "width": 486,
+        "height": 748,
+        "artBottom": 540
+      }
+    },
+    {
+      "name": "Light of Eos",
+      "definitionId": "def_44c6ab6918cdf5686ae8c0a0",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2963"
+      ],
+      "filename": "light-of-eos.png",
+      "crop": [
+        1957,
+        734,
+        484,
+        748
+      ],
+      "width": 484,
+      "height": 748,
+      "preservedPixelCount": 102408,
+      "sha256": "927e242b9a53e5902529aea002716d212a79643c4136000e01f480cbf46096ef",
+      "sourcePrintedIds": [
+        "EJ2963"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/light-of-eos.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/light-of-eos.png",
+        "width": 484,
+        "height": 748,
+        "artBottom": 471
+      }
+    },
+    {
+      "name": "Self-Inflicted",
+      "definitionId": "def_74928235cbd23c7a3e5ffa5a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2962"
+      ],
+      "filename": "self-inflicted.png",
+      "crop": [
+        2441,
+        734,
+        480,
+        748
+      ],
+      "width": 480,
+      "height": 748,
+      "preservedPixelCount": 78424,
+      "sha256": "ebf5ffe4d09c175388dd446347b061bbff7a1a26c71b662e415e519bbbe556fa",
+      "sourcePrintedIds": [
+        "EJ2962"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/self-inflicted.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/self-inflicted.png",
+        "width": 480,
+        "height": 748,
+        "artBottom": 477
+      }
+    },
+    {
+      "name": "Blades of Rage",
+      "definitionId": "def_9c0fffc414ca942a853a7c49",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2574"
+      ],
+      "filename": "blades-of-rage.png",
+      "crop": [
+        2921,
+        734,
+        457,
+        748
+      ],
+      "width": 457,
+      "height": 748,
+      "preservedPixelCount": 70204,
+      "sha256": "a988c68b0164ff833153d7dc479eb019672144963eaad951d41ebd4dedb85b06",
+      "sourcePrintedIds": [
+        "ZJ2574"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/blades-of-rage.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/blades-of-rage.png",
+        "width": 457,
+        "height": 748,
+        "artBottom": 579
+      }
+    },
+    {
+      "name": "Iapetus Helm",
+      "definitionId": "def_5ab3defc16ecf9d46c36c62b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2974"
+      ],
+      "filename": "iapetus-helm.png",
+      "crop": [
+        0,
+        1482,
+        498,
+        756
+      ],
+      "width": 498,
+      "height": 756,
+      "preservedPixelCount": 121756,
+      "sha256": "e103fcf1ccbbaab59c93f24bd469a5b4c5e38b707809bcc9db1ac404a46c2911",
+      "sourcePrintedIds": [
+        "EJ2974"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/iapetus-helm.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/iapetus-helm.png",
+        "width": 498,
+        "height": 756,
+        "artBottom": 516
+      }
+    },
+    {
+      "name": "Synergic Armor",
+      "definitionId": "def_9a62cdb727a4fc923aeebe33",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2973"
+      ],
+      "filename": "synergic-armor.png",
+      "crop": [
+        498,
+        1482,
+        488,
+        756
+      ],
+      "width": 488,
+      "height": 756,
+      "preservedPixelCount": 89037,
+      "sha256": "8d4f2d0d611116291eeac59990d128664b204a9f25685cbbcfe08b3c65d4960c",
+      "sourcePrintedIds": [
+        "EJ2973"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/synergic-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/synergic-armor.png",
+        "width": 488,
+        "height": 756,
+        "artBottom": 518
+      }
+    },
+    {
+      "name": "Pilfered Blade",
+      "definitionId": "def_2109b861b60d0cec2662d9c4",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2972"
+      ],
+      "filename": "pilfered-blade.png",
+      "crop": [
+        986,
+        1482,
+        485,
+        756
+      ],
+      "width": 485,
+      "height": 756,
+      "preservedPixelCount": 103434,
+      "sha256": "b1cfb88ebf766f736539fd7ff15c447bc422c0df03e801a3dc2ae5cd1416bc6f",
+      "sourcePrintedIds": [
+        "EJ2972"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/pilfered-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/pilfered-blade.png",
+        "width": 485,
+        "height": 756,
+        "artBottom": 410
+      }
+    },
+    {
+      "name": "Microwave Shieldscale",
+      "definitionId": "def_d961315123c3b6b4fc79e373",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2971"
+      ],
+      "filename": "microwave-shieldscale.png",
+      "crop": [
+        1471,
+        1482,
+        486,
+        756
+      ],
+      "width": 486,
+      "height": 756,
+      "preservedPixelCount": 105474,
+      "sha256": "e5e77c5a421e6da26e674aa4c8219f2a9ba75ea068fb56dca0f7767969dbe70d",
+      "sourcePrintedIds": [
+        "EJ2971"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/microwave-shieldscale.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/microwave-shieldscale.png",
+        "width": 486,
+        "height": 756,
+        "artBottom": 556
+      }
+    },
+    {
+      "name": "Veilwrappings",
+      "definitionId": "def_0b5a9c1c91a3b11ee86e2b28",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2970"
+      ],
+      "filename": "veilwrappings.png",
+      "crop": [
+        1957,
+        1482,
+        484,
+        756
+      ],
+      "width": 484,
+      "height": 756,
+      "preservedPixelCount": 98923,
+      "sha256": "65ea032de30cad66ac14f885c5568c7c19f41cd0248be4f26bb1946b5bd4d036",
+      "sourcePrintedIds": [
+        "EJ2970"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/veilwrappings.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/veilwrappings.png",
+        "width": 484,
+        "height": 756,
+        "artBottom": 504
+      }
+    },
+    {
+      "name": "Oculus Headlamp",
+      "definitionId": "def_cb3b62d2068e61d7039dbcd3",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2969"
+      ],
+      "filename": "oculus-headlamp.png",
+      "crop": [
+        2441,
+        1482,
+        480,
+        756
+      ],
+      "width": 480,
+      "height": 756,
+      "preservedPixelCount": 111094,
+      "sha256": "41803fabc710c27c614ec825d1994d13865bcd9083a8555b4330b6907d4c9662",
+      "sourcePrintedIds": [
+        "EJ2969"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/oculus-headlamp.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/oculus-headlamp.png",
+        "width": 480,
+        "height": 756,
+        "artBottom": 507
+      }
+    },
+    {
+      "name": "Grinmask",
+      "definitionId": "def_e7532687a6c8b6bd5fc349da",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2968"
+      ],
+      "filename": "grinmask.png",
+      "crop": [
+        2921,
+        1482,
+        457,
+        756
+      ],
+      "width": 457,
+      "height": 756,
+      "preservedPixelCount": 115404,
+      "sha256": "249c3d2396cf56964f2d3acb271715e415833e290910c959d800b2d5c1b75d02",
+      "sourcePrintedIds": [
+        "EJ2968"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026191619/grinmask.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026191619/grayscale/grinmask.png",
+        "width": 457,
+        "height": 756,
+        "artBottom": 502
+      }
+    }
+  ],
+  "skippedCards": []
+}

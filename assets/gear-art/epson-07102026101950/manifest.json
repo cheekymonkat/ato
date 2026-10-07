@@ -1,0 +1,657 @@
+{
+  "batch": "epson-07102026101950",
+  "source": "../ato_docs/ato-gear/gear/Epson_07102026101950.jpg",
+  "sourceSha256": "f4dac273ea6213abf4d62588a5158e4d90cc6c0a97ef7efb3438020d413533d9",
+  "configurationSha256": "48c2aa689bb16a5374eb433968fc6547889b6df1d623193a0ced0fd7428d3ddd",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Bloatank",
+      "definitionId": "def_281a6b7ae1fd60656f4f7e2a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2827",
+        "EJ2828"
+      ],
+      "filename": "bloatank.png",
+      "crop": [
+        0,
+        0,
+        495,
+        730
+      ],
+      "width": 495,
+      "height": 730,
+      "preservedPixelCount": 186444,
+      "sha256": "0cfc3c62c1c43aead9a1f44ad13f7c7fc3b3f05981a8a411453ea8d5e81e156d",
+      "sourcePrintedIds": [
+        "EJ2828"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/bloatank.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/bloatank.png",
+        "width": 495,
+        "height": 730,
+        "artBottom": 545
+      }
+    },
+    {
+      "name": "Moonflame",
+      "definitionId": "def_0c24e8117091508c3eed729a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2823",
+        "EJ2824"
+      ],
+      "filename": "moonflame.png",
+      "crop": [
+        495,
+        0,
+        490,
+        730
+      ],
+      "width": 490,
+      "height": 730,
+      "preservedPixelCount": 129828,
+      "sha256": "d48b80fe55387bc51ccd66cc085b82842e2efb66762badfe376f77248bc1cdf1",
+      "sourcePrintedIds": [
+        "EJ2824"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/moonflame.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/moonflame.png",
+        "width": 490,
+        "height": 730,
+        "artBottom": 443
+      }
+    },
+    {
+      "name": "Trapped Moonlight",
+      "definitionId": "def_ad36e0d167adde91a20816e4",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2821",
+        "EJ2822"
+      ],
+      "filename": "trapped-moonlight.png",
+      "crop": [
+        985,
+        0,
+        484,
+        730
+      ],
+      "width": 484,
+      "height": 730,
+      "preservedPixelCount": 86708,
+      "sha256": "60012ae014e8f06cc6632e3b2b80c6dd566b5b8811a8b1d3c7c5829115b7f35f",
+      "sourcePrintedIds": [
+        "EJ2822"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/trapped-moonlight.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/trapped-moonlight.png",
+        "width": 484,
+        "height": 730,
+        "artBottom": 533
+      }
+    },
+    {
+      "name": "Restart Module",
+      "definitionId": "def_339884897531327d29a56c68",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2825",
+        "EJ2826"
+      ],
+      "filename": "restart-module.png",
+      "crop": [
+        1469,
+        0,
+        484,
+        730
+      ],
+      "width": 484,
+      "height": 730,
+      "preservedPixelCount": 109244,
+      "sha256": "72387b3c6f065b4d4983c169810ff411f076c8254936aa1e586ab84e7964363c",
+      "sourcePrintedIds": [
+        "EJ2826"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/restart-module.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/restart-module.png",
+        "width": 484,
+        "height": 730,
+        "artBottom": 429
+      }
+    },
+    {
+      "name": "Congealed Harpoon",
+      "definitionId": "def_769e38b54e659b2266901025",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2807",
+        "EJ2808"
+      ],
+      "filename": "congealed-harpoon.png",
+      "crop": [
+        1953,
+        0,
+        479,
+        730
+      ],
+      "width": 479,
+      "height": 730,
+      "preservedPixelCount": 84869,
+      "sha256": "68fdfd139fb48405e95b6f829f3a4d7ed5cd8ffa4ce775cf3c0f183e4a84297d",
+      "sourcePrintedIds": [
+        "EJ2808"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/congealed-harpoon.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/congealed-harpoon.png",
+        "width": 479,
+        "height": 730,
+        "artBottom": 416
+      }
+    },
+    {
+      "name": "Splinterdarts",
+      "definitionId": "def_cc66dada15bc8011f8ed1f2b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2809",
+        "EJ2810"
+      ],
+      "filename": "splinterdarts.png",
+      "crop": [
+        2432,
+        0,
+        486,
+        730
+      ],
+      "width": 486,
+      "height": 730,
+      "preservedPixelCount": 146040,
+      "sha256": "13c9449236cac504dd8c3a6fc6dbb1d1b4d086b8044566c1a87a18c20ff0c465",
+      "sourcePrintedIds": [
+        "EJ2810"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/splinterdarts.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/splinterdarts.png",
+        "width": 486,
+        "height": 730,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Liquid Bow",
+      "definitionId": "def_c9af906914a4b67cd3c837fa",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2805",
+        "EJ2806"
+      ],
+      "filename": "liquid-bow.png",
+      "crop": [
+        2918,
+        0,
+        472,
+        730
+      ],
+      "width": 472,
+      "height": 730,
+      "preservedPixelCount": 104884,
+      "sha256": "aaba125f57411e9c5b61d199507c1b4cc0ab57932b1eef3c4c15d756a9c6d467",
+      "sourcePrintedIds": [
+        "EJ2805"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/liquid-bow.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/liquid-bow.png",
+        "width": 472,
+        "height": 730,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Lunaticape",
+      "definitionId": "def_43df68b25c0f6299d45ecf34",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2815",
+        "EJ2816"
+      ],
+      "filename": "lunaticape.png",
+      "crop": [
+        0,
+        730,
+        495,
+        744
+      ],
+      "width": 495,
+      "height": 744,
+      "preservedPixelCount": 86580,
+      "sha256": "db7ee62409fe9ec644a8c38c9ee61acadb19a36f0c5a91a1a875b5e976c97e9e",
+      "sourcePrintedIds": [
+        "EJ2816"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/lunaticape.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/lunaticape.png",
+        "width": 495,
+        "height": 744,
+        "artBottom": 436
+      }
+    },
+    {
+      "name": "Blackburned",
+      "definitionId": "def_0abe946b5194a73fb5b0653c",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2811",
+        "EJ2812",
+        "EJ2813",
+        "EJ2814"
+      ],
+      "filename": "blackburned.png",
+      "crop": [
+        495,
+        730,
+        490,
+        744
+      ],
+      "width": 490,
+      "height": 744,
+      "preservedPixelCount": 79482,
+      "sha256": "d3b46d01bdc996e8da9ad968947f03d0e538057690eb2259950fb85f8a77d655",
+      "sourcePrintedIds": [
+        "EJ2812"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/blackburned.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/blackburned.png",
+        "width": 490,
+        "height": 744,
+        "artBottom": 305
+      }
+    },
+    {
+      "name": "Ambrosia Whip",
+      "definitionId": "def_5827113f1e8f8e706d4ec085",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2799",
+        "EJ2800"
+      ],
+      "filename": "ambrosia-whip.png",
+      "crop": [
+        985,
+        730,
+        484,
+        744
+      ],
+      "width": 484,
+      "height": 744,
+      "preservedPixelCount": 90748,
+      "sha256": "a6e64b5be876af626bf09cd40911ab7199806ae19d8cb222be79203ed88f62a9",
+      "sourcePrintedIds": [
+        "EJ2800"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/ambrosia-whip.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/ambrosia-whip.png",
+        "width": 484,
+        "height": 744,
+        "artBottom": 479
+      }
+    },
+    {
+      "name": "Towerclub",
+      "definitionId": "def_3bb3b745a6bbea75761caa1b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2797",
+        "EJ2798"
+      ],
+      "filename": "towerclub.png",
+      "crop": [
+        1469,
+        730,
+        484,
+        744
+      ],
+      "width": 484,
+      "height": 744,
+      "preservedPixelCount": 145076,
+      "sha256": "05e082d1b1fdaff628cf21e876468765db7817f4624e2f38d15440e5a809cd2b",
+      "sourcePrintedIds": [
+        "EJ2798"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/towerclub.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/towerclub.png",
+        "width": 484,
+        "height": 744,
+        "artBottom": 592
+      }
+    },
+    {
+      "name": "Ambrosia Sword",
+      "definitionId": "def_ccf5f8b12d0c7f79e4b30b92",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2795",
+        "EJ2796"
+      ],
+      "filename": "ambrosia-sword.png",
+      "crop": [
+        1953,
+        730,
+        479,
+        744
+      ],
+      "width": 479,
+      "height": 744,
+      "preservedPixelCount": 123377,
+      "sha256": "b54104d652663ef17df589f8794b8eb9b917e718b55f00b72af4316cc2ad6c23",
+      "sourcePrintedIds": [
+        "EJ2796"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/ambrosia-sword.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/ambrosia-sword.png",
+        "width": 479,
+        "height": 744,
+        "artBottom": 490
+      }
+    },
+    {
+      "name": "Slabspear",
+      "definitionId": "def_bc623aa101867b6a117ee23a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2803",
+        "EJ2804"
+      ],
+      "filename": "slabspear.png",
+      "crop": [
+        2432,
+        730,
+        486,
+        744
+      ],
+      "width": 486,
+      "height": 744,
+      "preservedPixelCount": 105499,
+      "sha256": "46504d28157ed18496eb0409099e4c570bf12f1da1fd43a6eb9e380b72fbf80e",
+      "sourcePrintedIds": [
+        "EJ2804"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/slabspear.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/slabspear.png",
+        "width": 486,
+        "height": 744,
+        "artBottom": 538
+      }
+    },
+    {
+      "name": "Lunar Blade",
+      "definitionId": "def_2edf9820f4ab01d2c8c54285",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2801",
+        "EJ2802"
+      ],
+      "filename": "lunar-blade.png",
+      "crop": [
+        2918,
+        730,
+        472,
+        744
+      ],
+      "width": 472,
+      "height": 744,
+      "preservedPixelCount": 92444,
+      "sha256": "f4d5fa3f2f35107a6c4c365fd45351954d20e988f2103a19233cb4ba8d0e952f",
+      "sourcePrintedIds": [
+        "EJ2802"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/lunar-blade.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/lunar-blade.png",
+        "width": 472,
+        "height": 744,
+        "artBottom": 411
+      }
+    },
+    {
+      "name": "Gutting Skewer",
+      "definitionId": "def_3d0b7535523da56434353b03",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2837"
+      ],
+      "filename": "gutting-skewer.png",
+      "crop": [
+        0,
+        1474,
+        495,
+        752
+      ],
+      "width": 495,
+      "height": 752,
+      "preservedPixelCount": 104098,
+      "sha256": "2b1a4f3e713d8b8675f8c7749b5373f16aee6542712502c55251e46515b875b1",
+      "sourcePrintedIds": [
+        "EJ2837"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/gutting-skewer.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/gutting-skewer.png",
+        "width": 495,
+        "height": 752,
+        "artBottom": 441
+      }
+    },
+    {
+      "name": "Shard Harpoon",
+      "definitionId": "def_b79c960624ba22e0530b280a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2838",
+        "EJ2839"
+      ],
+      "filename": "shard-harpoon.png",
+      "crop": [
+        495,
+        1474,
+        490,
+        752
+      ],
+      "width": 490,
+      "height": 752,
+      "preservedPixelCount": 158016,
+      "sha256": "bc621ecd0d95ba54a81c77f2c1a1460ce2cd96abef3071b24c80650d50ff859a",
+      "sourcePrintedIds": [
+        "EJ2839"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/shard-harpoon.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/shard-harpoon.png",
+        "width": 490,
+        "height": 752,
+        "artBottom": 603
+      }
+    },
+    {
+      "name": "Babel Hardsuit",
+      "definitionId": "def_8a305f33db709db666f9d06f",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2831",
+        "EJ2832"
+      ],
+      "filename": "babel-hardsuit.png",
+      "crop": [
+        985,
+        1474,
+        484,
+        752
+      ],
+      "width": 484,
+      "height": 752,
+      "preservedPixelCount": 124243,
+      "sha256": "24d69fcbeb705da825a6cb9f0b0f71a85dbb59ce64d8502534103472ac215880",
+      "sourcePrintedIds": [
+        "EJ2832"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/babel-hardsuit.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/babel-hardsuit.png",
+        "width": 484,
+        "height": 752,
+        "artBottom": 545
+      }
+    },
+    {
+      "name": "Abyss Wetsuit",
+      "definitionId": "def_f02e742821319c58da3b6352",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2829",
+        "EJ2830"
+      ],
+      "filename": "abyss-wetsuit.png",
+      "crop": [
+        1469,
+        1474,
+        484,
+        752
+      ],
+      "width": 484,
+      "height": 752,
+      "preservedPixelCount": 119433,
+      "sha256": "54c1330c695bb1ca7f36a25ac91a5d84ad96aec7f3bb3506ee60bf3aa57325fd",
+      "sourcePrintedIds": [
+        "EJ2830"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/abyss-wetsuit.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/abyss-wetsuit.png",
+        "width": 484,
+        "height": 752,
+        "artBottom": 549
+      }
+    },
+    {
+      "name": "Turtle Pavise",
+      "definitionId": "def_d81d702cf4c85c6da210aa80",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2833",
+        "EJ2834"
+      ],
+      "filename": "turtle-pavise.png",
+      "crop": [
+        1953,
+        1474,
+        479,
+        752
+      ],
+      "width": 479,
+      "height": 752,
+      "preservedPixelCount": 57629,
+      "sha256": "082ee7cf4b3d6ad94c7eb5f1283e6119b0ae54f4635953527b8373f991ac5616",
+      "sourcePrintedIds": [
+        "EJ2834"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/turtle-pavise.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/turtle-pavise.png",
+        "width": 479,
+        "height": 752,
+        "artBottom": 445
+      }
+    },
+    {
+      "name": "Panoptic Buckler",
+      "definitionId": "def_e50c4bb2bda0a578d88e251b",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2819",
+        "EJ2820"
+      ],
+      "filename": "panoptic-buckler.png",
+      "crop": [
+        2432,
+        1474,
+        486,
+        752
+      ],
+      "width": 486,
+      "height": 752,
+      "preservedPixelCount": 108975,
+      "sha256": "ca08dcc101f0987c28aa64518f46dc404b4d46ce7c38e9b9818a37ede3338fea",
+      "sourcePrintedIds": [
+        "EJ2820"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/panoptic-buckler.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/panoptic-buckler.png",
+        "width": 486,
+        "height": 752,
+        "artBottom": 447
+      }
+    },
+    {
+      "name": "Spire Panoply",
+      "definitionId": "def_d90bcacbb033bdbb3b6bdc9a",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2817",
+        "EJ2818"
+      ],
+      "filename": "spire-panoply.png",
+      "crop": [
+        2918,
+        1474,
+        472,
+        752
+      ],
+      "width": 472,
+      "height": 752,
+      "preservedPixelCount": 115557,
+      "sha256": "baded548f3b405188dca5238874e9b41b7fb662bc242e72e31efe482a9f6f532",
+      "sourcePrintedIds": [
+        "EJ2818"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026101950/spire-panoply.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026101950/grayscale/spire-panoply.png",
+        "width": 472,
+        "height": 752,
+        "artBottom": 506
+      }
+    }
+  ],
+  "skippedCards": []
+}

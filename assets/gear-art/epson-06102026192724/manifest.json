@@ -1,0 +1,629 @@
+{
+  "batch": "epson-06102026192724",
+  "source": "../ato_docs/ato-gear/gear/Epson_06102026192724.jpg",
+  "sourceSha256": "cac6c05195cbaf3bb45b96cae01603a80ff459f148fca94485a7915a88be6a68",
+  "configurationSha256": "c51979b431ad5d6a534ad90c0035fb1b237f135221259d151da7aaa2e34be785",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Heir Apparent",
+      "definitionId": "def_175a4e70cba13e10928aab35",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2534"
+      ],
+      "filename": "heir-apparent.png",
+      "crop": [
+        0,
+        0,
+        489,
+        734
+      ],
+      "width": 489,
+      "height": 734,
+      "preservedPixelCount": 123769,
+      "sha256": "f392f1f7b026dfaa287ce8d809f8a266ee3b4835218733c36cd5dc65645264f7",
+      "sourcePrintedIds": [
+        "EJ2534"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/heir-apparent.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/heir-apparent.png",
+        "width": 489,
+        "height": 734,
+        "artBottom": 480
+      }
+    },
+    {
+      "name": "Hunter Killer",
+      "definitionId": "def_989a9b4e7e0a65c5ff6889a8",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2994"
+      ],
+      "filename": "hunter-killer.png",
+      "crop": [
+        489,
+        0,
+        489,
+        734
+      ],
+      "width": 489,
+      "height": 734,
+      "preservedPixelCount": 144851,
+      "sha256": "984680f4f1d5c615e614d76b2fc866b5db2a8b83bd1e7a89bccc32e62ea7cfa2",
+      "sourcePrintedIds": [
+        "EJ2994"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/hunter-killer.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/hunter-killer.png",
+        "width": 489,
+        "height": 734,
+        "artBottom": 557
+      }
+    },
+    {
+      "name": "Dodona Cryptex",
+      "definitionId": "def_719fc10a8661ef33708a76a7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2993"
+      ],
+      "filename": "dodona-cryptex.png",
+      "crop": [
+        978,
+        0,
+        487,
+        734
+      ],
+      "width": 487,
+      "height": 734,
+      "preservedPixelCount": 46452,
+      "sha256": "2281c46f993f26dc1cab907547dc556c556ddde46615d7aeabf179aed336bd9d",
+      "sourcePrintedIds": [
+        "EJ2993"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/dodona-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/dodona-cryptex.png",
+        "width": 487,
+        "height": 734,
+        "artBottom": 414
+      }
+    },
+    {
+      "name": "Typhonic Cryptex",
+      "definitionId": "def_ab13f26ffa9759b77c6d5ce4",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2992"
+      ],
+      "filename": "typhonic-cryptex.png",
+      "crop": [
+        1465,
+        0,
+        489,
+        734
+      ],
+      "width": 489,
+      "height": 734,
+      "preservedPixelCount": 50565,
+      "sha256": "2b7011cc672981356858dca6585e33ec44cc47f19304f89f631ec08328351b81",
+      "sourcePrintedIds": [
+        "EJ2992"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/typhonic-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/typhonic-cryptex.png",
+        "width": 489,
+        "height": 734,
+        "artBottom": 408
+      }
+    },
+    {
+      "name": "Headdress of the Deep",
+      "definitionId": "def_cf018a1d5900ea664c605e48",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2977"
+      ],
+      "filename": "headdress-of-the-deep.png",
+      "crop": [
+        1954,
+        0,
+        484,
+        734
+      ],
+      "width": 484,
+      "height": 734,
+      "preservedPixelCount": 128409,
+      "sha256": "02a9f72ef7cd625fea502fcb2a51a76550f7002d88cbfd76db45c5f8e9e9bb69",
+      "sourcePrintedIds": [
+        "EJ2977"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/headdress-of-the-deep.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/headdress-of-the-deep.png",
+        "width": 484,
+        "height": 734,
+        "artBottom": 489
+      }
+    },
+    {
+      "name": "Strungstring",
+      "definitionId": "def_06379eeb66c86fc0981951ca",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2976"
+      ],
+      "filename": "strungstring.png",
+      "crop": [
+        2438,
+        0,
+        480,
+        734
+      ],
+      "width": 480,
+      "height": 734,
+      "preservedPixelCount": 93582,
+      "sha256": "01a932fa0f726f989c5f0470c81de3cc691e2d2dc005eab1a0b78852b13615dc",
+      "sourcePrintedIds": [
+        "EJ2976"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/strungstring.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/strungstring.png",
+        "width": 480,
+        "height": 734,
+        "artBottom": 398
+      }
+    },
+    {
+      "name": "Flame-Hardened Plate",
+      "definitionId": "def_83c12264edf95cc32d7e9850",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2975"
+      ],
+      "filename": "flame-hardened-plate.png",
+      "crop": [
+        2918,
+        0,
+        478,
+        734
+      ],
+      "width": 478,
+      "height": 734,
+      "preservedPixelCount": 112899,
+      "sha256": "25b274e38fbd6c18960a941a148baf388febce3d5f1e112a2ea76cd118e09e71",
+      "sourcePrintedIds": [
+        "EJ2975"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/flame-hardened-plate.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/flame-hardened-plate.png",
+        "width": 478,
+        "height": 734,
+        "artBottom": 500
+      }
+    },
+    {
+      "name": "Pantheon (Generated)",
+      "definitionId": "def_3f5f3191f528d11137f26ef5",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3000",
+        "ZJ3122"
+      ],
+      "filename": "pantheon-generated.png",
+      "crop": [
+        0,
+        734,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 92199,
+      "sha256": "7979fde245dccdb65f282a457afe528b82c88752378a16ec36a5b87cb01c039b",
+      "sourcePrintedIds": [
+        "ZJ3000"
+      ],
+      "reviewNote": "The printed title/variant 'Pantheon' maps to catalogue name 'Pantheon (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/pantheon-generated.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/pantheon-generated.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 747
+      }
+    },
+    {
+      "name": "Poseidonis (Generated)",
+      "definitionId": "def_8665093a6d38f637a285a590",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2999"
+      ],
+      "filename": "poseidonis-generated.png",
+      "crop": [
+        489,
+        734,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 90356,
+      "sha256": "66defdf2e29a4d8c5b89884ed31698e4fe54f38c77604739b3aada48bded79ba",
+      "sourcePrintedIds": [
+        "ZJ2999"
+      ],
+      "reviewNote": "The printed title/variant 'Poseidonis' maps to catalogue name 'Poseidonis (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/poseidonis-generated.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/poseidonis-generated.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 496
+      }
+    },
+    {
+      "name": "Atlantean Gun (Generated)",
+      "definitionId": "def_ea5bc0a90a5e78195c989396",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2998"
+      ],
+      "filename": "atlantean-gun-generated.png",
+      "crop": [
+        978,
+        734,
+        487,
+        747
+      ],
+      "width": 487,
+      "height": 747,
+      "preservedPixelCount": 105215,
+      "sha256": "51d6caaacf6b13ad333b302860ae00eb2cb5066c22168bf5f63cb4a209311f15",
+      "sourcePrintedIds": [
+        "ZJ2998"
+      ],
+      "reviewNote": "The printed title/variant 'Atlantean Gun' maps to catalogue name 'Atlantean Gun (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/atlantean-gun-generated.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/atlantean-gun-generated.png",
+        "width": 487,
+        "height": 747,
+        "artBottom": 505
+      }
+    },
+    {
+      "name": "Damocles Crown (Generated)",
+      "definitionId": "def_df9a0ad33c1b03a0a9879b5d",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2997"
+      ],
+      "filename": "damocles-crown-generated.png",
+      "crop": [
+        1465,
+        734,
+        489,
+        747
+      ],
+      "width": 489,
+      "height": 747,
+      "preservedPixelCount": 57541,
+      "sha256": "7733e8997408631637b950ea24f2af04960827c91f20e16711ab57bc97cc751f",
+      "sourcePrintedIds": [
+        "ZJ2997"
+      ],
+      "reviewNote": "The printed title/variant 'Damocles Crown' maps to catalogue name 'Damocles Crown (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/damocles-crown-generated.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/damocles-crown-generated.png",
+        "width": 489,
+        "height": 747,
+        "artBottom": 328
+      }
+    },
+    {
+      "name": "Bow of Artemis (Generated)",
+      "definitionId": "def_bb36fbc4c76dcfdbd153ac30",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ2996"
+      ],
+      "filename": "bow-of-artemis-generated.png",
+      "crop": [
+        1954,
+        734,
+        484,
+        747
+      ],
+      "width": 484,
+      "height": 747,
+      "preservedPixelCount": 81610,
+      "sha256": "87ca0d7031066ba85638a5a78c97d367968c335d2b82ec1d161ca9f61b3d05b9",
+      "sourcePrintedIds": [
+        "ZJ2996"
+      ],
+      "reviewNote": "The printed title/variant 'Bow of Artemis' maps to catalogue name 'Bow of Artemis (Generated)'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/bow-of-artemis-generated.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/bow-of-artemis-generated.png",
+        "width": 484,
+        "height": 747,
+        "artBottom": 473
+      }
+    },
+    {
+      "name": "Oxygen Destroyer",
+      "definitionId": "def_7e09bd8e9a667cedcb7861b3",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2391"
+      ],
+      "filename": "oxygen-destroyer.png",
+      "crop": [
+        2438,
+        734,
+        480,
+        747
+      ],
+      "width": 480,
+      "height": 747,
+      "preservedPixelCount": 81124,
+      "sha256": "c61d07d67a0a6aad2592d87ad9614ce24996661548c947576c2bf5982c57cbc9",
+      "sourcePrintedIds": [
+        "EJ2391"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/oxygen-destroyer.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/oxygen-destroyer.png",
+        "width": 480,
+        "height": 747,
+        "artBottom": 475
+      }
+    },
+    {
+      "name": "Big Boy Mazey",
+      "definitionId": "def_0ce835178e7b48db260deba7",
+      "faceId": "front",
+      "printedIds": [
+        "EJ2995"
+      ],
+      "filename": "big-boy-mazey.png",
+      "crop": [
+        2918,
+        734,
+        478,
+        747
+      ],
+      "width": 478,
+      "height": 747,
+      "preservedPixelCount": 100378,
+      "sha256": "dbf1caf9462953ed634fafa1d38778e271d4620294b05c4f7a56baf027128393",
+      "sourcePrintedIds": [
+        "EJ2995"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/big-boy-mazey.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/big-boy-mazey.png",
+        "width": 478,
+        "height": 747,
+        "artBottom": 446
+      }
+    },
+    {
+      "name": "Hermes Multitool",
+      "definitionId": "def_5b405ea2f438916a45af8615",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3006"
+      ],
+      "filename": "hermes-multitool.png",
+      "crop": [
+        0,
+        1481,
+        489,
+        763
+      ],
+      "width": 489,
+      "height": 763,
+      "preservedPixelCount": 69032,
+      "sha256": "4d6f4fb164b505aad08075f60c97269a7a1a8ceef3478b6185202ed7354a578e",
+      "sourcePrintedIds": [
+        "ZJ3006"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/hermes-multitool.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/hermes-multitool.png",
+        "width": 489,
+        "height": 763,
+        "artBottom": 398
+      }
+    },
+    {
+      "name": "Panopticon",
+      "definitionId": "def_59c002cd8d6c35e67656c62e",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3005"
+      ],
+      "filename": "panopticon.png",
+      "crop": [
+        489,
+        1481,
+        489,
+        763
+      ],
+      "width": 489,
+      "height": 763,
+      "preservedPixelCount": 52548,
+      "sha256": "cbc4aa9893f33e7d11393538c9cf7f860ac541e382a998ddd39ea4d1c538861d",
+      "sourcePrintedIds": [
+        "ZJ3005"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/panopticon.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/panopticon.png",
+        "width": 489,
+        "height": 763,
+        "artBottom": 571
+      }
+    },
+    {
+      "name": "Midas Catcher",
+      "definitionId": "def_84493f5b70caf97062d45e6c",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3004"
+      ],
+      "filename": "midas-catcher.png",
+      "crop": [
+        978,
+        1481,
+        487,
+        763
+      ],
+      "width": 487,
+      "height": 763,
+      "preservedPixelCount": 15592,
+      "sha256": "fa5d594412fa28840d12fbfc3c555e7379cd6366fff9400026ab5f74580f534b",
+      "sourcePrintedIds": [
+        "ZJ3004"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/midas-catcher.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/midas-catcher.png",
+        "width": 487,
+        "height": 763,
+        "artBottom": 288
+      }
+    },
+    {
+      "name": "The Manticore",
+      "definitionId": "def_dd548407bb96d8eaf02dcbb6",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3003"
+      ],
+      "filename": "the-manticore.png",
+      "crop": [
+        1465,
+        1481,
+        489,
+        763
+      ],
+      "width": 489,
+      "height": 763,
+      "preservedPixelCount": 11488,
+      "sha256": "e06b926abad819cc5ff1fa2d59a310a0fb93673717eed9c92aec1543206018b5",
+      "sourcePrintedIds": [
+        "ZJ3003"
+      ],
+      "reviewNote": "Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/the-manticore.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/the-manticore.png",
+        "width": 489,
+        "height": 763,
+        "artBottom": 229
+      }
+    },
+    {
+      "name": "Carpet of the Anemoi",
+      "definitionId": "def_bbb457f9456b790e58f631cc",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3002"
+      ],
+      "filename": "carpet-of-the-anemoi.png",
+      "crop": [
+        1954,
+        1481,
+        484,
+        763
+      ],
+      "width": 484,
+      "height": 763,
+      "preservedPixelCount": 65670,
+      "sha256": "965bead779db0aa4627ffa82539a1358c5740cc953a563ea63d9a5cfd8a30919",
+      "sourcePrintedIds": [
+        "ZJ3002"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/carpet-of-the-anemoi.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/carpet-of-the-anemoi.png",
+        "width": 484,
+        "height": 763,
+        "artBottom": 310
+      }
+    },
+    {
+      "name": "Recycled Wishhoard",
+      "definitionId": "def_d0a0bcb9c239f813bb6c63ed",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3001"
+      ],
+      "filename": "recycled-wishhoard.png",
+      "crop": [
+        2438,
+        1481,
+        480,
+        763
+      ],
+      "width": 480,
+      "height": 763,
+      "preservedPixelCount": 30539,
+      "sha256": "d29cae65680a8f806757789770878cbe148f30e75bd4d6861afd79b322bd83d2",
+      "sourcePrintedIds": [
+        "ZJ3001"
+      ],
+      "reviewNote": "The printed title/variant 'Recycled Wishoard' maps to catalogue name 'Recycled Wishhoard'; the canonical name is retained for the file and data link. Printing overlaps or abuts the illustration. Covered pixels are masked to sampled paper; no hidden artwork is reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-06102026192724/recycled-wishhoard.png",
+        "grayscaleImage": "assets/gear-art/epson-06102026192724/grayscale/recycled-wishhoard.png",
+        "width": 480,
+        "height": 763,
+        "artBottom": 362
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "name": "Pantheon (Generated)",
+      "definitionId": "def_3f5f3191f528d11137f26ef5",
+      "faceId": "front",
+      "printedIds": [
+        "ZJ3000",
+        "ZJ3122"
+      ],
+      "filename": "pantheon-generated-continuation.png",
+      "crop": [
+        2918,
+        1481,
+        478,
+        763
+      ],
+      "row": 3,
+      "column": 7,
+      "reason": "Separate physical continuation card for Pantheon. The imported catalogue groups its printed ID with the primary face rather than defining a back. Retain the primary illustration and record this crop without inventing another face.",
+      "sourcePrintedIds": [
+        "ZJ3122"
+      ]
+    }
+  ]
+}

@@ -5,10 +5,13 @@ web, iOS and Android. It contains a bundled catalogue and independent player
 state for four Argonauts. Open the top-right menu and select **Browse Gear** to
 search cards, inspect abilities and flip reversible Gear. Select a dashboard
 card or empty slot to construct or edit a loadout. Secret cards start hidden.
-The four supplied scans add 75 artwork-only Gear backgrounds, linked by
+The 31 supplied scans add 557 artwork-only Gear backgrounds, linked by
 persistent card and face IDs. Titles, stats and rules remain live overlays;
 exhausted or discarded cards use matching grayscale images. See
 [Gear artwork](docs/GEAR_ART.md) for the asset mapping and extraction notes.
+The [missing-image CSV](docs/reports/missing-gear-art.csv) lists missing fronts
+and flipped sides, with cycles, recipe technologies and secret-card numbers.
+Regenerate it with `npm run gear-art:report` after importing new artwork.
 The main catalogue is formatted with two-space indentation. Smaller generated
 copies under `data/generated/by-family/` group cards by type, capped at 100 cards
 or 512 KiB per file. See [data notes](docs/STAGE_1_DATA.md) for regeneration.

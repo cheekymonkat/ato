@@ -1,6 +1,6 @@
 # Gear image assets
 
-The fifteen supplied scans provide 278 Gear faces, split into individual rounded
+The 31 supplied scans provide 557 Gear faces, split into individual rounded
 PNGs. Filenames follow the Gear names, using lowercase and hyphens:
 `puzzle-axe.png`, `temenos-scale-umbrella.png`, and so on.
 
@@ -85,6 +85,83 @@ titles are not retained in final images.
 | `epson-215042` | `ato-gear/Epson_05102026215042.jpg` | 3,396 × 2,250 | 21 |
 | `epson-215411` | `ato-gear/Epson_05102026215411.jpg` | 3,396 × 2,232 | 21 |
 | `epson-215757` | `ato-gear/Epson_05102026215757.jpg` | 3,390 × 1,482 | 2 |
+| `epson-06102026175715` | `ato-gear/gear/Epson_06102026175715.jpg` | 3,408 × 2,250 | 21 |
+| `epson-06102026180828` | `ato-gear/gear/Epson_06102026180828.jpg` | 3,390 × 2,238 | 20 |
+| `epson-06102026183814` | `ato-gear/gear/Epson_06102026183814.jpg` | 3,384 × 2,232 | 21 |
+| `epson-06102026184207` | `ato-gear/gear/Epson_06102026184207.jpg` | 3,396 × 2,244 | 19 |
+| `epson-06102026191222` | `ato-gear/gear/Epson_06102026191222.jpg` | 3,396 × 2,232 | 21 |
+| `epson-06102026191619` | `ato-gear/gear/Epson_06102026191619.jpg` | 3,378 × 2,238 | 21 |
+| `epson-06102026192724` | `ato-gear/gear/Epson_06102026192724.jpg` | 3,396 × 2,244 | 20 |
+| `epson-06102026193136` | `ato-gear/gear/Epson_06102026193136.jpg` | 3,408 × 2,244 | 20 |
+| `epson-06102026194506` | `ato-gear/gear/Epson_06102026194506.jpg` | 3,426 × 2,238 | 20 |
+| `epson-06102026194705` | `ato-gear/gear/Epson_06102026194705.jpg` | 3,510 × 2,550 | 2 |
+| `epson-07102026101950` | `ato-gear/gear/Epson_07102026101950.jpg` | 3,390 × 2,226 | 21 |
+| `epson-07102026102316` | `ato-gear/gear/Epson_07102026102316.jpg` | 3,408 × 2,244 | 21 |
+| `epson-07102026102736` | `ato-gear/gear/Epson_07102026102736.jpg` | 3,408 × 2,244 | 21 |
+| `epson-07102026103125` | `ato-gear/gear/Epson_07102026103125.jpg` | 3,396 × 2,238 | 21 |
+| `epson-07102026103350` | `ato-gear/gear/Epson_07102026103350.jpg` | 3,510 × 2,550 | 1 |
+| `epson-07102026103838` | `ato-gear/gear/Epson_07102026103838.jpg` | 3,396 × 1,494 | 9 |
+
+## Conversion record: Gear subfolder scans
+
+Added on 7 October 2026 from the 16 JPEGs directly inside
+`../ato_docs/ato-gear/gear/`. Their 282 photographed faces supply 279 new
+artwork links and 558 ready/grayscale PNGs. Garden Activator is photographed
+twice; its second copy is recorded without an extra link. The two Pantheon
+continuation cards are preserved as rounded original crops, rather than being
+invented as reverse sides of the catalogue's single-face definitions.
+
+The conversion uses the same exact source-pixel workflow. Each scan has its
+own SHA-256, native card crops, sampled paper, reviewed artwork bounds,
+printed-content masks, rounded corners and output hashes. Observed footer IDs
+are recorded where legible. These identify similarly named Cycle IV and Mnestis
+Theatre variants independently, including Gaiaegis, Midashield, First Blade,
+Blades of Rage and Slushbane. Generated variants use their canonical catalogue
+names in filenames. No card identities, supply counts or rules are changed.
+
+Phantom Spear/Strikeback, Lesser/Greater Saphos, Dahaka Blade/Blindspot/Cloud and
+both Atlantean Gun/Lance variants retain independent front and flipped-side
+backgrounds. Several Mnestis cards print rules over very faint illustrations.
+Only exposed artwork is retained; covered artwork is not reconstructed. The
+individual conversion notes describe these overlaps. Original JPEGs remain
+unchanged, with original crops and review strips under
+`../ato_docs/gear-art/<batch>/`.
+
+Validation: all 365 domain tests, catalogue reproducibility, lint and type
+checking passed. Expo exported web, iOS and Android bundles successfully. An
+independent pixel check covered all 101,020,474 pixels across the 279 new faces:
+each RGB pixel equals either the original scan pixel or the recorded paper
+sample, and grayscale luminance/alpha match. All 278 previous artwork links
+remain unchanged, as do the catalogue's 3,014 definitions and 3,217 faces.
+
+Regenerate any listed batch by repeating `--batch <batch>` as above, then run:
+
+```sh
+npm run catalogue:import
+npm run gear-art:report
+```
+
+## Missing-image report
+
+[`docs/reports/missing-gear-art.csv`](reports/missing-gear-art.csv) contains one
+row per missing Gear face. It includes the Gear name, cycle, recipe technology,
+secret-card number, missing side and side name, available opposite side,
+acquisition, printed IDs and persistent definition ID. A single-sided card
+does not get an invented flipped-side entry. Technologies are joined by printed
+recipe ID first; name matching is used only for a unique definition in the same
+cycle. Unknown technologies and secret numbers are left empty.
+
+The report checks that linked colour assets exist. Fists remains listed as
+default unarmed gear without supplied artwork; Eschaton Stones is explicitly
+marked as having no illustration in its supplied scan. Rows are ordered by
+cycle descending, then name. The CSV is UTF-8 with a BOM and quoted fields for
+Excel compatibility. Regenerate it
+with `npm run gear-art:report`; an optional output path can be supplied after `--`.
+The 7 October report has 56 missing sides across 55 definitions: 55 fronts and
+one flipped side. A copy is also saved at
+`../ato_docs/gear-art/missing-gear-art.csv` beside the conversion records.
+
+## Conversion record: 4 October Epson scans
 
 The three Epson scans were added on 4 October 2026 using the same deterministic
 artwork-only extraction. Their 55 physical faces yield 54 new artwork links:
