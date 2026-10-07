@@ -11,6 +11,7 @@ exhausted or discarded cards use matching grayscale images. See
 [Gear artwork](docs/GEAR_ART.md) for the asset mapping and extraction notes.
 The [missing-image CSV](docs/reports/missing-gear-art.csv) lists missing fronts
 and flipped sides, with cycles, recipe technologies and secret-card numbers.
+Cards classified as Promo are excluded from the report.
 Regenerate it with `npm run gear-art:report` after importing new artwork.
 The main catalogue is formatted with two-space indentation. Smaller generated
 copies under `data/generated/by-family/` group cards by type, capped at 100 cards

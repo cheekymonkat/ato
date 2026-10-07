@@ -5,6 +5,8 @@ import { Button } from '../components/Button';
 import { Counter } from '../components/Counter';
 import { GameIcon } from '../components/Icon';
 import { argonautSkills, SKILL_MAX, SKILL_MIN } from '../domain/argonaut-stats';
+import { MODIFIED_STAT_COLOUR } from '../domain/combat-modifiers';
+import { kratosRageBonus } from '../domain/conditions';
 import { SKILL_NAMES } from '../domain/party';
 import type { Argonaut } from '../domain/party';
 import { useParty } from '../state/PartyProvider';
@@ -16,6 +18,8 @@ export function StatsSwitcher({ argonaut, onCounterChange }: { argonaut: Argonau
   const [view, setView] = useState<'triskelion' | 'argonaut'>('triskelion');
   const [width, setWidth] = useState(400);
   const skills = useMemo(() => argonautSkills(argonaut, getCatalogue()), [argonaut]);
+  const rageBonus = kratosRageBonus(argonaut, getCatalogue());
+  const rageSuffix = rageBonus ? <Text style={styles.rageBonus} accessibilityLabel="Roused: +1 Rage for Kratos abilities">(+{rageBonus})</Text> : undefined;
   const tight = width < 342, triskelion = view === 'triskelion';
   const singleTriskelionRow = width >= 430;
   const battleCounterStyle = { backgroundColor: argonautColourBackground(argonaut.colour) };
@@ -33,12 +37,12 @@ export function StatsSwitcher({ argonaut, onCounterChange }: { argonaut: Argonau
     </View>
     <View testID="read-only-stats" accessibilityLabel={triskelion ? 'Argonaut skill values' : 'Triskelion values'} style={[styles.summary, singleTriskelionRow && !triskelion && styles.singleSummary]}>
       {summary.map(stat => <View key={stat.name} accessible accessibilityLabel={`${stat.name}: ${stat.value}`} style={styles.summaryCell}>
-        <Text style={styles.summaryName}>{stat.name}</Text><Text style={styles.summaryValue}>{stat.value}</Text>
+        <Text style={styles.summaryName}>{stat.name}{stat.name === 'Rage' && rageSuffix && <> {rageSuffix}</>}</Text><Text style={styles.summaryValue}>{stat.value}</Text>
       </View>)}
     </View>
     {triskelion ? <View testID="triskelion-section" style={styles.triskelion}>
       <View style={styles.triskelionRow}>{(singleTriskelionRow ? ['rage', 'fate', 'danger'] as const : ['rage', 'fate'] as const).map(counter => <Counter key={counter} large compact style={battleCounterStyle}
-        icon={<GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} />} name={counter[0].toUpperCase() + counter.slice(1)} value={argonaut.counters[counter]}
+        icon={<GameIcon name={counter === 'rage' ? 'Rage' : counter === 'fate' ? 'Fate' : 'Danger'} size={22} />} name={counter[0].toUpperCase() + counter.slice(1)} nameSuffix={counter === 'rage' ? rageSuffix : undefined} value={argonaut.counters[counter]}
         onDecrease={() => onCounterChange(counter, -1)} onIncrease={() => onCounterChange(counter, 1)} />)}</View>
       {!singleTriskelionRow && <View style={styles.dangerRow}><View style={styles.dangerCell}><Counter large compact style={battleCounterStyle} icon={<GameIcon name="Danger" size={22} />} name="Danger" value={argonaut.counters.danger}
         onDecrease={() => onCounterChange('danger', -1)} onIncrease={() => onCounterChange('danger', 1)} /></View></View>}
@@ -61,6 +65,7 @@ const styles = StyleSheet.create({
   summaryCell: { flexGrow: 1, flexBasis: '31%', minWidth: 0, height: 25, paddingHorizontal: 6, borderWidth: 1, borderColor: theme.line, borderRadius: 4,
     backgroundColor: theme.panel, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 4 },
   summaryName: { color: theme.ink, fontSize: 12, fontWeight: '500', flexShrink: 1 }, summaryValue: { color: theme.ink, fontSize: 14, fontWeight: '700', fontVariant: ['tabular-nums'] },
+  rageBonus: { color: MODIFIED_STAT_COLOUR, fontWeight: '700' },
   triskelion: { gap: 8 }, triskelionRow: { flexDirection: 'row', gap: 8 }, dangerRow: { alignItems: 'center' }, dangerCell: { width: '50%', minWidth: 138, flexDirection: 'row' },
   skills: { flexDirection: 'row', flexWrap: 'wrap', gap: 6 }, skillCell: { flexBasis: '31%', flexGrow: 1, minWidth: 110 }, tightSkill: { flexBasis: '47%' },
 });

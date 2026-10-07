@@ -25,6 +25,17 @@ export function traumaRows(table: readonly JsonValue[]): TraumaRow[] {
     : { range: '—', type: readableValue(row) });
 }
 
+/** Kratos rows accumulate; Trauma selects the band containing current Danger. */
+export function kratosRowActive(row: KratosRow, rage: number): boolean {
+  return Number.isFinite(rage) && rage >= row.rage;
+}
+export function traumaRowActive(row: TraumaRow, danger: number): boolean {
+  const range = /^(\d+)\s*(?:[-–]\s*(\d+)|(\+))?$/.exec(row.range.trim());
+  if (!range || !Number.isFinite(danger)) return false;
+  const minimum = Number(range[1]), maximum = range[3] ? Infinity : Number(range[2] ?? range[1]);
+  return danger >= minimum && danger <= maximum;
+}
+
 function readableValue(value: JsonValue): string {
   return typeof value === 'string' ? value : JSON.stringify(value);
 }

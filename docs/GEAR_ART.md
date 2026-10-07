@@ -149,7 +149,8 @@ secret-card number, missing side and side name, available opposite side,
 acquisition, printed IDs and persistent definition ID. A single-sided card
 does not get an invented flipped-side entry. Technologies are joined by printed
 recipe ID first; name matching is used only for a unique definition in the same
-cycle. Unknown technologies and secret numbers are left empty.
+cycle. Unknown technologies and secret numbers are left empty. Cards classified
+as Promo are excluded entirely, including their flipped sides.
 
 The report checks that linked colour assets exist. Fists remains listed as
 default unarmed gear without supplied artwork; Eschaton Stones is explicitly
@@ -157,8 +158,8 @@ marked as having no illustration in its supplied scan. Rows are ordered by
 cycle descending, then name. The CSV is UTF-8 with a BOM and quoted fields for
 Excel compatibility. Regenerate it
 with `npm run gear-art:report`; an optional output path can be supplied after `--`.
-The 7 October report has 56 missing sides across 55 definitions: 55 fronts and
-one flipped side. A copy is also saved at
+The 7 October report excludes 45 Promo sides, leaving 11 missing sides across
+10 definitions: 10 fronts and one flipped side. A copy is also saved at
 `../ato_docs/gear-art/missing-gear-art.csv` beside the conversion records.
 
 ## Conversion record: 4 October Epson scans

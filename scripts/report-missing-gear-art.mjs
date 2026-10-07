@@ -11,7 +11,8 @@ const cycleOrder = new Map(['Cycle I', 'Cycle II', 'Cycle III', 'Cycle IV', 'Cyc
 
 /** Join recipes by printed ID first. A name fallback must identify exactly one definition in that cycle. */
 export function missingGearRows(catalogue, availableFaces, skippedFaces = new Map()) {
-  const gear = catalogue.cards.filter(card => card.faces.some(face => face.kind === 'gear'));
+  const gear = catalogue.cards.filter(card => card.faces.some(face => face.kind === 'gear')
+    && !card.faces.some(face => String(face.data.foundIn ?? '').trim().toLowerCase() === 'promo'));
   const technologies = new Map();
   for (const technology of catalogue.cards.filter(card => card.family === 'Technology')) {
     for (const face of technology.faces) {

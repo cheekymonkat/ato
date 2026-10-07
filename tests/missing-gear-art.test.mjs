@@ -52,3 +52,15 @@ test('CSV protects commas, quotes and line breaks and preserves empty values', (
   assert.equal(toCsv([['Gear, "A"', 'Line 1\nLine 2', null, 0]]),
     '\uFEFF"Gear, ""A""","Line 1\nLine 2","","0"\r\n');
 });
+
+test('Promo classification excludes the whole Gear definition, including its flipped side', () => {
+  const catalogue = { cards: [
+    gear('promo', [face('Promo Sword', 'Cycle III', 'front', { foundIn: 'Promo' }),
+      face('Promo Shield', 'Cycle III', 'back')]),
+    gear('regular', [face('Regular Sword', 'Cycle III', 'front', { foundIn: 'Regular' })]),
+    gear('secret', [face('Secret Sword', 'Cycle III', 'front', { foundIn: 'Secret', secretCardNumber: 12 })]),
+  ] };
+  const rows = missingGearRows(catalogue, new Set());
+  assert.deepEqual(rows.map(row => row[10]), ['regular', 'secret']);
+  assert.equal(rows.find(row => row[10] === 'secret')[3], '12');
+});

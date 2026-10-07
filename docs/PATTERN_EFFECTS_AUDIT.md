@@ -13,6 +13,7 @@ Triggered Trauma draw consequences remain player controlled.
 | Support Specialization | BW0980 | Trauma | Adds one Support slot. Stacks with Titan capacity and Gear grants. Firestarter + this Pattern + Trireme Breastplate gives five Supports. |
 | Djinnian Strain | DW2037 | Trauma | Adds one weapon position. A three-handed Weapon cannot use this position, including one that a Titan lets occupy two hands. The ordinary positions retain the Titan's normal rules. |
 | Chronian Strain | CW1551 | Kratos | Adds +1 to Titan movement at Rage 7 or higher. Lowering Rage or removing the Pattern removes the bonus. Stacks with modifier tokens and supported passive Gear Speed effects. |
+| Heavy-Gear Training | AW0289 | Trauma | Ignores up to one point of a supported passive Speed penalty from one active Gear card. No bonus without a Gear penalty; negative modifier tokens are unaffected. Exhausted Gear retains its passives, discarded Gear does not. |
 
 Pattern capacity uses the existing typed `slotEffects` metadata, preserving the
 printed tokens and their source pointer. Djinnian Strain records
@@ -48,7 +49,6 @@ not spend costs, change counters, enforce deaths or resolve attacks.
 | Fearless | Fearless keyword. |
 | Harsh Conditioning | Lose Fate after surviving specified Trauma draws. |
 | Heat Conditioning | Microwave Resistance 1. |
-| Heavy-Gear Training | Ignore up to one point of a Speed penalty from one Gear card. |
 | Hyperborean Strain | Ignore the Bleeding Condition at exactly one Bleeding token. |
 | Hypertime Conditioning | Reestablish Time Anchor with Fate and timing choices. |
 | Iapetan Strain | Reaction Reflex with Fate and Exhaust costs. |

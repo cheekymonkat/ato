@@ -80,6 +80,50 @@ test('Titan movement includes manual and passive Speed, counts two-hand Gear onc
   assert.equal(face('Philoctera').data.speed, '5');
 });
 
+test('Heavy-Gear Training cancels at most one Gear movement penalty without granting free Speed or altering modifier tokens', () => {
+  const party = fresh(), owner = party.argonauts[0], before = JSON.stringify(face('Heavy-Gear Training'));
+  owner.titan = item('Philoctera', 'titan');
+  owner.tableOverrides.trauma = { definitionId: named('Heavy-Gear Training').id, faceId: 'front' };
+  owner.combatModifiers = { precision: 0, speed: -1 };
+  assert.equal(speed(owner), -1, 'Training does not mitigate a modifier-token penalty');
+  const armor = equip(owner, 'Temple Camo', 'armor', ['base:support:0']);
+  assert.equal(speed(owner), -1, 'The Gear penalty is offset, leaving the manual modifier');
+  const movement = combatAdjustments(owner, catalogue).get(face('Philoctera')).speed;
+  assert.match(adjustedStat('5', movement).label, /Heavy-Gear Training \(Temple Camo\): \+1/);
+  armor.exhausted = true; assert.equal(speed(owner), -1, 'Exhausting Gear retains passive penalties');
+  equip(owner, 'Shieldblade', 'weapon', ['base:hand:0', 'base:hand:1']);
+  assert.equal(speed(owner), -2, 'Training mitigates only one Gear card and counts a two-handed card once');
+  armor.discarded = true; assert.equal(speed(owner), -1, 'Another equipped penalty can now be mitigated');
+  owner.instances.find(instance => instance.id === 'weapon').discarded = true;
+  assert.equal(speed(owner), -1, 'No active Gear penalty means no Training bonus');
+  armor.discarded = false; owner.tableOverrides.trauma = null;
+  assert.equal(speed(owner), -2, 'Removing Training restores the Gear penalty');
+  assert.deepEqual(owner.combatModifiers, { precision: 0, speed: -1 });
+  assert.equal(JSON.stringify(face('Heavy-Gear Training')), before);
+  party.argonauts[1].titan = item('Philoctera', 'other-titan');
+  assert.equal(speed(party.argonauts[1]), 0);
+});
+
+test('Training reduces a -2 penalty by one, ignores pending Gear and retains distinct bonuses from the same Gear', () => {
+  const owner = fresh().argonauts[0]; owner.titan = item('Philoctera', 'titan');
+  owner.tableOverrides.trauma = { definitionId: named('Heavy-Gear Training').id, faceId: 'front' };
+  equip(owner, 'Temple Camo', 'pending', ['missing:armor:0']);
+  assert.equal(speed(owner), 0);
+  const alternate = (includeBonus) => {
+    const input = JSON.parse(fs.readFileSync(new URL('../data/generated/catalogue.json', import.meta.url)));
+    const custom = input.cards.find(card => card.id === named('Temple Camo').id);
+    custom.faces[0].data.abilities = [{ abilityText: [{ type: 'plainText', value: '-2 Speed' }] },
+      ...(includeBonus ? [{ abilityText: [{ type: 'plainText', value: '+2 Speed' }] }] : [])];
+    return createCatalogueRepository(input);
+  };
+  const changedCatalogue = alternate(true);
+  owner.equipment[0].positionIds = ['base:support:0'];
+  const adjustment = combatAdjustments(owner, changedCatalogue).get(changedCatalogue.getFace(named('Philoctera').id, 'front')).speed;
+  assert.equal(adjustment.delta, 1, 'The separate +2 bonus does not hide the -2 Gear penalty from Training');
+  const penaltyOnly = alternate(false);
+  assert.equal(combatAdjustments(owner, penaltyOnly).get(penaltyOnly.getFace(named('Philoctera').id, 'front')).speed.delta, -1);
+});
+
 test('costs, timing, token gains, conditional prose and unsupported gates do not create passive adjustments', () => {
   const base = face('Puzzle Axe'), values = gateValues(fresh().argonauts[0], catalogue);
   const sentence = tokens => ({ abilityText: tokens });

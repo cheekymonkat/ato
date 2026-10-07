@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { kratosRows, traumaRows, kratosRowLabel, patternIconKey } from '../src/domain/pattern-table.ts';
+import { kratosRowActive, kratosRows, traumaRowActive, traumaRows, kratosRowLabel, patternIconKey } from '../src/domain/pattern-table.ts';
 import { patternIcons } from '../src/theme/pattern-icons.ts';
 
 const catalogue = JSON.parse(await readFile(new URL('../data/generated/catalogue.json', import.meta.url), 'utf8'));
@@ -50,4 +50,23 @@ test('symbols with implicit SVG fills remain visible on black options', () => {
     assert.ok(xml.includes('viewBox='));
     assert.ok(!xml.includes('data:image/'), 'hidden tracing images must not ship');
   }
+});
+
+test('Kratos activates every row up to current Rage, including derived Roused Rage', () => {
+  const rows = kratosRows(faceNamed('Pandoran Strain').data.kratosTable);
+  assert.deepEqual(rows.filter(row => kratosRowActive(row, 5)).map(row => row.rage), [1, 2, 3, 4, 5]);
+  assert.deepEqual(rows.filter(row => kratosRowActive(row, 6)).map(row => row.rage), [1, 2, 3, 4, 5, 6]);
+  assert.equal(rows.some(row => kratosRowActive(row, 0)), false);
+  assert.equal(rows.every(row => kratosRowActive(row, 100)), true);
+});
+
+test('Trauma highlights the current band at inclusive boundaries, singleton values and open-ended limits', () => {
+  const rows = traumaRows(faceNamed('Heavy-Gear Training').data.traumaTable);
+  for (const [danger, expected] of [[0, []], [1, ['1-3']], [3, ['1-3']], [4, ['4-6']], [5, ['4-6']], [6, ['4-6']], [7, ['7-9']], [9, ['7-9']], [10, ['10+']], [100, ['10+']]]) {
+    assert.deepEqual(rows.filter(row => traumaRowActive(row, danger)).map(row => row.range), expected);
+  }
+  const shade = traumaRows(faceNamed('Shade Training').data.traumaTable);
+  assert.deepEqual(shade.filter(row => traumaRowActive(row, 5)).map(row => row.range), ['5']);
+  assert.equal(traumaRowActive({ range: '—', type: 'unknown' }, 5), false);
+  assert.equal(traumaRowActive(rows[0], NaN), false);
 });

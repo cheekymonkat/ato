@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import test from 'node:test';
 import fs from 'node:fs';
 import { createParty, parseParty } from '../src/domain/party.ts';
-import { conditionEffects, conditionRecords, conditionReverse, conditionSections, supportsCondition } from '../src/domain/conditions.ts';
+import { conditionEffects, conditionRecords, conditionReverse, conditionSections, kratosRageBonus, supportsCondition } from '../src/domain/conditions.ts';
 import { formatParagraph } from '../src/domain/card-presentation.ts';
 import { createCatalogueRepository } from '../src/catalogue/repository.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
@@ -14,6 +14,21 @@ const fresh = () => createParty('trackers', ['a', 'b', 'c', 'd'], catalogue.vers
 const reference = name => { const card = catalogue.byName(name)[0]; return { definitionId: card.id, faceId: 'front' }; };
 const condition = (id = 'c1', ref = null) => ({ id, name: 'Manual condition', reference: ref, source: 'Primordial attack', duration: 'Until end of round', amount: 1 });
 const reduce = (party, action) => partyReducer(party, { argonautId: 'a', ...action }, catalogue);
+
+test('Roused derives one temporary Kratos bonus, follows its current face and never changes counters or another Argonaut', () => {
+  const start = fresh(); start.argonauts[0].counters.rage = 5;
+  const next = reduce(start, { type: 'condition', condition: condition('roused', reference('Roused')) });
+  assert.equal(kratosRageBonus(next.argonauts[0], catalogue), 1);
+  assert.deepEqual(next.argonauts[0].counters, start.argonauts[0].counters);
+  assert.equal(kratosRageBonus(next.argonauts[1], catalogue), 0);
+  const removed = reduce(next, { type: 'remove-condition', id: 'roused' });
+  assert.equal(kratosRageBonus(removed.argonauts[0], catalogue), 0);
+  const legacy = structuredClone(start.argonauts[0]); legacy.localConditions = ['Roused', 'rouse'];
+  assert.equal(kratosRageBonus(legacy, catalogue), 1, 'Duplicate legacy labels do not stack');
+  legacy.conditions = [{ ...condition('wrong-face', reference('Fear')), name: 'Roused' }]; legacy.localConditions = [];
+  assert.equal(kratosRageBonus(legacy, catalogue), 0, 'The referenced face overrides stale saved display names');
+  assert.equal(kratosRageBonus(parseParty(next).argonauts[0], catalogue), 1);
+});
 
 test('all bundled condition and flagged Trauma faces retain their full effect blocks', () => {
   const cards = catalogue.search().filter(card => card.faces.some(supportsCondition));

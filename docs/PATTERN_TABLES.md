@@ -6,7 +6,14 @@ Trauma uses the original red gradient bands, literal ranges and four tier symbol
 
 `src/domain/pattern-table.ts` preserves row → alternative → combined-effect nesting and supplies readable accessibility labels. Unknown symbols use text. `Pull` and `RedtoBlack` are known text fallbacks because the source icon set does not contain their SVGs.
 
-The component is reusable for later Pattern card inspection and explicit table overrides. Current dialogs still show the selected Titan's data. This change does not introduce Pattern assignment or automatic gameplay effects.
+Argonaut reference dialogs highlight the selected Titan's table or assigned Pattern
+override using current counters. Kratos rows up to the current Rage have red numbers
+on pale badges; later rows are muted. Roused adds a red `(+1)` beside the Rage title
+and one point for Kratos highlighting only, without changing the saved counter or
+other Rage gates. Trauma keeps only the band containing current Danger coloured
+(Danger 5 selects 4–6); all other bands and their symbols are greyscaled. Every
+printed row remains visible. Catalogue previews without current values retain
+the neutral card design.
 
 Icons are generated with `python3 scripts/import-pattern-icons.py`. It embeds 38 existing SVGs from `../ato_docs/images`, preserves view boxes and visible paths, removes hidden tracing images/editor metadata, and applies ATCC's Kratos inversion convention. Originals are unchanged. The generated module is bundled, so the runtime app does not depend on the documentation folder or network access.
 

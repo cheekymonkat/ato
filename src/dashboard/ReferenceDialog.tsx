@@ -15,11 +15,13 @@ import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { patternIssue } from '../domain/titan-roster';
+import { kratosRageBonus } from '../domain/conditions';
 
 export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind; argonaut: Argonaut; onClose: () => void }) {
   const [choosing, setChoosing] = useState(false), { party, dispatch } = useParty(), catalogue = getCatalogue(), spoilers = useSpoilers();
   const [removing, setRemoving] = useState(false);
   const resolved = resolveTable(argonaut, kind, catalogue), override = argonaut.tableOverrides[overrideKey(kind)];
+  const tableValues = { Trauma: argonaut.counters.danger, Kratos: argonaut.counters.rage + kratosRageBonus(argonaut, catalogue) };
   const card = resolved.face && catalogue.get((override || argonaut.titan)!.definitionId);
   const hidden = card && spoilers.hidden(card);
   if (removing && override) return <RemovalConfirmation subject={hidden ? 'the unrevealed Pattern override' : resolved.face?.name || 'the Pattern override'}
@@ -32,8 +34,8 @@ export function ReferenceDialog({ kind, argonaut, onClose }: { kind: PatternKind
   return <Sheet visible maxWidth={420} title={`${kind} reference`} subtitle={hidden ? 'Unrevealed card' : resolved.face ? titanDisplayName(resolved.face) : 'Reference unavailable'} onClose={onClose}>
     <Text style={{ color: theme.muted, fontSize: 13 }}>{override ? 'Pattern override' : 'Titan default'}</Text>
     {resolved.message ? <Text style={{ color: theme.danger, lineHeight: 22 }}>{resolved.message}</Text>
-      : resolved.source === 'pattern' || hidden ? card && resolved.face && <ReferenceCard card={card} face={resolved.face} />
-        : <PatternTable kind={kind} table={resolved.table} />}
+      : resolved.source === 'pattern' || hidden ? card && resolved.face && <ReferenceCard card={card} face={resolved.face} tableValues={tableValues} />
+        : <PatternTable kind={kind} table={resolved.table} currentValue={tableValues[kind]} />}
     {party.titanRoster && !argonaut.titan?.rosterId && <Text style={{ color: theme.muted, fontSize: 13 }}>Choose an Alive Titan before assigning its Patterns.</Text>}
     <Button label={override ? 'Change Pattern override' : 'Choose Pattern override'} disabled={Boolean(party.titanRoster && !argonaut.titan?.rosterId)} onPress={() => setChoosing(true)} />
     {override && <Button quiet label="Use Titan default" onPress={() => setRemoving(true)} />}

@@ -2,39 +2,42 @@ import { useId } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Svg, { Defs, LinearGradient, Polygon, Rect, Stop, SvgXml } from 'react-native-svg';
 import type { JsonValue } from '../domain/json';
-import { effectLabel, kratosRowLabel, kratosRows, patternIconKey, traumaRows } from '../domain/pattern-table';
+import { effectLabel, kratosRowActive, kratosRowLabel, kratosRows, patternIconKey, traumaRowActive, traumaRows } from '../domain/pattern-table';
 import type { PatternEffect, PatternKind } from '../domain/pattern-table';
+import { grayscaleColour, grayscaleSvg } from '../domain/card-colour';
+import { MODIFIED_STAT_COLOUR } from '../domain/combat-modifiers';
 import { patternIcons } from '../theme/pattern-icons';
 import { patternTheme as p } from '../theme/pattern-tokens';
 import { theme } from '../theme/tokens';
 
-function PatternSymbol({ name, size }: { name: string; size: number }) {
+function PatternSymbol({ name, size, inactive = false }: { name: string; size: number; inactive?: boolean }) {
   const xml = patternIcons[name as keyof typeof patternIcons];
-  return xml ? <SvgXml xml={xml} width={size} height={size} /> : <Text style={styles.symbolFallback}>{name}</Text>;
+  return xml ? <SvgXml xml={inactive ? grayscaleSvg(xml) : xml} width={size} height={size} /> : <Text style={styles.symbolFallback}>{name}</Text>;
 }
 
-function Gradient({ colour, band = false }: { colour: string; band?: boolean }) {
+function Gradient({ colour, band = false, inactive = false }: { colour: string; band?: boolean; inactive?: boolean }) {
   const id = `pattern-${useId().replace(/[^a-zA-Z0-9_-]/g, '')}`;
+  const paint = inactive ? grayscaleColour : (value: string) => value;
   return <View accessible={false} style={[StyleSheet.absoluteFill, { pointerEvents: 'none' }]}>
     <Svg width="100%" height="100%">
       <Defs><LinearGradient id={id} x1="0%" y1={band ? '0%' : '100%'} x2={band ? '100%' : '0%'} y2={band ? '0%' : '65%'}>
-        <Stop offset={band ? '20%' : '0%'} stopColor={colour} />
-        <Stop offset={band ? '80%' : '100%'} stopColor={band ? p.traumaBright : colour} stopOpacity={band ? 1 : 0} />
+        <Stop offset={band ? '20%' : '0%'} stopColor={paint(colour)} />
+        <Stop offset={band ? '80%' : '100%'} stopColor={paint(band ? p.traumaBright : colour)} stopOpacity={band ? 1 : 0} />
       </LinearGradient></Defs>
       <Rect width="100%" height="100%" fill={`url(#${id})`} />
     </Svg>
   </View>;
 }
 
-function Effect({ effect }: { effect: PatternEffect }) {
+function Effect({ effect, inactive }: { effect: PatternEffect; inactive: boolean }) {
   return <View style={styles.effect}>
     {effect.quantity !== undefined && <Text style={styles.quantity}>{effect.quantity}</Text>}
-    <PatternSymbol name={patternIconKey(effect)} size={p.effectSize} />
+    <PatternSymbol name={patternIconKey(effect)} size={p.effectSize} inactive={inactive} />
   </View>;
 }
 
 /** Shared by Titan references and future Pattern card inspection/overrides. */
-export function PatternTable({ kind, table }: { kind: PatternKind; table: readonly JsonValue[] }) {
+export function PatternTable({ kind, table, currentValue }: { kind: PatternKind; table: readonly JsonValue[]; currentValue?: number }) {
   const colour = kind === 'Trauma' ? p.trauma : p.kratos;
   return <View style={styles.container}>
     <View style={styles.card}>
@@ -46,22 +49,29 @@ export function PatternTable({ kind, table }: { kind: PatternKind; table: readon
       <View style={styles.table}>
         <Gradient colour={colour} />
         {table.length === 0 && <Text style={styles.empty}>No {kind.toLowerCase()} table supplied.</Text>}
-        {kind === 'Trauma' ? traumaRows(table).map((row, index) => <View key={index} accessible accessibilityLabel={`${row.range}: ${row.type} Trauma`} style={styles.traumaRow}>
-          <Gradient colour={p.trauma} band />
-          <Text style={styles.range}>{row.range}</Text>
-          <View accessible={false} importantForAccessibility="no-hide-descendants" style={styles.traumaSymbol}><PatternSymbol name={row.type} size={p.traumaSize} /></View>
-        </View>) : kratosRows(table).map(row => <View key={row.rage} accessible accessibilityLabel={kratosRowLabel(row)} style={styles.kratosRow}>
-          <View style={[styles.diamond, { pointerEvents: 'none' }]}><Svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><Polygon points="50,0 100,50 50,100 0,50" fill={p.white} /></Svg></View>
-          <View style={styles.rage}><Text style={styles.rageNumber}>{row.rage}</Text></View>
-          <View accessible={false} importantForAccessibility="no-hide-descendants" style={[styles.options, row.options.length === 1 && styles.singleOption]}>
-            {row.options.map((option, index) => <View key={index} style={styles.option}>
-              {option.map((effect, effectIndex) => <View key={effectIndex} style={styles.term}>
-                {effectIndex > 0 && <Text style={styles.plus}>+</Text>}<Effect effect={effect} />
+        {kind === 'Trauma' ? traumaRows(table).map((row, index) => {
+          const active = currentValue === undefined ? undefined : traumaRowActive(row, currentValue), inactive = active === false;
+          return <View key={index} testID={`pattern-row-Trauma-${index}`} accessible accessibilityLabel={`${row.range}: ${row.type} Trauma${active === undefined ? '' : `; ${active ? 'active' : 'inactive'} at Danger ${currentValue}`}`} style={styles.traumaRow}>
+            <Gradient colour={p.trauma} band inactive={inactive} />
+            <Text style={styles.range}>{row.range}</Text>
+            <View accessible={false} importantForAccessibility="no-hide-descendants" style={styles.traumaSymbol}><PatternSymbol name={row.type} size={p.traumaSize} inactive={inactive} /></View>
+          </View>;
+        }) : kratosRows(table).map(row => {
+          const active = currentValue === undefined ? undefined : kratosRowActive(row, currentValue), inactive = active === false;
+          const badge = [styles.rage, active && styles.activeRage, inactive && styles.inactiveBadge], number = [styles.rageNumber, active && styles.activeRageNumber];
+          return <View key={row.rage} testID={`pattern-row-Kratos-${row.rage}`} accessible accessibilityLabel={`${kratosRowLabel(row)}${active === undefined ? '' : `; ${active ? 'active' : 'inactive'} at Rage ${currentValue}`}`} style={[styles.kratosRow, inactive && styles.inactiveRow]}>
+            <View style={[styles.diamond, { pointerEvents: 'none' }]}><Svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"><Polygon points="50,0 100,50 50,100 0,50" fill={p.white} /></Svg></View>
+            <View style={badge}><Text style={number}>{row.rage}</Text></View>
+            <View accessible={false} importantForAccessibility="no-hide-descendants" style={[styles.options, row.options.length === 1 && styles.singleOption]}>
+              {row.options.map((option, index) => <View key={index} style={[styles.option, inactive && styles.inactiveBadge]}>
+                {option.map((effect, effectIndex) => <View key={effectIndex} style={styles.term}>
+                  {effectIndex > 0 && <Text style={styles.plus}>+</Text>}<Effect effect={effect} inactive={inactive} />
+                </View>)}
               </View>)}
-            </View>)}
-          </View>
-          <View style={styles.rage}><Text style={styles.rageNumber}>{row.rage}</Text></View>
-        </View>)}
+            </View>
+            <View style={badge}><Text style={number}>{row.rage}</Text></View>
+          </View>;
+        })}
       </View>
       <View style={[styles.base, { backgroundColor: colour }]} />
     </View>
@@ -86,6 +96,8 @@ const styles = StyleSheet.create({
   diamond: { position: 'absolute', left: '15%', top: '15%', width: '70%', height: '70%' },
   rage: { minWidth: p.rageDiameter, minHeight: p.rageDiameter, borderRadius: 99, paddingHorizontal: 4, paddingVertical: 3, backgroundColor: p.kratos, alignItems: 'center', justifyContent: 'center' },
   rageNumber: { fontSize: 13, color: p.white, fontWeight: '600' },
+  activeRage: { backgroundColor: p.white, borderWidth: 1, borderColor: MODIFIED_STAT_COLOUR }, activeRageNumber: { color: MODIFIED_STAT_COLOUR, fontWeight: '700' },
+  inactiveRow: { opacity: 0.55 }, inactiveBadge: { backgroundColor: '#6B6963' },
   options: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 6 }, singleOption: { justifyContent: 'center' },
   option: { flexShrink: 1, minWidth: 32, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', paddingHorizontal: 4, paddingVertical: 3, gap: 4, minHeight: 28, backgroundColor: p.kratos, borderRadius: p.optionRadius },
   term: { flexDirection: 'row', alignItems: 'center', gap: 4 }, effect: { flexDirection: 'row', alignItems: 'center', gap: 3 },

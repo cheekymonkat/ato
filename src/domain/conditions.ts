@@ -29,6 +29,15 @@ export function conditionRecords(argonaut: Argonaut): ConditionRecord[] {
     id: `legacy:${index}:${name}`, name, reference: null, source: '', duration: '', amount: 1,
   }))];
 }
+/** Roused changes Kratos Table Rage only; it never changes the saved counter. */
+export function kratosRageBonus(argonaut: Argonaut, catalogue: CatalogueRepository): number {
+  return conditionRecords(argonaut).some(condition => {
+    const name = condition.reference
+      ? catalogue.getFace(condition.reference.definitionId, condition.reference.faceId)?.name
+      : condition.name;
+    return name !== undefined && ['roused', 'rouse'].includes(normalizedName(name));
+  }) ? 1 : 0;
+}
 export function validCondition(value: unknown): value is ConditionRecord {
   if (!isRecord(value)) return false;
   const text = (field: string, max: number) => typeof value[field] === 'string' && (value[field] as string).length <= max;
