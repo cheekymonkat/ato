@@ -36,6 +36,7 @@
     "catalogue:import": "node --experimental-strip-types scripts/import-catalogue.mjs",
     "catalogue:check": "node --experimental-strip-types scripts/import-catalogue.mjs --check",
     "gear-art:report": "node scripts/report-missing-gear-art.mjs",
+    "primordial-traits:report": "node --experimental-strip-types scripts/report-primordial-traits.mjs",
     "test:domain": "node --experimental-strip-types --test tests/*.test.mjs"
   },
   "private": true

@@ -118,7 +118,11 @@ the same rules without stored metadata.
 The ten icon shortcuts match the supplied Scribe reference: Adventures, Titans,
 Glyphs, Evolution, Diplomacy, Choice Matrix, Fated Events, Godforms & Summons,
 Decks and Mnestis Theater. Titans opens the individual roster's counted health tabs,
-Pattern editing and confirmed deletion. Other shortcuts open independent, autosaved reference notebooks.
+Pattern editing and confirmed deletion. Diplomacy opens the current cycle's
+three faction panels, with bounded counters and highlighted relationships; see
+[Diplomacy](DIPLOMACY.md). Evolution opens connected, shared diamond tracks,
+separate boss/adversary encounter counters and a level setup reference; see
+[Evolution](EVOLUTION.md). Other shortcuts open independent, autosaved reference notebooks.
 Adventures additionally offers Exploration cards, Godforms & Summons offers
 Godform/Nymph cards, and Decks offers Story, Doom, Exploration, Clue, Trauma and
 Kratos cards. Libraries respect cycle availability and existing spoiler settings.
@@ -138,13 +142,15 @@ they do not implement the full rules engines for those systems.
     '2:story': { definitionId: '<Story definition ID>', faceId: 'back', tokens: { Progress: 23 } },
     '2:doom': { definitionId: '<Doom definition ID>', faceId: 'front', tokens: { Doom: 3 } }
   },
-  records: { diplomacy: 'Delphins +1' }
+  diplomacy: { cycle: 2, values: { helots: 7, cyclopes: 0, symmachy: 3 } },
+  records: { diplomacy: 'Helots adventure resolved' }
 }
 ```
 
 Ship totals carry forward. Capacity overrides, voyage tracks and milestone
 progress have cycle-specific keys. Advancing retains historical entries and
-notebooks while exposing the next cycle's fields and capacities. Existing checked
+notebooks while exposing the next cycle's fields and capacities. Diplomacy totals
+and diplomacy notes are cleared for the next cycle's factions. Existing checked
 cycle advancement still lives in Campaigns & backups; this page adds no alternate
 way to change cycle.
 

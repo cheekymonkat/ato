@@ -29,7 +29,7 @@ export function PartyProfiles() {
   const [pending, setPending] = useState<ReturnType<typeof readBackup> | null>(null), [importName, setImportName] = useState('');
   const [previous, setPrevious] = useState<Workspace | null>(null), [busy, setBusy] = useState(false);
   const [pasteOpen, setPasteOpen] = useState(false), [json, setJson] = useState('');
-  const goToParty = (id = state.party.activeArgonautId) => router.replace({ pathname: '/argonaut/[id]', params: { id } });
+  const goToArgo = () => router.replace('/argo');
   const showError = (error: unknown) => { setError(errorMessage(error)); scroll.current?.scrollTo({ y: 0, animated: true }); };
   const act = (action: () => void) => { setError(null); setMessage(null); try { action(); } catch (error) { showError(error); } };
   const asyncAct = async (action: () => Promise<void>) => {
@@ -45,7 +45,7 @@ export function PartyProfiles() {
   const mismatch = state.profile.party.catalogueVersion !== getCatalogue().version;
   return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}>
     <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={styles.scroll}>
-      <View style={styles.header}><Text accessibilityRole="header" style={styles.title}>Campaigns & backups</Text><Button quiet label="Return to party" disabled={busy} onPress={() => goToParty()} /></View>
+      <View style={styles.header}><Text accessibilityRole="header" style={styles.title}>Campaigns & backups</Text><Button quiet label="Return to Argo" disabled={busy} onPress={goToArgo} /></View>
       <SaveNotice />
       <Text style={styles.text}>Parties save automatically on this device. Export JSON backups to keep a separate copy or move a party to another device.</Text>
       {error && <Text accessibilityRole="alert" style={styles.error}>{error}</Text>}
@@ -67,7 +67,7 @@ export function PartyProfiles() {
         {state.workspace.profiles.map(profile => <View key={profile.id} style={styles.profileRow}>
           <View style={{ flex: 1 }}><Text style={styles.text}>{profile.name}{profile.id === state.profile.id ? ' · Current' : ''}</Text>
             <Text style={styles.detail}>Cycle {campaignCycle(profile.party)} · {profile.party.order.map(id => profile.party.argonauts.find(member => member.id === id)!.name).join(' · ')}</Text></View>
-          <Button quiet label={`Open ${profile.name}`} disabled={busy} onPress={() => act(() => { state.switchProfile(profile.id); goToParty(profile.party.activeArgonautId); })}><Text style={styles.openLabel}>Open</Text></Button>
+          <Button quiet label={`Open ${profile.name}`} disabled={busy} onPress={() => act(() => { state.switchProfile(profile.id); goToArgo(); })}><Text style={styles.openLabel}>Open</Text></Button>
         </View>)}
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Current campaign configuration</Text>
@@ -89,7 +89,7 @@ export function PartyProfiles() {
         <Text style={styles.text}>Campaign cycle</Text>
         <CampaignCycleSelector label="New campaign" value={newCycle} onChange={setNewCycle} disabled={busy} />
         <InventorySettings label="New campaign" enabled={newInventoryTracking} onChange={setNewInventoryTracking} disabled={busy} />
-        <Button label="Create campaign" disabled={busy || !newName.trim()} onPress={() => act(() => goToParty(state.createProfile(newName, newCycle, newInventoryTracking)))} />
+        <Button label="Create campaign" disabled={busy || !newName.trim()} onPress={() => act(() => { state.createProfile(newName, newCycle, newInventoryTracking); goToArgo(); })} />
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Portable backup</Text>
         <View style={styles.actions}><Button label="Export party JSON" disabled={busy || state.preview} onPress={() => void asyncAct(async () => {
@@ -107,7 +107,7 @@ export function PartyProfiles() {
           <Text style={styles.text}>{pending.profile.party.argonauts.map(member => `${member.name}: ${member.instances.length} cards${member.titan ? ' + Titan' : ''}`).join('\n')}</Text>
           {pending.warnings.map(warning => <Text key={warning} style={styles.text}>{warning}</Text>)}
           <TextInput accessibilityLabel="Imported party name" value={importName} onChangeText={setImportName} maxLength={80} style={styles.input} />
-          <View style={styles.actions}><Button label="Import as new profile" disabled={busy || !importName.trim()} onPress={() => act(() => goToParty(state.addImport(pending.profile, importName)))} />
+          <View style={styles.actions}><Button label="Import as new profile" disabled={busy || !importName.trim()} onPress={() => act(() => { state.addImport(pending.profile, importName); goToArgo(); })} />
             <Button quiet label="Cancel import" onPress={() => setPending(null)} /></View>
         </View>}
       </View>
@@ -118,7 +118,7 @@ export function PartyProfiles() {
           if (!snapshot) setMessage('No readable previous snapshot is available yet.');
         })} />
         {previous && <View style={styles.review}><Text style={styles.text}>Restore {previous.profiles.length} {previous.profiles.length === 1 ? 'party' : 'parties'}: {previous.profiles.map(profile => profile.name).join(', ')}</Text>
-          <View style={styles.actions}><Button label="Restore this snapshot" disabled={busy} onPress={() => void asyncAct(async () => { await state.restoreSnapshot(previous); const active = previous.profiles.find(profile => profile.id === previous.activeProfileId)!; goToParty(active.party.activeArgonautId); })} />
+          <View style={styles.actions}><Button label="Restore this snapshot" disabled={busy} onPress={() => void asyncAct(async () => { await state.restoreSnapshot(previous); goToArgo(); })} />
             <Button quiet label="Keep current save" onPress={() => setPrevious(null)} /></View></View>}
       </View>
     </ScrollView>

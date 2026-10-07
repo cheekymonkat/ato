@@ -103,7 +103,7 @@ function EquipmentEditorBody({ argonaut, params }: { argonaut: Argonaut; params:
     </View>}
     {!showSearch && selected && face && <View style={styles.panel}>
       <Text accessibilityRole="header" style={styles.heading}>Review selection</Text>
-      <View style={{ alignItems: 'center' }}>{hidden ? <SecretCard card={selected} compact onReveal={() => spoilers.reveal(selected.id)} /> : face.kind === 'gear' && <GearCard face={face} width={Math.min(270, width - 66)} exhausted={Boolean(reuse && (instance?.exhausted || instance?.discarded))} />}</View>
+      <View style={{ alignItems: 'center' }}>{hidden ? <SecretCard card={selected} compact onReveal={() => spoilers.reveal(selected.id)} /> : face.kind === 'gear' && <GearCard face={face} width={Math.min(270, width - 66)} exhausted={Boolean(reuse && (instance?.exhausted || instance?.discarded))} instance={reuse ? instance : undefined} />}</View>
       <CardActionRow>
         {!hidden && otherFace && <CardActionButton action="Flip" cardName={face.name} onPress={() => { setUnits(undefined); setOverride(false); router.setParams({ face: otherFace.id }); }} />}
         <CardActionButton action="Change card" onPress={() => { setSearching(true); scroll.current?.scrollTo({ y: 0, animated: true }); }} />

@@ -15,7 +15,12 @@ export function startCampaignCycle(party: Party, cycle: CampaignCycle): Party {
   const resources = Object.fromEntries(Object.entries(party.resources).filter(([name]) =>
     name.trim().toLowerCase().replace(/^@/, '').replace(/\s/g, '') !== 'argoknowledge'));
   if (cycle > 1) resources['Argo Knowledge'] = startingArgoKnowledge(cycle);
-  return { ...party, campaignCycle: cycle, resources };
+  const argo = party.argo && { ...party.argo, records: { ...party.argo.records } };
+  if (argo) {
+    delete argo.diplomacy;
+    delete argo.records.diplomacy;
+  }
+  return { ...party, campaignCycle: cycle, resources, ...(argo ? { argo } : {}) };
 }
 export function nextCampaignCycle(cycle: CampaignCycle): CampaignCycle | null {
   return isCampaignCycle(cycle) ? CAMPAIGN_CYCLES[CAMPAIGN_CYCLES.indexOf(cycle) + 1] ?? null : null;

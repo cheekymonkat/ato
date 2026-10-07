@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-bf1b3ea248ccfb5d",
+  "catalogueVersion": "atcc-v2-8d0846516a8568a2",
   "family": "Gear",
   "part": 3,
   "cards": [
@@ -3747,6 +3747,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/fists.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/fists.png",
+            "width": 484,
+            "height": 733,
+            "artBottom": 540
           }
         }
       ]
@@ -5585,6 +5592,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/silk-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/silk-armor.png",
+            "width": 472,
+            "height": 734,
+            "artBottom": 569
           }
         }
       ]

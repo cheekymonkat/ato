@@ -2686,6 +2686,94 @@ export const gearArtwork: Readonly<Record<string, Partial<Record<'front' | 'back
       "artBottom": 421
     }
   },
+  "def_f43a1144b1f9a3e08f8bc6c3": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/trireme-breastplate.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/trireme-breastplate.png",
+      "width": 492,
+      "height": 734,
+      "artBottom": 551
+    }
+  },
+  "def_88a18e2eaae89de4bce7c5c0": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/hermes-cape.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/hermes-cape.png",
+      "width": 486,
+      "height": 734,
+      "artBottom": 460
+    }
+  },
+  "def_3ec7cce4dd5512754216178f": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/alchemist-armor.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/alchemist-armor.png",
+      "width": 488,
+      "height": 734,
+      "artBottom": 467
+    }
+  },
+  "def_dacbc38091cf931db98615dd": {
+    "back": {
+      "image": "assets/gear-art/epson-07102026162435/stock-cryptex.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/stock-cryptex.png",
+      "width": 480,
+      "height": 734,
+      "artBottom": 458
+    },
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/suntanned-fists.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/suntanned-fists.png",
+      "width": 484,
+      "height": 734,
+      "artBottom": 452
+    }
+  },
+  "def_2d97b21b2dbd6564f318f45e": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/auric-kalaharis.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/auric-kalaharis.png",
+      "width": 486,
+      "height": 734,
+      "artBottom": 517
+    }
+  },
+  "def_69223aa434cfe0f1c6352ae7": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/silk-armor.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/silk-armor.png",
+      "width": 472,
+      "height": 734,
+      "artBottom": 569
+    }
+  },
+  "def_24c18664df168e0a50b413af": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/yarn-talisman.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/yarn-talisman.png",
+      "width": 486,
+      "height": 733,
+      "artBottom": 455
+    }
+  },
+  "def_62a3e0517a2a4d9785a77317": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/fists.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/fists.png",
+      "width": 484,
+      "height": 733,
+      "artBottom": 540
+    }
+  },
+  "def_d45ced1407859178d2827127": {
+    "front": {
+      "image": "assets/gear-art/epson-07102026162435/vulture-mask.png",
+      "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/vulture-mask.png",
+      "width": 472,
+      "height": 748,
+      "artBottom": 437
+    }
+  },
   "def_b8957a092c2c3350354ac51b": {
     "front": {
       "image": "assets/gear-art/epson-105748/sirenblade.png",

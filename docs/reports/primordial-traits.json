@@ -1,0 +1,1448 @@
+{
+  "catalogueVersion": "atcc-v2-8d0846516a8568a2",
+  "total": 299,
+  "missing": 28,
+  "primordials": [
+    {
+      "primordialId": "AU0447",
+      "name": "Hekaton",
+      "traits": [
+        {
+          "name": "Friendly Warning",
+          "source": "keyword"
+        },
+        {
+          "name": "Clever Boy",
+          "source": "keyword"
+        },
+        {
+          "name": "A Fist for a Fist",
+          "source": "keyword"
+        },
+        {
+          "name": "Fleet of Hands",
+          "source": "keyword"
+        },
+        {
+          "name": "Fissures",
+          "source": "keyword"
+        },
+        {
+          "name": "Starfish",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Scourge of the Centimanes",
+          "source": "keyword"
+        },
+        {
+          "name": "A Wall of Fists",
+          "source": "keyword"
+        },
+        {
+          "name": "Ram of Fists",
+          "source": "keyword"
+        },
+        {
+          "name": "Supersonic Punch",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Megaton",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "AU0448",
+      "name": "Labyrinthauros",
+      "traits": [
+        {
+          "name": "Mazesense",
+          "source": "keyword"
+        },
+        {
+          "name": "Trample",
+          "source": "keyword"
+        },
+        {
+          "name": "Mazebuilder",
+          "source": "keyword"
+        },
+        {
+          "name": "Maze Reactive Armor",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Maze Hyperactive Armor",
+          "source": "keyword"
+        },
+        {
+          "name": "VP Modification",
+          "source": "sheet"
+        },
+        {
+          "name": "Lightspeeder",
+          "source": "keyword"
+        },
+        {
+          "name": "Extradimensional Trample",
+          "source": "keyword"
+        },
+        {
+          "name": "Fissurebuilder",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "AU0563",
+      "name": "Alpha Temenos",
+      "traits": [
+        {
+          "name": "Labyrinth X",
+          "source": "keyword"
+        },
+        {
+          "name": "Mazesense",
+          "source": "keyword"
+        },
+        {
+          "name": "Maze Reconfiguration",
+          "source": "keyword"
+        },
+        {
+          "name": "Ariadne's Logic",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Snail of Nothing",
+          "source": "keyword"
+        },
+        {
+          "name": "VP Modification",
+          "source": "sheet"
+        },
+        {
+          "name": "Worm of the Labyrinth",
+          "source": "keyword"
+        },
+        {
+          "name": "Win Together Die Alone",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Song of Hopelessness",
+          "source": "card",
+          "printedIds": [
+            "AX0517"
+          ]
+        },
+        {
+          "name": "Song of Great Fear",
+          "source": "keyword"
+        },
+        {
+          "name": "Doom of the Centimanes",
+          "source": "keyword"
+        },
+        {
+          "name": "Symphony of Despair",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "AU0622",
+      "name": "Hermesian Pursuer",
+      "traits": [
+        {
+          "name": "Toying",
+          "source": "override",
+          "provenance": "User confirmation, 7 October 2026; adapted from the Toying card EX3219"
+        },
+        {
+          "name": "Winged Doom",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Killjoy",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Flares",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Mothwing Trance",
+          "source": "keyword"
+        },
+        {
+          "name": "Roost Battle",
+          "source": "keyword"
+        },
+        {
+          "name": "Darkness Comes With Me",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Cackle",
+          "source": "keyword"
+        },
+        {
+          "name": "Nemesis Vow",
+          "source": "keyword"
+        },
+        {
+          "name": "Head to Head",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Headhunter",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "BU0724",
+      "name": "Cyclonus",
+      "traits": [
+        {
+          "name": "Bred for War",
+          "source": "keyword"
+        },
+        {
+          "name": "The Strong Eat",
+          "source": "keyword"
+        },
+        {
+          "name": "Eye for an Eye",
+          "source": "keyword"
+        },
+        {
+          "name": "Unbeatable Guard",
+          "source": "keyword"
+        },
+        {
+          "name": "Lesser Danger Sense",
+          "source": "card",
+          "printedIds": [
+            "BX0715"
+          ]
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Hyperaggression",
+          "source": "keyword"
+        },
+        {
+          "name": "Dreadnought",
+          "source": "keyword"
+        },
+        {
+          "name": "Crimson Tide",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Leleges Spin",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "BU0780",
+      "name": "Chimera Metastasios",
+      "traits": [
+        {
+          "name": "Slime Trail",
+          "source": "card",
+          "printedIds": [
+            "BX0764"
+          ]
+        },
+        {
+          "name": "This Train",
+          "source": "card",
+          "printedIds": [
+            "BX0765"
+          ]
+        },
+        {
+          "name": "Metamorphosis",
+          "source": "keyword"
+        },
+        {
+          "name": "The Strong Eat",
+          "source": "keyword"
+        },
+        {
+          "name": "Critical Mass",
+          "source": "keyword"
+        },
+        {
+          "name": "Highly Toxic",
+          "source": "card",
+          "printedIds": [
+            "BX0768"
+          ]
+        },
+        {
+          "name": "Digestive Acids",
+          "source": "keyword"
+        },
+        {
+          "name": "Voracious Bog",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Black Rain",
+          "source": "keyword"
+        },
+        {
+          "name": "Insatiable Pull",
+          "source": "keyword"
+        },
+        {
+          "name": "Primordial Plasma",
+          "source": "keyword"
+        },
+        {
+          "name": "Living Fortress",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Three Point Six",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "BU1051",
+      "name": "The Nietzschean",
+      "traits": [
+        {
+          "name": "Stay Your Hand",
+          "source": "keyword"
+        },
+        {
+          "name": "Weapon Master",
+          "source": "keyword"
+        },
+        {
+          "name": "Danger Sense",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "The Strong Eat",
+          "source": "keyword"
+        },
+        {
+          "name": "Shadow and the Flame",
+          "source": "keyword"
+        },
+        {
+          "name": "All For One",
+          "source": "card",
+          "printedIds": [
+            "BX1059"
+          ]
+        },
+        {
+          "name": "Ticking Clock",
+          "source": "card",
+          "printedIds": [
+            "BX1060"
+          ]
+        },
+        {
+          "name": "Flawless",
+          "source": "keyword"
+        },
+        {
+          "name": "Dealbreaker Stance",
+          "source": "keyword"
+        },
+        {
+          "name": "Fate of All Cowards",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "No Missed Chances",
+          "source": "keyword"
+        },
+        {
+          "name": "No Quarter",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "God Among Men",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "BU1149",
+      "name": "The Burden",
+      "traits": [
+        {
+          "name": "Sisyphus's Spiral",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Splash",
+          "source": "keyword"
+        },
+        {
+          "name": "Moirai Vault",
+          "source": "keyword"
+        },
+        {
+          "name": "Not Yet",
+          "source": "keyword"
+        },
+        {
+          "name": "Burden Hardest to Bear",
+          "source": "card",
+          "printedIds": [
+            "BX1158"
+          ]
+        },
+        {
+          "name": "Ties That Bind Us",
+          "source": "keyword"
+        },
+        {
+          "name": "Antisherpa",
+          "source": "keyword"
+        },
+        {
+          "name": "Icecapade",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Slippery Slope",
+          "source": "keyword"
+        },
+        {
+          "name": "Mountain of Madness",
+          "source": "keyword"
+        },
+        {
+          "name": "Timefront Beckons",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "The Game is Rigged",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "CU1384",
+      "name": "Hypertime Oracle",
+      "traits": [
+        {
+          "name": "Timefront Beckons",
+          "source": "keyword"
+        },
+        {
+          "name": "Death by Fate",
+          "source": "card",
+          "printedIds": [
+            "CT1329"
+          ]
+        },
+        {
+          "name": "Extinguish Possibilities",
+          "source": "keyword"
+        },
+        {
+          "name": "Once Upon a Time",
+          "source": "keyword"
+        },
+        {
+          "name": "Voracious Parasite",
+          "source": "keyword"
+        },
+        {
+          "name": "Quantum Eye",
+          "source": "card",
+          "printedIds": [
+            "DX2387"
+          ]
+        },
+        {
+          "name": "Hypertimefront",
+          "source": "keyword"
+        },
+        {
+          "name": "Omega Terminus",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Layover",
+          "source": "keyword"
+        },
+        {
+          "name": "Overclocked",
+          "source": "keyword"
+        },
+        {
+          "name": "Gaze of the Void",
+          "source": "keyword"
+        },
+        {
+          "name": "Quantumfront",
+          "source": "keyword"
+        },
+        {
+          "name": "Temporal Ruthlessness",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "CU1678",
+      "name": "Icarian Harpy",
+      "traits": [
+        {
+          "name": "Rapid Adaptation",
+          "source": "card",
+          "printedIds": [
+            "CX1679"
+          ]
+        },
+        {
+          "name": "Predator",
+          "source": "card",
+          "printedIds": [
+            "CX1681"
+          ]
+        },
+        {
+          "name": "Regurgitate",
+          "source": "keyword"
+        },
+        {
+          "name": "Death by Fate",
+          "source": "card",
+          "printedIds": [
+            "CT1329"
+          ]
+        },
+        {
+          "name": "Deep Cut",
+          "source": "keyword"
+        },
+        {
+          "name": "Devour Whole",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Tentacled Monstrosity",
+          "source": "keyword"
+        },
+        {
+          "name": "Bloodlost",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Bleed Your Heart Out",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Rupture Veins",
+          "source": "keyword"
+        },
+        {
+          "name": "Perfection",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "CU1792",
+      "name": "Sun Descendant",
+      "traits": [
+        {
+          "name": "Merciless Sun",
+          "source": "keyword"
+        },
+        {
+          "name": "Death by Fate",
+          "source": "card",
+          "printedIds": [
+            "CT1329"
+          ]
+        },
+        {
+          "name": "Extinguish Possibilities",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "God Given Law",
+          "source": "keyword"
+        },
+        {
+          "name": "Magnifying Glass",
+          "source": "keyword"
+        },
+        {
+          "name": "Overclocked",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Trigger Happy",
+          "source": "keyword"
+        },
+        {
+          "name": "Ice Age",
+          "source": "keyword"
+        },
+        {
+          "name": "Black Sun",
+          "source": "keyword"
+        },
+        {
+          "name": "Bow or Die",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Total Eclipse",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "DU2394",
+      "name": "Midascore",
+      "traits": [
+        {
+          "name": "Goldtaste",
+          "source": "keyword"
+        },
+        {
+          "name": "Shadow in the Skies",
+          "source": "keyword"
+        },
+        {
+          "name": "Imperial Impetus",
+          "source": "keyword"
+        },
+        {
+          "name": "Incremental Painment",
+          "source": "card",
+          "printedIds": [
+            "DX3222"
+          ]
+        },
+        {
+          "name": "Amongst the Bleached Bones",
+          "source": "card",
+          "printedIds": [
+            "DX3221"
+          ]
+        },
+        {
+          "name": "Cities of Gold",
+          "source": "keyword"
+        },
+        {
+          "name": "Sunken Costs",
+          "source": "keyword"
+        },
+        {
+          "name": "Unholy Inflation",
+          "source": "keyword"
+        },
+        {
+          "name": "Weight of Greed",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Aggressive Expansion",
+          "source": "keyword"
+        },
+        {
+          "name": "Loss of Liquidity",
+          "source": "keyword"
+        },
+        {
+          "name": "Soundspeed Impetus",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Debts of Succession",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Refuse Credit",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "DU2434",
+      "name": "Demidjinn",
+      "traits": [
+        {
+          "name": "Global Wish",
+          "source": "keyword"
+        },
+        {
+          "name": "Living Tornado",
+          "source": "keyword"
+        },
+        {
+          "name": "Wish Away",
+          "source": "keyword"
+        },
+        {
+          "name": "Sandstorm Spiral",
+          "source": "keyword"
+        },
+        {
+          "name": "Endless Staircase",
+          "source": "keyword"
+        },
+        {
+          "name": "Wish for a Wish",
+          "source": "card",
+          "printedIds": [
+            "DX3223"
+          ]
+        },
+        {
+          "name": "Curse Carapace",
+          "source": "keyword"
+        },
+        {
+          "name": "Endless Wish",
+          "source": "keyword"
+        },
+        {
+          "name": "Feedback Loop",
+          "source": "keyword"
+        },
+        {
+          "name": "The Last",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Djinnian Determination",
+          "source": "keyword"
+        },
+        {
+          "name": "Endless Escalator",
+          "source": "keyword"
+        },
+        {
+          "name": "Imminent Destruction",
+          "source": "keyword"
+        },
+        {
+          "name": "Wishtanglement",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Djinnian Precision",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        },
+        {
+          "name": "Flickering Wishes",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "DU2475",
+      "name": "Babelian Lunacy",
+      "traits": [
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Tower of Madness",
+          "source": "keyword"
+        },
+        {
+          "name": "Wish Away",
+          "source": "keyword"
+        },
+        {
+          "name": "Heavenward",
+          "source": "keyword"
+        },
+        {
+          "name": "Moon Call",
+          "source": "card",
+          "printedIds": [
+            "DX3224"
+          ]
+        },
+        {
+          "name": "Amongst the Bleached Bones",
+          "source": "card",
+          "printedIds": [
+            "DX3221"
+          ]
+        },
+        {
+          "name": "Built for Eternity",
+          "source": "keyword"
+        },
+        {
+          "name": "True Babylon",
+          "source": "keyword"
+        },
+        {
+          "name": "One Fool at a Time",
+          "source": "keyword"
+        },
+        {
+          "name": "Thread Lightly",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Endless Escalator",
+          "source": "keyword"
+        },
+        {
+          "name": "Fate of a Debtor",
+          "source": "keyword"
+        },
+        {
+          "name": "Built to Be Broken",
+          "source": "keyword"
+        },
+        {
+          "name": "Total Eclipse",
+          "source": "card",
+          "printedIds": [
+            "DX3225"
+          ]
+        },
+        {
+          "name": "God's Breath",
+          "source": "card",
+          "printedIds": [
+            "DX3226"
+          ]
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "DU2514",
+      "name": "Dahaka",
+      "traits": [
+        {
+          "name": "Shackles of Regret",
+          "source": "keyword"
+        },
+        {
+          "name": "Drifter of Wastes",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Soulrend",
+          "source": "keyword"
+        },
+        {
+          "name": "Semicorporeal Wraith",
+          "source": "keyword"
+        },
+        {
+          "name": "Shadowstep X",
+          "source": "keyword"
+        },
+        {
+          "name": "Winnowing",
+          "source": "keyword"
+        },
+        {
+          "name": "Land That Knows Nothing of the Sea",
+          "source": "keyword"
+        },
+        {
+          "name": "Forbidden Alchemy",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Bane of Odysseus",
+          "source": "keyword"
+        },
+        {
+          "name": "Contaminated Cuts",
+          "source": "keyword"
+        },
+        {
+          "name": "Shadow Backstep",
+          "source": "keyword"
+        },
+        {
+          "name": "The Dragon Does Not Sleep",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "EU3022",
+      "name": "Dragon of Phobos",
+      "traits": [
+        {
+          "name": "Vanish X",
+          "source": "keyword"
+        },
+        {
+          "name": "Phobian Hierarchy",
+          "source": "card",
+          "printedIds": [
+            "EX3211"
+          ]
+        },
+        {
+          "name": "Pale Grin of Doom",
+          "source": "keyword"
+        },
+        {
+          "name": "A Truth for a Truth",
+          "source": "card",
+          "printedIds": [
+            "EX3212"
+          ]
+        },
+        {
+          "name": "Fat with Fear",
+          "source": "card",
+          "printedIds": [
+            "EX3213"
+          ]
+        },
+        {
+          "name": "Fear is Constant",
+          "source": "keyword"
+        },
+        {
+          "name": "Blacker Than The Night",
+          "source": "keyword"
+        },
+        {
+          "name": "Pale Grin of Death",
+          "source": "keyword"
+        },
+        {
+          "name": "A Lie for a Truth",
+          "source": "card",
+          "printedIds": [
+            "EX3214"
+          ]
+        },
+        {
+          "name": "Light is Dimming",
+          "source": "keyword"
+        },
+        {
+          "name": "Psychosomatic Poisoning",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Relentless Anxiety",
+          "source": "keyword"
+        },
+        {
+          "name": "Deeper Depths",
+          "source": "keyword"
+        },
+        {
+          "name": "Original Trench",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Dragon of the Lightless Void",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "EU3061",
+      "name": "Meduketos",
+      "traits": [
+        {
+          "name": "Clicks & Pings",
+          "source": "card",
+          "printedIds": [
+            "EX3215"
+          ]
+        },
+        {
+          "name": "Hide & Heatseek",
+          "source": "card",
+          "printedIds": [
+            "EX3217"
+          ]
+        },
+        {
+          "name": "Heat Death",
+          "source": "keyword"
+        },
+        {
+          "name": "Microwave Shield",
+          "source": "keyword"
+        },
+        {
+          "name": "Slow Boiling",
+          "source": "card",
+          "printedIds": [
+            "EX3216"
+          ]
+        },
+        {
+          "name": "Fat with Light",
+          "source": "card",
+          "printedIds": [
+            "EX3213"
+          ]
+        },
+        {
+          "name": "Truth or Death",
+          "source": "keyword"
+        },
+        {
+          "name": "Invisible Flame",
+          "source": "keyword"
+        },
+        {
+          "name": "Nap of the Vent",
+          "source": "keyword"
+        },
+        {
+          "name": "Tigerback",
+          "source": "keyword"
+        },
+        {
+          "name": "Candle in the Dark",
+          "source": "keyword"
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Black Soup",
+          "source": "keyword"
+        },
+        {
+          "name": "Deeper Depths",
+          "source": "keyword"
+        },
+        {
+          "name": "Original Trench",
+          "source": "keyword"
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Three Seconds",
+          "source": "keyword"
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "EU3100",
+      "name": "Ur-Fleece",
+      "traits": [
+        {
+          "name": "Just a Memory",
+          "source": "card",
+          "printedIds": [
+            "EX3244"
+          ]
+        },
+        {
+          "name": "End of Hope",
+          "source": "keyword"
+        },
+        {
+          "name": "Race Through Dark Places",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "It Spreads",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Always There",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "No Other Gods Before Me",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Microwave Shield",
+          "source": "keyword"
+        },
+        {
+          "name": "Mortal Kindling",
+          "source": "card",
+          "printedIds": [
+            "EX3218"
+          ]
+        },
+        {
+          "name": "Psychosomatic Poisoning",
+          "source": "keyword"
+        },
+        {
+          "name": "Argo's Parting Gift",
+          "source": "card",
+          "printedIds": [
+            "EX3227"
+          ]
+        },
+        {
+          "name": "All for All",
+          "source": "card",
+          "printedIds": [
+            "EX3246"
+          ]
+        },
+        {
+          "name": "Mortal Embers",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Darkest Before Dawn",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Deeper Depths",
+          "source": "keyword"
+        },
+        {
+          "name": "Contagious Fear",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Unfathomable Depths",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "End of an Age",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    },
+    {
+      "primordialId": "EU3144",
+      "name": "Titan X",
+      "traits": [
+        {
+          "name": "Toying",
+          "source": "card",
+          "printedIds": [
+            "EX3219"
+          ]
+        },
+        {
+          "name": "Killjoy",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Death of Hope",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Man Among Sheep",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Unholy Halo",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Faster Than Thought",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Flash Step",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Feints",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Critical Strikes",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "No Obstacles",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Dazzling Speed",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Nemesis Vow",
+          "source": "keyword"
+        },
+        {
+          "name": "Truth of the Shoals",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Beginning of the End",
+          "source": "keyword"
+        },
+        {
+          "name": "Play for Keeps",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "You Cannot Advance",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Flawless Form",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Just Fold",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "End of an Age",
+          "source": "missing",
+          "note": "This trait has no description in the bundled catalogue or keyword data. Refer to the printed Primordial sheet."
+        },
+        {
+          "name": "Ruthless",
+          "source": "keyword"
+        }
+      ]
+    }
+  ]
+}

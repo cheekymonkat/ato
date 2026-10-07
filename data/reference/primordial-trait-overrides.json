@@ -1,0 +1,33 @@
+{
+  "AU0622": {
+    "Toying": {
+      "usedFor": "Hermesian Pursuer",
+      "source": "User confirmation, 7 October 2026; adapted from the Toying card EX3219",
+      "basedOnPrintedId": "EX3219",
+      "mainDef": [
+        {
+          "abilityText": [
+            { "type": "plainText", "value": "Apply the following modifiers to all Hermesian Pursuer Attacks: -1" },
+            { "type": "whitespace", "value": " " },
+            { "type": "icon", "value": "d10" },
+            { "type": "whitespace", "value": " " },
+            { "type": "plainText", "value": "and -1" },
+            { "type": "whitespace", "value": " " },
+            { "type": "icon", "value": "Danger" },
+            { "type": "whitespace", "value": " " },
+            { "type": "plainText", "value": "per hit (minimum 1)" }
+          ]
+        },
+        {
+          "abilityText": [
+            { "type": "plainText", "value": "As long as this Trait is active, the" },
+            { "type": "whitespace", "value": " " },
+            { "type": "keyword", "value": "End of Hope" },
+            { "type": "whitespace", "value": " " },
+            { "type": "plainText", "value": "Trait is disabled" }
+          ]
+        }
+      ]
+    }
+  }
+}

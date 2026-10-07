@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-bf1b3ea248ccfb5d",
+  "catalogueVersion": "atcc-v2-8d0846516a8568a2",
   "family": "Gear",
   "part": 1,
   "cards": [
@@ -14446,6 +14446,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/yarn-talisman.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/yarn-talisman.png",
+            "width": 486,
+            "height": 733,
+            "artBottom": 455
           }
         }
       ]
@@ -16897,6 +16904,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/auric-kalaharis.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/auric-kalaharis.png",
+            "width": 486,
+            "height": 734,
+            "artBottom": 517
           }
         }
       ]

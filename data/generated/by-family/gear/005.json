@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-bf1b3ea248ccfb5d",
+  "catalogueVersion": "atcc-v2-8d0846516a8568a2",
   "family": "Gear",
   "part": 5,
   "cards": [
@@ -13130,6 +13130,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/vulture-mask.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/vulture-mask.png",
+            "width": 472,
+            "height": 748,
+            "artBottom": 437
           }
         }
       ]
@@ -17229,6 +17236,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/suntanned-fists.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/suntanned-fists.png",
+            "width": 484,
+            "height": 734,
+            "artBottom": 452
           }
         },
         {
@@ -17326,6 +17340,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/stock-cryptex.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/stock-cryptex.png",
+            "width": 480,
+            "height": 734,
+            "artBottom": 458
           }
         }
       ]

@@ -9,6 +9,12 @@ the last selected Argonaut. An active section can also be pressed to return from
 its editor or catalogue. The secondary menu retains Browse Gear, Campaigns &
 backups and confirmed Tides of Fate.
 
+**Argo is the homepage.** Opening the app at `/` redirects to `/argo`, and the
+return controls in Browse Gear and Campaigns & backups go there. Opening,
+creating, importing or restoring a campaign also lands on Argo. Leaving a
+temporary preview restores the saved campaign and returns to Argo. The Argonauts
+header destination still opens the campaign's last selected Argonaut.
+
 ## Using the campaign pages
 
 - **Cargo:** add acquired Gear through the existing full-card catalogue grid,

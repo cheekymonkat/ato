@@ -84,7 +84,7 @@ function ArgoBody() {
       <View style={styles.shortcuts}>{ARGO_REFERENCES.map(entry => <View key={entry.id} style={styles.shortcutCell}>
         <Button quiet label={entry.name} onPress={() => setReference({ id: entry.id })} style={styles.shortcut}>
           <MenuIcon name={entry.icon} size={28} colour="#32565A" /><Text style={styles.shortcutName}>{entry.name}</Text>
-          <Text style={styles.shortcutMeta}>{entry.id === 'titans' ? 'Manage Titans' : party.argo?.records[entry.id]?.trim() ? 'View records' : entry.families ? 'Records & cards' : 'Add records'}</Text>
+          <Text style={styles.shortcutMeta}>{entry.id === 'titans' ? 'Manage Titans' : entry.id === 'diplomacy' ? `Cycle ${cycle} factions` : entry.id === 'evolution' ? 'Evolution & battle tracks' : party.argo?.records[entry.id]?.trim() ? 'View records' : entry.families ? 'Records & cards' : 'Add records'}</Text>
         </Button>
       </View>)}</View>
     </View>

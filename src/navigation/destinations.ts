@@ -4,7 +4,8 @@ export function destinationPath(destination: Destination, argonautId: string): s
   return destination === 'Argonauts' ? `/argonaut/${encodeURIComponent(argonautId)}` : `/${destination.toLowerCase()}`;
 }
 export function activeDestination(path: string): Destination | null {
-  if (/^\/(argonaut|loadout|memory)(\/|$)/.test(path) || path === '/') return 'Argonauts';
+  if (path === '/') return 'Argo';
+  if (/^\/(argonaut|loadout|memory)(\/|$)/.test(path)) return 'Argonauts';
   if (/^\/(gear|cards)(\/|$)/.test(path)) return 'Cargo';
   return DESTINATIONS.find(destination => path === `/${destination.toLowerCase()}`) ?? null;
 }

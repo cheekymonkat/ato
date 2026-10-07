@@ -5,7 +5,7 @@ web, iOS and Android. It contains a bundled catalogue and independent player
 state for four Argonauts. Open the top-right menu and select **Browse Gear** to
 search cards, inspect abilities and flip reversible Gear. Select a dashboard
 card or empty slot to construct or edit a loadout. Secret cards start hidden.
-The 31 supplied scans add 557 artwork-only Gear backgrounds, linked by
+The 32 supplied scans add 567 artwork-only Gear backgrounds, linked by
 persistent card and face IDs. Titles, stats and rules remain live overlays;
 exhausted or discarded cards use matching grayscale images. See
 [Gear artwork](docs/GEAR_ART.md) for the asset mapping and extraction notes.
@@ -13,6 +13,8 @@ The [missing-image CSV](docs/reports/missing-gear-art.csv) lists missing fronts
 and flipped sides, with cycles, recipe technologies and secret-card numbers.
 Cards classified as Promo are excluded from the report.
 Regenerate it with `npm run gear-art:report` after importing new artwork.
+The Argo homepage includes saved [Evolution tracks](docs/EVOLUTION.md),
+boss/adversary battle counts and a Primordial level setup reference.
 The main catalogue is formatted with two-space indentation. Smaller generated
 copies under `data/generated/by-family/` group cards by type, capped at 100 cards
 or 512 KiB per file. See [data notes](docs/STAGE_1_DATA.md) for regeneration.
@@ -91,7 +93,9 @@ entries are supported. Each Argonaut can hold one of each type; reverse sides su
 as Fear/Dread share the same type. Shared resources use a separate campaign pool.
 The menu's last option, **Tides of Fate**, asks for a checked confirmation before
 clearing all four Argonauts' conditions and tokens, readying exhausted/discarded
-cards and setting their Triskelions to zero. Equipment, memory nodes, stats and
+cards, restoring Gear charges and setting their Triskelions to zero. Tap a Gear
+card's Energy box to spend one charge; tap it at zero to restore the printed
+amount. Charges are saved per physical card and face. Equipment, memory nodes, stats and
 shared resources are preserved. Undo and clear-condition buttons are removed.
 Condition effects, flips and duration expiry remain manual.
 [Stage 6 reference notes](docs/STAGE_6_REFERENCES.md) explain memory progress,
@@ -136,7 +140,12 @@ acquired Gear and shows allocated/available copies across all four Argonauts.
 **Argo** shows editable ship totals, cycle-specific voyage tracks, ordered Story/Doom
 card-side selectors with catalogue-defined token counters, and ten campaign-reference shortcuts. Shared resources and campaign
 notes stay at the bottom; Titan acquisition is behind the **Titans** shortcut.
-See [Argo layout and tracker behavior](docs/ARGO.md). Each
+See [Argo layout and tracker behavior](docs/ARGO.md). **Argo is the homepage**:
+opening the app and returning from Browse Gear or Campaigns & backups opens Argo.
+Opening, creating, importing and restoring a campaign also opens Argo. Each
+cycle's **Diplomacy** panels show its three factions with matching symbols,
+bounded counters and highlighted relationship ranges. Values and diplomacy notes
+reset when advancing the cycle. See [Diplomacy notes](docs/DIPLOMACY.md). Each
 Argonaut selects one Titan. Different Argo-bred types can coexist; repeated
 selections of the same Argo-bred type trigger a warning. Dreamwalker variants
 can repeat across Argonauts. Enable

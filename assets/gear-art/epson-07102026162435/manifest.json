@@ -1,0 +1,334 @@
+{
+  "batch": "epson-07102026162435",
+  "source": "../ato_docs/Epson_07102026162435.jpg",
+  "sourceSha256": "bde82a43dc8bddd00e9adfd922e099d0dd51d9e28f9ba2b842717047a2636e2d",
+  "configurationSha256": "74a7f2e1a1aaf2c1c8113e55398d16de15dc6c3cc94404ee0fa586141f08a83a",
+  "method": "Exact source-pixel cropping and masks; sampled paper fills; no AI reconstruction or artwork resampling.",
+  "cards": [
+    {
+      "name": "Trireme Breastplate",
+      "definitionId": "def_f43a1144b1f9a3e08f8bc6c3",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0266",
+        "AJ0267"
+      ],
+      "filename": "trireme-breastplate.png",
+      "crop": [
+        0,
+        0,
+        492,
+        734
+      ],
+      "width": 492,
+      "height": 734,
+      "preservedPixelCount": 135225,
+      "sha256": "e8f39ca931bd1722d92d0b4247a2d437cf1b7cf1d198e6b56f9c399f063826c9",
+      "sourcePrintedIds": [
+        "AJ0267"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/trireme-breastplate.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/trireme-breastplate.png",
+        "width": 492,
+        "height": 734,
+        "artBottom": 551
+      }
+    },
+    {
+      "name": "Hermes Cape",
+      "definitionId": "def_88a18e2eaae89de4bce7c5c0",
+      "faceId": "front",
+      "printedIds": [
+        "BJ0966"
+      ],
+      "filename": "hermes-cape.png",
+      "crop": [
+        498,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 82691,
+      "sha256": "fb6d0557028bf9a54541bcae15e27f77e49b2443989a320ab6c99c523868edc2",
+      "sourcePrintedIds": [
+        "BJ0966"
+      ],
+      "reviewNote": "Unique/Ascended text overlaps the lower feathers. Printed content is masked; no covered feather pixels are reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/hermes-cape.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/hermes-cape.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 460
+      }
+    },
+    {
+      "name": "Alchemist Armor",
+      "definitionId": "def_3ec7cce4dd5512754216178f",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2313",
+        "DJ2314"
+      ],
+      "filename": "alchemist-armor.png",
+      "crop": [
+        986,
+        0,
+        488,
+        734
+      ],
+      "width": 488,
+      "height": 734,
+      "preservedPixelCount": 126592,
+      "sha256": "81a69e565b63f37be7606afce1e73c00a3f818c4524c016ee4ffe59f84fc2b19",
+      "sourcePrintedIds": [
+        "DJ2314"
+      ],
+      "reviewNote": "The main armour is retained. The faint lower Titan projection is omitted where ability printing covers it; no covered illustration pixels are reconstructed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/alchemist-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/alchemist-armor.png",
+        "width": 488,
+        "height": 734,
+        "artBottom": 467
+      }
+    },
+    {
+      "name": "Stock Cryptex",
+      "definitionId": "def_dacbc38091cf931db98615dd",
+      "faceId": "back",
+      "printedIds": [
+        "DJ2225",
+        "DJ2226",
+        "DJ2227",
+        "DJ2228"
+      ],
+      "filename": "stock-cryptex.png",
+      "crop": [
+        1474,
+        0,
+        480,
+        734
+      ],
+      "width": 480,
+      "height": 734,
+      "preservedPixelCount": 100166,
+      "sha256": "4ae464c230f82d4274e26ae3b49942d2a7534660bad9c201438f79cd908ff76f",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/stock-cryptex.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/stock-cryptex.png",
+        "width": 480,
+        "height": 734,
+        "artBottom": 458
+      }
+    },
+    {
+      "name": "Auric Kalaharis",
+      "definitionId": "def_2d97b21b2dbd6564f318f45e",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2370"
+      ],
+      "filename": "auric-kalaharis.png",
+      "crop": [
+        1954,
+        0,
+        486,
+        734
+      ],
+      "width": 486,
+      "height": 734,
+      "preservedPixelCount": 108936,
+      "sha256": "9de65ce297b4a3245d50932bb0eaa376876aa8776dbde6b0727a862da18ac466",
+      "sourcePrintedIds": [
+        "DJ2370"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/auric-kalaharis.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/auric-kalaharis.png",
+        "width": 486,
+        "height": 734,
+        "artBottom": 517
+      }
+    },
+    {
+      "name": "Suntanned Fists",
+      "definitionId": "def_dacbc38091cf931db98615dd",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2225",
+        "DJ2226",
+        "DJ2227",
+        "DJ2228"
+      ],
+      "filename": "suntanned-fists.png",
+      "crop": [
+        2440,
+        0,
+        484,
+        734
+      ],
+      "width": 484,
+      "height": 734,
+      "preservedPixelCount": 105941,
+      "sha256": "67733285c70a8d4af2c12941cf7d710ad05f3caa0b915ed3222e6764b6bc3271",
+      "sourcePrintedIds": [
+        "DJ2226"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/suntanned-fists.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/suntanned-fists.png",
+        "width": 484,
+        "height": 734,
+        "artBottom": 452
+      }
+    },
+    {
+      "name": "Silk Armor",
+      "definitionId": "def_69223aa434cfe0f1c6352ae7",
+      "faceId": "front",
+      "printedIds": [
+        "DJ2311",
+        "DJ2312"
+      ],
+      "filename": "silk-armor.png",
+      "crop": [
+        2924,
+        0,
+        472,
+        734
+      ],
+      "width": 472,
+      "height": 734,
+      "preservedPixelCount": 112198,
+      "sha256": "7487099176adeb2be1892d06c96c620ca185c924a408361a113fa30f53d4f86e",
+      "sourcePrintedIds": [
+        "DJ2312"
+      ],
+      "reviewNote": "The Bypass line sits between the lower armour legs. Text is removed without reconstructing covered pixels.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/silk-armor.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/silk-armor.png",
+        "width": 472,
+        "height": 734,
+        "artBottom": 569
+      }
+    },
+    {
+      "name": "Yarn Talisman",
+      "definitionId": "def_24c18664df168e0a50b413af",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0281"
+      ],
+      "filename": "yarn-talisman.png",
+      "crop": [
+        1954,
+        734,
+        486,
+        733
+      ],
+      "width": 486,
+      "height": 733,
+      "preservedPixelCount": 67275,
+      "sha256": "6fcef5706e9b500a4e95e21d55c5f5973fd06fe1fc4f50006ee3f4a87fbafed0",
+      "sourcePrintedIds": [
+        "AJ0281"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/yarn-talisman.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/yarn-talisman.png",
+        "width": 486,
+        "height": 733,
+        "artBottom": 455
+      }
+    },
+    {
+      "name": "Fists",
+      "definitionId": "def_62a3e0517a2a4d9785a77317",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0156",
+        "AJ0157",
+        "AJ0158",
+        "AJ0159"
+      ],
+      "filename": "fists.png",
+      "crop": [
+        2440,
+        734,
+        484,
+        733
+      ],
+      "width": 484,
+      "height": 733,
+      "preservedPixelCount": 111994,
+      "sha256": "a59d5e45f39c7235cd925d0a5b2304118dac9d20815ea0e00f3390246531dec1",
+      "sourcePrintedIds": [
+        "AJ0157"
+      ],
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/fists.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/fists.png",
+        "width": 484,
+        "height": 733,
+        "artBottom": 540
+      }
+    },
+    {
+      "name": "Vulture Mask",
+      "definitionId": "def_d45ced1407859178d2827127",
+      "faceId": "front",
+      "printedIds": [
+        "AJ0279"
+      ],
+      "filename": "vulture-mask.png",
+      "crop": [
+        2924,
+        734,
+        472,
+        748
+      ],
+      "width": 472,
+      "height": 748,
+      "preservedPixelCount": 112284,
+      "sha256": "3fd68670b7b75a4c3e9c2528a0d3788b73f2f6dda4446026aa5a1ba2f487c6cc",
+      "observedPrintedIds": [
+        "AJ0274"
+      ],
+      "reviewNote": "The Flare line abuts the beak tip; printing is masked while retaining its exposed tip. The photographed footer reads AJ0274, while the existing catalogue records AJ0279. Linked by the unambiguous Vulture Mask title; no card identity or supply count is changed.",
+      "artwork": {
+        "image": "assets/gear-art/epson-07102026162435/vulture-mask.png",
+        "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/vulture-mask.png",
+        "width": 472,
+        "height": 748,
+        "artBottom": 437
+      }
+    }
+  ],
+  "skippedCards": [
+    {
+      "row": 2,
+      "column": 1,
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "reason": "Empty grid position; no card."
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "reason": "Empty grid position; no card."
+    }
+  ]
+}

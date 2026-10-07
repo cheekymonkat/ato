@@ -14,12 +14,14 @@ import { useSpoilers } from '../state/SpoilerProvider';
 import { theme } from '../theme/tokens';
 import { campaignStyles as styles } from './CampaignPage';
 import { GrowingNotes } from './GrowingNotes';
+import { ArgoDiplomacy } from './ArgoDiplomacy';
+import { ArgoEvolution } from './ArgoEvolution';
 
 export const ARGO_REFERENCES: readonly { id: ArgoRecordId; name: string; icon: MenuIconName; prompt: string; families?: readonly KnownCardFamily[] }[] = [
   { id: 'adventures', name: 'Adventures', icon: 'Adventures', prompt: 'Record adventure numbers, choices and outcomes.', families: ['Exploration'] },
   { id: 'titans', name: 'Titans', icon: 'Titans', prompt: 'Manage available Titans.' },
   { id: 'glyphs', name: 'Glyphs', icon: 'CrypticLanguages', prompt: 'Record discovered glyphs, translations and language progress.' },
-  { id: 'evolution', name: 'Evolution', icon: 'Evolution', prompt: 'Record evolution levels, unlocked benefits and milestones.' },
+  { id: 'evolution', name: 'Evolution', icon: 'Evolution', prompt: 'Track Primordial evolution and review battle setup.' },
   { id: 'diplomacy', name: 'Diplomacy', icon: 'Diplomacy', prompt: 'Record factions, diplomacy values and changes.' },
   { id: 'choice-matrix', name: 'Choice Matrix', icon: 'ChoiceMatrix', prompt: 'Record choice codes and the decisions made by this expedition.' },
   { id: 'fated-events', name: 'Fated Events', icon: 'FatedEvents', prompt: 'Record fated events, triggers and resolutions.' },
@@ -30,6 +32,9 @@ export const ARGO_REFERENCES: readonly { id: ArgoRecordId; name: string; icon: M
 
 /** Reference notebooks are useful now; card libraries supplement them where the catalogue has that family. */
 export function ArgoReferences({ id, onClose, initialFamily }: { id: ArgoRecordId; onClose: () => void; initialFamily?: KnownCardFamily }) {
+  return id === 'diplomacy' ? <ArgoDiplomacy onClose={onClose} /> : id === 'evolution' ? <ArgoEvolution onClose={onClose} /> : <ArgoReferenceNotebook id={id} onClose={onClose} initialFamily={initialFamily} />;
+}
+function ArgoReferenceNotebook({ id, onClose, initialFamily }: { id: ArgoRecordId; onClose: () => void; initialFamily?: KnownCardFamily }) {
   const reference = ARGO_REFERENCES.find(entry => entry.id === id)!;
   const { party, dispatch } = useParty(), spoilers = useSpoilers(), catalogue = getCatalogue(), cycle = campaignCycle(party);
   const [tab, setTab] = useState<'records' | 'cards'>(initialFamily ? 'cards' : 'records');

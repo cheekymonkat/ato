@@ -29,16 +29,24 @@ import type { MilestoneToken } from '../domain/milestone-rules.ts';
 import { milestoneTokenMaximum } from '../domain/milestone-rules.ts';
 import { advanceTitanRoster, editTitanRoster, emptyTitanPatterns, patternIssue } from '../domain/titan-roster.ts';
 import type { RosterEdit } from '../domain/titan-roster.ts';
+import { changeDiplomacy, diplomacyValues } from '../domain/diplomacy.ts';
+import type { FactionId } from '../domain/diplomacy.ts';
+import { changeEvolution } from '../domain/evolution.ts';
+import type { EvolutionEdit } from '../domain/evolution.ts';
+import { spendGearCharge } from '../domain/gear-charges.ts';
 
 export type CounterName = keyof Argonaut['counters'];
 export type PartyAction =
+  | { type: 'evolution'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; edit: EvolutionEdit }
+  | { type: 'diplomacy'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; factionId: FactionId; delta: -1 | 1 }
+  | { type: 'diplomacy-edit'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; factionId: FactionId; value: number }
   | { type: 'titan-roster'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; edit: RosterEdit }
   | { type: 'milestone-select'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; reference: CardReference; expectedReference: CardReference | null }
   | { type: 'milestone-token'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; token: MilestoneToken; delta: -1 | 1; expectedReference: CardReference | null }
   | { type: 'milestone-token-edit'; partyId: string; argonautId: string; expectedCycle: CampaignCycle; kind: MilestoneKind; token: MilestoneToken; value: number; expectedReference: CardReference | null }
   | { type: 'argo-track'; argonautId: string; partyId: string; expectedCycle: CampaignCycle; id: string; delta: -1 | 1 }
   | { type: 'argo-track-edit'; argonautId: string; partyId: string; expectedCycle: CampaignCycle; id: string; value: number; limit: number | null; reference: string }
-  | { type: 'argo-record'; argonautId: string; partyId: string; id: ArgoRecordId; text: string }
+  | { type: 'argo-record'; argonautId: string; partyId: string; id: ArgoRecordId; text: string; expectedCycle?: CampaignCycle }
   | { type: 'technology-research'; argonautId: string; partyId: string; definitionId: string }
   | { type: 'technology-remove'; argonautId: string; partyId: string; definitionId: string; confirmed: boolean }
   | { type: 'inventory-mode'; argonautId: string; partyId: string; enabled: boolean }
@@ -84,12 +92,21 @@ export type PartyAction =
   | { type: 'equipment-face'; argonautId: string; instanceId: string; faceId: 'front' | 'back' }
   | { type: 'equipment-exhausted'; argonautId: string; instanceId: string; exhausted: boolean }
   | { type: 'equipment-discarded'; argonautId: string; instanceId: string; discarded: boolean }
+  | { type: 'equipment-charge'; partyId: string; argonautId: string; instanceId: string; definitionId: string; faceId: 'front' | 'back'; index: number }
   | { type: 'equipment-effect'; argonautId: string; instanceId: string; effectId: string; enabled: boolean; condition?: boolean }
   | { type: 'preview-loadout'; argonautId: string; instances: CardInstance[]; equipment: Argonaut['equipment'] };
 
 /** Every edit names its owner explicitly, including callbacks opened before navigation. */
 export function partyReducer(party: Party, action: PartyAction, catalogue?: CatalogueRepository): Party {
   if (!party.order.includes(action.argonautId)) return party;
+  if (action.type === 'evolution') return action.partyId === party.id && action.expectedCycle === campaignCycle(party)
+    ? changeEvolution(party, action.edit, catalogue) : party;
+  if (action.type === 'diplomacy' || action.type === 'diplomacy-edit') {
+    if (action.partyId !== party.id || action.expectedCycle !== campaignCycle(party)
+      || action.type === 'diplomacy' && ![-1, 1].includes(action.delta)) return party;
+    const value = action.type === 'diplomacy-edit' ? action.value : diplomacyValues(party)[action.factionId] + action.delta;
+    return changeDiplomacy(party, action.factionId, value);
+  }
   if (action.type === 'titan-roster') return catalogue && action.partyId === party.id && action.expectedCycle === campaignCycle(party)
     ? editTitanRoster(party, action.edit, catalogue) : party;
   if (action.type === 'milestone-select' || action.type === 'milestone-token' || action.type === 'milestone-token-edit') {
@@ -117,7 +134,8 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
     return changeArgoTrack(party, action.id, action.value, action.expectedCycle, catalogue, { limit: action.limit, reference: action.reference });
   }
   if (action.type === 'argo-record') {
-    if (action.partyId !== party.id || !ARGO_RECORD_IDS.includes(action.id) || typeof action.text !== 'string') return party;
+    if (action.partyId !== party.id || !ARGO_RECORD_IDS.includes(action.id) || typeof action.text !== 'string'
+      || ['diplomacy', 'evolution'].includes(action.id) && action.expectedCycle !== undefined && action.expectedCycle !== campaignCycle(party)) return party;
     const argo = party.argo ?? { version: 1 as const, tracks: {}, limits: {}, records: {} };
     return { ...party, argo: { ...argo, records: { ...argo.records, [action.id]: action.text } } };
   }
@@ -193,6 +211,15 @@ export function partyReducer(party: Party, action: PartyAction, catalogue?: Cata
       if (action.partyId === party.id && typeof action.text === 'string' && action.text !== (current.notes ?? '')) updated = { ...current, notes: action.text };
       break;
     case 'refresh-gear': updated = refreshArgonautCards(current); break;
+    case 'equipment-charge': {
+      const item = current.instances.find(item => item.id === action.instanceId);
+      const face = item && catalogue?.getFace(item.definitionId, item.faceId);
+      if (!item || !face || action.partyId !== party.id || item.definitionId !== action.definitionId || item.faceId !== action.faceId
+        || !current.equipment.some(entry => entry.instanceId === item.id)) break;
+      const next = spendGearCharge(item, face, action.index);
+      if (next !== item) updated = { ...current, instances: current.instances.map(entry => entry === item ? next : entry) };
+      break;
+    }
     case 'ability-exhausted': {
       const item = current.titan?.id === action.instanceId ? current.titan : current.instances.find(item => item.id === action.instanceId
         && [...current.mnemosIds, ...current.fatedMnemosIds].includes(item.id));

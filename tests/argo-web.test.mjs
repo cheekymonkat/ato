@@ -11,6 +11,12 @@ import * as technology from '../src/domain/technologies.ts';
 import * as milestones from '../src/domain/milestones.ts';
 import * as milestoneRules from '../src/domain/milestone-rules.ts';
 import * as inwardOdyssey from '../src/domain/inward-odyssey.ts';
+import * as diplomacy from '../src/domain/diplomacy.ts';
+import * as evolution from '../src/domain/evolution.ts';
+import * as evolutionRules from '../src/domain/evolution-rules.ts';
+import * as primordialTraits from '../src/domain/primordial-traits.ts';
+import { createKeywordRepository } from '../src/domain/keywords.ts';
+import { diplomacyIcons } from '../src/theme/diplomacy-icons.ts';
 import { newProfile } from '../src/storage/workspace.ts';
 import { partyReducer } from '../src/state/party-reducer.ts';
 const require = createRequire(import.meta.url), React = require('react'), web = require('react-native-web'), ts = require('typescript');
@@ -321,6 +327,8 @@ test('direct track editor accepts signed Humanity and optional limits, rejects f
 test('reference notebooks save independently; card libraries search, respect spoilers and open full inspection', () => {
   const h = harness(3); let notebook, closed = false, route;
   const { ArgoReferences } = compile('ArgoReferences.tsx', { ...h.mocks,
+    './ArgoDiplomacy': { ArgoDiplomacy: () => null },
+    './ArgoEvolution': { ArgoEvolution: () => null },
     'expo-router': { router: { push: value => route = value } },
     '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: card => card.faces[0].name === 'The Absent Rule', reveal: () => {} }) },
     './GrowingNotes': { GrowingNotes: props => { notebook = props; return null; } },
@@ -334,4 +342,202 @@ test('reference notebooks save independently; card libraries search, respect spo
   assert.equal(h.buttons.has('A Phantom Thread'), false);
   h.buttons.get('Trespassing').onPress(); assert.equal(closed, true);
   assert.deepEqual(route, { pathname: '/cards/[id]', params: { id: catalogue.byName('Trespassing')[0].id } });
+});
+
+function diplomacyHarness(cycle = 1) {
+  const h = harness(cycle), nodes = [], icons = []; let notes, sheet;
+  const mocks = { ...h.mocks,
+    'react-native': { ...h.mocks['react-native'], View: props => {
+      nodes.push({ ...props, style: web.StyleSheet.flatten(props.style) }); return React.createElement(web.View, props);
+    } },
+    'react-native-svg': { SvgXml: props => { icons.push(props); return null; } },
+    '../domain/diplomacy': diplomacy, '../theme/diplomacy-icons': { diplomacyIcons },
+    '../components/Sheet': { Sheet: props => { sheet = props; return React.createElement('section', null, props.children); } },
+    './GrowingNotes': { GrowingNotes: props => { notes = props; return null; } },
+  };
+  const { ArgoDiplomacy } = compile('ArgoDiplomacy.tsx', mocks);
+  const { ArgoReferences } = compile('ArgoReferences.tsx', { ...mocks, './ArgoDiplomacy': { ArgoDiplomacy },
+    './ArgoEvolution': { ArgoEvolution: () => null },
+    '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
+  });
+  const render = () => { nodes.length = 0; icons.length = 0; return h.render(ArgoReferences, { id: 'diplomacy', onClose() {} }); };
+  const press = label => { h.buttons.get(label).onPress(); return render(); };
+  return { ...h, render, press, nodes, icons, notes: () => notes, sheet: () => sheet };
+}
+
+test('Diplomacy reference displays only the current cycle factions and highlights their live relationships', () => {
+  for (const cycle of [1, 2, 3, 4, 5]) {
+    const h = diplomacyHarness(cycle), html = h.render();
+    assert.equal(h.sheet().title, 'Diplomacy'); assert.match(h.sheet().subtitle, new RegExp(`Cycle ${cycle}`));
+    assert.deepEqual(h.icons.map(icon => icon.xml), diplomacy.cycleFactions(cycle).map(faction => diplomacyIcons[faction.icon]));
+    assert.ok(h.icons.every(icon => icon.accessible === undefined && icon['aria-hidden'] === true), 'Native accessible flags must not leak to web SVG attributes');
+    const bands = h.nodes.filter(node => node.testID?.startsWith('diplomacy-band-'));
+    assert.equal(bands.length, cycle === 2 ? 12 : 18);
+    assert.equal(bands.filter(node => node.accessibilityLabel.includes('current relationship')).length, 3);
+    for (const faction of diplomacy.cycleFactions(cycle)) assert.ok(html.includes(faction.name));
+    h.notes().onChange('Negotiation result'); h.render(); assert.equal(h.party().argo.records.diplomacy, 'Negotiation result');
+  }
+  const h = diplomacyHarness(2); h.render();
+  assert.equal(h.buttons.get('Decrease Helots diplomacy').disabled, true);
+  for (let count = 0; count < 3; count++) h.press('Increase Helots diplomacy');
+  assert.ok(h.nodes.some(node => node.accessibilityLabel === 'Helots: Distrustful, relationship modifier 0'));
+  for (let count = 3; count < 12; count++) h.press('Increase Helots diplomacy');
+  const html = h.render(); assert.match(html, /Story reference 0289/);
+  assert.ok(h.nodes.some(node => node.accessibilityLabel === 'Helots: Allied, relationship modifier +2'));
+});
+
+test('Diplomacy exact-value editing blocks out-of-range/fractional values and disables controls at limits', () => {
+  for (const cycle of [1, 2]) {
+    const h = diplomacyHarness(cycle), name = diplomacy.cycleFactions(cycle)[0].name; h.render();
+    if (cycle === 1) {
+      h.press(`Decrease ${name} diplomacy`);
+      assert.ok(h.nodes.some(node => node.accessibilityLabel === `${name}: Unfriendly, relationship modifier -1`));
+    }
+    h.press(`Edit ${name} diplomacy`);
+    const enter = text => { h.inputs.get(`${name} diplomacy value`).onChangeText(text); return h.render(); };
+    for (const text of ['', '1.5', '21', '-21', '1e1', 'abc', ...(cycle === 2 ? ['-1'] : [])]) {
+      enter(text); assert.equal(h.buttons.get('Save diplomacy').disabled, true, text);
+    }
+    enter(String(diplomacy.diplomacyMinimum(cycle))); h.press('Save diplomacy');
+    assert.equal(h.buttons.get(`Decrease ${name} diplomacy`).disabled, true);
+    h.press(`Edit ${name} diplomacy`); enter('20'); h.press('Save diplomacy');
+    assert.equal(h.buttons.get(`Increase ${name} diplomacy`).disabled, true);
+    h.press(`Edit ${name} diplomacy`); enter('3'); h.press('Cancel');
+    assert.equal(diplomacy.diplomacyValues(h.party())[diplomacy.cycleFactions(cycle)[0].id], 20);
+  }
+});
+
+test('Diplomacy panels fit narrow screens and form balanced two/three-column rows when there is space', () => {
+  const h = diplomacyHarness(5); h.render();
+  for (const [width, expectedCardWidth] of [[192, 192], [232, 232], [535, 535], [536, 262], [804, 260], [1000, 976 / 3]]) {
+    h.nodes.find(node => node.testID === 'diplomacy-grid').onLayout({ nativeEvent: { layout: { width } } }); h.render();
+    const cards = h.nodes.filter(node => node.testID?.startsWith('diplomacy-') && !node.testID.startsWith('diplomacy-band-') && node.testID !== 'diplomacy-grid');
+    assert.equal(cards.length, 3);
+    assert.ok(cards.every(card => card.style.width <= width && card.style.width === expectedCardWidth));
+  }
+});
+
+function evolutionHarness(cycle = 1) {
+  const h = harness(cycle), nodes = [], diamonds = new Map(), dropdowns = new Map(); let sheet, notes;
+  const keywordData = JSON.parse(fs.readFileSync(new URL('../data/reference/primordialAbilityData.json', import.meta.url)));
+  const primordialTraitOverrides = JSON.parse(fs.readFileSync(new URL('../data/reference/primordial-trait-overrides.json', import.meta.url)));
+  const mocks = { ...h.mocks,
+    'react-native': { ...h.mocks['react-native'], View: props => {
+      nodes.push({ ...props, style: web.StyleSheet.flatten(props.style) }); return React.createElement(web.View, props);
+    }, Pressable: props => { diamonds.set(props.accessibilityLabel, props); return React.createElement(web.Pressable, props); } },
+    'react-native-svg': { __esModule: true, default: () => null, Path: () => null, Circle: () => null },
+    '../domain/evolution': evolution, '../domain/evolution-rules': evolutionRules,
+    '../domain/primordial-traits': primordialTraits,
+    '../components/Sheet': { Sheet: props => { sheet = props; return React.createElement('section', null, props.children); } },
+    '../components/CompactDropdown': { CompactDropdown: props => { dropdowns.set(props.label, props); return React.createElement('select', { 'aria-label': props.label, value: props.value, onChange() {} }, props.options.map(option => React.createElement('option', { key: option.value, value: option.value }, option.label))); } },
+    './GrowingNotes': { GrowingNotes: props => { notes = props; return null; } },
+    '../catalogue/keywords': { keywordRepository: createKeywordRepository(keywordData), primordialTraitOverrides },
+    '../components/cards/CardIcon': { CardIcon: () => null },
+    '../components/cards/RichParagraph': { RichParagraph: props => React.createElement('p', null, JSON.stringify(props.paragraph)) },
+  };
+  const { TraitToggleIcon } = compile('TraitToggleIcon.tsx', mocks);
+  const { EvolutionTracks } = compile('EvolutionTracks.tsx', mocks), { EvolutionBattle } = compile('EvolutionBattle.tsx', { ...mocks, './TraitToggleIcon': { TraitToggleIcon } });
+  const { ArgoEvolution } = compile('ArgoEvolution.tsx', { ...mocks, './EvolutionTracks': { EvolutionTracks }, './EvolutionBattle': { EvolutionBattle } });
+  const { ArgoReferences } = compile('ArgoReferences.tsx', { ...mocks, './ArgoEvolution': { ArgoEvolution }, './ArgoDiplomacy': { ArgoDiplomacy: () => null },
+    '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
+  });
+  const render = () => { nodes.length = 0; diamonds.clear(); dropdowns.clear(); return h.render(ArgoReferences, { id: 'evolution', onClose() {} }); };
+  const press = label => { assert.ok(h.buttons.has(label), label); h.buttons.get(label).onPress(); return render(); };
+  const choose = (label, value) => { dropdowns.get(label).onChange(value); return render(); };
+  return { ...h, render, press, choose, nodes, diamonds, dropdowns, sheet: () => sheet, notes: () => notes };
+}
+
+test('Evolution opens current-cycle diamond tracks, current stats and the correct boss/adversary controls', () => {
+  for (const cycle of [1, 2, 3, 4, 5]) {
+    const h = evolutionHarness(cycle), rules = evolutionRules.EVOLUTION_RULES[cycle], html = h.render();
+    assert.equal(h.sheet().title, 'Evolution'); assert.match(h.sheet().subtitle, new RegExp(`Cycle ${cycle}`));
+    for (const track of [...rules.regular, rules.boss]) assert.ok(html.includes(track.name));
+    assert.equal(h.diamonds.size, rules.nodes.length);
+    assert.ok([...h.diamonds.values()].every(diamond => diamond.accessibilityRole === 'checkbox' && !diamond.accessibilityState.checked));
+    assert.ok(html.includes('Starting escalations')); assert.ok(html.includes('To Hit'));
+    assert.equal(h.buttons.get('Decrease boss battle count').disabled, true);
+    assert.equal(h.buttons.get('Increase adversary battle count').disabled, rules.defaultAdversary === null);
+  }
+});
+
+test('Evolution enables only connected diamonds, removes regular steppers and Mnestis selection leaves saved tracks intact', () => {
+  const h = evolutionHarness(1); h.render();
+  const diamond = id => [...h.diamonds.values()].find(diamond => diamond.testID === `evolution-node-${id}`);
+  assert.equal(h.buttons.has('Advance Hekaton'), false); assert.equal(h.buttons.has('Step back Hekaton'), false);
+  assert.equal(diamond('2-shared').disabled, true); assert.equal(diamond('0-left').disabled, false);
+  diamond('2-shared').onPress(); h.render(); assert.deepEqual(evolution.evolutionValues(h.party()).marked, []);
+  for (const id of ['0-left', '1-left', '2-shared']) { diamond(id).onPress(); h.render(); }
+  const shared = diamond('2-shared');
+  assert.equal(shared.accessibilityState.checked, true);
+  assert.equal(evolution.trackedLevel(h.party(), 'AU0447'), 1); assert.equal(evolution.trackedLevel(h.party(), 'AU0448'), 1);
+  const saved = structuredClone(h.party());
+  assert.deepEqual(h.dropdowns.get('Mnestis Primordial level').options.map(option => option.value), ['tracked', '5', '6', '7', '8', '9']);
+  assert.ok(h.dropdowns.get('Mnestis Primordial level').options.slice(1).every(option => option.label.startsWith('Mnestis')));
+  assert.match(h.choose('Mnestis Primordial level', '5'), /Mnestis setup/);
+  assert.deepEqual(h.party(), saved);
+  assert.match(h.press('Details of Clever Boy'), /Board Edges gain Boundless/);
+  h.press('Return to campaign level');
+  assert.equal(h.dropdowns.get('Mnestis Primordial level').value, 'tracked');
+  shared.onPress(); h.render();
+  assert.equal(evolution.trackedLevel(h.party(), 'AU0448'), 1);
+  assert.deepEqual(evolution.evolutionValues(h.party()).marked, ['0-left', '1-left']);
+});
+
+test('Evolution confirms adversary changes, allows unlimited battle counts and keeps counter changes at campaign Level I', () => {
+  const h = evolutionHarness(2); h.render(); h.choose('Campaign adversary', 'AU0622');
+  h.press('Increase adversary battle count'); h.press('Increase adversary battle count');
+  h.choose('Campaign adversary', 'BU1149');
+  assert.equal(h.sheet().title, 'Change adversary'); assert.equal(h.buttons.get('Change adversary').disabled, true);
+  h.press('Cancel'); assert.equal(evolution.evolutionValues(h.party()).adversaryId, 'AU0622');
+  h.choose('Campaign adversary', 'BU1149'); h.press('I confirm the adversary battle count will reset'); h.press('Change adversary');
+  assert.equal(evolution.evolutionValues(h.party()).adversaryId, 'BU1149'); assert.equal(evolution.evolutionValues(h.party()).adversaryBattles, 0);
+  for (let n = 0; n < 12; n++) { h.press('Increase adversary battle count'); h.press('Increase boss battle count'); }
+  assert.equal(h.buttons.get('Increase adversary battle count').disabled, false);
+  assert.equal(h.buttons.get('Increase boss battle count').disabled, false);
+  assert.equal(evolution.evolutionValues(h.party()).adversaryBattles, 12);
+  assert.equal(evolution.evolutionValues(h.party()).bossBattles, 12);
+  assert.match(h.render(), /aria-label="adversary battles: 12"/);
+  assert.match(h.render(), /aria-label="boss battles: 12"/);
+  h.press('Decrease adversary battle count');
+  assert.equal(evolution.evolutionValues(h.party()).adversaryBattles, 11);
+  assert.equal(h.dropdowns.get('Mnestis Primordial level').value, 'tracked');
+  assert.match(h.render(), /Battle count is separate from level/);
+});
+
+test('Evolution stacks on phones, places setup beside the diagram on tablets/desktops and saves existing notes', () => {
+  const h = evolutionHarness(4); h.render();
+  for (const width of [232, 600, 700, 1012]) {
+    h.nodes.find(node => node.testID === 'evolution-layout').onLayout({ nativeEvent: { layout: { width } } }); h.render();
+    assert.equal(h.nodes.find(node => node.testID === 'evolution-layout').style.flexDirection, width >= 700 ? 'row' : undefined);
+    assert.ok(h.diamonds.size > 15);
+  }
+  h.notes().onChange('Battle reminders'); h.render(); assert.equal(h.party().argo.records.evolution, 'Battle reminders');
+  assert.match(h.choose('Mnestis Primordial level', '7'), /∞/);
+});
+
+test('Evolution opens card-backed trait information and keeps icon toggles separate from the details buttons', () => {
+  const h = evolutionHarness(1); h.render();
+  h.press('View Hermesian Pursuer battle setup');
+  const toying = h.press('Details of Toying');
+  assert.match(toying, /Hermesian Pursuer Attacks/); assert.match(toying, /End of Hope/);
+  assert.doesNotMatch(toying, /Titan X Attacks|Death of Hope|Reference wording is shown unchanged/);
+  const autoDisabled = 'End of Hope is disabled by Toying for Hermesian Pursuer';
+  assert.match(toying, /Disabled by Toying/);
+  assert.equal(h.buttons.get(autoDisabled).disabled, true);
+  assert.equal(h.buttons.get(autoDisabled).selected, false);
+  assert.match(h.press('Details of End of Hope'), /Perform Signature/);
+  h.press(autoDisabled);
+  assert.deepEqual(evolution.disabledPrimordialTraits(h.party(), 'AU0622'), []);
+  assert.match(h.press('Disable Toying for Hermesian Pursuer'), /Disabled/);
+  assert.equal(h.buttons.get('Disable End of Hope for Hermesian Pursuer').selected, true);
+  assert.equal(h.buttons.get('Re-enable Toying for Hermesian Pursuer').role, 'checkbox');
+  assert.equal(h.buttons.get('Re-enable Toying for Hermesian Pursuer').selected, false);
+  h.choose('Mnestis Primordial level', '2'); h.press('Return to campaign level');
+  assert.ok(h.buttons.has('Re-enable Toying for Hermesian Pursuer'));
+  h.press('Re-enable Toying for Hermesian Pursuer');
+  assert.equal(h.buttons.get(autoDisabled).disabled, true);
+  assert.deepEqual(evolution.disabledPrimordialTraits(h.party(), 'AU0622'), []);
+  assert.match(h.press('Details of Winged Doom'), /no description in the bundled catalogue/);
+  const c = evolutionHarness(2); c.render(); c.choose('Primordial battle setup', 'BU0780');
+  assert.match(c.press('Details of This Train'), /abilityText/);
 });

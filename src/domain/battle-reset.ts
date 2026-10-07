@@ -1,4 +1,5 @@
 import type { Argonaut, CardInstance, Party } from './party.ts';
+import { hasGearCharges, resetGearCharges } from './gear-charges.ts';
 
 /** Refresh the selected Argonaut's cards without undoing discards or changing progress. */
 export function refreshArgonautCards(member: Argonaut): Argonaut {
@@ -9,14 +10,15 @@ export function refreshArgonautCards(member: Argonaut): Argonaut {
 }
 
 function readyCard(instance: CardInstance): CardInstance {
-  return instance.exhausted || instance.discarded || instance.exhaustedAbilityIds?.length ? { ...instance, exhausted: false,
-    ...(instance.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}), ...(instance.discarded ? { discarded: false } : {}) } : instance;
+  const restored = resetGearCharges(instance);
+  return restored.exhausted || restored.discarded || restored.exhaustedAbilityIds?.length ? { ...restored, exhausted: false,
+    ...(restored.exhaustedAbilityIds ? { exhaustedAbilityIds: [] } : {}), ...(restored.discarded ? { discarded: false } : {}) } : restored;
 }
 function resetArgonaut(member: Argonaut): Argonaut {
   const cards = [...member.instances, ...(member.titan ? [member.titan] : [])];
   const changed = member.localConditions.length || member.conditions?.length || Object.values(member.tokens).some(value => value !== 0)
     || member.combatModifiers && Object.values(member.combatModifiers).some(value => value !== 0)
-    || member.counters.rage !== 0 || member.counters.fate !== 0 || member.counters.danger !== 0 || cards.some(card => card.exhausted || card.discarded || card.exhaustedAbilityIds?.length);
+    || member.counters.rage !== 0 || member.counters.fate !== 0 || member.counters.danger !== 0 || cards.some(card => card.exhausted || card.discarded || card.exhaustedAbilityIds?.length || hasGearCharges(card));
   if (!changed) return member;
   return { ...member, localConditions: [], ...(member.conditions !== undefined ? { conditions: [] } : {}),
     tokens: Object.fromEntries(Object.keys(member.tokens).map(name => [name, 0])),

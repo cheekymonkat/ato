@@ -28,7 +28,9 @@ export interface CardInstance {
   loadoutMode?: 'weapons' | 'support';
   /** Titan/Mnemos ability readiness, keyed by face and printed ability path. */
   exhaustedAbilityIds?: string[];
-  enabledEffectIds: string[]; counters: Record<string, number>;
+  enabledEffectIds: string[];
+  /** Includes remaining Gear charges under gear-charge:<face>:<defensive-stat index>; absent means full. */
+  counters: Record<string, number>;
   /** Explicit player confirmation, never inferred from a condition's prose. */
   satisfiedEffectIds?: string[];
   memoryProgress?: MemoryProgress;
@@ -134,6 +136,8 @@ function checkInstance(value: unknown, path: string): asserts value is CardInsta
   assert(value.faceId === 'front' || value.faceId === 'back', `${path}: invalid face`);
   assert(value.rosterId === undefined || typeof value.rosterId === 'string' && !!value.rosterId.trim(), `${path}: invalid Titan roster identity`);
   assert(typeof value.exhausted === 'boolean' && strings(value.enabledEffectIds) && dictionary(value.counters), `${path}: invalid instance state`);
+  assert(Object.entries(value.counters).every(([key, count]) => !key.startsWith('gear-charge:')
+    || /^gear-charge:(front|back):\d+$/.test(key) && count >= 0), `${path}: invalid Gear charges`);
   assert(value.discarded === undefined || typeof value.discarded === 'boolean', `${path}: invalid discarded state`);
   assert(value.loadoutMode === undefined || value.loadoutMode === 'weapons' || value.loadoutMode === 'support', `${path}: invalid Titan loadout mode`);
   assert(!(value.discarded && value.exhausted), `${path}: discarded card cannot also be exhausted`);
@@ -152,6 +156,8 @@ export function parseParty(value: unknown): Party {
   assert(value.campaignCycle === undefined || isCampaignCycle(value.campaignCycle), 'Invalid campaign cycle');
   assert(value.campaignNotes === undefined || typeof value.campaignNotes === 'string', 'Invalid campaign notes');
   assert(value.argo === undefined || validArgoState(value.argo), 'Invalid Argo campaign records');
+  assert(value.argo === undefined || (value.argo as ArgoState).diplomacy === undefined
+    || (value.argo as ArgoState).diplomacy!.cycle === (value.campaignCycle ?? 1), 'Invalid diplomacy campaign cycle');
   const roster = value.titanRoster;
   assert(roster === undefined || isRecord(roster) && roster.version === 1 && Array.isArray(roster.titans)
     && roster.titans.every(titan => isRecord(titan) && typeof titan.id === 'string' && !!titan.id.trim() && checkReference(titan)

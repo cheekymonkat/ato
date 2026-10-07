@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "catalogueVersion": "atcc-v2-bf1b3ea248ccfb5d",
+  "catalogueVersion": "atcc-v2-8d0846516a8568a2",
   "cards": [
     {
       "id": "def_0003f07224deddf7f702e53f",
@@ -56866,6 +56866,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/yarn-talisman.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/yarn-talisman.png",
+            "width": 486,
+            "height": 733,
+            "artBottom": 455
           }
         }
       ]
@@ -69908,6 +69915,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/auric-kalaharis.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/auric-kalaharis.png",
+            "width": 486,
+            "height": 734,
+            "artBottom": 517
           }
         }
       ]
@@ -103009,6 +103023,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/alchemist-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/alchemist-armor.png",
+            "width": 488,
+            "height": 734,
+            "artBottom": 467
           }
         }
       ]
@@ -159749,6 +159770,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/fists.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/fists.png",
+            "width": 484,
+            "height": 733,
+            "artBottom": 540
           }
         }
       ]
@@ -171522,6 +171550,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/silk-armor.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/silk-armor.png",
+            "width": 472,
+            "height": 734,
+            "artBottom": 569
           }
         }
       ]
@@ -223127,6 +223162,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/hermes-cape.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/hermes-cape.png",
+            "width": 486,
+            "height": 734,
+            "artBottom": 460
           }
         }
       ]
@@ -342557,6 +342599,13 @@
                 ]
               }
             ]
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/vulture-mask.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/vulture-mask.png",
+            "width": 472,
+            "height": 748,
+            "artBottom": 437
           }
         }
       ]
@@ -354999,6 +355048,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/suntanned-fists.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/suntanned-fists.png",
+            "width": 484,
+            "height": 734,
+            "artBottom": 452
           }
         },
         {
@@ -355096,6 +355152,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/stock-cryptex.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/stock-cryptex.png",
+            "width": 480,
+            "height": 734,
+            "artBottom": 458
           }
         }
       ]
@@ -400117,6 +400180,13 @@
               }
             ],
             "gatedAbilities": []
+          },
+          "artwork": {
+            "image": "assets/gear-art/epson-07102026162435/trireme-breastplate.png",
+            "grayscaleImage": "assets/gear-art/epson-07102026162435/grayscale/trireme-breastplate.png",
+            "width": 492,
+            "height": 734,
+            "artBottom": 551
           }
         }
       ]

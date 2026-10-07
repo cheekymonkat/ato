@@ -41,10 +41,11 @@ test('all reviewed Gear batches have named, hashed, rounded artwork and matching
       'epson-06102026191222': 21, 'epson-06102026191619': 21, 'epson-06102026192724': 20, 'epson-06102026193136': 20,
       'epson-06102026194506': 20, 'epson-06102026194705': 2, 'epson-07102026101950': 21, 'epson-07102026102316': 21,
       'epson-07102026102736': 21, 'epson-07102026103125': 21, 'epson-07102026103350': 1, 'epson-07102026103838': 9,
+      'epson-07102026162435': 10,
       'epson-105748': 21, 'epson-110215': 21, 'epson-110738': 13, 'epson-185551': 21, 'epson-185936': 20,
       'epson-210624': 21, 'epson-211018': 20, 'epson-211609': 13, 'epson-212452': 21, 'epson-213909': 21,
       'epson-214451': 21, 'epson-215042': 21, 'epson-215411': 21, 'epson-215757': 2 });
-  assert.equal(artwork.length, 557);
+  assert.equal(artwork.length, 567);
   const linked = catalogue.cards.flatMap(card => card.faces.filter(face => face.artwork));
   assert.equal(linked.length, artwork.length);
   for (const entry of artwork) {
@@ -73,7 +74,7 @@ test('all reviewed Gear batches have named, hashed, rounded artwork and matching
   }
   const xiphos = catalogue.cards.find(card => card.faces.some(face => face.name === 'Temenos Xiphos'));
   assert.notEqual(xiphos.faces[0].artwork.image, xiphos.faces[1].artwork.image);
-  assert.equal(catalogue.cards.find(card => card.faces[0].name === 'Fists').faces[0].artwork, undefined);
+  assert.match(catalogue.cards.find(card => card.faces[0].name === 'Fists').faces[0].artwork.image, /epson-07102026162435\/fists.png$/);
 });
 
 test('new scans preserve original artwork links, disambiguate copies and link reversible faces independently', async () => {
@@ -97,7 +98,7 @@ test('new scans preserve original artwork links, disambiguate copies and link re
       for (const alias of card.sourcePrintedIds ?? []) assert.ok(card.printedIds.includes(alias));
     }
   }
-  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 557);
+  assert.equal(new Set(artwork.map(card => `${card.definitionId}/${card.faceId}`)).size, 567);
   const chainWhips = catalogue.cards.filter(card => card.faces[0].name === 'Chain Whip');
   assert.equal(chainWhips.length, 2);
   assert.ok(chainWhips.find(card => card.printedIds.includes('BJ0874')).faces[0].artwork);
@@ -109,7 +110,7 @@ test('new scans preserve original artwork links, disambiguate copies and link re
   for (const name of ['Metasword', 'Ladder Buckler', 'Boom Spear', 'Leg Khopesh', 'Fumeblade (Barred)',
     'Necrotic Virus', 'Umbral Virus', 'Spherecast', 'Right Talon of Doom', 'Descender',
     'Spiral Whip', 'Spiral Mace', 'Hammer-Sword', 'Barbed Saw', 'Exoaegis', 'Sun Spear', 'Sun Disc', 'Voice of the People',
-    'Phantom Spear', 'Lesser Saphos', 'Dahaka Blade', 'Atlantean Gun', 'Atlantean Gun (Generated)']) {
+    'Phantom Spear', 'Lesser Saphos', 'Dahaka Blade', 'Atlantean Gun', 'Atlantean Gun (Generated)', 'Suntanned Fists']) {
     const faces = catalogue.cards.find(card => card.faces[0].name === name).faces;
     assert.ok(faces[0].artwork); assert.ok(faces[1].artwork);
     assert.notEqual(faces[0].artwork.image, faces[1].artwork.image);
@@ -149,13 +150,25 @@ test('later-cycle scans distinguish variants and preserve duplicate and continua
     assert.ok(cards.every(card => card.faces[0].artwork), name);
     assert.notEqual(cards[0].faces[0].artwork.image, cards[1].faces[0].artwork.image);
   }
-  const recent = manifests.filter(manifest => /^epson-0/.test(manifest.batch));
+  const recent = manifests.filter(manifest => /^epson-0/.test(manifest.batch) && manifest.batch !== 'epson-07102026162435');
   assert.equal(recent.flatMap(manifest => manifest.cards).length, 279);
   const copies = recent.flatMap(manifest => manifest.skippedCards).filter(card => card.definitionId);
   assert.equal(copies.length, 3);
   for (const copy of copies) {
     assert.equal(artwork.filter(card => card.definitionId === copy.definitionId && card.faceId === copy.faceId).length, 1);
   }
+});
+
+test('the missing-gear scan fills ten real faces, keeps Fists and its variant separate and records the Vulture Mask footer discrepancy', () => {
+  const manifest = manifests.find(manifest => manifest.batch === 'epson-07102026162435');
+  assert.equal(manifest.cards.length, 10);
+  const vulture = manifest.cards.find(card => card.name === 'Vulture Mask');
+  assert.deepEqual(vulture.observedPrintedIds, ['AJ0274']); assert.deepEqual(vulture.printedIds, ['AJ0279']);
+  assert.match(vulture.reviewNote, /no card identity or supply count is changed/);
+  const fists = manifest.cards.find(card => card.name === 'Fists'), sun = manifest.cards.find(card => card.name === 'Suntanned Fists');
+  assert.notEqual(fists.definitionId, sun.definitionId);
+  assert.equal(manifest.cards.find(card => card.name === 'Stock Cryptex').definitionId, sun.definitionId);
+  assert.equal(manifest.cards.find(card => card.name === 'Stock Cryptex').faceId, 'back');
 });
 
 test('catalogue validation rejects invalid artwork dimensions and unsafe asset paths', () => {

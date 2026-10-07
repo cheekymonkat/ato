@@ -87,6 +87,30 @@ cover per-card isolation, reversible discard, Refresh Gear and name-only preserv
 
 Exhausted equipped and Needs reassignment faces display in grayscale, including papyrus, cycle colours, shadows, stat cells, dice, symbols and gate gradients. The same appearance applies when reviewing that instance in the editor; new replacement candidates and Browse Gear definitions remain coloured. Ready restores the original presentation. Desaturation changes each colour using luminance weights rather than dimming or flattening the card to one gray, preserving relative brightness and alpha. SVG recolouring only touches paint attributes, preserving paths, IDs and gradient references. This uses the shared renderer's palette on all platforms, without relying on platform-specific filter support. State labels and Ready/Flip controls remain readable and usable.
 
+## Gear charges
+
+The printed Energy box on an equipped Gear card is a separate tap target. Each
+tap spends one charge; tapping at zero restores that box's printed amount.
+The zero count is red (grayscale on exhausted/discarded cards). Charge taps
+stop card-selection propagation and do not open the equipment editor. Catalogue
+previews remain read-only, and reviewing an equipped card shows its saved count.
+
+`src/domain/gear-charges.ts` reads positive whole-number Energy amounts from
+`defensiveStatistics`; all 28 existing printed Gear pools are supported. State
+uses the existing per-instance `counters` under `gear-charge:<face>:<index>`.
+Missing state means full charges, so older saves need no migration. Faces and
+multiple boxes have independent keys. Copies on other Argonauts remain
+independent. Actions validate the captured campaign, owner, instance, definition,
+face and printed Energy box before spending.
+
+Tides of Fate restores all charge pools on all four Argonauts, including hidden
+reverse-face pools and retained unassigned cards, as well as its existing
+condition/token/Triskelion and exhausted/discarded resets. Unrelated counters,
+memory nodes, assignments and campaign data are preserved. Refresh Gear only
+readies exhaustion and preserves spent charges. Card-local Energy gates and
+ability effects remain manual; spending a charge does not invoke an ability.
+Charge state is included in autosaves and portable backups.
+
 ## Attachments, faces and independent instances
 
 Attachments use the same placement flow as other Gear: select a card and equip it in its printed Attachment position(s). The picker has no host selection, and activation depends on its slot placement. Ability text remains visible for the player's guidance; host phrases or traits in that text do not impose additional placement requirements.

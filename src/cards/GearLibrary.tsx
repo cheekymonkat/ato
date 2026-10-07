@@ -25,7 +25,7 @@ export function GearLibrary({ initialQuery = '', initialPage = 0 }: { initialQue
   };
   const inspect = (card: CardDefinition, face: CardFace) => router.push({ pathname: '/cards/[id]', params: { id: card.id, face: face.id } });
   return <SafeAreaView edges={['left', 'right', 'bottom']} style={styles.safe}><ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.page}>
-    <View style={styles.header}><Button quiet label="Back to Argonaut" onPress={() => router.replace({ pathname: '/argonaut/[id]', params: { id: party.activeArgonautId } })} />
+    <View style={styles.header}><Button quiet label="Back to Argo" onPress={() => router.replace('/argo')} />
       <Button quiet label={spoilers.hideSecrets ? 'Reveal all secret cards' : 'Hide secret cards'} onPress={spoilers.toggle} /></View>
     <View><Text accessibilityRole="header" style={styles.title}>Gear catalogue</Text><Text style={styles.subtitle}>Browse cards, inspect abilities and turn reversible Gear.</Text></View>
     <TextInput accessibilityLabel="Search Gear by name or printed ID" placeholder="Search Gear by name or ID" value={query} onChangeText={value => { setQuery(value); setPage(0); router.setParams({ q: value, p: '0' }); }} style={styles.search} />

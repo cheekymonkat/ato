@@ -1,6 +1,6 @@
 # Gear image assets
 
-The 31 supplied scans provide 557 Gear faces, split into individual rounded
+The 32 supplied scans provide 567 Gear faces, split into individual rounded
 PNGs. Filenames follow the Gear names, using lowercase and hyphens:
 `puzzle-axe.png`, `temenos-scale-umbrella.png`, and so on.
 
@@ -101,6 +101,47 @@ titles are not retained in final images.
 | `epson-07102026103125` | `ato-gear/gear/Epson_07102026103125.jpg` | 3,396 × 2,238 | 21 |
 | `epson-07102026103350` | `ato-gear/gear/Epson_07102026103350.jpg` | 3,510 × 2,550 | 1 |
 | `epson-07102026103838` | `ato-gear/gear/Epson_07102026103838.jpg` | 3,396 × 1,494 | 9 |
+| `epson-07102026162435` | `Epson_07102026162435.jpg` | 3,396 × 1,482 | 10 |
+
+## Conversion record: Missing Gear scan
+
+Added on 7 October 2026 from `../ato_docs/Epson_07102026162435.jpg`.
+Its ten photographed faces provide ten new artwork links across nine existing
+Gear definitions, and 20 ready/grayscale PNGs. This completes Trireme Breastplate,
+Hermes Cape, Alchemist Armor, Auric Kalaharis, Silk Armor, Yarn Talisman, Fists,
+Vulture Mask, and both Suntanned Fists / Stock Cryptex faces. The latter remain
+front/back faces of the same existing definition. Empty lower grid positions
+do not create assets or cards.
+
+This uses the same exact source-pixel extraction, sampled paper masks and
+30-pixel rounded corners. Native crops, artwork bounds, erase rectangles, scan
+and output hashes are recorded in
+`data/reference/gear-art-epson-07102026162435.json` and the batch manifest.
+Original crops and cleaned review strips are also kept under
+`../ato_docs/gear-art/epson-07102026162435/`. All titles, rules, icons and footer
+printing are removed so the app can overlay its existing live data.
+
+Hermes Cape and Silk Armor have printing within the lower illustration area.
+Only uncovered pixels are retained. Alchemist Armor keeps the main armour;
+its faint lower Titan projection is omitted where printing covers it.
+Vulture Mask's photographed footer reads AJ0274, while the imported catalogue
+uses AJ0279. The unambiguous title links the image; the discrepancy is recorded
+as `observedPrintedIds` without changing aliases or supply counts.
+
+Regenerate this batch and its catalogue/report links with:
+
+```sh
+python3 scripts/extract-gear-art.py --batch epson-07102026162435
+npm run catalogue:import
+npm run gear-art:report
+```
+
+Validation: all 398 tests, catalogue reproducibility, lint and type checking
+passed, and Expo exported web, iOS and Android successfully. All ten finished
+images were reviewed. An independent pixel check verified all 3,550,858 pixels
+against the original scan or sampled paper, plus grayscale luminance and alpha.
+Every existing definition, rule and supply count, and all 557 earlier artwork
+links, remain unchanged.
 
 ## Conversion record: Gear subfolder scans
 
@@ -152,14 +193,15 @@ recipe ID first; name matching is used only for a unique definition in the same
 cycle. Unknown technologies and secret numbers are left empty. Cards classified
 as Promo are excluded entirely, including their flipped sides.
 
-The report checks that linked colour assets exist. Fists remains listed as
-default unarmed gear without supplied artwork; Eschaton Stones is explicitly
-marked as having no illustration in its supplied scan. Rows are ordered by
+The report checks that linked colour assets exist. Eschaton Stones is explicitly
+marked as having no illustration in its supplied scan and remains the only
+non-Promo face without an image; it continues to use its live card layout. Rows are ordered by
 cycle descending, then name. The CSV is UTF-8 with a BOM and quoted fields for
 Excel compatibility. Regenerate it
 with `npm run gear-art:report`; an optional output path can be supplied after `--`.
-The 7 October report excludes 45 Promo sides, leaving 11 missing sides across
-10 definitions: 10 fronts and one flipped side. A copy is also saved at
+The updated 7 October report excludes 45 Promo sides, leaving one missing
+front: the text-only Eschaton Stones card. No illustrated non-Promo fronts or
+flipped sides remain missing. A copy is also saved at
 `../ato_docs/gear-art/missing-gear-art.csv` beside the conversion records.
 
 ## Conversion record: 4 October Epson scans

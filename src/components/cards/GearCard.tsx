@@ -1,4 +1,4 @@
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import type { CardFace } from '../../domain/cards';
 import { diceLayers, displayGate, displayValue, gearTitleSize, objects, overheadGate, strings } from '../../domain/card-presentation';
 import { cycleColour, gearTheme as g } from '../../theme/gear-tokens';
@@ -10,6 +10,9 @@ import type { TextActions } from './RichParagraph';
 import { adjustedStat, MODIFIED_STAT_COLOUR } from '../../domain/combat-modifiers';
 import { useCombatAdjustment } from './CombatStats';
 import { gearArtAssets } from './gear-art-assets';
+import { gearChargePool, gearChargeRemaining } from '../../domain/gear-charges';
+import type { CardInstance } from '../../domain/party';
+import { SwipeGuard } from '../SwipeSurface';
 
 export function DiceStack({ dice, type = 'Power', scale = 1 }: { dice: string[]; type?: 'Power' | 'Armor'; scale?: number }) {
   if (dice.length === 0) return null;
@@ -30,11 +33,14 @@ function Medallion({ name, colour, scale }: { name: string; colour: string; scal
 }
 
 /** Source-sized previews; inspection and equipped cards grow to show every ability and footer. */
-type GearCardProps = TextActions & { face: Extract<CardFace, { kind: 'gear' }>; width?: number; preview?: boolean; exhausted?: boolean };
+type GearCardProps = TextActions & {
+  face: Extract<CardFace, { kind: 'gear' }>; width?: number; preview?: boolean; exhausted?: boolean;
+  instance?: CardInstance; onCharge?: (index: number) => void;
+};
 export function GearCard({ exhausted = false, ...props }: GearCardProps) {
   return <CardColours exhausted={exhausted}><GearCardFace {...props} /></CardColours>;
 }
-function GearCardFace({ face, width = g.width, preview = false, onKeyword, onReference }: GearCardProps) {
+function GearCardFace({ face, width = g.width, preview = false, onKeyword, onReference, instance, onCharge }: GearCardProps) {
   const paint = useCardColours();
   const precision = adjustedStat(face.data.offensiveStatistics.precision ?? '', useCombatAdjustment(face, 'precision'));
   const scale = width / g.width, data = face.data, colour = paint.colour(cycleColour(face.cycle));
@@ -69,11 +75,15 @@ function GearCardFace({ face, width = g.width, preview = false, onKeyword, onRef
       <View style={{ flex: 80 }} />
       <View style={{ flex: 25, gap: 8 * scale, overflow: 'hidden' }}>{defensive.map((entry, index) => {
         const type = displayValue(entry.type), resistance = ['Midas', 'Laser', 'Microwave', 'Sun', 'Despair', 'Pain'].includes(type), gate = displayGate(entry.gate);
+        const pool = gearChargePool(face, index), charges = pool && gearChargeRemaining(instance, pool);
+        const statistic = <View style={[styles.statRow, { minHeight: pool && onCharge ? Math.max(44, 25 * scale) : 25 * scale }]}>{type === 'Armor' ? <DiceStack dice={strings(entry.armorDice)} type="Armor" scale={scale} /> : <>
+          <Text style={{ color: resistance ? '#FFFFFF' : paint.colour(charges === 0 ? '#B42332' : '#000000'), fontSize: statSize }}>{charges ?? displayValue(entry.amount)} </Text><CardIcon name={type} type="Armor" size={statSize * 1.5} invert={resistance} colour={resistance ? '#FFFFFF' : '#000000'} />
+        </>}</View>;
         return <View key={index} style={{ backgroundColor: resistance ? '#000000' : paint.colour(g.stat), paddingBottom: pad }}>
           {gate && <StatGate gate={gate} scale={scale} />}
-          <View style={[styles.statRow, { minHeight: 25 * scale }]}>{type === 'Armor' ? <DiceStack dice={strings(entry.armorDice)} type="Armor" scale={scale} /> : <>
-            <Text style={{ color: resistance ? '#FFFFFF' : '#000000', fontSize: statSize }}>{displayValue(entry.amount)} </Text><CardIcon name={type} type="Armor" size={statSize * 1.5} invert={resistance} colour={resistance ? '#FFFFFF' : '#000000'} />
-          </>}</View>
+          {pool && onCharge ? <SwipeGuard><Pressable testID={`gear-charge-${face.id}-${index}`} accessibilityRole="button"
+            accessibilityLabel={`${face.name} charges: ${charges} of ${pool.capacity}. ${charges === 0 ? 'Restore charges' : 'Spend one charge'}`}
+            onPress={event => { event.stopPropagation(); onCharge(index); }} style={({ pressed }) => pressed && { opacity: 0.65 }}>{statistic}</Pressable></SwipeGuard> : statistic}
         </View>;
       })}</View>
     </View>

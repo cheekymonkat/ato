@@ -14,5 +14,5 @@ export default function MemoryScreen() {
     kind === 'mnemos' ? argonaut.mnemosIds.length : argonaut.fatedMnemosIds.length) : 0;
   return argonaut && kind && Number.isSafeInteger(index) && index >= 0 && index < count
     ? <MemoryEditor key={`${argonaut.id}:${kind}:${index}`} argonaut={argonaut} kind={kind} index={index} />
-    : <View style={{ padding: 24, gap: 20 }}><Text>Memory position unavailable.</Text><Button label="Return to party" onPress={() => router.replace('/')} /></View>;
+    : <View style={{ padding: 24, gap: 20 }}><Text>Memory position unavailable.</Text><Button label="Return to Argo" onPress={() => router.replace('/argo')} /></View>;
 }

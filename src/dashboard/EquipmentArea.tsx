@@ -19,6 +19,7 @@ import { useSpoilers } from '../state/SpoilerProvider';
 import { equipmentGroupWidths, equipmentSlotSize, GROUP_GAP, SLOT_GAP, SLOT_WIDTH } from './equipment-layout';
 import { positionRouteParam } from '../loadout/position-params';
 import { visibleEquipmentPositions } from './equipment-positions';
+import { useParty } from '../state/PartyProvider';
 
 const labels: Record<SlotKind, string> = { hand: 'Weapon', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'Fated Mnemos' };
 const icons: Record<SlotKind, GameIconName> = { hand: 'OneHanded', armor: 'Armor', support: 'Support', attachment: 'Attachment', mnemos: 'Mnemos', 'fated-mnemos': 'FatedMnemos' };
@@ -36,6 +37,7 @@ export function SectionHeading({ title, note, action }: { title: string; note?: 
 
 function SlotCard({ position, index, argonaut, compact, cellWidth }: { position: CapacityPosition; index: number; argonaut: Argonaut; compact?: boolean; cellWidth: number }) {
   const catalogue = getCatalogue();
+  const { party, dispatch } = useParty();
   const active = loadoutState(argonaut, catalogue).activeInstanceIds;
   const assignment = argonaut.equipment.find(entry => active.has(entry.instanceId) && entry.positionIds.includes(position.id));
   const memoryId = position.kind === 'mnemos' ? argonaut.mnemosIds[index] : position.kind === 'fated-mnemos' ? argonaut.fatedMnemosIds[index] : undefined;
@@ -52,7 +54,9 @@ function SlotCard({ position, index, argonaut, compact, cellWidth }: { position:
   const openEditor = () => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, position: positionRouteParam(position.id), ...(instance ? { instance: instance.id } : {}) } });
   const content = <>
     <Text style={styles.slotLabel}>{label}</Text>
-    {face?.kind === 'gear' && definition ? <EquippedGear card={definition} face={face} exhausted={Boolean(instance?.exhausted || instance?.discarded)} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>
+    {face?.kind === 'gear' && definition ? <EquippedGear card={definition} face={face} exhausted={Boolean(instance?.exhausted || instance?.discarded)} instance={instance}
+      onCharge={instance ? index => dispatch({ type: 'equipment-charge', partyId: party.id, argonautId: argonaut.id,
+        instanceId: instance.id, definitionId: instance.definitionId, faceId: instance.faceId, index }) : undefined} /> : <View style={[styles.cardBody, horizontal && styles.compactBody]}>
       <View style={styles.symbol}><GameIcon name={icons[position.kind]} size={compact ? 28 : 38} /></View>
       <View style={horizontal ? { flex: 1 } : { alignItems: 'center' }}>
         <Text style={[styles.empty, face && styles.cardName]}>{hidden ? 'Unrevealed card' : face?.name || (compact ? 'Unassigned' : 'Unequipped')}</Text>
@@ -106,7 +110,7 @@ export function EquipmentArea({ positions, argonaut, headingAction }: { position
         const name = definition && spoilers.hidden(definition) ? 'Unrevealed card' : face?.name || entry.instanceId;
         return <View key={entry.instanceId} style={styles.pendingCard}>
           <EquipmentSelection label={`Reassign ${name}`} onPress={() => router.push({ pathname: '/loadout/[id]', params: { id: argonaut.id, instance: entry.instanceId } })}>
-            {definition && face?.kind === 'gear' ? <EquippedGear card={definition} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} /> : <Text style={styles.reassignmentText}>{name}</Text>}
+            {definition && face?.kind === 'gear' ? <EquippedGear card={definition} face={face} exhausted={Boolean(item?.exhausted || item?.discarded)} instance={item} /> : <Text style={styles.reassignmentText}>{name}</Text>}
             <Text style={styles.source}>{reasons.join(' ')}</Text>
           </EquipmentSelection>
           {item && <><Text style={[styles.source, styles.status]}>{item.discarded ? 'Discarded' : item.exhausted ? 'Exhausted' : 'Ready'}</Text><EquipmentActions argonautId={argonaut.id} instance={item} definition={definition} /></>}

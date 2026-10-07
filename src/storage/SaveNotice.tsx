@@ -14,7 +14,7 @@ export function SaveNotice({ showStatus = true }: { showStatus?: boolean }) {
   return <View style={styles.notice}>
     <Text accessibilityLiveRegion="polite" style={styles.status}>{showStatus ? `${profile.name} · ${preview ? 'Temporary preview · not saved' : saveStatus === 'saved' ? 'Saved locally' : saveStatus === 'saving' ? 'Saving…' : 'Save failed'}` : `Campaign: ${profile.name} - Cycle ${campaignCycle(party)}`}</Text>
     {preview && !showStatus && <Text style={styles.status}>Temporary preview · not saved</Text>}
-    {preview && <Button quiet label="Leave preview" onPress={() => { exitPreview(); router.replace({ pathname: '/argonaut/[id]', params: { id: profile.party.activeArgonautId } }); }} />}
+    {preview && <Button quiet label="Leave preview" onPress={() => { exitPreview(); router.replace('/argo'); }} />}
     {hasNotices && <Button quiet label="Review saved card notices" onPress={() => router.push('/profiles')} />}
     {saveError && !preview && <><Text accessibilityRole="alert" style={styles.error}>{saveError}</Text>
       <View style={styles.actions}><Button quiet label="Retry save" onPress={() => void flush().catch(() => {})} />
