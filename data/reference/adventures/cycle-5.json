@@ -1,0 +1,2246 @@
+{
+  "schemaVersion": 1,
+  "cycle": 5,
+  "source": {
+    "file": "Cycle_5_tracking_v1.pdf",
+    "sha256": "c75050b65108f6299f0c57e797293b908c160af603c2e1d9c85dd95b2a23c7e1",
+    "pages": 2,
+    "coordinateSystem": "PDF points, top-left origin"
+  },
+  "hubs": [
+    {
+      "id": "c5-pieces-and-wholes",
+      "title": "Pieces and Wholes",
+      "storybookPage": 75,
+      "entries": [
+        {
+          "id": "c5-pieces-and-wholes-1",
+          "title": "Olive Branches",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              333.52,
+              197.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-2",
+          "title": "Fertile Ashes",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              362.41,
+              197.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-3",
+          "title": "Uprooting",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              392.101,
+              197.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-4",
+          "title": "Needs of the Many",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              424.391,
+              197.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-5",
+          "title": "Cultural Liberation",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              456.671,
+              197.0,
+              488.951
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-6",
+          "title": "The Drowned Truth",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              488.951,
+              197.0,
+              520.83
+            ]
+          }
+        },
+        {
+          "id": "c5-pieces-and-wholes-7",
+          "title": "Kiln of Nations",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              520.83,
+              197.0,
+              553.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          315.448,
+          197.0,
+          553.568
+        ]
+      },
+      "trackId": "c5-pieces-and-wholes",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Black Abyss (Outer 3)",
+      "selection": {
+        "1A": [
+          1,
+          4
+        ],
+        "1B": [
+          1,
+          3
+        ],
+        "2A/2B": [
+          1,
+          2
+        ],
+        "3A": null,
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c5-death-before-dishonor",
+      "title": "Death Before Dishonor",
+      "storybookPage": 86,
+      "entries": [
+        {
+          "id": "c5-death-before-dishonor-1",
+          "title": "Point of No Return",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              332.44,
+              394.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-2",
+          "title": "Law Writ in Stone",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              362.41,
+              394.0,
+              392.461
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-3",
+          "title": "Last and Holiest of Knights",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              392.461,
+              394.0,
+              425.831
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-4",
+          "title": "Those Who Are Broken",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              425.831,
+              394.0,
+              459.611
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-5",
+          "title": "Changing of the Guard",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              459.611,
+              394.0,
+              493.032
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-6",
+          "title": "Primacy",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              493.032,
+              394.0,
+              525.267
+            ]
+          }
+        },
+        {
+          "id": "c5-death-before-dishonor-7",
+          "title": "Eternal Vow",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              525.267,
+              394.0,
+              558.002
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          316.302,
+          394.0,
+          558.002
+        ]
+      },
+      "trackId": "c5-death-before-dishonor",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Trireme Graveyard (Inner 3)",
+      "selection": {
+        "1A": [
+          5,
+          7
+        ],
+        "1B": [
+          4,
+          6
+        ],
+        "2A/2B": [
+          3,
+          4
+        ],
+        "3A": [
+          1,
+          1
+        ],
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c5-the-one-you-dont",
+      "title": "The One You Don’t",
+      "storybookPage": 99,
+      "entries": [
+        {
+          "id": "c5-the-one-you-dont-1",
+          "title": "Fishers of Mortals",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              333.52,
+              580.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-2",
+          "title": "Surface",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              362.41,
+              580.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-3",
+          "title": "Burn Marks",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              392.101,
+              580.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-4",
+          "title": "Night Dive",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              424.391,
+              580.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-5",
+          "title": "Thoughts to Things",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              456.671,
+              580.0,
+              489.311
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-6",
+          "title": "Path of the Truthsayer",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              489.311,
+              580.0,
+              523.767
+            ]
+          }
+        },
+        {
+          "id": "c5-the-one-you-dont-7",
+          "title": "He Who Is Without Sin",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              523.767,
+              580.0,
+              558.722
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          313.31,
+          580.0,
+          558.722
+        ]
+      },
+      "trackId": "c5-the-one-you-dont",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "School of Creatures (Inner 3)",
+      "selection": {
+        "1A": [
+          8,
+          10
+        ],
+        "1B": [
+          7,
+          8
+        ],
+        "2A/2B": [
+          5,
+          6
+        ],
+        "3A": [
+          2,
+          2
+        ],
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c5-the-greater-good",
+      "title": "The Greater Good",
+      "storybookPage": 112,
+      "entries": [
+        {
+          "id": "c5-the-greater-good-1",
+          "title": "Heroes Mandate",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              592.29,
+              197.0,
+              621.06
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-2",
+          "title": "Lesser Evil",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              621.06,
+              197.0,
+              650.801
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-3",
+          "title": "The Ghost People",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              650.801,
+              197.0,
+              683.142
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-4",
+          "title": "Sigh of the World",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              683.142,
+              197.0,
+              715.492
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-5",
+          "title": "Theseus Wreck",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              715.492,
+              197.0,
+              747.841
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-6",
+          "title": "The Great Need",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              747.841,
+              197.0,
+              781.64
+            ]
+          }
+        },
+        {
+          "id": "c5-the-greater-good-7",
+          "title": "Any Means Necessary",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              781.64,
+              197.0,
+              816.298
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          574.33,
+          197.0,
+          816.298
+        ]
+      },
+      "trackId": "c5-the-greater-good",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Trench (IX4) (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": [
+          9,
+          10
+        ],
+        "2A/2B": [
+          7,
+          8
+        ],
+        "3A": [
+          3,
+          4
+        ],
+        "3B": [
+          1,
+          2
+        ],
+        "4A/4B": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "c5-whatever-the-cost",
+      "title": "Whatever the Cost",
+      "storybookPage": 122,
+      "entries": [
+        {
+          "id": "c5-whatever-the-cost-1",
+          "title": "The Great Hunt",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              592.29,
+              394.0,
+              621.06
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-2",
+          "title": "Dead Weight",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              621.06,
+              394.0,
+              650.801
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-3",
+          "title": "War Games",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              650.801,
+              394.0,
+              683.142
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-4",
+          "title": "Father Fear",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              683.142,
+              394.0,
+              715.852
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-5",
+          "title": "Where All the Ships Go",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              715.852,
+              394.0,
+              748.921
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-6",
+          "title": "That Dragon",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              748.921,
+              394.0,
+              783.08
+            ]
+          }
+        },
+        {
+          "id": "c5-whatever-the-cost-7",
+          "title": "When All the Walls Have Fallen",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              783.08,
+              394.0,
+              817.738
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          574.33,
+          394.0,
+          817.738
+        ]
+      },
+      "trackId": "c5-whatever-the-cost",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Trireme Graveyard (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": [
+          9,
+          10
+        ],
+        "3A": [
+          5,
+          7
+        ],
+        "3B": [
+          3,
+          4
+        ],
+        "4A/4B": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "c5-the-flesh-is-weak",
+      "title": "The Flesh Is Weak",
+      "storybookPage": 132,
+      "entries": [
+        {
+          "id": "c5-the-flesh-is-weak-1",
+          "title": "The Flute Player",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              592.29,
+              580.0,
+              621.42
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-2",
+          "title": "So Spoke the Truthsayer",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              621.42,
+              580.0,
+              651.882
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-3",
+          "title": "Innocent As Serpents",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              651.882,
+              580.0,
+              684.581
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-4",
+          "title": "Tekton",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              684.581,
+              580.0,
+              716.931
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-5",
+          "title": "Secretkeeper",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              716.931,
+              580.0,
+              749.281
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-6",
+          "title": "Mouthpiece",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              749.281,
+              580.0,
+              781.22
+            ]
+          }
+        },
+        {
+          "id": "c5-the-flesh-is-weak-7",
+          "title": "The Spirit Is Willing",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              781.22,
+              580.0,
+              814.018
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          574.33,
+          580.0,
+          814.018
+        ]
+      },
+      "trackId": "c5-the-flesh-is-weak",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Black Abyss (Outer 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": null,
+        "3A": [
+          8,
+          10
+        ],
+        "3B": [
+          5,
+          7
+        ],
+        "4A/4B": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "c5-half-lives-of-truths",
+      "title": "Half-lives of Truths",
+      "storybookPage": 143,
+      "entries": [
+        {
+          "id": "c5-half-lives-of-truths-1",
+          "title": "Birthright",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              62.156,
+              197.0,
+              90.94
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-2",
+          "title": "Cold",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              90.94,
+              197.0,
+              120.321
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-3",
+          "title": "Closure",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              120.321,
+              197.0,
+              152.721
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-4",
+          "title": "Cracks Beneath Your Feet",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              152.721,
+              197.0,
+              185.721
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-5",
+          "title": "Breathe Sky Again",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              185.721,
+              197.0,
+              218.316
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-6",
+          "title": "Drag of Years",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              218.316,
+              197.0,
+              250.03
+            ]
+          }
+        },
+        {
+          "id": "c5-half-lives-of-truths-7",
+          "title": "Phantom Pain",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              250.03,
+              197.0,
+              282.708
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          44.06,
+          197.0,
+          282.708
+        ]
+      },
+      "trackId": "c5-half-lives-of-truths",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "School of Creatures (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": null,
+        "3A": null,
+        "3B": [
+          8,
+          10
+        ],
+        "4A/4B": [
+          7,
+          10
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "kind": "rr",
+      "id": "c5-r-r-adventures",
+      "title": "R&R Adventures",
+      "storybookPage": 156,
+      "entries": [
+        {
+          "id": "c5-r-r-adventures-1",
+          "title": "Empty Chair",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              337.36,
+              268.0,
+              370.611
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-2",
+          "title": "Luck of the Draw",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              370.611,
+              268.0,
+              402.781
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-3",
+          "title": "Intestinax",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              402.781,
+              268.0,
+              435.071
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-4",
+          "title": "Game of All Time",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              435.071,
+              268.0,
+              467.351
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-5",
+          "title": "From Ruin, Rebirth",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              467.351,
+              268.0,
+              499.691
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-6",
+          "title": "No Investigations",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              499.691,
+              268.0,
+              532.392
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-7",
+          "title": "Somewhat Truthful and Mostly Accurate Machine",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              532.392,
+              268.0,
+              565.286
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-8",
+          "title": "Edó Eínai oi Drákoi",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              565.286,
+              268.0,
+              597.641
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-9",
+          "title": "Peak-tophong",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              597.641,
+              268.0,
+              629.561
+            ]
+          }
+        },
+        {
+          "id": "c5-r-r-adventures-10",
+          "title": "The Kid",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              629.561,
+              268.0,
+              662.522
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          319.288,
+          268.0,
+          662.522
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "c5-rude-awakening",
+      "title": "Rude Awakening",
+      "kind": "special",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          34.08,
+          707.992,
+          136.821,
+          722.056
+        ]
+      }
+    },
+    {
+      "id": "c5-unknown-aeons",
+      "title": "Unknown Aeons",
+      "kind": "special",
+      "boxCount": 4,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          329.83,
+          707.992,
+          429.191,
+          722.056
+        ]
+      }
+    },
+    {
+      "id": "c5-fracturess",
+      "title": "Fracturess",
+      "kind": "special",
+      "boxCount": 8,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          49.92,
+          740.31,
+          121.091,
+          754.35
+        ]
+      }
+    },
+    {
+      "id": "c5-code-0611",
+      "title": "0611",
+      "code": "0611",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.69,
+          354.822,
+          308.36,
+          368.862
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4104",
+      "title": "4104",
+      "code": "4104",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          346.63,
+          354.822,
+          378.34,
+          368.862
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5923",
+      "title": "5923",
+      "code": "5923",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          415.63,
+          354.822,
+          447.61,
+          368.862
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6117",
+      "title": "6117",
+      "code": "6117",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          354.822,
+          511.09,
+          368.862
+        ]
+      }
+    },
+    {
+      "id": "c5-code-1655",
+      "title": "1655",
+      "code": "1655",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.33,
+          388.404,
+          308.366,
+          402.468
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4213",
+      "title": "4213",
+      "code": "4213",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          347.71,
+          388.404,
+          378.346,
+          402.468
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5941",
+      "title": "5941",
+      "code": "5941",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          416.95,
+          388.404,
+          447.616,
+          402.468
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6118",
+      "title": "6118",
+      "code": "6118",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          388.404,
+          512.176,
+          402.468
+        ]
+      }
+    },
+    {
+      "id": "c5-code-1795",
+      "title": "1795",
+      "code": "1795",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.45,
+          421.322,
+          308.36,
+          435.362
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4223",
+      "title": "4223",
+      "code": "4223",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          346.03,
+          421.322,
+          378.34,
+          435.362
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5955",
+      "title": "5955",
+      "code": "5955",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          416.23,
+          421.322,
+          447.61,
+          435.362
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6119",
+      "title": "6119",
+      "code": "6119",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          421.322,
+          511.81,
+          435.362
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3123",
+      "title": "3123",
+      "code": "3123",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.09,
+          453.842,
+          308.36,
+          467.882
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4241",
+      "title": "4241",
+      "code": "4241",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          347.23,
+          453.842,
+          378.34,
+          467.882
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5967",
+      "title": "5967",
+      "code": "5967",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          415.75,
+          453.842,
+          447.61,
+          467.882
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6120",
+      "title": "6120",
+      "code": "6120",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          453.842,
+          513.85,
+          467.882
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3141",
+      "title": "3141",
+      "code": "3141",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          279.41,
+          486.002,
+          308.36,
+          500.042
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4255",
+      "title": "4255",
+      "code": "4255",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          346.63,
+          486.002,
+          378.34,
+          500.042
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5968",
+      "title": "5968",
+      "code": "5968",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          414.67,
+          486.002,
+          447.61,
+          500.042
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6268",
+      "title": "6268",
+      "code": "6268",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          486.002,
+          515.65,
+          500.042
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3155",
+      "title": "3155",
+      "code": "3155",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.69,
+          518.282,
+          308.36,
+          532.322
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4267",
+      "title": "4267",
+      "code": "4267",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          346.03,
+          518.282,
+          378.34,
+          532.322
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5992",
+      "title": "5992",
+      "code": "5992",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          415.27,
+          518.282,
+          447.61,
+          532.322
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6666",
+      "title": "6666",
+      "code": "6666",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          518.282,
+          515.65,
+          532.322
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3167",
+      "title": "3167",
+      "code": "3167",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.21,
+          550.184,
+          308.366,
+          564.247
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4268",
+      "title": "4268",
+      "code": "4268",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          345.07,
+          550.184,
+          378.346,
+          564.247
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6112",
+      "title": "6112",
+      "code": "6112",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          418.51,
+          550.184,
+          447.616,
+          564.247
+        ]
+      }
+    },
+    {
+      "id": "c5-code-7983",
+      "title": "7983",
+      "code": "7983",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          550.184,
+          514.936,
+          564.247
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3168",
+      "title": "3168",
+      "code": "3168",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          277.13,
+          582.272,
+          308.36,
+          596.312
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4292",
+      "title": "4292",
+      "code": "4292",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          345.67,
+          582.272,
+          378.34,
+          596.312
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6113",
+      "title": "6113",
+      "code": "6113",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          418.63,
+          582.272,
+          447.61,
+          596.312
+        ]
+      }
+    },
+    {
+      "id": "c5-code-9068",
+      "title": "9068",
+      "code": "9068",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          482.5,
+          582.272,
+          516.37,
+          596.312
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3192",
+      "title": "3192",
+      "code": "3192",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          277.73,
+          614.192,
+          308.36,
+          628.232
+        ]
+      }
+    },
+    {
+      "id": "c5-code-4478",
+      "title": "4478",
+      "code": "4478",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          345.67,
+          614.192,
+          378.34,
+          628.232
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6114",
+      "title": "6114",
+      "code": "6114",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          418.27,
+          614.192,
+          447.61,
+          628.232
+        ]
+      }
+    },
+    {
+      "id": "c5-code-3935",
+      "title": "3935",
+      "code": "3935",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          276.65,
+          645.992,
+          308.36,
+          660.032
+        ]
+      }
+    },
+    {
+      "id": "c5-code-5904",
+      "title": "5904",
+      "code": "5904",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          345.31,
+          645.992,
+          378.34,
+          660.032
+        ]
+      }
+    },
+    {
+      "id": "c5-code-6115",
+      "title": "6115",
+      "code": "6115",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          418.87,
+          645.992,
+          447.61,
+          660.032
+        ]
+      }
+    }
+  ],
+  "inwardOdyssey": {
+    "boxCount": 20,
+    "storyTitlesSource": "catalogue Inward Odyssey card"
+  },
+  "unlistedSheetTracks": [
+    {
+      "id": "c5-sermons-on-the-shoals",
+      "title": "Sermons on the Shoals",
+      "boxCount": 10,
+      "labels": [
+        "α",
+        "β",
+        "γ",
+        "δ",
+        "ε",
+        "λ",
+        "ο",
+        "σ",
+        "ψ",
+        "Ω"
+      ]
+    }
+  ]
+}

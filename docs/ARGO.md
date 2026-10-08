@@ -123,9 +123,24 @@ three faction panels, with bounded counters and highlighted relationships; see
 [Diplomacy](DIPLOMACY.md). Evolution opens connected, shared diamond tracks,
 separate boss/adversary encounter counters and a level setup reference; see
 [Evolution](EVOLUTION.md). Other shortcuts open independent, autosaved reference notebooks.
-Adventures additionally offers Exploration cards, Godforms & Summons offers
-Godform/Nymph cards, and Decks offers Story, Doom, Exploration, Clue, Trauma and
-Kratos cards. Libraries respect cycle availability and existing spoiler settings.
+Adventures has its own story and Fated-box tracking page; see
+[Adventures](ADVENTURES.md). Godforms & Summons offers Godform/Nymph cards, and
+Decks offers Story, Doom, Exploration, Clue, Trauma, Kratos and Moiros cards.
+Libraries respect cycle availability and existing spoiler settings. Selecting a
+library card opens a preview within the same dialog. Closing that preview returns
+to its selected deck and search; flips and linked cards stay within the dialog.
+
+Reference cards use the ATCC family layouts: black-banded grey Clues, blue-titled
+Moiros, white Kratos cards with Rally panels, mirrored light Story/dark Doom books,
+red Trauma bars, Exploration effects and stack symbols, Terrain tile diagrams,
+ochre Conditions, teal Godform panels and Summoning requirements/effects. The
+original printed rich text supplies icons, keyword definitions and card links.
+Godform attacks and stat modifiers, Kratos Rally rules and Clue text are retained.
+Portrait cards shrink to the available width and grow vertically for long text;
+the Story/Doom symbol panel appears only when the preview itself has enough room.
+The reference templates and design rules are saved in
+`../ato_docs/card-design/reference-source/catalogue/` and that folder's parent
+design specification. No separate scroll area clips a card's rules or footer.
 These notebooks prepare the navigation for later dedicated subsystem screens;
 they do not implement the full rules engines for those systems.
 

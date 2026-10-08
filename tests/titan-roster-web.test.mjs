@@ -411,6 +411,8 @@ test('The Titan card shows its individual name with the type still visible, whil
     '../../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
     '../PatternTable': { PatternTable: () => null }, './SecretCard': { SecretCard: () => null }, './MemoryCard': { MemoryCard: () => null },
     './TitanCard': { TitanCardBody }, './ConditionCard': { ConditionCard: () => null },
+    './CatalogueCard': { supportsCatalogueCard: () => false, CatalogueCard: () => null },
+    './catalogue-layout': { catalogueCardSize: () => ({ width: 326.4 }) },
     '../../domain/conditions': { conditionEffects: () => null, supportsCondition: () => false },
   });
   const card = roster.cycleDreamwalker(2, catalogue), face = card.faces[0];

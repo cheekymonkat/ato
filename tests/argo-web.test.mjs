@@ -11,6 +11,9 @@ import * as technology from '../src/domain/technologies.ts';
 import * as milestones from '../src/domain/milestones.ts';
 import * as milestoneRules from '../src/domain/milestone-rules.ts';
 import * as inwardOdyssey from '../src/domain/inward-odyssey.ts';
+import * as presentation from '../src/domain/card-presentation.ts';
+import * as technologyLayout from '../src/components/cards/technology-layout.ts';
+import * as catalogueLayout from '../src/components/cards/catalogue-layout.ts';
 import * as diplomacy from '../src/domain/diplomacy.ts';
 import * as evolution from '../src/domain/evolution.ts';
 import * as evolutionRules from '../src/domain/evolution-rules.ts';
@@ -52,6 +55,7 @@ function harness(cycle = 1) {
       '../theme/tokens': { theme: { ink: '#292723', paper: '#FAF9F6', serif: 'Georgia' } },
       '../state/PartyProvider': { useParty: () => ({ party, dispatch }) },
       '../catalogue': { getCatalogue: () => catalogue }, '../domain/campaign': campaign, '../domain/argo': argo, '../domain/technologies': technology,
+      '../cards/CardInspection': { CardInspection: () => null },
       '../domain/inward-odyssey': inwardOdyssey },
   };
 }
@@ -324,12 +328,14 @@ test('direct track editor accepts signed Humanity and optional limits, rejects f
   h.buttons.get('Cancel').onPress(); assert.equal(cancelled, true);
 });
 
-test('reference notebooks save independently; card libraries search, respect spoilers and open full inspection', () => {
-  const h = harness(3); let notebook, closed = false, route;
+test('deck cards preview in place and closing restores the selected tab, search and saved notes', () => {
+  const h = harness(3); let notebook, closed = false, route, sheet, inspection;
   const { ArgoReferences } = compile('ArgoReferences.tsx', { ...h.mocks,
     './ArgoDiplomacy': { ArgoDiplomacy: () => null },
     './ArgoEvolution': { ArgoEvolution: () => null },
     'expo-router': { router: { push: value => route = value } },
+    '../components/Sheet': { Sheet: props => { sheet = props; return React.createElement('section', null, props.children); } },
+    '../cards/CardInspection': { CardInspection: props => { inspection = props; return React.createElement('article', null, props.card.faces.find(face => face.id === props.faceId).name); } },
     '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: card => card.faces[0].name === 'The Absent Rule', reveal: () => {} }) },
     './GrowingNotes': { GrowingNotes: props => { notebook = props; return null; } },
   });
@@ -340,8 +346,68 @@ test('reference notebooks save independently; card libraries search, respect spo
   assert.doesNotMatch(html, /The Absent Rule|Cycle IV|Cycle V/);
   h.inputs.get('Search Story cards').onChangeText('Trespassing'); render();
   assert.equal(h.buttons.has('A Phantom Thread'), false);
-  h.buttons.get('Trespassing').onPress(); assert.equal(closed, true);
-  assert.deepEqual(route, { pathname: '/cards/[id]', params: { id: catalogue.byName('Trespassing')[0].id } });
+  h.buttons.get('Trespassing').onPress(); render(); assert.equal(closed, false); assert.equal(route, undefined);
+  assert.equal(inspection.embedded, true); assert.equal(inspection.card.id, catalogue.byName('Trespassing')[0].id);
+  inspection.onFaceChange('back'); render(); assert.equal(inspection.faceId, 'back');
+  inspection.onNavigate(catalogue.byName('The Absent Rule')[0], 'front'); render();
+  assert.ok(h.buttons.has('Back to previous card')); h.buttons.get('Back to previous card').onPress(); render();
+  assert.equal(inspection.card.id, catalogue.byName('Trespassing')[0].id); assert.equal(inspection.faceId, 'back');
+  sheet.onClose(); render(); assert.equal(sheet.title, 'Decks'); assert.equal(closed, false);
+  assert.equal(h.inputs.get('Search Story cards').value, 'Trespassing'); assert.equal(h.buttons.has('A Phantom Thread'), false);
+  assert.equal(h.party().argo.records.decks, 'Story 2A'); assert.equal(route, undefined);
+  sheet.onClose(); assert.equal(closed, true);
+});
+
+test('Moiros deck includes earlier cycle cards and filters out future cycles', () => {
+  for (const [cycle,count] of [[1,8],[3,9],[5,10]]) {
+    const h = harness(cycle);
+    const { ArgoReferences } = compile('ArgoReferences.tsx', { ...h.mocks,
+      './ArgoDiplomacy': { ArgoDiplomacy: () => null }, './ArgoEvolution': { ArgoEvolution: () => null },
+      '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
+      './GrowingNotes': { GrowingNotes: () => null },
+    });
+    const render = () => h.render(ArgoReferences, { id: 'decks', initialFamily: 'Moiros', onClose() {} });
+    render();
+    const expected = catalogue.search({ family: 'Moiros', campaignCycle: cycle });
+    assert.equal(expected.length, count);
+    for (const card of expected) assert.ok(h.buttons.has(card.faces[0].name), card.faces[0].name);
+    assert.equal(h.buttons.has('Defiant Awakening'), cycle === 5);
+    h.inputs.get('Search Moiros cards').onChangeText('Fated Memory'); render();
+    assert.ok(h.buttons.has('Fated Memory')); assert.equal(h.buttons.has('Fatebringer'), false);
+  }
+});
+
+test('embedded card inspection shows Moiros effects, keeps references local and flips without route changes', () => {
+  const h = harness(3), routes = [], keywordCalls = []; let nextCard, nextFace;
+  const keywords = createKeywordRepository(JSON.parse(fs.readFileSync(new URL('../data/reference/keywords.json', import.meta.url))));
+  const { CardInspection } = compile('../cards/CardInspection.tsx', { ...h.mocks,
+    'react-native': { ...h.mocks['react-native'], useWindowDimensions: () => ({ width: 375 }) },
+    'react-native-safe-area-context': { SafeAreaView: web.View },
+    'expo-router': { router: { push: value => routes.push(value), setParams: value => routes.push(value) } },
+    '../catalogue/keywords': { keywordRepository: keywords }, '../domain/card-presentation': presentation,
+    '../components/KeywordHelpContext': { useKeywordHelp: () => ({ open: name => keywordCalls.push(name) }) },
+    '../components/cards/GearCard': { GearCard: () => null }, '../components/cards/GearRecipeLink': { GearRecipeLink: () => null },
+    '../components/cards/SecretCard': { SecretCard: () => null }, '../components/cards/TechnologyCard': { TechnologyCard: () => null },
+    '../components/cards/CatalogueCard': { supportsCatalogueCard: face => face.family === 'Moiros', CatalogueCard: ({ face }) => React.createElement('article', null, presentation.formatParagraph(face.data.effects).label) },
+    '../components/cards/catalogue-layout': catalogueLayout, '../components/cards/ReferenceCard': { ReferenceCard: () => null },
+    '../components/cards/technology-layout': technologyLayout, '../components/PatternTable': { PatternTable: () => null },
+    '../components/cards/RichParagraph': { RichParagraph: props => React.createElement('p', null, presentation.formatParagraph(props.paragraph).label) },
+    '../state/SpoilerProvider': { useSpoilers: () => ({ hidden: () => false }) },
+  });
+  const props = { embedded: true, faceId: 'front', onFaceChange: face => nextFace = face, onNavigate: (card,face) => nextCard = { card,face } };
+  for (const card of catalogue.search({ family: 'Moiros' })) {
+    const html = h.render(CardInspection, { ...props,card });
+    const effect = card.faces[0].data.effects[0].abilityText.find(token => token.type === 'plainText').value;
+    assert.ok(html.includes(effect.replaceAll('&','&amp;').replaceAll("'",'&#x27;')), card.faces[0].name);
+    assert.equal(h.buttons.has('Back'), false);
+  }
+  h.render(CardInspection, { ...props,card: catalogue.byName("Another's Thread")[0] });
+  h.buttons.get('Knockdown').onPress(); assert.deepEqual(keywordCalls, ['Knockdown']);
+  h.render(CardInspection, { ...props,card: catalogue.byName('Fate Worse Than Death')[0] });
+  h.buttons.get('Marked for Death').onPress(); assert.equal(nextCard.card.faces[0].name, 'Marked For Death');
+  assert.equal(nextCard.face, 'front');
+  h.render(CardInspection, { ...props,card: catalogue.byName('Trespassing')[0] });
+  h.buttons.get('Flip to back').onPress(); assert.equal(nextFace, 'back'); assert.deepEqual(routes, []);
 });
 
 function diplomacyHarness(cycle = 1) {

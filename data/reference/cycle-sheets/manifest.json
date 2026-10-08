@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Static reference definitions for later implementation; no campaign state.",
+  "coordinateSystem": "PDF points, upright landscape, origin top-left; rectangles [x0, y0, x1, y1].",
+  "rulebook": {
+    "url": "https://drive.google.com/file/d/1vPofVQlG_j_nA3v63YWnU9WsMovJ-uxb/view",
+    "printedPages": {
+      "timeline": [
+        14,
+        15
+      ],
+      "resources": [
+        19
+      ],
+      "choiceMatrix": [
+        25,
+        26
+      ],
+      "adventureTracks": [
+        26
+      ]
+    }
+  },
+  "resourceRegistry": "resources.json",
+  "cycleFiles": [
+    {
+      "cycle": 1,
+      "file": "cycle-1.json",
+      "adventureTracks": 8,
+      "adventureBoxes": 36,
+      "timelineDays": 87,
+      "matrixCells": 336
+    },
+    {
+      "cycle": 2,
+      "file": "cycle-2.json",
+      "adventureTracks": 8,
+      "adventureBoxes": 32,
+      "timelineDays": 81,
+      "matrixCells": 336
+    },
+    {
+      "cycle": 3,
+      "file": "cycle-3.json",
+      "adventureTracks": 7,
+      "adventureBoxes": 32,
+      "timelineDays": 91,
+      "matrixCells": 336
+    },
+    {
+      "cycle": 4,
+      "file": "cycle-4.json",
+      "adventureTracks": 8,
+      "adventureBoxes": 43,
+      "timelineDays": 97,
+      "matrixCells": 384
+    },
+    {
+      "cycle": 5,
+      "file": "cycle-5.json",
+      "adventureTracks": 8,
+      "adventureBoxes": 41,
+      "timelineDays": 81,
+      "matrixCells": 384
+    }
+  ],
+  "generatedBy": "scripts/extract-cycle-sheets.py",
+  "sourceSpec": "extraction-spec.json"
+}

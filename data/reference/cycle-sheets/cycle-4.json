@@ -1,0 +1,3909 @@
+{
+  "schemaVersion": 1,
+  "cycle": 4,
+  "title": "Gardens of Infinite Growth",
+  "sources": {
+    "front": {
+      "file": "ATO_C4_ArgoSheet_FRONT.pdf",
+      "page": 1,
+      "sha256": "79eab8684bbab126c17919a139379c6078d9ee28c78c3ff22c46f4f3af2774f5",
+      "uprightRotationDegrees": 270,
+      "uprightSizePt": [
+        841.89,
+        595.276
+      ]
+    },
+    "back": {
+      "file": "ATO_C4_ArgoSheet_BACK.pdf",
+      "page": 1,
+      "sha256": "d5d4109142158e772a1fa7513ba4bd01ffab7546cfa105f305bb90fced3b5487",
+      "uprightRotationDegrees": 90,
+      "uprightSizePt": [
+        841.89,
+        595.276
+      ]
+    }
+  },
+  "adventureTracks": [
+    {
+      "id": "c4-the-salt-road",
+      "title": "The Salt Road",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            57.399,
+            400.642,
+            70.546,
+            413.789
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            72.326,
+            400.642,
+            85.473,
+            413.789
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            87.254,
+            400.642,
+            100.401,
+            413.789
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            102.181,
+            400.642,
+            115.328,
+            413.789
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            117.109,
+            400.642,
+            130.256,
+            413.789
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-the-salt-road-1",
+          "title": "Gilded Fundament",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-2",
+          "title": "Right to Life",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-3",
+          "title": "Downed",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-4",
+          "title": "Deluge of Wishes",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-5",
+          "title": "Gatekeepers",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-6",
+          "title": "The Wasting",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 55
+        },
+        {
+          "entryId": "c4-the-salt-road-7",
+          "title": "Leaded Ceiling",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 55
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        71.005,
+        389.976,
+        116.65,
+        399.652
+      ],
+      "sourceOrder": 1,
+      "layout": {
+        "row": 1,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-aristotles-promise",
+      "title": "Aristotle's Promise",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            182.69,
+            400.642,
+            195.837,
+            413.789
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            197.617,
+            400.642,
+            210.764,
+            413.789
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            212.545,
+            400.642,
+            225.692,
+            413.789
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            227.473,
+            400.642,
+            240.62,
+            413.789
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            242.4,
+            400.642,
+            255.547,
+            413.789
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-aristotles-promise-1",
+          "title": "Corrective Justice",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-2",
+          "title": "Indivisible",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-3",
+          "title": "Eviction",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-4",
+          "title": "A Fork in the Road",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-5",
+          "title": "The Babylonian Conquest",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-6",
+          "title": "Numbers Game",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 66
+        },
+        {
+          "entryId": "c4-aristotles-promise-7",
+          "title": "Distributive Injustice",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 66
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        188.038,
+        389.976,
+        250.2,
+        399.652
+      ],
+      "sourceOrder": 2,
+      "layout": {
+        "row": 1,
+        "column": 2,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-windfall",
+      "title": "Windfall",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            310.814,
+            400.642,
+            323.961,
+            413.789
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            325.742,
+            400.642,
+            338.889,
+            413.789
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            340.669,
+            400.642,
+            353.816,
+            413.789
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            355.597,
+            400.642,
+            368.744,
+            413.789
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            370.524,
+            400.642,
+            383.671,
+            413.789
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-windfall-1",
+          "title": "Headwind",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-2",
+          "title": "Inviable Salvation",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-3",
+          "title": "Stealing the Wind",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-4",
+          "title": "Whence the Wind Blows",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-5",
+          "title": "Tragedy of Kath",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-6",
+          "title": "The Fairness Instinct",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 77
+        },
+        {
+          "entryId": "c4-windfall-7",
+          "title": "The Wind Changes",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 77
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        331.682,
+        389.976,
+        362.804,
+        399.652
+      ],
+      "sourceOrder": 3,
+      "layout": {
+        "row": 1,
+        "column": 3,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-equality-for-all",
+      "title": "Equality for All",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            57.399,
+            429.565,
+            70.546,
+            442.712
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            72.326,
+            429.565,
+            85.473,
+            442.712
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            87.254,
+            429.565,
+            100.401,
+            442.712
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            102.181,
+            429.565,
+            115.328,
+            442.712
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            117.109,
+            429.565,
+            130.256,
+            442.712
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-equality-for-all-1",
+          "title": "The Golden Mean",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-2",
+          "title": "Ungraspable Immensity",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-3",
+          "title": "Scales",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-4",
+          "title": "The Song of Seisachtheia",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-5",
+          "title": "Sky Lantern",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-6",
+          "title": "Salvific Measures",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 88
+        },
+        {
+          "entryId": "c4-equality-for-all-7",
+          "title": "Zero Praxis",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 88
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        66.869,
+        418.899,
+        120.787,
+        428.575
+      ],
+      "sourceOrder": 4,
+      "layout": {
+        "row": 2,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-beyond-the-law-of-bargains",
+      "title": "Beyond the Law of Bargains",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            182.69,
+            429.565,
+            195.837,
+            442.712
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            197.617,
+            429.565,
+            210.764,
+            442.712
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            212.545,
+            429.565,
+            225.692,
+            442.712
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            227.473,
+            429.565,
+            240.62,
+            442.712
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            242.4,
+            429.565,
+            255.547,
+            442.712
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-1",
+          "title": "The Siege of Babylon",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-2",
+          "title": "The Grand Exchange",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-3",
+          "title": "Moonflowers",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-4",
+          "title": "The Push and Pull",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-5",
+          "title": "Towers of Silence",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-6",
+          "title": "Invaluable Nothings",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 102
+        },
+        {
+          "entryId": "c4-beyond-the-law-of-bargains-7",
+          "title": "The Code of Kroisos",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 102
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        171.653,
+        418.899,
+        266.585,
+        428.575
+      ],
+      "sourceOrder": 5,
+      "layout": {
+        "row": 2,
+        "column": 2,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-a-land-thrice-cursed",
+      "title": "A Land Thrice-Cursed",
+      "progressBoxCount": 4,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            318.278,
+            429.565,
+            331.425,
+            442.712
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            333.205,
+            429.565,
+            346.352,
+            442.712
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            348.133,
+            429.565,
+            361.28,
+            442.712
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Ω",
+          "sourceRectPt": [
+            363.061,
+            429.565,
+            376.208,
+            442.712
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-a-land-thrice-cursed-1",
+          "title": "A Way Out",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-2",
+          "title": "In Too Deep",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-3",
+          "title": "Waste Not",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-4",
+          "title": "Against the Wall",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-5",
+          "title": "The Weight of Obligations",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-6",
+          "title": "Ridge of Wishes",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 114
+        },
+        {
+          "entryId": "c4-a-land-thrice-cursed-7",
+          "title": "The Insider",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 114
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        310.393,
+        418.899,
+        384.095,
+        428.575
+      ],
+      "sourceOrder": 6,
+      "layout": {
+        "row": 2,
+        "column": 3,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-the-crescent-and-the-full-moon",
+      "title": "The Crescent and the Full Moon",
+      "progressBoxCount": 4,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            64.862,
+            458.487,
+            78.009,
+            471.634
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            79.79,
+            458.487,
+            92.937,
+            471.634
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            94.718,
+            458.487,
+            107.865,
+            471.634
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Ω",
+          "sourceRectPt": [
+            109.645,
+            458.487,
+            122.792,
+            471.634
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-1",
+          "title": "The Hand You Were Dealt",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-2",
+          "title": "The Sea Recedes",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-3",
+          "title": "Infinite Rope",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-4",
+          "title": "Moon in the Palm of Their Hand",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-5",
+          "title": "Cicadas Go Silent",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-6",
+          "title": "No More Tales",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 125
+        },
+        {
+          "entryId": "c4-the-crescent-and-the-full-moon-7",
+          "title": "We Are Forever",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 125
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        39.231,
+        447.821,
+        148.425,
+        457.498
+      ],
+      "sourceOrder": 7,
+      "layout": {
+        "row": 3,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-4.json"
+    },
+    {
+      "id": "c4-ten-thousand-nights-and-days",
+      "title": "Ten Thousand Nights and Days",
+      "progressBoxCount": 10,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            203.479,
+            458.487,
+            216.626,
+            471.634
+          ]
+        },
+        {
+          "position": 2,
+          "label": "β",
+          "sourceRectPt": [
+            218.407,
+            458.487,
+            231.554,
+            471.634
+          ]
+        },
+        {
+          "position": 3,
+          "label": "γ",
+          "sourceRectPt": [
+            233.335,
+            458.487,
+            246.482,
+            471.634
+          ]
+        },
+        {
+          "position": 4,
+          "label": "δ",
+          "sourceRectPt": [
+            248.262,
+            458.487,
+            261.409,
+            471.634
+          ]
+        },
+        {
+          "position": 5,
+          "label": "ε",
+          "sourceRectPt": [
+            263.19,
+            458.487,
+            276.337,
+            471.634
+          ]
+        },
+        {
+          "position": 6,
+          "label": "λ",
+          "sourceRectPt": [
+            278.117,
+            458.487,
+            291.264,
+            471.634
+          ]
+        },
+        {
+          "position": 7,
+          "label": "ο",
+          "sourceRectPt": [
+            293.045,
+            458.487,
+            306.192,
+            471.634
+          ]
+        },
+        {
+          "position": 8,
+          "label": "σ",
+          "sourceRectPt": [
+            307.972,
+            458.487,
+            321.119,
+            471.634
+          ]
+        },
+        {
+          "position": 9,
+          "label": "ψ",
+          "sourceRectPt": [
+            322.9,
+            458.487,
+            336.047,
+            471.634
+          ]
+        },
+        {
+          "position": 10,
+          "label": "Ω",
+          "sourceRectPt": [
+            337.828,
+            458.487,
+            350.975,
+            471.634
+          ]
+        }
+      ],
+      "storyReferences": [],
+      "storyReferencesStatus": "awaiting-user-list",
+      "sourceTitleRectPt": [
+        226.111,
+        447.821,
+        328.345,
+        457.498
+      ],
+      "sourceOrder": 8,
+      "layout": {
+        "row": 3,
+        "column": 2,
+        "columnSpan": 2
+      }
+    }
+  ],
+  "cargo": {
+    "groups": [
+      {
+        "category": "mortal",
+        "hold": "main",
+        "entries": [
+          {
+            "resourceId": "cursed-derelict",
+            "printedName": "Cursed Derelict",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "imperial-scroll",
+            "printedName": "Imperial Scroll",
+            "sourceOrder": 2
+          },
+          {
+            "resourceId": "babylonian-contraption",
+            "printedName": "Babylonian Contraption",
+            "sourceOrder": 3
+          }
+        ]
+      },
+      {
+        "category": "primordial",
+        "hold": "main",
+        "entries": [
+          {
+            "resourceId": "blackened-halo",
+            "printedName": "Blackened Halo",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "burned-out-grace",
+            "printedName": "Burned-out Grace",
+            "sourceOrder": 2
+          },
+          {
+            "resourceId": "cursed-bloatsack",
+            "printedName": "Cursed Bloatsack",
+            "sourceOrder": 3
+          },
+          {
+            "resourceId": "living-gold",
+            "printedName": "Living Gold",
+            "sourceOrder": 4
+          },
+          {
+            "resourceId": "wish-embryo",
+            "printedName": "Wish Embryo",
+            "sourceOrder": 5
+          },
+          {
+            "resourceId": "old-irem-fragment",
+            "printedName": "Old Irem Fragment",
+            "sourceOrder": 6
+          },
+          {
+            "resourceId": "black-tainted-stepfinger",
+            "printedName": "Black-tainted Stepfinger",
+            "sourceOrder": 7
+          },
+          {
+            "resourceId": "promised-futures-carcass",
+            "printedName": "Promised Future's Carcass",
+            "sourceOrder": 8
+          },
+          {
+            "resourceId": "onyx-dust",
+            "printedName": "Onyx Dust",
+            "sourceOrder": 9
+          },
+          {
+            "resourceId": "ire-essence",
+            "printedName": "Ire Essence",
+            "sourceOrder": 10
+          },
+          {
+            "resourceId": "mutable-ambrosia",
+            "printedName": "Mutable Ambrosia",
+            "sourceOrder": 11
+          },
+          {
+            "resourceId": "cores",
+            "printedName": "Cores",
+            "sourceOrder": 12
+          }
+        ]
+      },
+      {
+        "category": "divine",
+        "hold": "hidden",
+        "entries": [
+          {
+            "resourceId": "priests",
+            "printedName": "Priests",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "echoes-of-recollection",
+            "printedName": "Echoes of Recollection",
+            "sourceOrder": 2
+          },
+          {
+            "resourceId": "sisyphus-tears",
+            "printedName": "Sisyphus Tears",
+            "sourceOrder": 3
+          },
+          {
+            "resourceId": "pygmalion-stones",
+            "printedName": "Pygmalion Stones",
+            "sourceOrder": 4
+          }
+        ]
+      },
+      {
+        "category": "rare",
+        "hold": "main",
+        "kind": "namedQuantityList",
+        "title": "Rare Resources"
+      }
+    ],
+    "hiddenTracks": [
+      {
+        "id": "c4-pygmalion-track",
+        "title": "Pygmalion Track",
+        "hold": "hidden",
+        "resourceId": "pygmalion-stones",
+        "progressBoxCount": 6,
+        "layout": {
+          "rows": 1,
+          "columns": 6
+        },
+        "boxes": [
+          {
+            "position": 1,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              683.709,
+              495.019,
+              702.707,
+              514.017
+            ]
+          },
+          {
+            "position": 2,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              744.026,
+              495.019,
+              763.024,
+              514.017
+            ]
+          },
+          {
+            "position": 3,
+            "printedRewardResourceId": "pygmalion-stones",
+            "sourceRectPt": [
+              645.386,
+              496.555,
+              661.67,
+              512.839
+            ]
+          },
+          {
+            "position": 4,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              664.428,
+              496.555,
+              680.712,
+              512.839
+            ]
+          },
+          {
+            "position": 5,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              705.704,
+              496.555,
+              721.988,
+              512.839
+            ]
+          },
+          {
+            "position": 6,
+            "printedRewardResourceId": "pygmalion-stones",
+            "sourceRectPt": [
+              724.745,
+              496.555,
+              741.029,
+              512.839
+            ]
+          }
+        ],
+        "automaticRewardRules": null
+      },
+      {
+        "id": "c4-echo-of-recollection-track",
+        "title": "Echo of Recollection Track",
+        "hold": "hidden",
+        "resourceId": "echoes-of-recollection",
+        "progressBoxCount": 6,
+        "layout": {
+          "rows": 1,
+          "columns": 6
+        },
+        "boxes": [
+          {
+            "position": 1,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              683.649,
+              538.529,
+              702.675,
+              557.555
+            ]
+          },
+          {
+            "position": 2,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              744.055,
+              538.529,
+              763.081,
+              557.555
+            ]
+          },
+          {
+            "position": 3,
+            "printedRewardResourceId": "echoes-of-recollection",
+            "sourceRectPt": [
+              645.27,
+              540.07,
+              661.578,
+              556.378
+            ]
+          },
+          {
+            "position": 4,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              664.34,
+              540.07,
+              680.648,
+              556.378
+            ]
+          },
+          {
+            "position": 5,
+            "printedRewardResourceId": null,
+            "sourceRectPt": [
+              705.676,
+              540.07,
+              721.984,
+              556.378
+            ]
+          },
+          {
+            "position": 6,
+            "printedRewardResourceId": "echoes-of-recollection",
+            "sourceRectPt": [
+              724.746,
+              540.07,
+              741.054,
+              556.378
+            ]
+          }
+        ],
+        "automaticRewardRules": null
+      }
+    ],
+    "hiddenNotes": [
+      {
+        "id": "c4-tally-marks",
+        "title": "Tally Marks",
+        "kind": "freeText",
+        "hold": "hidden",
+        "printedLineCount": 6,
+        "sourceTitleRectPt": [
+          685.185,
+          369.26,
+          735.249,
+          381.648
+        ],
+        "sourceLineYPt": [
+          396.391,
+          410.059,
+          423.428,
+          436.796,
+          449.708,
+          462.62
+        ]
+      }
+    ]
+  },
+  "timeline": {
+    "days": [
+      {
+        "id": "c4-day-00",
+        "label": "00",
+        "dayNumber": 0,
+        "tutorial": false,
+        "order": 1,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              55.048,
+              67.136,
+              58.096
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.409,
+          56.219,
+          53.271,
+          63.746
+        ]
+      },
+      {
+        "id": "c4-day-01",
+        "label": "01",
+        "dayNumber": 1,
+        "tutorial": false,
+        "order": 2,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              65.494,
+              67.191,
+              75.019
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              69.205,
+              67.01,
+              73.481,
+              73.579
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.017,
+          65.785,
+          52.663,
+          74.566
+        ]
+      },
+      {
+        "id": "c4-day-02",
+        "label": "02",
+        "dayNumber": 2,
+        "tutorial": false,
+        "order": 3,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.36,
+          75.989,
+          53.32,
+          84.771
+        ]
+      },
+      {
+        "id": "c4-day-03",
+        "label": "03",
+        "dayNumber": 3,
+        "tutorial": false,
+        "order": 4,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              85.662,
+              67.136,
+              88.711
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              69.205,
+              87.419,
+              73.481,
+              93.988
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.36,
+          86.194,
+          53.32,
+          94.975
+        ]
+      },
+      {
+        "id": "c4-day-04",
+        "label": "04",
+        "dayNumber": 4,
+        "tutorial": false,
+        "order": 5,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.135,
+          96.399,
+          53.545,
+          105.18
+        ]
+      },
+      {
+        "id": "c4-day-05",
+        "label": "05",
+        "dayNumber": 5,
+        "tutorial": false,
+        "order": 6,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              107.828,
+              64.115,
+              114.397
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.411,
+          106.604,
+          53.269,
+          115.385
+        ]
+      },
+      {
+        "id": "c4-day-06",
+        "label": "06",
+        "dayNumber": 6,
+        "tutorial": false,
+        "order": 7,
+        "printedMuted": false,
+        "markers": [],
+        "events": [
+          {
+            "title": "Broken Circle Special Event",
+            "type": "specialEvent",
+            "phase": "story"
+          }
+        ],
+        "sourceNumberRectPt": [
+          45.04,
+          116.808,
+          53.64,
+          125.59
+        ]
+      },
+      {
+        "id": "c4-day-07",
+        "label": "07",
+        "dayNumber": 7,
+        "tutorial": false,
+        "order": 8,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              126.723,
+              67.191,
+              136.247
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.444,
+          127.013,
+          53.236,
+          135.794
+        ]
+      },
+      {
+        "id": "c4-day-08",
+        "label": "08",
+        "dayNumber": 8,
+        "tutorial": false,
+        "order": 9,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              138.443,
+              64.115,
+              145.012
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.209,
+          137.218,
+          53.471,
+          145.999
+        ]
+      },
+      {
+        "id": "c4-day-09",
+        "label": "09",
+        "dayNumber": 9,
+        "tutorial": false,
+        "order": 10,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              146.891,
+              67.136,
+              149.939
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.04,
+          147.423,
+          53.64,
+          156.204
+        ]
+      },
+      {
+        "id": "c4-day-10",
+        "label": "10",
+        "dayNumber": 10,
+        "tutorial": false,
+        "order": 11,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.017,
+          157.627,
+          52.663,
+          166.408
+        ]
+      },
+      {
+        "id": "c4-day-11",
+        "label": "11",
+        "dayNumber": 11,
+        "tutorial": false,
+        "order": 12,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              169.057,
+              64.115,
+              175.626
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          47.38,
+          167.832,
+          51.3,
+          176.613
+        ]
+      },
+      {
+        "id": "c4-day-12",
+        "label": "12",
+        "dayNumber": 12,
+        "tutorial": false,
+        "order": 13,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              177.505,
+              67.136,
+              180.553
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.69,
+          178.037,
+          51.99,
+          186.818
+        ]
+      },
+      {
+        "id": "c4-day-13",
+        "label": "13",
+        "dayNumber": 13,
+        "tutorial": false,
+        "order": 14,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              187.951,
+              67.191,
+              197.475
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.724,
+          188.241,
+          51.956,
+          197.023
+        ]
+      },
+      {
+        "id": "c4-day-14",
+        "label": "14",
+        "dayNumber": 14,
+        "tutorial": false,
+        "order": 15,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              199.671,
+              64.115,
+              206.24
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.498,
+          198.446,
+          52.182,
+          207.227
+        ]
+      },
+      {
+        "id": "c4-day-15",
+        "label": "15",
+        "dayNumber": 15,
+        "tutorial": false,
+        "order": 16,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              208.119,
+              67.136,
+              211.167
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.774,
+          208.651,
+          51.906,
+          217.432
+        ]
+      },
+      {
+        "id": "c4-day-16",
+        "label": "16",
+        "dayNumber": 16,
+        "tutorial": false,
+        "order": 17,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.404,
+          218.856,
+          52.276,
+          227.637
+        ]
+      },
+      {
+        "id": "c4-day-17",
+        "label": "17",
+        "dayNumber": 17,
+        "tutorial": false,
+        "order": 18,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              230.225,
+              64.115,
+              236.794
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.808,
+          229.0,
+          51.872,
+          237.781
+        ]
+      },
+      {
+        "id": "c4-day-18",
+        "label": "18",
+        "dayNumber": 18,
+        "tutorial": false,
+        "order": 19,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              240.565,
+              67.136,
+              243.613
+            ]
+          }
+        ],
+        "events": [
+          {
+            "text": "Acclimation 1: 4, 8, 1, 35, 6, 19, 37 → 10, 13, 14, 11, 12, 7",
+            "printedLockIcon": true,
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 1
+          }
+        ],
+        "sourceNumberRectPt": [
+          46.572,
+          241.546,
+          52.108,
+          250.327
+        ]
+      },
+      {
+        "id": "c4-day-19",
+        "label": "19",
+        "dayNumber": 19,
+        "tutorial": false,
+        "order": 20,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              259.444,
+              67.191,
+              268.968
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.404,
+          259.735,
+          52.276,
+          268.516
+        ]
+      },
+      {
+        "id": "c4-day-20",
+        "label": "20",
+        "dayNumber": 20,
+        "tutorial": false,
+        "order": 21,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              271.104,
+              64.115,
+              277.673
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.326,
+          269.879,
+          53.353,
+          278.66
+        ]
+      },
+      {
+        "id": "c4-day-21",
+        "label": "21",
+        "dayNumber": 21,
+        "tutorial": false,
+        "order": 22,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.69,
+          280.084,
+          51.99,
+          288.865
+        ]
+      },
+      {
+        "id": "c4-day-22",
+        "label": "22",
+        "dayNumber": 22,
+        "tutorial": false,
+        "order": 23,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              289.757,
+              67.136,
+              292.805
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.0,
+          290.289,
+          52.68,
+          299.07
+        ]
+      },
+      {
+        "id": "c4-day-23",
+        "label": "23",
+        "dayNumber": 23,
+        "tutorial": false,
+        "order": 24,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              301.718,
+              64.115,
+              308.287
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.034,
+          300.493,
+          52.646,
+          309.275
+        ]
+      },
+      {
+        "id": "c4-day-24",
+        "label": "24",
+        "dayNumber": 24,
+        "tutorial": false,
+        "order": 25,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.842,
+          310.698,
+          52.838,
+          319.479
+        ]
+      },
+      {
+        "id": "c4-day-25",
+        "label": "25",
+        "dayNumber": 25,
+        "tutorial": false,
+        "order": 26,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              320.612,
+              67.191,
+              330.137
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.084,
+          320.903,
+          52.596,
+          329.684
+        ]
+      },
+      {
+        "id": "c4-day-26",
+        "label": "26",
+        "dayNumber": 26,
+        "tutorial": false,
+        "order": 27,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              330.576,
+              67.136,
+              333.624
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              69.205,
+              332.332,
+              73.481,
+              338.901
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.714,
+          331.108,
+          52.966,
+          339.889
+        ]
+      },
+      {
+        "id": "c4-day-27",
+        "label": "27",
+        "dayNumber": 27,
+        "tutorial": false,
+        "order": 28,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.151,
+          341.312,
+          52.528,
+          350.093
+        ]
+      },
+      {
+        "id": "c4-day-28",
+        "label": "28",
+        "dayNumber": 28,
+        "tutorial": false,
+        "order": 29,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.882,
+          351.517,
+          52.798,
+          360.298
+        ]
+      },
+      {
+        "id": "c4-day-29",
+        "label": "29",
+        "dayNumber": 29,
+        "tutorial": false,
+        "order": 30,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              362.947,
+              64.115,
+              369.516
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.714,
+          361.722,
+          52.966,
+          370.503
+        ]
+      },
+      {
+        "id": "c4-day-30",
+        "label": "30",
+        "dayNumber": 30,
+        "tutorial": false,
+        "order": 31,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              371.395,
+              67.136,
+              374.443
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.36,
+          371.926,
+          53.32,
+          380.708
+        ]
+      },
+      {
+        "id": "c4-day-31",
+        "label": "31",
+        "dayNumber": 31,
+        "tutorial": false,
+        "order": 32,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              381.841,
+              67.191,
+              391.365
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.724,
+          382.131,
+          51.956,
+          390.912
+        ]
+      },
+      {
+        "id": "c4-day-32",
+        "label": "32",
+        "dayNumber": 32,
+        "tutorial": false,
+        "order": 33,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              393.561,
+              64.115,
+              400.13
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.034,
+          392.336,
+          52.646,
+          401.117
+        ]
+      },
+      {
+        "id": "c4-day-33",
+        "label": "33",
+        "dayNumber": 33,
+        "tutorial": false,
+        "order": 34,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.101,
+          402.541,
+          52.579,
+          411.322
+        ]
+      },
+      {
+        "id": "c4-day-34",
+        "label": "34",
+        "dayNumber": 34,
+        "tutorial": false,
+        "order": 35,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              412.214,
+              67.136,
+              415.262
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              69.205,
+              413.97,
+              73.481,
+              420.539
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.842,
+          412.745,
+          52.838,
+          421.527
+        ]
+      },
+      {
+        "id": "c4-day-35",
+        "label": "35",
+        "dayNumber": 35,
+        "tutorial": false,
+        "order": 36,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.118,
+          422.89,
+          52.562,
+          431.671
+        ]
+      },
+      {
+        "id": "c4-day-36",
+        "label": "36",
+        "dayNumber": 36,
+        "tutorial": false,
+        "order": 37,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              435.219,
+              64.115,
+              441.788
+            ]
+          }
+        ],
+        "events": [
+          {
+            "title": "Barren Aeons Special Event",
+            "conditionText": "If Story card 1",
+            "outcomeText": "you lose",
+            "printedText": "If Story card 1: Barren Aeons Special Event (you lose)",
+            "type": "specialEvent",
+            "phase": "story"
+          },
+          {
+            "text": "Acclimation 2: 34, 23, 3, 9, 5 → 17, 20, 16, 18, 15",
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 2
+          }
+        ],
+        "sourceNumberRectPt": [
+          45.747,
+          435.436,
+          52.932,
+          444.217
+        ]
+      },
+      {
+        "id": "c4-day-37",
+        "label": "37",
+        "dayNumber": 37,
+        "tutorial": false,
+        "order": 38,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              453.334,
+              67.191,
+              462.858
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.151,
+          453.624,
+          52.529,
+          462.406
+        ]
+      },
+      {
+        "id": "c4-day-38",
+        "label": "38",
+        "dayNumber": 38,
+        "tutorial": false,
+        "order": 39,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              463.237,
+              67.136,
+              466.285
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.916,
+          463.769,
+          52.764,
+          472.55
+        ]
+      },
+      {
+        "id": "c4-day-39",
+        "label": "39",
+        "dayNumber": 39,
+        "tutorial": false,
+        "order": 40,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              475.199,
+              64.115,
+              481.768
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.747,
+          473.974,
+          52.932,
+          482.755
+        ]
+      },
+      {
+        "id": "c4-day-40",
+        "label": "40",
+        "dayNumber": 40,
+        "tutorial": false,
+        "order": 41,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.135,
+          484.179,
+          53.545,
+          492.96
+        ]
+      },
+      {
+        "id": "c4-day-41",
+        "label": "41",
+        "dayNumber": 41,
+        "tutorial": false,
+        "order": 42,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.498,
+          494.383,
+          52.182,
+          503.164
+        ]
+      },
+      {
+        "id": "c4-day-42",
+        "label": "42",
+        "dayNumber": 42,
+        "tutorial": false,
+        "order": 43,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              504.056,
+              67.136,
+              507.104
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              69.205,
+              505.813,
+              73.481,
+              512.382
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.875,
+          504.588,
+          52.805,
+          513.369
+        ]
+      },
+      {
+        "id": "c4-day-43",
+        "label": "43",
+        "dayNumber": 43,
+        "tutorial": false,
+        "order": 44,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              57.667,
+              514.503,
+              67.191,
+              524.026
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.875,
+          514.793,
+          52.805,
+          523.574
+        ]
+      },
+      {
+        "id": "c4-day-44",
+        "label": "44",
+        "dayNumber": 44,
+        "tutorial": false,
+        "order": 45,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.65,
+          524.998,
+          53.03,
+          533.779
+        ]
+      },
+      {
+        "id": "c4-day-45",
+        "label": "45",
+        "dayNumber": 45,
+        "tutorial": false,
+        "order": 46,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.839,
+              536.427,
+              64.115,
+              542.996
+            ]
+          }
+        ],
+        "events": [
+          {
+            "title": "Second Bid Special Event",
+            "type": "specialEvent",
+            "phase": "story"
+          }
+        ],
+        "sourceNumberRectPt": [
+          45.892,
+          535.202,
+          52.788,
+          543.983
+        ]
+      },
+      {
+        "id": "c4-day-46",
+        "label": "46",
+        "dayNumber": 46,
+        "tutorial": false,
+        "order": 47,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.723,
+              544.875,
+              67.136,
+              547.923
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.522,
+          545.407,
+          53.158,
+          554.188
+        ]
+      },
+      {
+        "id": "c4-day-47",
+        "label": "47",
+        "dayNumber": 47,
+        "tutorial": false,
+        "order": 48,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.959,
+          555.612,
+          52.72,
+          564.393
+        ]
+      },
+      {
+        "id": "c4-day-48",
+        "label": "48",
+        "dayNumber": 48,
+        "tutorial": false,
+        "order": 49,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              56.833,
+              254.768,
+              63.402
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.395,
+          55.608,
+          244.694,
+          64.39
+        ]
+      },
+      {
+        "id": "c4-day-49",
+        "label": "49",
+        "dayNumber": 49,
+        "tutorial": false,
+        "order": 50,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              65.523,
+              257.844,
+              75.047
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.226,
+          65.813,
+          244.863,
+          74.594
+        ]
+      },
+      {
+        "id": "c4-day-50",
+        "label": "50",
+        "dayNumber": 50,
+        "tutorial": false,
+        "order": 51,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              75.486,
+              257.788,
+              78.534
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.115,
+          76.018,
+          244.974,
+          84.799
+        ]
+      },
+      {
+        "id": "c4-day-51",
+        "label": "51",
+        "dayNumber": 51,
+        "tutorial": false,
+        "order": 52,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              87.447,
+              254.768,
+              94.016
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.479,
+          86.223,
+          243.61,
+          95.004
+        ]
+      },
+      {
+        "id": "c4-day-52",
+        "label": "52",
+        "dayNumber": 52,
+        "tutorial": false,
+        "order": 53,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.839,
+          96.427,
+          244.25,
+          105.208
+        ]
+      },
+      {
+        "id": "c4-day-53",
+        "label": "53",
+        "dayNumber": 53,
+        "tutorial": false,
+        "order": 54,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.822,
+          106.572,
+          244.267,
+          115.353
+        ]
+      },
+      {
+        "id": "c4-day-54",
+        "label": "54",
+        "dayNumber": 54,
+        "tutorial": false,
+        "order": 55,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              118.101,
+              257.788,
+              121.149
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              260.555,
+              119.443,
+              264.831,
+              126.012
+            ]
+          }
+        ],
+        "events": [
+          {
+            "text": "Acclimation 3: 10, 13, 12, 7, 2 → 21, 24, 26, 22, 25",
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 3
+          }
+        ],
+        "sourceNumberRectPt": [
+          237.597,
+          119.118,
+          244.492,
+          127.899
+        ]
+      },
+      {
+        "id": "c4-day-55",
+        "label": "55",
+        "dayNumber": 55,
+        "tutorial": false,
+        "order": 56,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              137.016,
+              257.844,
+              146.54
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.873,
+          137.306,
+          244.216,
+          146.087
+        ]
+      },
+      {
+        "id": "c4-day-56",
+        "label": "56",
+        "dayNumber": 56,
+        "tutorial": false,
+        "order": 57,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.502,
+          147.451,
+          244.586,
+          156.232
+        ]
+      },
+      {
+        "id": "c4-day-57",
+        "label": "57",
+        "dayNumber": 57,
+        "tutorial": false,
+        "order": 58,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              158.88,
+              254.768,
+              165.449
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.906,
+          157.656,
+          244.182,
+          166.437
+        ]
+      },
+      {
+        "id": "c4-day-58",
+        "label": "58",
+        "dayNumber": 58,
+        "tutorial": false,
+        "order": 59,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              167.329,
+              257.788,
+              170.377
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.671,
+          167.86,
+          244.418,
+          176.642
+        ]
+      },
+      {
+        "id": "c4-day-59",
+        "label": "59",
+        "dayNumber": 59,
+        "tutorial": false,
+        "order": 60,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.502,
+          178.065,
+          244.586,
+          186.846
+        ]
+      },
+      {
+        "id": "c4-day-60",
+        "label": "60",
+        "dayNumber": 60,
+        "tutorial": false,
+        "order": 61,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              189.495,
+              254.768,
+              196.064
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          236.745,
+          188.27,
+          245.344,
+          197.051
+        ]
+      },
+      {
+        "id": "c4-day-61",
+        "label": "61",
+        "dayNumber": 61,
+        "tutorial": false,
+        "order": 62,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              198.184,
+              257.844,
+              207.708
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.108,
+          198.474,
+          243.98,
+          207.256
+        ]
+      },
+      {
+        "id": "c4-day-62",
+        "label": "62",
+        "dayNumber": 62,
+        "tutorial": false,
+        "order": 63,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              208.147,
+              257.788,
+              211.195
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.469,
+          208.679,
+          244.62,
+          217.46
+        ]
+      },
+      {
+        "id": "c4-day-63",
+        "label": "63",
+        "dayNumber": 63,
+        "tutorial": false,
+        "order": 64,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              220.109,
+              254.768,
+              226.678
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.485,
+          218.884,
+          244.603,
+          227.665
+        ]
+      },
+      {
+        "id": "c4-day-64",
+        "label": "64",
+        "dayNumber": 64,
+        "tutorial": false,
+        "order": 65,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.26,
+          229.089,
+          244.829,
+          237.87
+        ]
+      },
+      {
+        "id": "c4-day-65",
+        "label": "65",
+        "dayNumber": 65,
+        "tutorial": false,
+        "order": 66,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.502,
+          239.293,
+          244.586,
+          248.075
+        ]
+      },
+      {
+        "id": "c4-day-66",
+        "label": "66",
+        "dayNumber": 66,
+        "tutorial": false,
+        "order": 67,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              250.723,
+              254.768,
+              257.292
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.132,
+          249.498,
+          244.957,
+          258.279
+        ]
+      },
+      {
+        "id": "c4-day-67",
+        "label": "67",
+        "dayNumber": 67,
+        "tutorial": false,
+        "order": 68,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              259.413,
+              257.844,
+              268.937
+            ]
+          },
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              258.438,
+              259.171,
+              267.851,
+              262.219
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.536,
+          259.703,
+          244.553,
+          268.484
+        ]
+      },
+      {
+        "id": "c4-day-68",
+        "label": "68",
+        "dayNumber": 68,
+        "tutorial": false,
+        "order": 69,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.3,
+          269.908,
+          244.789,
+          278.689
+        ]
+      },
+      {
+        "id": "c4-day-69",
+        "label": "69",
+        "dayNumber": 69,
+        "tutorial": false,
+        "order": 70,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.132,
+          280.112,
+          244.957,
+          288.893
+        ]
+      },
+      {
+        "id": "c4-day-70",
+        "label": "70",
+        "dayNumber": 70,
+        "tutorial": false,
+        "order": 71,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              291.542,
+              254.768,
+              298.111
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.199,
+          290.317,
+          244.889,
+          299.098
+        ]
+      },
+      {
+        "id": "c4-day-71",
+        "label": "71",
+        "dayNumber": 71,
+        "tutorial": false,
+        "order": 72,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.546,
+          300.522,
+          243.543,
+          309.303
+        ]
+      },
+      {
+        "id": "c4-day-72",
+        "label": "72",
+        "dayNumber": 72,
+        "tutorial": false,
+        "order": 73,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              310.195,
+              257.788,
+              313.243
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.89,
+          310.726,
+          244.199,
+          319.508
+        ]
+      },
+      {
+        "id": "c4-day-73",
+        "label": "73",
+        "dayNumber": 73,
+        "tutorial": false,
+        "order": 74,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              320.641,
+              257.844,
+              330.165
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.923,
+          320.931,
+          244.166,
+          329.712
+        ]
+      },
+      {
+        "id": "c4-day-74",
+        "label": "74",
+        "dayNumber": 74,
+        "tutorial": false,
+        "order": 75,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              332.361,
+              254.768,
+              338.93
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.832,
+          331.136,
+          244.256,
+          339.917
+        ]
+      },
+      {
+        "id": "c4-day-75",
+        "label": "75",
+        "dayNumber": 75,
+        "tutorial": false,
+        "order": 76,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.957,
+          341.341,
+          244.132,
+          350.122
+        ]
+      },
+      {
+        "id": "c4-day-76",
+        "label": "76",
+        "dayNumber": 76,
+        "tutorial": false,
+        "order": 77,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.654,
+          351.545,
+          244.435,
+          360.327
+        ]
+      },
+      {
+        "id": "c4-day-77",
+        "label": "77",
+        "dayNumber": 77,
+        "tutorial": false,
+        "order": 78,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.375,
+              361.218,
+              257.788,
+              364.266
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.007,
+          361.75,
+          244.081,
+          370.531
+        ]
+      },
+      {
+        "id": "c4-day-78",
+        "label": "78",
+        "dayNumber": 78,
+        "tutorial": false,
+        "order": 79,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.492,
+              373.18,
+              254.768,
+              379.749
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.738,
+          371.955,
+          244.351,
+          380.736
+        ]
+      },
+      {
+        "id": "c4-day-79",
+        "label": "79",
+        "dayNumber": 79,
+        "tutorial": false,
+        "order": 80,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              381.869,
+              257.844,
+              391.393
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.536,
+          382.16,
+          244.553,
+          390.941
+        ]
+      },
+      {
+        "id": "c4-day-80",
+        "label": "80",
+        "dayNumber": 80,
+        "tutorial": false,
+        "order": 81,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          236.913,
+          392.364,
+          245.176,
+          401.145
+        ]
+      },
+      {
+        "id": "c4-day-81",
+        "label": "81",
+        "dayNumber": 81,
+        "tutorial": false,
+        "order": 82,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.277,
+          402.569,
+          243.812,
+          411.35
+        ]
+      },
+      {
+        "id": "c4-day-82",
+        "label": "82",
+        "dayNumber": 82,
+        "tutorial": false,
+        "order": 83,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.62,
+          412.774,
+          244.469,
+          421.555
+        ]
+      },
+      {
+        "id": "c4-day-83",
+        "label": "83",
+        "dayNumber": 83,
+        "tutorial": false,
+        "order": 84,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.654,
+          422.978,
+          244.435,
+          431.76
+        ]
+      },
+      {
+        "id": "c4-day-84",
+        "label": "84",
+        "dayNumber": 84,
+        "tutorial": false,
+        "order": 85,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              432.893,
+              257.844,
+              442.417
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.428,
+          433.183,
+          244.661,
+          441.964
+        ]
+      },
+      {
+        "id": "c4-day-85",
+        "label": "85",
+        "dayNumber": 85,
+        "tutorial": false,
+        "order": 86,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.671,
+          443.388,
+          244.418,
+          452.169
+        ]
+      },
+      {
+        "id": "c4-day-86",
+        "label": "86",
+        "dayNumber": 86,
+        "tutorial": false,
+        "order": 87,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.3,
+          453.593,
+          244.789,
+          462.374
+        ]
+      },
+      {
+        "id": "c4-day-87",
+        "label": "87",
+        "dayNumber": 87,
+        "tutorial": false,
+        "order": 88,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.704,
+          463.797,
+          244.384,
+          472.579
+        ]
+      },
+      {
+        "id": "c4-day-88",
+        "label": "88",
+        "dayNumber": 88,
+        "tutorial": false,
+        "order": 89,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              473.712,
+              257.844,
+              483.236
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.469,
+          474.002,
+          244.62,
+          482.783
+        ]
+      },
+      {
+        "id": "c4-day-89",
+        "label": "89",
+        "dayNumber": 89,
+        "tutorial": false,
+        "order": 90,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.3,
+          484.207,
+          244.789,
+          492.988
+        ]
+      },
+      {
+        "id": "c4-day-90",
+        "label": "90",
+        "dayNumber": 90,
+        "tutorial": false,
+        "order": 91,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          236.745,
+          494.411,
+          245.344,
+          503.193
+        ]
+      },
+      {
+        "id": "c4-day-91",
+        "label": "91",
+        "dayNumber": 91,
+        "tutorial": false,
+        "order": 92,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              504.326,
+              257.844,
+              513.85
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.108,
+          504.616,
+          243.98,
+          513.397
+        ]
+      },
+      {
+        "id": "c4-day-92",
+        "label": "92",
+        "dayNumber": 92,
+        "tutorial": false,
+        "order": 93,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.485,
+          514.821,
+          244.603,
+          523.602
+        ]
+      },
+      {
+        "id": "c4-day-93",
+        "label": "93",
+        "dayNumber": 93,
+        "tutorial": false,
+        "order": 94,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              524.736,
+              257.844,
+              534.26
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.519,
+          525.026,
+          244.57,
+          533.807
+        ]
+      },
+      {
+        "id": "c4-day-94",
+        "label": "94",
+        "dayNumber": 94,
+        "tutorial": false,
+        "order": 95,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              534.94,
+              257.844,
+              544.464
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.226,
+          535.23,
+          244.863,
+          544.012
+        ]
+      },
+      {
+        "id": "c4-day-95",
+        "label": "95",
+        "dayNumber": 95,
+        "tutorial": false,
+        "order": 96,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.32,
+              545.145,
+              257.844,
+              554.669
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.502,
+          545.435,
+          244.586,
+          554.216
+        ]
+      },
+      {
+        "id": "c4-day-96",
+        "label": "96",
+        "dayNumber": 96,
+        "tutorial": false,
+        "order": 97,
+        "printedMuted": true,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.292,
+              555.346,
+              257.816,
+              564.87
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.452,
+          555.663,
+          245.21,
+          564.444
+        ]
+      }
+    ],
+    "printedColumnBreakBefore": "48",
+    "endOfTimeline": null
+  },
+  "choiceMatrix": {
+    "rows": [
+      {
+        "id": "A",
+        "group": "main",
+        "sourceCentreYPt": 62.537,
+        "sourceBoxYPt": 55.789
+      },
+      {
+        "id": "B",
+        "group": "main",
+        "sourceCentreYPt": 78.298,
+        "sourceBoxYPt": 71.078
+      },
+      {
+        "id": "C",
+        "group": "main",
+        "sourceCentreYPt": 94.059,
+        "sourceBoxYPt": 88.254
+      },
+      {
+        "id": "D",
+        "group": "main",
+        "sourceCentreYPt": 109.819,
+        "sourceBoxYPt": 102.599
+      },
+      {
+        "id": "E",
+        "group": "main",
+        "sourceCentreYPt": 125.58,
+        "sourceBoxYPt": 119.775
+      },
+      {
+        "id": "F",
+        "group": "main",
+        "sourceCentreYPt": 141.341,
+        "sourceBoxYPt": 134.12
+      },
+      {
+        "id": "G",
+        "group": "main",
+        "sourceCentreYPt": 157.101,
+        "sourceBoxYPt": 151.297
+      },
+      {
+        "id": "H",
+        "group": "main",
+        "sourceCentreYPt": 172.862,
+        "sourceBoxYPt": 165.642
+      },
+      {
+        "id": "I",
+        "group": "main",
+        "sourceCentreYPt": 188.622,
+        "sourceBoxYPt": 182.818
+      },
+      {
+        "id": "J",
+        "group": "main",
+        "sourceCentreYPt": 204.383,
+        "sourceBoxYPt": 197.163
+      },
+      {
+        "id": "K",
+        "group": "main",
+        "sourceCentreYPt": 220.144,
+        "sourceBoxYPt": 214.339
+      },
+      {
+        "id": "L",
+        "group": "main",
+        "sourceCentreYPt": 235.904,
+        "sourceBoxYPt": 228.684
+      },
+      {
+        "id": "M",
+        "group": "main",
+        "sourceCentreYPt": 251.665,
+        "sourceBoxYPt": 245.861
+      },
+      {
+        "id": "N",
+        "group": "main",
+        "sourceCentreYPt": 267.426,
+        "sourceBoxYPt": 260.206
+      },
+      {
+        "id": "O",
+        "group": "main",
+        "sourceCentreYPt": 283.186,
+        "sourceBoxYPt": 277.382
+      },
+      {
+        "id": "P",
+        "group": "main",
+        "sourceCentreYPt": 298.947,
+        "sourceBoxYPt": 291.727
+      },
+      {
+        "id": "Q",
+        "group": "main",
+        "sourceCentreYPt": 314.707,
+        "sourceBoxYPt": 308.903
+      },
+      {
+        "id": "R",
+        "group": "main",
+        "sourceCentreYPt": 330.468,
+        "sourceBoxYPt": 323.248
+      },
+      {
+        "id": "S",
+        "group": "main",
+        "sourceCentreYPt": 346.229,
+        "sourceBoxYPt": 340.424
+      },
+      {
+        "id": "T",
+        "group": "main",
+        "sourceCentreYPt": 361.989,
+        "sourceBoxYPt": 354.769
+      },
+      {
+        "id": "U",
+        "group": "main",
+        "sourceCentreYPt": 377.75,
+        "sourceBoxYPt": 371.946
+      },
+      {
+        "id": "V",
+        "group": "main",
+        "sourceCentreYPt": 393.511,
+        "sourceBoxYPt": 386.291
+      },
+      {
+        "id": "W",
+        "group": "main",
+        "sourceCentreYPt": 409.271,
+        "sourceBoxYPt": 403.467
+      },
+      {
+        "id": "X",
+        "group": "main",
+        "sourceCentreYPt": 425.032,
+        "sourceBoxYPt": 417.812
+      },
+      {
+        "id": "Y",
+        "group": "main",
+        "sourceCentreYPt": 440.792,
+        "sourceBoxYPt": 434.988
+      },
+      {
+        "id": "Z",
+        "group": "main",
+        "sourceCentreYPt": 456.553,
+        "sourceBoxYPt": 450.277
+      },
+      {
+        "id": "Aa",
+        "group": "supplemental",
+        "sourceCentreYPt": 479.639,
+        "sourceBoxYPt": 472.788
+      },
+      {
+        "id": "Bb",
+        "group": "supplemental",
+        "sourceCentreYPt": 495.4,
+        "sourceBoxYPt": 488.077
+      },
+      {
+        "id": "Cc",
+        "group": "supplemental",
+        "sourceCentreYPt": 511.16,
+        "sourceBoxYPt": 505.252
+      },
+      {
+        "id": "Dd",
+        "group": "supplemental",
+        "sourceCentreYPt": 526.921,
+        "sourceBoxYPt": 519.598
+      },
+      {
+        "id": "Ee",
+        "group": "supplemental",
+        "sourceCentreYPt": 542.682,
+        "sourceBoxYPt": 536.774
+      },
+      {
+        "id": "Ff",
+        "group": "supplemental",
+        "sourceCentreYPt": 558.442,
+        "sourceBoxYPt": 552.063
+      }
+    ],
+    "columns": [
+      {
+        "number": 1,
+        "sourceCentreXPt": 434.339,
+        "sourceBoxXPt": 427.38
+      },
+      {
+        "number": 2,
+        "sourceCentreXPt": 450.354,
+        "sourceBoxXPt": 442.924
+      },
+      {
+        "number": 3,
+        "sourceCentreXPt": 466.37,
+        "sourceBoxXPt": 460.355
+      },
+      {
+        "number": 4,
+        "sourceCentreXPt": 482.386,
+        "sourceBoxXPt": 474.956
+      },
+      {
+        "number": 5,
+        "sourceCentreXPt": 498.402,
+        "sourceBoxXPt": 492.387
+      },
+      {
+        "number": 6,
+        "sourceCentreXPt": 514.417,
+        "sourceBoxXPt": 506.987
+      },
+      {
+        "number": 7,
+        "sourceCentreXPt": 530.433,
+        "sourceBoxXPt": 524.418
+      },
+      {
+        "number": 8,
+        "sourceCentreXPt": 546.449,
+        "sourceBoxXPt": 539.019
+      },
+      {
+        "number": 9,
+        "sourceCentreXPt": 562.465,
+        "sourceBoxXPt": 556.45
+      },
+      {
+        "number": 10,
+        "sourceCentreXPt": 578.48,
+        "sourceBoxXPt": 571.05
+      },
+      {
+        "number": 11,
+        "sourceCentreXPt": 594.496,
+        "sourceBoxXPt": 588.482
+      },
+      {
+        "number": 12,
+        "sourceCentreXPt": 610.512,
+        "sourceBoxXPt": 604.025
+      }
+    ],
+    "sourceCellSizePt": [
+      13.376,
+      13.376
+    ],
+    "cellCount": 384,
+    "cellIdTemplate": "<rowId><columnNumber>",
+    "columnGroups": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11,
+        12
+      ]
+    ],
+    "persistsAcrossCycles": true,
+    "toggleGesture": "longPress"
+  }
+}

@@ -12,6 +12,8 @@ import { validDiplomacy } from './diplomacy.ts';
 import type { DiplomacyState } from './diplomacy.ts';
 import { validEvolution } from './evolution.ts';
 import type { EvolutionState } from './evolution.ts';
+import { validAdventureState } from './adventures.ts';
+import type { AdventureState } from './adventures.ts';
 
 export interface ArgoTrack { value: number; limit?: number | null; reference?: string }
 export interface ArgoState {
@@ -24,6 +26,7 @@ export interface ArgoState {
   milestones?: Record<string, MilestoneState>;
   diplomacy?: DiplomacyState;
   evolution?: EvolutionState;
+  adventures?: AdventureState;
 }
 export interface ArgoTrackDefinition {
   id: string; name: string; icon?: string; cycles?: readonly CampaignCycle[];
@@ -102,6 +105,7 @@ export function validArgoState(value: unknown): value is ArgoState {
   if (value.milestones !== undefined && !validMilestones(value.milestones)) return false;
   if (value.diplomacy !== undefined && !validDiplomacy(value.diplomacy)) return false;
   if (value.evolution !== undefined && !validEvolution(value.evolution)) return false;
+  if (value.adventures !== undefined && !validAdventureState(value.adventures)) return false;
   const validKey = (entry: string) => definitions.some(track => track.cycles || track.milestone
     ? [1, 2, 3, 4, 5].some(cycle => key(track, cycle as CampaignCycle) === entry && (!track.cycles || track.cycles.includes(cycle as CampaignCycle))) : track.id === entry);
   return Object.entries(value.tracks).every(([id, track]) => validKey(id) && isRecord(track) && Number.isSafeInteger(track.value)

@@ -1,13 +1,14 @@
-import { router } from 'expo-router';
 import { useState } from 'react';
 import { Text, TextInput, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
+import { CardInspection } from '../cards/CardInspection';
 import { Button } from '../components/Button';
 import { Sheet } from '../components/Sheet';
 import type { MenuIconName } from '../components/Icon';
 import type { ArgoRecordId } from '../domain/argo';
 import { campaignCycle } from '../domain/campaign';
 import type { KnownCardFamily } from '../domain/cards';
+import type { CardReference } from '../domain/party';
 import { technologyCycle } from '../domain/technologies';
 import { useParty } from '../state/PartyProvider';
 import { useSpoilers } from '../state/SpoilerProvider';
@@ -18,7 +19,7 @@ import { ArgoDiplomacy } from './ArgoDiplomacy';
 import { ArgoEvolution } from './ArgoEvolution';
 
 export const ARGO_REFERENCES: readonly { id: ArgoRecordId; name: string; icon: MenuIconName; prompt: string; families?: readonly KnownCardFamily[] }[] = [
-  { id: 'adventures', name: 'Adventures', icon: 'Adventures', prompt: 'Record adventure numbers, choices and outcomes.', families: ['Exploration'] },
+  { id: 'adventures', name: 'Adventures', icon: 'Adventures', prompt: 'Adventure tracks and story references.' },
   { id: 'titans', name: 'Titans', icon: 'Titans', prompt: 'Manage available Titans.' },
   { id: 'glyphs', name: 'Glyphs', icon: 'CrypticLanguages', prompt: 'Record discovered glyphs, translations and language progress.' },
   { id: 'evolution', name: 'Evolution', icon: 'Evolution', prompt: 'Track Primordial evolution and review battle setup.' },
@@ -26,7 +27,7 @@ export const ARGO_REFERENCES: readonly { id: ArgoRecordId; name: string; icon: M
   { id: 'choice-matrix', name: 'Choice Matrix', icon: 'ChoiceMatrix', prompt: 'Record choice codes and the decisions made by this expedition.' },
   { id: 'fated-events', name: 'Fated Events', icon: 'FatedEvents', prompt: 'Record fated events, triggers and resolutions.' },
   { id: 'godforms', name: 'Godforms & Summons', icon: 'GodformsAndSummons', prompt: 'Record available Godforms and summons.', families: ['Godform', 'Nymph'] },
-  { id: 'decks', name: 'Decks', icon: 'Story', prompt: 'Record deck changes and current cards.', families: ['Story', 'Doom', 'Exploration', 'Clue', 'Trauma', 'Kratos'] },
+  { id: 'decks', name: 'Decks', icon: 'Story', prompt: 'Record deck changes and current cards.', families: ['Story', 'Doom', 'Exploration', 'Clue', 'Trauma', 'Kratos', 'Moiros'] },
   { id: 'mnestis', name: 'Mnestis Theater', icon: 'MnestisTheatre', prompt: 'Record completed scenes and Mnestis Theater progress.' },
 ];
 
@@ -40,10 +41,20 @@ function ArgoReferenceNotebook({ id, onClose, initialFamily }: { id: ArgoRecordI
   const [tab, setTab] = useState<'records' | 'cards'>(initialFamily ? 'cards' : 'records');
   const [family, setFamily] = useState<KnownCardFamily>(initialFamily ?? reference.families?.[0] ?? 'Story');
   const [query, setQuery] = useState('');
+  const [inspection, setInspection] = useState<CardReference[]>([]);
+  const selected = inspection.at(-1), selectedCard = selected && catalogue.get(selected.definitionId);
   const tabButton = (name: string, selected: boolean, onPress: () => void) => <Button key={name} quiet role="tab" selected={selected} label={name} onPress={onPress}
     style={selected ? { backgroundColor: theme.charcoal, borderColor: theme.gold } : undefined}><Text style={{ color: selected ? theme.white : theme.ink, fontSize: 13, fontWeight: '600' }}>{name}</Text></Button>;
   const cards = tab === 'cards' ? catalogue.search({ family, campaignCycle: cycle, query }).sort((a, b) => technologyCycle(b) - technologyCycle(a) || a.faces[0].name.localeCompare(b.faces[0].name)) : [];
-  return <Sheet visible wide title={reference.name} subtitle={`Campaign reference · Cycle ${cycle}`} onClose={onClose}>
+  return <Sheet visible wide title={selectedCard ? 'Card preview' : reference.name} subtitle={selectedCard ? reference.name : `Campaign reference · Cycle ${cycle}`}
+    scrollKey={selected ? `${selected.definitionId}:${selected.faceId}` : 'library'} onClose={selected ? () => setInspection([]) : onClose}>
+    {selected && selectedCard ? <>
+      <Button quiet label={`Back to ${reference.name}`} onPress={() => setInspection([])} />
+      {inspection.length > 1 && <Button quiet label="Back to previous card" onPress={() => setInspection(previous => previous.slice(0,-1))} />}
+      <CardInspection key={`${selected.definitionId}:${selected.faceId}`} card={selectedCard} faceId={selected.faceId} embedded
+        onFaceChange={faceId => setInspection(previous => [...previous.slice(0,-1), { ...selected, faceId }])}
+        onNavigate={(card,faceId) => setInspection(previous => [...previous, { definitionId: card.id,faceId }])} />
+    </> : <>
     {reference.families && <View style={styles.row}>{tabButton('Records', tab === 'records', () => setTab('records'))}{tabButton('Cards', tab === 'cards', () => setTab('cards'))}</View>}
     {tab === 'records' ? <>
       <Text style={styles.body}>{reference.prompt}</Text>
@@ -59,10 +70,11 @@ function ArgoReferenceNotebook({ id, onClose, initialFamily }: { id: ArgoRecordI
           {heading && <Text accessibilityRole="header" style={[styles.eyebrow, { marginTop: 12 }]}>{cardCycle ? `CYCLE ${cardCycle}` : 'OTHER CARDS'}</Text>}
           <Button quiet label={hidden ? `Reveal ${family} · ${face.cycle} · ${card.printedIds.join(', ')}` : face.name} onPress={() => {
             if (hidden) { spoilers.reveal(card.id); return; }
-            onClose(); router.push({ pathname: '/cards/[id]', params: { id: card.id } });
+            setInspection([{ definitionId: card.id, faceId: card.faces[0].id }]);
           }} style={{ alignItems: 'flex-start' }} />
         </View>;
       })}
+    </>}
     </>}
   </Sheet>;
 }

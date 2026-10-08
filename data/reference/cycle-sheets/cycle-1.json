@@ -1,0 +1,3324 @@
+{
+  "schemaVersion": 1,
+  "cycle": 1,
+  "title": "Truth of the Labyrinth",
+  "sources": {
+    "front": {
+      "file": "ATO_C1_ArgoSheet_FRONT.pdf",
+      "page": 1,
+      "sha256": "a0d896290cdbb9c2f93bf2fe1dc87a4411d8571bd73a75af5f3af9e4ad7a0174",
+      "uprightRotationDegrees": 270,
+      "uprightSizePt": [
+        841.89,
+        595.276
+      ]
+    },
+    "back": {
+      "file": "ATO_C1_ArgoSheet_BACK.pdf",
+      "page": 1,
+      "sha256": "291467feab0b830c7f65d42696138ad61239db362897c1811410a3228a3bbb76",
+      "uprightRotationDegrees": 90,
+      "uprightSizePt": [
+        841.89,
+        595.276
+      ]
+    }
+  },
+  "adventureTracks": [
+    {
+      "id": "c1-fated-conundrum",
+      "title": "Fated Conundrum",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            57.241,
+            382.515,
+            70.418,
+            395.692
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            72.203,
+            382.515,
+            85.38,
+            395.692
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            87.164,
+            382.515,
+            100.341,
+            395.692
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            102.126,
+            382.515,
+            115.303,
+            395.692
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            117.088,
+            382.515,
+            130.265,
+            395.692
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-fated-conundrum-1",
+          "title": "Bitter Seeds",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-2",
+          "title": "The Pilgrimage",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-3",
+          "title": "Dream of the Maw",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-4",
+          "title": "Stewards",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-5",
+          "title": "The Feast",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-6",
+          "title": "Mazed Tree",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 31
+        },
+        {
+          "entryId": "c1-fated-conundrum-7",
+          "title": "A City Made of Riddles",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 31
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        62.507,
+        371.825,
+        124.997,
+        381.523
+      ],
+      "sourceOrder": 1,
+      "layout": {
+        "row": 1,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-plight-of-the-people",
+      "title": "Plight of the People",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            183.902,
+            382.515,
+            197.079,
+            395.692
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            198.864,
+            382.515,
+            212.041,
+            395.692
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            213.825,
+            382.515,
+            227.002,
+            395.692
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            228.787,
+            382.515,
+            241.964,
+            395.692
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            243.749,
+            382.515,
+            256.926,
+            395.692
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-plight-of-the-people-1",
+          "title": "The Catch",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-2",
+          "title": "Witness of Minos",
+          "label": "1",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-3",
+          "title": "Discarded",
+          "label": "2–3",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-4",
+          "title": "Cult of the Bull",
+          "label": "4–5",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-5",
+          "title": "A Light in the Dark",
+          "label": "6",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-6",
+          "title": "Beachhead",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-7",
+          "title": "Minotaurites",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 38
+        },
+        {
+          "entryId": "c1-plight-of-the-people-8",
+          "title": "Sowing and Reaping",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 38
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        186.373,
+        371.825,
+        254.457,
+        381.523
+      ],
+      "sourceOrder": 2,
+      "layout": {
+        "row": 1,
+        "column": 2,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-hidden-in-plain-sight",
+      "title": "Hidden in Plain Sight",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            310.779,
+            382.515,
+            323.956,
+            395.692
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            325.741,
+            382.515,
+            338.918,
+            395.692
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            340.704,
+            382.515,
+            353.881,
+            395.692
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            355.665,
+            382.515,
+            368.842,
+            395.692
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            370.627,
+            382.515,
+            383.804,
+            395.692
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-hidden-in-plain-sight-1",
+          "title": "Theseus’s Light",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-2",
+          "title": "Konstantinos",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-3",
+          "title": "Friend of Theseus",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-4",
+          "title": "Good Deeds",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-5",
+          "title": "Runs Deep",
+          "label": "7",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-6",
+          "title": "Balance of Terror",
+          "label": "8–9",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-7",
+          "title": "A Peculiar Vessel",
+          "label": "10",
+          "kind": "rolled",
+          "storybookPage": 44
+        },
+        {
+          "entryId": "c1-hidden-in-plain-sight-8",
+          "title": "Theseus’s Shadow",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 44
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        313.013,
+        371.825,
+        383.351,
+        381.523
+      ],
+      "sourceOrder": 3,
+      "layout": {
+        "row": 1,
+        "column": 3,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-man-of-purpose",
+      "title": "Man of Purpose",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            57.241,
+            419.41,
+            70.418,
+            432.587
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            72.203,
+            419.41,
+            85.38,
+            432.587
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            87.164,
+            419.41,
+            100.341,
+            432.587
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            102.126,
+            419.41,
+            115.303,
+            432.587
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            117.088,
+            419.41,
+            130.265,
+            432.587
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-man-of-purpose-1",
+          "title": "Comes a Savior",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-2",
+          "title": "Mazed Forest",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-3",
+          "title": "Synoikismos",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-4",
+          "title": "Forced Perspective",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-5",
+          "title": "Words of Love",
+          "label": "7",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-6",
+          "title": "Life of Theseus",
+          "label": "8–9",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-7",
+          "title": "Ashes of Cydonia",
+          "label": "10",
+          "kind": "rolled",
+          "storybookPage": 51
+        },
+        {
+          "entryId": "c1-man-of-purpose-8",
+          "title": "Till Death",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 51
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        66.598,
+        408.72,
+        120.907,
+        418.419
+      ],
+      "sourceOrder": 4,
+      "layout": {
+        "row": 2,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-uneasy-rests-the-head",
+      "title": "Uneasy Rests the Head",
+      "progressBoxCount": 4,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            191.382,
+            419.41,
+            204.559,
+            432.587
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            206.345,
+            419.41,
+            219.522,
+            432.587
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            221.307,
+            419.41,
+            234.484,
+            432.587
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Ω",
+          "sourceRectPt": [
+            236.268,
+            419.41,
+            249.445,
+            432.587
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-uneasy-rests-the-head-1",
+          "title": "Balance of Power",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-2",
+          "title": "Rites and Wrongs",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-3",
+          "title": "The Hand that Feeds",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-4",
+          "title": "The Hands of Minos",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-5",
+          "title": "The Minos-branded",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-6",
+          "title": "Erasing History",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 59
+        },
+        {
+          "entryId": "c1-uneasy-rests-the-head-7",
+          "title": "Withered Tree",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 59
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        184.097,
+        408.72,
+        256.732,
+        418.419
+      ],
+      "sourceOrder": 5,
+      "layout": {
+        "row": 2,
+        "column": 2,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-tears-of-a-minotaur",
+      "title": "Tears of a Minotaur",
+      "progressBoxCount": 4,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            318.261,
+            419.41,
+            331.438,
+            432.587
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            333.222,
+            419.41,
+            346.399,
+            432.587
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            348.184,
+            419.41,
+            361.361,
+            432.587
+          ]
+        },
+        {
+          "position": 4,
+          "label": "Ω",
+          "sourceRectPt": [
+            363.146,
+            419.41,
+            376.323,
+            432.587
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-tears-of-a-minotaur-1",
+          "title": "Ariadne’s Love",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-2",
+          "title": "Orphaned by the Minotaur",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-3",
+          "title": "Hooves and Saints",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-4",
+          "title": "Virgins for the Horned",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-5",
+          "title": "Trial by Bull",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-6",
+          "title": "The Last Goodbye",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 67
+        },
+        {
+          "entryId": "c1-tears-of-a-minotaur-7",
+          "title": "Poseidon’s Gift",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 67
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        313.519,
+        408.72,
+        381.059,
+        418.419
+      ],
+      "sourceOrder": 6,
+      "layout": {
+        "row": 2,
+        "column": 3,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-dreams-laid-bare",
+      "title": "Dreams Laid Bare",
+      "progressBoxCount": 5,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            57.241,
+            456.305,
+            70.418,
+            469.482
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            72.203,
+            456.305,
+            85.38,
+            469.482
+          ]
+        },
+        {
+          "position": 3,
+          "label": null,
+          "sourceRectPt": [
+            87.164,
+            456.305,
+            100.341,
+            469.482
+          ]
+        },
+        {
+          "position": 4,
+          "label": null,
+          "sourceRectPt": [
+            102.126,
+            456.305,
+            115.303,
+            469.482
+          ]
+        },
+        {
+          "position": 5,
+          "label": "Ω",
+          "sourceRectPt": [
+            117.088,
+            456.305,
+            130.265,
+            469.482
+          ]
+        }
+      ],
+      "storyReferences": [
+        {
+          "entryId": "c1-dreams-laid-bare-1",
+          "title": "A Knife So Sharp",
+          "label": "α",
+          "kind": "opening",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-2",
+          "title": "Changing of the Guard",
+          "label": "1–2",
+          "kind": "rolled",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-3",
+          "title": "Prisoners",
+          "label": "3–4",
+          "kind": "rolled",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-4",
+          "title": "Stalked by the Maze",
+          "label": "5–6",
+          "kind": "rolled",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-5",
+          "title": "Mazed Hull",
+          "label": "7–8",
+          "kind": "rolled",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-6",
+          "title": "Among Broken Pottery and Trampled Grapes",
+          "label": "9–10",
+          "kind": "rolled",
+          "storybookPage": 74
+        },
+        {
+          "entryId": "c1-dreams-laid-bare-7",
+          "title": "Price of a Promise",
+          "label": "Ω",
+          "kind": "closing",
+          "storybookPage": 74
+        }
+      ],
+      "storyReferencesStatus": "supplied-adventure-tracker",
+      "sourceTitleRectPt": [
+        64.862,
+        445.615,
+        122.644,
+        455.314
+      ],
+      "sourceOrder": 7,
+      "layout": {
+        "row": 3,
+        "column": 1,
+        "columnSpan": 1
+      },
+      "storiesFile": "../adventures/cycle-1.json"
+    },
+    {
+      "id": "c1-tutorial",
+      "title": "Tutorial",
+      "progressBoxCount": 3,
+      "boxes": [
+        {
+          "position": 1,
+          "label": "α",
+          "sourceRectPt": [
+            198.864,
+            456.305,
+            212.041,
+            469.482
+          ]
+        },
+        {
+          "position": 2,
+          "label": null,
+          "sourceRectPt": [
+            213.825,
+            456.305,
+            227.002,
+            469.482
+          ]
+        },
+        {
+          "position": 3,
+          "label": "Ω",
+          "sourceRectPt": [
+            228.787,
+            456.305,
+            241.964,
+            469.482
+          ]
+        }
+      ],
+      "storyReferences": [],
+      "storyReferencesStatus": "awaiting-user-list",
+      "sourceTitleRectPt": [
+        206.191,
+        445.615,
+        234.64,
+        455.314
+      ],
+      "sourceOrder": 8,
+      "layout": {
+        "row": 3,
+        "column": 2,
+        "columnSpan": 1
+      }
+    }
+  ],
+  "cargo": {
+    "groups": [
+      {
+        "category": "mortal",
+        "hold": "main",
+        "entries": [
+          {
+            "resourceId": "trireme",
+            "printedName": "Trireme",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "monument",
+            "printedName": "Monument",
+            "sourceOrder": 2
+          },
+          {
+            "resourceId": "armament",
+            "printedName": "Armament",
+            "sourceOrder": 3
+          }
+        ]
+      },
+      {
+        "category": "primordial",
+        "hold": "main",
+        "entries": [
+          {
+            "resourceId": "muscle-cluster",
+            "printedName": "Muscle Cluster",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "calcified-knuckle-bone",
+            "printedName": "Calcified Knuckle Bone",
+            "sourceOrder": 2
+          },
+          {
+            "resourceId": "infused-mechanism",
+            "printedName": "Infused Mechanism",
+            "sourceOrder": 3
+          },
+          {
+            "resourceId": "fleshy-mantle",
+            "printedName": "Fleshy Mantle",
+            "sourceOrder": 4
+          },
+          {
+            "resourceId": "fear-essence",
+            "printedName": "Fear Essence",
+            "sourceOrder": 5
+          },
+          {
+            "resourceId": "maze-fragment",
+            "printedName": "Maze Fragment",
+            "sourceOrder": 6
+          },
+          {
+            "resourceId": "grotesque-beak",
+            "printedName": "Grotesque Beak",
+            "sourceOrder": 7
+          },
+          {
+            "resourceId": "powdered-matter",
+            "printedName": "Powdered Matter",
+            "sourceOrder": 8
+          },
+          {
+            "resourceId": "raw-ambrosia",
+            "printedName": "Raw Ambrosia",
+            "sourceOrder": 9
+          },
+          {
+            "resourceId": "cores",
+            "printedName": "Cores",
+            "sourceOrder": 10
+          }
+        ]
+      },
+      {
+        "category": "divine",
+        "hold": "hidden",
+        "entries": [
+          {
+            "resourceId": "priests",
+            "printedName": "Priests",
+            "sourceOrder": 1
+          },
+          {
+            "resourceId": "sisyphus-tears",
+            "printedName": "Sisyphus Tears",
+            "sourceOrder": 2
+          }
+        ]
+      },
+      {
+        "category": "rare",
+        "hold": "hidden",
+        "kind": "namedQuantityList",
+        "title": "Rare Resources"
+      }
+    ],
+    "hiddenTracks": [],
+    "hiddenNotes": []
+  },
+  "timeline": {
+    "days": [
+      {
+        "id": "c1-day-t0",
+        "label": "T0",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 1,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.695,
+          55.601,
+          53.06,
+          64.197
+        ]
+      },
+      {
+        "id": "c1-day-t1",
+        "label": "T1",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 2,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.03,
+          66.012,
+          51.725,
+          74.608
+        ]
+      },
+      {
+        "id": "c1-day-t2",
+        "label": "T2",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 3,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              77.583,
+              63.358,
+              84.055
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.354,
+          76.423,
+          52.401,
+          85.019
+        ]
+      },
+      {
+        "id": "c1-day-t3",
+        "label": "T3",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 4,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              87.994,
+              63.358,
+              94.466
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.387,
+          86.834,
+          52.368,
+          95.43
+        ]
+      },
+      {
+        "id": "c1-day-t4",
+        "label": "T4",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 5,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.166,
+          97.245,
+          52.589,
+          105.841
+        ]
+      },
+      {
+        "id": "c1-day-t5",
+        "label": "T5",
+        "dayNumber": null,
+        "tutorial": true,
+        "order": 6,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              108.816,
+              63.358,
+              115.288
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.437,
+          107.656,
+          52.319,
+          116.252
+        ]
+      },
+      {
+        "id": "c1-day-t6-00",
+        "label": "T6/00",
+        "dayNumber": 0,
+        "tutorial": true,
+        "order": 7,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          40.905,
+          118.692,
+          56.85,
+          126.06
+        ]
+      },
+      {
+        "id": "c1-day-01",
+        "label": "01",
+        "dayNumber": 1,
+        "tutorial": false,
+        "order": 8,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              128.151,
+              66.347,
+              137.526
+            ]
+          },
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              66.629,
+              127.958,
+              75.973,
+              130.985
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.625,
+          128.478,
+          52.131,
+          137.074
+        ]
+      },
+      {
+        "id": "c1-day-02",
+        "label": "02",
+        "dayNumber": 2,
+        "tutorial": false,
+        "order": 9,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              140.049,
+              63.358,
+              146.521
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.982,
+          138.888,
+          52.774,
+          147.485
+        ]
+      },
+      {
+        "id": "c1-day-03",
+        "label": "03",
+        "dayNumber": 3,
+        "tutorial": false,
+        "order": 10,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.982,
+          149.299,
+          52.774,
+          157.896
+        ]
+      },
+      {
+        "id": "c1-day-04",
+        "label": "04",
+        "dayNumber": 4,
+        "tutorial": false,
+        "order": 11,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              159.191,
+              66.363,
+              162.218
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.761,
+          159.71,
+          52.994,
+          168.306
+        ]
+      },
+      {
+        "id": "c1-day-05",
+        "label": "05",
+        "dayNumber": 5,
+        "tutorial": false,
+        "order": 12,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              171.281,
+              63.358,
+              177.753
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.031,
+          170.121,
+          52.724,
+          178.717
+        ]
+      },
+      {
+        "id": "c1-day-06",
+        "label": "06",
+        "dayNumber": 6,
+        "tutorial": false,
+        "order": 13,
+        "printedMuted": false,
+        "markers": [],
+        "events": [
+          {
+            "title": "Cackle Special Event",
+            "type": "specialEvent",
+            "phase": "story"
+          }
+        ],
+        "sourceNumberRectPt": [
+          44.669,
+          180.532,
+          53.087,
+          189.128
+        ]
+      },
+      {
+        "id": "c1-day-07",
+        "label": "07",
+        "dayNumber": 7,
+        "tutorial": false,
+        "order": 14,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              190.617,
+              66.347,
+              199.992
+            ]
+          },
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              66.629,
+              190.424,
+              75.973,
+              193.451
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.064,
+          190.943,
+          52.691,
+          199.539
+        ]
+      },
+      {
+        "id": "c1-day-08",
+        "label": "08",
+        "dayNumber": 8,
+        "tutorial": false,
+        "order": 15,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              202.514,
+              63.358,
+              208.986
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.833,
+          201.354,
+          52.922,
+          209.95
+        ]
+      },
+      {
+        "id": "c1-day-09",
+        "label": "09",
+        "dayNumber": 9,
+        "tutorial": false,
+        "order": 16,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.669,
+          211.765,
+          53.087,
+          220.361
+        ]
+      },
+      {
+        "id": "c1-day-10",
+        "label": "10",
+        "dayNumber": 10,
+        "tutorial": false,
+        "order": 17,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              221.657,
+              66.363,
+              224.684
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.625,
+          222.176,
+          52.131,
+          230.772
+        ]
+      },
+      {
+        "id": "c1-day-11",
+        "label": "11",
+        "dayNumber": 11,
+        "tutorial": false,
+        "order": 18,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              233.747,
+              63.358,
+              240.219
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.959,
+          232.587,
+          50.796,
+          241.183
+        ]
+      },
+      {
+        "id": "c1-day-12",
+        "label": "12",
+        "dayNumber": 12,
+        "tutorial": false,
+        "order": 19,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.284,
+          242.998,
+          51.472,
+          251.594
+        ]
+      },
+      {
+        "id": "c1-day-13",
+        "label": "13",
+        "dayNumber": 13,
+        "tutorial": false,
+        "order": 20,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              253.083,
+              66.347,
+              262.458
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.317,
+          253.409,
+          51.439,
+          262.005
+        ]
+      },
+      {
+        "id": "c1-day-14",
+        "label": "14",
+        "dayNumber": 14,
+        "tutorial": false,
+        "order": 21,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              263.3,
+              66.363,
+              266.327
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              68.753,
+              264.98,
+              72.968,
+              271.452
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.096,
+          263.82,
+          51.66,
+          272.416
+        ]
+      },
+      {
+        "id": "c1-day-15",
+        "label": "15",
+        "dayNumber": 15,
+        "tutorial": false,
+        "order": 22,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.366,
+          274.231,
+          51.389,
+          282.827
+        ]
+      },
+      {
+        "id": "c1-day-16",
+        "label": "16",
+        "dayNumber": 16,
+        "tutorial": false,
+        "order": 23,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.003,
+          284.642,
+          51.752,
+          293.238
+        ]
+      },
+      {
+        "id": "c1-day-17",
+        "label": "17",
+        "dayNumber": 17,
+        "tutorial": false,
+        "order": 24,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              296.154,
+              63.358,
+              302.626
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.399,
+          294.994,
+          51.356,
+          303.59
+        ]
+      },
+      {
+        "id": "c1-day-18",
+        "label": "18",
+        "dayNumber": 18,
+        "tutorial": false,
+        "order": 25,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              307.267,
+              66.363,
+              310.294
+            ]
+          }
+        ],
+        "events": [
+          {
+            "text": "Acclimation 1: 4, 5, 6, 8, 19 → 10, 11, 12, 14, 22",
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 1
+          }
+        ],
+        "sourceNumberRectPt": [
+          46.168,
+          307.907,
+          51.587,
+          316.503
+        ]
+      },
+      {
+        "id": "c1-day-19",
+        "label": "19",
+        "dayNumber": 19,
+        "tutorial": false,
+        "order": 26,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              326.018,
+              66.347,
+              335.393
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.003,
+          326.344,
+          51.752,
+          334.94
+        ]
+      },
+      {
+        "id": "c1-day-20",
+        "label": "20",
+        "dayNumber": 20,
+        "tutorial": false,
+        "order": 27,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.949,
+          336.696,
+          52.807,
+          345.292
+        ]
+      },
+      {
+        "id": "c1-day-21",
+        "label": "21",
+        "dayNumber": 21,
+        "tutorial": false,
+        "order": 28,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              348.267,
+              63.358,
+              354.739
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.284,
+          347.107,
+          51.472,
+          355.703
+        ]
+      },
+      {
+        "id": "c1-day-22",
+        "label": "22",
+        "dayNumber": 22,
+        "tutorial": false,
+        "order": 29,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              356.999,
+              66.363,
+              360.026
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.608,
+          357.518,
+          52.147,
+          366.114
+        ]
+      },
+      {
+        "id": "c1-day-23",
+        "label": "23",
+        "dayNumber": 23,
+        "tutorial": false,
+        "order": 30,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.641,
+          367.929,
+          52.114,
+          376.525
+        ]
+      },
+      {
+        "id": "c1-day-24",
+        "label": "24",
+        "dayNumber": 24,
+        "tutorial": false,
+        "order": 31,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.453,
+          378.34,
+          52.302,
+          386.936
+        ]
+      },
+      {
+        "id": "c1-day-25",
+        "label": "25",
+        "dayNumber": 25,
+        "tutorial": false,
+        "order": 32,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              388.425,
+              66.347,
+              397.8
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              68.753,
+              389.911,
+              72.968,
+              396.383
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.69,
+          388.751,
+          52.065,
+          397.347
+        ]
+      },
+      {
+        "id": "c1-day-26",
+        "label": "26",
+        "dayNumber": 26,
+        "tutorial": false,
+        "order": 33,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              398.643,
+              66.363,
+              401.67
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.328,
+          399.162,
+          52.427,
+          407.758
+        ]
+      },
+      {
+        "id": "c1-day-27",
+        "label": "27",
+        "dayNumber": 27,
+        "tutorial": false,
+        "order": 34,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.756,
+          409.573,
+          51.999,
+          418.169
+        ]
+      },
+      {
+        "id": "c1-day-28",
+        "label": "28",
+        "dayNumber": 28,
+        "tutorial": false,
+        "order": 35,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.493,
+          419.984,
+          52.263,
+          428.58
+        ]
+      },
+      {
+        "id": "c1-day-29",
+        "label": "29",
+        "dayNumber": 29,
+        "tutorial": false,
+        "order": 36,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              431.555,
+              63.358,
+              438.027
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.328,
+          430.395,
+          52.427,
+          438.991
+        ]
+      },
+      {
+        "id": "c1-day-30",
+        "label": "30",
+        "dayNumber": 30,
+        "tutorial": false,
+        "order": 37,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              440.286,
+              66.363,
+              443.313
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.982,
+          440.806,
+          52.774,
+          449.402
+        ]
+      },
+      {
+        "id": "c1-day-31",
+        "label": "31",
+        "dayNumber": 31,
+        "tutorial": false,
+        "order": 38,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              450.89,
+              66.347,
+              460.265
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          46.317,
+          451.217,
+          51.439,
+          459.813
+        ]
+      },
+      {
+        "id": "c1-day-32",
+        "label": "32",
+        "dayNumber": 32,
+        "tutorial": false,
+        "order": 39,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.641,
+          461.628,
+          52.114,
+          470.224
+        ]
+      },
+      {
+        "id": "c1-day-33",
+        "label": "33",
+        "dayNumber": 33,
+        "tutorial": false,
+        "order": 40,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              59.143,
+              473.199,
+              63.358,
+              479.671
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.707,
+          472.038,
+          52.048,
+          480.635
+        ]
+      },
+      {
+        "id": "c1-day-34",
+        "label": "34",
+        "dayNumber": 34,
+        "tutorial": false,
+        "order": 41,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              481.93,
+              66.363,
+              484.957
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.453,
+          482.449,
+          52.302,
+          491.046
+        ]
+      },
+      {
+        "id": "c1-day-35",
+        "label": "35",
+        "dayNumber": 35,
+        "tutorial": false,
+        "order": 42,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.723,
+          492.801,
+          52.032,
+          501.398
+        ]
+      },
+      {
+        "id": "c1-day-36",
+        "label": "36",
+        "dayNumber": 36,
+        "tutorial": false,
+        "order": 43,
+        "printedMuted": false,
+        "markers": [],
+        "events": [
+          {
+            "text": "Acclimation 2: 3, 7, 9, 13, 23 → 15, 16, 17, 18, 27",
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 2
+          }
+        ],
+        "sourceNumberRectPt": [
+          45.361,
+          505.715,
+          52.395,
+          514.311
+        ]
+      },
+      {
+        "id": "c1-day-37",
+        "label": "37",
+        "dayNumber": 37,
+        "tutorial": false,
+        "order": 44,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              56.989,
+              523.767,
+              66.347,
+              533.142
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              68.753,
+              525.253,
+              72.968,
+              531.725
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.756,
+          524.152,
+          51.999,
+          532.748
+        ]
+      },
+      {
+        "id": "c1-day-38",
+        "label": "38",
+        "dayNumber": 38,
+        "tutorial": false,
+        "order": 45,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              57.019,
+              533.985,
+              66.363,
+              537.012
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.526,
+          534.504,
+          52.23,
+          543.1
+        ]
+      },
+      {
+        "id": "c1-day-39",
+        "label": "39",
+        "dayNumber": 39,
+        "tutorial": false,
+        "order": 46,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          45.361,
+          544.915,
+          52.395,
+          553.511
+        ]
+      },
+      {
+        "id": "c1-day-40",
+        "label": "40",
+        "dayNumber": 40,
+        "tutorial": false,
+        "order": 47,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          44.761,
+          555.326,
+          52.994,
+          563.922
+        ]
+      },
+      {
+        "id": "c1-day-41",
+        "label": "41",
+        "dayNumber": 41,
+        "tutorial": false,
+        "order": 48,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.81,
+              56.761,
+              255.025,
+              63.233
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.297,
+          55.601,
+          243.86,
+          64.197
+        ]
+      },
+      {
+        "id": "c1-day-42",
+        "label": "42",
+        "dayNumber": 42,
+        "tutorial": false,
+        "order": 49,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.687,
+          66.012,
+          244.47,
+          74.608
+        ]
+      },
+      {
+        "id": "c1-day-43",
+        "label": "43",
+        "dayNumber": 43,
+        "tutorial": false,
+        "order": 50,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.656,
+              76.097,
+              258.014,
+              85.472
+            ]
+          },
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              258.563,
+              75.904,
+              267.907,
+              78.931
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.687,
+          76.423,
+          244.47,
+          85.019
+        ]
+      },
+      {
+        "id": "c1-day-44",
+        "label": "44",
+        "dayNumber": 44,
+        "tutorial": false,
+        "order": 51,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.466,
+          86.834,
+          244.691,
+          95.43
+        ]
+      },
+      {
+        "id": "c1-day-45",
+        "label": "45",
+        "dayNumber": 45,
+        "tutorial": false,
+        "order": 52,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.81,
+              98.405,
+              255.025,
+              104.877
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.703,
+          97.245,
+          244.453,
+          105.841
+        ]
+      },
+      {
+        "id": "c1-day-46",
+        "label": "46",
+        "dayNumber": 46,
+        "tutorial": false,
+        "order": 53,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.341,
+          107.656,
+          244.816,
+          116.252
+        ]
+      },
+      {
+        "id": "c1-day-47",
+        "label": "47",
+        "dayNumber": 47,
+        "tutorial": false,
+        "order": 54,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.769,
+          118.067,
+          244.387,
+          126.663
+        ]
+      },
+      {
+        "id": "c1-day-48",
+        "label": "48",
+        "dayNumber": 48,
+        "tutorial": false,
+        "order": 55,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.686,
+              127.958,
+              258.03,
+              130.985
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.505,
+          128.477,
+          244.651,
+          137.074
+        ]
+      },
+      {
+        "id": "c1-day-49",
+        "label": "49",
+        "dayNumber": 49,
+        "tutorial": false,
+        "order": 56,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.656,
+              138.562,
+              258.014,
+              147.937
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              260.687,
+              140.049,
+              264.902,
+              146.521
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.341,
+          138.888,
+          244.816,
+          147.485
+        ]
+      },
+      {
+        "id": "c1-day-50",
+        "label": "50",
+        "dayNumber": 50,
+        "tutorial": false,
+        "order": 57,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.232,
+          149.299,
+          244.925,
+          157.896
+        ]
+      },
+      {
+        "id": "c1-day-51",
+        "label": "51",
+        "dayNumber": 51,
+        "tutorial": false,
+        "order": 58,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.567,
+          159.71,
+          243.59,
+          168.306
+        ]
+      },
+      {
+        "id": "c1-day-52",
+        "label": "52",
+        "dayNumber": 52,
+        "tutorial": false,
+        "order": 59,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.94,
+          170.121,
+          244.216,
+          178.717
+        ]
+      },
+      {
+        "id": "c1-day-53",
+        "label": "53",
+        "dayNumber": 53,
+        "tutorial": false,
+        "order": 60,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.686,
+              179.954,
+              258.03,
+              182.981
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              260.686,
+              181.633,
+              264.901,
+              188.105
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.924,
+          180.473,
+          244.232,
+          189.069
+        ]
+      },
+      {
+        "id": "c1-day-54",
+        "label": "54",
+        "dayNumber": 54,
+        "tutorial": false,
+        "order": 61,
+        "printedMuted": false,
+        "markers": [],
+        "events": [
+          {
+            "text": "Acclimation 3: 1, 2, 12, 14, 22 → 20, 21, 24, 25, 26",
+            "type": "acclimation",
+            "phase": "exploration",
+            "number": 3
+          }
+        ],
+        "sourceNumberRectPt": [
+          237.703,
+          193.387,
+          244.453,
+          201.983
+        ]
+      },
+      {
+        "id": "c1-day-55",
+        "label": "55",
+        "dayNumber": 55,
+        "tutorial": false,
+        "order": 62,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.656,
+              211.498,
+              258.014,
+              220.873
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.973,
+          211.824,
+          244.183,
+          220.42
+        ]
+      },
+      {
+        "id": "c1-day-56",
+        "label": "56",
+        "dayNumber": 56,
+        "tutorial": false,
+        "order": 63,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.611,
+          222.176,
+          244.545,
+          230.772
+        ]
+      },
+      {
+        "id": "c1-day-57",
+        "label": "57",
+        "dayNumber": 57,
+        "tutorial": false,
+        "order": 64,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.809,
+              233.747,
+              255.024,
+              240.219
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.006,
+          232.587,
+          244.15,
+          241.183
+        ]
+      },
+      {
+        "id": "c1-day-58",
+        "label": "58",
+        "dayNumber": 58,
+        "tutorial": false,
+        "order": 65,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.685,
+              242.479,
+              258.029,
+              245.505
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.775,
+          242.998,
+          244.381,
+          251.594
+        ]
+      },
+      {
+        "id": "c1-day-59",
+        "label": "59",
+        "dayNumber": 59,
+        "tutorial": false,
+        "order": 66,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.61,
+          253.409,
+          244.545,
+          262.005
+        ]
+      },
+      {
+        "id": "c1-day-60",
+        "label": "60",
+        "dayNumber": 60,
+        "tutorial": false,
+        "order": 67,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          236.869,
+          263.82,
+          245.287,
+          272.416
+        ]
+      },
+      {
+        "id": "c1-day-61",
+        "label": "61",
+        "dayNumber": 61,
+        "tutorial": false,
+        "order": 68,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.656,
+              273.904,
+              258.014,
+              283.279
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              260.686,
+              275.391,
+              264.901,
+              281.863
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.204,
+          274.231,
+          243.952,
+          282.827
+        ]
+      },
+      {
+        "id": "c1-day-62",
+        "label": "62",
+        "dayNumber": 62,
+        "tutorial": false,
+        "order": 69,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.577,
+          284.642,
+          244.578,
+          293.238
+        ]
+      },
+      {
+        "id": "c1-day-63",
+        "label": "63",
+        "dayNumber": 63,
+        "tutorial": false,
+        "order": 70,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.594,
+          295.052,
+          244.562,
+          303.649
+        ]
+      },
+      {
+        "id": "c1-day-64",
+        "label": "64",
+        "dayNumber": 64,
+        "tutorial": false,
+        "order": 71,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.685,
+              304.944,
+              258.029,
+              307.971
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.373,
+          305.463,
+          244.783,
+          314.06
+        ]
+      },
+      {
+        "id": "c1-day-65",
+        "label": "65",
+        "dayNumber": 65,
+        "tutorial": false,
+        "order": 72,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.809,
+              317.034,
+              255.024,
+              323.507
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.61,
+          315.874,
+          244.545,
+          324.471
+        ]
+      },
+      {
+        "id": "c1-day-66",
+        "label": "66",
+        "dayNumber": 66,
+        "tutorial": false,
+        "order": 73,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.248,
+          326.285,
+          244.908,
+          334.881
+        ]
+      },
+      {
+        "id": "c1-day-67",
+        "label": "67",
+        "dayNumber": 67,
+        "tutorial": false,
+        "order": 74,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.656,
+              336.37,
+              258.013,
+              345.745
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.643,
+          336.696,
+          244.512,
+          345.292
+        ]
+      },
+      {
+        "id": "c1-day-68",
+        "label": "68",
+        "dayNumber": 68,
+        "tutorial": false,
+        "order": 75,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.412,
+          347.107,
+          244.743,
+          355.703
+        ]
+      },
+      {
+        "id": "c1-day-69",
+        "label": "69",
+        "dayNumber": 69,
+        "tutorial": false,
+        "order": 76,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.809,
+              358.678,
+              255.024,
+              365.15
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.248,
+          357.518,
+          244.908,
+          366.114
+        ]
+      },
+      {
+        "id": "c1-day-70",
+        "label": "70",
+        "dayNumber": 70,
+        "tutorial": false,
+        "order": 77,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "structuralResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              248.685,
+              367.41,
+              258.029,
+              370.437
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.313,
+          367.929,
+          244.842,
+          376.525
+        ]
+      },
+      {
+        "id": "c1-day-71",
+        "label": "71",
+        "dayNumber": 71,
+        "tutorial": false,
+        "order": 78,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.632,
+          378.34,
+          243.523,
+          386.936
+        ]
+      },
+      {
+        "id": "c1-day-72",
+        "label": "72",
+        "dayNumber": 72,
+        "tutorial": false,
+        "order": 79,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.989,
+          388.751,
+          244.166,
+          397.347
+        ]
+      },
+      {
+        "id": "c1-day-73",
+        "label": "73",
+        "dayNumber": 73,
+        "tutorial": false,
+        "order": 80,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.655,
+              398.836,
+              258.013,
+              408.211
+            ]
+          },
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              260.686,
+              400.322,
+              264.901,
+              406.794
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.022,
+          399.162,
+          244.133,
+          407.758
+        ]
+      },
+      {
+        "id": "c1-day-74",
+        "label": "74",
+        "dayNumber": 74,
+        "tutorial": false,
+        "order": 81,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.933,
+          409.573,
+          244.222,
+          418.169
+        ]
+      },
+      {
+        "id": "c1-day-75",
+        "label": "75",
+        "dayNumber": 75,
+        "tutorial": false,
+        "order": 82,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.055,
+          419.984,
+          244.1,
+          428.58
+        ]
+      },
+      {
+        "id": "c1-day-76",
+        "label": "76",
+        "dayNumber": 76,
+        "tutorial": false,
+        "order": 83,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.758,
+          430.395,
+          244.396,
+          438.991
+        ]
+      },
+      {
+        "id": "c1-day-77",
+        "label": "77",
+        "dayNumber": 77,
+        "tutorial": false,
+        "order": 84,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battleResearch",
+            "phase": "advancement",
+            "sourceRectPt": [
+              250.809,
+              441.966,
+              255.024,
+              448.438
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          238.104,
+          440.806,
+          244.05,
+          449.402
+        ]
+      },
+      {
+        "id": "c1-day-78",
+        "label": "78",
+        "dayNumber": 78,
+        "tutorial": false,
+        "order": 85,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.841,
+          451.217,
+          244.314,
+          459.813
+        ]
+      },
+      {
+        "id": "c1-day-79",
+        "label": "79",
+        "dayNumber": 79,
+        "tutorial": false,
+        "order": 86,
+        "printedMuted": false,
+        "markers": [
+          {
+            "type": "battle",
+            "phase": "encounter",
+            "sourceRectPt": [
+              248.655,
+              461.301,
+              258.013,
+              470.676
+            ]
+          }
+        ],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.643,
+          461.628,
+          244.512,
+          470.224
+        ]
+      },
+      {
+        "id": "c1-day-80",
+        "label": "80",
+        "dayNumber": 80,
+        "tutorial": false,
+        "order": 87,
+        "printedMuted": false,
+        "markers": [],
+        "events": [],
+        "sourceNumberRectPt": [
+          237.033,
+          472.038,
+          245.122,
+          480.635
+        ]
+      }
+    ],
+    "printedColumnBreakBefore": "41",
+    "endOfTimeline": null
+  },
+  "choiceMatrix": {
+    "rows": [
+      {
+        "id": "A",
+        "group": "main",
+        "sourceCentreYPt": 69.709,
+        "sourceBoxYPt": 62.88
+      },
+      {
+        "id": "B",
+        "group": "main",
+        "sourceCentreYPt": 85.728,
+        "sourceBoxYPt": 78.426
+      },
+      {
+        "id": "C",
+        "group": "main",
+        "sourceCentreYPt": 101.747,
+        "sourceBoxYPt": 95.854
+      },
+      {
+        "id": "D",
+        "group": "main",
+        "sourceCentreYPt": 117.766,
+        "sourceBoxYPt": 110.459
+      },
+      {
+        "id": "E",
+        "group": "main",
+        "sourceCentreYPt": 133.785,
+        "sourceBoxYPt": 127.888
+      },
+      {
+        "id": "F",
+        "group": "main",
+        "sourceCentreYPt": 149.803,
+        "sourceBoxYPt": 142.493
+      },
+      {
+        "id": "G",
+        "group": "main",
+        "sourceCentreYPt": 165.822,
+        "sourceBoxYPt": 159.922
+      },
+      {
+        "id": "H",
+        "group": "main",
+        "sourceCentreYPt": 181.841,
+        "sourceBoxYPt": 174.526
+      },
+      {
+        "id": "I",
+        "group": "main",
+        "sourceCentreYPt": 197.86,
+        "sourceBoxYPt": 191.956
+      },
+      {
+        "id": "J",
+        "group": "main",
+        "sourceCentreYPt": 213.879,
+        "sourceBoxYPt": 206.56
+      },
+      {
+        "id": "K",
+        "group": "main",
+        "sourceCentreYPt": 229.897,
+        "sourceBoxYPt": 223.989
+      },
+      {
+        "id": "L",
+        "group": "main",
+        "sourceCentreYPt": 245.916,
+        "sourceBoxYPt": 238.593
+      },
+      {
+        "id": "M",
+        "group": "main",
+        "sourceCentreYPt": 261.935,
+        "sourceBoxYPt": 256.023
+      },
+      {
+        "id": "N",
+        "group": "main",
+        "sourceCentreYPt": 277.954,
+        "sourceBoxYPt": 270.627
+      },
+      {
+        "id": "O",
+        "group": "main",
+        "sourceCentreYPt": 293.973,
+        "sourceBoxYPt": 288.057
+      },
+      {
+        "id": "P",
+        "group": "main",
+        "sourceCentreYPt": 309.991,
+        "sourceBoxYPt": 302.661
+      },
+      {
+        "id": "Q",
+        "group": "main",
+        "sourceCentreYPt": 326.01,
+        "sourceBoxYPt": 320.091
+      },
+      {
+        "id": "R",
+        "group": "main",
+        "sourceCentreYPt": 342.029,
+        "sourceBoxYPt": 334.695
+      },
+      {
+        "id": "S",
+        "group": "main",
+        "sourceCentreYPt": 358.048,
+        "sourceBoxYPt": 352.124
+      },
+      {
+        "id": "T",
+        "group": "main",
+        "sourceCentreYPt": 374.067,
+        "sourceBoxYPt": 366.728
+      },
+      {
+        "id": "U",
+        "group": "main",
+        "sourceCentreYPt": 390.085,
+        "sourceBoxYPt": 384.157
+      },
+      {
+        "id": "V",
+        "group": "main",
+        "sourceCentreYPt": 406.104,
+        "sourceBoxYPt": 398.762
+      },
+      {
+        "id": "W",
+        "group": "main",
+        "sourceCentreYPt": 422.123,
+        "sourceBoxYPt": 416.191
+      },
+      {
+        "id": "X",
+        "group": "main",
+        "sourceCentreYPt": 438.142,
+        "sourceBoxYPt": 430.796
+      },
+      {
+        "id": "Y",
+        "group": "main",
+        "sourceCentreYPt": 454.161,
+        "sourceBoxYPt": 448.225
+      },
+      {
+        "id": "Z",
+        "group": "main",
+        "sourceCentreYPt": 470.179,
+        "sourceBoxYPt": 463.77
+      },
+      {
+        "id": "Aa",
+        "group": "supplemental",
+        "sourceCentreYPt": 502.442,
+        "sourceBoxYPt": 495.601
+      },
+      {
+        "id": "Bb",
+        "group": "supplemental",
+        "sourceCentreYPt": 518.461,
+        "sourceBoxYPt": 512.089
+      }
+    ],
+    "columns": [
+      {
+        "number": 1,
+        "sourceCentreXPt": 434.343,
+        "sourceBoxXPt": 427.434
+      },
+      {
+        "number": 2,
+        "sourceCentreXPt": 450.358,
+        "sourceBoxXPt": 442.98
+      },
+      {
+        "number": 3,
+        "sourceCentreXPt": 466.377,
+        "sourceBoxXPt": 460.409
+      },
+      {
+        "number": 4,
+        "sourceCentreXPt": 482.393,
+        "sourceBoxXPt": 475.014
+      },
+      {
+        "number": 5,
+        "sourceCentreXPt": 498.411,
+        "sourceBoxXPt": 492.443
+      },
+      {
+        "number": 6,
+        "sourceCentreXPt": 514.43,
+        "sourceBoxXPt": 507.047
+      },
+      {
+        "number": 7,
+        "sourceCentreXPt": 530.449,
+        "sourceBoxXPt": 524.476
+      },
+      {
+        "number": 8,
+        "sourceCentreXPt": 546.468,
+        "sourceBoxXPt": 539.08
+      },
+      {
+        "number": 9,
+        "sourceCentreXPt": 562.487,
+        "sourceBoxXPt": 556.51
+      },
+      {
+        "number": 10,
+        "sourceCentreXPt": 578.505,
+        "sourceBoxXPt": 571.114
+      },
+      {
+        "number": 11,
+        "sourceCentreXPt": 594.521,
+        "sourceBoxXPt": 588.544
+      },
+      {
+        "number": 12,
+        "sourceCentreXPt": 610.537,
+        "sourceBoxXPt": 604.09
+      }
+    ],
+    "sourceCellSizePt": [
+      13.347,
+      13.347
+    ],
+    "cellCount": 336,
+    "cellIdTemplate": "<rowId><columnNumber>",
+    "columnGroups": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        4,
+        5,
+        6
+      ],
+      [
+        7,
+        8,
+        9
+      ],
+      [
+        10,
+        11,
+        12
+      ]
+    ],
+    "persistsAcrossCycles": true,
+    "toggleGesture": "longPress"
+  }
+}

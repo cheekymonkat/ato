@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "sources": {
+    "adventureTables": "Five user-supplied Cycle_*_tracking PDFs in ato_docs/adventures; see each cycle file for SHA-256 and source rectangles.",
+    "coreRules": { "url": "https://drive.google.com/file/d/1vPofVQlG_j_nA3v63YWnU9WsMovJ-uxb/view", "hubPages": [26, 27], "fatedBoxesPage": 32 },
+    "additionalGuidance": "User narrative engine guide supplied 7 October 2026; guidance does not replace printed cards or earlier agreed application behaviour."
+  },
+  "campaignRound": ["Movement", "Timeline", "Exploration", "Expedition", "Encounter", "Advancement", "Story", "Doom", "End"],
+  "adventureTypes": [
+    { "id": "STORY", "trigger": "Printed Story card requirements", "automation": "Existing Story card selectors/counters; paragraph resolution manual" },
+    { "id": "HUB", "trigger": "Expedition on an unexplored Adventure tile", "automation": "Select Story uses the current Story column and printed d10 weights to pick an eligible hub and story; opening/middle/closing gating and campaign progress" },
+    { "id": "RR", "trigger": "Expedition on an unexplored R&R tile", "automation": "Printed d10 entry and replay boxes" },
+    { "id": "INWARD", "trigger": "Argo Knowledge unlocks the matching adventure on the printed Inward Odyssey card", "automation": "Tracked through the existing Argo Knowledge system; no duplicate Adventures tab" },
+    { "id": "BREAKTHROUGH", "trigger": "Printed Mnemos gateway", "automation": "Existing Mnemos unlocks retained; personal paragraph resolution manual" },
+    { "id": "PHAROS", "trigger": "Storybook instruction", "automation": "Dreams of Pharos entries for Cycles I–III; Delve draws manual" },
+    { "id": "SPECIAL", "trigger": "Explicit narrative instruction", "automation": "Printed event boxes and four-digit codes" }
+  ],
+  "hubProgress": { "scope": "campaign", "firstBox": "opening alpha", "middleBoxes": "d10 rolled entry", "lastBox": "closing omega", "completedHub": "re-roll", "terrain": "assign printed terrain to next Timeline Battle", "beginMarksProgress": true, "selectionOnly": "Select Story highlights a choice; checking its next Fated Box records the visit, while opening/ending stories use direct Begin" },
+  "fatedBoxes": { "scope": "workspace across playthroughs", "markWhen": "begin rolled adventure", "boxOrder": "first unmarked box", "exhaustedEntry": "re-roll", "alternatePassage": "string exactly as printed in next box", "completeTable": "reset all boxes immediately", "backup": "included and merged on import" },
+  "secretCodes": { "format": "four-digit string; retain leading zero", "scope": "campaign", "defaultLimit": 1, "explicitPrintedTracks": "use their printed box count; some paragraphs have multi-box tracks" },
+  "partyLeader": { "priorityTarget": true, "breaksDecisionTies": true, "receivesSoloTestsAndPersonalGainsUnlessSpecified": true, "peril": "decide/test without consulting other players", "breakthrough": "only the relevant Argonaut; not a Party Leader adventure", "automation": "reference only; no Party Leader selector on Adventures" },
+  "tests": { "die": "d10", "modifier": "Argonaut skill", "naturalSuccess": 10, "naturalFailure": 1, "argonautRerollResource": "Argonaut Fate", "argoRerollResource": "Argo Fate", "groupOutcomes": "use printed per-test success bands", "automation": "reference only" },
+  "traitMatching": { "atHubStart": "match adventure traits to each Argonaut's standard and Fated Mnemos", "standardAndFatedMayBothGainNode": true, "automation": "manual; adventure traits and complete narrative paragraphs are not present in supplied tracking PDFs" },
+  "pharosDelve": { "deck": "Major Trauma", "success": "total >= printed target and < 16", "bustAt": 16, "automation": "manual" },
+  "futureNarrativeModel": { "paragraphChaining": "physical Storybook references until paragraph/branch data is supplied", "choiceMatrix": "mark/cross/erase nodes per instruction; existing sheet definition retained for later UI", "resolvedSecretCodes": "campaign flags", "doom": "existing printed card targets and carry rules retained; no automatic defeat or story resolution" },
+  "establishedApplicationDecisions": [
+    "Fated Mnemos resolve at 3 nodes and show their blue Growth face; the pasted 4/7-node example is not applied.",
+    "Argo Knowledge remains cumulative across cycles and uses the printed Inward Odyssey card, not a new 0–20 counter.",
+    "Follow printed card timing. Existing card-specific Inward Odyssey timing is not replaced by a generic guide.",
+    "Special event boxes are campaign records; only explicit adventure-table Fated history is shared across campaigns."
+  ]
+}

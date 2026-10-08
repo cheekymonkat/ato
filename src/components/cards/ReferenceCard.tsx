@@ -16,6 +16,8 @@ import { ConditionCard } from './ConditionCard';
 import { conditionEffects, supportsCondition } from '../../domain/conditions';
 import { AbilityState } from './AbilityState';
 import type { PatternKind } from '../../domain/pattern-table';
+import { CatalogueCard, supportsCatalogueCard } from './CatalogueCard';
+import { catalogueCardSize } from './catalogue-layout';
 
 /** Full-height presentations share rich text and the ATCC-style table renderer. */
 export function ReferenceCard({ card, face, exhausted = false, showTables = true, revealable = true, memoryProgress, titanHeaderActions, onSelectTitan, titanName, instance, onAbilityExhausted, titanBackdrop = false, rage, tableValues }: {
@@ -27,7 +29,7 @@ export function ReferenceCard({ card, face, exhausted = false, showTables = true
   const spoilers = useSpoilers();
   return spoilers.hidden(card) ? <SecretCard card={card} compact onReveal={revealable ? () => spoilers.reveal(card.id) : undefined} />
     : <CardColours exhausted={exhausted}><AbilityState instance={instance} face={face} onExhausted={onAbilityExhausted}>{face.kind === 'mnemos' || face.kind === 'fated-mnemos'
-      ? <MemoryCard face={face} progress={memoryProgress} /> : face.family === 'Condition' ? <ConditionCard face={face} /> : <ReferenceFace face={face} showTables={showTables} titanHeaderActions={titanHeaderActions} onSelectTitan={onSelectTitan} titanName={titanName} titanBackdrop={titanBackdrop} rage={rage} tableValues={tableValues} />}</AbilityState></CardColours>;
+      ? <MemoryCard face={face} progress={memoryProgress} /> : face.family === 'Condition' ? <ConditionCard face={face} /> : supportsCatalogueCard(face) ? <CatalogueCard card={card} face={face} width={catalogueCardSize(face, 326.4).width} /> : <ReferenceFace face={face} showTables={showTables} titanHeaderActions={titanHeaderActions} onSelectTitan={onSelectTitan} titanName={titanName} titanBackdrop={titanBackdrop} rage={rage} tableValues={tableValues} />}</AbilityState></CardColours>;
 }
 function ReferenceFace({ face, showTables, titanHeaderActions, onSelectTitan, titanName, titanBackdrop, rage, tableValues }: { face: Exclude<CardFace, { kind: 'mnemos' | 'fated-mnemos' }>; showTables: boolean; titanHeaderActions?: ReactNode; onSelectTitan?: () => void; titanName?: string; titanBackdrop?: boolean; rage?: number; tableValues?: Partial<Record<PatternKind, number>> }) {
   const paint = useCardColours(), data = face.data, colour = paint.colour(cycleColour(face.cycle));

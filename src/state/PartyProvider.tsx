@@ -1,4 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
+import type { AdventureEdit, AdventureReplay } from '../domain/adventures';
 import type { Dispatch, ReactNode } from 'react';
 import { AppState, Modal, StyleSheet, Text, View } from 'react-native';
 import { getCatalogue } from '../catalogue';
@@ -8,7 +9,7 @@ import type { Party } from '../domain/party';
 import { localStorageAdapter } from '../storage/adapter';
 import { errorMessage, SnapshotStore } from '../storage/snapshots';
 import type { LoadResult } from '../storage/snapshots';
-import { acknowledgeCatalogueUpdate, importProfile, newProfile, profileName } from '../storage/workspace';
+import { acknowledgeCatalogueUpdate, editWorkspaceAdventure, importProfile, newProfile, profileName } from '../storage/workspace';
 import type { PartyProfile, Workspace } from '../storage/workspace';
 import { theme } from '../theme/tokens';
 import { partyReducer } from './party-reducer';
@@ -21,7 +22,8 @@ interface PartyContextValue {
   flush: () => Promise<void>; switchProfile: (id: string) => void;
   createProfile: (name: string, cycle: CampaignCycle, inventoryTracking?: boolean) => string; renameProfile: (name: string) => void;
   acknowledgeCatalogue: (profileId: string, expectedVersion: string) => void;
-  addImport: (profile: PartyProfile, name: string) => string;
+  addImport: (profile: PartyProfile, name: string, replay?: AdventureReplay) => string;
+  editAdventure: (owner: { partyId: string; expectedCycle: CampaignCycle }, edit: AdventureEdit) => void;
   previousSnapshot: () => Promise<Workspace | null>; restoreSnapshot: (snapshot: Workspace) => Promise<void>;
   exitPreview: () => void;
 }
@@ -126,11 +128,18 @@ export function PartyProvider({ children }: { children: ReactNode }) {
     const next = acknowledgeCatalogueUpdate(current, profileId, expectedVersion, getCatalogue());
     if (next !== current) update(next);
   }, [update]);
-  const addImport = useCallback((source: PartyProfile, name: string) => {
-    const next = importProfile(workspaceRef.current!, source, uniqueId(), name);
+  const addImport = useCallback((source: PartyProfile, name: string, replay?: AdventureReplay) => {
+    const next = importProfile(workspaceRef.current!, source, uniqueId(), name, replay);
     exitPreview(); update(next);
     return next.profiles.find(profile => profile.id === next.activeProfileId)!.party.activeArgonautId;
   }, [exitPreview, update]);
+  const editAdventure = useCallback((owner: { partyId: string; expectedCycle: CampaignCycle }, edit: AdventureEdit) => {
+    if (previewRef.current) return;
+    const current = workspaceRef.current;
+    if (!current) return;
+    const next = editWorkspaceAdventure(current, owner, edit, getCatalogue());
+    if (next !== current) update(next);
+  }, [update]);
   const restoreSnapshot = useCallback(async (snapshot: Workspace) => {
     if (restoringRef.current) throw new Error('A snapshot restore is already in progress.');
     restoringRef.current = true; setRestoring(true);
@@ -152,7 +161,7 @@ export function PartyProvider({ children }: { children: ReactNode }) {
   if (!workspace) return <View style={styles.gate}><Text style={styles.text}>Loading your party…</Text></View>;
   const profile = workspace.profiles.find(profile => profile.id === workspace.activeProfileId)!;
   const value: PartyContextValue = { party: previewParty || profile.party, dispatch, workspace, profile, saveStatus, saveError, preview: !!previewParty,
-    flush, switchProfile, createProfile, renameProfile, acknowledgeCatalogue, addImport, previousSnapshot: () => store.previous(), restoreSnapshot, exitPreview };
+    flush, switchProfile, createProfile, renameProfile, acknowledgeCatalogue, addImport, editAdventure, previousSnapshot: () => store.previous(), restoreSnapshot, exitPreview };
   return <PartyContext.Provider value={value}>{children}
     <Modal transparent visible={restoring} onRequestClose={() => {}}>
       <View style={styles.restoring}><View style={styles.restorePanel}><Text accessibilityLiveRegion="polite" style={styles.text}>Restoring your save…</Text></View></View>

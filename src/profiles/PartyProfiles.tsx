@@ -93,7 +93,7 @@ export function PartyProfiles() {
       </View>
       <View style={styles.box}><Text accessibilityRole="header" style={styles.heading}>Portable backup</Text>
         <View style={styles.actions}><Button label="Export party JSON" disabled={busy || state.preview} onPress={() => void asyncAct(async () => {
-          const text = exportProfile(state.profile);
+          const text = exportProfile(state.profile, state.workspace.adventureReplay);
           const filename = `ato-${state.profile.name.replace(/[^a-z0-9_-]+/gi, '-').slice(0, 60)}-${Date.now()}.json`;
           await downloadBackup(text, filename); setMessage('Backup handed to your browser or device. Keep the JSON file somewhere safe.');
         })} />
@@ -107,7 +107,7 @@ export function PartyProfiles() {
           <Text style={styles.text}>{pending.profile.party.argonauts.map(member => `${member.name}: ${member.instances.length} cards${member.titan ? ' + Titan' : ''}`).join('\n')}</Text>
           {pending.warnings.map(warning => <Text key={warning} style={styles.text}>{warning}</Text>)}
           <TextInput accessibilityLabel="Imported party name" value={importName} onChangeText={setImportName} maxLength={80} style={styles.input} />
-          <View style={styles.actions}><Button label="Import as new profile" disabled={busy || !importName.trim()} onPress={() => act(() => { state.addImport(pending.profile, importName); goToArgo(); })} />
+          <View style={styles.actions}><Button label="Import as new profile" disabled={busy || !importName.trim()} onPress={() => act(() => { state.addImport(pending.profile, importName, pending.adventureReplay); goToArgo(); })} />
             <Button quiet label="Cancel import" onPress={() => setPending(null)} /></View>
         </View>}
       </View>

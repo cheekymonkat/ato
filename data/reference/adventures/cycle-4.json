@@ -1,0 +1,1659 @@
+{
+  "schemaVersion": 1,
+  "cycle": 4,
+  "source": {
+    "file": "Cycle_4_tracking_v1.pdf",
+    "sha256": "8586037b4f2ba2892d842ac725625bd409ec75b70692d7e4b666a53c53f042c9",
+    "pages": 2,
+    "coordinateSystem": "PDF points, top-left origin"
+  },
+  "hubs": [
+    {
+      "id": "c4-the-salt-road",
+      "title": "The Salt Road",
+      "storybookPage": 55,
+      "entries": [
+        {
+          "id": "c4-the-salt-road-1",
+          "title": "Gilded Fundament",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              333.52,
+              197.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-2",
+          "title": "Right to Life",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              362.41,
+              197.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-3",
+          "title": "Downed",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              392.101,
+              197.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-4",
+          "title": "Deluge of Wishes",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              424.391,
+              197.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-5",
+          "title": "Gatekeepers",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              456.671,
+              197.0,
+              488.951
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-6",
+          "title": "The Wasting",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              488.951,
+              197.0,
+              520.83
+            ]
+          }
+        },
+        {
+          "id": "c4-the-salt-road-7",
+          "title": "Leaded Ceiling",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              520.83,
+              197.0,
+              553.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          315.448,
+          197.0,
+          553.568
+        ]
+      },
+      "trackId": "c4-the-salt-road",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Wishstorm (Inner 3)",
+      "selection": {
+        "1A": [
+          1,
+          4
+        ],
+        "1B": [
+          1,
+          3
+        ],
+        "2A/2B": [
+          1,
+          2
+        ],
+        "3A": null,
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c4-aristotles-promise",
+      "title": "Aristotle’s Promise",
+      "storybookPage": 66,
+      "entries": [
+        {
+          "id": "c4-aristotles-promise-1",
+          "title": "Corrective Justice",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              333.52,
+              394.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-2",
+          "title": "Indivisible",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              362.41,
+              394.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-3",
+          "title": "Eviction",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              392.101,
+              394.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-4",
+          "title": "A Fork in the Road",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              424.391,
+              394.0,
+              457.031
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-5",
+          "title": "The Babylonian Conquest",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              457.031,
+              394.0,
+              490.031
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-6",
+          "title": "Numbers Game",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              490.031,
+              394.0,
+              522.27
+            ]
+          }
+        },
+        {
+          "id": "c4-aristotles-promise-7",
+          "title": "Distributive Injustice",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              522.27,
+              394.0,
+              555.008
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          313.31,
+          394.0,
+          555.008
+        ]
+      },
+      "trackId": "c4-aristotles-promise",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Irem City (Inner 3)",
+      "selection": {
+        "1A": [
+          5,
+          7
+        ],
+        "1B": [
+          4,
+          6
+        ],
+        "2A/2B": [
+          3,
+          4
+        ],
+        "3A": [
+          1,
+          1
+        ],
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c4-windfall",
+      "title": "Windfall",
+      "storybookPage": 77,
+      "entries": [
+        {
+          "id": "c4-windfall-1",
+          "title": "Headwind",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              333.52,
+              580.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-2",
+          "title": "Inviable Salvation",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              362.41,
+              580.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-3",
+          "title": "Stealing the Wind",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              392.101,
+              580.0,
+              424.751
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-4",
+          "title": "Whence the Wind Blows",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              424.751,
+              580.0,
+              457.751
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-5",
+          "title": "Tragedy of Kath",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              457.751,
+              580.0,
+              490.751
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-6",
+          "title": "The Fairness Instinct",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              490.751,
+              580.0,
+              523.41
+            ]
+          }
+        },
+        {
+          "id": "c4-windfall-7",
+          "title": "The Wind Changes",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              523.41,
+              580.0,
+              556.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          315.448,
+          580.0,
+          556.568
+        ]
+      },
+      "trackId": "c4-windfall",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Windblighted Fleet (Inner 3)",
+      "selection": {
+        "1A": [
+          8,
+          10
+        ],
+        "1B": [
+          7,
+          8
+        ],
+        "2A/2B": [
+          5,
+          6
+        ],
+        "3A": [
+          2,
+          2
+        ],
+        "3B": null,
+        "4A/4B": null
+      }
+    },
+    {
+      "id": "c4-equality-for-all",
+      "title": "Equality for All",
+      "storybookPage": 88,
+      "entries": [
+        {
+          "id": "c4-equality-for-all-1",
+          "title": "The Golden Mean",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              591.09,
+              197.0,
+              621.42
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-2",
+          "title": "Ungraspable Immensity",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              621.42,
+              197.0,
+              651.882
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-3",
+          "title": "Scales",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              651.882,
+              197.0,
+              684.941
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-4",
+          "title": "The Song of Seisachtheia",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              684.941,
+              197.0,
+              718.012
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-5",
+          "title": "Sky Lantern",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              718.012,
+              197.0,
+              750.721
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-6",
+          "title": "Salvific Measures",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              750.721,
+              197.0,
+              782.66
+            ]
+          }
+        },
+        {
+          "id": "c4-equality-for-all-7",
+          "title": "Zero Praxis",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              782.66,
+              197.0,
+              815.458
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          575.05,
+          197.0,
+          815.458
+        ]
+      },
+      "trackId": "c4-equality-for-all",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Ambrosia Cloud (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": [
+          9,
+          10
+        ],
+        "2A/2B": [
+          7,
+          8
+        ],
+        "3A": [
+          3,
+          4
+        ],
+        "3B": [
+          1,
+          2
+        ],
+        "4A/4B": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "c4-beyond-the-law-of-bargains",
+      "title": "Beyond the Law of Bargains",
+      "storybookPage": 102,
+      "entries": [
+        {
+          "id": "c4-beyond-the-law-of-bargains-1",
+          "title": "The Siege of Babylon",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              589.74,
+              394.0,
+              621.06
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-2",
+          "title": "The Grand Exchange",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              621.06,
+              394.0,
+              650.801
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-3",
+          "title": "Moonflowers",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              650.801,
+              394.0,
+              683.142
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-4",
+          "title": "The Push and Pull",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              683.142,
+              394.0,
+              715.492
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-5",
+          "title": "Towers of Silence",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              715.492,
+              394.0,
+              747.841
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-6",
+          "title": "Invaluable Nothings",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              747.841,
+              394.0,
+              779.78
+            ]
+          }
+        },
+        {
+          "id": "c4-beyond-the-law-of-bargains-7",
+          "title": "The Code of Kroisos",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              779.78,
+              394.0,
+              812.578
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          575.74,
+          394.0,
+          812.578
+        ]
+      },
+      "trackId": "c4-beyond-the-law-of-bargains",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Irem City (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": [
+          9,
+          10
+        ],
+        "3A": [
+          5,
+          7
+        ],
+        "3B": [
+          3,
+          4
+        ],
+        "4A/4B": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "id": "c4-a-land-thrice-cursed",
+      "title": "A Land Thrice-Cursed",
+      "storybookPage": 114,
+      "entries": [
+        {
+          "id": "c4-a-land-thrice-cursed-1",
+          "title": "A Way Out",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              591.09,
+              580.0,
+              621.06
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-2",
+          "title": "In Too Deep",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              621.06,
+              580.0,
+              650.801
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-3",
+          "title": "Waste Not",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              650.801,
+              580.0,
+              683.142
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-4",
+          "title": "Against the Wall",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              683.142,
+              580.0,
+              715.852
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-5",
+          "title": "The Weight of Obligations",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              715.852,
+              580.0,
+              748.921
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-6",
+          "title": "Ridge of Wishes",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              748.921,
+              580.0,
+              781.22
+            ]
+          }
+        },
+        {
+          "id": "c4-a-land-thrice-cursed-7",
+          "title": "The Insider",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              781.22,
+              580.0,
+              814.018
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          575.05,
+          580.0,
+          814.018
+        ]
+      },
+      "trackId": "c4-a-land-thrice-cursed",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Wishstorm (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": null,
+        "3A": [
+          8,
+          10
+        ],
+        "3B": [
+          5,
+          7
+        ],
+        "4A/4B": [
+          4,
+          6
+        ]
+      }
+    },
+    {
+      "id": "c4-the-crescent-and-the-full-moon",
+      "title": "The Crescent and the Full Moon",
+      "storybookPage": 125,
+      "entries": [
+        {
+          "id": "c4-the-crescent-and-the-full-moon-1",
+          "title": "The Hand You Were Dealt",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              58.37,
+              197.0,
+              90.94
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-2",
+          "title": "The Sea Recedes",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              90.94,
+              197.0,
+              120.321
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-3",
+          "title": "Infinite Rope",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              120.321,
+              197.0,
+              152.721
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-4",
+          "title": "Moon in the Palm of Their Hand",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              152.721,
+              197.0,
+              185.721
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-5",
+          "title": "Cicadas Go Silent",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              185.721,
+              197.0,
+              218.316
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-6",
+          "title": "No More Tales",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              218.316,
+              197.0,
+              250.03
+            ]
+          }
+        },
+        {
+          "id": "c4-the-crescent-and-the-full-moon-7",
+          "title": "We Are Forever",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              250.03,
+              197.0,
+              282.708
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          46.34,
+          197.0,
+          282.708
+        ]
+      },
+      "trackId": "c4-the-crescent-and-the-full-moon",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Windblighted Fleet (Inner 3)",
+      "selection": {
+        "1A": null,
+        "1B": null,
+        "2A/2B": null,
+        "3A": null,
+        "3B": [
+          8,
+          10
+        ],
+        "4A/4B": [
+          7,
+          10
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "kind": "rr",
+      "id": "c4-r-r-adventures",
+      "title": "R&R Adventures",
+      "storybookPage": 139,
+      "entries": [
+        {
+          "id": "c4-r-r-adventures-1",
+          "title": "Old Priest’s Big Break",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              337.36,
+              268.0,
+              370.611
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-2",
+          "title": "The Nubian Prince",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              370.611,
+              268.0,
+              402.781
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-3",
+          "title": "Bargo",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              402.781,
+              268.0,
+              435.071
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-4",
+          "title": "An Argonaut’s Best Friend",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {},
+            {
+              "passage": "44"
+            }
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              435.071,
+              268.0,
+              467.711
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-5",
+          "title": "We’ve Got Ourselves a Mystery",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              467.711,
+              268.0,
+              501.131
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-6",
+          "title": "Tales of the Thrice-Cursed Land",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              501.131,
+              268.0,
+              534.547
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-7",
+          "title": "Centimanes Spiders",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              534.547,
+              268.0,
+              567.082
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-8",
+          "title": "Diaries of the Old Priest",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              567.082,
+              268.0,
+              599.561
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-9",
+          "title": "Beware of Greeks Bearing Gift Returns",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              599.561,
+              268.0,
+              632.382
+            ]
+          }
+        },
+        {
+          "id": "c4-r-r-adventures-10",
+          "title": "One Thousand in One Night",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              632.382,
+              268.0,
+              665.762
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          319.288,
+          268.0,
+          665.762
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "c4-barren-aeons",
+      "title": "Barren Aeons",
+      "kind": "special",
+      "boxCount": 4,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          42.24,
+          707.992,
+          128.781,
+          722.056
+        ]
+      }
+    },
+    {
+      "id": "c4-son-of-dusk",
+      "title": "Son of Dusk",
+      "kind": "special",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          340.99,
+          707.992,
+          417.911,
+          722.056
+        ]
+      }
+    },
+    {
+      "id": "c4-shortages",
+      "title": "Shortages",
+      "kind": "special",
+      "boxCount": 8,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          53.16,
+          740.31,
+          117.851,
+          754.35
+        ]
+      }
+    },
+    {
+      "id": "c4-code-0080",
+      "title": "0080",
+      "code": "0080",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          280.61,
+          346.46,
+          312.08,
+          362.003
+        ]
+      }
+    }
+  ],
+  "inwardOdyssey": {
+    "boxCount": 20,
+    "storyTitlesSource": "catalogue Inward Odyssey card"
+  },
+  "unlistedSheetTracks": [
+    {
+      "id": "c4-ten-thousand-nights-and-days",
+      "title": "Ten Thousand Nights and Days",
+      "boxCount": 10,
+      "labels": [
+        "α",
+        "β",
+        "γ",
+        "δ",
+        "ε",
+        "λ",
+        "ο",
+        "σ",
+        "ψ",
+        "Ω"
+      ]
+    }
+  ]
+}

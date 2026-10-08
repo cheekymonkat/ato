@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "sourceDirectory": "../ato_docs/sheets",
+  "rulebook": {
+    "url": "https://drive.google.com/file/d/1vPofVQlG_j_nA3v63YWnU9WsMovJ-uxb/view",
+    "printedPages": { "timeline": [14, 15], "resources": [19], "choiceMatrix": [25, 26], "adventureTracks": [26] }
+  },
+  "greekBoxLabels": ["α", "β", "γ", "δ", "ε", "λ", "ο", "σ", "ψ", "Ω"],
+  "cycles": [
+    {
+      "cycle": 1,
+      "title": "Truth of the Labyrinth",
+      "adventures": [
+        ["Fated Conundrum", 5], ["Plight of the People", 5], ["Hidden in Plain Sight", 5],
+        ["Man of Purpose", 5], ["Uneasy Rests the Head", 4], ["Tears of a Minotaur", 4],
+        ["Dreams Laid Bare", 5], ["Tutorial", 3]
+      ],
+      "mortal": ["Trireme", "Monument", "Armament"],
+      "primordial": ["Muscle Cluster", "Calcified Knuckle Bone", "Infused Mechanism", "Fleshy Mantle", "Fear Essence", "Maze Fragment", "Grotesque Beak", "Powdered Matter", "Raw Ambrosia"],
+      "divine": ["Priests", "Sisyphus Tears"],
+      "rareHold": "hidden",
+      "timeline": {
+        "lastDay": 80, "secondColumnStartsAt": 41, "dayNumberX": [[40, 53], [236, 243]],
+        "tutorial": true,
+        "events": [{ "day": "06", "title": "Cackle Special Event" }],
+        "acclimation": [
+          { "day": "18", "text": "Acclimation 1: 4, 5, 6, 8, 19 → 10, 11, 12, 14, 22" },
+          { "day": "36", "text": "Acclimation 2: 3, 7, 9, 13, 23 → 15, 16, 17, 18, 27" },
+          { "day": "54", "text": "Acclimation 3: 1, 2, 12, 14, 22 → 20, 21, 24, 25, 26" }
+        ]
+      },
+      "matrixExtraRows": ["Aa", "Bb"],
+      "hiddenTracks": []
+    },
+    {
+      "cycle": 2,
+      "title": "Abysswatchers",
+      "adventures": [
+        ["Consider the Ant", 4], ["The Other Thermopylae", 4], ["From the Ashes", 4],
+        ["Intended Purpose", 4], ["Misery Industry", 4], ["Parable of the Butterfly", 4],
+        ["Truth to Weakness", 4], ["When the Land Meets the Sea", 4]
+      ],
+      "mortal": ["War Trireme", "Relief", "War Machine"],
+      "primordial": ["Fear Essence", "Maze Fragment", "Cyclopean Metal", "Black Chain", "Chimeric Tar", "Supersolid Relief Mass", "Living Abyss", "Skin of Malice", "Grotesque Beak", "Powdered Matter", "Retractable Mechanism", "Reliefshell Fragment", "Violent Ambrosia"],
+      "divine": ["Priests", "Sisyphus Tears", "Pygmalion Stones"],
+      "rareHold": "hidden",
+      "timeline": {
+        "lastDay": 80, "secondColumnStartsAt": 47, "dayNumberX": [[57, 64], [248, 255]],
+        "events": [{ "day": "06", "title": "Relentless Adversary Special Event" }],
+        "acclimation": [
+          { "day": "18", "text": "Acclimation 1: 7, 4, 8, 23, 6, 19 → 14, 29, 30, 11, 12, 22" },
+          { "day": "36", "text": "Acclimation 2: 13, 1, 3, 9, 5 → 28, 10, 16, 27, 15" },
+          { "day": "54", "text": "Acclimation 3: 14, 29, 12, 22, 2 → 20, 17, 18, 26, 21" }
+        ]
+      },
+      "matrixExtraRows": ["Aa", "Bb"],
+      "hiddenTracks": [{ "title": "Pygmalion Track", "resource": "Pygmalion Stones", "rows": 5, "columns": 6, "rewardEvery": 3 }]
+    },
+    {
+      "cycle": 3,
+      "title": "Pitiless of the Sun",
+      "adventures": [
+        ["Road Less Traveled", 5], ["Children of the Sun", 5], ["What We Left Behind", 5],
+        ["Of Wax and Promises", 4], ["Can't Go Back", 4], ["Sin of the Fathers", 4],
+        ["Coming of Age", 5]
+      ],
+      "mortal": ["Sirenshell", "Hyperborean Alloy", "Daedalus Makina"],
+      "primordial": ["Living Abyss", "Skin of Malice", "Clothflesh", "Eyes Cluster", "Razorclaw", "Icarian Feather", "Writhing Tentacle", "Sunburned Skull", "Grotesque Beak", "Powdered Matter", "Retractable Mechanism", "Reliefshell Fragment", "Frozen Ambrosia"],
+      "divine": ["Priests", "Echoes of Recollection", "Sisyphus Tears", "Pygmalion Stones"],
+      "rareHold": "main",
+      "timeline": {
+        "lastDay": 90, "secondColumnStartsAt": 47, "dayNumberX": [[62, 69], [251, 258]],
+        "events": [
+          { "day": "01", "title": "Vicious Circle", "storyReference": "0040", "printedText": "Vicious Circle (see 0040)" },
+          { "day": "10", "title": "Relentless Adversary Special Event" }
+        ],
+        "acclimation": [
+          { "day": "19", "text": "Acclimation 1: 1, 23, 13, 8, 19, 6 → 14, 10, 15, 11, 12, 16" },
+          { "day": "37", "text": "Acclimation 2: 7, 4, 9, 3, 5 → 20, 17, 18, 22, 21" },
+          { "day": "55", "text": "Acclimation 3: 14, 10, 12, 16, 2 → 24, 27, 26, 28, 25" }
+        ]
+      },
+      "matrixExtraRows": ["Aa", "Bb"],
+      "hiddenTracks": [{ "title": "Pygmalion Track", "resource": "Pygmalion Stones", "rows": 1, "columns": 6, "rewardEvery": 3 }]
+    },
+    {
+      "cycle": 4,
+      "title": "Gardens of Infinite Growth",
+      "adventures": [
+        ["The Salt Road", 5], ["Aristotle's Promise", 5], ["Windfall", 5],
+        ["Equality for All", 5], ["Beyond the Law of Bargains", 5], ["A Land Thrice-Cursed", 4],
+        ["The Crescent and the Full Moon", 4], ["Ten Thousand Nights and Days", 10]
+      ],
+      "mortal": ["Cursed Derelict", "Imperial Scroll", "Babylonian Contraption"],
+      "primordial": ["Blackened Halo", "Burned-out Grace", "Cursed Bloatsack", "Living Gold", "Wish Embryo", "Old Irem Fragment", "Black-tainted Stepfinger", "Promised Future's Carcass", "Onyx Dust", "Ire Essence", "Mutable Ambrosia"],
+      "divine": ["Priests", "Echoes of Recollection", "Sisyphus Tears", "Pygmalion Stones"],
+      "rareHold": "main",
+      "timeline": {
+        "lastDay": 96, "secondColumnStartsAt": 48, "dayNumberX": [[45, 51], [236, 243]],
+        "events": [
+          { "day": "06", "title": "Broken Circle Special Event" },
+          { "day": "36", "title": "Barren Aeons Special Event", "conditionText": "If Story card 1", "outcomeText": "you lose", "printedText": "If Story card 1: Barren Aeons Special Event (you lose)" },
+          { "day": "45", "title": "Second Bid Special Event" }
+        ],
+        "acclimation": [
+          { "day": "18", "text": "Acclimation 1: 4, 8, 1, 35, 6, 19, 37 → 10, 13, 14, 11, 12, 7", "printedLockIcon": true },
+          { "day": "36", "text": "Acclimation 2: 34, 23, 3, 9, 5 → 17, 20, 16, 18, 15" },
+          { "day": "54", "text": "Acclimation 3: 10, 13, 12, 7, 2 → 21, 24, 26, 22, 25" }
+        ],
+        "mutedDays": ["96"]
+      },
+      "matrixExtraRows": ["Aa", "Bb", "Cc", "Dd", "Ee", "Ff"],
+      "hiddenTracks": [
+        { "title": "Pygmalion Track", "resource": "Pygmalion Stones", "rows": 1, "columns": 6, "rewardEvery": 3 },
+        { "title": "Echo of Recollection Track", "resource": "Echoes of Recollection", "rows": 1, "columns": 6, "rewardEvery": 3 }
+      ]
+    },
+    {
+      "cycle": 5,
+      "title": "Truthsayer",
+      "adventures": [
+        ["Pieces and Wholes", 4], ["Death Before Dishonor", 5], ["The One You Don't", 5],
+        ["The Greater Good", 5], ["Whatever the Cost", 4], ["The Flesh Is Weak", 4],
+        ["Half-lives of Truths", 4], ["Sermons on the Shoals", 10]
+      ],
+      "mortal": ["Atlantean Tekne", "Orichalcum Chunk", "Liquid Aether"],
+      "primordial": ["Promised Futures Carcass", "Black-tainted Stepfinger", "Hydradynamic Scales", "Amygdalan Extract", "Photophobic Flesh", "Microwave Cell", "Black Wool Strand", "Fading Light Construct", "Orichalcum Alloy", "Slave Metal", "Oxidized Ambrosia"],
+      "divine": ["Priests", "Echoes of Recollection", "Sisyphus Tears", "Pygmalion Stones"],
+      "rareHold": "main",
+      "timeline": {
+        "lastDay": 80, "secondColumnStartsAt": 47, "dayNumberX": [[45, 51], [236, 243]],
+        "events": [{ "day": "06", "title": "Painful Awakening Special Event" }],
+        "acclimation": [
+          { "day": "18", "text": "Acclimation 1: 4, 8, 1, 35, 6, 19 → 10, 13, 14, 11, 12, 7" },
+          { "day": "36", "text": "Acclimation 2: 34, 23, 3, 9, 5 → 17, 20, 16, 18, 15" },
+          { "day": "54", "text": "Acclimation 3: 10, 13, 12, 7, 2 → 21, 24, 26, 22, 25" }
+        ],
+        "endOfTimeline": { "text": "At the start of the Timeline Step, if there are no empty boxes to mark on the Timeline, see 3749.", "storyReference": "3749" }
+      },
+      "matrixExtraRows": ["Aa", "Bb", "Cc", "Dd", "Ee", "Ff"],
+      "hiddenTracks": [
+        { "title": "Pygmalion Track", "resource": "Pygmalion Stones", "rows": 1, "columns": 6, "rewardEvery": 3 },
+        { "title": "Echo of Recollection Track", "resource": "Echoes of Recollection", "rows": 1, "columns": 6, "rewardEvery": 3 }
+      ]
+    }
+  ]
+}

@@ -66,6 +66,16 @@
       "sha256": "7fd2ff241413a433575c55ce58c9045e614e0e930833c5710a1c9d630f5f43bf"
     },
     {
+      "name": "ChariotA",
+      "file": "images/ChariotA.svg",
+      "sha256": "e5d9ed7b9f842a02c43cdf0456e797ebfb64f5a037a9670ada43ae3d0de2a717"
+    },
+    {
+      "name": "ChariotB",
+      "file": "images/ChariotB.svg",
+      "sha256": "2e05ba2544e7cdeff89fd588f72ff78b8aa9fb32e79a09ac28d657b2f6000a35"
+    },
+    {
       "name": "City",
       "file": "images/City.svg",
       "sha256": "97e059bc6e2d207bf15f11dd4a7be1ec2e0bd2d5eaadcbd877f368526fafcf61"
@@ -91,9 +101,19 @@
       "sha256": "d3f70e1b5c48fc21722434751a2a24fb55393c5190995c383212cc77ef5a4263"
     },
     {
+      "name": "ContinueStack",
+      "file": "card-design/assets/ContinueStack.svg",
+      "sha256": "3ee776df2a56689eac688b7d81333ddba532b455d2785dbca253acbffd60b0ae"
+    },
+    {
       "name": "Crew",
       "file": "images/Crew.svg",
       "sha256": "46283229c752d0a72c9f59ba1dacd45c3e3de4033948bd66896c505fd4a3d924"
+    },
+    {
+      "name": "Cyclopes",
+      "file": "images/Cyclopes.svg",
+      "sha256": "90bb4f814f4a565beca6c34a09f13df331ee6a3e83c40b64a9df2379e3b6a89f"
     },
     {
       "name": "DaedalusWorkshop",
@@ -104,6 +124,11 @@
       "name": "Danger",
       "file": "card-design/assets/Danger.svg",
       "sha256": "d397788012fc6a6ae1ee99c55f7fcf3fe855421b0e5a453c3c352f35fcdac50e"
+    },
+    {
+      "name": "Defector",
+      "file": "images/Defector.svg",
+      "sha256": "5696d17b1d21d2d7c75a237379e4348f2bab9078eea68f971cbb4365a058d7cb"
     },
     {
       "name": "Despair",
@@ -119,6 +144,11 @@
       "name": "Doom",
       "file": "images/Doom.svg",
       "sha256": "b6480f79369f8f7513d69a2bb20c16eb8c972808cf66689788beac7d2130b720"
+    },
+    {
+      "name": "EndStack",
+      "file": "images/EndStack.svg",
+      "sha256": "c8d7a38963abef6a89ddb82d4e7496c83445d9ba6ba9b50faec1da8e47104b83"
     },
     {
       "name": "Energy",
@@ -151,6 +181,11 @@
       "sha256": "3bdd6571de7f560d1c0a4e56eda86e7675934e20683fa7d4dbd5ed74e8e41bc1"
     },
     {
+      "name": "FirstCataract",
+      "file": "images/FirstCataract.svg",
+      "sha256": "72863d6a359ea5a3a421b4543767acb33fdc4ae95cf99b8fa1ffebcf67a0c9fa"
+    },
+    {
       "name": "FuturePortal",
       "file": "images/FuturePortal.svg",
       "sha256": "bbec637d902cbcb1ea56b7dc6a40020720ce17e2990adba79783c2322a1b27bd"
@@ -164,6 +199,11 @@
       "name": "Gear",
       "file": "card-design/assets/Gear.svg",
       "sha256": "ce28050965081bc6e32cb8d3a0c01a895355bdc0d5d43b701a619e6065af0234"
+    },
+    {
+      "name": "Grave",
+      "file": "images/Grave.svg",
+      "sha256": "3b297255c5b70a15f0207e151d92652410663213ef36788dcb6ffd805d1a7c57"
     },
     {
       "name": "Hull",
@@ -201,6 +241,11 @@
       "sha256": "9454654be3bd2c95543b3cdc253ac505feab2640bdd24112c120a4aa6f040e59"
     },
     {
+      "name": "Major",
+      "file": "images/Major.svg",
+      "sha256": "63b07ddb7bfb54c4f6174ba2cfe787a340ba3fd04b4be75b349e96587437242b"
+    },
+    {
       "name": "MicrowaveResistance",
       "file": "images/MicrowaveResistance.svg",
       "sha256": "8c44ff85ed1791c32fea0e1c8a130cb562f6d830da3908467c218fe31ec0d966"
@@ -209,6 +254,11 @@
       "name": "Midas",
       "file": "images/Midas.svg",
       "sha256": "c08775fc868ea9d35311aa32b6b0a301ed5b44489bff243801b7b8ce5261e9a5"
+    },
+    {
+      "name": "Minor",
+      "file": "images/Minor.svg",
+      "sha256": "2f1e722f7f353eeca824d28e7a044c3a87be32812c6551a7f7e166ee407299f5"
     },
     {
       "name": "MortalArmorDie",
@@ -351,6 +401,11 @@
       "sha256": "7ef7945a807398c33a06e73fa2d65a00d320b11161bd40deb6593702e29a0f97"
     },
     {
+      "name": "SpartanStronghold",
+      "file": "images/SpartanStronghold.svg",
+      "sha256": "eb25baa1b3c1540caadd49364ea6ee9ae9b8bc477d95fb140235a63239c9f855"
+    },
+    {
       "name": "Speed",
       "file": "images/Speed.svg",
       "sha256": "4b400c4fb33f950274b0d11794ac7ff3fa159385420247101a077cc99eea1e2e"
@@ -366,9 +421,24 @@
       "sha256": "6d8d982d03673dd0feff32fdb1460152af857a2268c85b3233fe88ff539eb85b"
     },
     {
+      "name": "SummonCharge",
+      "file": "images/SummonCharge.svg",
+      "sha256": "4edb299fe790b331da3772e175b56d49ce392ef576d2d74c33ffe3b69b6332d5"
+    },
+    {
+      "name": "Sunheirs",
+      "file": "images/Sunheirs.svg",
+      "sha256": "85f8952ccc394f9bb270f822b7e013dc0bf26f8e70623e84dd309bd4b1c58896"
+    },
+    {
       "name": "Support",
       "file": "images/Support.svg",
       "sha256": "8034ed64a2ec84b6efd19f6cf02d1067538d6afaf8e0da6080a48d5bf7c80a3e"
+    },
+    {
+      "name": "Symmachy",
+      "file": "images/Symmachy.svg",
+      "sha256": "8ea4d88a2aac8d38d38f92119159544bf530990e09e961ec7faffe4391afdf41"
     },
     {
       "name": "ThreeHanded",
@@ -381,6 +451,41 @@
       "sha256": "c4b13423dcdb5a806c58cf0b83d694c222a680e9ca94ab127e3af0e390f6b904"
     },
     {
+      "name": "Tile_1x1",
+      "file": "images/Tile_1x1.svg",
+      "sha256": "f26abaa3afb9de33042f4a90d8f9d3e5b765554d380f35bb089eedcd402d8d5d"
+    },
+    {
+      "name": "Tile_1x4",
+      "file": "images/Tile_1x4.svg",
+      "sha256": "9da86cf58684fe834ef4ad0b4362be679f38894c12d4f102d99ca91e0aadb1ea"
+    },
+    {
+      "name": "Tile_1x5",
+      "file": "images/Tile_1x5.svg",
+      "sha256": "16c151c4f480d58b719a25e95dbe9030c9854b642c19e730f5e613ddc7d8c516"
+    },
+    {
+      "name": "Tile_2x2",
+      "file": "images/Tile_2x2.svg",
+      "sha256": "3ac66a0c61c84d3e86174a3bf1022737809d8bae234ee0203cb40b1551e806c3"
+    },
+    {
+      "name": "Tile_3x3",
+      "file": "images/Tile_3x3.svg",
+      "sha256": "87c39d348ae886a56da67f8a365995533e321fa84536c696cff9cc81d0055665"
+    },
+    {
+      "name": "Tile_L",
+      "file": "images/Tile_L.svg",
+      "sha256": "0989498b456a2940c368a34927034bd10639d662cc75b0d1467283fd204298a7"
+    },
+    {
+      "name": "Tile_Z",
+      "file": "images/Tile_Z.svg",
+      "sha256": "94508c577e715ef4603567ea89408a794d2f0f7886d94348e23c2f59c315cdb3"
+    },
+    {
       "name": "TimeWound",
       "file": "images/TimeWound.svg",
       "sha256": "44e6731dc13819328bfb89e144394808272df3df7303d3c67a501f5cad20e7e3"
@@ -389,6 +494,11 @@
       "name": "Titan",
       "file": "images/Titan.svg",
       "sha256": "411eb51cb1dacbb7b61351d95b660084450b5c965b856a4edafa1b8d85d0ae46"
+    },
+    {
+      "name": "Trespass",
+      "file": "images/Trespass.svg",
+      "sha256": "dfc741c6cce4d7efafeec8ade6baac3de42af19abc70b8076594a6d11086a972"
     },
     {
       "name": "TwoHanded",
@@ -404,6 +514,11 @@
       "name": "UnderwaterCave",
       "file": "images/UnderwaterCave.svg",
       "sha256": "1e27f3742598d322dbd6caa84027152fba095ba6cf2492e7b52f3fa20be00c51"
+    },
+    {
+      "name": "Weakspot",
+      "file": "images/Weakspot.svg",
+      "sha256": "4b1e139ba529de98a8dc2b0d9ece00a183bf2e126b6ed6dba1103d5a48718d05"
     },
     {
       "name": "WhiteArmorDie",
@@ -433,21 +548,37 @@
   ],
   "missing": [
     "Advserary",
+    "Align with Nemesis",
+    "Aligned with Nemesis",
+    "Allied",
+    "At War",
     "CentimanesOne",
+    "CloudTheives",
+    "Cyclopes Allied",
+    "Denonuced-",
+    "Denounced",
+    "Denounced-",
     "Dot",
+    "FragmentedCircle",
+    "Friendly",
     "Friendly or Allied",
+    "Friendly+",
     "GoldWoO",
+    "Helot",
     "Hidden or Distrustful",
     "Laser",
     "Microwave",
+    "Neutral",
     "Oasis",
     "Paranoia",
     "PriortyTarget",
     "Red",
     "Reroll",
     "SilverRemnant",
+    "SummoningCharge",
     "Sun",
     "ThumbsUp",
-    "UnderwaterCity"
+    "UnderwaterCity",
+    "Unfriendly"
   ]
 }

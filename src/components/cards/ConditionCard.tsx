@@ -4,21 +4,23 @@ import { displayValue } from '../../domain/card-presentation';
 import { conditionSections } from '../../domain/conditions';
 import { useCardColours } from './CardColours';
 import { RichParagraph } from './RichParagraph';
+import type { TextActions } from './RichParagraph';
+import { catalogueCardSize } from './catalogue-layout';
 
 const ochre = '#A86710';
 /** White Condition cards with ochre headings, grey abilities and a separate aftermath. */
-export function ConditionCard({ face }: { face: CardFace }) {
+export function ConditionCard({ face, width, ...actions }: TextActions & { face: CardFace; width?: number }) {
   const paint = useCardColours(), sections = conditionSections(face), colour = paint.colour(ochre);
-  return <View testID={`condition-card-${face.id}`} style={[styles.card, { backgroundColor: paint.colour('#FFFFFF'), borderColor: paint.colour('#D4D4D4') }]}>
+  return <View testID={`condition-card-${face.id}`} style={[styles.card, { backgroundColor: paint.colour('#FFFFFF'), borderColor: paint.colour('#D4D4D4') }, width !== undefined && { width, maxWidth: '100%', minHeight: catalogueCardSize(face, width).minHeight }]}>
     <View style={styles.body}>
       <Text accessibilityRole="header" style={[styles.title, { color: colour }]}>{face.name.toUpperCase()}</Text>
       {Boolean(face.data.subtitle) && <Text style={[styles.subtitle, { color: colour }]}>({displayValue(face.data.subtitle).toUpperCase()})</Text>}
-      <View style={styles.effect}><RichParagraph paragraph={sections.effect} inlineGates size={13} /></View>
+      <View style={styles.effect}><RichParagraph paragraph={sections.effect} inlineGates size={13} {...actions} /></View>
       {sections.abilities.map((ability, index) => <View key={index} style={styles.ability}>
         <View style={styles.headingRow}><Text style={[styles.abilityTitle, { backgroundColor: colour, color: paint.colour('#FFFFFF') }]}>{displayValue(ability.title)}</Text></View>
-        <View style={[styles.abilityEffect, { backgroundColor: paint.colour('#D4D4D4') }]}><RichParagraph paragraph={ability.effects} inlineGates size={13} /></View>
+        <View style={[styles.abilityEffect, { backgroundColor: paint.colour('#D4D4D4') }]}><RichParagraph paragraph={ability.effects} inlineGates size={13} {...actions} /></View>
       </View>)}
-      {Boolean(sections.endOfBattle) && <View style={styles.aftermath}><RichParagraph paragraph={sections.aftermath} inlineGates size={13} /></View>}
+      {Boolean(sections.endOfBattle) && <View style={styles.aftermath}><RichParagraph paragraph={sections.aftermath} inlineGates size={13} {...actions} /></View>}
     </View>
     <View style={[styles.footer, { backgroundColor: colour }]}><Text style={[styles.ids, { color: paint.colour('#FFFFFF') }]}>ID(s): {face.printedIds.join(', ') || 'Not supplied'}</Text></View>
   </View>;

@@ -1,0 +1,2703 @@
+{
+  "schemaVersion": 1,
+  "resources": [
+    {
+      "id": "trireme",
+      "name": "Trireme",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Trireme",
+      "iconPath": "assets/resource-icons/Trireme.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Trireme",
+          "labelRectPt": [
+            476.561,
+            360.065,
+            496.715,
+            367.945
+          ],
+          "iconRectPt": [
+            451.372,
+            358.54,
+            468.269,
+            369.615
+          ],
+          "vectorPathCount": 5
+        }
+      ]
+    },
+    {
+      "id": "monument",
+      "name": "Monument",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Monument",
+      "iconPath": "assets/resource-icons/Monument.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Monument",
+          "labelRectPt": [
+            471.198,
+            401.523,
+            500.627,
+            409.404
+          ],
+          "iconRectPt": [
+            453.475,
+            397.23,
+            465.881,
+            413.842
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "armament",
+      "name": "Armament",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Armament",
+      "iconPath": "assets/resource-icons/Armament.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Armament",
+          "labelRectPt": [
+            472.315,
+            441.104,
+            499.508,
+            448.984
+          ],
+          "iconRectPt": [
+            450.71,
+            439.156,
+            468.646,
+            451.078
+          ],
+          "vectorPathCount": 12
+        }
+      ]
+    },
+    {
+      "id": "muscle-cluster",
+      "name": "Muscle Cluster",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "MuscleCluster",
+      "iconPath": "assets/resource-icons/MuscleCluster.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Muscle Cluster",
+          "labelRectPt": [
+            559.313,
+            356.439,
+            580.518,
+            371.571
+          ],
+          "iconRectPt": [
+            535.962,
+            355.646,
+            552.476,
+            372.513
+          ],
+          "vectorPathCount": 19
+        }
+      ]
+    },
+    {
+      "id": "calcified-knuckle-bone",
+      "name": "Calcified Knuckle Bone",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "CalcifiedKnuckleBone",
+      "iconPath": "assets/resource-icons/CalcifiedKnuckleBone.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Calcified Knuckle Bone",
+          "labelRectPt": [
+            625.521,
+            352.813,
+            651.415,
+            375.197
+          ],
+          "iconRectPt": [
+            605.152,
+            357.718,
+            621.772,
+            370.437
+          ],
+          "vectorPathCount": 3
+        }
+      ]
+    },
+    {
+      "id": "infused-mechanism",
+      "name": "Infused Mechanism",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "InfusedMechanism",
+      "iconPath": "assets/resource-icons/InfusedMechanism.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Infused Mechanism",
+          "labelRectPt": [
+            694.335,
+            356.439,
+            724.127,
+            371.571
+          ],
+          "iconRectPt": [
+            675.094,
+            355.701,
+            691.725,
+            372.47
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    },
+    {
+      "id": "fleshy-mantle",
+      "name": "Fleshy Mantle",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "FleshyMantle",
+      "iconPath": "assets/resource-icons/FleshyMantle.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Fleshy Mantle",
+          "labelRectPt": [
+            767.402,
+            356.439,
+            786.951,
+            371.571
+          ],
+          "iconRectPt": [
+            745.006,
+            355.944,
+            761.623,
+            372.211
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "fear-essence",
+      "name": "Fear Essence",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "FearEssence",
+      "iconPath": "assets/resource-icons/FearEssence.svg",
+      "cycles": [
+        1,
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Fear Essence",
+          "labelRectPt": [
+            560.041,
+            397.898,
+            579.795,
+            413.029
+          ],
+          "iconRectPt": [
+            535.865,
+            397.278,
+            552.559,
+            413.762
+          ],
+          "vectorPathCount": 7
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Fear Essence",
+          "labelRectPt": [
+            551.219,
+            329.034,
+            570.453,
+            343.767
+          ],
+          "iconRectPt": [
+            528.534,
+            328.776,
+            544.112,
+            344.139
+          ],
+          "vectorPathCount": 7
+        }
+      ]
+    },
+    {
+      "id": "maze-fragment",
+      "name": "Maze Fragment",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "MazeFragment",
+      "iconPath": "assets/resource-icons/MazeFragment.svg",
+      "cycles": [
+        1,
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Maze Fragment",
+          "labelRectPt": [
+            625.554,
+            397.898,
+            651.382,
+            413.029
+          ],
+          "iconRectPt": [
+            605.152,
+            397.29,
+            621.795,
+            413.795
+          ],
+          "vectorPathCount": 1
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Maze Fragment",
+          "labelRectPt": [
+            614.333,
+            329.034,
+            639.48,
+            343.767
+          ],
+          "iconRectPt": [
+            594.632,
+            328.604,
+            610.51,
+            344.351
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "grotesque-beak",
+      "name": "Grotesque Beak",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "GrotesqueBeak",
+      "iconPath": "assets/resource-icons/GrotesqueBeak.svg",
+      "cycles": [
+        1,
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Grotesque Beak",
+          "labelRectPt": [
+            694.22,
+            397.898,
+            724.236,
+            413.029
+          ],
+          "iconRectPt": [
+            675.079,
+            397.179,
+            691.732,
+            413.892
+          ],
+          "vectorPathCount": 6
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Grotesque Beak",
+          "labelRectPt": [
+            546.457,
+            408.297,
+            575.209,
+            423.029
+          ],
+          "iconRectPt": [
+            528.217,
+            407.587,
+            544.452,
+            423.879
+          ],
+          "vectorPathCount": 6
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Grotesque Beak",
+          "labelRectPt": [
+            545.442,
+            386.341,
+            574.147,
+            401.049
+          ],
+          "iconRectPt": [
+            527.232,
+            385.632,
+            543.441,
+            401.899
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "powdered-matter",
+      "name": "Powdered Matter",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "PowderedMatter",
+      "iconPath": "assets/resource-icons/PowderedMatter.svg",
+      "cycles": [
+        1,
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Powdered Matter",
+          "labelRectPt": [
+            762.504,
+            397.898,
+            791.855,
+            413.029
+          ],
+          "iconRectPt": [
+            744.987,
+            397.657,
+            761.634,
+            413.415
+          ],
+          "vectorPathCount": 11
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Powdered Matter",
+          "labelRectPt": [
+            612.618,
+            408.297,
+            641.195,
+            423.029
+          ],
+          "iconRectPt": [
+            594.312,
+            407.928,
+            610.803,
+            423.54
+          ],
+          "vectorPathCount": 11
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Powdered Matter",
+          "labelRectPt": [
+            614.646,
+            386.341,
+            643.176,
+            401.049
+          ],
+          "iconRectPt": [
+            596.5,
+            386.096,
+            612.703,
+            401.435
+          ],
+          "vectorPathCount": 11
+        }
+      ]
+    },
+    {
+      "id": "raw-ambrosia",
+      "name": "Raw Ambrosia",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "RawAmbrosia",
+      "iconPath": "assets/resource-icons/RawAmbrosia.svg",
+      "cycles": [
+        1
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Raw Ambrosia",
+          "labelRectPt": [
+            557.279,
+            437.478,
+            582.557,
+            452.61
+          ],
+          "iconRectPt": [
+            534.506,
+            437.537,
+            553.944,
+            452.707
+          ],
+          "vectorPathCount": 15
+        }
+      ]
+    },
+    {
+      "id": "cores",
+      "name": "Cores",
+      "category": "primordial",
+      "kind": "namedQuantityList",
+      "subtype": "core",
+      "iconKey": "Cores",
+      "iconPath": "assets/resource-icons/Cores.svg",
+      "cycles": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Cores",
+          "labelRectPt": [
+            684.777,
+            441.104,
+            701.734,
+            448.984
+          ],
+          "iconRectPt": [
+            660.026,
+            436.811,
+            676.75,
+            453.432
+          ],
+          "vectorPathCount": 15
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Cores",
+          "labelRectPt": [
+            671.331,
+            450.363,
+            687.84,
+            458.035
+          ],
+          "iconRectPt": [
+            647.885,
+            446.172,
+            664.188,
+            462.375
+          ],
+          "vectorPathCount": 15
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Cores",
+          "labelRectPt": [
+            648.17,
+            428.337,
+            664.652,
+            435.997
+          ],
+          "iconRectPt": [
+            622.691,
+            424.153,
+            638.968,
+            440.331
+          ],
+          "vectorPathCount": 15
+        },
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Cores",
+          "labelRectPt": [
+            654.169,
+            447.974,
+            671.005,
+            455.798
+          ],
+          "iconRectPt": [
+            628.023,
+            443.656,
+            644.713,
+            460.244
+          ],
+          "vectorPathCount": 15
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Cores",
+          "labelRectPt": [
+            651.69,
+            445.782,
+            668.62,
+            453.65
+          ],
+          "iconRectPt": [
+            625.53,
+            441.495,
+            642.228,
+            458.091
+          ],
+          "vectorPathCount": 15
+        }
+      ]
+    },
+    {
+      "id": "priests",
+      "name": "Priests",
+      "category": "divine",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Priests",
+      "iconPath": "assets/resource-icons/Priests.svg",
+      "cycles": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Priests",
+          "labelRectPt": [
+            510.288,
+            528.519,
+            529.181,
+            537.006
+          ],
+          "iconRectPt": [
+            482.875,
+            524.404,
+            494.061,
+            541.149
+          ],
+          "vectorPathCount": 13
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Priests",
+          "labelRectPt": [
+            483.724,
+            523.718,
+            502.118,
+            531.981
+          ],
+          "iconRectPt": [
+            452.207,
+            519.701,
+            463.118,
+            536.026
+          ],
+          "vectorPathCount": 13
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Priests",
+          "labelRectPt": [
+            485.246,
+            513.666,
+            503.609,
+            521.914
+          ],
+          "iconRectPt": [
+            453.78,
+            509.655,
+            464.675,
+            525.953
+          ],
+          "vectorPathCount": 13
+        },
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Priests",
+          "labelRectPt": [
+            487.034,
+            524.227,
+            505.903,
+            532.703
+          ],
+          "iconRectPt": [
+            455.105,
+            520.432,
+            465.554,
+            536.068
+          ],
+          "vectorPathCount": 13
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Priests",
+          "labelRectPt": [
+            486.928,
+            524.176,
+            505.791,
+            532.649
+          ],
+          "iconRectPt": [
+            454.975,
+            520.377,
+            465.429,
+            536.019
+          ],
+          "vectorPathCount": 13
+        }
+      ]
+    },
+    {
+      "id": "sisyphus-tears",
+      "name": "Sisyphus Tears",
+      "category": "divine",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "SisyphusTears",
+      "iconPath": "assets/resource-icons/SisyphusTears.svg",
+      "cycles": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 1,
+          "sourceFile": "ATO_C1_ArgoSheet_FRONT.pdf",
+          "printedName": "Sisyphus Tears",
+          "labelRectPt": [
+            612.062,
+            528.519,
+            651.825,
+            537.006
+          ],
+          "iconRectPt": [
+            588.161,
+            526.561,
+            604.773,
+            539.003
+          ],
+          "vectorPathCount": 5
+        },
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Sisyphus Tears",
+          "labelRectPt": [
+            562.566,
+            523.718,
+            601.279,
+            531.981
+          ],
+          "iconRectPt": [
+            538.949,
+            521.8,
+            555.145,
+            533.935
+          ],
+          "vectorPathCount": 5
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Sisyphus Tears",
+          "labelRectPt": [
+            654.338,
+            513.666,
+            692.987,
+            521.914
+          ],
+          "iconRectPt": [
+            631.733,
+            511.75,
+            647.903,
+            523.866
+          ],
+          "vectorPathCount": 5
+        },
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Sisyphus Tears",
+          "labelRectPt": [
+            660.622,
+            524.227,
+            700.337,
+            532.703
+          ],
+          "iconRectPt": [
+            637.458,
+            522.245,
+            654.139,
+            534.783
+          ],
+          "vectorPathCount": 6
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Sisyphus Tears",
+          "labelRectPt": [
+            660.617,
+            524.176,
+            700.318,
+            532.649
+          ],
+          "iconRectPt": [
+            637.423,
+            522.189,
+            654.113,
+            534.734
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "war-trireme",
+      "name": "War Trireme",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "WarTrireme",
+      "iconPath": "assets/resource-icons/WarTrireme.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "War Trireme",
+          "labelRectPt": [
+            472.43,
+            329.034,
+            492.052,
+            343.767
+          ],
+          "iconRectPt": [
+            451.275,
+            328.313,
+            467.479,
+            344.623
+          ],
+          "vectorPathCount": 14
+        }
+      ]
+    },
+    {
+      "id": "relief",
+      "name": "Relief",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Relief",
+      "iconPath": "assets/resource-icons/Relief.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Relief",
+          "labelRectPt": [
+            474.872,
+            373.085,
+            489.61,
+            380.757
+          ],
+          "iconRectPt": [
+            451.277,
+            368.856,
+            467.476,
+            385.126
+          ],
+          "vectorPathCount": 48
+        }
+      ]
+    },
+    {
+      "id": "war-machine",
+      "name": "War Machine",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "WarMachine",
+      "iconPath": "assets/resource-icons/WarMachine.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "War Machine",
+          "labelRectPt": [
+            470.912,
+            408.297,
+            493.576,
+            423.029
+          ],
+          "iconRectPt": [
+            451.281,
+            408.69,
+            467.476,
+            422.778
+          ],
+          "vectorPathCount": 23
+        }
+      ]
+    },
+    {
+      "id": "cyclopean-metal",
+      "name": "Cyclopean Metal",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "CyclopeanMetal",
+      "iconPath": "assets/resource-icons/CyclopeanMetal.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Cyclopean Metal",
+          "labelRectPt": [
+            682.268,
+            329.034,
+            711.41,
+            343.767
+          ],
+          "iconRectPt": [
+            662.541,
+            328.561,
+            678.758,
+            344.379
+          ],
+          "vectorPathCount": 25
+        }
+      ]
+    },
+    {
+      "id": "black-chain",
+      "name": "Black Chain",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BlackChain",
+      "iconPath": "assets/resource-icons/BlackChain.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Black Chain",
+          "labelRectPt": [
+            761.73,
+            329.034,
+            777.716,
+            343.767
+          ],
+          "iconRectPt": [
+            736.157,
+            328.309,
+            752.353,
+            344.634
+          ],
+          "vectorPathCount": 27
+        }
+      ]
+    },
+    {
+      "id": "chimeric-tar",
+      "name": "Chimeric Tar",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "ChimericTar",
+      "iconPath": "assets/resource-icons/ChimericTar.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Chimeric Tar",
+          "labelRectPt": [
+            548.669,
+            369.555,
+            572.998,
+            384.287
+          ],
+          "iconRectPt": [
+            528.232,
+            368.935,
+            544.432,
+            385.028
+          ],
+          "vectorPathCount": 13
+        }
+      ]
+    },
+    {
+      "id": "supersolid-relief-mass",
+      "name": "Supersolid Relief Mass",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "SupersolidReliefMass",
+      "iconPath": "assets/resource-icons/SupersolidReliefMass.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Supersolid Relief Mass",
+          "labelRectPt": [
+            612.433,
+            369.555,
+            641.374,
+            384.287
+          ],
+          "iconRectPt": [
+            594.317,
+            368.823,
+            610.788,
+            385.152
+          ],
+          "vectorPathCount": 34
+        }
+      ]
+    },
+    {
+      "id": "living-abyss",
+      "name": "Living Abyss",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "LivingAbyss",
+      "iconPath": "assets/resource-icons/LivingAbyss.svg",
+      "cycles": [
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Living Abyss",
+          "labelRectPt": [
+            681.263,
+            373.085,
+            712.416,
+            380.757
+          ],
+          "iconRectPt": [
+            662.557,
+            368.895,
+            678.754,
+            385.081
+          ],
+          "vectorPathCount": 10
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Living Abyss",
+          "labelRectPt": [
+            544.244,
+            311.144,
+            575.346,
+            318.803
+          ],
+          "iconRectPt": [
+            527.247,
+            306.96,
+            543.419,
+            323.121
+          ],
+          "vectorPathCount": 10
+        }
+      ]
+    },
+    {
+      "id": "skin-of-malice",
+      "name": "Skin of Malice",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "SkinOfMalice",
+      "iconPath": "assets/resource-icons/SkinOfMalice.svg",
+      "cycles": [
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Skin of Malice",
+          "labelRectPt": [
+            760.483,
+            369.555,
+            778.969,
+            384.287
+          ],
+          "iconRectPt": [
+            736.152,
+            368.689,
+            752.352,
+            385.301
+          ],
+          "vectorPathCount": 1
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Skin of Malice",
+          "labelRectPt": [
+            619.683,
+            307.619,
+            638.139,
+            322.328
+          ],
+          "iconRectPt": [
+            596.518,
+            306.754,
+            612.692,
+            323.34
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "retractable-mechanism",
+      "name": "Retractable Mechanism",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "RetractableMechanism",
+      "iconPath": "assets/resource-icons/RetractableMechanism.svg",
+      "cycles": [
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Retractable Mechanism",
+          "labelRectPt": [
+            681.68,
+            408.297,
+            711.998,
+            423.029
+          ],
+          "iconRectPt": [
+            663.423,
+            407.636,
+            677.887,
+            423.857
+          ],
+          "vectorPathCount": 11
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Retractable Mechanism",
+          "labelRectPt": [
+            683.594,
+            386.341,
+            713.862,
+            401.049
+          ],
+          "iconRectPt": [
+            665.366,
+            385.68,
+            679.808,
+            401.876
+          ],
+          "vectorPathCount": 11
+        }
+      ]
+    },
+    {
+      "id": "reliefshell-fragment",
+      "name": "Reliefshell Fragment",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "ReliefshellFragment",
+      "iconPath": "assets/resource-icons/ReliefshellFragment.svg",
+      "cycles": [
+        2,
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Reliefshell Fragment",
+          "labelRectPt": [
+            755.988,
+            408.297,
+            783.465,
+            423.029
+          ],
+          "iconRectPt": [
+            736.621,
+            407.637,
+            751.901,
+            423.832
+          ],
+          "vectorPathCount": 12
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Reliefshell Fragment",
+          "labelRectPt": [
+            755.474,
+            386.341,
+            782.906,
+            401.049
+          ],
+          "iconRectPt": [
+            736.779,
+            385.681,
+            752.034,
+            401.85
+          ],
+          "vectorPathCount": 12
+        }
+      ]
+    },
+    {
+      "id": "violent-ambrosia",
+      "name": "Violent Ambrosia",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "ViolentAmbrosia",
+      "iconPath": "assets/resource-icons/ViolentAmbrosia.svg",
+      "cycles": [
+        2
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Violent Ambrosia",
+          "labelRectPt": [
+            548.531,
+            446.833,
+            573.142,
+            461.565
+          ],
+          "iconRectPt": [
+            529.459,
+            446.171,
+            543.205,
+            462.367
+          ],
+          "vectorPathCount": 25
+        }
+      ]
+    },
+    {
+      "id": "pygmalion-stones",
+      "name": "Pygmalion Stones",
+      "category": "divine",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "PygmalionStones",
+      "iconPath": "assets/resource-icons/PygmalionStones.svg",
+      "cycles": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 2,
+          "sourceFile": "ATO_C2_ArgoSheet_FRONT.pdf",
+          "printedName": "Pygmalion Stones",
+          "labelRectPt": [
+            644.624,
+            523.718,
+            695.3,
+            531.981
+          ],
+          "iconRectPt": [
+            626.841,
+            519.838,
+            638.354,
+            536.041
+          ],
+          "vectorPathCount": 1
+        },
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Pygmalion Stones",
+          "labelRectPt": [
+            744.924,
+            509.87,
+            775.781,
+            525.71
+          ],
+          "iconRectPt": [
+            720.159,
+            509.781,
+            731.654,
+            525.959
+          ],
+          "vectorPathCount": 1
+        },
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Pygmalion Stones",
+          "labelRectPt": [
+            753.626,
+            520.326,
+            785.333,
+            536.602
+          ],
+          "iconRectPt": [
+            728.226,
+            520.252,
+            740.006,
+            536.839
+          ],
+          "vectorPathCount": 1
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Pygmalion Stones",
+          "labelRectPt": [
+            753.666,
+            520.277,
+            785.362,
+            536.548
+          ],
+          "iconRectPt": [
+            728.238,
+            520.196,
+            740.024,
+            536.791
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "sirenshell",
+      "name": "Sirenshell",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Sirenshell",
+      "iconPath": "assets/resource-icons/Sirenshell.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Sirenshell",
+          "labelRectPt": [
+            468.961,
+            311.144,
+            494.542,
+            318.803
+          ],
+          "iconRectPt": [
+            447.391,
+            306.952,
+            462.502,
+            323.149
+          ],
+          "vectorPathCount": 19
+        }
+      ]
+    },
+    {
+      "id": "hyperborean-alloy",
+      "name": "Hyperborean Alloy",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "HyperboreanAlloy",
+      "iconPath": "assets/resource-icons/HyperboreanAlloy.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Hyperborean Alloy",
+          "labelRectPt": [
+            464.668,
+            347.868,
+            498.835,
+            362.576
+          ],
+          "iconRectPt": [
+            446.863,
+            348.404,
+            463.039,
+            362.182
+          ],
+          "vectorPathCount": 19
+        }
+      ]
+    },
+    {
+      "id": "daedalus-makina",
+      "name": "Daedalus Makina",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "DaedalusMakina",
+      "iconPath": "assets/resource-icons/DaedalusMakina.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Daedalus Makina",
+          "labelRectPt": [
+            469.229,
+            386.341,
+            494.275,
+            401.049
+          ],
+          "iconRectPt": [
+            448.161,
+            385.681,
+            461.734,
+            401.866
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "clothflesh",
+      "name": "Clothflesh",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Clothflesh",
+      "iconPath": "assets/resource-icons/Clothflesh.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Clothflesh",
+          "labelRectPt": [
+            684.15,
+            311.144,
+            713.308,
+            318.803
+          ],
+          "iconRectPt": [
+            664.948,
+            306.952,
+            680.227,
+            323.128
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "eyes-cluster",
+      "name": "Eyes Cluster",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "EyesCluster",
+      "iconPath": "assets/resource-icons/EyesCluster.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Eyes Cluster",
+          "labelRectPt": [
+            758.884,
+            307.619,
+            779.495,
+            322.328
+          ],
+          "iconRectPt": [
+            736.305,
+            306.96,
+            752.488,
+            323.128
+          ],
+          "vectorPathCount": 43
+        }
+      ]
+    },
+    {
+      "id": "razorclaw",
+      "name": "Razorclaw",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "Razorclaw",
+      "iconPath": "assets/resource-icons/Razorclaw.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Razorclaw",
+          "labelRectPt": [
+            544.784,
+            351.392,
+            574.805,
+            359.052
+          ],
+          "iconRectPt": [
+            527.242,
+            347.339,
+            543.419,
+            363.247
+          ],
+          "vectorPathCount": 35
+        }
+      ]
+    },
+    {
+      "id": "icarian-feather",
+      "name": "Icarian Feather",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "IcarianFeather",
+      "iconPath": "assets/resource-icons/IcarianFeather.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Icarian Feather",
+          "labelRectPt": [
+            619.557,
+            347.868,
+            638.259,
+            362.576
+          ],
+          "iconRectPt": [
+            596.513,
+            347.383,
+            612.713,
+            363.197
+          ],
+          "vectorPathCount": 12
+        }
+      ]
+    },
+    {
+      "id": "writhing-tentacle",
+      "name": "Writhing Tentacle",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "WrithingTentacle",
+      "iconPath": "assets/resource-icons/WrithingTentacle.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Writhing Tentacle",
+          "labelRectPt": [
+            686.023,
+            347.868,
+            711.434,
+            362.576
+          ],
+          "iconRectPt": [
+            664.682,
+            347.195,
+            680.497,
+            363.381
+          ],
+          "vectorPathCount": 21
+        }
+      ]
+    },
+    {
+      "id": "sunburned-skull",
+      "name": "Sunburned Skull",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "SunburnedSkull",
+      "iconPath": "assets/resource-icons/SunburnedSkull.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Sunburned Skull",
+          "labelRectPt": [
+            754.843,
+            347.868,
+            783.537,
+            362.576
+          ],
+          "iconRectPt": [
+            738.032,
+            347.203,
+            750.77,
+            363.382
+          ],
+          "vectorPathCount": 42
+        }
+      ]
+    },
+    {
+      "id": "frozen-ambrosia",
+      "name": "Frozen Ambrosia",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "FrozenAmbrosia",
+      "iconPath": "assets/resource-icons/FrozenAmbrosia.svg",
+      "cycles": [
+        3
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Frozen Ambrosia",
+          "labelRectPt": [
+            547.509,
+            424.813,
+            572.08,
+            439.521
+          ],
+          "iconRectPt": [
+            527.49,
+            424.143,
+            543.178,
+            440.33
+          ],
+          "vectorPathCount": 5
+        }
+      ]
+    },
+    {
+      "id": "echoes-of-recollection",
+      "name": "Echoes of Recollection",
+      "category": "divine",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "EchoesOfRecollection",
+      "iconPath": "assets/resource-icons/EchoesOfRecollection.svg",
+      "cycles": [
+        3,
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 3,
+          "sourceFile": "ATO_C3_ArgoSheet_FRONT.pdf",
+          "printedName": "Echoes of Recollection",
+          "labelRectPt": [
+            564.536,
+            509.87,
+            603.375,
+            525.71
+          ],
+          "iconRectPt": [
+            542.261,
+            509.782,
+            556.015,
+            525.95
+          ],
+          "vectorPathCount": 19
+        },
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Echoes of Recollection",
+          "labelRectPt": [
+            568.427,
+            520.326,
+            608.337,
+            536.602
+          ],
+          "iconRectPt": [
+            545.678,
+            520.37,
+            559.586,
+            536.715
+          ],
+          "vectorPathCount": 19
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Echoes of Recollection",
+          "labelRectPt": [
+            568.373,
+            520.277,
+            608.269,
+            536.548
+          ],
+          "iconRectPt": [
+            545.595,
+            520.315,
+            559.51,
+            536.667
+          ],
+          "vectorPathCount": 19
+        }
+      ]
+    },
+    {
+      "id": "cursed-derelict",
+      "name": "Cursed Derelict",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "CursedDerelict",
+      "iconPath": "assets/resource-icons/CursedDerelict.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Cursed Derelict",
+          "labelRectPt": [
+            471.584,
+            321.944,
+            494.894,
+            336.968
+          ],
+          "iconRectPt": [
+            447.391,
+            323.755,
+            464.042,
+            335.268
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    },
+    {
+      "id": "imperial-scroll",
+      "name": "Imperial Scroll",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "ImperialScroll",
+      "iconPath": "assets/resource-icons/ImperialScroll.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Imperial Scroll",
+          "labelRectPt": [
+            472.757,
+            364.366,
+            493.721,
+            379.39
+          ],
+          "iconRectPt": [
+            447.431,
+            364.209,
+            464.012,
+            378.979
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "babylonian-contraption",
+      "name": "Babylonian Contraption",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BabylonianContraption",
+      "iconPath": "assets/resource-icons/BabylonianContraption.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Babylonian Contraption",
+          "labelRectPt": [
+            465.323,
+            404.914,
+            501.155,
+            419.938
+          ],
+          "iconRectPt": [
+            447.431,
+            405.16,
+            464.011,
+            420.515
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "blackened-halo",
+      "name": "Blackened Halo",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BlackenedHalo",
+      "iconPath": "assets/resource-icons/BlackenedHalo.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Blackened Halo",
+          "labelRectPt": [
+            549.355,
+            321.944,
+            577.525,
+            336.968
+          ],
+          "iconRectPt": [
+            530.673,
+            321.22,
+            545.969,
+            337.825
+          ],
+          "vectorPathCount": 9
+        }
+      ]
+    },
+    {
+      "id": "burned-out-grace",
+      "name": "Burned-out Grace",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BurnedOutGrace",
+      "iconPath": "assets/resource-icons/BurnedOutGrace.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Burned-out Grace",
+          "labelRectPt": [
+            619.845,
+            321.944,
+            648.951,
+            336.968
+          ],
+          "iconRectPt": [
+            601.158,
+            322.177,
+            617.775,
+            336.897
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "cursed-bloatsack",
+      "name": "Cursed Bloatsack",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "CursedBloatsack",
+      "iconPath": "assets/resource-icons/CursedBloatsack.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Cursed Bloatsack",
+          "labelRectPt": [
+            692.552,
+            321.944,
+            719.816,
+            336.968
+          ],
+          "iconRectPt": [
+            670.94,
+            321.231,
+            687.574,
+            337.855
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "living-gold",
+      "name": "Living Gold",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "LivingGold",
+      "iconPath": "assets/resource-icons/LivingGold.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Living Gold",
+          "labelRectPt": [
+            770.444,
+            321.944,
+            786.818,
+            336.968
+          ],
+          "iconRectPt": [
+            744.883,
+            321.18,
+            761.523,
+            337.829
+          ],
+          "vectorPathCount": 5
+        }
+      ]
+    },
+    {
+      "id": "wish-embryo",
+      "name": "Wish Embryo",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "WishEmbryo",
+      "iconPath": "assets/resource-icons/WishEmbryo.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Wish Embryo",
+          "labelRectPt": [
+            553.12,
+            364.366,
+            573.76,
+            379.39
+          ],
+          "iconRectPt": [
+            530.035,
+            363.66,
+            546.651,
+            380.252
+          ],
+          "vectorPathCount": 13
+        }
+      ]
+    },
+    {
+      "id": "old-irem-fragment",
+      "name": "Old Irem Fragment",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "OldIremFragment",
+      "iconPath": "assets/resource-icons/OldIremFragment.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Old Irem Fragment",
+          "labelRectPt": [
+            621.936,
+            364.366,
+            646.86,
+            379.39
+          ],
+          "iconRectPt": [
+            601.106,
+            363.742,
+            617.793,
+            380.354
+          ],
+          "vectorPathCount": 10
+        }
+      ]
+    },
+    {
+      "id": "black-tainted-stepfinger",
+      "name": "Black-tainted Stepfinger",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BlackTaintedStepfinger",
+      "iconPath": "assets/resource-icons/BlackTaintedStepfinger.svg",
+      "cycles": [
+        4,
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Black-tainted Stepfinger",
+          "labelRectPt": [
+            689.189,
+            364.492,
+            723.179,
+            379.266
+          ],
+          "iconRectPt": [
+            670.892,
+            363.652,
+            687.526,
+            380.245
+          ],
+          "vectorPathCount": 8
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Black-tainted Stepfinger",
+          "labelRectPt": [
+            616.691,
+            322.469,
+            648.777,
+            336.415
+          ],
+          "iconRectPt": [
+            598.596,
+            321.207,
+            615.238,
+            337.808
+          ],
+          "vectorPathCount": 8
+        }
+      ]
+    },
+    {
+      "id": "promised-futures-carcass",
+      "name": "Promised Futures Carcass",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "PromisedFuturesCarcass",
+      "iconPath": "assets/resource-icons/PromisedFuturesCarcass.svg",
+      "cycles": [
+        4,
+        5
+      ],
+      "aliases": [
+        "Promised Future's Carcass"
+      ],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Promised Future's Carcass",
+          "labelRectPt": [
+            766.136,
+            361.49,
+            791.126,
+            383.714
+          ],
+          "iconRectPt": [
+            746.127,
+            363.644,
+            760.24,
+            380.269
+          ],
+          "vectorPathCount": 35
+        },
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Promised Futures Carcass",
+          "labelRectPt": [
+            549.433,
+            318.262,
+            574.985,
+            340.61
+          ],
+          "iconRectPt": [
+            530.024,
+            321.199,
+            544.142,
+            337.832
+          ],
+          "vectorPathCount": 35
+        }
+      ]
+    },
+    {
+      "id": "onyx-dust",
+      "name": "Onyx Dust",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "OnyxDust",
+      "iconPath": "assets/resource-icons/OnyxDust.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Onyx Dust",
+          "labelRectPt": [
+            548.902,
+            408.513,
+            577.978,
+            416.338
+          ],
+          "iconRectPt": [
+            530.031,
+            404.208,
+            546.614,
+            420.787
+          ],
+          "vectorPathCount": 39
+        }
+      ]
+    },
+    {
+      "id": "ire-essence",
+      "name": "Ire Essence",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "IreEssence",
+      "iconPath": "assets/resource-icons/IreEssence.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Ire Essence",
+          "labelRectPt": [
+            620.19,
+            408.513,
+            648.606,
+            416.338
+          ],
+          "iconRectPt": [
+            603.309,
+            404.208,
+            615.575,
+            420.822
+          ],
+          "vectorPathCount": 3
+        }
+      ]
+    },
+    {
+      "id": "mutable-ambrosia",
+      "name": "Mutable Ambrosia",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "MutableAmbrosia",
+      "iconPath": "assets/resource-icons/MutableAmbrosia.svg",
+      "cycles": [
+        4
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 4,
+          "sourceFile": "ATO_C4_ArgoSheet_FRONT.pdf",
+          "printedName": "Mutable Ambrosia",
+          "labelRectPt": [
+            693.635,
+            404.914,
+            718.733,
+            419.938
+          ],
+          "iconRectPt": [
+            671.334,
+            404.585,
+            687.161,
+            420.395
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    },
+    {
+      "id": "atlantean-tekne",
+      "name": "Atlantean Tekne",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "AtlanteanTekne",
+      "iconPath": "assets/resource-icons/AtlanteanTekne.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Atlantean Tekne",
+          "labelRectPt": [
+            469.899,
+            321.882,
+            496.319,
+            336.99
+          ],
+          "iconRectPt": [
+            447.238,
+            321.156,
+            463.909,
+            337.76
+          ],
+          "vectorPathCount": 8
+        }
+      ]
+    },
+    {
+      "id": "orichalcum-chunk",
+      "name": "Orichalcum Chunk",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "OrichalcumChunk",
+      "iconPath": "assets/resource-icons/OrichalcumChunk.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Orichalcum Chunk",
+          "labelRectPt": [
+            466.261,
+            363.225,
+            499.958,
+            378.333
+          ],
+          "iconRectPt": [
+            446.925,
+            362.51,
+            464.245,
+            379.224
+          ],
+          "vectorPathCount": 3
+        }
+      ]
+    },
+    {
+      "id": "liquid-aether",
+      "name": "Liquid Aether",
+      "category": "mortal",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "LiquidAether",
+      "iconPath": "assets/resource-icons/LiquidAether.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Liquid Aether",
+          "labelRectPt": [
+            474.029,
+            402.694,
+            492.491,
+            417.802
+          ],
+          "iconRectPt": [
+            448.973,
+            402.008,
+            462.12,
+            418.614
+          ],
+          "vectorPathCount": 8
+        }
+      ]
+    },
+    {
+      "id": "hydradynamic-scales",
+      "name": "Hydradynamic Scales",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "HydradynamicScales",
+      "iconPath": "assets/resource-icons/HydradynamicScales.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Hydradynamic Scales",
+          "labelRectPt": [
+            687.866,
+            322.469,
+            717.072,
+            336.415
+          ],
+          "iconRectPt": [
+            668.615,
+            321.215,
+            685.242,
+            337.807
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    },
+    {
+      "id": "amygdalan-extract",
+      "name": "Amygdalan Extract",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "AmygdalanExtract",
+      "iconPath": "assets/resource-icons/AmygdalanExtract.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Amygdalan Extract",
+          "labelRectPt": [
+            760.866,
+            322.051,
+            789.351,
+            336.825
+          ],
+          "iconRectPt": [
+            738.106,
+            321.194,
+            754.717,
+            337.829
+          ],
+          "vectorPathCount": 3
+        }
+      ]
+    },
+    {
+      "id": "photophobic-flesh",
+      "name": "Photophobic Flesh",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "PhotophobicFlesh",
+      "iconPath": "assets/resource-icons/PhotophobicFlesh.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Photophobic Flesh",
+          "labelRectPt": [
+            546.92,
+            363.225,
+            577.498,
+            378.333
+          ],
+          "iconRectPt": [
+            528.786,
+            362.558,
+            545.375,
+            379.145
+          ],
+          "vectorPathCount": 6
+        }
+      ]
+    },
+    {
+      "id": "microwave-cell",
+      "name": "Microwave Cell",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "MicrowaveCell",
+      "iconPath": "assets/resource-icons/MicrowaveCell.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Microwave Cell",
+          "labelRectPt": [
+            617.351,
+            363.225,
+            648.116,
+            378.333
+          ],
+          "iconRectPt": [
+            598.628,
+            362.558,
+            615.237,
+            379.277
+          ],
+          "vectorPathCount": 13
+        }
+      ]
+    },
+    {
+      "id": "black-wool-strand",
+      "name": "Black Wool Strand",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "BlackWoolStrand",
+      "iconPath": "assets/resource-icons/BlackWoolStrand.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Black Wool Strand",
+          "labelRectPt": [
+            686.536,
+            363.394,
+            718.402,
+            378.168
+          ],
+          "iconRectPt": [
+            668.638,
+            362.55,
+            685.095,
+            379.025
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    },
+    {
+      "id": "fading-light-construct",
+      "name": "Fading Light Construct",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "FadingLightConstruct",
+      "iconPath": "assets/resource-icons/FadingLightConstruct.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Fading Light Construct",
+          "labelRectPt": [
+            759.184,
+            363.695,
+            791.034,
+            377.873
+          ],
+          "iconRectPt": [
+            737.467,
+            362.5,
+            755.371,
+            379.147
+          ],
+          "vectorPathCount": 85
+        }
+      ]
+    },
+    {
+      "id": "orichalcum-alloy",
+      "name": "Orichalcum Alloy",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "OrichalcumAlloy",
+      "iconPath": "assets/resource-icons/OrichalcumAlloy.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Orichalcum Alloy",
+          "labelRectPt": [
+            545.632,
+            402.694,
+            578.786,
+            417.802
+          ],
+          "iconRectPt": [
+            529.094,
+            401.973,
+            545.093,
+            418.684
+          ],
+          "vectorPathCount": 8
+        }
+      ]
+    },
+    {
+      "id": "slave-metal",
+      "name": "Slave Metal",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "SlaveMetal",
+      "iconPath": "assets/resource-icons/SlaveMetal.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Slave Metal",
+          "labelRectPt": [
+            617.52,
+            406.314,
+            647.947,
+            414.181
+          ],
+          "iconRectPt": [
+            598.789,
+            402.016,
+            615.116,
+            418.634
+          ],
+          "vectorPathCount": 1
+        }
+      ]
+    },
+    {
+      "id": "oxidized-ambrosia",
+      "name": "Oxidized Ambrosia",
+      "category": "primordial",
+      "kind": "quantity",
+      "subtype": null,
+      "iconKey": "OxidizedAmbrosia",
+      "iconPath": "assets/resource-icons/OxidizedAmbrosia.svg",
+      "cycles": [
+        5
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "cycle": 5,
+          "sourceFile": "ATO_C5_ArgoSheet_FRONT.pdf",
+          "printedName": "Oxidized Ambrosia",
+          "labelRectPt": [
+            689.85,
+            402.694,
+            715.504,
+            417.802
+          ],
+          "iconRectPt": [
+            670.613,
+            402.449,
+            683.24,
+            418.182
+          ],
+          "vectorPathCount": 2
+        }
+      ]
+    }
+  ]
+}

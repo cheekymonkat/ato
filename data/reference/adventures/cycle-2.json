@@ -1,0 +1,2002 @@
+{
+  "schemaVersion": 1,
+  "cycle": 2,
+  "source": {
+    "file": "Cycle_2_tracking_v1.1.pdf",
+    "sha256": "12991a0ef48add60c9256f77fa88cffd6d31f3effa4c4061785bc3b6c02a6928",
+    "pages": 2,
+    "coordinateSystem": "PDF points, top-left origin"
+  },
+  "hubs": [
+    {
+      "id": "c2-consider-the-ant",
+      "title": "Consider the Ant",
+      "storybookPage": 41,
+      "entries": [
+        {
+          "id": "c2-consider-the-ant-1",
+          "title": "To Walk a Mile",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              333.52,
+              197.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-2",
+          "title": "Black Veins",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              362.41,
+              197.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-3",
+          "title": "The Old Shephard",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              392.101,
+              197.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-4",
+          "title": "Food Farm",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              424.391,
+              197.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-5",
+          "title": "Armorers",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              456.671,
+              197.0,
+              488.951
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-6",
+          "title": "Slaves of War",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              488.951,
+              197.0,
+              520.83
+            ]
+          }
+        },
+        {
+          "id": "c2-consider-the-ant-7",
+          "title": "A Drone’s Reward",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              520.83,
+              197.0,
+              553.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          315.448,
+          197.0,
+          553.568
+        ]
+      },
+      "trackId": "c2-consider-the-ant",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Graveyard of the Frail (Inner 3)",
+      "selection": {
+        "1": [
+          1,
+          3
+        ],
+        "2": [
+          1,
+          1
+        ],
+        "3": null,
+        "4": null
+      }
+    },
+    {
+      "id": "c2-the-other-thermopylae",
+      "title": "The Other Thermopylae",
+      "storybookPage": 48,
+      "entries": [
+        {
+          "id": "c2-the-other-thermopylae-1",
+          "title": "A War Out There",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              332.44,
+              394.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-2",
+          "title": "Forsaken Aegises",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              362.41,
+              394.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-3",
+          "title": "Cost of Freedom",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              392.101,
+              394.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-4",
+          "title": "Justice of War",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              424.391,
+              394.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-5",
+          "title": "People of Burden",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              456.671,
+              394.0,
+              488.951
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-6",
+          "title": "Those Who Live",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              488.951,
+              394.0,
+              520.83
+            ]
+          }
+        },
+        {
+          "id": "c2-the-other-thermopylae-7",
+          "title": "Homefront",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              520.83,
+              394.0,
+              553.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          316.302,
+          394.0,
+          553.568
+        ]
+      },
+      "trackId": "c2-the-other-thermopylae",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Krypteia Outpost (Outer 3)",
+      "selection": {
+        "1": [
+          4,
+          5
+        ],
+        "2": [
+          2,
+          3
+        ],
+        "3": null,
+        "4": null
+      }
+    },
+    {
+      "id": "c2-from-the-ashes",
+      "title": "From the Ashes",
+      "storybookPage": 55,
+      "entries": [
+        {
+          "id": "c2-from-the-ashes-1",
+          "title": "The Just War",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              333.52,
+              580.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-2",
+          "title": "Sand and Stone",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              362.41,
+              580.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-3",
+          "title": "Bones of the Past",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              392.101,
+              580.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-4",
+          "title": "Unshackled",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              424.391,
+              580.0,
+              457.031
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-5",
+          "title": "Cult of the Fallen Sun",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              457.031,
+              580.0,
+              490.091
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-6",
+          "title": "Gears of Progress",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              490.091,
+              580.0,
+              524.187
+            ]
+          }
+        },
+        {
+          "id": "c2-from-the-ashes-7",
+          "title": "A Peace for Our Aeon",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              524.187,
+              580.0,
+              558.722
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          315.448,
+          580.0,
+          558.722
+        ]
+      },
+      "trackId": "c2-from-the-ashes",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Cyclops Trap (Outer 3)",
+      "selection": {
+        "1": [
+          6,
+          7
+        ],
+        "2": [
+          4,
+          5
+        ],
+        "3": null,
+        "4": null
+      }
+    },
+    {
+      "id": "c2-intended-purpose",
+      "title": "Intended Purpose",
+      "storybookPage": 62,
+      "entries": [
+        {
+          "id": "c2-intended-purpose-1",
+          "title": "The Once Was An Empire…",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              591.09,
+              197.0,
+              626.76
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-2",
+          "title": "Merchants of Death",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              626.76,
+              197.0,
+              658.721
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-3",
+          "title": "The Hand You’re Dealt",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              658.721,
+              197.0,
+              691.782
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-4",
+          "title": "Breath of the Grave",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              691.782,
+              197.0,
+              724.492
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-5",
+          "title": "Face of the Enemy",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              724.492,
+              197.0,
+              756.841
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-6",
+          "title": "Shadowplay",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              756.841,
+              197.0,
+              790.64
+            ]
+          }
+        },
+        {
+          "id": "c2-intended-purpose-7",
+          "title": "… That Knew No Mercy",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              790.64,
+              197.0,
+              825.298
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          575.05,
+          197.0,
+          825.298
+        ]
+      },
+      "trackId": "c2-intended-purpose",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Cyclops Trap (Outer 3)",
+      "selection": {
+        "1": [
+          8,
+          9
+        ],
+        "2": [
+          6,
+          7
+        ],
+        "3": [
+          1,
+          1
+        ],
+        "4": null
+      }
+    },
+    {
+      "id": "c2-misery-industry",
+      "title": "Misery Industry",
+      "storybookPage": 70,
+      "entries": [
+        {
+          "id": "c2-misery-industry-1",
+          "title": "Dark Waters",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              592.29,
+              394.0,
+              621.54
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-2",
+          "title": "The Living and the Dead",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              621.54,
+              394.0,
+              651.941
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-3",
+          "title": "Maws of Byzantion",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              651.941,
+              394.0,
+              684.641
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-4",
+          "title": "Market Forces",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              684.641,
+              394.0,
+              716.991
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-5",
+          "title": "Night Trade",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              716.991,
+              394.0,
+              749.341
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-6",
+          "title": "Cost of Progress",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              749.341,
+              394.0,
+              781.28
+            ]
+          }
+        },
+        {
+          "id": "c2-misery-industry-7",
+          "title": "Burn It Down",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              781.28,
+              394.0,
+              814.018
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          574.33,
+          394.0,
+          814.018
+        ]
+      },
+      "trackId": "c2-misery-industry",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Ambrosia Elephant (Outer 3)",
+      "selection": {
+        "1": [
+          10,
+          10
+        ],
+        "2": [
+          8,
+          9
+        ],
+        "3": [
+          2,
+          3
+        ],
+        "4": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "c2-parable-of-the-butterfly",
+      "title": "Parable of the Butterfly",
+      "storybookPage": 77,
+      "entries": [
+        {
+          "id": "c2-parable-of-the-butterfly-1",
+          "title": "Bloody Butterfly",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              590.34,
+              580.0,
+              621.18
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-2",
+          "title": "Canal Runners",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              621.18,
+              580.0,
+              650.861
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-3",
+          "title": "Wild at Heart",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              650.861,
+              580.0,
+              683.202
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-4",
+          "title": "Agōgē",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              683.202,
+              580.0,
+              715.552
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-5",
+          "title": "Phantom Pain",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              715.552,
+              580.0,
+              747.901
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-6",
+          "title": "Abyss Horizon",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              747.901,
+              580.0,
+              779.84
+            ]
+          }
+        },
+        {
+          "id": "c2-parable-of-the-butterfly-7",
+          "title": "Crippled Chrysalis",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              779.84,
+              580.0,
+              812.578
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          575.38,
+          580.0,
+          812.578
+        ]
+      },
+      "trackId": "c2-parable-of-the-butterfly",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Ambrosia Elephant (Outer 3)",
+      "selection": {
+        "1": null,
+        "2": [
+          10,
+          10
+        ],
+        "3": [
+          4,
+          5
+        ],
+        "4": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "id": "c2-truth-to-weakness",
+      "title": "Truth to Weakness",
+      "storybookPage": 85,
+      "entries": [
+        {
+          "id": "c2-truth-to-weakness-1",
+          "title": "Truth to Weakness",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              62.156,
+              197.0,
+              91.12
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-2",
+          "title": "Defeated by Victory",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              91.12,
+              197.0,
+              120.741
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-3",
+          "title": "Sowing",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              120.741,
+              197.0,
+              153.021
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-4",
+          "title": "The Taking",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              153.021,
+              197.0,
+              185.661
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-5",
+          "title": "Conerstone of Bones",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              185.661,
+              197.0,
+              219.096
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-6",
+          "title": "The Last Great People",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              219.096,
+              197.0,
+              252.13
+            ]
+          }
+        },
+        {
+          "id": "c2-truth-to-weakness-7",
+          "title": "Truth to Power",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              252.13,
+              197.0,
+              285.228
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          44.06,
+          197.0,
+          285.228
+        ]
+      },
+      "trackId": "c2-truth-to-weakness",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Graveyard of the Frail (Inner 3)",
+      "selection": {
+        "1": null,
+        "2": null,
+        "3": [
+          6,
+          8
+        ],
+        "4": [
+          5,
+          7
+        ]
+      }
+    },
+    {
+      "id": "c2-when-the-land-meets-the-sea",
+      "title": "When the Land Meets the Sea",
+      "storybookPage": 95,
+      "entries": [
+        {
+          "id": "c2-when-the-land-meets-the-sea-1",
+          "title": "The Thousandth Ship",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              62.156,
+              480.0,
+              91.12
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-2",
+          "title": "Crosscurrent",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              91.12,
+              480.0,
+              120.741
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-3",
+          "title": "Weaponized Misery",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              120.741,
+              480.0,
+              153.021
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-4",
+          "title": "Nation of Ships",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              153.021,
+              480.0,
+              185.301
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-5",
+          "title": "War Within",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              185.301,
+              480.0,
+              217.596
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-6",
+          "title": "People of the Herds",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              217.596,
+              480.0,
+              249.49
+            ]
+          }
+        },
+        {
+          "id": "c2-when-the-land-meets-the-sea-7",
+          "title": "Siege Eternal",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              205.0,
+              249.49,
+              480.0,
+              282.228
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          205.0,
+          44.06,
+          480.0,
+          282.228
+        ]
+      },
+      "trackId": "c2-when-the-land-meets-the-sea",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Krypteia Outpost (Outer 3)",
+      "selection": {
+        "1": null,
+        "2": null,
+        "3": [
+          9,
+          10
+        ],
+        "4": [
+          8,
+          10
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "kind": "rr",
+      "id": "c2-r-r-adventures",
+      "title": "R&R Adventures",
+      "storybookPage": 122,
+      "entries": [
+        {
+          "id": "c2-r-r-adventures-1",
+          "title": "Artiazein",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              337.36,
+              268.0,
+              370.667
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-2",
+          "title": "The Chiton Thief",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              370.667,
+              268.0,
+              402.897
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-3",
+          "title": "Falling Stars",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              402.897,
+              268.0,
+              435.191
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-4",
+          "title": "The New Muse",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              435.191,
+              268.0,
+              467.471
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-5",
+          "title": "The Diogenes Method",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              467.471,
+              268.0,
+              499.751
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-6",
+          "title": "The Argonaut Epic",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              499.751,
+              268.0,
+              532.031
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-7",
+          "title": "An Augean Quandary",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              532.031,
+              268.0,
+              564.206
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-8",
+          "title": "Pictophong Hunt",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              564.206,
+              268.0,
+              596.201
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-9",
+          "title": "Denialwatchers",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              596.201,
+              268.0,
+              628.061
+            ]
+          }
+        },
+        {
+          "id": "c2-r-r-adventures-10",
+          "title": "For the Fallen",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              628.061,
+              268.0,
+              660.961
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          319.288,
+          268.0,
+          660.961
+        ]
+      }
+    },
+    {
+      "kind": "pharos",
+      "id": "c2-dreams-of-pharos",
+      "title": "Dreams of Pharos",
+      "storybookPage": 116,
+      "entries": [
+        {
+          "id": "c2-dreams-of-pharos-1",
+          "title": "Scroll 154251919521199",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              337.24,
+              580.0,
+              370.667
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-2",
+          "title": "Scroll 156218151426516515161259",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              370.667,
+              580.0,
+              402.897
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-3",
+          "title": "Error 201192051562089147192015315135",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              402.897,
+              580.0,
+              435.191
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-4",
+          "title": "Scroll 1565193812015149",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              435.191,
+              580.0,
+              467.471
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-5",
+          "title": "Scroll 14523120851419",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              467.471,
+              580.0,
+              499.751
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-6",
+          "title": "Scroll 20851251257519513169185",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              499.751,
+              580.0,
+              532.031
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-7",
+          "title": "Scroll 192513131382522919920",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              532.031,
+              580.0,
+              564.206
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-8",
+          "title": "Scroll 8518111125191991419",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              564.206,
+              580.0,
+              596.201
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-9",
+          "title": "Scroll 16811815197514519919",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              596.201,
+              580.0,
+              628.061
+            ]
+          }
+        },
+        {
+          "id": "c2-dreams-of-pharos-10",
+          "title": "Scroll 1425131683151422518751435",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              628.061,
+              580.0,
+              660.961
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.0,
+          319.28,
+          580.0,
+          660.961
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "c2-cruel-aeons",
+      "title": "Cruel Aeons",
+      "kind": "special",
+      "boxCount": 4,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          51.24,
+          706.93,
+          130.211,
+          720.97
+        ]
+      }
+    },
+    {
+      "id": "c2-code-0248",
+      "title": "Hull Depleted",
+      "code": "0248",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          293.33,
+          704.35,
+          324.82,
+          719.893
+        ]
+      }
+    },
+    {
+      "id": "c2-code-0249",
+      "title": "Crew Depleted",
+      "code": "0249",
+      "kind": "code",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          293.33,
+          736.29,
+          324.82,
+          751.833
+        ]
+      }
+    }
+  ],
+  "inwardOdyssey": {
+    "boxCount": 20,
+    "storyTitlesSource": "catalogue Inward Odyssey card"
+  },
+  "unlistedSheetTracks": []
+}

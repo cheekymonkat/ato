@@ -12,8 +12,11 @@ import { milestoneSequence } from '../domain/milestones.ts';
 import { milestoneTokenMaximum } from '../domain/milestone-rules.ts';
 import { initializeTitanRoster, patternCopies } from '../domain/titan-roster.ts';
 
+import { changeAdventure, emptyAdventureReplay, mergeAdventureReplay, validAdventureReplay } from '../domain/adventures.ts';
+import type { AdventureEdit, AdventureReplay } from '../domain/adventures.ts';
+
 export interface PartyProfile { id: string; name: string; party: Party }
-export interface Workspace { format: 'ato-workspace'; schemaVersion: 1; activeProfileId: string; profiles: PartyProfile[] }
+export interface Workspace { format: 'ato-workspace'; schemaVersion: 1; activeProfileId: string; profiles: PartyProfile[]; adventureReplay?: AdventureReplay }
 export const MAX_BACKUP_BYTES = 5 * 1024 * 1024;
 function utf8Size(text: string): number {
   let bytes = 0;
@@ -56,6 +59,7 @@ export function parseWorkspace(value: unknown): Workspace {
   const profiles = value.profiles.map(parseProfile);
   assert(new Set(profiles.map(profile => profile.id)).size === profiles.length, 'Duplicate profile identities.');
   assert(typeof value.activeProfileId === 'string' && profiles.some(profile => profile.id === value.activeProfileId), 'Invalid active profile.');
+  assert(value.adventureReplay === undefined || validAdventureReplay(value.adventureReplay), 'Invalid adventure replay history.');
   return { ...value, profiles } as unknown as Workspace;
 }
 
@@ -130,13 +134,14 @@ export function acknowledgeCatalogueUpdate(workspace: Workspace, profileId: stri
     ? { ...entry, party: { ...entry.party, catalogueVersion: catalogue.version } } : entry) };
 }
 
-export function exportProfile(profile: PartyProfile): string {
+export function exportProfile(profile: PartyProfile, adventureReplay?: AdventureReplay): string {
   const validated = parseProfile(profile);
-  return JSON.stringify({ format: 'ato-party-backup', backupVersion: 1, exportedAt: new Date().toISOString(), profile: validated }, null, 2);
+  assert(adventureReplay === undefined || validAdventureReplay(adventureReplay), 'Invalid adventure replay history.');
+  return JSON.stringify({ format: 'ato-party-backup', backupVersion: 1, exportedAt: new Date().toISOString(), profile: validated, ...(adventureReplay ? { adventureReplay } : {}) }, null, 2);
 }
 
 /** Validation never changes the current workspace. Unresolved references block import, with a complete report. */
-export function readBackup(text: string, catalogue: CatalogueRepository): { profile: PartyProfile; warnings: string[] } {
+export function readBackup(text: string, catalogue: CatalogueRepository): { profile: PartyProfile; warnings: string[]; adventureReplay?: AdventureReplay } {
   assert(utf8Size(text) <= MAX_BACKUP_BYTES, 'Backup exceeds the 5 MB limit.');
   const value: unknown = JSON.parse(text);
   let profile: PartyProfile;
@@ -149,12 +154,25 @@ export function readBackup(text: string, catalogue: CatalogueRepository): { prof
   }
   const problems = referenceProblems(profile.party, catalogue);
   assert(!problems.length, `Backup has invalid or unresolved references:\n${problems.join('\n')}`);
-  return { profile, warnings: [...(profile.party.catalogueVersion === catalogue.version ? [] : ['This backup uses a different catalogue version. Capacity will be recalculated using the installed catalogue.']), ...(profile.party.inventory ? inventoryNotices(profile.party, catalogue) : [])] };
+  const replay = isRecord(value) ? value.adventureReplay : undefined;
+  assert(replay === undefined || validAdventureReplay(replay), 'Invalid adventure replay history.');
+  return { profile, ...(replay ? { adventureReplay: replay as AdventureReplay } : {}), warnings: [...(profile.party.catalogueVersion === catalogue.version ? [] : ['This backup uses a different catalogue version. Capacity will be recalculated using the installed catalogue.']), ...(profile.party.inventory ? inventoryNotices(profile.party, catalogue) : [])] };
 }
 
-export function importProfile(workspace: Workspace, source: PartyProfile, id: string, name: string): Workspace {
+export function importProfile(workspace: Workspace, source: PartyProfile, id: string, name: string, replay?: AdventureReplay): Workspace {
   assert(!workspace.profiles.some(profile => profile.id === id), 'The new profile identity already exists.');
   const profile = parseProfile({ id, name: profileName(name), party: { ...source.party, id } });
   assert(duplicateMemories(profile.party).length === 0, 'Each Mnemos or Fated Mnemos card is unique across the party. Remove duplicate memories before importing.');
-  return parseWorkspace({ ...workspace, activeProfileId: id, profiles: [...workspace.profiles, profile] });
+  assert(replay === undefined || validAdventureReplay(replay), 'Invalid adventure replay history.');
+  return parseWorkspace({ ...workspace, activeProfileId: id, profiles: [...workspace.profiles, profile], ...(replay ? { adventureReplay: mergeAdventureReplay(workspace.adventureReplay ?? emptyAdventureReplay(), replay) } : {}) });
+}
+
+/** Campaign progress and device-wide replay boxes are saved in the same snapshot. */
+export function editWorkspaceAdventure(workspace: Workspace, owner: { partyId: string; expectedCycle: CampaignCycle }, edit: AdventureEdit, catalogue: CatalogueRepository): Workspace {
+  const profile = workspace.profiles.find(p => p.id === workspace.activeProfileId);
+  if (!profile || profile.id !== owner.partyId || (profile.party.campaignCycle ?? 1) !== owner.expectedCycle) return workspace;
+  const replay = workspace.adventureReplay ?? emptyAdventureReplay();
+  const next = changeAdventure(profile.party, replay, edit, catalogue);
+  if (next.party === profile.party && next.replay === replay) return workspace;
+  return { ...workspace, adventureReplay: next.replay, profiles: workspace.profiles.map(p => p.id === profile.id ? { ...p, party: next.party } : p) };
 }

@@ -1,0 +1,1823 @@
+{
+  "schemaVersion": 1,
+  "cycle": 3,
+  "source": {
+    "file": "Cycle_3_tracking_v1.pdf",
+    "sha256": "c31cfd56b43cf6175a3d31ecef3bf16401c78d46d9f60a27c5c71f8818d2c915",
+    "pages": 2,
+    "coordinateSystem": "PDF points, top-left origin"
+  },
+  "hubs": [
+    {
+      "id": "c3-road-less-travelled",
+      "title": "Road Less Travelled",
+      "storybookPage": 45,
+      "entries": [
+        {
+          "id": "c3-road-less-travelled-1",
+          "title": "Oracles Go Silent",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              333.52,
+              197.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-2",
+          "title": "Turf Laws",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              362.41,
+              197.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-3",
+          "title": "An Oath to Take",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              392.101,
+              197.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-4",
+          "title": "A Way Back",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              424.391,
+              197.0,
+              456.671
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-5",
+          "title": "Between Two Fires",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              456.671,
+              197.0,
+              488.951
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-6",
+          "title": "Merchants of Hope",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              488.951,
+              197.0,
+              520.83
+            ]
+          }
+        },
+        {
+          "id": "c3-road-less-travelled-7",
+          "title": "False Prophet",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              520.83,
+              197.0,
+              553.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          315.448,
+          197.0,
+          553.568
+        ]
+      },
+      "trackId": "c3-road-less-traveled",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Giant Shell (Inner 2)",
+      "selection": {
+        "1": [
+          1,
+          3
+        ],
+        "2": [
+          1,
+          2
+        ],
+        "3": null,
+        "4": null
+      }
+    },
+    {
+      "id": "c3-children-of-the-sun",
+      "title": "Children of the Sun",
+      "storybookPage": 52,
+      "entries": [
+        {
+          "id": "c3-children-of-the-sun-1",
+          "title": "Senseless Chain",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              333.52,
+              394.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-2",
+          "title": "Thaw and Frost",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              362.41,
+              394.0,
+              392.461
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-3",
+          "title": "Olympian Commandment",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              392.461,
+              394.0,
+              425.891
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-4",
+          "title": "Hyperborean Apocrypha",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              425.891,
+              394.0,
+              459.311
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-5",
+          "title": "Waning of the Light",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              459.311,
+              394.0,
+              491.951
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-6",
+          "title": "Daedalus’s Failsafe",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              491.951,
+              394.0,
+              523.83
+            ]
+          }
+        },
+        {
+          "id": "c3-children-of-the-sun-7",
+          "title": "Helios’s Halo",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              523.83,
+              394.0,
+              556.568
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          315.448,
+          394.0,
+          556.568
+        ]
+      },
+      "trackId": "c3-children-of-the-sun",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Black Lake (Inner 3)",
+      "selection": {
+        "1": [
+          4,
+          6
+        ],
+        "2": [
+          3,
+          4
+        ],
+        "3": null,
+        "4": null
+      }
+    },
+    {
+      "id": "c3-what-we-left-behind",
+      "title": "What We Left Behind",
+      "storybookPage": 61,
+      "entries": [
+        {
+          "id": "c3-what-we-left-behind-1",
+          "title": "Doomed Pasts",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              332.44,
+              580.0,
+              362.41
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-2",
+          "title": "Gilded Cage",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              362.41,
+              580.0,
+              392.101
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-3",
+          "title": "Flashback",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              392.101,
+              580.0,
+              424.391
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-4",
+          "title": "Decimation",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              424.391,
+              580.0,
+              456.851
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-5",
+          "title": "Path of Regret",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              456.851,
+              580.0,
+              489.491
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-6",
+          "title": "The Dim",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              489.491,
+              580.0,
+              521.61
+            ]
+          }
+        },
+        {
+          "id": "c3-what-we-left-behind-7",
+          "title": "Dead-end Futures",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              521.61,
+              580.0,
+              554.408
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          316.302,
+          580.0,
+          554.408
+        ]
+      },
+      "trackId": "c3-what-we-left-behind",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Hyperborean Ruins (Outer 3)",
+      "selection": {
+        "1": [
+          7,
+          9
+        ],
+        "2": [
+          5,
+          6
+        ],
+        "3": [
+          1,
+          2
+        ],
+        "4": null
+      }
+    },
+    {
+      "id": "c3-of-wax-and-promises",
+      "title": "Of Wax And Promises",
+      "storybookPage": 69,
+      "entries": [
+        {
+          "id": "c3-of-wax-and-promises-1",
+          "title": "Challenge the Sun",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              591.09,
+              197.0,
+              621.3
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-2",
+          "title": "Matter of Survival",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              621.3,
+              197.0,
+              651.221
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-3",
+          "title": "Son of His Father",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              651.221,
+              197.0,
+              683.921
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-4",
+          "title": "Rule of Nations",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              683.921,
+              197.0,
+              716.391
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-5",
+          "title": "Ascension",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              716.391,
+              197.0,
+              748.741
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-6",
+          "title": "Rise and Fall",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              748.741,
+              197.0,
+              780.74
+            ]
+          }
+        },
+        {
+          "id": "c3-of-wax-and-promises-7",
+          "title": "Concede to Shadow",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              15.0,
+              780.74,
+              197.0,
+              813.538
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          15.0,
+          575.05,
+          197.0,
+          813.538
+        ]
+      },
+      "trackId": "c3-of-wax-and-promises",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Spot of Nothingness (Inner 3)",
+      "selection": {
+        "1": [
+          10,
+          10
+        ],
+        "2": [
+          7,
+          8
+        ],
+        "3": [
+          3,
+          4
+        ],
+        "4": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "c3-cant-go-back",
+      "title": "Can’t Go Back",
+      "storybookPage": 77,
+      "entries": [
+        {
+          "id": "c3-cant-go-back-1",
+          "title": "Cancel the Eschaton",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              592.29,
+              394.0,
+              621.36
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-2",
+          "title": "Peace of Mind",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              621.36,
+              394.0,
+              651.401
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-3",
+          "title": "Living Fossils",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              651.401,
+              394.0,
+              683.861
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-4",
+          "title": "Divine Law",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              683.861,
+              394.0,
+              716.211
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-5",
+          "title": "Last Stand",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              716.211,
+              394.0,
+              748.561
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-6",
+          "title": "The Alluring Call",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              748.561,
+              394.0,
+              780.5
+            ]
+          }
+        },
+        {
+          "id": "c3-cant-go-back-7",
+          "title": "Inevitable",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              205.0,
+              780.5,
+              394.0,
+              813.298
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          205.0,
+          572.08,
+          394.0,
+          813.298
+        ]
+      },
+      "trackId": "c3-cant-go-back",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Spot of Nothingness (Inner 3)",
+      "selection": {
+        "1": null,
+        "2": [
+          9,
+          10
+        ],
+        "3": [
+          5,
+          6
+        ],
+        "4": [
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": "c3-sin-of-the-fathers",
+      "title": "Sin of the Fathers",
+      "storybookPage": 86,
+      "entries": [
+        {
+          "id": "c3-sin-of-the-fathers-1",
+          "title": "Prodigal Father",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              592.29,
+              580.0,
+              621.18
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-2",
+          "title": "Absent Hunger",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              621.18,
+              580.0,
+              650.861
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-3",
+          "title": "Death Seizures",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              650.861,
+              580.0,
+              683.202
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-4",
+          "title": "Submission and Assent",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              683.202,
+              580.0,
+              715.552
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-5",
+          "title": "Terror Theory",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              715.552,
+              580.0,
+              747.901
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-6",
+          "title": "Wayward",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              747.901,
+              580.0,
+              779.84
+            ]
+          }
+        },
+        {
+          "id": "c3-sin-of-the-fathers-7",
+          "title": "Forgiving Child",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 1,
+            "rectPt": [
+              399.0,
+              779.84,
+              580.0,
+              812.578
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 1,
+        "rectPt": [
+          399.0,
+          574.33,
+          580.0,
+          812.578
+        ]
+      },
+      "trackId": "c3-sin-of-the-fathers",
+      "progressBoxCount": 4,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Hyperborean Ruins (Outer 3)",
+      "selection": {
+        "1": null,
+        "2": null,
+        "3": [
+          7,
+          8
+        ],
+        "4": [
+          6,
+          8
+        ]
+      }
+    },
+    {
+      "id": "c3-coming-of-age",
+      "title": "Coming Of Age",
+      "storybookPage": 95,
+      "entries": [
+        {
+          "id": "c3-coming-of-age-1",
+          "title": "To Right All Wrongs",
+          "kind": "opening",
+          "label": "α",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              62.156,
+              197.0,
+              91.12
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-2",
+          "title": "Lie of the Labyrinth",
+          "kind": "rolled",
+          "label": "1–2",
+          "roll": [
+            1,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              91.12,
+              197.0,
+              120.741
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-3",
+          "title": "Abyssdwellers",
+          "kind": "rolled",
+          "label": "3–4",
+          "roll": [
+            3,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              120.741,
+              197.0,
+              153.021
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-4",
+          "title": "Pitiful of the Sun",
+          "kind": "rolled",
+          "label": "5–6",
+          "roll": [
+            5,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              153.021,
+              197.0,
+              185.661
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-5",
+          "title": "Graveyard of Finite Chances",
+          "kind": "rolled",
+          "label": "7–8",
+          "roll": [
+            7,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              185.661,
+              197.0,
+              218.736
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-6",
+          "title": "The Long Dark",
+          "kind": "rolled",
+          "label": "9–10",
+          "roll": [
+            9,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              218.736,
+              197.0,
+              250.99
+            ]
+          }
+        },
+        {
+          "id": "c3-coming-of-age-7",
+          "title": "Coming of Age",
+          "kind": "closing",
+          "label": "Ω",
+          "roll": null,
+          "fatedBoxes": [],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              250.99,
+              197.0,
+              283.668
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          44.06,
+          197.0,
+          283.668
+        ]
+      },
+      "trackId": "c3-coming-of-age",
+      "progressBoxCount": 5,
+      "progressLabels": [
+        "α",
+        null,
+        null,
+        null,
+        "Ω"
+      ],
+      "terrain": "Abandoned Temple (Outer 3)",
+      "selection": {
+        "1": null,
+        "2": null,
+        "3": [
+          9,
+          10
+        ],
+        "4": [
+          9,
+          10
+        ]
+      }
+    }
+  ],
+  "tables": [
+    {
+      "kind": "rr",
+      "id": "c3-r-r-adventures",
+      "title": "R&R Adventures",
+      "storybookPage": 124,
+      "entries": [
+        {
+          "id": "c3-r-r-adventures-1",
+          "title": "Frozen Nostalgia",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              337.36,
+              268.0,
+              371.027
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-2",
+          "title": "A Place I’ll Return to Someday",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              371.027,
+              268.0,
+              403.977
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-3",
+          "title": "Zeno’s Scheme",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              403.977,
+              268.0,
+              436.631
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-4",
+          "title": "Return of the Goats",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              436.631,
+              268.0,
+              468.911
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-5",
+          "title": "Unexpected Byproduct",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              468.911,
+              268.0,
+              501.191
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-6",
+          "title": "Firstborn of the Argo",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              501.191,
+              268.0,
+              533.827
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-7",
+          "title": "A Quarter Stadium at a Time",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              533.827,
+              268.0,
+              566.782
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-8",
+          "title": "Vanishing Concerns",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              566.782,
+              268.0,
+              599.621
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-9",
+          "title": "Figurehead Measuring Contest",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              599.621,
+              268.0,
+              632.441
+            ]
+          }
+        },
+        {
+          "id": "c3-r-r-adventures-10",
+          "title": "Argonalia",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              15.0,
+              632.441,
+              268.0,
+              665.882
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          15.0,
+          319.288,
+          268.0,
+          665.882
+        ]
+      }
+    },
+    {
+      "kind": "pharos",
+      "id": "c3-dreams-of-pharos",
+      "title": "Dreams of Pharos",
+      "storybookPage": 119,
+      "entries": [
+        {
+          "id": "c3-dreams-of-pharos-1",
+          "title": "Scroll 1518451815615181312519",
+          "kind": "rolled",
+          "label": "1",
+          "roll": [
+            1,
+            1
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              337.24,
+              580.0,
+              370.667
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-2",
+          "title": "Scroll 20251681514211421521144",
+          "kind": "rolled",
+          "label": "2",
+          "roll": [
+            2,
+            2
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              370.667,
+              580.0,
+              402.897
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-3",
+          "title": "Scroll 5255199142085149782019119519",
+          "kind": "rolled",
+          "label": "3",
+          "roll": [
+            3,
+            3
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              402.897,
+              580.0,
+              435.191
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-4",
+          "title": "Scroll 51938120151499",
+          "kind": "rolled",
+          "label": "4",
+          "roll": [
+            4,
+            4
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              435.191,
+              580.0,
+              467.471
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-5",
+          "title": "Tablet 201523518156212512",
+          "kind": "rolled",
+          "label": "5",
+          "roll": [
+            5,
+            5
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              467.471,
+              580.0,
+              499.751
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-6",
+          "title": "Tablet 85129151916114151620519",
+          "kind": "rolled",
+          "label": "6",
+          "roll": [
+            6,
+            6
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              499.751,
+              580.0,
+              532.031
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-7",
+          "title": "Scroll 199185141999",
+          "kind": "rolled",
+          "label": "7",
+          "roll": [
+            7,
+            7
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              532.031,
+              580.0,
+              564.206
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-8",
+          "title": "Scroll 291820815616815201514",
+          "kind": "rolled",
+          "label": "8",
+          "roll": [
+            8,
+            8
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              564.206,
+              580.0,
+              596.201
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-9",
+          "title": "Scroll 1811449142251420151891445121689",
+          "kind": "rolled",
+          "label": "9",
+          "roll": [
+            9,
+            9
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              596.201,
+              580.0,
+              628.061
+            ]
+          }
+        },
+        {
+          "id": "c3-dreams-of-pharos-10",
+          "title": "Scroll 85181351920189191357919202119",
+          "kind": "rolled",
+          "label": "10",
+          "roll": [
+            10,
+            10
+          ],
+          "fatedBoxes": [
+            {}
+          ],
+          "source": {
+            "page": 2,
+            "rectPt": [
+              278.0,
+              628.061,
+              580.0,
+              660.961
+            ]
+          }
+        }
+      ],
+      "source": {
+        "page": 2,
+        "rectPt": [
+          278.0,
+          319.28,
+          580.0,
+          660.961
+        ]
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "id": "c3-endless-aeons",
+      "title": "Endless Aeons",
+      "kind": "special",
+      "boxCount": 4,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          41.16,
+          708.112,
+          129.861,
+          722.176
+        ]
+      }
+    },
+    {
+      "id": "c3-rude-awakening",
+      "title": "Rude Awakening",
+      "kind": "special",
+      "boxCount": 1,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          328.15,
+          708.112,
+          430.871,
+          722.176
+        ]
+      }
+    },
+    {
+      "id": "c3-tomorrows-edge",
+      "title": "Tomorrow’s Edge",
+      "kind": "special",
+      "boxCount": 8,
+      "source": {
+        "page": 2,
+        "rectPt": [
+          29.64,
+          738.45,
+          141.371,
+          754.47
+        ]
+      }
+    }
+  ],
+  "inwardOdyssey": {
+    "boxCount": 20,
+    "storyTitlesSource": "catalogue Inward Odyssey card"
+  },
+  "unlistedSheetTracks": []
+}
